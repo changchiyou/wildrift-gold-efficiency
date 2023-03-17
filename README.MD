@@ -1,0 +1,1 @@
+[Wild Rift Gold Efficiency](https://docs.google.com/spreadsheets/d/16I0S-Z5nWVgwf3t3O828JmPGJPMFEuC2c2Z2ZR7h8O0/edit#gid=1105093034)
