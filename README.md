@@ -18,7 +18,21 @@ After some time, I came across another website, [<img src="https://wr-meta.com/f
 
 Merging the calculation **formula** from [<img src="https://static.wikia.nocookie.net/leagueoflegends/images/e/e6/Site-logo.png" width="17" height="17">](https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)) with the **style** of [<img src="https://wr-meta.com/favicon.png" width="15" height="15">](https://wr-meta.com/items/), and **manually updating** the item data myself. Thus, this website was born out of this concept.
 
+## Installation (for developer)
 
+0. [Installation | Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/installation/)
+1. Clone this project via `git`:
+    ```
+    git clone git@github.com:changchiyou/wildrift-gold-efficiency.git; cd wildrift-gold-efficiency
+    ```
+2. Update `bundle` & Install dependencies from [Gemfile](/Gemfile):
+    ```
+    bundle update; bundle install
+    ```
+3. [Serve the Site](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/#serve-the-site):
+    ```
+    bundle exec jekyll serve
+    ```
 
 
 
