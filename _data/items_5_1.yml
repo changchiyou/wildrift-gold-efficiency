@@ -1225,7 +1225,7 @@
     value: 15
 - amount: 82.81%
   category: MAGIC DAMAGE ITEMS
-  cost: 3200
+  cost: 3400
   formula: (95*20.0+7*0+5*50.0+15*33.33)/3200=82.81%
   image: https://wr-meta.com/uploads/posts/2024-04/1712774262_infinity-orb.png
   name: Light - Infinity Orb
