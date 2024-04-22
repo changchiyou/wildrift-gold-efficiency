@@ -14,7 +14,7 @@ except ImportError:
 
 
 class Scraping:
-    def __init__(self, version):
+    def __init__(self):
         self.main_url = "https://wr-meta.com"
         self.stat_names = [
             "Attack Damage",
@@ -59,7 +59,6 @@ class Scraping:
             }
         }
         self.datas = []
-        self.version = version
         self.stat_price = {}
 
     def parse_stat(self, stat: str) -> tuple[str, int] | None:
@@ -75,20 +74,20 @@ class Scraping:
                     return stat_name, int(value.split("-")[1])
                 return stat_name, int(match.group(1))
 
-    def get_abs_filename(self, version: str) -> str:
+    def get_abs_filename(self) -> str:
         script_dir = os.path.dirname(os.path.realpath(__file__))
-        file_path = os.path.join(script_dir, f"./_data/items_{version}.yml")
+        file_path = os.path.join(script_dir, f"./_data/items.yml")
 
         return file_path
 
-    def write_yaml(self, version: str = "test"):
-        file_path = self.get_abs_filename(version=version)
+    def write_yaml(self):
+        file_path = self.get_abs_filename()
 
         with open(file_path, "w") as f:
             dump(self.datas, f, Dumper=Dumper)
 
-    def read_yaml(self, version: str = "test"):
-        file_path = self.get_abs_filename(version=version)
+    def read_yaml(self):
+        file_path = self.get_abs_filename()
 
         with open(file_path, 'r') as f:
             return load(f, Loader=Loader)
@@ -97,9 +96,6 @@ class Scraping:
         try:
             response = requests.get(f"{self.main_url}/items/", timeout=10)
             soup = BeautifulSoup(response.text, "html.parser")
-
-            # extract 'Tier List 5.1' from header-menu and convert to '5_1'
-            version = [link.text for link in soup.find_all('a', href=True) if link['href'] == '/meta/'][0].split()[-1].replace('.', '_')
 
             items = soup.find_all(class_="bild-img-short")
 
@@ -164,9 +160,8 @@ class Scraping:
                         "category": category,
                     }
                 )
-                self.version = version
 
-            self.write_yaml(version=version)
+            self.write_yaml()
 
         except requests.exceptions.ConnectTimeout as execinfo:
             print(str(execinfo))
@@ -182,13 +177,10 @@ class Scraping:
                 return stat
 
     def calculate_base_statistic_prices(self):
-        version = self.version
-        if not version:
-            raise ValueError(f"version: {version}")
         if self.datas:
             datas = self.datas
         else:
-            datas = self.read_yaml(version=version)
+            datas = self.read_yaml()
         first_base = self.bases['first_base']
         second_base = self.bases['second_base']
 
@@ -229,16 +221,13 @@ class Scraping:
             self.stat_price[_type] = stat_cost
 
         self.datas = datas
-        self.write_yaml(version=version)
+        self.write_yaml()
 
     def calculate_gold_efficiency(self):
-        version = self.version
-        if not version:
-            raise ValueError(f"version: {version}")
         if self.datas:
             datas = self.datas
         else:
-            datas = self.read_yaml(version=version)
+            datas = self.read_yaml()
 
         if not self.stat_price:
             for data in datas:
@@ -263,11 +252,11 @@ class Scraping:
                 data['formula'] = "Base Item"
 
         self.datas = datas
-        self.write_yaml(version=version)
+        self.write_yaml()
 
 
 
-scraping = Scraping('5_1')
+scraping = Scraping()
 
 # Due to missing or incorrect information on the source website, it is advised not to use it.
 # scraping.scrap()
