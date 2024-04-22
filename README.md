@@ -12,7 +12,7 @@ After some time, I came across another website, [<img src="https://wr-meta.com/f
 
 <p align="center"><img src="https://github.com/changchiyou/wildrift-gold-efficiency/assets/46549482/59cdaef3-638a-40cf-beb7-99d5a9360eda" style="width: 65%;"></p>
 
-Merging the calculation formula from [<img src="https://static.wikia.nocookie.net/leagueoflegends/images/e/e6/Site-logo.png" width="17" height="17"> Gold efficiency (Wild Rift) | League of Legends Wiki](https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)) with the formatting of [<img src="https://wr-meta.com/favicon.png" width="15" height="15"> WR META - LoL Wild Rift All Items and Runes](https://wr-meta.com/items/), and manually updating the item data myself. Thus, this website was born out of this concept.
+Merging the calculation **formula** from [<img src="https://static.wikia.nocookie.net/leagueoflegends/images/e/e6/Site-logo.png" width="17" height="17"> Gold efficiency (Wild Rift) | League of Legends Wiki](https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)) with the **style** of [<img src="https://wr-meta.com/favicon.png" width="15" height="15"> WR META - LoL Wild Rift All Items and Runes](https://wr-meta.com/items/), and **manually updating** the item data myself. Thus, this website was born out of this concept.
 
 
 
