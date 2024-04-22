@@ -55,6 +55,7 @@ exclude:
 #   - Gemfile
   - Gemfile.lock
   - data.py
+  - vendor
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
