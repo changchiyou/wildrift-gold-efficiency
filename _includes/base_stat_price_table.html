@@ -1,0 +1,57 @@
+<h4 id="{{ include.anchor }}">{{ include.category }}</h4>
+
+<table>
+    <thead>
+      <tr>
+        <th>Champion Statistic</th>
+        <th>Item</th>
+        <th>Cost</th>
+        <th>Stat</th>
+        <th>Stat Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in site.data[ include.data ] %}
+        {% if item[include.base] %}
+            {% assign base = item[include.base] %}
+            <tr>
+                <td> {{ base.type }} </td>
+                <td>
+                    <img loading="lazy" src="{{ item.image }}" width="20" height="20" style="margin-right: 5px;" />
+                    {{ item.name }}
+                </td>
+                <td class="goldt">
+                    {{ item.cost }}
+                    {% include stat_image.html type="gold" %}
+                </td>
+                <td>
+                    {% for stat in item.stats %}
+                        <b>
+                            {% if stat.passive %}
+                                <div class="tooltip">
+                                    {{- stat.value -}}{% include stat_image.html type=stat.type %}
+                                    <span class="tooltiptext">
+                                        {{ stat.passive }}
+                                    </span>
+                                </div>
+                            {% else %}
+                                {{- stat.value -}}{% include stat_image.html type=stat.type %}
+                            {% endif %}
+                        </b>
+                    {% endfor %}
+                </td>
+                </td>
+                <td class="goldt">
+                    <div class="tooltip">
+                        {{ base.value }}
+                        <span class="tooltiptext">
+                            {{ base.formula }}
+                        </span>
+                    </div>
+                    <img loading="lazy" src="https://wr-meta.com/templates/wrw-v2/images/Gold_icon.png" class="stat_icon">
+                </td>
+            </tr>
+        {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>

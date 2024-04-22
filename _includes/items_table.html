@@ -1,0 +1,52 @@
+<h3 id="{{ include.anchor }}">{{ include.category }}</h3>
+
+<table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Cost</th>
+        <th>Stats</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in site.data[ include.data ] %}
+        {% if item.category == include.category %}
+        <tr>
+            <td>
+                <img loading="lazy" src="{{ item.image }}" width="20" height="20" style="margin-right: 5px;" />
+                {{ item.name }}
+            </td>
+            <td class="goldt">
+                {{ item.cost }}
+                {% include stat_image.html type="gold" %}
+            </td>
+            <td>
+                {% for stat in item.stats %}
+                    <b>
+                        {% if stat.passive %}
+                            <div class="tooltip">
+                                {{- stat.value -}}{% include stat_image.html type=stat.type %}
+                                <span class="tooltiptext">
+                                    {{ stat.passive }}
+                                </span>
+                            </div>
+                        {% else %}
+                            {{- stat.value -}}{% include stat_image.html type=stat.type %}
+                        {% endif %}
+                    </b>
+                {% endfor %}
+            </td>
+            <td>
+                <div class="tooltip">
+                    {{ item.amount }}
+                    <span class="tooltiptext">
+                        {{ item.formula }}
+                    </span>
+                </div>
+            </td>
+        </tr>
+        {% endif %}
+      {% endfor %}
+    </tbody>
+</table>

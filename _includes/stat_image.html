@@ -1,0 +1,6 @@
+{% if include.type contains "%" %}
+    {% assign prefix = "%" %}
+{% else %}
+    {% assign prefix = "" %}
+{% endif %}
+{{- prefix -}}<img loading="lazy" src="{{ site.data.images[include.type] }}" class="stat_icon">

@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<div class="info">
+    <p>
+        <strong>Info</strong><br>
+        The Gold efficiency of an item tells you how much stats it provides for its price (gold cost). This is a theoretical value with no direct game impact, used mainly to compare items.
+        <br>
+        <p style="text-align: right;">— <img src="https://static.wikia.nocookie.net/leagueoflegends/images/e/e6/Site-logo.png" width="18" height="18"> <a href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)" target="_blank">Gold efficiency (Wild Rift) | League of Legends Wiki</a></p>
+    </p>
+</div>
+
+<br>
+
+<hr>
+
+<br>
+
+{% assign excludes = "% Magic Penetration|% Omnivamp|% Health Regen|% Mana Regeneration" | split: "|" %}
+<div class="warning">
+    <p>
+        <strong>Warning</strong><br>
+        {% for exclude in excludes %}
+            {% include stat_image.html type=exclude %}
+        {% endfor %}
+        , excluded from gold efficiency calculation due to lack of pricing reference.
+    </p>
+</div>
+
+<h3 id="Base-Statistic-Prices">Base Statistic Prices</h3>
+
+{%- include base_stat_price_table.html data=page.data category="First-tier Base Item" anchor="First-tier-Base-Item" base="first_base" -%}
+
+{%- include base_stat_price_table.html data=page.data category="Second-tier Base Item" anchor="Second-tier-Base-Item" base="second_base" -%}
+
+
+{%- include items_table.html data=page.data category="PHYSICAL DAMAGE ITEMS" anchor="PHYSICAL-DAMAGE-ITEMS" -%}
+
+{%- include items_table.html data=page.data category="MAGIC DAMAGE ITEMS" anchor="MAGIC-DAMAGE-ITEMS" -%}
+
+{%- include items_table.html data=page.data category="DEFENSE ITEMS" anchor="DEFENSE-ITEMS" -%}
+
+{%- include items_table.html data=page.data category="BOOTS" anchor="BOOTS" -%}
+
+{%- include items_table.html data=page.data category="SUPPORT ITEMS" anchor="SUPPORT-ITEMS" -%}
+
+{%- include items_table.html data=page.data category="MID TIER ITEMS" anchor="MID-TIER-ITEMS" -%}
+
+{%- include items_table.html data=page.data category="BASIC ITEMS" anchor="BASIC-ITEMS" -%}

@@ -1,0 +1,62 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Wild Rift Gold Efficiency
+description: >- # this means to ignore newlines until "baseurl:"
+#   The Gold efficiency of an item tells you how much stats it provides for its price (gold cost). This is a theoretical value with no direct game impact, used mainly to compare items.\n\n
+#   In general the theoretical gold efficiency is most useful for comparing items' relative, theoretical values. The "real" value of an item during an actual game is influenced by many other factors that are not easily modeled (in terms of gold or otherwise).
+# description_refer:
+#   url: "https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)"
+#   site: "Gold efficiency (Wild Rift) | League of Legends Wiki"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://changchiyou.github.io/wildrift-gold-efficiency" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  changchiyou
+
+# plugins:
+#   - jekyll-feed
+#   - jekyll-remote-theme
+#   - jekyll-seo-tag
+
+# Build settings
+# remote_theme: jekyll/minima
+# minima:
+#   skin: dark
+theme: minima
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+  - Gemfile.lock
+  - data.py
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

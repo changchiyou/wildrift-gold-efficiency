@@ -1,0 +1,2692 @@
+- amount: 114.35%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3300
+  formula: (50*41.67+25*50.0+12*36.66)/3300=114.35%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616981867_itemsquarebloodthirster.png
+  name: Bloodthirster
+  stats:
+  - type: Attack Damage
+    value: 50
+  - type: '% Critical Rate'
+    value: 25
+  - passive: Bloody
+    type: '% Physical Vamp'
+    value: 12
+- amount: 138.34%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3300
+  formula: (50*41.67+25*50.0+12*36.66+11*41.67+10*33.33)/3300=138.34%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616981867_itemsquarebloodthirster.png
+  name: Bloodthirster (Bloodsworn - lv1)
+  stats:
+  - type: Attack Damage
+    value: 50
+  - type: '% Critical Rate'
+    value: 25
+  - passive: Bloody
+    type: '% Physical Vamp'
+    value: 12
+  - passive: Bloodsworn
+    type: Attack Damage
+    value: 11
+  - passive: Bloodsworn
+    type: '% Attack Speed'
+    value: 10
+- amount: 156.01%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3300
+  formula: (50*41.67+25*50.0+12*36.66+25*41.67+10*33.33)/3300=156.01%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616981867_itemsquarebloodthirster.png
+  name: Bloodthirster (Bloodsworn - lv15)
+  stats:
+  - type: Attack Damage
+    value: 50
+  - type: '% Critical Rate'
+    value: 25
+  - passive: Bloody
+    type: '% Physical Vamp'
+    value: 12
+  - passive: Bloodsworn
+    type: Attack Damage
+    value: 25
+  - passive: Bloodsworn
+    type: '% Attack Speed'
+    value: 10
+- amount: 78.44%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3400
+  formula: (40*41.67+40*25.0)/3400=78.44%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616983372_3026.png
+  name: Guardian Angel
+  stats:
+  - type: Attack Damage
+    value: 40
+  - type: Armor
+    value: 40
+- amount: 91.95%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 2900
+  formula: (25*50.0+35*33.33+5*50.0)/2900=91.95%
+  image: https://wr-meta.com/uploads/posts/2023-10/1698257821_magnetic-blaster.png
+  name: Magnetic Blaster
+  stats:
+  - type: '% Critical Rate'
+    value: 25
+  - type: '% Attack Speed'
+    value: 35
+  - passive: Fervor
+    type: '% Move Speed'
+    value: 5
+- amount: 80.22%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (20*41.67+35*33.33+12*36.66+-10*3.33)/3000=80.22%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712773448_1616982020_itemsquareblade_of_the_ruined_king.png
+  name: Ruin - Blade of the Ruined King (Repentance - lv1)
+  stats:
+  - type: Attack Damage
+    value: 20
+  - type: '% Attack Speed'
+    value: 35
+  - passive: Thirst
+    type: '% Physical Vamp'
+    value: 12
+  - passive: Repentance
+    type: Max Health
+    value: -10
+- amount: 70.23%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (20*41.67+35*33.33+12*36.66+-100*3.33)/3000=70.23%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712773448_1616982020_itemsquareblade_of_the_ruined_king.png
+  name: Ruin - Blade of the Ruined King (Repentance - lv15)
+  stats:
+  - type: Attack Damage
+    value: 20
+  - type: '% Attack Speed'
+    value: 35
+  - passive: Thirst
+    type: '% Physical Vamp'
+    value: 12
+  - passive: Repentance
+    type: Max Health
+    value: -100
+- amount: 66.66%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (35*33.33+20*41.67)/3000=66.66%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616982074_itemsquarerunaan27s_hurricane.png
+  name: 'Runaan''s Hurricane (Adaptive: AD)'
+  stats:
+  - type: '% Attack Speed'
+    value: 35
+  - type: Attack Damage
+    value: 20
+- amount: 100.13%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3200
+  formula: (55*41.67+15*40.0+15*20.82)/3200=100.13%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712774521_youmuus-ghostblade.png
+  name: Light - Youmuu's Ghostblade
+  stats:
+  - type: Attack Damage
+    value: 55
+  - type: Ability Haste
+    value: 15
+  - passive: Slice
+    type: Armor Penetration
+    value: 15
+- amount: 128.38%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3200
+  formula: (55*41.67+15*40.0+15*20.82+5*20.82+50*16.0)/3200=128.38%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712774521_youmuus-ghostblade.png
+  name: Light - Youmuu's Ghostblade (Momentum - lv1)
+  stats:
+  - type: Attack Damage
+    value: 55
+  - type: Ability Haste
+    value: 15
+  - passive: Slice
+    type: Armor Penetration
+    value: 15
+  - passive: Momentum
+    type: Armor Penetration
+    value: 5
+  - passive: Momentum
+    type: Move Speed
+    value: 50
+- amount: 131.64%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3200
+  formula: (55*41.67+15*40.0+15*20.82+10*20.82+50*16.0)/3200=131.64%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712774521_youmuus-ghostblade.png
+  name: Light - Youmuu's Ghostblade (Momentum - lv15)
+  stats:
+  - type: Attack Damage
+    value: 55
+  - type: Ability Haste
+    value: 15
+  - passive: Slice
+    type: Armor Penetration
+    value: 15
+  - passive: Momentum
+    type: Armor Penetration
+    value: 10
+  - passive: Momentum
+    type: Move Speed
+    value: 50
+- amount: 129.42%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3200
+  formula: (55*41.67+15*40.0+15*20.82+5*20.82+25*33.33)/3200=129.42%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712774521_youmuus-ghostblade.png
+  name: Light - Youmuu's Ghostblade (Haste - lv1)
+  stats:
+  - type: Attack Damage
+    value: 55
+  - type: Ability Haste
+    value: 15
+  - passive: Slice
+    type: Armor Penetration
+    value: 15
+  - passive: Momentum
+    type: Armor Penetration
+    value: 5
+  - passive: Momentum
+    type: '% Attack Speed'
+    value: 25
+- amount: 132.68%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3200
+  formula: (55*41.67+15*40.0+15*20.82+10*20.82+25*33.33)/3200=132.68%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712774521_youmuus-ghostblade.png
+  name: Light - Youmuu's Ghostblade (Haste - lv15)
+  stats:
+  - type: Attack Damage
+    value: 55
+  - type: Ability Haste
+    value: 15
+  - passive: Slice
+    type: Armor Penetration
+    value: 15
+  - passive: Momentum
+    type: Armor Penetration
+    value: 10
+  - passive: Momentum
+    type: '% Attack Speed'
+    value: 25
+- amount: 102.22%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (55*41.67+10*40.0+18*20.82)/3000=102.22%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611108036_duskblade-of-draktharr.jpg
+  name: Duskblade of Draktharr
+  stats:
+  - type: Attack Damage
+    value: 55
+  - type: Ability Haste
+    value: 10
+  - passive: Razor
+    type: Armor Penetration
+    value: 18
+- amount: 109.64%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3200
+  formula: (55*41.67+25*50.0+-10*3.33)/3200=109.64%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712773344_1616982264_3031.png
+  name: Ruin - Infinity Edge (Self-Destruction - lv1)
+  stats:
+  - type: Attack Damage
+    value: 55
+  - type: '% Critical Rate'
+    value: 25
+  - passive: Self-Destruction
+    type: Max Health
+    value: -10
+- amount: 100.28%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3200
+  formula: (55*41.67+25*50.0+-100*3.33)/3200=100.28%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712773344_1616982264_3031.png
+  name: Ruin - Infinity Edge (Self-Destruction - lv15)
+  stats:
+  - type: Attack Damage
+    value: 55
+  - type: '% Critical Rate'
+    value: 25
+  - passive: Self-Destruction
+    type: Max Health
+    value: -100
+- amount: 97.58%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3300
+  formula: (30*41.67+25*50.0+16*45.0)/3300=97.58%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616982383_3033.png
+  name: Mortal Reminder (Last Whisper - lv1)
+  stats:
+  - type: Attack Damage
+    value: 30
+  - type: '% Critical Rate'
+    value: 25
+  - passive: Last Whisper
+    type: '% Armor Penetration'
+    value: 16
+- amount: 116.67%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3300
+  formula: (30*41.67+25*50.0+30*45.0)/3300=116.67%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616982383_3033.png
+  name: Mortal Reminder (Last Whisper - lv15)
+  stats:
+  - type: Attack Damage
+    value: 30
+  - type: '% Critical Rate'
+    value: 25
+  - passive: Last Whisper
+    type: '% Armor Penetration'
+    value: 30
+- amount: 121.08%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (350*3.33+40*41.67+20*40.0)/3000=121.08%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611113382_black-cleaver_jpg.jpg
+  name: Black Cleaver
+  stats:
+  - type: Max Health
+    value: 350
+  - type: Attack Damage
+    value: 40
+  - type: Ability Haste
+    value: 20
+- amount: 131.74%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (350*3.33+40*41.67+20*40.0+20*16.0)/3000=131.74%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611113382_black-cleaver_jpg.jpg
+  name: Black Cleaver (Rage - AA - Melee)
+  stats:
+  - type: Max Health
+    value: 350
+  - type: Attack Damage
+    value: 40
+  - type: Ability Haste
+    value: 20
+  - passive: Rage
+    type: Move Speed
+    value: 20
+- amount: 126.41%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (350*3.33+40*41.67+20*40.0+10*16.0)/3000=126.41%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611113382_black-cleaver_jpg.jpg
+  name: Black Cleaver (Rage - AA - Range)
+  stats:
+  - type: Max Health
+    value: 350
+  - type: Attack Damage
+    value: 40
+  - type: Ability Haste
+    value: 20
+  - passive: Rage
+    type: Move Speed
+    value: 10
+- amount: 153.08%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (350*3.33+40*41.67+20*40.0+60*16.0)/3000=153.08%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611113382_black-cleaver_jpg.jpg
+  name: Black Cleaver (Rage - Kill - Melee)
+  stats:
+  - type: Max Health
+    value: 350
+  - type: Attack Damage
+    value: 40
+  - type: Ability Haste
+    value: 20
+  - passive: Rage
+    type: Move Speed
+    value: 60
+- amount: 137.08%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (350*3.33+40*41.67+20*40.0+30*16.0)/3000=137.08%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611113382_black-cleaver_jpg.jpg
+  name: Black Cleaver (Rage - Kill - Range)
+  stats:
+  - type: Max Health
+    value: 350
+  - type: Attack Damage
+    value: 40
+  - type: Ability Haste
+    value: 20
+  - passive: Rage
+    type: Move Speed
+    value: 30
+- amount: 116.98%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 2700
+  formula: (25*41.67+300*3.0+20*40.0+10*41.67)/2700=116.98%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616982445_3004.png
+  name: Manamune (Awe - lv1 EZ 390 Mana)
+  stats:
+  - type: Attack Damage
+    value: 25
+  - type: Max Mana
+    value: 300
+  - type: Ability Haste
+    value: 20
+  - passive: Awe
+    type: Attack Damage
+    value: 10
+- amount: 133.96%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 2700
+  formula: (25*41.67+300*3.0+20*40.0+21*41.67)/2700=133.96%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616982445_3004.png
+  name: Manamune (Awe - lv15 EZ 1076 Mana)
+  stats:
+  - type: Attack Damage
+    value: 25
+  - type: Max Mana
+    value: 300
+  - type: Ability Haste
+    value: 20
+  - passive: Awe
+    type: Attack Damage
+    value: 21
+- amount: 211.73%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 2700
+  formula: (25*41.67+1000*3.0+20*40.0+21*41.67)/2700=211.73%
+  image: https://wr-meta.com/uploads/posts/2023-08/1693337090_muramana.webp
+  name: Muramana (Awe - lv1 EZ 390 Mana)
+  stats:
+  - type: Attack Damage
+    value: 25
+  - type: Max Mana
+    value: 1000
+  - type: Ability Haste
+    value: 20
+  - passive: Awe
+    type: Attack Damage
+    value: 21
+- amount: 227.17%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 2700
+  formula: (25*41.67+1000*3.0+20*40.0+31*41.67)/2700=227.17%
+  image: https://wr-meta.com/uploads/posts/2023-08/1693337090_muramana.webp
+  name: Muramana (Awe - lv15 EZ 1076 Mana)
+  stats:
+  - type: Attack Damage
+    value: 25
+  - type: Max Mana
+    value: 1000
+  - type: Ability Haste
+    value: 20
+  - passive: Awe
+    type: Attack Damage
+    value: 31
+- amount: 129.99%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3333
+  formula: (250*3.33+30*41.67+30*33.33+25*40.0+5*50.0)/3333=129.99%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611108773_trinity-force.jpg
+  name: Trinity Force
+  stats:
+  - type: Max Health
+    value: 250
+  - type: Attack Damage
+    value: 30
+  - type: '% Attack Speed'
+    value: 30
+  - type: Ability Haste
+    value: 25
+  - passive: Fervor
+    type: '% Move Speed'
+    value: 5
+- amount: 139.59%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3333
+  formula: (250*3.33+30*41.67+30*33.33+25*40.0+5*50.0+20*16.0)/3333=139.59%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611108773_trinity-force.jpg
+  name: Trinity Force (Valor - AA - Melee)
+  stats:
+  - type: Max Health
+    value: 250
+  - type: Attack Damage
+    value: 30
+  - type: '% Attack Speed'
+    value: 30
+  - type: Ability Haste
+    value: 25
+  - passive: Fervor
+    type: '% Move Speed'
+    value: 5
+  - passive: Valor
+    type: Move Speed
+    value: 20
+- amount: 134.79%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3333
+  formula: (250*3.33+30*41.67+30*33.33+25*40.0+5*50.0+10*16.0)/3333=134.79%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611108773_trinity-force.jpg
+  name: Trinity Force (Valor - AA - Range)
+  stats:
+  - type: Max Health
+    value: 250
+  - type: Attack Damage
+    value: 30
+  - type: '% Attack Speed'
+    value: 30
+  - type: Ability Haste
+    value: 25
+  - passive: Fervor
+    type: '% Move Speed'
+    value: 5
+  - passive: Valor
+    type: Move Speed
+    value: 10
+- amount: 158.79%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3333
+  formula: (250*3.33+30*41.67+30*33.33+25*40.0+5*50.0+60*16.0)/3333=158.79%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611108773_trinity-force.jpg
+  name: Trinity Force (Valor - Kill - Melee)
+  stats:
+  - type: Max Health
+    value: 250
+  - type: Attack Damage
+    value: 30
+  - type: '% Attack Speed'
+    value: 30
+  - type: Ability Haste
+    value: 25
+  - passive: Fervor
+    type: '% Move Speed'
+    value: 5
+  - passive: Valor
+    type: Move Speed
+    value: 60
+- amount: 144.39%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3333
+  formula: (250*3.33+30*41.67+30*33.33+25*40.0+5*50.0+30*16.0)/3333=144.39%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611108773_trinity-force.jpg
+  name: Trinity Force (Valor - Kill - Range)
+  stats:
+  - type: Max Health
+    value: 250
+  - type: Attack Damage
+    value: 30
+  - type: '% Attack Speed'
+    value: 30
+  - type: Ability Haste
+    value: 25
+  - passive: Fervor
+    type: '% Move Speed'
+    value: 5
+  - passive: Valor
+    type: Move Speed
+    value: 30
+- amount: 127.23%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (55*41.67+45*25.0+10*40.0)/3000=127.23%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616982557_3156.png
+  name: Maw of Malmortius
+  stats:
+  - type: Attack Damage
+    value: 55
+  - type: Magic Resistance
+    value: 45
+  - type: Ability Haste
+    value: 10
+- amount: 101.95%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (35*41.67+40*25.0+15*40.0)/3000=101.95%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611108426_deaths-dance.jpg
+  name: Death's Dance
+  stats:
+  - type: Attack Damage
+    value: 35
+  - type: Armor
+    value: 40
+  - type: Ability Haste
+    value: 15
+- amount: 118.05%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (25*41.67+25*50.0+30*33.33+5*50.0)/3000=118.05%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611113166_phantom-dancer.jpg
+  name: Phantom Dancer
+  stats:
+  - type: Attack Damage
+    value: 25
+  - type: '% Critical Rate'
+    value: 25
+  - type: '% Attack Speed'
+    value: 30
+  - passive: Shadowwalk
+    type: '% Move Speed'
+    value: 5
+- amount: 157.50%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (25*41.67+25*50.0+30*33.33+5*50.0+7*50.0+25*33.33)/3000=157.50%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611113166_phantom-dancer.jpg
+  name: Phantom Dancer (Spectral Waltz)
+  stats:
+  - type: Attack Damage
+    value: 25
+  - type: '% Critical Rate'
+    value: 25
+  - type: '% Attack Speed'
+    value: 30
+  - passive: Shadowwalk
+    type: '% Move Speed'
+    value: 5
+  - passive: Spectral Waltz
+    type: '% Move Speed'
+    value: 7
+  - passive: Spectral Waltz
+    type: '% Attack Speed'
+    value: 25
+- amount: 118.33%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (45*33.33+20*40.0+30*41.67)/3000=118.33%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616983090_3115.png
+  name: 'Nashor''s Tooth (Adaptive: AD)'
+  stats:
+  - type: '% Attack Speed'
+    value: 45
+  - type: Ability Haste
+    value: 20
+  - passive: Magic Fang
+    type: Attack Damage
+    value: 30
+- amount: 101.85%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 2700
+  formula: (45*33.33+50*25.0)/2700=101.85%
+  image: https://wr-meta.com/uploads/posts/2022-01/1641822176_wits-end.png
+  name: Wit's End
+  stats:
+  - type: '% Attack Speed'
+    value: 45
+  - type: Magic Resistance
+    value: 50
+- amount: 121.86%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3050
+  formula: (40*41.67+25*50.0+20*40.0)/3050=121.86%
+  image: https://wr-meta.com/uploads/posts/2022-01/1641832757_essence-reaver.png
+  name: Essence Reaver
+  stats:
+  - type: Attack Damage
+    value: 40
+  - type: '% Critical Rate'
+    value: 25
+  - type: Ability Haste
+    value: 20
+- amount: 115.59%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3100
+  formula: (40*41.67+25*50.0+20*33.33)/3100=115.59%
+  image: https://wr-meta.com/uploads/posts/2022-01/1641835021_stormrazor.png
+  name: Stormrazor
+  stats:
+  - type: Attack Damage
+    value: 40
+  - type: '% Critical Rate'
+    value: 25
+  - type: '% Attack Speed'
+    value: 20
+- amount: 96.35%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3100
+  formula: (40*41.67+15*40.0+16*45.0)/3100=96.35%
+  image: https://wr-meta.com/uploads/posts/2022-01/1641835852_seryldas-grudge.png
+  name: Serylda's Grudge (Last Whisper - lv1)
+  stats:
+  - type: Attack Damage
+    value: 40
+  - type: Ability Haste
+    value: 15
+  - passive: Last Whisper
+    type: '% Armor Penetration'
+    value: 16
+- amount: 116.67%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3100
+  formula: (40*41.67+15*40.0+30*45.0)/3100=116.67%
+  image: https://wr-meta.com/uploads/posts/2022-01/1641835852_seryldas-grudge.png
+  name: Serylda's Grudge (Last Whisper - lv15)
+  stats:
+  - type: Attack Damage
+    value: 40
+  - type: Ability Haste
+    value: 15
+  - passive: Last Whisper
+    type: '% Armor Penetration'
+    value: 30
+- amount: 112.77%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (25*50.0+40*33.33+20*40.0)/3000=112.77%
+  image: https://wr-meta.com/uploads/posts/2022-01/1641837331_solari-chargeblade.png
+  name: Solari Chargeblade
+  stats:
+  - type: '% Critical Rate'
+    value: 25
+  - type: '% Attack Speed'
+    value: 40
+  - type: Ability Haste
+    value: 20
+- amount: 124.17%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (45*41.67+25*50.0+15*40.0)/3000=124.17%
+  image: https://wr-meta.com/uploads/posts/2022-01/1641838686_navori-quickblades.png
+  name: Navori Quickblades
+  stats:
+  - type: Attack Damage
+    value: 45
+  - type: '% Critical Rate'
+    value: 25
+  - type: Ability Haste
+    value: 15
+- amount: 97.86%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3150
+  formula: (250*3.33+50*41.67+8*20.82)/3150=97.86%
+  image: https://wr-meta.com/uploads/posts/2022-01/1641839799_edge-of-night.png
+  name: Edge of Night
+  stats:
+  - type: Max Health
+    value: 250
+  - type: Attack Damage
+    value: 50
+  - passive: Gouge
+    type: Armor Penetration
+    value: 8
+- amount: 101.68%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3400
+  formula: (425*3.33+25*41.67+25*40.0)/3400=101.68%
+  image: https://wr-meta.com/uploads/posts/2022-03/1648417575_divine_sunderer_item.png
+  name: Divine Sunderer
+  stats:
+  - type: Max Health
+    value: 425
+  - type: Attack Damage
+    value: 25
+  - type: Ability Haste
+    value: 25
+- amount: 99.85%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 2800
+  formula: (50*41.67+10*40.0+15*20.82)/2800=99.85%
+  image: https://wr-meta.com/uploads/posts/2022-09/1663357609_serpent27s_fang_item_hd.webp
+  name: Serpent's Fang
+  stats:
+  - type: Attack Damage
+    value: 50
+  - type: Ability Haste
+    value: 10
+  - passive: Stab
+    type: Armor Penetration
+    value: 15
+- amount: 118.13%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 2800
+  formula: (250*3.33+45*41.67+15*40.0)/2800=118.13%
+  image: https://wr-meta.com/uploads/posts/2023-10/1698176281_chempunk_chainsword_item_hd.webp
+  name: Chempunk Chainsword
+  stats:
+  - type: Max Health
+    value: 250
+  - type: Attack Damage
+    value: 45
+  - type: Ability Haste
+    value: 15
+- amount: 112.50%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3200
+  formula: (40*41.67+25*50.0+15*33.33+5*36.66)/3200=112.50%
+  image: https://wr-meta.com/uploads/posts/2023-05/1682985922_immortal_shieldbow_item.webp
+  name: Immortal Shieldbow
+  stats:
+  - type: Attack Damage
+    value: 40
+  - type: '% Critical Rate'
+    value: 25
+  - type: '% Attack Speed'
+    value: 15
+  - type: '% Physical Vamp'
+    value: 5
+- amount: 121.67%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3200
+  formula: (40*41.67+25*50.0+15*33.33+5*36.66+8*36.66)/3200=121.67%
+  image: https://wr-meta.com/uploads/posts/2023-05/1682985922_immortal_shieldbow_item.webp
+  name: Immortal Shieldbow (Buttle Furor)
+  stats:
+  - type: Attack Damage
+    value: 40
+  - type: '% Critical Rate'
+    value: 25
+  - type: '% Attack Speed'
+    value: 15
+  - type: '% Physical Vamp'
+    value: 5
+  - passive: Buttle Furor
+    type: '% Physical Vamp'
+    value: 8
+- amount: 107.76%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 2900
+  formula: (40*41.67+25*50.0+10*20.82)/2900=107.76%
+  image: https://wr-meta.com/uploads/posts/2023-05/1683034280_the_collector_item.webp
+  name: The Collector
+  stats:
+  - type: Attack Damage
+    value: 40
+  - type: '% Critical Rate'
+    value: 25
+  - passive: Killer
+    type: Armor Penetration
+    value: 10
+- amount: 39.12%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3200
+  formula: (400*3.33+-5*16.0)/3200=39.12%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712772856_3053_11zon.png
+  name: Sterak's Gage
+  stats:
+  - type: Max Health
+    value: 400
+  - passive: Guilt Bearer
+    type: Move Speed
+    value: -5
+- amount: 76.89%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3200
+  formula: (400*3.33+-5*16.0+29*41.67)/3200=76.89%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712772856_3053_11zon.png
+  name: Sterak's Gage (Heavy Handed - lv1 IRE 58 AD)
+  stats:
+  - type: Max Health
+    value: 400
+  - passive: Guilt Bearer
+    type: Move Speed
+    value: -5
+  - passive: Heavy Handed
+    type: Attack Damage
+    value: 29
+- amount: 118.56%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3200
+  formula: (400*3.33+-5*16.0+61*41.67)/3200=118.56%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712772856_3053_11zon.png
+  name: Sterak's Gage (Heavy Handed - lv15 IRE 122 AD)
+  stats:
+  - type: Max Health
+    value: 400
+  - passive: Guilt Bearer
+    type: Move Speed
+    value: -5
+  - passive: Heavy Handed
+    type: Attack Damage
+    value: 61
+- amount: 135.39%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3200
+  formula: (300*3.33+50*41.67+25*40.0+5*50.0)/3200=135.39%
+  image: https://wr-meta.com/uploads/posts/2024-01/1705521918_spear_of_shojin_item_hd.webp
+  name: Spear of Shojin
+  stats:
+  - type: Max Health
+    value: 300
+  - type: Attack Damage
+    value: 50
+  - type: Ability Haste
+    value: 25
+  - passive: Rising Dragon
+    type: '% Move Speed'
+    value: 5
+- amount: 101.33%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (550*3.33+29*41.67)/3000=101.33%
+  image: https://wr-meta.com/uploads/posts/2024-01/1705522398_titanic_hydra_item_hd.webp
+  name: Titanic Hydra
+  stats:
+  - type: Max Health
+    value: 550
+  - passive: Colossus
+    type: Attack Damage
+    value: 29
+- amount: 124.94%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (550*3.33+46*41.67)/3000=124.94%
+  image: https://wr-meta.com/uploads/posts/2024-01/1705522398_titanic_hydra_item_hd.webp
+  name: Titanic Hydra (with HeartSteel)
+  stats:
+  - type: Max Health
+    value: 550
+  - passive: Colossus
+    type: Attack Damage
+    value: 46
+- amount: 83.33%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3200
+  formula: (40*41.67+30*33.33)/3200=83.33%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712427795_terminus.png
+  name: Terminus
+  stats:
+  - type: Attack Damage
+    value: 40
+  - type: '% Attack Speed'
+    value: 30
+- amount: 153.18%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3200
+  formula: (40*41.67+30*33.33+15*25.0+15*25.0+33*45.0+33*0)/3200=153.18%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712427795_terminus.png
+  name: Terminus (Juxtaposition - lv1)
+  stats:
+  - type: Attack Damage
+    value: 40
+  - type: '% Attack Speed'
+    value: 30
+  - passive: Juxtaposition
+    type: Armor
+    value: 15
+  - passive: Juxtaposition
+    type: Magic Resistance
+    value: 15
+  - passive: Juxtaposition
+    type: '% Armor Penetration'
+    value: 33
+  - passive: Juxtaposition
+    type: '% Magic Penetration'
+    value: 33
+- amount: 167.24%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3200
+  formula: (40*41.67+30*33.33+24*25.0+24*25.0+33*45.0+33*0)/3200=167.24%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712427795_terminus.png
+  name: Terminus (Juxtaposition - lv15)
+  stats:
+  - type: Attack Damage
+    value: 40
+  - type: '% Attack Speed'
+    value: 30
+  - passive: Juxtaposition
+    type: Armor
+    value: 24
+  - passive: Juxtaposition
+    type: Magic Resistance
+    value: 24
+  - passive: Juxtaposition
+    type: '% Armor Penetration'
+    value: 33
+  - passive: Juxtaposition
+    type: '% Magic Penetration'
+    value: 33
+- amount: 113.33%
+  category: MAGIC DAMAGE ITEMS
+  cost: 3000
+  formula: (85*20.0+7*0+300*3.0+20*40.0)/3000=113.33%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616982673_6655.png
+  name: Luden's Echo
+  stats:
+  - type: Ability Power
+    value: 85
+  - type: '% Magic Penetration'
+    value: 7
+  - type: Max Mana
+    value: 300
+  - type: Ability Haste
+    value: 20
+- amount: 107.67%
+  category: MAGIC DAMAGE ITEMS
+  cost: 2600
+  formula: (150*3.33+75*20.0+7*0+20*40.0)/2600=107.67%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616982692_3165.png
+  name: Morellonomicon
+  stats:
+  - type: Max Health
+    value: 150
+  - type: Ability Power
+    value: 75
+  - type: '% Magic Penetration'
+    value: 7
+  - type: Ability Haste
+    value: 20
+- amount: 86.67%
+  category: MAGIC DAMAGE ITEMS
+  cost: 3000
+  formula: (60*20.0+7*0+200*3.0+20*40.0)/3000=86.67%
+  image: https://wr-meta.com/uploads/posts/2023-10/1698169540_crown_of_the_shattered_queen_item_hd-1.webp
+  name: Crown of the Shattered Queen
+  stats:
+  - type: Ability Power
+    value: 60
+  - type: '% Magic Penetration'
+    value: 7
+  - type: Max Mana
+    value: 200
+  - type: Ability Haste
+    value: 20
+- amount: 51.96%
+  category: MAGIC DAMAGE ITEMS
+  cost: 3400
+  formula: (90*20.0+7*0+-10*3.33)/3400=51.96%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712773821_1616983058_3089.png
+  name: Ruin - Rabadon's Deathcap (Cinders - lv1)
+  stats:
+  - type: Ability Power
+    value: 90
+  - type: '% Magic Penetration'
+    value: 7
+  - passive: Cinders
+    type: Max Health
+    value: -10
+- amount: 43.15%
+  category: MAGIC DAMAGE ITEMS
+  cost: 3400
+  formula: (90*20.0+7*0+-100*3.33)/3400=43.15%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712773821_1616983058_3089.png
+  name: Ruin - Rabadon's Deathcap (Cinders - lv15)
+  stats:
+  - type: Ability Power
+    value: 90
+  - type: '% Magic Penetration'
+    value: 7
+  - passive: Cinders
+    type: Max Health
+    value: -100
+- amount: 95.02%
+  category: MAGIC DAMAGE ITEMS
+  cost: 2700
+  formula: (350*3.33+70*20.0)/2700=95.02%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616982924_3116.png
+  name: Rylai's Crystal Scepter
+  stats:
+  - type: Max Health
+    value: 350
+  - type: Ability Power
+    value: 70
+- amount: 77.75%
+  category: MAGIC DAMAGE ITEMS
+  cost: 3000
+  formula: (250*3.33+75*20.0+7*0)/3000=77.75%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616982978_6653.png
+  name: Liandry's Torment
+  stats:
+  - type: Max Health
+    value: 250
+  - type: Ability Power
+    value: 75
+  - type: '% Magic Penetration'
+    value: 7
+- amount: 104.73%
+  category: MAGIC DAMAGE ITEMS
+  cost: 2800
+  formula: (250*3.33+60*20.0+7*0+300*3.0)/2800=104.73%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611109436_rod-of-ages.jpg
+  name: Rod of Ages
+  stats:
+  - type: Max Health
+    value: 250
+  - type: Ability Power
+    value: 60
+  - type: '% Magic Penetration'
+    value: 7
+  - type: Max Mana
+    value: 300
+- amount: 182.09%
+  category: MAGIC DAMAGE ITEMS
+  cost: 2800
+  formula: (250*3.33+60*20.0+7*0+300*3.0+200*3.33+60*20.0+100*3.0)/2800=182.09%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611109436_rod-of-ages.jpg
+  name: Rod of Ages (Veteran)
+  stats:
+  - type: Max Health
+    value: 250
+  - type: Ability Power
+    value: 60
+  - type: '% Magic Penetration'
+    value: 7
+  - type: Max Mana
+    value: 300
+  - passive: Veteran
+    type: Max Health
+    value: 200
+  - passive: Veteran
+    type: Ability Power
+    value: 60
+  - passive: Veteran
+    type: Max Mana
+    value: 100
+- amount: 76.27%
+  category: MAGIC DAMAGE ITEMS
+  cost: 2950
+  formula: (80*20.0+7*0+10*40.0+5*50.0)/2950=76.27%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616983087_3100.png
+  name: Lich Bane
+  stats:
+  - type: Ability Power
+    value: 80
+  - type: '% Magic Penetration'
+    value: 7
+  - type: Ability Haste
+    value: 10
+  - passive: Bane
+    type: '% Move Speed'
+    value: 5
+- amount: 116.66%
+  category: MAGIC DAMAGE ITEMS
+  cost: 3000
+  formula: (45*33.33+20*40.0+60*20.0)/3000=116.66%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616983090_3115.png
+  name: 'Nashor''s Tooth (Adaptive: AP)'
+  stats:
+  - type: '% Attack Speed'
+    value: 45
+  - type: Ability Haste
+    value: 20
+  - passive: Magic Fang
+    type: Ability Power
+    value: 60
+- amount: 108.47%
+  category: MAGIC DAMAGE ITEMS
+  cost: 2950
+  formula: (35*20.0+7*0+500*3.0+20*40.0+10*20.0)/2950=108.47%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616983148_3003.png
+  name: Archangel's Staff (Awe - lv1 Kass 480 MP)
+  stats:
+  - type: Ability Power
+    value: 35
+  - type: '% Magic Penetration'
+    value: 7
+  - type: Max Mana
+    value: 500
+  - type: Ability Haste
+    value: 20
+  - passive: Awe
+    type: Ability Power
+    value: 10
+- amount: 113.22%
+  category: MAGIC DAMAGE ITEMS
+  cost: 2950
+  formula: (35*20.0+7*0+500*3.0+20*40.0+17*20.0)/2950=113.22%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616983148_3003.png
+  name: Archangel's Staff (Awe - lv15 Kass 1390 MP)
+  stats:
+  - type: Ability Power
+    value: 35
+  - type: '% Magic Penetration'
+    value: 7
+  - type: Max Mana
+    value: 500
+  - type: Ability Haste
+    value: 20
+  - passive: Awe
+    type: Ability Power
+    value: 17
+- amount: 184.41%
+  category: MAGIC DAMAGE ITEMS
+  cost: 2950
+  formula: (35*20.0+7*0+1200*3.0+20*40.0+17*20.0)/2950=184.41%
+  image: https://wr-meta.com/uploads/posts/2023-08/1691525309_3040.webp
+  name: Seraph's Embrace (Awe - lv1 Kass 480 MP)
+  stats:
+  - type: Ability Power
+    value: 35
+  - type: '% Magic Penetration'
+    value: 7
+  - type: Max Mana
+    value: 1200
+  - type: Ability Haste
+    value: 20
+  - passive: Awe
+    type: Ability Power
+    value: 17
+- amount: 190.51%
+  category: MAGIC DAMAGE ITEMS
+  cost: 2950
+  formula: (35*20.0+7*0+1200*3.0+20*40.0+26*20.0)/2950=190.51%
+  image: https://wr-meta.com/uploads/posts/2023-08/1691525309_3040.webp
+  name: Seraph's Embrace (Awe - lv15 Kass 1390 MP)
+  stats:
+  - type: Ability Power
+    value: 35
+  - type: '% Magic Penetration'
+    value: 7
+  - type: Max Mana
+    value: 1200
+  - type: Ability Haste
+    value: 20
+  - passive: Awe
+    type: Ability Power
+    value: 26
+- amount: 95.80%
+  category: MAGIC DAMAGE ITEMS
+  cost: 2800
+  formula: (250*3.33+60*20.0+10*40.0+5*50.0)/2800=95.80%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616983242_3504.png
+  name: Ardent Censer
+  stats:
+  - type: Max Health
+    value: 250
+  - type: Ability Power
+    value: 60
+  - type: Ability Haste
+    value: 10
+  - passive: Ardent
+    type: '% Move Speed'
+    value: 5
+- amount: 93.33%
+  category: MAGIC DAMAGE ITEMS
+  cost: 3000
+  formula: (75*20.0+300*3.0+10*40.0)/3000=93.33%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712774468_rvrzy8us16181.png
+  name: Light - Harmonic Echo
+  stats:
+  - type: Ability Power
+    value: 75
+  - type: Max Mana
+    value: 300
+  - type: Ability Haste
+    value: 10
+- amount: 103.98%
+  category: MAGIC DAMAGE ITEMS
+  cost: 2500
+  formula: (150*3.33+65*20.0+7*0+20*40.0+15*0)/2500=103.98%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611109674_awakened-soulstealer.jpg
+  name: Awakened Soulstealer
+  stats:
+  - type: Max Health
+    value: 150
+  - type: Ability Power
+    value: 65
+  - type: '% Magic Penetration'
+    value: 7
+  - type: Ability Haste
+    value: 20
+  - passive: Soul Hunt
+    type: '% Magic Penetration'
+    value: 15
+- amount: 82.81%
+  category: MAGIC DAMAGE ITEMS
+  cost: 3200
+  formula: (95*20.0+7*0+5*50.0+15*33.33)/3200=82.81%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712774262_infinity-orb.png
+  name: Light - Infinity Orb
+  stats:
+  - type: Ability Power
+    value: 95
+  - type: '% Magic Penetration'
+    value: 7
+  - passive: Destiny
+    type: '% Move Speed'
+    value: 5
+  - passive: Balanced
+    type: Magic Penetration
+    value: 15
+- amount: 91.37%
+  category: MAGIC DAMAGE ITEMS
+  cost: 3000
+  formula: (200*3.33+35*25.0+60*20.0+7*0)/3000=91.37%
+  image: https://wr-meta.com/uploads/posts/2022-01/1641808144_crystalline-reflector.png
+  name: Crystalline Reflector
+  stats:
+  - type: Max Health
+    value: 200
+  - type: Armor
+    value: 35
+  - type: Ability Power
+    value: 60
+  - type: '% Magic Penetration'
+    value: 7
+- amount: 118.00%
+  category: MAGIC DAMAGE ITEMS
+  cost: 2500
+  formula: (65*20.0+350*3.0+15*40.0)/2500=118.00%
+  image: https://wr-meta.com/uploads/posts/2022-01/1641816198_staff-of-flowing-water.png
+  name: Staff of Flowing Water
+  stats:
+  - type: Ability Power
+    value: 65
+  - type: Max Mana
+    value: 350
+  - type: Ability Haste
+    value: 15
+- amount: 102.54%
+  category: MAGIC DAMAGE ITEMS
+  cost: 2600
+  formula: (200*3.33+80*20.0+7*0+10*40.0)/2600=102.54%
+  image: https://wr-meta.com/uploads/posts/2023-10/1698170553_oceanid_s_trident_11zon.webp
+  name: Oceanid's Trident
+  stats:
+  - type: Max Health
+    value: 200
+  - type: Ability Power
+    value: 80
+  - type: '% Magic Penetration'
+    value: 7
+  - type: Ability Haste
+    value: 10
+- amount: 90.64%
+  category: MAGIC DAMAGE ITEMS
+  cost: 2500
+  formula: (200*3.33+40*20.0+20*40.0)/2500=90.64%
+  image: https://wr-meta.com/uploads/posts/2022-09/1663358166_gbyq8fyates71_11zon.webp
+  name: Imperial Mandate
+  stats:
+  - type: Max Health
+    value: 200
+  - type: Ability Power
+    value: 40
+  - type: Ability Haste
+    value: 20
+- amount: 105.36%
+  category: MAGIC DAMAGE ITEMS
+  cost: 2800
+  formula: (75*20.0+7*0+30*40.0+5*50.0)/2800=105.36%
+  image: https://wr-meta.com/uploads/posts/2022-09/1663358238_4629_mage_t3_cosmicdrive_11zon.webp
+  name: Cosmic Drive
+  stats:
+  - type: Ability Power
+    value: 75
+  - type: '% Magic Penetration'
+    value: 7
+  - type: Ability Haste
+    value: 30
+  - passive: Hyperdrive
+    type: '% Move Speed'
+    value: 5
+- amount: 87.86%
+  category: MAGIC DAMAGE ITEMS
+  cost: 3300
+  formula: (150*3.33+90*20.0+7*0+15*40.0+12*0)/3300=87.86%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712774569_harmonic-echo.png
+  name: Light - Riftmaker
+  stats:
+  - type: Max Health
+    value: 150
+  - type: Ability Power
+    value: 90
+  - type: '% Magic Penetration'
+    value: 7
+  - type: Ability Haste
+    value: 15
+  - passive: Assimilation
+    type: '% Omnivamp'
+    value: 12
+- amount: 83.87%
+  category: MAGIC DAMAGE ITEMS
+  cost: 3100
+  formula: (90*20.0+7*0+20*40.0)/3100=83.87%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712774246_gejnaqxxsaaivse.png
+  name: Light - Horizon Focus
+  stats:
+  - type: Ability Power
+    value: 90
+  - type: '% Magic Penetration'
+    value: 7
+  - type: Ability Haste
+    value: 20
+- amount: 76.66%
+  category: MAGIC DAMAGE ITEMS
+  cost: 3000
+  formula: (45*33.33+40*20.0)/3000=76.66%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616982074_itemsquarerunaan27s_hurricane.png
+  name: 'Runaan''s Hurricane (Adaptive: AP)'
+  stats:
+  - type: '% Attack Speed'
+    value: 45
+  - passive: "Wind\u2019s Favor"
+    type: Ability Power
+    value: 40
+- amount: 75.50%
+  category: DEFENSE ITEMS
+  cost: 3000
+  formula: (500*3.33+15*40.0)/3000=75.50%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616983481_3068.png
+  name: Sunfire Aegis
+  stats:
+  - type: Max Health
+    value: 500
+  - type: Ability Haste
+    value: 15
+- amount: 114.84%
+  category: DEFENSE ITEMS
+  cost: 2800
+  formula: (350*3.33+100*0+50*25.0+20*40.0)/2800=114.84%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616983537_3065.png
+  name: Spirit Visage
+  stats:
+  - type: Max Health
+    value: 350
+  - type: '% Health Regen'
+    value: 100
+  - type: Magic Resistance
+    value: 50
+  - type: Ability Haste
+    value: 20
+- amount: 105.61%
+  category: DEFENSE ITEMS
+  cost: 2800
+  formula: (400*3.33+65*25.0)/2800=105.61%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616983598_3143.png
+  name: Randuin's Omen
+  stats:
+  - type: Max Health
+    value: 400
+  - type: Armor
+    value: 65
+- amount: 81.78%
+  category: DEFENSE ITEMS
+  cost: 2700
+  formula: (100*3.33+75*25.0)/2700=81.78%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616983632_3075.png
+  name: Thornmail
+  stats:
+  - type: Max Health
+    value: 100
+  - type: Armor
+    value: 75
+- amount: 94.36%
+  category: DEFENSE ITEMS
+  cost: 2850
+  formula: (700*3.33+200*0+10*40.0+-1*41.67)/2850=94.36%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712772933_1616983645_3083.png
+  name: Warmog's Armor (Dead End - lv1)
+  stats:
+  - type: Max Health
+    value: 700
+  - type: '% Health Regen'
+    value: 200
+  - type: Ability Haste
+    value: 10
+  - passive: Dead End
+    type: Attack Damage
+    value: -1
+- amount: 73.89%
+  category: DEFENSE ITEMS
+  cost: 2850
+  formula: (700*3.33+200*0+10*40.0+-15*41.67)/2850=73.89%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712772933_1616983645_3083.png
+  name: Warmog's Armor (Dead End - lv15)
+  stats:
+  - type: Max Health
+    value: 700
+  - type: '% Health Regen'
+    value: 200
+  - type: Ability Haste
+    value: 10
+  - passive: Dead End
+    type: Attack Damage
+    value: -15
+- amount: 130.08%
+  category: DEFENSE ITEMS
+  cost: 3100
+  formula: (250*3.33+50*25.0+250*3.0+30*40.0)/3100=130.08%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616983682_6662.png
+  name: Iceborn Gauntlet
+  stats:
+  - type: Max Health
+    value: 250
+  - type: Armor
+    value: 50
+  - type: Max Mana
+    value: 250
+  - type: Ability Haste
+    value: 30
+- amount: 83.30%
+  category: DEFENSE ITEMS
+  cost: 2800
+  formula: (250*3.33+50*25.0+5*50.0)/2800=83.30%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616983728_3742.png
+  name: Dead Man's Plate
+  stats:
+  - type: Max Health
+    value: 250
+  - type: Armor
+    value: 50
+  - passive: Relentless
+    type: '% Move Speed'
+    value: 5
+- amount: 106.16%
+  category: DEFENSE ITEMS
+  cost: 2800
+  formula: (250*3.33+50*25.0+5*50.0+40*16.0)/2800=106.16%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616983728_3742.png
+  name: Dead Man's Plate (Momentum)
+  stats:
+  - type: Max Health
+    value: 250
+  - type: Armor
+    value: 50
+  - passive: Relentless
+    type: '% Move Speed'
+    value: 5
+  - passive: Momentum
+    type: Move Speed
+    value: 40
+- amount: 117.82%
+  category: DEFENSE ITEMS
+  cost: 2800
+  formula: (300*3.33+40*25.0+300*3.0+10*40.0)/2800=117.82%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611112923_abyssal-mask.jpg
+  name: Abyssal Mask
+  stats:
+  - type: Max Health
+    value: 300
+  - type: Magic Resistance
+    value: 40
+  - type: Max Mana
+    value: 300
+  - type: Ability Haste
+    value: 10
+- amount: 111.69%
+  category: DEFENSE ITEMS
+  cost: 2700
+  formula: (350*3.33+40*25.0+150*3.0+10*40.0)/2700=111.69%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616983776_3050.png
+  name: Zeke's Convergence
+  stats:
+  - type: Max Health
+    value: 350
+  - type: Armor
+    value: 40
+  - type: Max Mana
+    value: 150
+  - type: Ability Haste
+    value: 10
+- amount: 95.02%
+  category: DEFENSE ITEMS
+  cost: 2700
+  formula: (350*3.33+40*25.0+10*40.0)/2700=95.02%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611110199_protectors-vow.jpg
+  name: Protector's Vow
+  stats:
+  - type: Max Health
+    value: 350
+  - type: Armor
+    value: 40
+  - type: Ability Haste
+    value: 10
+- amount: 134.69%
+  category: DEFENSE ITEMS
+  cost: 2600
+  formula: (350*3.33+500*3.0+15*40.0+71*3.33)/2600=134.69%
+  image: https://wr-meta.com/uploads/posts/2022-07/1657816019_winter27s_approach_item_hd.png
+  name: Winter's Approach (Awe - lv1 Voli 390 MP)
+  stats:
+  - type: Max Health
+    value: 350
+  - type: Max Mana
+    value: 500
+  - type: Ability Haste
+    value: 15
+  - type: Max Health
+    value: 71
+- amount: 144.04%
+  category: DEFENSE ITEMS
+  cost: 2600
+  formula: (350*3.33+500*3.0+15*40.0+144*3.33)/2600=144.04%
+  image: https://wr-meta.com/uploads/posts/2022-07/1657816019_winter27s_approach_item_hd.png
+  name: Winter's Approach (Awe - lv15 Voli 1300 MP)
+  stats:
+  - type: Max Health
+    value: 350
+  - type: Max Mana
+    value: 500
+  - type: Ability Haste
+    value: 15
+  - type: Max Health
+    value: 144
+- amount: 222.63%
+  category: DEFENSE ITEMS
+  cost: 2600
+  formula: (350*3.33+1200*3.0+15*40.0+127*3.33)/2600=222.63%
+  image: https://wr-meta.com/uploads/posts/2023-08/1691526146_3121.webp
+  name: Fimbulwinter (Awe - lv1 Voli 390 MP)
+  stats:
+  - type: Max Health
+    value: 350
+  - type: Max Mana
+    value: 1200
+  - type: Ability Haste
+    value: 15
+  - type: Max Health
+    value: 127
+- amount: 231.98%
+  category: DEFENSE ITEMS
+  cost: 2600
+  formula: (350*3.33+1200*3.0+15*40.0+200*3.33)/2600=231.98%
+  image: https://wr-meta.com/uploads/posts/2023-08/1691526146_3121.webp
+  name: Fimbulwinter (Awe - lv15 Voli 1300 MP)
+  stats:
+  - type: Max Health
+    value: 350
+  - type: Max Mana
+    value: 1200
+  - type: Ability Haste
+    value: 15
+  - type: Max Health
+    value: 200
+- amount: 93.53%
+  category: DEFENSE ITEMS
+  cost: 2850
+  formula: (350*3.33+50*25.0+5*50.0)/2850=93.53%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616974996_4401_tank_t3_forceofnature-min.png
+  name: Force of Nature
+  stats:
+  - type: Max Health
+    value: 350
+  - type: Magic Resistance
+    value: 50
+  - passive: Storm
+    type: '% Move Speed'
+    value: 5
+- amount: 111.07%
+  category: DEFENSE ITEMS
+  cost: 2850
+  formula: (350*3.33+50*25.0+5*50.0+10*50.0)/2850=111.07%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616974996_4401_tank_t3_forceofnature-min.png
+  name: Force of Nature (Absorb)
+  stats:
+  - type: Max Health
+    value: 350
+  - type: Magic Resistance
+    value: 50
+  - passive: Storm
+    type: '% Move Speed'
+    value: 5
+  - passive: Absorb
+    type: '% Move Speed'
+    value: 10
+- amount: 133.33%
+  category: DEFENSE ITEMS
+  cost: 2700
+  formula: (80*25.0+200*3.0+25*40.0)/2700=133.33%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616980284_1616954573_1616469878_3_24_21_patch22itempreviewarticle_frozenheart-min-min.jpg
+  name: Frozen Heart
+  stats:
+  - type: Armor
+    value: 80
+  - type: Max Mana
+    value: 200
+  - type: Ability Haste
+    value: 25
+- amount: 111.05%
+  category: DEFENSE ITEMS
+  cost: 2400
+  formula: (425*3.33+25*40.0+5*50.0)/2400=111.05%
+  image: https://wr-meta.com/uploads/posts/2022-01/1641813763_ixtali-seedjar.png
+  name: Ixtali Seedjar
+  stats:
+  - type: Max Health
+    value: 425
+  - type: Ability Haste
+    value: 25
+  - passive: Spring
+    type: '% Move Speed'
+    value: 5
+- amount: 94.42%
+  category: DEFENSE ITEMS
+  cost: 3000
+  formula: (250*3.33+50*25.0+30*25.0)/3000=94.42%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712774558_images.png
+  name: Dawnshroud
+  stats:
+  - type: Max Health
+    value: 250
+  - type: Armor
+    value: 50
+  - type: Magic Resistance
+    value: 30
+- amount: 95.43%
+  category: DEFENSE ITEMS
+  cost: 3100
+  formula: (60*25.0+60*25.0+-1*41.67)/3100=95.43%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712773182_amaranth_s-twinguard.png
+  name: Ruin - Amaranth's Twinguard (Withering - lv1)
+  stats:
+  - type: Armor
+    value: 60
+  - type: Magic Resistance
+    value: 60
+  - passive: Withering
+    type: Attack Damage
+    value: -1
+- amount: 76.61%
+  category: DEFENSE ITEMS
+  cost: 3100
+  formula: (60*25.0+60*25.0+-15*41.67)/3100=76.61%
+  image: https://wr-meta.com/uploads/posts/2024-04/1712773182_amaranth_s-twinguard.png
+  name: Ruin - Amaranth's Twinguard (Withering - lv15)
+  stats:
+  - type: Armor
+    value: 60
+  - type: Magic Resistance
+    value: 60
+  - passive: Withering
+    type: Attack Damage
+    value: -15
+- amount: 91.93%
+  category: DEFENSE ITEMS
+  cost: 2900
+  formula: (200*3.33+40*25.0+40*25.0)/2900=91.93%
+  image: https://wr-meta.com/uploads/posts/2023-03/1678401479_1mantle-of-the-twelfth-hour_11zon.webp
+  name: MANTLE OF THE TWELFTH HOUR
+  stats:
+  - type: Max Health
+    value: 200
+  - type: Armor
+    value: 40
+  - type: Magic Resistance
+    value: 40
+- amount: 83.30%
+  category: DEFENSE ITEMS
+  cost: 2700
+  formula: (300*3.33+50*25.0)/2700=83.30%
+  image: https://wr-meta.com/uploads/posts/2023-03/1678401625_searing-crown-edited_11zon.webp
+  name: SEARING CROWN
+  stats:
+  - type: Max Health
+    value: 300
+  - type: Armor
+    value: 50
+- amount: 104.37%
+  category: DEFENSE ITEMS
+  cost: 3000
+  formula: (700*3.33+150*0+20*40.0)/3000=104.37%
+  image: https://wr-meta.com/uploads/posts/2024-01/1705522930_heartsteel_item_hd.webp
+  name: Heartsteel
+  stats:
+  - type: Max Health
+    value: 700
+  - type: '% Health Regen'
+    value: 150
+  - type: Ability Haste
+    value: 20
+- amount: 155.60%
+  category: BOOTS
+  cost: 1400
+  formula: (35*41.67+45*16.0+7*0)/1400=155.60%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611110454_gluttonous-greaves.jpg
+  name: Gluttonous Greaves
+  stats:
+  - type: Attack Damage
+    value: 35
+  - type: Move Speed
+    value: 45
+  - passive: Conversion
+    type: '% Omnivamp'
+    value: 7
+- amount: 194.28%
+  category: BOOTS
+  cost: 1400
+  formula: (20*41.67+35*33.33+45*16.0)/1400=194.28%
+  image: https://wr-meta.com/uploads/posts/2023-07/1689775256_berserkers-greaves.webp
+  name: Berserker's Greaves
+  stats:
+  - type: Attack Damage
+    value: 20
+  - type: '% Attack Speed'
+    value: 35
+  - type: Move Speed
+    value: 45
+- amount: 167.48%
+  category: BOOTS
+  cost: 1350
+  formula: (200*3.33+100*0+35*25.0+45*16.0)/1350=167.48%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616983898_3111.png
+  name: Mercury's Treads
+  stats:
+  - type: Max Health
+    value: 200
+  - type: '% Health Regen'
+    value: 100
+  - type: Magic Resistance
+    value: 35
+  - type: Move Speed
+    value: 45
+- amount: 155.15%
+  category: BOOTS
+  cost: 1350
+  formula: (150*3.33+100*0+35*25.0+45*16.0)/1350=155.15%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616983981_3047.png
+  name: Plated Steelcaps
+  stats:
+  - type: Max Health
+    value: 150
+  - type: '% Health Regen'
+    value: 100
+  - type: Armor
+    value: 35
+  - type: Move Speed
+    value: 45
+- amount: 172.82%
+  category: BOOTS
+  cost: 1400
+  formula: (150*3.33+30*40.0+45*16.0)/1400=172.82%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616983907_3158.png
+  name: Ionian Boots of Lucidity
+  stats:
+  - type: Max Health
+    value: 150
+  - type: Ability Haste
+    value: 30
+  - type: Move Speed
+    value: 45
+- amount: 149.05%
+  category: BOOTS
+  cost: 1400
+  formula: (55*20.0+150*0+45*16.0+8*33.33)/1400=149.05%
+  image: https://wr-meta.com/uploads/posts/2023-07/1690225596_boots-of-mana-wild-rift-items.png
+  name: Boots of Mana
+  stats:
+  - type: Ability Power
+    value: 55
+  - type: '% Mana Regeneration'
+    value: 150
+  - type: Move Speed
+    value: 45
+  - passive: Magic Break
+    type: Magic Penetration
+    value: 8
+- amount: 155.59%
+  category: BOOTS
+  cost: 1400
+  formula: (30*41.67+45*16.0+10*20.82)/1400=155.59%
+  image: https://wr-meta.com/uploads/posts/2023-07/1689776288_boots-of-outburst.webp
+  name: Boots of Dynamism
+  stats:
+  - type: Attack Damage
+    value: 30
+  - type: Move Speed
+    value: 45
+  - passive: Strike
+    type: Armor Penetration
+    value: 10
+- amount: 83.34%
+  category: SUPPORT ITEMS
+  cost: 500
+  formula: (10*41.67)/500=83.34%
+  image: https://wr-meta.com/uploads/posts/2022-09/1663355123_spectral_sickle_item.webp
+  name: Spectral Sickle (Adaptive - AD)
+  stats:
+  - passive: Versatile
+    type: Attack Damage
+    value: 10
+- amount: 80.00%
+  category: SUPPORT ITEMS
+  cost: 500
+  formula: (20*20.0)/500=80.00%
+  image: https://wr-meta.com/uploads/posts/2022-09/1663355123_spectral_sickle_item.webp
+  name: Spectral Sickle (Adaptive - AP)
+  stats:
+  - passive: Versatile
+    type: Ability Power
+    value: 20
+- amount: 83.25%
+  category: SUPPORT ITEMS
+  cost: 500
+  formula: (125*3.33)/500=83.25%
+  image: https://wr-meta.com/uploads/posts/2022-09/1663355906_relic_shield_item.webp
+  name: Relic Shield
+  stats:
+  - type: Max Health
+    value: 125
+- amount: 93.28%
+  category: SUPPORT ITEMS
+  cost: 500
+  formula: (80*3.33+5*40.0)/500=93.28%
+  image: https://wr-meta.com/uploads/posts/2023-07/1689776983_staro3fytna_moneta_przedmiot.webp
+  name: Ancient Coin
+  stats:
+  - type: Max Health
+    value: 80
+  - type: Ability Haste
+    value: 5
+- amount: 196.68%
+  category: SUPPORT ITEMS
+  cost: 500
+  formula: (10*40.0+14*41.67)/500=196.68%
+  image: https://wr-meta.com/uploads/posts/2022-09/1663358054_black-mist-scythe_11zon.webp
+  name: 'Black Mist Scythe (Adaptive: AD)'
+  stats:
+  - type: Ability Haste
+    value: 10
+  - passive: Versatile
+    type: Attack Damage
+    value: 14
+- amount: 192.00%
+  category: SUPPORT ITEMS
+  cost: 500
+  formula: (10*40.0+28*20.0)/500=192.00%
+  image: https://wr-meta.com/uploads/posts/2022-09/1663358054_black-mist-scythe_11zon.webp
+  name: 'Black Mist Scythe (Adaptive: AP)'
+  stats:
+  - type: Ability Haste
+    value: 10
+  - passive: Versatile
+    type: Ability Power
+    value: 28
+- amount: 529.86%
+  category: SUPPORT ITEMS
+  cost: 500
+  formula: (10*40.0+14*41.67+250*3.33+20*41.67)/500=529.86%
+  image: https://wr-meta.com/uploads/posts/2022-09/1663358054_black-mist-scythe_11zon.webp
+  name: 'Black Mist Scythe (Adaptive: AD, Soulcast)'
+  stats:
+  - type: Ability Haste
+    value: 10
+  - passive: Versatile
+    type: Attack Damage
+    value: 14
+  - passive: Soulcast
+    type: Max Health
+    value: 250
+  - passive: Soulcast
+    type: Attack Damage
+    value: 20
+- amount: 518.50%
+  category: SUPPORT ITEMS
+  cost: 500
+  formula: (10*40.0+28*20.0+250*3.33+40*20.0)/500=518.50%
+  image: https://wr-meta.com/uploads/posts/2022-09/1663358054_black-mist-scythe_11zon.webp
+  name: 'Black Mist Scythe (Adaptive: AP, Soulcast)'
+  stats:
+  - type: Ability Haste
+    value: 10
+  - passive: Versatile
+    type: Ability Power
+    value: 28
+  - passive: Soulcast
+    type: Max Health
+    value: 250
+  - passive: Soulcast
+    type: Ability Power
+    value: 40
+- amount: 196.55%
+  category: SUPPORT ITEMS
+  cost: 500
+  formula: (175*3.33+10*40.0)/500=196.55%
+  image: https://wr-meta.com/uploads/posts/2022-09/1663356287_bulwark_of_the_mountain_item.webp
+  name: Bulwark of the Mountain
+  stats:
+  - type: Max Health
+    value: 175
+  - type: Ability Haste
+    value: 10
+- amount: 529.73%
+  category: SUPPORT ITEMS
+  cost: 500
+  formula: (175*3.33+10*40.0+250*3.33+20*41.67)/500=529.73%
+  image: https://wr-meta.com/uploads/posts/2022-09/1663356287_bulwark_of_the_mountain_item.webp
+  name: 'Bulwark of the Mountain (Adaptive: AD, Soulcast)'
+  stats:
+  - type: Max Health
+    value: 175
+  - type: Ability Haste
+    value: 10
+  - passive: Soulcast
+    type: Max Health
+    value: 250
+  - passive: Soulcast
+    type: Attack Damage
+    value: 20
+- amount: 523.05%
+  category: SUPPORT ITEMS
+  cost: 500
+  formula: (175*3.33+10*40.0+250*3.33+40*20.0)/500=523.05%
+  image: https://wr-meta.com/uploads/posts/2022-09/1663356287_bulwark_of_the_mountain_item.webp
+  name: 'Bulwark of the Mountain (Adaptive: AP, Soulcast)'
+  stats:
+  - type: Max Health
+    value: 175
+  - type: Ability Haste
+    value: 10
+  - passive: Soulcast
+    type: Max Health
+    value: 250
+  - passive: Soulcast
+    type: Ability Power
+    value: 40
+- amount: 203.25%
+  category: SUPPORT ITEMS
+  cost: 500
+  formula: (125*3.33+15*40.0)/500=203.25%
+  image: https://wr-meta.com/uploads/posts/2023-07/1689779391_talisman-of-ascension.webp
+  name: Talisman of Ascension
+  stats:
+  - type: Max Health
+    value: 125
+  - type: Ability Haste
+    value: 15
+- amount: 536.43%
+  category: SUPPORT ITEMS
+  cost: 500
+  formula: (125*3.33+15*40.0+250*3.33+20*41.67)/500=536.43%
+  image: https://wr-meta.com/uploads/posts/2023-07/1689779391_talisman-of-ascension.webp
+  name: 'Talisman of Ascension (Adaptive: AD, Soulcast)'
+  stats:
+  - type: Max Health
+    value: 125
+  - type: Ability Haste
+    value: 15
+  - passive: Soulcast
+    type: Max Health
+    value: 250
+  - passive: Soulcast
+    type: Attack Damage
+    value: 20
+- amount: 529.75%
+  category: SUPPORT ITEMS
+  cost: 500
+  formula: (125*3.33+15*40.0+250*3.33+40*20.0)/500=529.75%
+  image: https://wr-meta.com/uploads/posts/2023-07/1689779391_talisman-of-ascension.webp
+  name: 'Talisman of Ascension (Adaptive: AP, Soulcast)'
+  stats:
+  - type: Max Health
+    value: 125
+  - type: Ability Haste
+    value: 15
+  - passive: Soulcast
+    type: Max Health
+    value: 250
+  - passive: Soulcast
+    type: Ability Power
+    value: 40
+- amount: 100%
+  category: MID TIER ITEMS
+  cost: 1200
+  formula: Base Item
+  image: https://wr-meta.com/uploads/posts/2021-03/1616985546_1053.png
+  name: Vampiric Scepter
+  second_base:
+    formula: (1200-20*41.67)/10=36.66
+    type: '% Physical Vamp'
+    value: 36.66
+  stats:
+  - type: Attack Damage
+    value: 20
+  - type: '% Physical Vamp'
+    value: 10
+- amount: 107.14%
+  category: MID TIER ITEMS
+  cost: 1400
+  formula: (15*50.0+15*33.33+5*50.0)/1400=107.14%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616985588_3086.png
+  name: Zeal
+  stats:
+  - type: '% Critical Rate'
+    value: 15
+  - type: '% Attack Speed'
+    value: 15
+  - passive: Fervor
+    type: '% Move Speed'
+    value: 5
+- amount: 74.07%
+  category: MID TIER ITEMS
+  cost: 900
+  formula: (20*33.33)/900=74.07%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616985587_2015.png
+  name: Kircheis Shard
+  stats:
+  - type: '% Attack Speed'
+    value: 20
+- amount: 100%
+  category: MID TIER ITEMS
+  cost: 1000
+  formula: Base Item
+  image: https://wr-meta.com/uploads/posts/2021-03/1616985626_3134.png
+  name: Serrated Dirk
+  second_base:
+    formula: (1000-20*41.67)/8=20.82
+    type: Armor Penetration
+    value: 20.82
+  stats:
+  - type: Attack Damage
+    value: 20
+  - passive: Sharp
+    type: Armor Penetration
+    value: 8
+- amount: 71.42%
+  category: MID TIER ITEMS
+  cost: 1400
+  formula: (30*33.33)/1400=71.42%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616985621_1043.png
+  name: Recurve Bow
+  stats:
+  - type: '% Attack Speed'
+    value: 30
+- amount: 111.12%
+  category: MID TIER ITEMS
+  cost: 1500
+  formula: (40*41.67)/1500=111.12%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616985610_1038.png
+  name: B. F. Sword
+  stats:
+  - type: Attack Damage
+    value: 40
+- amount: 100.00%
+  category: MID TIER ITEMS
+  cost: 1000
+  formula: (20*50.0)/1000=100.00%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616985612_1018.png
+  name: Cloak of Agility
+  stats:
+  - type: '% Critical Rate'
+    value: 20
+- amount: 100%
+  category: MID TIER ITEMS
+  cost: 1300
+  formula: Base Item
+  image: https://wr-meta.com/uploads/posts/2021-01/1611440927_last-whisper.png
+  name: Last Whisper
+  second_base:
+    formula: (1300-15*41.67)/15=45.0
+    type: '% Armor Penetration'
+    value: 45.0
+  stats:
+  - type: Attack Damage
+    value: 15
+  - passive: Last Whisper
+    type: '% Armor Penetration'
+    value: 15
+- amount: 78.13%
+  category: MID TIER ITEMS
+  cost: 800
+  formula: (15*41.67)/800=78.13%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616985718_3123.png
+  name: Executioner's Calling
+  stats:
+  - type: Attack Damage
+    value: 15
+- amount: 112.46%
+  category: MID TIER ITEMS
+  cost: 1000
+  formula: (150*3.33+15*41.67)/1000=112.46%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616985701_3044.png
+  name: Phage
+  stats:
+  - type: Max Health
+    value: 150
+  - type: Attack Damage
+    value: 15
+- amount: 144.46%
+  category: MID TIER ITEMS
+  cost: 1000
+  formula: (150*3.33+15*41.67+20*16.0)/1000=144.46%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616985701_3044.png
+  name: Phage (Rage - AA - Melee)
+  stats:
+  - type: Max Health
+    value: 150
+  - type: Attack Damage
+    value: 15
+  - passive: Rage
+    type: Move Speed
+    value: 20
+- amount: 128.46%
+  category: MID TIER ITEMS
+  cost: 1000
+  formula: (150*3.33+15*41.67+10*16.0)/1000=128.46%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616985701_3044.png
+  name: Phage (Rage - AA - Range)
+  stats:
+  - type: Max Health
+    value: 150
+  - type: Attack Damage
+    value: 15
+  - passive: Rage
+    type: Move Speed
+    value: 10
+- amount: 208.46%
+  category: MID TIER ITEMS
+  cost: 1000
+  formula: (150*3.33+15*41.67+60*16.0)/1000=208.46%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616985701_3044.png
+  name: Phage (Rage - Kill - Melee)
+  stats:
+  - type: Max Health
+    value: 150
+  - type: Attack Damage
+    value: 15
+  - passive: Rage
+    type: Move Speed
+    value: 60
+- amount: 160.46%
+  category: MID TIER ITEMS
+  cost: 1000
+  formula: (150*3.33+15*41.67+30*16.0)/1000=160.46%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616985701_3044.png
+  name: Phage (Rage - Kill - Range)
+  stats:
+  - type: Max Health
+    value: 150
+  - type: Attack Damage
+    value: 15
+  - passive: Rage
+    type: Move Speed
+    value: 30
+- amount: 116.66%
+  category: MID TIER ITEMS
+  cost: 1200
+  formula: (30*33.33+10*40.0)/1200=116.66%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616985695_winged_moonplate_item_hd.jpg
+  name: Stinger
+  stats:
+  - type: '% Attack Speed'
+    value: 30
+  - type: Ability Haste
+    value: 10
+- amount: 120.15%
+  category: MID TIER ITEMS
+  cost: 1200
+  formula: (25*41.67+10*40.0)/1200=120.15%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611441611_caulfields-warhammer.png
+  name: Caulfield's Warhammer
+  stats:
+  - type: Attack Damage
+    value: 25
+  - type: Ability Haste
+    value: 10
+- amount: 109.80%
+  category: MID TIER ITEMS
+  cost: 1100
+  formula: (175*3.33+15*41.67)/1100=109.80%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611444901_jaurims-fist.png
+  name: Jaurim's Fist
+  stats:
+  - type: Max Health
+    value: 175
+  - type: Attack Damage
+    value: 15
+- amount: 144.44%
+  category: MID TIER ITEMS
+  cost: 900
+  formula: (300*3.0+10*40.0)/900=144.44%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611442459_tear-of-the-goddess.png
+  name: Tear of the Goddess
+  stats:
+  - type: Max Mana
+    value: 300
+  - type: Ability Haste
+    value: 10
+- amount: 100%
+  category: MID TIER ITEMS
+  cost: 950
+  formula: Base Item
+  image: https://wr-meta.com/uploads/posts/2021-01/1611442631_aether-wisp.png
+  name: Aether Wisp
+  second_base:
+    formula: (950-35*20.0)/5=50.0
+    type: '% Move Speed'
+    value: 50.0
+  stats:
+  - type: Ability Power
+    value: 35
+  - passive: Wisp
+    type: '% Move Speed'
+    value: 5
+- amount: 133.33%
+  category: MID TIER ITEMS
+  cost: 900
+  formula: (30*20.0+200*3.0)/900=133.33%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616985899_3802.png
+  name: Lost Chapter
+  stats:
+  - type: Ability Power
+    value: 30
+  - type: Max Mana
+    value: 200
+- amount: 110.00%
+  category: MID TIER ITEMS
+  cost: 1000
+  formula: (35*20.0+10*40.0)/1000=110.00%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616985893_3108.png
+  name: Fiendish Codex
+  stats:
+  - type: Ability Power
+    value: 35
+  - type: Ability Haste
+    value: 10
+- amount: 88.89%
+  category: MID TIER ITEMS
+  cost: 900
+  formula: (40*20.0)/900=88.89%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616985924_1026.png
+  name: Blasting Wand
+  stats:
+  - type: Ability Power
+    value: 40
+- amount: 80.00%
+  category: MID TIER ITEMS
+  cost: 1500
+  formula: (60*20.0)/1500=80.00%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616985984_1058.png
+  name: Needlessly Large Rod
+  stats:
+  - type: Ability Power
+    value: 60
+- amount: 103.67%
+  category: MID TIER ITEMS
+  cost: 900
+  formula: (100*3.33+30*20.0)/900=103.67%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611443224_haunting-guise.png
+  name: Haunting Guise
+  stats:
+  - type: Max Health
+    value: 100
+  - type: Ability Power
+    value: 30
+- amount: 50.00%
+  category: MID TIER ITEMS
+  cost: 800
+  formula: (10*40.0)/800=50.00%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616985975_3057.png
+  name: Sheen
+  stats:
+  - type: Ability Haste
+    value: 10
+- amount: 87.50%
+  category: MID TIER ITEMS
+  cost: 800
+  formula: (35*20.0)/800=87.50%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616985971_3916.png
+  name: Oblivion Orb
+  stats:
+  - type: Ability Power
+    value: 35
+- amount: 100%
+  category: MID TIER ITEMS
+  cost: 1000
+  formula: Base Item
+  image: https://wr-meta.com/uploads/posts/2022-01/1641814345_prophets-pendant.png
+  name: Prophet's Pendant
+  second_base:
+    formula: (1000-30*20.0)/12=33.33
+    type: Magic Penetration
+    value: 33.33
+  stats:
+  - type: Ability Power
+    value: 30
+  - passive: Doomsayer
+    type: Magic Penetration
+    value: 12
+- amount: 64.04%
+  category: MID TIER ITEMS
+  cost: 1300
+  formula: (250*3.33)/1300=64.04%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616986281_6660.png
+  name: Bami's Cinder
+  stats:
+  - type: Max Health
+    value: 250
+- amount: 98.43%
+  category: MID TIER ITEMS
+  cost: 1100
+  formula: (175*3.33+20*25.0)/1100=98.43%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616986306_3211.png
+  name: Spectre's Cowl
+  stats:
+  - type: Max Health
+    value: 175
+  - type: Magic Resistance
+    value: 20
+- amount: 98.28%
+  category: MID TIER ITEMS
+  cost: 1000
+  formula: (175*3.33+10*40.0)/1000=98.28%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616986347_3067.png
+  name: Kindlegem
+  stats:
+  - type: Max Health
+    value: 175
+  - type: Ability Haste
+    value: 10
+- amount: 99.90%
+  category: MID TIER ITEMS
+  cost: 1000
+  formula: (300*3.33)/1000=99.90%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616986359_1011.png
+  name: Giant's Belt
+  stats:
+  - type: Max Health
+    value: 300
+- amount: 83.33%
+  category: MID TIER ITEMS
+  cost: 1050
+  formula: (35*25.0)/1050=83.33%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616986370_3082.png
+  name: Warden's Mail
+  stats:
+  - type: Armor
+    value: 35
+- amount: 142.36%
+  category: MID TIER ITEMS
+  cost: 1100
+  formula: (200*3.33+300*3.0)/1100=142.36%
+  image: https://wr-meta.com/uploads/posts/2021-01/1611444645_catalyst-of-aeons.png
+  name: Catalyst of Aeons
+  stats:
+  - type: Max Health
+    value: 200
+  - type: Max Mana
+    value: 300
+- amount: 111.11%
+  category: MID TIER ITEMS
+  cost: 900
+  formula: (40*25.0)/900=111.11%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616986413_1031.png
+  name: Chain Vest
+  stats:
+  - type: Armor
+    value: 40
+- amount: 75.00%
+  category: MID TIER ITEMS
+  cost: 1000
+  formula: (30*25.0)/1000=75.00%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616986594_3076.png
+  name: Bramble Vest
+  stats:
+  - type: Armor
+    value: 30
+- amount: 121.22%
+  category: MID TIER ITEMS
+  cost: 1100
+  formula: (20*41.67+20*25.0)/1100=121.22%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616986547_3155.png
+  name: Hexdrinker
+  stats:
+  - type: Attack Damage
+    value: 20
+  - type: Magic Resistance
+    value: 20
+- amount: 111.11%
+  category: MID TIER ITEMS
+  cost: 900
+  formula: (40*25.0)/900=111.11%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616986529_1057.png
+  name: Negatron Cloak
+  stats:
+  - type: Magic Resistance
+    value: 40
+- amount: 135.00%
+  category: MID TIER ITEMS
+  cost: 1000
+  formula: (20*25.0+150*3.0+10*40.0)/1000=135.00%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616986572_3024.png
+  name: Glacial Shroud
+  stats:
+  - type: Armor
+    value: 20
+  - type: Max Mana
+    value: 150
+  - type: Ability Haste
+    value: 10
+- amount: 83.28%
+  category: MID TIER ITEMS
+  cost: 900
+  formula: (150*3.33+5*50.0)/900=83.28%
+  image: https://wr-meta.com/uploads/posts/2021-03/1616981123_winged_moonplate_item_hd-min.png
+  name: Winged Moonplate
+  stats:
+  - type: Max Health
+    value: 150
+  - passive: Flight
+    type: '% Move Speed'
+    value: 5
+- amount: 104.17%
+  category: MID TIER ITEMS
+  cost: 1200
+  formula: (30*25.0+25*20.0)/1200=104.17%
+  image: https://wr-meta.com/uploads/posts/2022-01/1641809649_seekers-armguard.png
+  name: Seeker's Armguard
+  stats:
+  - type: Armor
+    value: 30
+  - type: Ability Power
+    value: 25
+- amount: 104.18%
+  category: MID TIER ITEMS
+  cost: 800
+  formula: (20*41.67)/800=104.18%
+  image: https://wr-meta.com/uploads/posts/2023-10/1698258000_nashors-talon.png
+  name: 'Nashor''s Talon (Adaptive: AD)'
+  stats:
+  - passive: Magic Needle
+    type: Attack Damage
+    value: 20
+- amount: 100.00%
+  category: MID TIER ITEMS
+  cost: 800
+  formula: (40*20.0)/800=100.00%
+  image: https://wr-meta.com/uploads/posts/2023-10/1698258000_nashors-talon.png
+  name: 'Nashor''s Talon (Adaptive: AP)'
+  stats:
+  - passive: Magic Needle
+    type: Ability Power
+    value: 40
+- amount: 114.20%
+  category: MID TIER ITEMS
+  cost: 1350
+  formula: (25*41.67+15*33.33)/1350=114.20%
+  image: https://wr-meta.com/uploads/posts/2023-05/1685137714_noonquiver_item.webp
+  name: Noonquiver
+  stats:
+  - type: Attack Damage
+    value: 25
+  - type: '% Attack Speed'
+    value: 15
+- amount: 71.39%
+  category: MID TIER ITEMS
+  cost: 1400
+  formula: (150*3.33+25*20.0)/1400=71.39%
+  image: https://wr-meta.com/uploads/posts/2023-10/1698176528_hextech_alternator_item.webp
+  name: Hextech Alternator
+  stats:
+  - type: Max Health
+    value: 150
+  - type: Ability Power
+    value: 25
+- amount: 40.73%
+  category: MID TIER ITEMS
+  cost: 1800
+  formula: (70*3.33+25*20.0+7*0)/1800=40.73%
+  image: https://wr-meta.com/uploads/posts/2023-10/1698177176_mejai27s_soulstealer_item_hd.webp
+  name: Mejai's Soulstealer
+  stats:
+  - type: Max Health
+    value: 70
+  - type: Ability Power
+    value: 25
+  - type: '% Magic Penetration'
+    value: 7
+- amount: 235.17%
+  category: MID TIER ITEMS
+  cost: 1800
+  formula: (70*3.33+25*20.0+7*0+150*20.0+10*50.0)/1800=235.17%
+  image: https://wr-meta.com/uploads/posts/2023-10/1698177176_mejai27s_soulstealer_item_hd.webp
+  name: Mejai's Soulstealer (Fear)
+  stats:
+  - type: Max Health
+    value: 70
+  - type: Ability Power
+    value: 25
+  - type: '% Magic Penetration'
+    value: 7
+  - passive: Fear
+    type: Ability Power
+    value: 150
+  - passive: Fear
+    type: '% Move Speed'
+    value: 10
+- amount: 76.92%
+  category: MID TIER ITEMS
+  cost: 1300
+  formula: (40*25.0)/1300=76.92%
+  image: https://wr-meta.com/uploads/posts/2023-10/1698258154_surging-scales.png
+  name: Surging Scales
+  stats:
+  - type: Armor
+    value: 40
+- amount: 100%
+  category: BASIC ITEMS
+  cost: 400
+  first_base:
+    formula: 400/25=16.0
+    type: Move Speed
+    value: 16.0
+  formula: Base Item
+  image: https://wr-meta.com/uploads/posts/2021-03/1616983879_1001.png
+  name: Boots of Speed
+  stats:
+  - type: Move Speed
+    value: 25
+- amount: 100%
+  category: BASIC ITEMS
+  cost: 500
+  first_base:
+    formula: 500/12=41.67
+    type: Attack Damage
+    value: 41.67
+  formula: Base Item
+  image: https://wr-meta.com/uploads/posts/2021-03/1616984608_1036.png
+  name: Long Sword
+  stats:
+  - type: Attack Damage
+    value: 12
+- amount: 100%
+  category: BASIC ITEMS
+  cost: 500
+  first_base:
+    formula: 500/10=50.0
+    type: '% Critical Rate'
+    value: 50.0
+  formula: Base Item
+  image: https://wr-meta.com/uploads/posts/2021-01/1611439147_brawlers-gloves.png
+  name: Brawler's Gloves
+  stats:
+  - type: '% Critical Rate'
+    value: 10
+- amount: 100%
+  category: BASIC ITEMS
+  cost: 500
+  first_base:
+    formula: 500/15=33.33
+    type: '% Attack Speed'
+    value: 33.33
+  formula: Base Item
+  image: https://wr-meta.com/uploads/posts/2021-03/1616984536_1042.png
+  name: Dagger
+  stats:
+  - type: '% Attack Speed'
+    value: 15
+- amount: 33.30%
+  category: BASIC ITEMS
+  cost: 500
+  formula: (50*3.33)/500=33.30%
+  image: https://wr-meta.com/uploads/posts/2023-08/1691501496_shimmering-spark.webp
+  name: Shimmering Spark
+  stats:
+  - type: Max Health
+    value: 50
+- amount: 100%
+  category: BASIC ITEMS
+  cost: 500
+  formula: Base Item
+  image: https://wr-meta.com/uploads/posts/2021-03/1616984672_1027.png
+  name: Sapphire Crystal
+  second_base:
+    formula: (500-5*40.0)/100=3.0
+    type: Max Mana
+    value: 3.0
+  stats:
+  - type: Max Mana
+    value: 100
+  - type: Ability Haste
+    value: 5
+- amount: 100%
+  category: BASIC ITEMS
+  cost: 500
+  first_base:
+    formula: 500/25=20.0
+    type: Ability Power
+    value: 20.0
+  formula: Base Item
+  image: https://wr-meta.com/uploads/posts/2021-03/1616984688_1052.png
+  name: Amplifying Tome
+  stats:
+  - type: Ability Power
+    value: 25
+- amount: 100%
+  category: BASIC ITEMS
+  cost: 500
+  first_base:
+    formula: 500/150=3.33
+    type: Max Health
+    value: 3.33
+  formula: Base Item
+  image: https://wr-meta.com/uploads/posts/2021-03/1616984790_1028.png
+  name: Ruby Crystal
+  stats:
+  - type: Max Health
+    value: 150
+- amount: 100%
+  category: BASIC ITEMS
+  cost: 500
+  first_base:
+    formula: 500/20=25.0
+    type: Armor
+    value: 25.0
+  formula: Base Item
+  image: https://wr-meta.com/uploads/posts/2021-03/1616984728_1029.png
+  name: Cloth Armor
+  stats:
+  - type: Armor
+    value: 20
+- amount: 100%
+  category: BASIC ITEMS
+  cost: 500
+  first_base:
+    formula: 500/20=25.0
+    type: Magic Resistance
+    value: 25.0
+  formula: Base Item
+  image: https://wr-meta.com/uploads/posts/2021-03/1616984832_1033.png
+  name: Null-Magic Mantle
+  stats:
+  - type: Magic Resistance
+    value: 20
+- amount: 100%
+  category: BASIC ITEMS
+  cost: 400
+  first_base:
+    formula: 400/10=40.0
+    type: Ability Haste
+    value: 40.0
+  formula: Base Item
+  image: https://wr-meta.com/uploads/posts/2023-10/1698258042_ring-of-revelation.png
+  name: Ring of Revelation
+  second_base:
+    formula: (400)/10=40.0
+    type: Ability Haste
+    value: 40.0
+  stats:
+  - type: Ability Haste
+    value: 10
