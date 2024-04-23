@@ -18,20 +18,33 @@ After some time, I came across another website, [<img src="https://wr-meta.com/f
 
 Merging the calculation **formula** from [<img src="https://static.wikia.nocookie.net/leagueoflegends/images/e/e6/Site-logo.png" width="17" height="17">](https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)) with the **style** of [<img src="https://wr-meta.com/favicon.png" width="15" height="15">](https://wr-meta.com/items/), and **manually updating** the item data myself. Thus, this website was born out of this concept.
 
-## Installation (for developer)
+## Installation (for contributer)
 
-0. [Installation | Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/installation/)
-1. Clone this project via `git`:
+1. [Installation | Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/installation/)
+2. Clone this project via `git`:
     ```
     git clone git@github.com:changchiyou/wildrift-gold-efficiency.git; cd wildrift-gold-efficiency
     ```
-2. Update `bundle` & Install dependencies from [Gemfile](/Gemfile):
+3. Update `bundle` & Install dependencies from [Gemfile](/Gemfile):
     ```
     bundle update; bundle install
     ```
-3. [Serve the Site](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/#serve-the-site):
+4. [Serve the Site](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/#serve-the-site):
     ```
     bundle exec jekyll serve
+    ```
+
+## Update gold efficiency
+
+1. Manually update item data in [item.yml](/_data/items.yml) ( and images' reference in [images.yml](/_data/images.yml)).
+2. Install python dependencies and execute [data.py](/data.py) to re-calculate gold efficiency:
+
+    ```
+    pip install -r requirements.txt
+    ```
+
+    ```
+    python data.py -c
     ```
 
 

@@ -5,6 +5,8 @@ import bs4
 import requests
 from bs4 import BeautifulSoup
 from yaml import dump, load
+import argparse
+import logging
 
 try:
     from yaml import CDumper as Dumper
@@ -13,9 +15,9 @@ except ImportError:
     from yaml import Dumper, Loader
 
 
-class Scraping:
-    def __init__(self):
-        self.main_url = "https://wr-meta.com"
+class ItemData:
+    def __init__(self, data_file_name: str | None = None):
+        self.main_url = "https://wr-meta.com/items/"
         self.stat_names = [
             "Attack Damage",
             "Ability Power",
@@ -60,6 +62,7 @@ class Scraping:
         }
         self.datas = []
         self.stat_price = {}
+        self.data_file_name = data_file_name or "items.yml"
 
     def parse_stat(self, stat: str) -> tuple[str, int] | None:
         try:
@@ -76,29 +79,34 @@ class Scraping:
 
     def get_abs_filename(self) -> str:
         script_dir = os.path.dirname(os.path.realpath(__file__))
-        file_path = os.path.join(script_dir, f"./_data/items.yml")
+        file_path = os.path.join(script_dir, f"./_data/{self.data_file_name}")
 
         return file_path
 
     def write_yaml(self):
+        logging.info(f"write `datas` into {self.data_file_name}")
         file_path = self.get_abs_filename()
 
         with open(file_path, "w") as f:
             dump(self.datas, f, Dumper=Dumper)
 
     def read_yaml(self):
+        logging.info(f"read `datas` from {self.data_file_name}")
         file_path = self.get_abs_filename()
 
         with open(file_path, 'r') as f:
             return load(f, Loader=Loader)
 
-    def scrap(self):
+    def scraping(self):
+        logging.info("extract item data from WR Meta via web scraping")
         try:
-            response = requests.get(f"{self.main_url}/items/", timeout=10)
+            logging.info("request WR Meta item page")
+            response = requests.get(f"{self.main_url}", timeout=10)
             soup = BeautifulSoup(response.text, "html.parser")
 
             items = soup.find_all(class_="bild-img-short")
 
+            logging.info("parse with bs4 and store into `datas`")
             for item in items:
                 image = item.find(class_="xfieldimage lazy-loaded itemimage")
                 desc = item.find("p")
@@ -161,6 +169,7 @@ class Scraping:
                     }
                 )
 
+            logging.info("write `datas` into yml")
             self.write_yaml()
 
         except requests.exceptions.ConnectTimeout as execinfo:
@@ -177,6 +186,7 @@ class Scraping:
                 return stat
 
     def calculate_base_statistic_prices(self):
+        logging.info("calculate base statistic prices")
         if self.datas:
             datas = self.datas
         else:
@@ -184,6 +194,7 @@ class Scraping:
         first_base = self.bases['first_base']
         second_base = self.bases['second_base']
 
+        logging.info("  - first base")
         for _type in first_base:
             _name = first_base[_type]
 
@@ -197,6 +208,7 @@ class Scraping:
             data['first_base'] = {'type': _type, 'value': stat_cost, 'formula': f"{data['cost']}/{target_stat['value']}={stat_cost}"}
             self.stat_price[_type] = stat_cost
 
+        logging.info("  - second base")
         for _type in second_base:
             _name = second_base[_type]
 
@@ -221,9 +233,11 @@ class Scraping:
             self.stat_price[_type] = stat_cost
 
         self.datas = datas
+        logging.info("write `datas` into yml")
         self.write_yaml()
 
     def calculate_gold_efficiency(self):
+        logging.info("calculate gold efficiency based on base statistic prices")
         if self.datas:
             datas = self.datas
         else:
@@ -254,12 +268,21 @@ class Scraping:
         self.datas = datas
         self.write_yaml()
 
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Extract data from WR Meta via web scraping, or calculate the gold efficiency of item data.')
+    parser.add_argument('-f', '--data_file_name', help="The file storage item data")
+    parser.add_argument('-s', '--scraping', action="store_true", help="Extract data from WR Meta via web scraping (Due to missing or incorrect information on the source website, it is advised not to use this feature)")
+    parser.add_argument('-c', '--calculate', action="store_true", help="Calculate the gold efficiency of item data")
+    parser.add_argument('-d', '--debug', action='store_true', help="Enable debug mode")
 
+    args = parser.parse_args()
 
-scraping = Scraping()
+    logger = logging.getLogger()
+    logger.setLevel(logging.DEBUG if args.debug else logging.INFO)
 
-# Due to missing or incorrect information on the source website, it is advised not to use it.
-# scraping.scrap()
-
-scraping.calculate_base_statistic_prices()
-scraping.calculate_gold_efficiency()
+    item_data = ItemData(data_file_name=args.data_file_name)
+    if args.scraping is True:
+        item_data.scraping()
+    if args.calculate is True:
+        item_data.calculate_base_statistic_prices()
+        item_data.calculate_gold_efficiency()
