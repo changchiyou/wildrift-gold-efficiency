@@ -76,47 +76,18 @@ hr {
   border-color:#cccccc;
 }
 
-$info: #CDE8F6;
-$info-text: #447EAF;
-$warn: #F8F4D5;
-$warn-text: #96722E;
-$error: #ECC8C5;
-$error-text: #B83C37;
-$success: #DDF3D5;
-$success-text: #597151;
-
-.warning {
+.panel {
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
-  color: #8a6d3b;
-  background-color: #fcf8e3;
   border-color: #faebcc;
 }
 
-.warning strong {
+.panel strong {
   font-weight: bold;
 }
 
-.warning p {
-  margin: 0;
-}
-
-.info {
-  padding: 15px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  color: #447EAF;
-  background-color: #CDE8F6;
-  border-color: #faebcc;
-}
-
-.info strong {
-  font-weight: bold;
-}
-
-.info p {
+.panel p {
   margin: 0;
 }

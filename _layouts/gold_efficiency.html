@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="info">
+<div class="panel">
     <p>
         <strong>Info</strong><br>
         The Gold efficiency of an item tells you how much stats it provides for its price (gold cost). This is a theoretical value with no direct game impact, used mainly to compare items.
@@ -10,7 +10,13 @@ layout: default
     </p>
 </div>
 
-<br>
+<div class="panel">
+    <p>
+        <strong>Note</strong><br>
+        If you discover any item data, calculations that are incorrect or outdated and require updating, please remind me at
+        <a href="https://github.com/changchiyou/wildrift-gold-efficiency/issues/new?assignees=&labels=&projects=&template=update_notification.md&title=Update%20Needed">{% include icon-github.svg %} Issue: Update notification</a>.
+    </p>
+</div>
 
 <hr>
 
@@ -19,7 +25,7 @@ layout: default
 <h3 id="Base-Statistic-Prices">Base Statistic Prices</h3>
 
 {% assign excludes = "% Magic Penetration|% Omnivamp|% Health Regen|% Mana Regeneration" | split: "|" %}
-<div class="warning">
+<div class="panel">
     <p>
         <strong>Warning</strong><br>
         {% for exclude in excludes %}
