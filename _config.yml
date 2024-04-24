@@ -50,8 +50,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - data.py
+  - requirements.txt
   - vendor
   - .trunk/
+  - LICENSE
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
