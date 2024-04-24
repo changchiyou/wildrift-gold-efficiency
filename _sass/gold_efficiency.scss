@@ -1,0 +1,35 @@
+  @media screen and (min-width: 1200px) {
+    div.wrapper {margin-left:20%;}
+    nav.toc-fixed {position:fixed;top:50px;left:2%;max-width:20%}
+    nav.toc-fixed ul {padding-left:0;}
+  }
+
+  .nav.toc-fixed a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  hr {
+    border-color:#cccccc;
+  }
+  
+  .panel {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    border-color: #faebcc;
+  }
+  
+  .panel strong {
+    font-weight: bold;
+  }
+  
+  .panel p {
+    margin: 0;
+  }
+
+  @import
+    "gold_efficiency/img",
+    "gold_efficiency/table"
+  ;

@@ -1,0 +1,35 @@
+  table {
+    font-family: 'DIN Pro', sans-serif;
+    font-weight: 700;
+  }
+  
+  td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .goldt {
+    color: #fff700;
+  }
+  
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #f7f7f7
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    white-space: nowrap;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
