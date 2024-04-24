@@ -3,4 +3,4 @@
 {% else %}
     {% assign prefix = "" %}
 {% endif %}
-{{- prefix -}}<img loading="lazy" src="{{ site.data.images[include.type] }}" class="stat_icon">
+{{- prefix -}}<img loading="lazy" src="{{ site.data.stats[include.type].image }}" class="stat_icon">

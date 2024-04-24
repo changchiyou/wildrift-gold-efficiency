@@ -47,10 +47,11 @@ exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
-#   - Gemfile
+  - Gemfile
   - Gemfile.lock
   - data.py
   - vendor
+  - .trunk/
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
