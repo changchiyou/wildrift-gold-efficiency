@@ -1,6 +1,20 @@
 ---
 layout: default
 ---
+
+<div class="panel">
+    <p>
+        <strong>Disclaimer</strong><br>
+        I,
+        <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" target="_blank"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">{{ site.github_username| escape }}</span></a>,
+        <strong>DO NOT</strong> own the intellectual property of all resources on this website. This website is a combination of the gold efficiency calculation formula from
+        <a href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)"><img src="https://static.wikia.nocookie.net/leagueoflegends/images/e/e6/Site-logo.png" width="17" height="17"> Gold efficiency (Wild Rift) | League of Legends Wiki</a>
+        with the design elements from
+        <a href="https://wr-meta.com/items/"><img src="https://wr-meta.com/favicon.png" width="15" height="15"> WR META - LoL Wild Rift All Items and Runes</a>,
+        featuring manually updated item data for <a href="https://wildrift.leagueoflegends.com/"><img src="https://images.contentstack.io/v3/assets/blt370612131b6e0756/bltf17a9343be9691fd/60090ec35ad9610f6cb77432/WR_favicon_32x32.svg" width="17" height="17"> Wild Rift</a>.
+    </p>
+</div>
+
 <div class="panel">
     <p>
         <strong>Info</strong><br>
@@ -10,16 +24,8 @@ layout: default
     </p>
 </div>
 
-<div class="panel">
-    <p>
-        <strong>Note</strong><br>
-        If you discover any item data, calculations that are incorrect or outdated and require updating, please remind me at
-        <a href="https://github.com/changchiyou/wildrift-gold-efficiency/issues/new?assignees=&labels=&projects=&template=update_notification.md&title=Update%20Needed" target="_blank">{% include icon-github.svg %} Issue: Update notification</a>.
-    </p>
-</div>
-
+<br>
 <hr>
-
 <br>
 
 <h3 id="Base-Statistic-Prices">Base Statistic Prices</h3>
@@ -53,3 +59,13 @@ layout: default
 {%- include items_table.html data=page.data category="MID TIER ITEMS" anchor="MID-TIER-ITEMS" -%}
 
 {%- include items_table.html data=page.data category="BASIC ITEMS" anchor="BASIC-ITEMS" -%}
+
+<div class="panel">
+    <p>
+        <strong>How to contribute</strong><br>
+        <ul>
+            <li>If you discover any item data, calculations that are incorrect or outdated and require updating, please remind me with <a href="https://github.com/changchiyou/wildrift-gold-efficiency/issues/new?assignees=&labels=&projects=&template=update_notification.md&title=Update%20Needed" target="_blank">{% include icon-github.svg %} Issue: Update notification</a>.</li>
+            <li>If you have any ideas for contributing new features or improving the design and layout, please feel welcome to submit a PR at <a href="https://github.com/changchiyou/wildrift-gold-efficiency" target="_blank">{% include icon-github.svg %} changchiyou/wildrift-gold-efficiency</a>.</li>
+        </ul>
+    </p>
+</div>
