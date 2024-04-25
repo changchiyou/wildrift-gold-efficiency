@@ -25,6 +25,9 @@ baseurl: "/wildrift-gold-efficiency" # the subpath of your site, e.g. /blog
 url: "https://changchiyou.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 logo: /assets/favicon.png
 
+author:
+  name: changchiyou
+  url: https://github.com/changchiyou
 github_username: changchiyou
 google_analytics: "G-3L01ZGR9QJ"
 
