@@ -1,0 +1,17 @@
+---
+layout: gold_efficiency
+
+title: 5.1
+date: 2024/04/19 12:02 a.m.
+description: A hotfix for KALISTA, LIGHT - HORIZON FOCUS, LIGHT - INFINITY ORB
+image: /assets/favicon.png
+
+permalink: /5.1/
+redirect_from: /
+
+data_refer_url: https://x.com/wildrift/status/1780990172869366111
+data_refer_text: 5.1 hotfix
+
+items: items_5_1
+stats: stats_5_1
+---

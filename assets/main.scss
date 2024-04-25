@@ -9,5 +9,6 @@ $grey-color-dark: #cccccc; /* such as the site title in the header, visited */
 
 @import 
   "{{ site.theme }}",
-  "gold_efficiency.scss"
+  "gold_efficiency.scss",
+  "overwrite_nav.scss"
 ;

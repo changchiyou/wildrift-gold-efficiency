@@ -6,12 +6,12 @@ layout: default
     <p>
         <strong>Disclaimer</strong><br>
         I,
-        <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" target="_blank"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">{{ site.github_username| escape }}</span></a>,
-        <strong>DO NOT</strong> own the intellectual property of all resources on this website. This website is a combination of the gold efficiency calculation formula from
-        <a href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)"><img src="https://static.wikia.nocookie.net/leagueoflegends/images/e/e6/Site-logo.png" width="17" height="17"> Gold efficiency (Wild Rift) | League of Legends Wiki</a>
+        <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" target="_blank"><img src="https://img.shields.io/badge/changchiyou-gray?logo=github"></a>,
+        <strong>DO NOT</strong> own the IPR of all resources on this website. This website is a combination of the gold efficiency calculation formula from
+        {% include badge/lolwiki.html href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)" %}
         with the design elements from
-        <a href="https://wr-meta.com/items/"><img src="https://wr-meta.com/favicon.png" width="15" height="15"> WR META - LoL Wild Rift All Items and Runes</a>,
-        featuring manually updated item data for <a href="https://wildrift.leagueoflegends.com/"><img src="https://images.contentstack.io/v3/assets/blt370612131b6e0756/bltf17a9343be9691fd/60090ec35ad9610f6cb77432/WR_favicon_32x32.svg" width="17" height="17"> Wild Rift</a>.
+        {% include badge/wrmeta.html href="https://wr-meta.com/items/" %}
+        featuring manually updated item data from {% include badge/wildrift.html href=page.data_refer_url text=page.data_refer_text %}.
     </p>
 </div>
 
@@ -20,7 +20,7 @@ layout: default
         <strong>Info</strong><br>
         The Gold efficiency of an item tells you how much stats it provides for its price (gold cost). This is a theoretical value with no direct game impact, used mainly to compare items.
         <br>
-        <p style="text-align: right;">— <img src="https://static.wikia.nocookie.net/leagueoflegends/images/e/e6/Site-logo.png" width="18" height="18"> <a href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)" target="_blank">Gold efficiency (Wild Rift) | League of Legends Wiki</a></p>
+        <p style="text-align: right;">— {% include badge/lolwiki.html href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)" text="Gold efficiency (Wild Rift)" %}</p>
     </p>
 </div>
 
@@ -35,37 +35,37 @@ layout: default
     <p>
         <strong>Warning</strong><br>
         {% for exclude in excludes %}
-            {% include stat_image.html type=exclude %}
+            {% include stat_image.html type=exclude stats=page.stats %}
         {% endfor %}
         , excluded from gold efficiency calculation due to lack of pricing reference.
     </p>
 </div>
 
-{%- include base_stat_price_table.html data=page.data category="First-tier Base Item" anchor="First-tier-Base-Item" base="first_base" -%}
+{%- include base_stat_price_table.html items=page.items stats=page.stats category="First-tier Base Item" anchor="First-tier-Base-Item" base="first_base" -%}
 
-{%- include base_stat_price_table.html data=page.data category="Second-tier Base Item" anchor="Second-tier-Base-Item" base="second_base" -%}
+{%- include base_stat_price_table.html items=page.items stats=page.stats category="Second-tier Base Item" anchor="Second-tier-Base-Item" base="second_base" -%}
 
 
-{%- include items_table.html data=page.data category="PHYSICAL DAMAGE ITEMS" anchor="PHYSICAL-DAMAGE-ITEMS" -%}
+{%- include items_table.html items=page.items stats=page.stats category="PHYSICAL DAMAGE ITEMS" anchor="PHYSICAL-DAMAGE-ITEMS" -%}
 
-{%- include items_table.html data=page.data category="MAGIC DAMAGE ITEMS" anchor="MAGIC-DAMAGE-ITEMS" -%}
+{%- include items_table.html items=page.items stats=page.stats category="MAGIC DAMAGE ITEMS" anchor="MAGIC-DAMAGE-ITEMS" -%}
 
-{%- include items_table.html data=page.data category="DEFENSE ITEMS" anchor="DEFENSE-ITEMS" -%}
+{%- include items_table.html items=page.items stats=page.stats category="DEFENSE ITEMS" anchor="DEFENSE-ITEMS" -%}
 
-{%- include items_table.html data=page.data category="BOOTS" anchor="BOOTS" -%}
+{%- include items_table.html items=page.items stats=page.stats category="BOOTS" anchor="BOOTS" -%}
 
-{%- include items_table.html data=page.data category="SUPPORT ITEMS" anchor="SUPPORT-ITEMS" -%}
+{%- include items_table.html items=page.items stats=page.stats category="SUPPORT ITEMS" anchor="SUPPORT-ITEMS" -%}
 
-{%- include items_table.html data=page.data category="MID TIER ITEMS" anchor="MID-TIER-ITEMS" -%}
+{%- include items_table.html items=page.items stats=page.stats category="MID TIER ITEMS" anchor="MID-TIER-ITEMS" -%}
 
-{%- include items_table.html data=page.data category="BASIC ITEMS" anchor="BASIC-ITEMS" -%}
+{%- include items_table.html items=page.items stats=page.stats category="BASIC ITEMS" anchor="BASIC-ITEMS" -%}
 
 <div class="panel">
     <p>
         <strong>How to contribute</strong><br>
         <ul>
-            <li>If you discover any item data, calculations that are incorrect or outdated and require updating, please remind me with <a href="https://github.com/changchiyou/wildrift-gold-efficiency/issues/new?assignees=&labels=&projects=&template=update_notification.md&title=Update%20Needed" target="_blank">{% include icon-github.svg %} Issue: Update notification</a>.</li>
-            <li>If you have any ideas for contributing new features or improving the design and layout, please feel welcome to submit a PR at <a href="https://github.com/changchiyou/wildrift-gold-efficiency" target="_blank">{% include icon-github.svg %} changchiyou/wildrift-gold-efficiency</a>.</li>
+            <li>If you discover any item data, calculations that are incorrect or outdated and require updating, please remind me with <a href="https://github.com/changchiyou/wildrift-gold-efficiency/issues/new?assignees=&labels=&projects=&template=update_notification.md&title=Update%20Needed" target="_blank"><img src="https://img.shields.io/badge/Issue:_Update_notification-gray?logo=github"></a>.</li>
+            <li>If you have any ideas for contributing new features or improving the design and layout, please feel welcome to submit a PR at <a href="https://github.com/changchiyou/wildrift-gold-efficiency" target="_blank"><img src="https://img.shields.io/badge/changchiyou/wildrift--gold--efficiency-gray?logo=github"></a>.</li>
         </ul>
     </p>
 </div>

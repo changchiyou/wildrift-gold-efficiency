@@ -10,7 +10,7 @@
       </tr>
     </thead>
     <tbody>
-      {% for item in site.data[ include.data ] %}
+      {% for item in site.data[ include.items ] %}
         {% if item.category == include.category %}
         <tr>
             <td>
@@ -19,20 +19,20 @@
             </td>
             <td class="goldt">
                 {{ item.cost }}
-                {% include stat_image.html type="gold" %}
+                {% include stat_image.html type="gold" stats=include.stats %}
             </td>
             <td>
                 {% for stat in item.stats %}
                     <b>
                         {% if stat.passive %}
                             <div class="tooltip">
-                                {{- stat.value -}}{% include stat_image.html type=stat.type %}
+                                {{- stat.value -}}{% include stat_image.html type=stat.type stats=include.stats %}
                                 <span class="tooltiptext">
                                     {{ stat.passive }}
                                 </span>
                             </div>
                         {% else %}
-                            {{- stat.value -}}{% include stat_image.html type=stat.type %}
+                            {{- stat.value -}}{% include stat_image.html type=stat.type stats=include.stats %}
                         {% endif %}
                     </b>
                 {% endfor %}
