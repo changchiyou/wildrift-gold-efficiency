@@ -7,7 +7,6 @@ description: A hotfix for KALISTA, LIGHT - HORIZON FOCUS, LIGHT - INFINITY ORB
 image: /assets/favicon.png
 
 permalink: /5.1/
-redirect_from: /
 
 data_refer_url: https://x.com/wildrift/status/1780990172869366111
 data_refer_text: 5.1 hotfix

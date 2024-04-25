@@ -21,7 +21,6 @@ class ItemData:
 
         self.datas = self.read_yaml(self.items_file_name)
         self.bases = self.read_bases()
-        print(self.bases)
 
     def get_abs_filename(self, file_name: str) -> str:
         script_dir = os.path.dirname(os.path.realpath(__file__))
@@ -178,7 +177,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Extract data from WR Meta via web scraping, or calculate the gold efficiency of item data."
     )
-    parser.add_argument("--items_file_name", help="The file storage item data")
+    parser.add_argument("--items", help="The file storage item data")
+    parser.add_argument("--stats", help="The file storage stat data")
     parser.add_argument(
         "-c",
         "--calculate",
@@ -197,7 +197,7 @@ if __name__ == "__main__":
     logger = logging.getLogger()
     logger.setLevel(logging.DEBUG if args.debug else logging.INFO)
 
-    item_data = ItemData(items_file_name=args.items_file_name)
+    item_data = ItemData(items_file_name=args.items, stats_file_name=args.stats)
 
     if args.clean_only is True:
         item_data.clean_base_GE()
@@ -206,6 +206,10 @@ if __name__ == "__main__":
             item_data.clean_base_GE()
             item_data.calculate_base_statistic_prices()
             item_data.calculate_gold_efficiency()
+
+
+
+
 
 
 
