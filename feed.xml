@@ -13,15 +13,15 @@ layout: null
         {%- assign default_paths = site.pages | map: "path" -%}
         {%- assign page_paths = site.header_pages | default: default_paths -%}
         {%- if page_paths -%}
-            {%- for path in page_paths -%}
-                {%- assign my_page = site.pages | where: "path", path | first -%}
-                {%- if my_page.title and my_page.url != "/" -%}
+            {%- assign sorted_pages = site.pages | where_exp: "item", "page_paths contains item.path" | sort: "date" | reverse -%}
+            {%- for page in sorted_pages -%}
+                {%- if page.title and page.url != "/" -%}
                     <item>
-                    <title>{{ my_page.title }}</title>
-                    <description>{{ my_page.description }}</description>
-                    <link>{{ site.url }}{{ my_page.url }}</link>
-                    <guid isPermaLink="true">{{ site.url }}{{ my_page.url }}</guid>
-                    <pubDate>{{ my_page.date | date_to_rfc822 }}</pubDate>
+                    <title>{{ page.title }}</title>
+                    <description>{{ page.description }}</description>
+                    <link>{{ site.url }}{{ page.url }}</link>
+                    <guid isPermaLink="true">{{ site.url }}{{ page.url }}</guid>
+                    <pubDate>{{ page.date | date_to_rfc822 }}</pubDate>
                     </item>
                 {%- endif -%}
             {%- endfor -%}
