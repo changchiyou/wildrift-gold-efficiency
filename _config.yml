@@ -38,6 +38,7 @@ plugins:
   - jekyll-seo-tag
 
 feed:
+  posts_limit: 10
   path: /feed.xml
 
 # Build settings
