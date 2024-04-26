@@ -17,50 +17,58 @@ $grey-color-dark: #cccccc; /* such as the site title in the header, visited */
   "overwrite_wrapper.scss"
 ;
 
-.page-content {
+@media screen and (max-width: 480px) {
+  .content-page {
+    font-size: 17px;
+  }
+}
+
+table {
   font-size: 16px;
 }
 
 @media screen and (max-width: 768px) {
-  .page-content {
+  table {
       font-size: 13px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .page-content {
+  table {
       font-size: 10px;
   }
 }
 
-img.stat-icon, img.item-icon {
+@media screen and (max-width: 480px) {
+  table td {
+      padding: 5px 5px;
+  }
+}
+
+table img.stat-icon, table img.item-icon {
   width: 20px;
 }
 
 @media screen and (max-width: 768px) {
-  img.stat-icon, img.item-icon {
+  table img.stat-icon, table img.item-icon {
     width: 16px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  img.stat-icon, img.item-icon {
+  table img.stat-icon, table img.item-icon {
     width: 12.5px;
-  }
-}
-
-img.badge {
-  height: 20px;
-}
-
-@media screen and (max-width: 768px) {
-  img.badge {
-    height: 15px;
   }
 }
 
 @media screen and (max-width: 480px) {
   img.badge {
-    height: 10px;
+    height: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  table td b {
+    display: block;
   }
 }
