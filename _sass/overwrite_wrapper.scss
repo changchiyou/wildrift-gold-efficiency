@@ -1,0 +1,21 @@
+@media screen and (min-width: 1200px) {
+    :root {
+      --content-width: 70%;
+    }
+  }
+  
+  @media screen and (max-width: 1199px) {
+    :root {
+      --content-width: 90%;
+    }
+  }
+
+.wrapper {
+    max-width: -webkit-calc(var(--content-width) - (#{$spacing-unit} * 2));
+    max-width:         calc(var(--content-width) - (#{$spacing-unit} * 2));
+  
+    @include media-query($on-laptop) {
+      max-width: -webkit-calc(var(--content-width) - (#{$spacing-unit}));
+      max-width:         calc(var(--content-width) - (#{$spacing-unit}));
+    }
+  }

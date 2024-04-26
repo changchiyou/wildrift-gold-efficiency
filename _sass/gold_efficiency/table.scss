@@ -1,4 +1,4 @@
-  table {
+table {
     font-family: 'DIN Pro', sans-serif;
     font-weight: 700;
   }
@@ -32,4 +32,33 @@
   
   .tooltip:hover .tooltiptext {
     visibility: visible;
+  }
+
+  .bases-champion-statistic {
+    width: 25%;
+  }
+  .bases-item {
+    width: 30%;
+  }
+  .bases-cost {
+    width: 10%;
+  }
+  .bases-stat {
+    width: 24%;
+  }
+  .bases-stat-price {
+    width: 11%;
+  }
+
+  .items-item {
+    width: 52%;
+  }
+  .items-cost {
+    width: 11%;
+  }
+  .items-stat {
+    width: 31%;
+  }
+  .items-amount {
+    width: 6%;
   }

@@ -1,6 +1,12 @@
 <h3 id="{{ include.anchor }}">{{ include.category }}</h3>
 
 <table>
+    <colgroup>
+        <col class="items-item">
+        <col class="items-cost">
+        <col class="items-stat">
+        <col class="items-amount">
+    </colgroup>
     <thead>
       <tr>
         <th>Item</th>
@@ -14,7 +20,7 @@
         {% if item.category == include.category %}
         <tr>
             <td>
-                <img loading="lazy" src="{{ item.image }}" width="20" height="20" style="margin-right: 5px;" />
+                <img class="item-icon" loading="lazy" src="{{ item.image }}" style="margin-right: 5px;" />
                 {{ item.name }}
             </td>
             <td class="goldt">

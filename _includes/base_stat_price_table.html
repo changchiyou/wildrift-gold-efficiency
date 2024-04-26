@@ -1,6 +1,13 @@
 <h4 id="{{ include.anchor }}">{{ include.category }}</h4>
 
 <table>
+    <colgroup>
+        <col class="bases-champion-statistic">
+        <col class="bases-item">
+        <col class="bases-cost">
+        <col class="bases-stat">
+        <col class="bases-stat-price">
+    </colgroup>
     <thead>
       <tr>
         <th>Champion Statistic</th>
@@ -17,7 +24,7 @@
             <tr>
                 <td> {{ base.type }} </td>
                 <td>
-                    <img loading="lazy" src="{{ item.image }}" width="20" height="20" style="margin-right: 5px;" />
+                    <img class="item-icon" loading="lazy" src="{{ item.image }}" style="margin-right: 5px;" />
                     {{ item.name }}
                 </td>
                 <td class="goldt">

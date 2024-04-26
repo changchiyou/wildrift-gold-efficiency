@@ -8,7 +8,59 @@ $grey-color-light: #2c314294; /* for the border-top separators */
 $grey-color-dark: #cccccc; /* such as the site title in the header, visited */
 
 @import 
-  "{{ site.theme }}",
-  "gold_efficiency.scss",
-  "overwrite_nav.scss"
+  "{{ site.theme }}"
 ;
+
+@import
+  "gold_efficiency.scss",
+  "overwrite_nav.scss",
+  "overwrite_wrapper.scss"
+;
+
+.page-content {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .page-content {
+      font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page-content {
+      font-size: 10px;
+  }
+}
+
+img.stat-icon, img.item-icon {
+  width: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  img.stat-icon, img.item-icon {
+    width: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  img.stat-icon, img.item-icon {
+    width: 12.5px;
+  }
+}
+
+img.badge {
+  height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  img.badge {
+    height: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  img.badge {
+    height: 10px;
+  }
+}
