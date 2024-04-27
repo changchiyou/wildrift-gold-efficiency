@@ -51,7 +51,7 @@ table {
     top: -5px;
     left: 110%;
   }
-  
+
   .tooltip .tooltiptext::after {
     content: " ";
     position: absolute;
@@ -94,4 +94,28 @@ table {
   }
   .items-amount {
     width: 6%;
+  }
+
+  @media screen and (max-width: 480px) {
+    table td b {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    table {
+        font-size: 13px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    table {
+        font-size: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    table td {
+        padding: 5px 5px;
+    }
   }

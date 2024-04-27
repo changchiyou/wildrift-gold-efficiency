@@ -23,6 +23,31 @@
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
+
+          <!-- Separator -->
+          <hr>
+
+          {% assign nodes = content | strip | split: '<h' %}
+          {% for node in nodes %}
+            {% if node == "" %}
+              {% continue %}
+            {% endif %}
+
+            {% assign _workspace = node | split: '</h' %}
+            {% assign _idWorkspace = _workspace[0] | split: 'id="' %}
+            {% assign _idWorkspace = _idWorkspace[1] | split: '"' %}
+            {% assign htmlID = _idWorkspace[0] %}
+
+            {% capture _hAttrToStrip %}{{ _workspace[0] | split: '>' | first }}>{% endcapture %}
+            {% assign header = _workspace[0] | replace: _hAttrToStrip, '' %}
+            {% capture anchorAttributes %} href="{% if baseURL %}{{ baseURL }}{% endif %}#{{ htmlID }}"{% endcapture %}
+            {% capture anchorBody %}{{ header | strip_html }}{% endcapture %}
+
+            {% if htmlID %}
+              <a class="page-link" {{ anchorAttributes }}>{{ anchorBody }}</a>
+            {% endif %}
+          {% endfor %}
+
         </div>
       </nav>
     {%- endif -%}

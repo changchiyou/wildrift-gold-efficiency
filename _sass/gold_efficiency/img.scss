@@ -1,3 +1,25 @@
 img.stat-icon {
     margin-right: 1px
   }
+
+  table img.stat-icon, table img.item-icon {
+    width: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    table img.stat-icon, table img.item-icon {
+      width: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    table img.stat-icon, table img.item-icon {
+      width: 12.5px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    img.badge {
+      height: 18px;
+    }
+  }
