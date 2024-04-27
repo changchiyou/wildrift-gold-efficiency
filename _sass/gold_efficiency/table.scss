@@ -30,6 +30,39 @@ table {
     z-index: 1;
   }
   
+  .tooltip.rightmost .tooltiptext {
+    top: -5px;
+    right: 110%;
+  }
+
+
+  .tooltip.rightmost .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+  }
+
+  .tooltip.stats .tooltiptext {
+    top: -5px;
+    left: 110%;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+  }
+
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }

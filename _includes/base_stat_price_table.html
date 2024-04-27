@@ -35,7 +35,7 @@
                     {% for stat in item.stats %}
                         <b>
                             {% if stat.passive %}
-                                <div class="tooltip">
+                                <div class="tooltip stats">
                                     {{- stat.value -}}{% include stat_image.html type=stat.type stats=include.stats %}
                                     <span class="tooltiptext">
                                         {{ stat.passive }}
@@ -49,7 +49,7 @@
                 </td>
                 </td>
                 <td class="goldt">
-                    <div class="tooltip">
+                    <div class="tooltip rightmost">
                         {{ base.value }}
                         <span class="tooltiptext">
                             {{ base.formula }}
