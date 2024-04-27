@@ -1,3 +1,6 @@
+$tooltip-backgroud-color: #fff;
+$tooltip-color: #333;
+
 table {
     font-family: 'DIN Pro', sans-serif;
     font-weight: 700;
@@ -21,8 +24,8 @@ table {
   .tooltip .tooltiptext {
     visibility: hidden;
     white-space: nowrap;
-    background-color: black;
-    color: #fff;
+    background-color: $tooltip-backgroud-color;
+    color: $tooltip-color;
     text-align: center;
     padding: 5px 5px;
     border-radius: 6px;
@@ -32,7 +35,7 @@ table {
   
   .tooltip.rightmost .tooltiptext {
     top: -5px;
-    right: 110%;
+    right: 130%;
   }
 
 
@@ -44,12 +47,12 @@ table {
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent transparent black;
+    border-color: transparent transparent transparent $tooltip-backgroud-color;
   }
 
   .tooltip.stats .tooltiptext {
     top: -5px;
-    left: 110%;
+    left: 120%;
   }
 
   .tooltip .tooltiptext::after {
@@ -60,7 +63,7 @@ table {
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent black transparent transparent;
+    border-color: transparent $tooltip-backgroud-color transparent transparent;
   }
 
   .tooltip:hover .tooltiptext {
@@ -98,6 +101,7 @@ table {
 
   @media screen and (max-width: 480px) {
     table td b {
+      padding-left: 15%;
       display: block;
     }
   }
