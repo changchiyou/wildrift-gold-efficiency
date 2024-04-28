@@ -33,11 +33,16 @@ table {
     z-index: 1;
   }
   
+  @media screen and (max-width: 480px) {
+    .tooltip.rightmost {
+      margin-left: 15%;
+    }
+  }
+
   .tooltip.rightmost .tooltiptext {
     top: -5px;
     right: 130%;
   }
-
 
   .tooltip.rightmost .tooltiptext::after {
     content: " ";
