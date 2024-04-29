@@ -1,0 +1,95 @@
+<button class="collapsible">Stat Filters</button>
+<div class="item-filter-wrap">
+    {% assign stats = site.data.[include.stats] %}
+
+    {% assign types = "" | split: "|" %}
+
+    {% for stat in stats %}
+        {% assign type = stat[1].type %}
+        {% if type == "" %}
+            {% continue %}
+        {% endif %}
+        {% unless types contains type %}
+            {% assign types = types | push: type %}
+        {% endunless %}
+    {% endfor %}
+
+    {% for type in types %}
+        <fieldset class="item-filter">
+            <label class="title">{{ type }}</label>
+            {% for stat in stats %}
+                {% if stat[1].type != type %}
+                    {% continue %}
+                {% endif %}
+                {% assign stat_id = stat[0] | downcase | replace: " ", "-" | replace: "%", "percentage" %}
+                <label for="filter-{{ stat_id }}">
+                    <input type="checkbox" name='{{ type }}' id="filter-{{ stat_id }}" value="filter-{{ stat_id }}" class="filter">
+                    <span>{{ stat[0] }}</span>
+                </label>
+            {% endfor %}
+        </fieldset>
+    {% endfor %}
+</div>
+<br>
+
+<script>
+    function toggleElements() {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"].filter');
+        var anyChecked = false;
+
+        checkboxes.forEach(function(checkbox) {
+            if (checkbox.checked) {
+                anyChecked = true;
+            }
+        });
+
+        var rows = document.querySelectorAll('tr.item-table');
+
+        if (!anyChecked) {
+            rows.forEach(function(row) {
+                row.style.display = 'table-row';
+            });
+        } else {
+            var selected_stats = []
+
+            checkboxes.forEach(function(checkbox) {
+                if (checkbox.checked){
+                    selected_stats.push(checkbox.id)
+                }
+            });
+
+            rows.forEach(function(row) {
+                var matched = true;
+                selected_stats.forEach(function(selected_stat){
+                    if (! row.classList.contains(selected_stat)){
+                        matched = false;
+                    }
+                })
+
+                row.style.display = matched ? 'table-row' : 'none';
+            });
+        }
+    }
+
+    var checkboxes = document.querySelectorAll('input[type="checkbox"].filter');
+    checkboxes.forEach(function(checkbox) {
+        checkbox.addEventListener('click', toggleElements);
+    });
+
+    toggleElements();
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+        content.style.maxHeight = null;
+        } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        } 
+    });
+    }
+</script>

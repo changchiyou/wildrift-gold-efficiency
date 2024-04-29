@@ -45,6 +45,7 @@ layout: default
 
 {%- include base_stat_price_table.html items=page.items stats=page.stats category="Second-tier Base Item" anchor="Second-tier-Base-Item" base="second_base" -%}
 
+{% include filter.html stats=page.stats %}
 
 {%- include items_table.html items=page.items stats=page.stats category="PHYSICAL DAMAGE ITEMS" anchor="PHYSICAL-DAMAGE-ITEMS" -%}
 

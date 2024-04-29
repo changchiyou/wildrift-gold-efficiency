@@ -18,40 +18,45 @@
     <tbody>
       {% for item in site.data[ include.items ] %}
         {% if item.category == include.category %}
-        <tr>
-            <td>
-                <img class="item-icon" loading="lazy" src="{{ item.image }}" style="margin-right: 5px;" />
-                {{ item.name }}
-            </td>
-            <td class="goldt">
-                {{ item.cost }}
-                {% include stat_image.html type="gold" stats=include.stats %}
-            </td>
-            <td>
-                {% for stat in item.stats %}
-                    <b>
-                        {% if stat.passive %}
-                            <div class="tooltip stats">
+            {% assign filters = "" %}
+            {% for stat in item.stats %}
+                {% capture filters %}{{ filters }} filter-{{ stat.type | downcase | replace: " ", "-" | replace: "%", "percentage" }}{% endcapture %}
+            {% endfor %}
+
+            <tr class="item-table {{ filters | strip }}">
+                <td>
+                    <img class="item-icon" loading="lazy" src="{{ item.image }}" style="margin-right: 5px;" />
+                    {{ item.name }}
+                </td>
+                <td class="goldt">
+                    {{ item.cost }}
+                    {% include stat_image.html type="gold" stats=include.stats %}
+                </td>
+                <td>
+                    {% for stat in item.stats %}
+                        <b>
+                            {% if stat.passive %}
+                                <div class="tooltip stats">
+                                    {{- stat.value -}}{% include stat_image.html type=stat.type stats=include.stats %}
+                                    <span class="tooltiptext">
+                                        {{ stat.passive }}
+                                    </span>
+                                </div>
+                            {% else %}
                                 {{- stat.value -}}{% include stat_image.html type=stat.type stats=include.stats %}
-                                <span class="tooltiptext">
-                                    {{ stat.passive }}
-                                </span>
-                            </div>
-                        {% else %}
-                            {{- stat.value -}}{% include stat_image.html type=stat.type stats=include.stats %}
-                        {% endif %}
-                    </b>
-                {% endfor %}
-            </td>
-            <td>
-                <div class="tooltip rightmost">
-                    {{ item.amount }}
-                    <span class="tooltiptext">
-                        {{ item.formula }}
-                    </span>
-                </div>
-            </td>
-        </tr>
+                            {% endif %}
+                        </b>
+                    {% endfor %}
+                </td>
+                <td>
+                    <div class="tooltip rightmost">
+                        {{ item.amount }}
+                        <span class="tooltiptext">
+                            {{ item.formula }}
+                        </span>
+                    </div>
+                </td>
+            </tr>
         {% endif %}
       {% endfor %}
     </tbody>

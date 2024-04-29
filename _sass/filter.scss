@@ -1,0 +1,107 @@
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .item-filter-wrap {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #19283f;
+  }
+
+  .item-filter {
+    border-top: 4px solid #98b3dd;
+
+    background: #223148;
+
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 8px !important;
+    width: 24%;
+    margin-left: 0.3%;
+    margin-bottom: 10px;
+    border: none;
+
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .title {
+    font-size: 12px;
+    line-height: 18px;
+    height: auto;
+    padding: 10px 7px 3px 7px;
+    box-sizing: border-box;
+
+    width: 100%;
+    display: inline-block;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"]+span {
+    font-size: 11px;
+    line-height: 1.2;
+    color: #788aab;
+    text-transform: none;
+    padding: 4px 0 4px 7px;
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+
+    display: inline-block;
+
+    cursor: pointer;
+    transition: 250ms;
+    user-select: none;
+    transition: 0.3s;
+  }
+
+  @media screen and (max-width: 480px) {
+    .title {
+        font-size: 11px;
+    }
+    input[type="checkbox"]+span {
+        font-size: 9px;
+    }
+    .item-filter {
+        width: 45%;
+    }
+    .collapsible {
+        font-size: 13px;
+        padding: 12px;
+    }
+  }
+
+  input[type="checkbox"]:checked+span {
+    background: #275495;
+    color: #FFF;
+  }
+
+  input[type="checkbox"]+span:hover {color:#fff;}
