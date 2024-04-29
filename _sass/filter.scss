@@ -27,27 +27,32 @@
   }
   
   .item-filter-wrap {
+    font-size: 0;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #19283f;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
   }
 
   .item-filter {
-    border-top: 4px solid #98b3dd;
-
     background: #223148;
 
     display: inline-block;
     vertical-align: top;
     margin-top: 8px !important;
     width: 24%;
-    margin-left: 0.3%;
+    margin: 0.5%;
     margin-bottom: 10px;
     border: none;
 
     box-sizing: border-box;
     position: relative;
+  }
+
+  .item-filter {
+    border-top: 4px solid #98b3dd;
   }
 
   .title {
@@ -91,7 +96,7 @@
         font-size: 9px;
     }
     .item-filter {
-        width: 45%;
+        width: 49%;
     }
     .collapsible {
         font-size: 13px;
@@ -105,3 +110,8 @@
   }
 
   input[type="checkbox"]+span:hover {color:#fff;}
+
+  fieldset {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
