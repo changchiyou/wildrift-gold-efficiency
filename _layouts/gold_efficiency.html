@@ -4,7 +4,7 @@ layout: default
 
 <div class="panel">
     <p>
-        <strong>Copyright Notice</strong><br>
+        <strong>Copyright©</strong><br>
         I,
         <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" target="_blank"><img class="badge" src="https://img.shields.io/badge/changchiyou-gray?logo=github"></a>,
         <strong>DO NOT</strong> own the copyrights of all resources on this website, especially images and data. This website is a combination of the gold efficiency calculation formula from
@@ -28,7 +28,7 @@ layout: default
 <hr>
 <br>
 
-<h3 id="Base-Statistic-Prices">Base Statistic Prices</h3>
+<h3 id="Base-Statistic-Prices">💰 Base Statistic Prices</h3>
 
 {% assign excludes = "% Magic Penetration|% Omnivamp|% Health Regen|% Mana Regeneration" | split: "|" %}
 <div class="panel">
@@ -47,26 +47,34 @@ layout: default
 
 {% include filter.html stats=page.stats %}
 
-{%- include items_table.html items=page.items stats=page.stats category="PHYSICAL DAMAGE ITEMS" anchor="PHYSICAL-DAMAGE-ITEMS" -%}
+{%- include items_table.html items=page.items stats=page.stats category="PHYSICAL DAMAGE ITEMS" anchor="PHYSICAL-DAMAGE-ITEMS" header="📌 Physical Damage Items" -%}
 
-{%- include items_table.html items=page.items stats=page.stats category="MAGIC DAMAGE ITEMS" anchor="MAGIC-DAMAGE-ITEMS" -%}
+{%- include items_table.html items=page.items stats=page.stats category="MAGIC DAMAGE ITEMS" anchor="MAGIC-DAMAGE-ITEMS" header="📌 Magic Damage Items" -%}
 
-{%- include items_table.html items=page.items stats=page.stats category="DEFENSE ITEMS" anchor="DEFENSE-ITEMS" -%}
+{%- include items_table.html items=page.items stats=page.stats category="DEFENSE ITEMS" anchor="DEFENSE-ITEMS" header="📌 Defence Items" -%}
 
-{%- include items_table.html items=page.items stats=page.stats category="BOOTS" anchor="BOOTS" -%}
+{%- include items_table.html items=page.items stats=page.stats category="BOOTS" anchor="BOOTS" header="📌 Boots" -%}
 
-{%- include items_table.html items=page.items stats=page.stats category="SUPPORT ITEMS" anchor="SUPPORT-ITEMS" -%}
+{%- include items_table.html items=page.items stats=page.stats category="SUPPORT ITEMS" anchor="SUPPORT-ITEMS" header="📌 Support Items" -%}
 
-{%- include items_table.html items=page.items stats=page.stats category="MID TIER ITEMS" anchor="MID-TIER-ITEMS" -%}
+{%- include items_table.html items=page.items stats=page.stats category="MID TIER ITEMS" anchor="MID-TIER-ITEMS" header="📌 Mid-tier Items" -%}
 
-{%- include items_table.html items=page.items stats=page.stats category="BASIC ITEMS" anchor="BASIC-ITEMS" -%}
+{%- include items_table.html items=page.items stats=page.stats category="BASIC ITEMS" anchor="BASIC-ITEMS" header="📌 Basic Items" -%}
 
-<div class="panel">
-    <p>
-        <strong>How to contribute</strong><br>
-        <ul>
-            <li>If you discover any item data, calculations that are incorrect or outdated and require updating, please remind me with <a href="https://github.com/changchiyou/wildrift-gold-efficiency/issues/new?assignees=&labels=&projects=&template=update_notification.md&title=Update%20Needed" target="_blank"><img class="badge" src="https://img.shields.io/badge/Issue:_Update_notification-gray?logo=github"></a>.</li>
-            <li>If you have any ideas for contributing new features or improving the design and layout, please feel welcome to submit a PR at <a href="https://github.com/changchiyou/wildrift-gold-efficiency" target="_blank"><img class="badge" src="https://img.shields.io/badge/changchiyou/wildrift--gold--efficiency-gray?logo=github"></a>.</li>
-        </ul>
-    </p>
-</div>
+<div id="giscus-comments" class="giscus"></div>
+<script src="https://giscus.app/client.js"
+        data-repo="changchiyou/wildrift-gold-efficiency"
+        data-repo-id="R_kgDOISWHEA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOISWHEM4CfCTi"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="dark"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
