@@ -7,7 +7,7 @@ layout: default
         <strong>Copyright©</strong><br>
         I,
         <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" target="_blank"><img class="badge" src="https://img.shields.io/badge/changchiyou-gray?logo=github"></a>,
-        <strong>DO NOT</strong> own the copyrights of all resources on this website, especially images and data. This website is a combination of the gold efficiency calculation formula from
+        <b>DO NOT</b> own the copyrights of all resources on this website, especially images and data. This website is a combination of the gold efficiency calculation formula from
         {% include badge/lolwiki.html href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)" %}
         with the design elements from
         {% include badge/wrmeta.html href="https://wr-meta.com/items/" %}
@@ -17,10 +17,13 @@ layout: default
 
 <div class="panel">
     <p>
-        <strong>Info</strong><br>
-        The Gold efficiency of an item tells you how much stats it provides for its price (gold cost). This is a theoretical value with no direct game impact, used mainly to compare items.
-        <br>
-        <p style="text-align: right;">— {% include badge/lolwiki.html href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)" %}</p>
+        <strong>Hint</strong><br>
+        In most cases, <u><b>a higher calculated Gold Efficiency percentage (%) indicates better value</b></u>. However, as However, as stated
+        in the {% include badge/lolwiki.html href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)" %}:
+        <blockquote>
+            The Gold efficiency of an item tells you how much stats it provides for its price (gold cost). This is a theoretical value with no direct game impact, used mainly to compare items.
+        </blockquote>
+        This calculated value doesn't fully represent an item's in-game impact. It's best for comparing items with similar attributes or assessing attribute changes.
     </p>
 </div>
 
