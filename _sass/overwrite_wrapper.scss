@@ -19,3 +19,9 @@
       max-width:         calc(var(--content-width) - (#{$spacing-unit}));
     }
   }
+
+  @media screen and (max-width: 480px){
+    .page-content .wrapper{
+      max-width: var(--content-width);
+    }
+  }

@@ -48,6 +48,7 @@ table {
     padding: 5px;
     margin: 1px
   }
+
   b.target-stat {
     background: #475266;
   }
@@ -89,29 +90,44 @@ table {
   }
 
   .bases-item {
-    width: 30%;
+    width: 44%;
   }
   .bases-cost {
-    width: 15%;
+    width: 13%;
   }
   .bases-stat {
     width: 20%;
   }
   .bases-stat-price {
-    width: 25%;
+    width: 23%;
   }
 
   .items-item {
-    width: 52%;
+    width: 56%;
   }
   .items-cost {
     width: 11%;
   }
   .items-stat {
-    width: 31%;
+    width: 27%;
   }
   .items-amount {
     width: 6%;
+  }
+
+  @media screen and (max-width: 480px) {
+    .items-item {
+      width: 71%;
+    }
+    .items-cost {
+      width: 11%;
+    }
+    .items-stat {
+      width: 13%;
+    }
+    .items-amount {
+      width: 6%;
+    }
   }
 
   @media screen and (max-width: 480px) {
@@ -132,7 +148,7 @@ table {
         font-size: 10px;
     }
   }
-  
+
   @media screen and (max-width: 480px) {
     table td {
         padding: 5px 5px;
