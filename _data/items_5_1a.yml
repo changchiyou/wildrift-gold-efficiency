@@ -815,18 +815,6 @@
   - passive: Killer
     type: Armor Penetration
     value: 10
-- amount: 39.12%
-  category: PHYSICAL DAMAGE ITEMS
-  cost: 3200
-  formula: (400*3.33+-5*16.0)/3200
-  image: https://wr-meta.com/uploads/posts/2024-04/1712772856_3053_11zon.png
-  name: Sterak's Gage
-  stats:
-  - type: Max Health
-    value: 400
-  - passive: Guilt Bearer
-    type: Move Speed
-    value: -5
 - amount: 76.89%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200

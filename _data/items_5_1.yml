@@ -815,18 +815,6 @@
   - passive: Killer
     type: Armor Penetration
     value: 10
-- amount: 39.12%
-  category: PHYSICAL DAMAGE ITEMS
-  cost: 3200
-  formula: (400*3.33+-5*16.0)/3200
-  image: https://wr-meta.com/uploads/posts/2024-04/1712772856_3053_11zon.png
-  name: Sterak's Gage
-  stats:
-  - type: Max Health
-    value: 400
-  - passive: Guilt Bearer
-    type: Move Speed
-    value: -5
 - amount: 76.89%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200
@@ -1582,12 +1570,12 @@
   - type: Ability Haste
     value: 15
   - formula: (390+500)*0.08
+    passive: Awe
     ratio: 0.08
     ref: 390
     ref_type: Max Mana
     type: Max Health
     value: 71.2
-    passive: Awe
 - amount: 144.04%
   category: DEFENSE ITEMS
   cost: 2600
@@ -1602,12 +1590,12 @@
   - type: Ability Haste
     value: 15
   - formula: (1300+500)*0.08
+    passive: Awe
     ratio: 0.08
     ref: 1300
     ref_type: Max Mana
     type: Max Health
     value: 144.0
-    passive: Awe
 - amount: 222.66%
   category: DEFENSE ITEMS
   cost: 2600
@@ -1622,12 +1610,12 @@
   - type: Ability Haste
     value: 15
   - formula: (390+1200)*0.08
+    passive: Awe
     ratio: 0.08
     ref: 390
     ref_type: Max Mana
     type: Max Health
     value: 127.2
-    passive: Awe
 - amount: 231.98%
   category: DEFENSE ITEMS
   cost: 2600
@@ -1642,12 +1630,12 @@
   - type: Ability Haste
     value: 15
   - formula: (1300+1200)*0.08
+    passive: Awe
     ratio: 0.08
     ref: 1300
     ref_type: Max Mana
     type: Max Health
     value: 200.0
-    passive: Awe
 - amount: 93.53%
   category: DEFENSE ITEMS
   cost: 2850
