@@ -2069,7 +2069,7 @@
   image: https://wr-meta.com/uploads/posts/2021-03/1616985546_1053.png
   name: Vampiric Scepter
   second_base:
-    formula: (1200-20*41.67)/10=36.66
+    formula: (1200-20*41.67)/10
     type: '% Physical Vamp'
     value: 36.66
   stats:
@@ -2107,7 +2107,7 @@
   image: https://wr-meta.com/uploads/posts/2021-03/1616985626_3134.png
   name: Serrated Dirk
   second_base:
-    formula: (1000-20*41.67)/8=20.82
+    formula: (1000-20*41.67)/8
     type: Armor Penetration
     value: 20.82
   stats:
@@ -2150,7 +2150,7 @@
   image: https://wr-meta.com/uploads/posts/2021-01/1611440927_last-whisper.png
   name: Last Whisper
   second_base:
-    formula: (1300-15*41.67)/15=45.0
+    formula: (1300-15*41.67)/15
     type: '% Armor Penetration'
     value: 45.0
   stats:
@@ -2286,7 +2286,7 @@
   image: https://wr-meta.com/uploads/posts/2021-01/1611442631_aether-wisp.png
   name: Aether Wisp
   second_base:
-    formula: (950-35*20.0)/5=50.0
+    formula: (950-35*20.0)/5
     type: '% Move Speed'
     value: 50.0
   stats:
@@ -2371,7 +2371,7 @@
   image: https://wr-meta.com/uploads/posts/2022-01/1641814345_prophets-pendant.png
   name: Prophet's Pendant
   second_base:
-    formula: (1000-30*20.0)/12=33.33
+    formula: (1000-30*20.0)/12
     type: Magic Penetration
     value: 33.33
   stats:
@@ -2601,7 +2601,7 @@
   category: BASIC ITEMS
   cost: 400
   first_base:
-    formula: 400/25=16.0
+    formula: 400/25
     type: Move Speed
     value: 16.0
   formula: Base Item
@@ -2614,7 +2614,7 @@
   category: BASIC ITEMS
   cost: 500
   first_base:
-    formula: 500/12=41.67
+    formula: 500/12
     type: Attack Damage
     value: 41.67
   formula: Base Item
@@ -2627,7 +2627,7 @@
   category: BASIC ITEMS
   cost: 500
   first_base:
-    formula: 500/10=50.0
+    formula: 500/10
     type: '% Critical Rate'
     value: 50.0
   formula: Base Item
@@ -2640,7 +2640,7 @@
   category: BASIC ITEMS
   cost: 500
   first_base:
-    formula: 500/15=33.33
+    formula: 500/15
     type: '% Attack Speed'
     value: 33.33
   formula: Base Item
@@ -2665,7 +2665,7 @@
   image: https://wr-meta.com/uploads/posts/2021-03/1616984672_1027.png
   name: Sapphire Crystal
   second_base:
-    formula: (500-5*40.0)/100=3.0
+    formula: (500-5*40.0)/100
     type: Max Mana
     value: 3.0
   stats:
@@ -2677,7 +2677,7 @@
   category: BASIC ITEMS
   cost: 500
   first_base:
-    formula: 500/25=20.0
+    formula: 500/25
     type: Ability Power
     value: 20.0
   formula: Base Item
@@ -2690,7 +2690,7 @@
   category: BASIC ITEMS
   cost: 500
   first_base:
-    formula: 500/150=3.33
+    formula: 500/150
     type: Max Health
     value: 3.33
   formula: Base Item
@@ -2703,7 +2703,7 @@
   category: BASIC ITEMS
   cost: 500
   first_base:
-    formula: 500/20=25.0
+    formula: 500/20
     type: Armor
     value: 25.0
   formula: Base Item
@@ -2716,7 +2716,7 @@
   category: BASIC ITEMS
   cost: 500
   first_base:
-    formula: 500/20=25.0
+    formula: 500/20
     type: Magic Resistance
     value: 25.0
   formula: Base Item
@@ -2729,7 +2729,7 @@
   category: BASIC ITEMS
   cost: 400
   first_base:
-    formula: 400/10=40.0
+    formula: 400/10
     type: Ability Haste
     value: 40.0
   formula: Base Item

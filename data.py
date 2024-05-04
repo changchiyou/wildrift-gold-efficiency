@@ -84,7 +84,7 @@ class ItemData:
             data["first_base"] = {
                 "type": _type,
                 "value": stat_cost,
-                "formula": f"{data['cost']}/{target_stat['value']}={stat_cost}",
+                "formula": f"{data['cost']}/{target_stat['value']}",
             }
             self.stat_price[_type] = stat_cost
 
@@ -110,7 +110,7 @@ class ItemData:
             data["second_base"] = {
                 "type": _type,
                 "value": stat_cost,
-                "formula": f"({data['cost']}{formula_minus_part})/{target_stat['value']}={stat_cost}",
+                "formula": f"({data['cost']}{formula_minus_part})/{target_stat['value']}",
             }
             self.stat_price[_type] = stat_cost
 
@@ -228,6 +228,9 @@ if __name__ == "__main__":
             item_data.clean_base_GE()
             item_data.calculate_base_statistic_prices()
             item_data.calculate_gold_efficiency()
+
+
+
 
 
 
