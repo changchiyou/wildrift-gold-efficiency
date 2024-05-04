@@ -34,10 +34,10 @@ table {
   }
 
   @media screen and (max-width: 480px) {
-    .tooltip.rightmost {
+    .tooltip.toleft {
       margin-left: 15%;
     }
-    .tooltip.item.rightmost .tooltiptext {
+    .tooltip.item.toleft .tooltiptext {
       white-space: normal;
       max-width:235px;
       word-wrap: break-word;
@@ -53,12 +53,12 @@ table {
     background: #475266;
   }
 
-  .tooltip.rightmost .tooltiptext {
+  .tooltip.toleft .tooltiptext{
     top: -5px;
     right: 130%;
   }
 
-  .tooltip.rightmost .tooltiptext::after {
+  .tooltip.toleft .tooltiptext::after {
     content: " ";
     position: absolute;
     top: 50%;
@@ -68,21 +68,40 @@ table {
     border-style: solid;
     border-color: transparent transparent transparent $tooltip-backgroud-color;
   }
+  @media screen and (min-width: 481px){
+    .tooltip.stats .tooltiptext {
+      top: -5px;
+      left: 120%;
+    }
 
-  .tooltip.stats .tooltiptext {
-    top: -5px;
-    left: 120%;
+    .tooltip.stats .tooltiptext::after {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      margin-top: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent $tooltip-backgroud-color transparent transparent;
+    }
   }
 
-  .tooltip .tooltiptext::after {
-    content: " ";
+  @media screen and (max-width: 480px){
+    .tooltip.stats .tooltiptext {
+      top: -5px;
+      right: 130%;
+    }
+  
+    .tooltip.stats .tooltiptext::after {
+      content: " ";
     position: absolute;
     top: 50%;
-    right: 100%;
+    left: 100%;
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent $tooltip-backgroud-color transparent transparent;
+    border-color: transparent transparent transparent $tooltip-backgroud-color;
+    }
   }
 
   .tooltip:hover .tooltiptext {
@@ -103,13 +122,13 @@ table {
   }
 
   .items-item {
-    width: 56%;
+    width: 53%;
   }
   .items-cost {
     width: 11%;
   }
   .items-stat {
-    width: 27%;
+    width: 30%;
   }
   .items-amount {
     width: 6%;
@@ -117,13 +136,13 @@ table {
 
   @media screen and (max-width: 480px) {
     .items-item {
-      width: 71%;
+      width: 58%;
     }
     .items-cost {
       width: 11%;
     }
     .items-stat {
-      width: 13%;
+      width: 25%;
     }
     .items-amount {
       width: 6%;
