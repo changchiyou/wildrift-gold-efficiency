@@ -34,7 +34,7 @@
                 </td>
                 <td>
                     {% for stat in item.stats %}
-                        <b>
+                        <b class="stat">
                             {% if stat.passive %}
                                 <div class="tooltip stats">
                                     {{- stat.value -}}{% include stat_image.html type=stat.type stats=include.stats %}

@@ -45,8 +45,12 @@ table {
   }
 
   b.stat {
-    padding: 5px;
-    margin: 1px
+    padding: 3px;
+    display: inline-block;
+  }
+
+  b.stat > * {
+    vertical-align: middle;
   }
 
   b.target-stat {
@@ -152,7 +156,6 @@ table {
   @media screen and (max-width: 480px) {
     table td b {
       padding-left: 15%;
-      display: block;
     }
   }
 
