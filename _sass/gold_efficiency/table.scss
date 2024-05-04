@@ -32,11 +32,24 @@ table {
     position: absolute;
     z-index: 1;
   }
-  
+
   @media screen and (max-width: 480px) {
     .tooltip.rightmost {
       margin-left: 15%;
     }
+    .tooltip.item.rightmost .tooltiptext {
+      white-space: normal;
+      max-width: 215px;
+      word-wrap: break-word;
+    }
+  }
+
+  b.stat {
+    padding: 5px;
+    margin: 1px
+  }
+  b.target-stat {
+    background: #475266;
   }
 
   .tooltip.rightmost .tooltiptext {
@@ -75,20 +88,17 @@ table {
     visibility: visible;
   }
 
-  .bases-champion-statistic {
-    width: 25%;
-  }
   .bases-item {
     width: 30%;
   }
   .bases-cost {
-    width: 10%;
+    width: 15%;
   }
   .bases-stat {
-    width: 24%;
+    width: 20%;
   }
   .bases-stat-price {
-    width: 11%;
+    width: 25%;
   }
 
   .items-item {

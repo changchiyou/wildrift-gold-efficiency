@@ -2,7 +2,6 @@
 
 <table>
     <colgroup>
-        <col class="bases-champion-statistic">
         <col class="bases-item">
         <col class="bases-cost">
         <col class="bases-stat">
@@ -10,10 +9,9 @@
     </colgroup>
     <thead>
       <tr>
-        <th>Champion Statistic</th>
-        <th>Item</th>
+        <th>Base Item</th>
         <th>Cost</th>
-        <th>Stat</th>
+        <th>Stats</th>
         <th>Stat Price</th>
       </tr>
     </thead>
@@ -22,7 +20,6 @@
         {% if item[include.base] %}
             {% assign base = item[include.base] %}
             <tr>
-                <td> {{ base.type }} </td>
                 <td>
                     <img class="item-icon" loading="lazy" src="{{ item.image }}" style="margin-right: 5px;" />
                     {{ item.name }}
@@ -33,7 +30,11 @@
                 </td>
                 <td>
                     {% for stat in item.stats %}
-                        <b>
+                    {% if base.type == stat.type %}
+                        <b class="stat target-stat">
+                    {% else%}
+                        <b class="stat">
+                    {% endif %}
                             {% if stat.passive %}
                                 <div class="tooltip stats">
                                     {{- stat.value -}}{% include stat_image.html type=stat.type stats=include.stats %}
