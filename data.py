@@ -138,14 +138,14 @@ class ItemData:
         for data in datas:
             if not ("first_base" in data or "second_base" in data):
                 worth = 0
-                formula_bonux_part = ""
+                formula_bonus_part = ""
                 for stat in data["stats"]:
                     worth += stat["value"] * stat_price.get(stat["type"], 0)
-                    formula_bonux_part += f"{'+' if formula_bonux_part else ''}{stat['value']}*{stat_price.get(stat['type'], 0)}"
+                    formula_bonus_part += f"{'+' if formula_bonus_part else ''}{stat['value']}*{stat_price.get(stat['type'], 0)}"
                 amount = "{:.2f}".format(worth / data["cost"] * 100) + "%"
                 data["amount"] = amount
                 data["formula"] = (
-                    f"({formula_bonux_part if formula_bonux_part else '0'})/{data['cost']}={amount}"
+                    f"({formula_bonus_part if formula_bonus_part else '0'})/{data['cost']}"
                 )
             else:
                 data["amount"] = "100%"
@@ -206,25 +206,3 @@ if __name__ == "__main__":
             item_data.clean_base_GE()
             item_data.calculate_base_statistic_prices()
             item_data.calculate_gold_efficiency()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
