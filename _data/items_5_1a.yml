@@ -788,7 +788,7 @@
   cost: 3200
   formula: (40*41.67+25*50.0+15*33.33+5*36.66+8*36.66)/3200
   image: https://wr-meta.com/uploads/posts/2023-05/1682985922_immortal_shieldbow_item.webp
-  name: Immortal Shieldbow (Buttle Furor)
+  name: Immortal Shieldbow (Battle Furor)
   stats:
   - type: Attack Damage
     value: 40
@@ -798,7 +798,7 @@
     value: 15
   - type: '% Physical Vamp'
     value: 5
-  - passive: Buttle Furor
+  - passive: Battle Furor
     type: '% Physical Vamp'
     value: 8
 - amount: 107.76%
@@ -992,13 +992,13 @@
   cost: 3400
   formula: (90*20.0+7*0+-5*3.33+22.5*20.0)/3400
   image: https://wr-meta.com/uploads/posts/2024-04/1712773821_1616983058_3089.png
-  name: Ruin - Rabadon's Deathcap (Cinders - lv1)
+  name: Ruin - Rabadon's Deathcap (Cinders, Overkill - lv1)
   stats:
   - type: Ability Power
     value: 90
   - type: '% Magic Penetration'
     value: 7
-  - passive: Cinders
+  - passive: Cinders, Overkill
     type: Max Health
     value: -5
   - formula: 90*0.25
@@ -1012,13 +1012,13 @@
   cost: 3400
   formula: (90*20.0+7*0+-80*3.33+45.0*20.0)/3400
   image: https://wr-meta.com/uploads/posts/2024-04/1712773821_1616983058_3089.png
-  name: Ruin - Rabadon's Deathcap (Cinders - lv15)
+  name: Ruin - Rabadon's Deathcap (Cinders, Overkill - lv15)
   stats:
   - type: Ability Power
     value: 90
   - type: '% Magic Penetration'
     value: 7
-  - passive: Cinders
+  - passive: Cinders, Overkill
     type: Max Health
     value: -80
   - formula: 90*0.5
@@ -1237,10 +1237,10 @@
     value: 300
   - type: Ability Haste
     value: 10
-- amount: 103.98%
+- amount: 103.31%
   category: MAGIC DAMAGE ITEMS
-  cost: 2500
-  formula: (150*3.33+65*20.0+7*0+20*40.0+15*0)/2500
+  cost: 3000
+  formula: (150*3.33+65*20.0+7*0+20*40.0+15*33.33)/3000
   image: https://wr-meta.com/uploads/posts/2021-01/1611109674_awakened-soulstealer.jpg
   name: Awakened Soulstealer
   stats:
@@ -1253,7 +1253,7 @@
   - type: Ability Haste
     value: 20
   - passive: Soul Hunt
-    type: '% Magic Penetration'
+    type: Magic Penetration
     value: 15
 - amount: 77.94%
   category: MAGIC DAMAGE ITEMS
@@ -1740,7 +1740,7 @@
   cost: 2900
   formula: (200*3.33+40*25.0+40*25.0)/2900
   image: https://wr-meta.com/uploads/posts/2023-03/1678401479_1mantle-of-the-twelfth-hour_11zon.webp
-  name: MANTLE OF THE TWELFTH HOUR
+  name: Mantle of the Twelfth Hour
   stats:
   - type: Max Health
     value: 200
@@ -1753,16 +1753,16 @@
   cost: 2700
   formula: (300*3.33+50*25.0)/2700
   image: https://wr-meta.com/uploads/posts/2023-03/1678401625_searing-crown-edited_11zon.webp
-  name: SEARING CROWN
+  name: Searing Crown
   stats:
   - type: Max Health
     value: 300
   - type: Armor
     value: 50
-- amount: 104.37%
+- amount: 111.82%
   category: DEFENSE ITEMS
-  cost: 3000
-  formula: (700*3.33+150*0+20*40.0)/3000
+  cost: 2800
+  formula: (700*3.33+150*0+20*40.0)/2800
   image: https://wr-meta.com/uploads/posts/2024-01/1705522930_heartsteel_item_hd.webp
   name: Heartsteel
   stats:
