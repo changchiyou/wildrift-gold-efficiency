@@ -120,7 +120,8 @@
   stats:
   - type: '% Attack Speed'
     value: 35
-  - type: Attack Damage
+  - passive: Wind's Favor
+    type: Attack Damage
     value: 20
 - amount: 100.13%
   category: PHYSICAL DAMAGE ITEMS
@@ -1384,7 +1385,7 @@
   stats:
   - type: '% Attack Speed'
     value: 45
-  - passive: "Wind\u2019s Favor"
+  - passive: Wind's Favor
     type: Ability Power
     value: 40
 - amount: 75.50%
