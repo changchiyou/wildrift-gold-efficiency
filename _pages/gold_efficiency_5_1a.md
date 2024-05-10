@@ -3,7 +3,7 @@ layout: gold_efficiency
 
 title: 5.1a
 date: 2024/04/25
-description: Wild Rift Gold Efficiency：Buff FORCE OF NATURE, RUIN - BLADE OF THE RUINED KING, THORNMAIL; adjust RUIN - INFINITY EDGE, RUIN - RABADON’S DEATHCAP; nerf TERMINUS, LIGHT - YOUMUU’S GHOSTBLADE
+description: Wild Rift Gold Efficiency of 5.1a
 image: /assets/favicon.png
 
 permalink: /5.1a/
@@ -14,4 +14,11 @@ data_refer_text: 5.1a
 
 items: items_5_1a
 stats: stats_5_1a
+
+patch_status_list:
+    buffed: "FORCE OF NATURE,RUIN - BLADE OF THE RUINED KING,THORNMAIL"
+    adjusted: "RUIN - INFINITY EDGE,RUIN - RABADON’S DEATHCAP"
+    nerfed: "TERMINUS,LIGHT - YOUMUU’S GHOSTBLADE"
+    new: ""
+patch_status_excludes: "Light - Youmuu's Ghostblade"
 ---

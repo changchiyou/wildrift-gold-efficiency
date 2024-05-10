@@ -3,7 +3,7 @@ layout: gold_efficiency
 
 title: 5.1
 date: 2024/04/19 12:02 a.m.
-description: Wild Rift Gold Efficiency：A hotfix for KALISTA, LIGHT - HORIZON FOCUS, LIGHT - INFINITY ORB
+description: Wild Rift Gold Efficiency of 5.1
 image: /assets/favicon.png
 
 permalink: /5.1/

@@ -23,10 +23,51 @@
                 {% capture filters %}{{ filters }} filter-{{ stat.type | downcase | replace: " ", "-" | replace: "%", "percentage" }}{% endcapture %}
             {% endfor %}
 
+            {% assign exclude = false  %}
+            {% assign patch_status_excludes = page.patch_status_excludes | split: ',' %}
+            {% for patch_status_exclude in patch_status_excludes %}
+                {% if item.name == patch_status_exclude %}
+                    {% assign exclude = true %}
+                    {% break %}
+                {% endif %}
+            {% endfor %}
+
+            {% assign patch = "" %}
+            {% unless exclude %}
+                {% for patch_status in page.patch_status_list %}
+                    {% assign status_items = patch_status[1] | split: ',' %}
+                    {% for status_item in status_items %}
+                        {% assign item_name = item.name | upcase | replace: "'", '’' %}
+                        {% if item_name contains status_item %}
+                            {% assign patch = patch_status[0] %}
+                            {% break %}
+                        {% endif %}
+                    {% endfor %}
+                    {% if patch != "" %}
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+            {% endunless %}
+
             <tr class="item-table {{ filters | strip }}">
                 <td>
+                    <div class="front-empty">
+                        {% if patch != "" %}
+                        <div class="{{ patch }}"></div>
+                        {% endif %}
+                    </div>
+                    {% if patch != "" %}
+                        <div class="{{ patch }} phone"></div>
+                    {% endif %}
+
                     <img class="item-icon" loading="lazy" src="{{ item.image }}" style="margin-right: 5px;" />
-                    {{ item.name }}
+                    {% assign item_name = item.name | split: '(' %}
+                    {% if item_name.size == 2 %}
+                        {{ item_name[0] }}
+                        <p class="item-note">{{ item_name[1] | remove: ')' }}</p>
+                    {% else %}
+                        {{ item.name }}
+                    {% endif %}
                 </td>
                 <td class="goldt">
                     {{ item.cost }}

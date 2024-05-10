@@ -1,0 +1,80 @@
+.buffed {
+    display: inline-block;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8.7px solid #62a920; /*（5px / sin(60°) ≈ 8.7px） */
+  }
+
+  .nerfed {
+    display: inline-block;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8.7px solid #991950;
+  }
+
+  .adjusted {
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background-color: #af39df;
+  }
+
+  .new {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .new::before,
+  .new::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #c4a145; /* 十字的顏色 */
+  }
+  
+  .new::before {
+    transform: translateY(-50%);
+  }
+  
+  .new::after {
+    transform: translateY(-50%) rotate(90deg);
+  }
+
+  @media screen and (max-width: 480px){
+    .buffed {
+        border-left: 3.125px solid transparent;
+        border-right: 3.125px solid transparent;
+        border-bottom: 4.419px solid #62a920; /*（5px / sin(60°) ≈ 8.7px） */
+    }
+    .nerfed {
+        border-left: 3.125px solid transparent;
+        border-right: 3.125px solid transparent;
+        border-top: 4.419px solid #991950;
+    }
+    .adjust {
+        height: 5px;
+        width: 5px;
+    }
+    .new {
+        width: 6.25px;
+        height: 6.25px;
+    }
+    .new::after, .new::before {
+        height: 1.875px;
+    }
+  }
+
+  @media screen and (min-width: 481px){
+    div.phone {
+        display: none;
+    }
+  }
