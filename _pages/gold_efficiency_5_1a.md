@@ -19,6 +19,6 @@ patch_status_list:
     buffed: "FORCE OF NATURE,RUIN - BLADE OF THE RUINED KING,THORNMAIL"
     adjusted: "RUIN - INFINITY EDGE,RUIN - RABADON’S DEATHCAP"
     nerfed: "TERMINUS,LIGHT - YOUMUU’S GHOSTBLADE"
-    new: ""
+    new: "DUSKBLADE"
 patch_status_excludes: "Light - Youmuu's Ghostblade"
 ---
