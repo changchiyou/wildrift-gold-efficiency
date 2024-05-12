@@ -32,6 +32,7 @@
 </div>
 <br>
 
+<script src={{ "/assets/js/renderTable.js" | relative_url }}></script>
 <script>
     function toggleElements() {
         var checkboxes = document.querySelectorAll('input[type="checkbox"].filter');
@@ -69,6 +70,8 @@
                 row.style.display = matched ? 'table-row' : 'none';
             });
         }
+
+        renderRowColors();
     }
 
     var checkboxes = document.querySelectorAll('input[type="checkbox"].filter');

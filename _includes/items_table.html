@@ -15,6 +15,8 @@
         <th>Amount</th>
       </tr>
     </thead>
+    {% assign compare_statuses = page.patch_note.compare_statuses | split: ',' %}
+    {% assign patch_status_excludes = page.patch_note.excludes | split: ',' %}
     <tbody>
       {% for item in site.data[ include.items ] %}
         {% if item.category == include.category %}
@@ -24,7 +26,6 @@
             {% endfor %}
 
             {% assign exclude = false  %}
-            {% assign patch_status_excludes = page.patch_status_excludes | split: ',' %}
             {% for patch_status_exclude in patch_status_excludes %}
                 {% if item.name == patch_status_exclude %}
                     {% assign exclude = true %}
@@ -34,7 +35,7 @@
 
             {% assign patch = "" %}
             {% unless exclude %}
-                {% for patch_status in page.patch_status_list %}
+                {% for patch_status in page.patch_note.statuses %}
                     {% assign status_items = patch_status[1] | split: ',' %}
                     {% for status_item in status_items %}
                         {% assign item_name = item.name | upcase | replace: "'", '’' %}
