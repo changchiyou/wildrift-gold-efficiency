@@ -74,7 +74,7 @@ layout: default
         element.addEventListener('click', function() {
             this.classList.toggle("active");
             var nextRow = this.parentElement.nextElementSibling;
-            nextRow.style.display = nextRow.style.display == 'table-row' ? 'none' : 'table-row';
+            nextRow.classList.toggle("active");
         });
     });
 </script>

@@ -7,8 +7,8 @@ $tooltip-color: #333;
     border-collapse: collapse;
   }
   
-  td {
-    padding: 10px;
+  table td {
+    padding: 10px 15px;
     text-align: left;
   }
   
@@ -180,6 +180,25 @@ $tooltip-color: #333;
     content: "-";
   }
 
+  tr.compare td {
+    padding: 0px 15px;
+    transition: padding 0.3s;
+  }
+  tr.compare td div:not(.stats) {
+    max-height: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: max-height 0.3s;
+  }
+
+  tr.compare.active td {
+    padding: 10px 15px;
+  }
+  tr.compare.active td div:not(.stats) {
+    max-height: 100px;
+    transition: max-height 0.6s;
+  }
+
   @media screen and (max-width: 768px) {
     table {
         font-size: 13px;
@@ -190,7 +209,7 @@ $tooltip-color: #333;
     table {
       font-size: 10px;
     }
-    table td {
+    table td, tr.compare.active td {
       padding: 5px 5px;
     }
     table td b {
@@ -201,11 +220,5 @@ $tooltip-color: #333;
     }
     p.item-note {
       display: block;
-    }
-  }
-
-  @media screen and (min-width: 481px) {
-    table td {
-      padding: 10px 10px;
     }
   }

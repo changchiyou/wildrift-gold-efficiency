@@ -76,9 +76,9 @@
             td.classList.toggle("active")
         });
 
-        var compare_rows = document.querySelectorAll('tr.compare');
+        var compare_rows = document.querySelectorAll('tr.compare.active');
         compare_rows.forEach(function(row) {
-            row.style.display = 'none';
+            row.classList.toggle("active")
         });
 
         renderRowColors();

@@ -1,15 +1,11 @@
 {% assign patch = include.patch | default: "" %}
 {% assign tr_classes = include.tr_classes %}
 {% assign data_item = include.data_item %}
-{% assign display = include.display | default: "true" %}
 {% assign item_prefix = include.item_prefix | default: "" %}
 {% assign first_td_class = include.first_td_class | default: "" %}
 {% assign backgroundColor = include.backgroundColor %}
 
 {% assign tr_style = "" %}
-{% if display != "true" %}
-    {% capture tr_style %}{{tr_style}} display: none;{% endcapture %}
-{% endif %}
 {% if backgroundColor %}
     {% capture tr_style %}{{tr_style}} background-color: {{ backgroundColor }};{% endcapture %}
 {% endif %}
@@ -71,11 +67,13 @@
         </div>
     </td>
     <td>
-        <div class="tooltip item toleft">
-            {{ data_item.amount }}
-            <span class="tooltiptext">
-                {{ data_item.formula }}
-            </span>
+        <div>
+            <div class="tooltip item toleft">
+                {{ data_item.amount }}
+                <span class="tooltiptext">
+                    {{ data_item.formula }}
+                </span>
+            </div>
         </div>
     </td>
 </tr>
