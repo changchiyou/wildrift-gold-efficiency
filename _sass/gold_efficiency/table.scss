@@ -212,6 +212,9 @@ $tooltip-color: #333;
     table td, tr.compare.active td {
       padding: 5px 5px;
     }
+    tr.compare td {
+      padding: 0px 5px;
+    }
     table td b {
       padding-left: 15%;
     }
