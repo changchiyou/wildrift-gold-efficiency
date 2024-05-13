@@ -55,7 +55,7 @@
                 {% include item_row.html data_item=item stats=include.stats patch=patch tr_classes=filters first_td_class="toggle-trigger" %}
                     {% assign compare_item = compare_items | where: "name", item.name | first %}
                     {% if compare_item %}
-                        {% include item_row.html data_item=compare_item stats=page.patch_note.compare_stats display="false" item_prefix="5.1" tr_classes="compare" backgroundColor="rgba(98, 101, 112, 1)" %}
+                        {% include item_row.html data_item=compare_item stats=page.patch_note.compare_stats display="false" item_prefix=page.patch_note.item_prefix tr_classes="compare" backgroundColor="rgba(98, 101, 112, 1)" %}
                     {% endif %}
                 {% else %}
                     {% include item_row.html data_item=item stats=include.stats patch=patch tr_classes=filters %}
