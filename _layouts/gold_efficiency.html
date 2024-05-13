@@ -74,7 +74,6 @@ layout: default
         element.addEventListener('click', function() {
             this.classList.toggle("active");
             var nextRow = this.parentElement.nextElementSibling;
-            nextRow.style.backgroundColor = "rgba(98, 101, 112, 1)";
             nextRow.style.display = nextRow.style.display == 'table-row' ? 'none' : 'table-row';
         });
     });

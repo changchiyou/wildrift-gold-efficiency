@@ -1,9 +1,10 @@
 $tooltip-backgroud-color: #fff;
 $tooltip-color: #333;
 
-table {
+  table {
     font-family: 'DIN Pro', sans-serif;
     font-weight: 700;
+    border-collapse: collapse;
   }
   
   td {
@@ -166,7 +167,7 @@ table {
     margin: 0;
   }
 
-  .toggle-trigger:after, .toggle-trigger:before {
+  .toggle-trigger:before {
     content: '+';
     color: white;
     font-weight: bold;
@@ -175,11 +176,7 @@ table {
     vertical-align: middle;
   }
 
-  .toggle-trigger:before {
-    display: none;
-  }
-  
-  .toggle-trigger.active:after, .toggle-trigger.active:before {
+  .toggle-trigger.active:before {
     content: "-";
   }
 
@@ -204,12 +201,6 @@ table {
     }
     p.item-note {
       display: block;
-    }
-    .toggle-trigger:after {
-      display: none;
-    }
-    .toggle-trigger:before {
-      display: inline-block;
     }
   }
 
