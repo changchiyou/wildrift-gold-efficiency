@@ -1,5 +1,8 @@
 <h3 id="{{ include.anchor }}">{{ include.header }}</h3>
 
+{% assign compare_items = site.data[ page.patch_note.compare_items ] %}
+{% assign compare_statuses = page.patch_note.compare_statuses | split: ',' %}
+{% assign patch_status_excludes = page.patch_note.excludes | split: ',' %}
 <table>
     <colgroup>
         <col class="items-item">
@@ -15,94 +18,49 @@
         <th>Amount</th>
       </tr>
     </thead>
-    {% assign compare_statuses = page.patch_note.compare_statuses | split: ',' %}
-    {% assign patch_status_excludes = page.patch_note.excludes | split: ',' %}
     <tbody>
-      {% for item in site.data[ include.items ] %}
-        {% if item.category == include.category %}
-            {% assign filters = "" %}
-            {% for stat in item.stats %}
-                {% capture filters %}{{ filters }} filter-{{ stat.type | downcase | replace: " ", "-" | replace: "%", "percentage" }}{% endcapture %}
-            {% endfor %}
+        {% for item in site.data[ include.items ] %}
+            {% if item.category == include.category %}
+                {% assign filters = "" %}
+                {% for stat in item.stats %}
+                    {% capture filters %}{{ filters }} filter-{{ stat.type | downcase | replace: " ", "-" | replace: "%", "percentage" }}{% endcapture %}
+                {% endfor %}
 
-            {% assign exclude = false  %}
-            {% for patch_status_exclude in patch_status_excludes %}
-                {% if item.name == patch_status_exclude %}
-                    {% assign exclude = true %}
-                    {% break %}
-                {% endif %}
-            {% endfor %}
-
-            {% assign patch = "" %}
-            {% unless exclude %}
-                {% for patch_status in page.patch_note.statuses %}
-                    {% assign status_items = patch_status[1] | split: ',' %}
-                    {% for status_item in status_items %}
-                        {% assign item_name = item.name | upcase | replace: "'", '’' %}
-                        {% if item_name contains status_item %}
-                            {% assign patch = patch_status[0] %}
-                            {% break %}
-                        {% endif %}
-                    {% endfor %}
-                    {% if patch != "" %}
+                {% assign exclude = false  %}
+                {% for patch_status_exclude in patch_status_excludes %}
+                    {% if item.name == patch_status_exclude %}
+                        {% assign exclude = true %}
                         {% break %}
                     {% endif %}
                 {% endfor %}
-            {% endunless %}
 
-            <tr class="item-table {{ filters | strip }}">
-                <td>
-                    <div class="front-empty">
-                        {% if patch != "" %}
-                        <div class="{{ patch }}"></div>
-                        {% endif %}
-                    </div>
-                    {% if patch != "" %}
-                        <div class="{{ patch }} phone"></div>
-                    {% endif %}
-
-                    <img class="item-icon" loading="lazy" src="{{ item.image }}" style="margin-right: 5px;" />
-                    {% assign item_name = item.name | split: '(' %}
-                    {% if item_name.size == 2 %}
-                        {{ item_name[0] }}
-                        <p class="item-note">{{ item_name[1] | remove: ')' }}</p>
-                    {% else %}
-                        {{ item.name }}
-                    {% endif %}
-                </td>
-                <td class="goldt">
-                    {{ item.cost }}
-                    {% include stat_image.html type="gold" stats=include.stats %}
-                </td>
-                <td>
-                    {% for stat in item.stats %}
-                        <b class="stat">
-                            {% if stat.passive %}
-                                <div class="tooltip stats">
-                                    {{- stat.value -}}{% include stat_image.html type=stat.type stats=include.stats %}
-                                    <span class="tooltiptext">
-                                        {{ stat.passive }}
-                                        {% if stat.formula %}
-                                            : {{ stat.formula }}
-                                        {% endif %}
-                                    </span>
-                                </div>
-                            {% else %}
-                                {{- stat.value -}}{% include stat_image.html type=stat.type stats=include.stats %}
+                {% assign patch = "" %}
+                {% unless exclude %}
+                    {% for patch_status in page.patch_note.statuses %}
+                        {% assign status_items = patch_status[1] | split: ',' %}
+                        {% for status_item in status_items %}
+                            {% assign item_name = item.name | upcase | replace: "'", '’' %}
+                            {% if item_name contains status_item %}
+                                {% assign patch = patch_status[0] %}
+                                {% break %}
                             {% endif %}
-                        </b>
+                        {% endfor %}
+                        {% if patch != "" %}
+                            {% break %}
+                        {% endif %}
                     {% endfor %}
-                </td>
-                <td>
-                    <div class="tooltip item toleft">
-                        {{ item.amount }}
-                        <span class="tooltiptext">
-                            {{ item.formula }}
-                        </span>
-                    </div>
-                </td>
-            </tr>
-        {% endif %}
-      {% endfor %}
+                {% endunless %}
+
+                {% if compare_statuses contains patch %}
+                {% include item_row.html data_item=item stats=include.stats patch=patch tr_classes=filters first_td_class="toggle-trigger" %}
+                    {% assign compare_item = compare_items | where: "name", item.name | first %}
+                    {% if compare_item %}
+                        {% include item_row.html data_item=compare_item stats=page.patch_note.compare_stats display="false" item_prefix="5.1" tr_classes="compare" %}
+                    {% endif %}
+                {% else %}
+                    {% include item_row.html data_item=item stats=include.stats patch=patch tr_classes=filters %}
+                {% endif %}
+            {% endif %}
+        {% endfor %}
     </tbody>
 </table>

@@ -44,7 +44,7 @@
             }
         });
 
-        var rows = document.querySelectorAll('tr.item-table');
+        var rows = document.querySelectorAll('tr.item-table:not(.compare)');
 
         if (!anyChecked) {
             rows.forEach(function(row) {
@@ -70,6 +70,16 @@
                 row.style.display = matched ? 'table-row' : 'none';
             });
         }
+
+        var active_tds = document.querySelectorAll('td.toggle-trigger.active');
+        active_tds.forEach(function(td) {
+            td.classList.toggle("active")
+        });
+
+        var compare_rows = document.querySelectorAll('tr.compare');
+        compare_rows.forEach(function(row) {
+            row.style.display = 'none';
+        });
 
         renderRowColors();
     }

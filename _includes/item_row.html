@@ -1,0 +1,70 @@
+{% assign patch = include.patch | default: "" %}
+{% assign tr_classes = include.tr_classes %}
+{% assign data_item = include.data_item %}
+{% assign display = include.display | default: "true" %}
+{% assign item_prefix = include.item_prefix | default: "" %}
+{% assign first_td_class = include.first_td_class | default: "" %}
+
+{% if display == "true" %}
+<tr class="item-table {{ tr_classes | strip }}">
+{% else %}
+<tr class="item-table {{ tr_classes | strip }}" style="display: none;">
+{% endif %}
+    {% if first_td_class != "" %}
+    <td class="{{ first_td_class }}">
+    {% else %}
+    <td>
+    {% endif %}
+        <div class="front-empty">
+            {% if patch != "" %}
+            <div class="{{ patch }}"></div>
+            {% endif %}
+        </div>
+        {% if patch != "" %}
+            <div class="{{ patch }} phone"></div>
+        {% endif %}
+
+        <img class="item-icon" loading="lazy" src="{{ data_item.image }}" style="margin-right: 5px;" />
+        {% if item_prefix != "" %}
+            {{ item_prefix }} | 
+        {% endif %}
+        {% assign item_name = data_item.name | split: '(' %}
+        {% if item_name.size == 2 %}
+            {{ item_name[0] }}
+            <p class="item-note">{{ item_name[1] | remove: ')' }}</p>
+        {% else %}
+            {{ data_item.name }}
+        {% endif %}
+    </td>
+    <td class="goldt">
+        {{ data_item.cost }}
+        {% include stat_image.html type="gold" stats=include.stats %}
+    </td>
+    <td>
+        {% for stat in data_item.stats %}
+            <b class="stat">
+                {% if stat.passive %}
+                    <div class="tooltip stats">
+                        {{- stat.value -}}{% include stat_image.html type=stat.type stats=include.stats %}
+                        <span class="tooltiptext">
+                            {{ stat.passive }}
+                            {% if stat.formula %}
+                                : {{ stat.formula }}
+                            {% endif %}
+                        </span>
+                    </div>
+                {% else %}
+                    {{- stat.value -}}{% include stat_image.html type=stat.type stats=include.stats %}
+                {% endif %}
+            </b>
+        {% endfor %}
+    </td>
+    <td>
+        <div class="tooltip item toleft">
+            {{ data_item.amount }}
+            <span class="tooltiptext">
+                {{ data_item.formula }}
+            </span>
+        </div>
+    </td>
+</tr>

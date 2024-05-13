@@ -163,6 +163,24 @@ table {
     display: inline-block;
     font-size: 0.7em;
     color: #a19e9d;
+    margin: 0;
+  }
+
+  .toggle-trigger:after, .toggle-trigger:before {
+    content: '+';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+
+  .toggle-trigger:before {
+    display: none;
+  }
+  
+  .toggle-trigger.active:after, .toggle-trigger.active:before {
+    content: "-";
   }
 
   @media screen and (max-width: 768px) {
@@ -186,6 +204,12 @@ table {
     }
     p.item-note {
       display: block;
+    }
+    .toggle-trigger:after {
+      display: none;
+    }
+    .toggle-trigger:before {
+      display: inline-block;
     }
   }
 

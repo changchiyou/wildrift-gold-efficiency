@@ -67,6 +67,19 @@ layout: default
 
 {%- include items_table.html items=page.items stats=page.stats category="BASIC ITEMS" anchor="BASIC-ITEMS" header="📌 Basic Items" -%}
 
+<script src={{ "/assets/js/renderTable.js" | relative_url }}></script>
+<script>
+    renderRowColors();
+    document.querySelectorAll('.toggle-trigger').forEach(function(element) {
+        element.addEventListener('click', function() {
+            this.classList.toggle("active");
+            var nextRow = this.parentElement.nextElementSibling;
+            nextRow.style.backgroundColor = "rgba(98, 101, 112, 1)";
+            nextRow.style.display = nextRow.style.display == 'table-row' ? 'none' : 'table-row';
+        });
+    });
+</script>
+
 <div id="giscus-comments" class="giscus"></div>
 <script src="https://giscus.app/client.js"
         data-repo="changchiyou/wildrift-gold-efficiency"
