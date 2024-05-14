@@ -24,6 +24,20 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .site-title {
+    @include relative-font-size(1.325);
+  }
+}
+
+span.version {
+  background-color: $background-color;
+  color: $grey-color-dark;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
 .site-nav {
   float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
