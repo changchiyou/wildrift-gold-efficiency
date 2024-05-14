@@ -999,7 +999,7 @@
     value: 90
   - type: '% Magic Penetration'
     value: 7
-  - passive: Cinders, Overkill
+  - passive: Cinders
     type: Max Health
     value: -5
   - formula: 90*0.25
@@ -1019,7 +1019,7 @@
     value: 90
   - type: '% Magic Penetration'
     value: 7
-  - passive: Cinders, Overkill
+  - passive: Cinders
     type: Max Health
     value: -80
   - formula: 90*0.5
