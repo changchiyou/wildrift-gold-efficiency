@@ -30,11 +30,12 @@
                 </td>
                 <td>
                     {% for stat in item.stats %}
-                    {% if base.type == stat.type %}
-                        <b class="stat target-stat">
-                    {% else%}
-                        <b class="stat">
-                    {% endif %}
+                        <b class="stat base">
+                            {% if base.type == stat.type %}
+                            <span class="target-stat">
+                            {% else%}
+                            <span class="base-stat">
+                            {% endif %}
                             {% if stat.passive %}
                                 <div class="tooltip stats">
                                     {{- stat.value -}}{% include stat_image.html type=stat.type stats=include.stats %}
@@ -45,6 +46,7 @@
                             {% else %}
                                 {{- stat.value -}}{% include stat_image.html type=stat.type stats=include.stats %}
                             {% endif %}
+                            </span>
                         </b>
                     {% endfor %}
                 </td>

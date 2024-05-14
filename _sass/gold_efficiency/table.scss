@@ -50,11 +50,16 @@ $tooltip-color: #333;
     display: inline-block;
   }
 
+  b.stat.base {
+    padding: 3px;
+  }
+
   b.stat > * {
     vertical-align: middle;
   }
 
-  b.target-stat {
+  span.target-stat {
+    padding: 3px;
     background: #475266;
   }
 
@@ -225,6 +230,9 @@ $tooltip-color: #333;
       display: none;
     }
     p.item-note {
+      display: block;
+    }
+    b.stat {
       display: block;
     }
   }
