@@ -184,7 +184,8 @@ $tooltip-color: #333;
     padding: 0px 15px;
     transition: padding 0.3s;
   }
-  tr.compare td div:not(.stats) {
+
+  tr.compare td div:not(.stats, .item) {
     max-height: 0;
     box-sizing: border-box;
     overflow: hidden;
@@ -194,9 +195,11 @@ $tooltip-color: #333;
   tr.compare.active td {
     padding: 10px 15px;
   }
-  tr.compare.active td div:not(.stats) {
+
+  tr.compare.active td div:not(.stats, .item) {
     max-height: 100px;
-    transition: max-height 0.6s;
+    overflow: visible;
+    transition: max-height 0.3s;
   }
 
   @media screen and (max-width: 768px) {
