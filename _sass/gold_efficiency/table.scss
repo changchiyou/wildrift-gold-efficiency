@@ -197,7 +197,7 @@ $tooltip-color: #333;
   }
 
   tr.compare.active td div:not(.stats, .item) {
-    max-height: 100px;
+    max-height: 200px;
     overflow: visible;
     transition: max-height 0.3s;
   }
