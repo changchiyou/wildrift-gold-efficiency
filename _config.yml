@@ -18,9 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Wild Rift Gold Efficiency
+title: WR Gold Efficiency
 description: >- # this means to ignore newlines until "baseurl:"
-  A website combining the gold efficiency calculation formula from 'Gold efficiency (Wild Rift) | League of Legends Wiki' with the design elements from 'WR Meta', featuring manually updated item data for [Wild Rift].
+  WR Gold Efficiency, A website combining the gold efficiency calculation formula from 'Gold efficiency (Wild Rift) | League of Legends Wiki' with the design elements from 'WR Meta', featuring manually updated item data for [Wild Rift].
 baseurl: "/wildrift-gold-efficiency" # the subpath of your site, e.g. /blog
 url: "https://changchiyou.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 logo: /assets/favicon.png
