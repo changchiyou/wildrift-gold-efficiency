@@ -19,7 +19,7 @@
     "display": "minimal-ui",
     "scope": "/wildrift-gold-efficiency/",
     "theme_color": "#cccccc",
-    "description": "WR Gold Efficiency, A website combining the gold efficiency calculation formula from 'Gold efficiency (Wild Rift) | League of Legends Wiki' with the design elements from 'WR Meta', featuring manually updated item data for 'Wild Rift'.",
+    "description": "WR(Wild Rift) Gold Efficiency, a website combining the gold efficiency calculation formula from 'Gold efficiency (Wild Rift) | League of Legends Wiki' with the design elements from 'WR Meta', featuring manually updated item data from 'Wild Rift'.",
     "screenshots": [
         {
         "src": "/wildrift-gold-efficiency/images/screenshots/narrow/screenshot1.jpg",
