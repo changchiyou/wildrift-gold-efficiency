@@ -1,9 +1,10 @@
 {% assign patch = include.patch | default: "" %}
 {% assign tr_classes = include.tr_classes %}
 {% assign data_item = include.data_item %}
-{% assign item_prefix = include.item_prefix | default: "" %}
+{% assign compare_item_prefix = include.compare_item_prefix | default: "" %}
 {% assign first_td_class = include.first_td_class | default: "" %}
 {% assign backgroundColor = include.backgroundColor %}
+{% assign prefix_version_in_span = include.prefix_version_in_span | default: "false" %}
 
 {% assign tr_style = "" %}
 {% if backgroundColor %}
@@ -27,8 +28,10 @@
             {% endif %}
 
             <img class="item-icon" loading="lazy" src="{{ data_item.image }}" style="margin-right: 5px;" />
-            {% if item_prefix != "" %}
-                {{ item_prefix }} | 
+            {% if compare_item_prefix != "" %}
+                <span class="version">{{ compare_item_prefix }}</span>
+            {% elsif prefix_version_in_span == "true" %}
+                <span class="prefix-version version">{{ page.title }}</span>
             {% endif %}
             {% assign item_name = data_item.name | split: '(' %}
             {% if item_name.size == 2 %}

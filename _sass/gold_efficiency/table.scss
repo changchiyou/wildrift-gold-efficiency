@@ -217,6 +217,20 @@ $tooltip-color: #333;
     transition: max-height 0.3s;
   }
 
+  td span.version {
+    background: $grey-color-dark;
+    color: $grey-color-light;
+    padding: 1px 3px;
+  }
+
+  td.toggle-trigger span.prefix-version {
+    display: none;
+  }
+
+  td.toggle-trigger.active span.prefix-version {
+    display: inline-block;
+  }
+
   @media screen and (max-width: 768px) {
     table {
         font-size: 13px;
