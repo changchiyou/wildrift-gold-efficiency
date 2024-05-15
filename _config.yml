@@ -23,7 +23,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   WR Gold Efficiency, A website combining the gold efficiency calculation formula from 'Gold efficiency (Wild Rift) | League of Legends Wiki' with the design elements from 'WR Meta', featuring manually updated item data for [Wild Rift].
 baseurl: "/wildrift-gold-efficiency" # the subpath of your site, e.g. /blog
 url: "https://changchiyou.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-logo: /assets/favicon.png
+logo: /assets/favicon512x512.png
 
 author:
   name: changchiyou
