@@ -186,6 +186,15 @@ $tooltip-color: #333;
     content: "-";
   }
 
+  tr.compare {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  tr.compare.active {
+    opacity: 1;
+  }
+
   tr.compare td {
     padding: 0px 15px;
     transition: padding 0.3s;
