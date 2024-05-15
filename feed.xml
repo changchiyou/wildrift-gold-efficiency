@@ -19,8 +19,8 @@ layout: null
                     <item>
                     <title>{{ page.title }}</title>
                     <description>{{ page.description }}</description>
-                    <link>{{ site.url }}{{ page.url }}</link>
-                    <guid isPermaLink="true">{{ site.url }}{{ page.url }}</guid>
+                    <link>{{ site.url }}{{ site.baseurl }}{{ page.url }}</link>
+                    <guid isPermaLink="true">{{ site.url }}{{ site.baseurl }}{{ page.url }}</guid>
                     <pubDate>{{ page.date | date_to_rfc822 }}</pubDate>
                     </item>
                 {%- endif -%}
