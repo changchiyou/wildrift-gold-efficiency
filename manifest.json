@@ -1,0 +1,61 @@
+{
+    "short_name": "WR Gold Efficiency",
+    "name": "Wild Rift Gold Efficiency",
+    "icons": [
+        {
+        "src": "/wildrift-gold-efficiency/assets/favicon192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+        },
+        {
+        "src": "/wildrift-gold-efficiency/assets/favicon512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+        }
+    ],
+    "id": "/wildrift-gold-efficiency/?source=pwa",
+    "start_url": "/wildrift-gold-efficiency/?source=pwa",
+    "background_color": "#1f222e",
+    "display": "minimal-ui",
+    "scope": "/wildrift-gold-efficiency/",
+    "theme_color": "#cccccc",
+    "description": "WR Gold Efficiency, A website combining the gold efficiency calculation formula from 'Gold efficiency (Wild Rift) | League of Legends Wiki' with the design elements from 'WR Meta', featuring manually updated item data for 'Wild Rift'.",
+    "screenshots": [
+        {
+        "src": "/wildrift-gold-efficiency/images/screenshots/narrow/screenshot1.jpg",
+        "type": "image/jpg",
+        "sizes": "1206x2608",
+        "form_factor": "narrow"
+        },
+        {
+        "src": "/wildrift-gold-efficiency/images/screenshots/narrow/screenshot2.jpg",
+        "type": "image/jpg",
+        "sizes": "1210x2430",
+        "form_factor": "narrow"
+        },
+        {
+        "src": "/wildrift-gold-efficiency/images/screenshots/narrow/screenshot3.jpg",
+        "type": "image/jpg",
+        "sizes": "1211x2432",
+        "form_factor": "narrow"
+        },
+        {
+        "src": "/wildrift-gold-efficiency/images/screenshots/wide/screenshot1.png",
+        "type": "image/png",
+        "sizes": "2880x1556",
+        "form_factor": "wide"
+        },
+        {
+        "src": "/wildrift-gold-efficiency/images/screenshots/wide/screenshot2.png",
+        "type": "image/png",
+        "sizes": "2880x1556",
+        "form_factor": "wide"
+        },
+        {
+        "src": "/wildrift-gold-efficiency/images/screenshots/wide/screenshot3.png",
+        "type": "image/png",
+        "sizes": "2880x1510",
+        "form_factor": "wide"
+        }
+    ]
+}

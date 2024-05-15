@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
+<link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
+<script src="{{ "/assets/js/pwa-1.0.js" | relative_url }}"></script>
   {%- include head.html -%}
 
   <body>
