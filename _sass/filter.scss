@@ -88,6 +88,25 @@
     transition: 0.3s;
   }
 
+  input[type="checkbox"]:checked+span {
+    background: #275495;
+    color: #FFF;
+  }
+
+  input[type="checkbox"]+span:hover {color:#fff;}
+
+  fieldset {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  span.target-stat.in-filter {
+    padding: 1.5px 1.5px;
+    width: 26.25px;
+    display: inline-block;
+    text-align: center;
+  }
+
   @media screen and (max-width: 480px) {
     .title {
         font-size: 11px;
@@ -102,16 +121,7 @@
         font-size: 13px;
         padding: 12px;
     }
-  }
-
-  input[type="checkbox"]:checked+span {
-    background: #275495;
-    color: #FFF;
-  }
-
-  input[type="checkbox"]+span:hover {color:#fff;}
-
-  fieldset {
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    span.target-stat.in-filter {
+      width: 22.5px;
+    }
   }

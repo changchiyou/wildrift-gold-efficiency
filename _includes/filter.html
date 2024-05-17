@@ -24,7 +24,8 @@
                 {% assign stat_id = stat[0] | downcase | replace: " ", "-" | replace: "%", "percentage" %}
                 <label for="filter-{{ stat_id }}">
                     <input type="checkbox" name='{{ type }}' id="filter-{{ stat_id }}" value="filter-{{ stat_id }}" class="filter">
-                    <span>{{ stat[0] }}</span>
+                    {% assign stat_name = stat[0] %}
+                    <span><span class="target-stat in-filter">{% include stat_image.html type=stat_name stats=page.stats classes="in-filter" %}</span> {{ stat_name }}</span>
                 </label>
             {% endfor %}
         </fieldset>

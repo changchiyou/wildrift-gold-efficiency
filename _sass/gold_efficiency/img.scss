@@ -3,27 +3,31 @@ img.stat-icon {
     margin-right: 1px
   }
 
-  table img.stat-icon, table img.item-icon {
+  img.stat-icon, img.item-icon {
     width: 20px;
+  }
+
+  img.stat-icon.in-filter {
+    width: 11px;
   }
   
   @media screen and (max-width: 768px) {
-    table img.stat-icon, table img.item-icon {
+    img.stat-icon, img.item-icon {
       width: 16px;
     }
   }
-  
+
   @media screen and (max-width: 480px) {
-    table img.stat-icon, table img.item-icon {
+    img.stat-icon, img.item-icon {
       width: 12.5px;
     }
-  }
-  
-  @media screen and (max-width: 480px) {
     img.stat-icon {
       margin-top: -2.5px;
     }
     img.badge {
       height: 16px;
+    }
+    img.stat-icon.in-filter {
+      width: 9px;
     }
   }
