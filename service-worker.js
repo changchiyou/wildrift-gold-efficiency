@@ -9,7 +9,6 @@ workbox.core.setCacheNameDetails({
 });
 
 // let Service Worker take control of pages ASAP
-workbox.core.skipWaiting();
 workbox.core.clientsClaim();
 
 // let Workbox handle our precache list
@@ -38,3 +37,9 @@ workbox.routing.registerRoute(
     /^https?:\/\/cdn.staticfile.org/,
     new workbox.strategies.StaleWhileRevalidate()
 );
+
+self.addEventListener('message', (event) => {
+    if (event.data && event.data.type === 'SKIP_WAITING') {
+        workbox.core.skipWaiting();
+    }
+});
