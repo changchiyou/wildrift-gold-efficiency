@@ -37,15 +37,19 @@ layout: default
 <h3 id="Base-Statistic-Prices">💰 Base Statistic Prices</h3>
 
 {% assign excludes = "% Magic Penetration|% Omnivamp|% Health Regen|% Mana Regeneration" | split: "|" %}
-<div class="panel">
-    <p>
-        <strong>Warning</strong><br>
-        {% for exclude in excludes %}
-            {% include stat_image.html type=exclude stats=page.stats %}
-        {% endfor %}
-        , excluded from gold efficiency calculation due to lack of pricing reference.
-    </p>
-</div>
+{% if excludes %}
+    <div class="panel">
+        <p>
+            <strong>Warning</strong><br>
+            The following attributes are excluded from gold efficiency calculation due to lack of pricing reference:
+            <ul>
+            {% for exclude in excludes %}
+                <li><span class="target-stat in-panel">{% include stat_image.html type=exclude stats=page.stats %}</span> {{ exclude }}</li>
+            {% endfor %}
+            </ul>
+        </p>
+    </div>
+{% endif %}
 
 {%- include base_stat_price_table.html items=page.items stats=page.stats category="First-tier Base Item" anchor="First-tier-Base-Item" base="first_base" -%}
 
