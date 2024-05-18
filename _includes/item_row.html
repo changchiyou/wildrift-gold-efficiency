@@ -71,7 +71,7 @@
     </td>
     <td>
         <div>
-            <div class="tooltip item toleft" onclick="copyToClipboard(event, deep=1)">
+            <div class="tooltip item toleft" onclick="copyToClipboard(event, 1); this.classList.toggle('active');">
                 {{ data_item.amount }}
                 <span class="tooltiptext">
                     {{ data_item.formula }}

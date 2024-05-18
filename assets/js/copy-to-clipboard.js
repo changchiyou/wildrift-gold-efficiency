@@ -1,6 +1,15 @@
 function copyToClipboard(event, deep = 0) {
     const element = event.currentTarget;
 
+    function isMobile() {
+        return window.matchMedia("(max-width: 480px)").matches;
+    }
+
+    if (isMobile() && !element.classList.contains('active')) {
+        return;
+    }
+
+
     let textToCopy = '';
 
     function getTextFromElement(element, depth) {
