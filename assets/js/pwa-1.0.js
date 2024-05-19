@@ -9,6 +9,6 @@ window.onload = function () {
     firstScript.parentNode.insertBefore(script, firstScript);
 };
 window.addEventListener("sw.update", function() {
-    alert("The site has been updated with new content. The page will now reload to apply these updates.");
+    alert("✨ The site has been updated with new content. The page will now reload to apply these updates.");
     window.location.reload(true);
 });

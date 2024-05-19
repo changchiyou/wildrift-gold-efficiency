@@ -19,7 +19,7 @@ function copyToClipboard(event, deep = 0) {
     try {
         navigator.clipboard.writeText(textToCopy);
         console.log('Content copied to clipboard: ', textToCopy);
-        alert('Content copied to clipboard: ' + textToCopy)
+        alert('📋 Content copied to clipboard: ' + textToCopy)
     } catch (err) {
         console.error('Failed to copy: ', err);
         alert('Failed to copy: ' + err)
@@ -48,3 +48,18 @@ function handleClick(event) {
         copyToClipboard(event, 1);
     }
 }
+
+// Function to remove 'active' class from all elements with specific class except the clicked one
+function removeActiveClass(event) {
+    var elements = document.querySelectorAll('.tooltip.toleft');
+    elements.forEach(function(el) {
+        if (el !== event.target && !el.contains(event.target)) {
+            el.classList.remove('active');
+        }
+    });
+}
+
+// Add event listener to document to remove 'active' class when clicking anywhere
+document.addEventListener('click', function(event) {
+    removeActiveClass(event);
+});
