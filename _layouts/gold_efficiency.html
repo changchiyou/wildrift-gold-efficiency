@@ -46,32 +46,32 @@ layout: default
             The following attributes are excluded from gold efficiency calculation due to lack of pricing reference:
             <ul>
             {% for exclude in excludes %}
-                <li><span class="target-stat in-panel">{% include stat_image.html type=exclude stats=page.stats %}</span> {{ exclude }}</li>
+                <li><span class="target-stat in-panel">{% include stat_image.html type=exclude stats=page.data.stats %}</span> {{ exclude }}</li>
             {% endfor %}
             </ul>
         </p>
     </div>
 {% endif %}
 
-{%- include base_stat_price_table.html items=page.items stats=page.stats category="First-tier Base Item" anchor="First-tier-Base-Item" base="first_base" -%}
+{%- include base_stat_price_table.html items=page.data.items stats=page.data.stats category="First-tier Base Item" anchor="First-tier-Base-Item" base="first_base" -%}
 
-{%- include base_stat_price_table.html items=page.items stats=page.stats category="Second-tier Base Item" anchor="Second-tier-Base-Item" base="second_base" -%}
+{%- include base_stat_price_table.html items=page.data.items stats=page.data.stats category="Second-tier Base Item" anchor="Second-tier-Base-Item" base="second_base" -%}
 
-{% include filter.html stats=page.stats %}
+{% include filter.html stats=page.data.stats %}
 
-{%- include items_table.html items=page.items stats=page.stats category="PHYSICAL DAMAGE ITEMS" anchor="PHYSICAL-DAMAGE-ITEMS" header="📌 Physical Damage Items" -%}
+{%- include items_table.html items=page.data.items stats=page.data.stats category="PHYSICAL DAMAGE ITEMS" anchor="PHYSICAL-DAMAGE-ITEMS" header="📌 Physical Damage Items" -%}
 
-{%- include items_table.html items=page.items stats=page.stats category="MAGIC DAMAGE ITEMS" anchor="MAGIC-DAMAGE-ITEMS" header="📌 Magic Damage Items" -%}
+{%- include items_table.html items=page.data.items stats=page.data.stats category="MAGIC DAMAGE ITEMS" anchor="MAGIC-DAMAGE-ITEMS" header="📌 Magic Damage Items" -%}
 
-{%- include items_table.html items=page.items stats=page.stats category="DEFENSE ITEMS" anchor="DEFENSE-ITEMS" header="📌 Defence Items" -%}
+{%- include items_table.html items=page.data.items stats=page.data.stats category="DEFENSE ITEMS" anchor="DEFENSE-ITEMS" header="📌 Defence Items" -%}
 
-{%- include items_table.html items=page.items stats=page.stats category="BOOTS" anchor="BOOTS" header="📌 Boots" -%}
+{%- include items_table.html items=page.data.items stats=page.data.stats category="BOOTS" anchor="BOOTS" header="📌 Boots" -%}
 
-{%- include items_table.html items=page.items stats=page.stats category="SUPPORT ITEMS" anchor="SUPPORT-ITEMS" header="📌 Support Items" -%}
+{%- include items_table.html items=page.data.items stats=page.data.stats category="SUPPORT ITEMS" anchor="SUPPORT-ITEMS" header="📌 Support Items" -%}
 
-{%- include items_table.html items=page.items stats=page.stats category="MID TIER ITEMS" anchor="MID-TIER-ITEMS" header="📌 Mid-tier Items" -%}
+{%- include items_table.html items=page.data.items stats=page.data.stats category="MID TIER ITEMS" anchor="MID-TIER-ITEMS" header="📌 Mid-tier Items" -%}
 
-{%- include items_table.html items=page.items stats=page.stats category="BASIC ITEMS" anchor="BASIC-ITEMS" header="📌 Basic Items" -%}
+{%- include items_table.html items=page.data.items stats=page.data.stats category="BASIC ITEMS" anchor="BASIC-ITEMS" header="📌 Basic Items" -%}
 
 <script src={{ "/assets/js/renderTable.js" | relative_url }}></script>
 <script>
