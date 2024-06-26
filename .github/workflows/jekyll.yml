@@ -10,13 +10,13 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
-    paths:
-      - '**'
-      - '!README.md'
-      - '!data.py'
-      - '!.github/**'
-      - '!requirements.txt'
-      - '!LIENCE'
+    paths-ignore:
+      - 'README.md'
+      - 'docs/**/*.md'
+      - 'data.py'
+      - '.github/**'
+      - 'requirements.txt'
+      - 'LIENCE'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
