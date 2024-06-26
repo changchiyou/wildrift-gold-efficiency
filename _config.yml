@@ -67,6 +67,7 @@ exclude:
   - vendor
   - .trunk/
   - LICENSE
+  - docs/
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
