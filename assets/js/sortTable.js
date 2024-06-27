@@ -1,27 +1,44 @@
-function sortTable(table, index, type, order) {
-    const rows = Array.from(table.querySelectorAll('tbody tr'));
-    rows.sort((a, b) => {
-        let cellA = a.cells[index].innerText;
-        let cellB = b.cells[index].innerText;
+function groupRows(rows) {
+    const groups = [];
+    let currentGroup = [];
+    rows.forEach(row => {
+        if (!row.classList.contains('compare')) {
+            if (currentGroup.length) groups.push(currentGroup);
+            currentGroup = [row];
+        } else {
+            currentGroup.push(row);
+        }
+    });
+    if (currentGroup.length) groups.push(currentGroup);
+    return groups;
+}
+
+function sortGroupedRows(groups, index, type, order) {
+    groups.sort((groupA, groupB) => {
+        const cellA = groupA[0].cells[index].innerText;
+        const cellB = groupB[0].cells[index].innerText;
+        let valA, valB;
 
         if (type === 'number') {
-            cellA = Number(cellA);
-            cellB = Number(cellB);
+            valA = Number(cellA);
+            valB = Number(cellB);
         } else if (type === 'percentage') {
-            cellA = parseFloat(cellA.replace('%', ''));
-            cellB = parseFloat(cellB.replace('%', ''));
+            valA = parseFloat(cellA.replace('%', ''));
+            valB = parseFloat(cellB.replace('%', ''));
         }
 
         if (order === 'asc') {
-            return cellA > cellB ? 1 : -1;
+            return valA > valB ? 1 : -1;
         } else {
-            return cellA < cellB ? 1 : -1;
+            return valA < valB ? 1 : -1;
         }
     });
 
-    rows.forEach(row => table.querySelector('tbody').appendChild(row));
+    const tbody = groups[0][0].parentNode;
+    groups.forEach(group => group.forEach(row => tbody.appendChild(row)));
 }
 
 function restoreOriginalOrder(table, originalRows) {
-    originalRows.forEach(row => table.querySelector('tbody').appendChild(row));
+    const tbody = table.querySelector('tbody');
+    originalRows.forEach(row => tbody.appendChild(row));
 }

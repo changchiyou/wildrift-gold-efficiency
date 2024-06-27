@@ -92,26 +92,34 @@ layout: default
             const headers = table.querySelectorAll('th');
             const originalRows = Array.from(table.querySelectorAll('tbody tr'));
 
-            headers.forEach((header, index) => {
-                const headerText = header.innerText;
-                if (headerText === "Cost" || headerText === "Amount") {
-                    header.addEventListener('click', () => {
-                        const currentOrder = header.getAttribute('data-order');
-                        let newOrder;
-                        if (currentOrder === 'non-order') {
-                            newOrder = 'ascending';
-                            sortTable(table, index, header.getAttribute('data-type'), 'asc');
-                        } else if (currentOrder === 'ascending') {
-                            newOrder = 'descending';
-                            sortTable(table, index, header.getAttribute('data-type'), 'desc');
-                        } else {
-                            newOrder = 'non-order';
-                            restoreOriginalOrder(table, originalRows);
-                        }
-                        header.setAttribute('data-order', newOrder);
-                    });
-                    renderRowColors()
-                }
+            tables.forEach((table) => {
+                const headers = table.querySelectorAll('th');
+                const originalRows = Array.from(table.querySelectorAll('tbody tr'));
+                const groupedRows = groupRows(originalRows);
+                let isOriginalOrder = true;
+
+                headers.forEach((header, index) => {
+                    const headerText = header.innerText;
+                    if (headerText === "Cost" || headerText === "Amount") {
+                        header.addEventListener('click', () => {
+                            const currentOrder = header.getAttribute('data-order');
+                            let newOrder;
+                            if (currentOrder === 'non-order') {
+                                newOrder = 'ascending';
+                                sortGroupedRows(groupedRows, index, header.getAttribute('data-type'), 'asc');
+                            } else if (currentOrder === 'ascending') {
+                                newOrder = 'descending';
+                                sortGroupedRows(groupedRows, index, header.getAttribute('data-type'), 'desc');
+                            } else {
+                                newOrder = 'non-order';
+                                restoreOriginalOrder(table, originalRows);
+                            }
+                            header.setAttribute('data-order', newOrder);
+                            header.setAttribute('title', newOrder);
+                        });
+                        renderRowColors()
+                    }
+                });
             });
         });
     });

@@ -11,11 +11,11 @@ $tooltip-color: #333;
     padding: 10px 15px;
     text-align: left;
   }
-  
+
   .goldt {
     color: #fff700;
   }
-  
+
   .tooltip {
     position: relative;
     display: inline-block;
@@ -266,4 +266,38 @@ $tooltip-color: #333;
     span.target-stat.in-panel {
       padding: 0.625px 1.875px;
     }
+  }
+
+  th[data-order="non-order"], th[data-order="ascending"], th[data-order="descending"] {
+    cursor: pointer;
+    padding: 8px;
+    text-align: left;
+    position: relative;
+  }
+  th::before, th::after {
+    content: '';
+    position: absolute;
+    right: 8px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  th:not([data-order="non-order"]):not([data-order="descending"]):not([data-order="ascending"])::before,
+  th:not([data-order="non-order"]):not([data-order="descending"]):not([data-order="ascending"])::after {
+  display: none;
+  }
+  th[data-order="descending"]::before, th[data-order="ascending"]::after {
+    display: none;
+  }
+  th[data-order="ascending"]::before, th[data-order="non-order"]::before {
+    border-width: 0 5px 5px 5px;
+    border-color: transparent transparent #f7f7f7 transparent;
+    top: 45%;
+    transform: translateY(-100%);
+  }
+  th[data-order="descending"]::after, th[data-order="non-order"]::after {
+    border-width: 5px 5px 0 5px;
+    border-color: #f7f7f7 transparent transparent transparent;
+    top: 55%;
+    transform: translateY(0%);
   }
