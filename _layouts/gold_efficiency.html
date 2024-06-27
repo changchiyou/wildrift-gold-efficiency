@@ -74,6 +74,7 @@ layout: default
 {%- include items_table.html items=page.data.items stats=page.data.stats category="BASIC ITEMS" anchor="BASIC-ITEMS" header="📌 Basic Items" -%}
 
 <script src={{ "/assets/js/renderTable.js" | relative_url }}></script>
+<script src={{ "/assets/js/sortTable.js" | relative_url }}></script>
 <script>
     renderRowColors();
     document.querySelectorAll('.toggle-trigger').forEach(function(element) {
@@ -83,7 +84,39 @@ layout: default
             nextRow.classList.toggle("active");
         });
     });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const tables = document.querySelectorAll('.sortable-table');
+
+        tables.forEach((table) => {
+            const headers = table.querySelectorAll('th');
+            const originalRows = Array.from(table.querySelectorAll('tbody tr'));
+
+            headers.forEach((header, index) => {
+                const headerText = header.innerText;
+                if (headerText === "Cost" || headerText === "Amount") {
+                    header.addEventListener('click', () => {
+                        const currentOrder = header.getAttribute('data-order');
+                        let newOrder;
+                        if (currentOrder === 'non-order') {
+                            newOrder = 'ascending';
+                            sortTable(table, index, header.getAttribute('data-type'), 'asc');
+                        } else if (currentOrder === 'ascending') {
+                            newOrder = 'descending';
+                            sortTable(table, index, header.getAttribute('data-type'), 'desc');
+                        } else {
+                            newOrder = 'non-order';
+                            restoreOriginalOrder(table, originalRows);
+                        }
+                        header.setAttribute('data-order', newOrder);
+                    });
+                    renderRowColors()
+                }
+            });
+        });
+    });
 </script>
+
 
 <div id="giscus-comments" class="giscus"></div>
 <script src="https://giscus.app/client.js"

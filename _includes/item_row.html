@@ -11,7 +11,7 @@
     {% capture tr_style %}{{tr_style}} background-color: {{ backgroundColor }};{% endcapture %}
 {% endif %}
 
-<tr class="item-table {{ tr_classes | strip }}" style="{{ tr_style }}">
+<tr class="item-row {{ tr_classes | strip }}" style="{{ tr_style }}">
     {% if first_td_class != "" %}
     <td class="{{ first_td_class }}">
     {% else %}

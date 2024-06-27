@@ -3,7 +3,7 @@
 {% assign compare_items = site.data[ page.patch_note.compare.items ] %}
 {% assign compare_statuses = page.patch_note.compare.statuses | split: ',' %}
 {% assign patch_status_excludes = page.patch_note.excludes | split: ',' %}
-<table>
+<table class="sortable-table">
     <colgroup>
         <col class="items-item">
         <col class="items-cost">
@@ -13,9 +13,9 @@
     <thead>
       <tr>
         <th>Item</th>
-        <th>Cost</th>
+        <th data-type="number" data-order="non-order">Cost</th>
         <th>Stats</th>
-        <th>Amount</th>
+        <th data-type="percentage" data-order="non-order">Amount</th>
       </tr>
     </thead>
     <tbody>
