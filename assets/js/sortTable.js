@@ -27,11 +27,22 @@ function sortGroupedRows(groups, index, type, order) {
             valB = parseFloat(cellB.replace('%', ''));
         }
 
+        // First, compare based on the specified type and order
+        let comparisonResult;
         if (order === 'asc') {
-            return valA > valB ? 1 : -1;
+            comparisonResult = valA > valB ? 1 : -1;
         } else {
-            return valA < valB ? 1 : -1;
+            comparisonResult = valA < valB ? 1 : -1;
         }
+
+        // If values are equal based on first comparison, compare by "Item" column
+        if (valA === valB) {
+            const itemA = groupA[0].cells[0].innerText;
+            const itemB = groupB[0].cells[0].innerText;
+            comparisonResult = itemA.localeCompare(itemB); // Compare strings based on ASCII order
+        }
+
+        return comparisonResult;
     });
 
     const tbody = groups[0][0].parentNode;

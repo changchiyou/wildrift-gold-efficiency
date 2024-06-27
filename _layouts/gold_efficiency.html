@@ -114,10 +114,19 @@ layout: default
                                 newOrder = 'non-order';
                                 restoreOriginalOrder(table, originalRows);
                             }
+
+                            // Reset data-order and title attributes for all headers that have them
+                            table.querySelectorAll('th[data-order][title]').forEach((h) => {
+                                if (h !== header) { // Skip the current header
+                                    h.setAttribute('data-order', 'non-order');
+                                    h.setAttribute('title', 'non-order');
+                                }
+                            });
+
                             header.setAttribute('data-order', newOrder);
                             header.setAttribute('title', newOrder);
+                            renderRowColors()
                         });
-                        renderRowColors()
                     }
                 });
             });
