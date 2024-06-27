@@ -988,6 +988,24 @@
     value: 200
   - type: Ability Haste
     value: 20
+- amount: 100.00%
+  category: MAGIC DAMAGE ITEMS
+  cost: 3000
+  formula: (60*20.0+7*0+200*3.0+20*40.0+20*20.0)/3000
+  image: https://wr-meta.com/uploads/posts/2023-10/1698169540_crown_of_the_shattered_queen_item_hd-1.webp
+  name: Crown of the Shattered Queen (Safeguard & Poise)
+  stats:
+  - type: Ability Power
+    value: 60
+  - type: '% Magic Penetration'
+    value: 7
+  - type: Max Mana
+    value: 200
+  - type: Ability Haste
+    value: 20
+  - passive: Safeguard & Poise
+    type: Ability Power
+    value: 20
 - amount: 65.20%
   category: MAGIC DAMAGE ITEMS
   cost: 3400
