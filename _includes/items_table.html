@@ -1,4 +1,4 @@
-<h3 id="{{ include.anchor }}">{{ include.header }}</h3>
+<h3 id="{{ include.anchor }}">{{ include.header }} <a href="#{{ include.anchor }}">#</a></h3>
 
 {% assign compare_items = site.data[ page.patch_note.compare.items ] %}
 {% assign compare_statuses = page.patch_note.compare.statuses | split: ',' %}
