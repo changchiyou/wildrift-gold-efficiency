@@ -6,19 +6,6 @@ layout: default
 
 <div class="panel">
     <p>
-        <strong>Copyright©</strong><br>
-        I,
-        <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" target="_blank"><img class="badge" src="https://img.shields.io/badge/changchiyou-gray?logo=github"></a>,
-        <b>DO NOT</b> own the copyrights of all resources on this website, especially images and data. This website is a combination of the gold efficiency calculation formula from
-        {% include badge/lolwiki.html href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)" %}
-        with the design elements from
-        {% include badge/wrmeta.html href="https://wr-meta.com/items/" %}
-        featuring manually updated item data from {% include badge/wildrift.html href=page.data.refer_url text=page.data.refer_text %}.
-    </p>
-</div>
-
-<div class="panel">
-    <p>
         <strong>Hint</strong><br>
         In most cases, <u><b>a higher calculated Gold Efficiency percentage (%) indicates better value</b></u>. However, as However, as stated
         in the {% include badge/lolwiki.html href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)" %} :
@@ -31,10 +18,6 @@ layout: default
         <li>If you have ideas for new features or improvements to the design and layout, please feel free to submit a PR at <a href="https://github.com/changchiyou/wildrift-gold-efficiency" target="_blank"><img class="badge" src="https://img.shields.io/badge/changchiyou/wildrift--gold--efficiency-gray?logo=github"></a>.</li>
     </p>
 </div>
-
-<br>
-<hr>
-<br>
 
 <h3 id="Base-Statistic-Prices">💰 Base Statistic Prices</h3>
 
@@ -72,6 +55,19 @@ layout: default
 {%- include items_table.html items=page.data.items stats=page.data.stats category="MID TIER ITEMS" anchor="MID-TIER-ITEMS" header="📌 Mid-tier Items" -%}
 
 {%- include items_table.html items=page.data.items stats=page.data.stats category="BASIC ITEMS" anchor="BASIC-ITEMS" header="📌 Basic Items" -%}
+
+<div class="panel">
+    <p>
+        <strong>Copyright©</strong><br>
+        I,
+        <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" target="_blank"><img class="badge" src="https://img.shields.io/badge/changchiyou-gray?logo=github"></a>,
+        <b>DO NOT</b> own the copyrights of all resources on this website, especially images and data. This website is a combination of the gold efficiency calculation formula from
+        {% include badge/lolwiki.html href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)" %}
+        with the design elements from
+        {% include badge/wrmeta.html href="https://wr-meta.com/items/" %}
+        featuring manually updated item data from {% include badge/wildrift.html href=page.data.refer_url text=page.data.refer_text %}.
+    </p>
+</div>
 
 <script src={{ "/assets/js/renderTable.js" | relative_url }}></script>
 <script src={{ "/assets/js/sortTable.js" | relative_url }}></script>
