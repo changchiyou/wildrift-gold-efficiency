@@ -1,4 +1,4 @@
-<button class="collapsible" id="stat-filters">🔎 Stat Filters</button>
+<button class="collapsible" id="stat-filters">🔎 Stat Filters <span id="selected-icons"></span></button>
 <div class="item-filter-wrap">
     {% assign stats = site.data.[include.stats] %}
 
@@ -38,12 +38,19 @@
     function toggleElements() {
         var checkboxes = document.querySelectorAll('input[type="checkbox"].filter');
         var anyChecked = false;
+        var selectedIcons = [];
 
         checkboxes.forEach(function(checkbox) {
             if (checkbox.checked) {
                 anyChecked = true;
+                var iconHtml = checkbox.nextElementSibling.querySelector('.target-stat').innerHTML;
+                selectedIcons.push(iconHtml);
             }
         });
+
+        // Update the span with selected icons
+        var selectedIconsSpan = document.getElementById('selected-icons');
+        selectedIconsSpan.innerHTML = selectedIcons.length ? ` (${selectedIcons.join(', ')})` : '';
 
         var rows = document.querySelectorAll('tr.item-row:not(.compare)');
 
