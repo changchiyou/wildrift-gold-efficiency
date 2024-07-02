@@ -50,3 +50,13 @@
       margin-left: 20px;
     }
   }
+
+  @for $i from 1 through 3 {
+    .site-nav:nth-of-type(#{$i}) {
+        right: $spacing-unit / 2 + 40px * ($i - 1);
+    }
+  }
+
+  .site-nav a {
+    color: $grey-color-dark;
+  }
