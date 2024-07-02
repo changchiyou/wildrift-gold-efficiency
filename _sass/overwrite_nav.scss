@@ -15,7 +15,11 @@
       z-index: 2;
       cursor: pointer;
     }
-  
+
+    &:has(.nav-trigger:checked) {
+        z-index: 10000;
+    }
+
     .menu-icon {
       display: block;
       float: right;
