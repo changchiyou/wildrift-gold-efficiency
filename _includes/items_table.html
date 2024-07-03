@@ -23,7 +23,7 @@
             {% if item.category == include.category %}
                 {% assign filters = "" %}
                 {% for stat in item.stats %}
-                    {% capture filters %}{{ filters }} filter-{{ stat.type | downcase | replace: " ", "-" | replace: "%", "percentage" }}{% endcapture %}
+                    {% capture filters %}{{ filters }} {{ stat.type | downcase | replace: " ", "-" | replace: "%", "percentage" }}{% endcapture %}
                 {% endfor %}
 
                 {% assign exclude = false  %}

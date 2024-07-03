@@ -1,4 +1,4 @@
-<button class="collapsible" id="stat-filters">🔎 Stat Filters <span id="selected-icons"></span></button>
+<button class="collapsible" id="include-filters">🔎 Include Filters: <span id="included-icons"></span></button>
 <div class="item-filter-wrap">
     {% assign stats = site.data.[include.stats] %}
 
@@ -22,8 +22,43 @@
                     {% continue %}
                 {% endif %}
                 {% assign stat_id = stat[0] | downcase | replace: " ", "-" | replace: "%", "percentage" %}
-                <label for="filter-{{ stat_id }}">
-                    <input type="checkbox" name='{{ type }}' id="filter-{{ stat_id }}" value="filter-{{ stat_id }}" class="filter">
+                <label for="include-{{ stat_id }}">
+                    <input type="checkbox" name='{{ type }}' id="include-{{ stat_id }}" value="include-{{ stat_id }}" class="filter include-filter">
+                    {% assign stat_name = stat[0] %}
+                    <span><span class="target-stat in-filter">{% include stat_image.html type=stat_name stats=page.data.stats classes="in-filter" %}</span> {{ stat_name }}</span>
+                </label>
+            {% endfor %}
+        </fieldset>
+    {% endfor %}
+</div>
+<br>
+
+<button class="collapsible" id="exclude-filters">🔎 Exclude Filters: <span id="excluded-icons"></span></button>
+<div class="item-filter-wrap">
+    {% assign stats = site.data.[include.stats] %}
+
+    {% assign types = "" | split: "|" %}
+
+    {% for stat in stats %}
+        {% assign type = stat[1].type %}
+        {% if type == "" %}
+            {% continue %}
+        {% endif %}
+        {% unless types contains type %}
+            {% assign types = types | push: type %}
+        {% endunless %}
+    {% endfor %}
+
+    {% for type in types %}
+        <fieldset class="item-filter">
+            <label class="title">{{ type }}</label>
+            {% for stat in stats %}
+                {% if stat[1].type != type %}
+                    {% continue %}
+                {% endif %}
+                {% assign stat_id = stat[0] | downcase | replace: " ", "-" | replace: "%", "percentage" %}
+                <label for="exclude-{{ stat_id }}">
+                    <input type="checkbox" name='{{ type }}' id="exclude-{{ stat_id }}" value="exclude-{{ stat_id }}" class="filter exclude-filter">
                     {% assign stat_name = stat[0] %}
                     <span><span class="target-stat in-filter">{% include stat_image.html type=stat_name stats=page.data.stats classes="in-filter" %}</span> {{ stat_name }}</span>
                 </label>
@@ -36,64 +71,99 @@
 <script src={{ "/assets/js/renderTable.js" | relative_url }}></script>
 <script>
     function toggleElements() {
-        var checkboxes = document.querySelectorAll('input[type="checkbox"].filter');
-        var anyChecked = false;
-        var selectedIcons = [];
+        var includeCheckboxes = document.querySelectorAll('input[type="checkbox"].include-filter');
+        var excludeCheckboxes = document.querySelectorAll('input[type="checkbox"].exclude-filter');
+        var anyIncludeChecked = false;
+        var anyExcludeChecked = false;
+        var includedIcons = [];
+        var excludedIcons = [];
 
-        checkboxes.forEach(function(checkbox) {
+        includeCheckboxes.forEach(function(checkbox) {
             if (checkbox.checked) {
-                anyChecked = true;
+                anyIncludeChecked = true;
                 var iconHtml = checkbox.nextElementSibling.querySelector('.target-stat').innerHTML;
-                selectedIcons.push(iconHtml);
+                includedIcons.push(iconHtml);
             }
         });
 
-        // Update the span with selected icons
-        var selectedIconsSpan = document.getElementById('selected-icons');
-        selectedIconsSpan.innerHTML = selectedIcons.length ? ` (${selectedIcons.join(', ')})` : '';
+        excludeCheckboxes.forEach(function(checkbox) {
+            if (checkbox.checked) {
+                anyExcludeChecked = true;
+                var iconHtml = checkbox.nextElementSibling.querySelector('.target-stat').innerHTML;
+                excludedIcons.push(iconHtml);
+            }
+        });
+
+        // Update the spans with selected icons
+        var includedIconsSpan = document.getElementById('included-icons');
+        includedIconsSpan.innerHTML = includedIcons.length ? ` (${includedIcons.join(', ')})` : '';
+
+        var excludedIconsSpan = document.getElementById('excluded-icons');
+        excludedIconsSpan.innerHTML = excludedIcons.length ? ` (${excludedIcons.join(', ')})` : '';
 
         var rows = document.querySelectorAll('tr.item-row:not(.compare)');
 
-        if (!anyChecked) {
+        if (!anyIncludeChecked && !anyExcludeChecked) {
             rows.forEach(function(row) {
                 row.style.display = 'table-row';
             });
         } else {
-            var selected_stats = []
+            var include_stats = [];
+            var exclude_stats = [];
 
-            checkboxes.forEach(function(checkbox) {
-                if (checkbox.checked){
-                    selected_stats.push(checkbox.id)
+            includeCheckboxes.forEach(function(checkbox) {
+                if (checkbox.checked) {
+                    include_stats.push(checkbox.id.replace('include-', ''));
+                }
+            });
+
+            excludeCheckboxes.forEach(function(checkbox) {
+                if (checkbox.checked) {
+                    exclude_stats.push(checkbox.id.replace('exclude-', ''));
                 }
             });
 
             rows.forEach(function(row) {
-                var matched = true;
-                selected_stats.forEach(function(selected_stat){
-                    if (! row.classList.contains(selected_stat)){
-                        matched = false;
-                    }
-                })
+                var includeMatched = true;
+                var excludeMatched = false;
 
-                row.style.display = matched ? 'table-row' : 'none';
+                include_stats.forEach(function(include_stat) {
+                    if (!row.classList.contains(include_stat)) {
+                        includeMatched = false;
+                    }
+                });
+
+                exclude_stats.forEach(function(exclude_stat) {
+                    if (row.classList.contains(exclude_stat)) {
+                        excludeMatched = true;
+                    }
+                });
+
+                row.style.display = (includeMatched && !excludeMatched) ? 'table-row' : 'none';
             });
         }
 
         var active_tds = document.querySelectorAll('td.toggle-trigger.active');
         active_tds.forEach(function(td) {
-            td.classList.toggle("active")
+            td.classList.toggle("active");
         });
 
         var compare_rows = document.querySelectorAll('tr.compare.active');
         compare_rows.forEach(function(row) {
-            row.classList.toggle("active")
+            row.classList.toggle("active");
         });
 
         renderRowColors();
     }
 
-    var checkboxes = document.querySelectorAll('input[type="checkbox"].filter');
-    checkboxes.forEach(function(checkbox) {
+    var includeCheckboxes = document.querySelectorAll('input[type="checkbox"].include-filter');
+    var excludeCheckboxes = document.querySelectorAll('input[type="checkbox"].exclude-filter');
+
+    includeCheckboxes.forEach(function(checkbox) {
+        checkbox.addEventListener('click', toggleElements);
+    });
+
+    excludeCheckboxes.forEach(function(checkbox) {
         checkbox.addEventListener('click', toggleElements);
     });
 
@@ -107,10 +177,10 @@
             this.classList.toggle("active");
             var content = this.nextElementSibling;
             if (content.style.maxHeight){
-            content.style.maxHeight = null;
+                content.style.maxHeight = null;
             } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-            } 
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
         });
     }
 </script>
