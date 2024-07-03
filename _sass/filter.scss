@@ -130,3 +130,17 @@
       width: 22.5px;
     }
   }
+
+  button.clear-all-button {
+    background-color: #444;
+    border: 1px solid #666;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button.clear-all-button:hover {
+    background-color: #555;
+    border-color: #777;
+}

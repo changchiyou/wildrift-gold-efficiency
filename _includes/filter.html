@@ -1,4 +1,7 @@
-<h3 id="stat-filters">🔎 Stat Filters <a href="#stat-filters">#</a></h3>
+<h3 id="stat-filters" style="display: flex; justify-content: space-between; align-items: center;">
+    <span>🔎 Stat Filters <a href="#stat-filters">#</a></span>
+    <button id="clear-all" style="display:none;" class="clear-all-button">Clear All</button>
+</h3>
 
 <button class="collapsible" id="include-filters">✔️ Include Filters: <span id="included-icons"></span></button>
 <div class="item-filter-wrap">
@@ -33,7 +36,6 @@
         </fieldset>
     {% endfor %}
 </div>
-<br>
 
 <button class="collapsible" id="exclude-filters">✖️ Exclude Filters: <span id="excluded-icons"></span></button>
 <div class="item-filter-wrap">
@@ -156,7 +158,28 @@
         });
 
         renderRowColors();
+
+        // Show or hide the "Clear All" button based on any checkboxes being checked
+        var clearAllButton = document.getElementById('clear-all');
+        clearAllButton.style.display = anyIncludeChecked || anyExcludeChecked ? 'inline-block' : 'none';
     }
+
+    function clearAllFilters() {
+        var includeCheckboxes = document.querySelectorAll('input[type="checkbox"].include-filter');
+        var excludeCheckboxes = document.querySelectorAll('input[type="checkbox"].exclude-filter');
+
+        includeCheckboxes.forEach(function(checkbox) {
+            checkbox.checked = false;
+        });
+
+        excludeCheckboxes.forEach(function(checkbox) {
+            checkbox.checked = false;
+        });
+
+        toggleElements();
+    }
+
+    document.getElementById('clear-all').addEventListener('click', clearAllFilters);
 
     var includeCheckboxes = document.querySelectorAll('input[type="checkbox"].include-filter');
     var excludeCheckboxes = document.querySelectorAll('input[type="checkbox"].exclude-filter');
