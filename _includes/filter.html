@@ -1,4 +1,6 @@
-<button class="collapsible" id="include-filters">🔎 Include Filters: <span id="included-icons"></span></button>
+<h3 id="stat-filters">🔎 Stat Filters <a href="#stat-filters">#</a></h3>
+
+<button class="collapsible" id="include-filters">✔️ Include Filters: <span id="included-icons"></span></button>
 <div class="item-filter-wrap">
     {% assign stats = site.data.[include.stats] %}
 
@@ -33,7 +35,7 @@
 </div>
 <br>
 
-<button class="collapsible" id="exclude-filters">🔎 Exclude Filters: <span id="excluded-icons"></span></button>
+<button class="collapsible" id="exclude-filters">✖️ Exclude Filters: <span id="excluded-icons"></span></button>
 <div class="item-filter-wrap">
     {% assign stats = site.data.[include.stats] %}
 
