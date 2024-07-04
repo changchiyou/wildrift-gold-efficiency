@@ -32,6 +32,7 @@
   - passive: Bloodsworn
     type: '% Attack Speed'
     value: 10
+  - type: Unstable Passives' Stats
 - amount: 156.01%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3300
@@ -52,6 +53,7 @@
   - passive: Bloodsworn
     type: '% Attack Speed'
     value: 10
+  - type: Unstable Passives' Stats
 - amount: 78.44%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3400
@@ -157,6 +159,7 @@
   - passive: Momentum
     type: Move Speed
     value: 50
+  - type: Unstable Passives' Stats
 - amount: 129.03%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200
@@ -177,6 +180,7 @@
   - passive: Momentum
     type: Move Speed
     value: 50
+  - type: Unstable Passives' Stats
 - amount: 128.12%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200
@@ -197,6 +201,7 @@
   - passive: Momentum
     type: '% Attack Speed'
     value: 25
+  - type: Unstable Passives' Stats
 - amount: 130.07%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200
@@ -217,6 +222,7 @@
   - passive: Momentum
     type: '% Attack Speed'
     value: 25
+  - type: Unstable Passives' Stats
 - amount: 102.22%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
@@ -316,6 +322,7 @@
   - passive: Rage
     type: Move Speed
     value: 20
+  - type: Unstable Passives' Stats
 - amount: 126.41%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
@@ -332,6 +339,7 @@
   - passive: Rage
     type: Move Speed
     value: 10
+  - type: Unstable Passives' Stats
 - amount: 153.08%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
@@ -348,6 +356,7 @@
   - passive: Rage
     type: Move Speed
     value: 60
+  - type: Unstable Passives' Stats
 - amount: 137.08%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
@@ -364,6 +373,7 @@
   - passive: Rage
     type: Move Speed
     value: 30
+  - type: Unstable Passives' Stats
 - amount: 117.52%
   category: PHYSICAL DAMAGE ITEMS
   cost: 2700
@@ -483,6 +493,7 @@
   - passive: Valor
     type: Move Speed
     value: 20
+  - type: Unstable Passives' Stats
 - amount: 134.79%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3333
@@ -504,6 +515,7 @@
   - passive: Valor
     type: Move Speed
     value: 10
+  - type: Unstable Passives' Stats
 - amount: 158.79%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3333
@@ -525,6 +537,7 @@
   - passive: Valor
     type: Move Speed
     value: 60
+  - type: Unstable Passives' Stats
 - amount: 144.39%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3333
@@ -546,6 +559,7 @@
   - passive: Valor
     type: Move Speed
     value: 30
+  - type: Unstable Passives' Stats
 - amount: 127.23%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
@@ -610,6 +624,7 @@
   - passive: Spectral Waltz
     type: '% Attack Speed'
     value: 25
+  - type: Unstable Passives' Stats
 - amount: 118.33%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
@@ -802,6 +817,7 @@
   - passive: Battle Furor
     type: '% Physical Vamp'
     value: 8
+  - type: Unstable Passives' Stats
 - amount: 107.76%
   category: PHYSICAL DAMAGE ITEMS
   cost: 2900
@@ -920,6 +936,7 @@
   - passive: Juxtaposition
     type: '% Magic Penetration'
     value: 33
+  - type: Unstable Passives' Stats
 - amount: 167.24%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200
@@ -943,6 +960,7 @@
   - passive: Juxtaposition
     type: '% Magic Penetration'
     value: 33
+  - type: Unstable Passives' Stats
 - amount: 113.33%
   category: MAGIC DAMAGE ITEMS
   cost: 3000
@@ -1006,6 +1024,7 @@
   - passive: Safeguard & Poise
     type: Ability Power
     value: 20
+  - type: Unstable Passives' Stats
 - amount: 65.69%
   category: MAGIC DAMAGE ITEMS
   cost: 3400
@@ -1532,6 +1551,7 @@
   - passive: Momentum
     type: Move Speed
     value: 40
+  - type: Unstable Passives' Stats
 - amount: 117.82%
   category: DEFENSE ITEMS
   cost: 2800
@@ -1686,6 +1706,7 @@
   - passive: Absorb
     type: '% Move Speed'
     value: 10
+  - type: Unstable Passives' Stats
 - amount: 133.33%
   category: DEFENSE ITEMS
   cost: 2700
@@ -2212,6 +2233,7 @@
   - passive: Rage
     type: Move Speed
     value: 20
+  - type: Unstable Passives' Stats
 - amount: 128.46%
   category: MID TIER ITEMS
   cost: 1000
@@ -2226,6 +2248,7 @@
   - passive: Rage
     type: Move Speed
     value: 10
+  - type: Unstable Passives' Stats
 - amount: 208.46%
   category: MID TIER ITEMS
   cost: 1000
@@ -2240,6 +2263,7 @@
   - passive: Rage
     type: Move Speed
     value: 60
+  - type: Unstable Passives' Stats
 - amount: 160.46%
   category: MID TIER ITEMS
   cost: 1000
@@ -2254,6 +2278,7 @@
   - passive: Rage
     type: Move Speed
     value: 30
+  - type: Unstable Passives' Stats
 - amount: 116.66%
   category: MID TIER ITEMS
   cost: 1200
@@ -2607,6 +2632,7 @@
   - passive: Fear
     type: '% Move Speed'
     value: 10
+  - type: Unstable Passives' Stats
 - amount: 76.92%
   category: MID TIER ITEMS
   cost: 1300
