@@ -37,7 +37,7 @@
   image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/ms.png"
   base_type: "first"
   base_item: "Boots of Speed"
-  type: "Movement"
+  type: "Others"
 "% Physical Vamp":
   image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/fls.png"
   base_type: "second"
@@ -70,7 +70,7 @@
   image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/ms.png"
   base_type: "second"
   base_item: "Aether Wisp"
-  type: "Movement"
+  type: "Others"
 "Max Mana":
   image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/Mana.png"
   base_type: "second"
