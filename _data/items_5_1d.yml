@@ -198,7 +198,7 @@
   - passive: Momentum
     type: Armor Penetration
     value: 3
-  - passive: Momentum
+  - passive: Haste
     type: '% Attack Speed'
     value: 25
   - type: Unstable Passives' Stats
@@ -219,7 +219,7 @@
   - passive: Momentum
     type: Armor Penetration
     value: 6
-  - passive: Momentum
+  - passive: Haste
     type: '% Attack Speed'
     value: 25
   - type: Unstable Passives' Stats
