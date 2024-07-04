@@ -73,6 +73,7 @@ layout: default
 <script src={{ "/assets/js/sortTable.js" | relative_url }}></script>
 <script>
     renderRowColors();
+    renderRowIndexs();
     document.querySelectorAll('.toggle-trigger').forEach(function(element) {
         element.addEventListener('click', function() {
             this.classList.toggle("active");
@@ -121,7 +122,8 @@ layout: default
 
                             header.setAttribute('data-order', newOrder);
                             header.setAttribute('title', newOrder);
-                            renderRowColors()
+                            renderRowColors();
+                            renderRowIndexs();
                         });
                     }
                 });

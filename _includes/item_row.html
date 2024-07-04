@@ -17,6 +17,7 @@
     {% else %}
     <td>
     {% endif %}
+        <p class="item-index" style="display: none"></p>
         <div>
             <div class="front-empty">
                 {% if patch != "" %}
@@ -26,7 +27,6 @@
             {% if patch != "" %}
                 <div class="{{ patch }} phone"></div>
             {% endif %}
-
             <img class="item-icon" loading="lazy" src="{{ data_item.image }}" style="margin-right: 5px;" />
             {% if compare_item_prefix != "" %}
                 <span class="version">{{ compare_item_prefix }}</span>
