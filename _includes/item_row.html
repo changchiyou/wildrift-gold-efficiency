@@ -52,18 +52,20 @@
         <div>
             {% for stat in data_item.stats %}
                 <b class="stat">
-                    {% if stat.passive %}
-                        <div class="tooltip stats">
+                    {% if stat.value %}
+                        {% if stat.passive %}
+                            <div class="tooltip stats">
+                                {{- stat.value -}}{% include stat_image.html type=stat.type stats=include.stats %}
+                                <span class="tooltiptext">
+                                    {{ stat.passive }}
+                                    {% if stat.formula %}
+                                        : {{ stat.formula }}
+                                    {% endif %}
+                                </span>
+                            </div>
+                        {% else %}
                             {{- stat.value -}}{% include stat_image.html type=stat.type stats=include.stats %}
-                            <span class="tooltiptext">
-                                {{ stat.passive }}
-                                {% if stat.formula %}
-                                    : {{ stat.formula }}
-                                {% endif %}
-                            </span>
-                        </div>
-                    {% else %}
-                        {{- stat.value -}}{% include stat_image.html type=stat.type stats=include.stats %}
+                        {% endif %}
                     {% endif %}
                 </b>
             {% endfor %}
