@@ -26,6 +26,14 @@
                     {% capture filters %}{{ filters }} {{ stat.type | downcase | replace: " ", "-" | replace: "%", "percentage" }}{% endcapture %}
                 {% endfor %}
 
+                {%
+                    # Add the `stats-from-passives` class to the item that has notes inside bracket.
+                %}
+                {% assign item_name = item.name | split: '(' %}
+                {% if item_name.size == 2 %}
+                    {% capture filters %}{{ filters }} stats-from-passives{% endcapture %}
+                {% endif %}
+
                 {% assign exclude = false  %}
                 {% for patch_status_exclude in patch_status_excludes %}
                     {% if item.name == patch_status_exclude %}
