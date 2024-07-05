@@ -1,6 +1,7 @@
 import argparse
 import logging
 import os
+import re
 
 from yaml import dump, load
 
@@ -9,6 +10,11 @@ try:
     from yaml import CLoader as Loader
 except ImportError:
     from yaml import Dumper, Loader
+
+
+class PairingException(Exception):
+    def __init__(self, message):
+        super().__init__(message)
 
 
 class ItemData:
@@ -29,14 +35,14 @@ class ItemData:
         return file_path
 
     def write_yaml(self, file_name: str):
-        logging.info(f"write `datas` into {file_name}")
+        logging.debug(f"write `datas` into {file_name}")
         file_path = self.get_abs_filename(file_name)
 
         with open(file_path, "w") as f:
             dump(self.datas, f, Dumper=Dumper)
 
     def read_yaml(self, file_name: str):
-        logging.info(f"read `datas` from {file_name}")
+        logging.debug(f"read `datas` from {file_name}")
         file_path = self.get_abs_filename(file_name)
 
         with open(file_path, "r") as f:
@@ -63,14 +69,14 @@ class ItemData:
         return bases
 
     def calculate_base_statistic_prices(self):
-        logging.info("calculate base statistic prices")
+        logging.debug("calculate base statistic prices")
 
         datas = self.datas
 
         first_base = self.bases["first"]
         second_base = self.bases["second"]
 
-        logging.info("  - first base")
+        logging.debug("  - first base")
         for _type in first_base:
             _name = first_base[_type]
 
@@ -88,7 +94,7 @@ class ItemData:
             }
             self.stat_price[_type] = stat_cost
 
-        logging.info("  - second base")
+        logging.debug("  - second base")
         for _type in second_base:
             _name = second_base[_type]
 
@@ -115,11 +121,11 @@ class ItemData:
             self.stat_price[_type] = stat_cost
 
         self.datas = datas
-        logging.info("write `datas` into yml")
+        logging.debug("write `datas` into yml")
         self.write_yaml(self.items_file_name)
 
     def calculate_gold_efficiency(self):
-        logging.info("calculate gold efficiency based on base statistic prices")
+        logging.debug("calculate gold efficiency based on base statistic prices")
 
         datas = self.datas
 
@@ -178,7 +184,7 @@ class ItemData:
         self.write_yaml(self.items_file_name)
 
     def clean_base_GE(self):
-        logging.info("Clean gold efficiency and base statistic price from item data")
+        logging.debug("Clean gold efficiency and base statistic price from item data")
         if self.datas:
             datas = self.datas
         else:
@@ -196,7 +202,7 @@ class ItemData:
         self.write_yaml(self.items_file_name)
 
 
-if __name__ == "__main__":
+def parse_arguments():
     parser = argparse.ArgumentParser(
         description="Extract data from WR Meta via web scraping, or calculate the gold efficiency of item data."
     )
@@ -215,17 +221,66 @@ if __name__ == "__main__":
     )
     parser.add_argument("-d", "--debug", action="store_true", help="Enable debug mode")
 
-    args = parser.parse_args()
+    return parser.parse_args()
 
-    logger = logging.getLogger()
-    logger.setLevel(logging.DEBUG if args.debug else logging.INFO)
 
-    item_data = ItemData(items_file_name=args.items, stats_file_name=args.stats)
+def setup_logger(debug_mode):
+    logging.basicConfig(
+        level=logging.DEBUG if debug_mode else logging.INFO,
+        format="%(asctime)s %(filename)s %(levelname)s %(message)s",
+        datefmt="%a %d %b %Y %H:%M:%S",
+    )
 
-    if args.clean_only is True:
+
+def process_item_data(items_file, stats_file, clean_only, calculate):
+    item_data = ItemData(items_file_name=items_file, stats_file_name=stats_file)
+
+    if clean_only:
         item_data.clean_base_GE()
+    elif calculate:
+        item_data.clean_base_GE()
+        item_data.calculate_base_statistic_prices()
+        item_data.calculate_gold_efficiency()
+
+
+def find_and_process_files(clean_only, calculate):
+    datas = next(os.walk("./_data"), (None, None, []))[2]
+    pattern = re.compile(r"^(items|stats)_(\d+_\d+)([a-z]?)\.yml$")
+    parsed_files = {}
+
+    for data in datas:
+        match = pattern.match(data)
+        if match:
+            file_type, patch_number, suffix = match.groups()
+            key = patch_number + suffix
+            if key not in parsed_files:
+                parsed_files[key] = {}
+            parsed_files[key][file_type] = data
+
+    for key, value in sorted(parsed_files.items()):
+        try:
+            if "items" in value and "stats" in value:
+                process_item_data(value["items"], value["stats"], clean_only, calculate)
+                logging.info(f"finished: ({value['items']}, {value['stats']})")
+                logging.debug("\n")
+            else:
+                raise PairingException(f"No matching pair for patch number {key}")
+        except PairingException as e:
+            print(e)
+
+
+def main():
+    args = parse_arguments()
+    setup_logger(args.debug)
+
+    if args.items and args.stats:
+        process_item_data(args.items, args.stats, args.clean_only, args.calculate)
+        logging.info(f"finished: ({args.items}, {args.stats})")
+    elif not args.items and not args.stats:
+        find_and_process_files(args.clean_only, args.calculate)
     else:
-        if args.calculate is True:
-            item_data.clean_base_GE()
-            item_data.calculate_base_statistic_prices()
-            item_data.calculate_gold_efficiency()
+        logging.error("Both items and stats files must be provided together.")
+
+
+if __name__ == "__main__":
+    main()

@@ -70,9 +70,15 @@ Taking the update from [5.1a](https://changchiyou.github.io/wildrift-gold-effici
     ```
 
 5. Execute [data.py](/data.py) to re-generate `amount` and `formula` in [items_5_1b.yml](/_data/items_5_1b.yml) based on step `2.`( Manually update item data in [items_5_1b.yml](/_data/items_5_1b.yml) ):
-    ```
-    python data.py -c --items items_5_1b.yml --stats stats_5_1b.yml
-    ```
+    - Specific `5.1b`:
+        ```
+        python data.py -c --items items_5_1b.yml --stats stats_5_1b.yml
+        ```
+
+    - All yml files in `_data` directory:
+        ```
+        python data.py -c
+        ```
 
     > For more info of params, execute:
     > ```
