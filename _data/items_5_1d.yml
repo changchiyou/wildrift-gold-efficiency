@@ -1262,6 +1262,46 @@
   - passive: Ardent
     type: '% Move Speed'
     value: 5
+- amount: 107.71%
+  category: MAGIC DAMAGE ITEMS
+  cost: 2800
+  formula: (250*3.33+60*20.0+10*40.0+5*50.0+10*33.33)/2800
+  image: https://wr-meta.com/uploads/posts/2021-03/1616983242_3504.png
+  name: Ardent Censer (Censer - lv1)
+  stats:
+  - type: Max Health
+    value: 250
+  - type: Ability Power
+    value: 60
+  - type: Ability Haste
+    value: 10
+  - passive: Ardent
+    type: '% Move Speed'
+    value: 5
+  - passive: Censer
+    type: '% Attack Speed'
+    value: 10
+  - type: Unstable Passives' Stats
+- amount: 131.51%
+  category: MAGIC DAMAGE ITEMS
+  cost: 2800
+  formula: (250*3.33+60*20.0+10*40.0+5*50.0+30*33.33)/2800
+  image: https://wr-meta.com/uploads/posts/2021-03/1616983242_3504.png
+  name: Ardent Censer (Censer - lv15)
+  stats:
+  - type: Max Health
+    value: 250
+  - type: Ability Power
+    value: 60
+  - type: Ability Haste
+    value: 10
+  - passive: Ardent
+    type: '% Move Speed'
+    value: 5
+  - passive: Censer
+    type: '% Attack Speed'
+    value: 30
+  - type: Unstable Passives' Stats
 - amount: 93.33%
   category: MAGIC DAMAGE ITEMS
   cost: 3000
@@ -1325,10 +1365,10 @@
     value: 60
   - type: '% Magic Penetration'
     value: 7
-- amount: 118.00%
+- amount: 126.00%
   category: MAGIC DAMAGE ITEMS
   cost: 2500
-  formula: (65*20.0+350*3.0+15*40.0)/2500
+  formula: (65*20.0+350*3.0+20*40.0)/2500
   image: https://wr-meta.com/uploads/posts/2022-01/1641816198_staff-of-flowing-water.png
   name: Staff of Flowing Water
   stats:
@@ -1337,7 +1377,47 @@
   - type: Max Mana
     value: 350
   - type: Ability Haste
+    value: 20
+- amount: 166.00%
+  category: MAGIC DAMAGE ITEMS
+  cost: 2500
+  formula: (65*20.0+350*3.0+20*40.0+15*40.0+20*20.0)/2500
+  image: https://wr-meta.com/uploads/posts/2022-01/1641816198_staff-of-flowing-water.png
+  name: Staff of Flowing Water (Rapids - lv1)
+  stats:
+  - type: Ability Power
+    value: 65
+  - type: Max Mana
+    value: 350
+  - type: Ability Haste
+    value: 20
+  - passive: Rapids
+    type: Ability Haste
     value: 15
+  - passive: Rapids
+    type: Ability Power
+    value: 20
+  - type: Unstable Passives' Stats
+- amount: 182.00%
+  category: MAGIC DAMAGE ITEMS
+  cost: 2500
+  formula: (65*20.0+350*3.0+20*40.0+15*40.0+40*20.0)/2500
+  image: https://wr-meta.com/uploads/posts/2022-01/1641816198_staff-of-flowing-water.png
+  name: Staff of Flowing Water (Rapids - lv15)
+  stats:
+  - type: Ability Power
+    value: 65
+  - type: Max Mana
+    value: 350
+  - type: Ability Haste
+    value: 20
+  - passive: Rapids
+    type: Ability Haste
+    value: 15
+  - passive: Rapids
+    type: Ability Power
+    value: 40
+  - type: Unstable Passives' Stats
 - amount: 102.54%
   category: MAGIC DAMAGE ITEMS
   cost: 2600
@@ -1366,6 +1446,23 @@
     value: 40
   - type: Ability Haste
     value: 20
+- amount: 130.64%
+  category: MAGIC DAMAGE ITEMS
+  cost: 2500
+  formula: (200*3.33+40*20.0+20*40.0+20*50.0)/2500
+  image: https://wr-meta.com/uploads/posts/2022-09/1663358166_gbyq8fyates71_11zon.webp
+  name: Imperial Mandate (Coordinated Fire)
+  stats:
+  - type: Max Health
+    value: 200
+  - type: Ability Power
+    value: 40
+  - type: Ability Haste
+    value: 20
+  - passive: Coordinated Fire
+    type: '% Move Speed'
+    value: 20
+  - type: Unstable Passives' Stats
 - amount: 105.36%
   category: MAGIC DAMAGE ITEMS
   cost: 2800
@@ -1382,6 +1479,32 @@
   - passive: Hyperdrive
     type: '% Move Speed'
     value: 5
+- amount: 134.50%
+  category: MAGIC DAMAGE ITEMS
+  cost: 2800
+  formula: (75*20.0+7*0+30*40.0+5*50.0+30*16.0+21.0*16.0)/2800
+  image: https://wr-meta.com/uploads/posts/2022-09/1663358238_4629_mage_t3_cosmicdrive_11zon.webp
+  name: Cosmic Drive (Spellweaving)
+  stats:
+  - type: Ability Power
+    value: 75
+  - type: '% Magic Penetration'
+    value: 7
+  - type: Ability Haste
+    value: 30
+  - passive: Hyperdrive
+    type: '% Move Speed'
+    value: 5
+  - passive: Spellweaving
+    type: Move Speed
+    value: 30
+  - formula: 30*0.7
+    passive: Spellweaving
+    ratio: 0.7
+    ref_type: Ability Haste
+    type: Move Speed
+    value: 21.0
+  - type: Unstable Passives' Stats
 - amount: 87.86%
   category: MAGIC DAMAGE ITEMS
   cost: 3300
@@ -1734,6 +1857,24 @@
   - passive: Spring
     type: '% Move Speed'
     value: 5
+- amount: 194.39%
+  category: DEFENSE ITEMS
+  cost: 2400
+  formula: (425*3.33+25*40.0+5*50.0+40*50.0)/2400
+  image: https://wr-meta.com/uploads/posts/2022-01/1641813763_ixtali-seedjar.png
+  name: Ixtali Seedjar (Harvester)
+  stats:
+  - type: Max Health
+    value: 425
+  - type: Ability Haste
+    value: 25
+  - passive: Spring
+    type: '% Move Speed'
+    value: 5
+  - passive: Harvester
+    type: '% Move Speed'
+    value: 40
+  - type: Unstable Passives' Stats
 - amount: 94.42%
   category: DEFENSE ITEMS
   cost: 3000
@@ -1761,6 +1902,33 @@
   - passive: Withering
     type: Attack Damage
     value: -1
+- amount: 129.30%
+  category: DEFENSE ITEMS
+  cost: 3100
+  formula: (60*25.0+60*25.0+-1*41.67+21.0*25.0+21.0*25.0)/3100
+  image: https://wr-meta.com/uploads/posts/2024-04/1712773182_amaranth_s-twinguard.png
+  name: Ruin - Amaranth's Twinguard (Withering - lv1, Endurance)
+  stats:
+  - type: Armor
+    value: 60
+  - type: Magic Resistance
+    value: 60
+  - passive: Withering
+    type: Attack Damage
+    value: -1
+  - formula: 60*0.35
+    passive: Endurance
+    ratio: 0.35
+    ref_type: Armor
+    type: Armor
+    value: 21.0
+  - formula: 60*0.35
+    passive: Endurance
+    ratio: 0.35
+    ref_type: Magic Resistance
+    type: Magic Resistance
+    value: 21.0
+  - type: Unstable Passives' Stats
 - amount: 76.61%
   category: DEFENSE ITEMS
   cost: 3100
@@ -1775,6 +1943,33 @@
   - passive: Withering
     type: Attack Damage
     value: -15
+- amount: 110.48%
+  category: DEFENSE ITEMS
+  cost: 3100
+  formula: (60*25.0+60*25.0+-15*41.67+21.0*25.0+21.0*25.0)/3100
+  image: https://wr-meta.com/uploads/posts/2024-04/1712773182_amaranth_s-twinguard.png
+  name: Ruin - Amaranth's Twinguard (Withering - lv15, Endurance)
+  stats:
+  - type: Armor
+    value: 60
+  - type: Magic Resistance
+    value: 60
+  - passive: Withering
+    type: Attack Damage
+    value: -15
+  - formula: 60*0.35
+    passive: Endurance
+    ratio: 0.35
+    ref_type: Armor
+    type: Armor
+    value: 21.0
+  - formula: 60*0.35
+    passive: Endurance
+    ratio: 0.35
+    ref_type: Magic Resistance
+    type: Magic Resistance
+    value: 21.0
+  - type: Unstable Passives' Stats
 - amount: 91.93%
   category: DEFENSE ITEMS
   cost: 2900
@@ -1788,6 +1983,33 @@
     value: 40
   - type: Magic Resistance
     value: 40
+- amount: 142.93%
+  category: DEFENSE ITEMS
+  cost: 2900
+  formula: (200*3.33+40*25.0+40*25.0+200.0*3.33+100.0*3.33+30*16.0)/2900
+  image: https://wr-meta.com/uploads/posts/2023-03/1678401479_1mantle-of-the-twelfth-hour_11zon.webp
+  name: Mantle of the Twelfth Hour (Lifeline)
+  stats:
+  - type: Max Health
+    value: 200
+  - type: Armor
+    value: 40
+  - type: Magic Resistance
+    value: 40
+  - passive: Lifeline
+    ratio: null
+    type: Max Health
+    value: 200.0
+  - formula: 200*0.5
+    passive: Lifeline
+    ratio: 0.5
+    ref_type: Max Health
+    type: Max Health
+    value: 100.0
+  - passive: Lifeline
+    type: Move Speed
+    value: 30
+  - type: Unstable Passives' Stats
 - amount: 83.30%
   category: DEFENSE ITEMS
   cost: 2700
