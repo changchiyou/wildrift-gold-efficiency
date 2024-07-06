@@ -54,9 +54,13 @@ class ItemData:
                 return data
 
     def find_stat_with_type(self, data, _type: str):
+        _sum = 0
+
         for stat in data["stats"]:
             if stat["type"] == _type:
-                return stat
+                _sum += stat["value"]
+
+        return _sum
 
     def read_bases(self):
         stats = self.read_yaml(self.stats_file_name)
@@ -86,11 +90,11 @@ class ItemData:
                 raise ValueError(f"data: {data}, target_stat: {target_stat}")
             cost = data["cost"]
 
-            stat_cost = float("{:.2f}".format(cost / target_stat["value"]))
+            stat_cost = float("{:.2f}".format(cost / target_stat))
             data["first_base"] = {
                 "type": _type,
                 "value": stat_cost,
-                "formula": f"{data['cost']}/{target_stat['value']}",
+                "formula": f"{data['cost']}/{target_stat}",
             }
             self.stat_price[_type] = stat_cost
 
@@ -112,11 +116,11 @@ class ItemData:
                         f"-{stat['value']}*{self.stat_price[stat['type']]}"
                     )
 
-            stat_cost = float("{:.2f}".format(cost / target_stat["value"]))
+            stat_cost = float("{:.2f}".format(cost / target_stat))
             data["second_base"] = {
                 "type": _type,
                 "value": stat_cost,
-                "formula": f"({data['cost']}{formula_minus_part})/{target_stat['value']}",
+                "formula": f"({data['cost']}{formula_minus_part})/{target_stat}",
             }
             self.stat_price[_type] = stat_cost
 

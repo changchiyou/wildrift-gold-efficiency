@@ -374,10 +374,10 @@
     type: Move Speed
     value: 30
   - type: Unstable Passives' Stats
-- amount: 117.52%
+- amount: 93.74%
   category: PHYSICAL DAMAGE ITEMS
   cost: 2700
-  formula: (25*41.67+300*3.0+20*40.0+10.35*41.67)/2700
+  formula: (25*41.67+300*0.86+20*40.0+10.35*41.67)/2700
   image: https://wr-meta.com/uploads/posts/2021-03/1616982445_3004.png
   name: Manamune (Awe - lv1 EZ 390 Mana)
   stats:
@@ -394,10 +394,10 @@
     ref_type: Max Mana
     type: Attack Damage
     value: 10.35
-- amount: 133.40%
+- amount: 109.62%
   category: PHYSICAL DAMAGE ITEMS
   cost: 2700
-  formula: (25*41.67+300*3.0+20*40.0+20.64*41.67)/2700
+  formula: (25*41.67+300*0.86+20*40.0+20.64*41.67)/2700
   image: https://wr-meta.com/uploads/posts/2021-03/1616982445_3004.png
   name: Manamune (Awe - lv15 EZ 1076 Mana)
   stats:
@@ -414,10 +414,10 @@
     ref_type: Max Mana
     type: Attack Damage
     value: 20.64
-- amount: 211.50%
+- amount: 132.24%
   category: PHYSICAL DAMAGE ITEMS
   cost: 2700
-  formula: (25*41.67+1000*3.0+20*40.0+20.85*41.67)/2700
+  formula: (25*41.67+1000*0.86+20*40.0+20.85*41.67)/2700
   image: https://wr-meta.com/uploads/posts/2023-08/1693337090_muramana.webp
   name: Muramana (Awe - lv1 EZ 390 Mana)
   stats:
@@ -434,10 +434,10 @@
     ref_type: Max Mana
     type: Attack Damage
     value: 20.85
-- amount: 227.38%
+- amount: 148.12%
   category: PHYSICAL DAMAGE ITEMS
   cost: 2700
-  formula: (25*41.67+1000*3.0+20*40.0+31.14*41.67)/2700
+  formula: (25*41.67+1000*0.86+20*40.0+31.14*41.67)/2700
   image: https://wr-meta.com/uploads/posts/2023-08/1693337090_muramana.webp
   name: Muramana (Awe - lv15 EZ 1076 Mana)
   stats:
@@ -961,10 +961,10 @@
     type: '% Magic Penetration'
     value: 33
   - type: Unstable Passives' Stats
-- amount: 113.33%
+- amount: 91.93%
   category: MAGIC DAMAGE ITEMS
   cost: 3000
-  formula: (85*20.0+7*0+300*3.0+20*40.0)/3000
+  formula: (85*20.0+7*0+300*0.86+20*40.0)/3000
   image: https://wr-meta.com/uploads/posts/2021-03/1616982673_6655.png
   name: Luden's Echo
   stats:
@@ -991,10 +991,10 @@
     value: 7
   - type: Ability Haste
     value: 20
-- amount: 86.67%
+- amount: 72.40%
   category: MAGIC DAMAGE ITEMS
   cost: 3000
-  formula: (60*20.0+7*0+200*3.0+20*40.0)/3000
+  formula: (60*20.0+7*0+200*0.86+20*40.0)/3000
   image: https://wr-meta.com/uploads/posts/2023-10/1698169540_crown_of_the_shattered_queen_item_hd-1.webp
   name: Crown of the Shattered Queen
   stats:
@@ -1006,10 +1006,10 @@
     value: 200
   - type: Ability Haste
     value: 20
-- amount: 100.00%
+- amount: 85.73%
   category: MAGIC DAMAGE ITEMS
   cost: 3000
-  formula: (60*20.0+7*0+200*3.0+20*40.0+20*20.0)/3000
+  formula: (60*20.0+7*0+200*0.86+20*40.0+20*20.0)/3000
   image: https://wr-meta.com/uploads/posts/2023-10/1698169540_crown_of_the_shattered_queen_item_hd-1.webp
   name: Crown of the Shattered Queen (Safeguard & Poise)
   stats:
@@ -1089,10 +1089,10 @@
     value: 75
   - type: '% Magic Penetration'
     value: 7
-- amount: 104.73%
+- amount: 81.80%
   category: MAGIC DAMAGE ITEMS
   cost: 2800
-  formula: (250*3.33+60*20.0+7*0+300*3.0)/2800
+  formula: (250*3.33+60*20.0+7*0+300*0.86)/2800
   image: https://wr-meta.com/uploads/posts/2021-01/1611109436_rod-of-ages.jpg
   name: Rod of Ages
   stats:
@@ -1104,10 +1104,10 @@
     value: 7
   - type: Max Mana
     value: 300
-- amount: 182.09%
+- amount: 151.52%
   category: MAGIC DAMAGE ITEMS
   cost: 2800
-  formula: (250*3.33+60*20.0+7*0+300*3.0+200*3.33+60*20.0+100*3.0)/2800
+  formula: (250*3.33+60*20.0+7*0+300*0.86+200*3.33+60*20.0+100*0.86)/2800
   image: https://wr-meta.com/uploads/posts/2021-01/1611109436_rod-of-ages.jpg
   name: Rod of Ages (Veteran)
   stats:
@@ -1158,10 +1158,10 @@
   - passive: Magic Fang
     type: Ability Power
     value: 60
-- amount: 108.34%
+- amount: 72.07%
   category: MAGIC DAMAGE ITEMS
   cost: 2950
-  formula: (35*20.0+7*0+500*3.0+20*40.0+9.8*20.0)/2950
+  formula: (35*20.0+7*0+500*0.86+20*40.0+9.8*20.0)/2950
   image: https://wr-meta.com/uploads/posts/2021-03/1616983148_3003.png
   name: Archangel's Staff (Awe - lv1 Kass 480 MP)
   stats:
@@ -1180,10 +1180,10 @@
     ref_type: Max Mana
     type: Ability Power
     value: 9.8
-- amount: 114.51%
+- amount: 78.24%
   category: MAGIC DAMAGE ITEMS
   cost: 2950
-  formula: (35*20.0+7*0+500*3.0+20*40.0+18.9*20.0)/2950
+  formula: (35*20.0+7*0+500*0.86+20*40.0+18.9*20.0)/2950
   image: https://wr-meta.com/uploads/posts/2021-03/1616983148_3003.png
   name: Archangel's Staff (Awe - lv15 Kass 1390 MP)
   stats:
@@ -1202,10 +1202,10 @@
     ref_type: Max Mana
     type: Ability Power
     value: 18.9
-- amount: 207.05%
+- amount: 120.00%
   category: MAGIC DAMAGE ITEMS
   cost: 2950
-  formula: (35*20.0+7*0+1200*3.0+20*40.0+50.4*20.0)/2950
+  formula: (35*20.0+7*0+1200*0.86+20*40.0+50.4*20.0)/2950
   image: https://wr-meta.com/uploads/posts/2023-08/1691525309_3040.webp
   name: Seraph's Embrace (Awe - lv1 Kass 480 MP)
   stats:
@@ -1224,10 +1224,10 @@
     ref_type: Max Mana
     type: Ability Power
     value: 50.4
-- amount: 225.56%
+- amount: 138.51%
   category: MAGIC DAMAGE ITEMS
   cost: 2950
-  formula: (35*20.0+7*0+1200*3.0+20*40.0+77.7*20.0)/2950
+  formula: (35*20.0+7*0+1200*0.86+20*40.0+77.7*20.0)/2950
   image: https://wr-meta.com/uploads/posts/2023-08/1691525309_3040.webp
   name: Seraph's Embrace (Awe - lv15 Kass 1390 MP)
   stats:
@@ -1302,10 +1302,10 @@
     type: '% Attack Speed'
     value: 30
   - type: Unstable Passives' Stats
-- amount: 93.33%
+- amount: 71.93%
   category: MAGIC DAMAGE ITEMS
   cost: 3000
-  formula: (75*20.0+300*3.0+10*40.0)/3000
+  formula: (75*20.0+300*0.86+10*40.0)/3000
   image: https://wr-meta.com/uploads/posts/2024-04/1712774468_rvrzy8us16181.png
   name: Light - Harmonic Echo
   stats:
@@ -1365,10 +1365,10 @@
     value: 60
   - type: '% Magic Penetration'
     value: 7
-- amount: 126.00%
+- amount: 96.04%
   category: MAGIC DAMAGE ITEMS
   cost: 2500
-  formula: (65*20.0+350*3.0+20*40.0)/2500
+  formula: (65*20.0+350*0.86+20*40.0)/2500
   image: https://wr-meta.com/uploads/posts/2022-01/1641816198_staff-of-flowing-water.png
   name: Staff of Flowing Water
   stats:
@@ -1378,10 +1378,10 @@
     value: 350
   - type: Ability Haste
     value: 20
-- amount: 166.00%
+- amount: 136.04%
   category: MAGIC DAMAGE ITEMS
   cost: 2500
-  formula: (65*20.0+350*3.0+20*40.0+15*40.0+20*20.0)/2500
+  formula: (65*20.0+350*0.86+20*40.0+15*40.0+20*20.0)/2500
   image: https://wr-meta.com/uploads/posts/2022-01/1641816198_staff-of-flowing-water.png
   name: Staff of Flowing Water (Rapids - lv1)
   stats:
@@ -1398,10 +1398,10 @@
     type: Ability Power
     value: 20
   - type: Unstable Passives' Stats
-- amount: 182.00%
+- amount: 152.04%
   category: MAGIC DAMAGE ITEMS
   cost: 2500
-  formula: (65*20.0+350*3.0+20*40.0+15*40.0+40*20.0)/2500
+  formula: (65*20.0+350*0.86+20*40.0+15*40.0+40*20.0)/2500
   image: https://wr-meta.com/uploads/posts/2022-01/1641816198_staff-of-flowing-water.png
   name: Staff of Flowing Water (Rapids - lv15)
   stats:
@@ -1628,10 +1628,10 @@
   - passive: Dead End
     type: Attack Damage
     value: -15
-- amount: 130.08%
+- amount: 112.82%
   category: DEFENSE ITEMS
   cost: 3100
-  formula: (250*3.33+50*25.0+250*3.0+30*40.0)/3100
+  formula: (250*3.33+50*25.0+250*0.86+30*40.0)/3100
   image: https://wr-meta.com/uploads/posts/2021-03/1616983682_6662.png
   name: Iceborn Gauntlet
   stats:
@@ -1675,10 +1675,10 @@
     type: Move Speed
     value: 40
   - type: Unstable Passives' Stats
-- amount: 117.82%
+- amount: 94.89%
   category: DEFENSE ITEMS
   cost: 2800
-  formula: (300*3.33+40*25.0+300*3.0+10*40.0)/2800
+  formula: (300*3.33+40*25.0+300*0.86+10*40.0)/2800
   image: https://wr-meta.com/uploads/posts/2021-01/1611112923_abyssal-mask.jpg
   name: Abyssal Mask
   stats:
@@ -1690,10 +1690,10 @@
     value: 300
   - type: Ability Haste
     value: 10
-- amount: 111.69%
+- amount: 99.80%
   category: DEFENSE ITEMS
   cost: 2700
-  formula: (350*3.33+40*25.0+150*3.0+10*40.0)/2700
+  formula: (350*3.33+40*25.0+150*0.86+10*40.0)/2700
   image: https://wr-meta.com/uploads/posts/2021-03/1616983776_3050.png
   name: Zeke's Convergence
   stats:
@@ -1718,10 +1718,10 @@
     value: 40
   - type: Ability Haste
     value: 10
-- amount: 134.72%
+- amount: 93.56%
   category: DEFENSE ITEMS
   cost: 2600
-  formula: (350*3.33+500*3.0+15*40.0+71.2*3.33)/2600
+  formula: (350*3.33+500*0.86+15*40.0+71.2*3.33)/2600
   image: https://wr-meta.com/uploads/posts/2022-07/1657816019_winter27s_approach_item_hd.png
   name: Winter's Approach (Awe - lv1 Voli 390 MP)
   stats:
@@ -1738,10 +1738,10 @@
     ref_type: Max Mana
     type: Max Health
     value: 71.2
-- amount: 144.04%
+- amount: 102.89%
   category: DEFENSE ITEMS
   cost: 2600
-  formula: (350*3.33+500*3.0+15*40.0+144.0*3.33)/2600
+  formula: (350*3.33+500*0.86+15*40.0+144.0*3.33)/2600
   image: https://wr-meta.com/uploads/posts/2022-07/1657816019_winter27s_approach_item_hd.png
   name: Winter's Approach (Awe - lv15 Voli 1300 MP)
   stats:
@@ -1758,10 +1758,10 @@
     ref_type: Max Mana
     type: Max Health
     value: 144.0
-- amount: 222.66%
+- amount: 123.89%
   category: DEFENSE ITEMS
   cost: 2600
-  formula: (350*3.33+1200*3.0+15*40.0+127.2*3.33)/2600
+  formula: (350*3.33+1200*0.86+15*40.0+127.2*3.33)/2600
   image: https://wr-meta.com/uploads/posts/2023-08/1691526146_3121.webp
   name: Fimbulwinter (Awe - lv1 Voli 390 MP)
   stats:
@@ -1778,10 +1778,10 @@
     ref_type: Max Mana
     type: Max Health
     value: 127.2
-- amount: 231.98%
+- amount: 133.21%
   category: DEFENSE ITEMS
   cost: 2600
-  formula: (350*3.33+1200*3.0+15*40.0+200.0*3.33)/2600
+  formula: (350*3.33+1200*0.86+15*40.0+200.0*3.33)/2600
   image: https://wr-meta.com/uploads/posts/2023-08/1691526146_3121.webp
   name: Fimbulwinter (Awe - lv15 Voli 1300 MP)
   stats:
@@ -1830,10 +1830,10 @@
     type: '% Move Speed'
     value: 10
   - type: Unstable Passives' Stats
-- amount: 133.33%
+- amount: 117.48%
   category: DEFENSE ITEMS
   cost: 2700
-  formula: (80*25.0+200*3.0+25*40.0)/2700
+  formula: (80*25.0+200*0.86+25*40.0)/2700
   image: https://wr-meta.com/uploads/posts/2021-03/1616980284_1616954573_1616469878_3_24_21_patch22itempreviewarticle_frozenheart-min-min.jpg
   name: Frozen Heart
   stats:
@@ -2534,10 +2534,10 @@
     value: 175
   - type: Attack Damage
     value: 15
-- amount: 144.44%
+- amount: 73.11%
   category: MID TIER ITEMS
   cost: 900
-  formula: (300*3.0+10*40.0)/900
+  formula: (300*0.86+10*40.0)/900
   image: https://wr-meta.com/uploads/posts/2021-01/1611442459_tear-of-the-goddess.png
   name: Tear of the Goddess
   stats:
@@ -2561,10 +2561,10 @@
   - passive: Wisp
     type: '% Move Speed'
     value: 5
-- amount: 133.33%
+- amount: 85.78%
   category: MID TIER ITEMS
   cost: 900
-  formula: (30*20.0+200*3.0)/900
+  formula: (30*20.0+200*0.86)/900
   image: https://wr-meta.com/uploads/posts/2021-03/1616985899_3802.png
   name: Lost Chapter
   stats:
@@ -2695,10 +2695,10 @@
   stats:
   - type: Armor
     value: 35
-- amount: 142.36%
+- amount: 84.00%
   category: MID TIER ITEMS
   cost: 1100
-  formula: (200*3.33+300*3.0)/1100
+  formula: (200*3.33+300*0.86)/1100
   image: https://wr-meta.com/uploads/posts/2021-01/1611444645_catalyst-of-aeons.png
   name: Catalyst of Aeons
   stats:
@@ -2744,10 +2744,10 @@
   stats:
   - type: Magic Resistance
     value: 40
-- amount: 135.00%
+- amount: 102.90%
   category: MID TIER ITEMS
   cost: 1000
-  formula: (20*25.0+150*3.0+10*40.0)/1000
+  formula: (20*25.0+150*0.86+10*40.0)/1000
   image: https://wr-meta.com/uploads/posts/2021-03/1616986572_3024.png
   name: Glacial Shroud
   stats:
@@ -2925,21 +2925,35 @@
   stats:
   - type: Max Health
     value: 50
-- amount: 100%
+- amount: 57.20%
   category: BASIC ITEMS
   cost: 500
-  formula: Base Item
+  formula: (100*0.86+5*40.0)/500
   image: https://wr-meta.com/uploads/posts/2021-03/1616984672_1027.png
   name: Sapphire Crystal
-  second_base:
-    formula: (500-5*40.0)/100
-    type: Max Mana
-    value: 3.0
   stats:
   - type: Max Mana
     value: 100
   - type: Ability Haste
     value: 5
+- amount: 100%
+  category: BASIC ITEMS
+  cost: 500
+  formula: Base Item
+  image: https://wr-meta.com/uploads/posts/2021-03/1616984672_1027.png
+  name: Sapphire Crystal (Mana Charge)
+  second_base:
+    formula: (500-5*40.0)/350
+    type: Max Mana
+    value: 0.86
+  stats:
+  - type: Max Mana
+    value: 100
+  - type: Ability Haste
+    value: 5
+  - passive: Mana Charge
+    type: Max Mana
+    value: 250
 - amount: 100%
   category: BASIC ITEMS
   cost: 500

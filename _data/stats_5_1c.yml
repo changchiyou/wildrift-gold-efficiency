@@ -74,7 +74,7 @@
 "Max Mana":
   image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/Mana.png"
   base_type: "second"
-  base_item: "Sapphire Crystal"
+  base_item: "Sapphire Crystal (Mana Charge)"
   type: "Magic"
 "% Mana Regeneration":
   image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/mpreg.png"
