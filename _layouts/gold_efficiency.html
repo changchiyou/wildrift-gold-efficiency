@@ -101,15 +101,17 @@ layout: default
                         header.addEventListener('click', () => {
                             const currentOrder = header.getAttribute('data-order');
                             let newOrder;
+
+                            // non-order -> descending -> ascending -> non-order -> ...
                             if (currentOrder === 'non-order') {
-                                newOrder = 'ascending';
-                                sortGroupedRows(groupedRows, index, header.getAttribute('data-type'), 'asc');
-                            } else if (currentOrder === 'ascending') {
                                 newOrder = 'descending';
                                 sortGroupedRows(groupedRows, index, header.getAttribute('data-type'), 'desc');
-                            } else {
+                            } else if (currentOrder === 'ascending') {
                                 newOrder = 'non-order';
                                 restoreOriginalOrder(table, originalRows);
+                            } else {
+                                newOrder = 'ascending';
+                                sortGroupedRows(groupedRows, index, header.getAttribute('data-type'), 'asc');
                             }
 
                             // Reset data-order and title attributes for all headers that have them
