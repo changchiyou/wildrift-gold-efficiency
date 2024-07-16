@@ -3,7 +3,7 @@
     <button id="clear-all" style="display:none;" class="clear-all-button">Clear All</button>
 </h3>
 
-<button class="collapsible" id="include-filters">✔️ Include Filters: <span id="included-icons"></span></button>
+<button class="collapsible" id="include-filters"><div class="checkmark"></div> Include Filters: <span id="included-icons"></span></button>
 <div class="item-filter-wrap">
     {% assign stats = site.data.[include.stats] %}
 
@@ -37,7 +37,7 @@
     {% endfor %}
 </div>
 <br>
-<button class="collapsible" id="exclude-filters">✖️ Exclude Filters: <span id="excluded-icons"></span></button>
+<button class="collapsible" id="exclude-filters"><div class="crossmark"></div> Exclude Filters: <span id="excluded-icons"></span></button>
 <div class="item-filter-wrap">
     {% assign stats = site.data.[include.stats] %}
 

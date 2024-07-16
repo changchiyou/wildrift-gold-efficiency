@@ -144,3 +144,40 @@ button.clear-all-button:hover {
     background-color: #555;
     border-color: #777;
 }
+
+.checkmark, .crossmark {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px; /* 圓角 */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 480px) {
+  .checkmark, .crossmark {
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+  }
+}
+
+.checkmark {
+  background-color: green;
+}
+
+.checkmark::before {
+  content: '✔';
+}
+
+.crossmark {
+  background-color: red;
+}
+
+.crossmark::before {
+  content: '✖';
+}
