@@ -86,6 +86,7 @@
             if (checkbox.checked) {
                 anyIncludeChecked = true;
                 var iconHtml = checkbox.nextElementSibling.querySelector('.target-stat').innerHTML;
+                iconHtml = iconHtml.replace('in-filter', 'out-filter');
                 includedIcons.push(iconHtml);
             }
         });
@@ -94,6 +95,7 @@
             if (checkbox.checked) {
                 anyExcludeChecked = true;
                 var iconHtml = checkbox.nextElementSibling.querySelector('.target-stat').innerHTML;
+                iconHtml = iconHtml.replace('in-filter', 'out-filter');
                 excludedIcons.push(iconHtml);
             }
         });

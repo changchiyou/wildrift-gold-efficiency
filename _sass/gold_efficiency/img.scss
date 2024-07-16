@@ -10,6 +10,10 @@ img.stat-icon {
   img.stat-icon.in-filter {
     width: 11px;
   }
+
+  img.stat-icon.out-filter {
+    width: 13px;
+  }
   
   @media screen and (max-width: 768px) {
     img.stat-icon, img.item-icon {
@@ -29,5 +33,8 @@ img.stat-icon {
     }
     img.stat-icon.in-filter {
       width: 9px;
+    }
+    img.stat-icon.out-filter {
+      width: 11px;
     }
   }
