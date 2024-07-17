@@ -149,7 +149,7 @@ button.clear-all-button:hover {
   display: inline-block;
   width: 20px;
   height: 20px;
-  border-radius: 5px; /* 圓角 */
+  border-radius: 5px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -162,6 +162,7 @@ button.clear-all-button:hover {
   .checkmark, .crossmark {
     width: 15px;
     height: 15px;
+    border-radius: 3px;
     font-size: 12px;
   }
 }
