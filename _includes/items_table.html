@@ -3,6 +3,7 @@
 {% assign compare_items = site.data[ page.patch_note.compare.items ] %}
 {% assign compare_statuses = page.patch_note.compare.statuses | split: ',' %}
 {% assign patch_status_excludes = page.patch_note.excludes | split: ',' %}
+{% assign force_pairs = page.patch_note.compare.force | split: ';' %}
 <table class="sortable-table">
     <colgroup>
         <col class="items-item">
@@ -40,7 +41,8 @@
                         {% assign status_items = patch_status[1] | split: ',' %}
                         {% for status_item in status_items %}
                             {% assign item_name = item.name | upcase | replace: "'", '’' %}
-                            {% if item_name contains status_item %}
+                            {% assign _status_item = status_item | upcase | replace: "'", '’' %}
+                            {% if item_name contains _status_item %}
                                 {% assign patch = patch_status[0] %}
                                 {% break %}
                             {% endif %}
@@ -50,15 +52,30 @@
                         {% endif %}
                     {% endfor %}
                 {% endunless %}
-
+                {% assign compare_item = "" %}
+                {% assign tr_classes = filters %}
+                {% if patch != "" %}
+                    {% assign tr_classes = tr_classes | append: " update" %}
+                {% endif %}
                 {% if compare_statuses contains patch %}
-                    {% include item_row.html data_item=item stats=include.stats patch=patch tr_classes=filters first_td_class="toggle-trigger" prefix_version_in_span="true" %}
-                    {% assign compare_item = compare_items | where: "name", item.name | first %}
+                    {% include item_row.html data_item=item stats=include.stats patch=patch tr_classes=tr_classes first_td_class="toggle-trigger" prefix_version_in_span="true" %}
+                    {% if force_pairs %}
+                        {% for force_pair in force_pairs %}
+                            {% assign pair = force_pair | strip | split: ':' %}
+                            {% if item.name == pair[0] %}
+                                {% assign compare_item = compare_items | where: "name", pair[1] | first %}
+                                {% break %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                    {% if compare_item == "" %}
+                        {% assign compare_item = compare_items | where: "name", item.name | first %}
+                    {% endif %}
                     {% if compare_item %}
                         {% include item_row.html data_item=compare_item stats=page.patch_note.compare.stats display="false" compare_item_prefix=page.patch_note.compare.item_prefix tr_classes="compare" backgroundColor="rgba(98, 101, 112, 1)" %}
                     {% endif %}
                 {% else %}
-                    {% include item_row.html data_item=item stats=include.stats patch=patch tr_classes=filters %}
+                    {% include item_row.html data_item=item stats=include.stats patch=patch tr_classes=tr_classes %}
                 {% endif %}
             {% endif %}
         {% endfor %}

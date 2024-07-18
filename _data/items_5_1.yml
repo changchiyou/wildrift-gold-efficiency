@@ -837,7 +837,7 @@
   cost: 3200
   formula: (400*3.33+-5*16.0+29.0*41.67)/3200
   image: https://wr-meta.com/uploads/posts/2024-04/1712772856_3053_11zon.png
-  name: Sterak's Gage (Heavy Handed - lv1 IRE 58 AD)
+  name: Ruin - Sterak's Gage (Heavy Handed - lv1 IRE 58 AD)
   stats:
   - type: Max Health
     value: 400
@@ -855,7 +855,7 @@
   cost: 3200
   formula: (400*3.33+-5*16.0+61.0*41.67)/3200
   image: https://wr-meta.com/uploads/posts/2024-04/1712772856_3053_11zon.png
-  name: Sterak's Gage (Heavy Handed - lv15 IRE 122 AD)
+  name: Ruin - Sterak's Gage (Heavy Handed - lv15 IRE 122 AD)
   stats:
   - type: Max Health
     value: 400
@@ -1601,7 +1601,7 @@
   cost: 2850
   formula: (700*3.33+200*0+10*40.0+-1*41.67)/2850
   image: https://wr-meta.com/uploads/posts/2024-04/1712772933_1616983645_3083.png
-  name: Warmog's Armor (Dead End - lv1)
+  name: Ruin - Warmog's Armor (Dead End - lv1)
   stats:
   - type: Max Health
     value: 700
@@ -1617,7 +1617,7 @@
   cost: 2850
   formula: (700*3.33+200*0+10*40.0+-15*41.67)/2850
   image: https://wr-meta.com/uploads/posts/2024-04/1712772933_1616983645_3083.png
-  name: Warmog's Armor (Dead End - lv15)
+  name: Ruin - Warmog's Armor (Dead End - lv15)
   stats:
   - type: Max Health
     value: 700
@@ -1880,7 +1880,7 @@
   cost: 3000
   formula: (250*3.33+50*25.0+30*25.0)/3000
   image: https://wr-meta.com/uploads/posts/2024-04/1712774558_images.png
-  name: Dawnshroud
+  name: Light - Dawnshroud
   stats:
   - type: Max Health
     value: 250

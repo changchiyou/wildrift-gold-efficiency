@@ -91,3 +91,6 @@
 "Unstable Passives' Stats":
   image: "⚡"
   type: "Others"
+"Update":
+  image: "✨"
+  type: "Others"
