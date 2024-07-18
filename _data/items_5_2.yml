@@ -1450,10 +1450,10 @@
   - passive: Assimilation
     type: '% Omnivamp'
     value: 12
-- amount: 77.42%
+- amount: 82.76%
   category: MAGIC DAMAGE ITEMS
-  cost: 3100
-  formula: (80*20.0+7*0+20*40.0)/3100
+  cost: 2900
+  formula: (80*20.0+7*0+20*40.0)/2900
   image: https://wr-meta.com/uploads/posts/2024-07/1721253540_4628_11zon.png
   name: Horizon Focus
   stats:
