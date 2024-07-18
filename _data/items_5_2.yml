@@ -79,10 +79,10 @@
   - passive: Fervor
     type: '% Move Speed'
     value: 5
-- amount: 73.95%
+- amount: 76.25%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200
-  formula: (20*41.67+35*33.33+10*36.66)/3200
+  formula: (20*41.67+35*33.33+12*36.66)/3200
   image: https://wr-meta.com/uploads/posts/2024-07/1721253462_3153_11zon.png
   name: Blade of the Ruined King
   stats:
@@ -92,7 +92,7 @@
     value: 35
   - passive: Thirst
     type: '% Physical Vamp'
-    value: 10
+    value: 12
 - amount: 66.66%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
@@ -105,10 +105,10 @@
   - passive: Wind's Favor
     type: Attack Damage
     value: 20
-- amount: 100.13%
+- amount: 106.80%
   category: PHYSICAL DAMAGE ITEMS
-  cost: 3200
-  formula: (55*41.67+15*40.0+15*20.82)/3200
+  cost: 3000
+  formula: (55*41.67+15*40.0+15*20.82)/3000
   image: https://wr-meta.com/uploads/posts/2024-07/1721253752_3142_11zon.png
   name: Youmuu's Ghostblade
   stats:
@@ -119,10 +119,10 @@
   - passive: Slice
     type: Armor Penetration
     value: 15
-- amount: 120.13%
+- amount: 128.14%
   category: PHYSICAL DAMAGE ITEMS
-  cost: 3200
-  formula: (55*41.67+15*40.0+15*20.82+40*16.0)/3200
+  cost: 3000
+  formula: (55*41.67+15*40.0+15*20.82+40*16.0)/3000
   image: https://wr-meta.com/uploads/posts/2024-07/1721253752_3142_11zon.png
   name: Youmuu's Ghostblade (Momentum)
   stats:
@@ -137,10 +137,10 @@
     type: Move Speed
     value: 40
   - type: Unstable Passives' Stats
-- amount: 126.17%
+- amount: 134.58%
   category: PHYSICAL DAMAGE ITEMS
-  cost: 3200
-  formula: (55*41.67+15*40.0+15*20.82+25*33.33)/3200
+  cost: 3000
+  formula: (55*41.67+15*40.0+15*20.82+25*33.33)/3000
   image: https://wr-meta.com/uploads/posts/2024-07/1721253752_3142_11zon.png
   name: Youmuu's Ghostblade (Haste)
   stats:
@@ -1450,15 +1450,15 @@
   - passive: Assimilation
     type: '% Omnivamp'
     value: 12
-- amount: 83.87%
+- amount: 77.42%
   category: MAGIC DAMAGE ITEMS
   cost: 3100
-  formula: (90*20.0+7*0+20*40.0)/3100
+  formula: (80*20.0+7*0+20*40.0)/3100
   image: https://wr-meta.com/uploads/posts/2024-07/1721253540_4628_11zon.png
   name: Horizon Focus
   stats:
   - type: Ability Power
-    value: 90
+    value: 80
   - type: '% Magic Penetration'
     value: 7
   - type: Ability Haste
