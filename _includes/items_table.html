@@ -41,7 +41,7 @@
                         {% assign status_items = patch_status[1] | split: ',' %}
                         {% for status_item in status_items %}
                             {% assign item_name = item.name | upcase | replace: "'", '’' %}
-                            {% assign _status_item = status_item | upcase | replace: "'", '’' %}
+                            {% assign _status_item = status_item | strip | upcase | replace: "'", '’' %}
                             {% if item_name contains _status_item %}
                                 {% assign patch = patch_status[0] %}
                                 {% break %}
