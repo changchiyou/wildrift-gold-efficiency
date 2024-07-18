@@ -1839,7 +1839,7 @@
   category: DEFENSE ITEMS
   cost: 3100
   formula: (60*25.0+60*25.0)/3100
-  image: https://wr-meta.com/uploads/posts/2024-04/1712773182_amaranth_s-twinguard.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/e/e9/Amaranth%27s_Twinguard_WR_item.png
   name: Amaranth's Twinguard
   stats:
   - type: Armor
@@ -1850,7 +1850,7 @@
   category: DEFENSE ITEMS
   cost: 3100
   formula: (60*25.0+60*25.0+18.0*25.0+18.0*25.0)/3100
-  image: https://wr-meta.com/uploads/posts/2024-04/1712773182_amaranth_s-twinguard.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/e/e9/Amaranth%27s_Twinguard_WR_item.png
   name: Amaranth's Twinguard (Endurance)
   stats:
   - type: Armor
@@ -1925,7 +1925,7 @@
   category: DEFENSE ITEMS
   cost: 2800
   formula: (700*3.33+150*0+20*40.0)/2800
-  image: https://wr-meta.com/uploads/posts/2024-01/1705522930_heartsteel_item_hd.webp
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/5/51/Heartsteel_item.png
   name: Heartsteel
   stats:
   - type: Max Health

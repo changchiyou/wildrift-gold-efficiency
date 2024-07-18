@@ -83,7 +83,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (20*41.67+35*33.33+12*36.66+-5*3.33)/3000
-  image: https://wr-meta.com/uploads/posts/2024-04/1712773448_1616982020_itemsquareblade_of_the_ruined_king.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/b/b0/Blade_of_the_Ruined_King_%28Ruin%29_WR_item.png
   name: Ruin - Blade of the Ruined King (Repentance - lv1)
   stats:
   - type: Attack Damage
@@ -100,7 +100,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (20*41.67+35*33.33+12*36.66+-80*3.33)/3000
-  image: https://wr-meta.com/uploads/posts/2024-04/1712773448_1616982020_itemsquareblade_of_the_ruined_king.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/b/b0/Blade_of_the_Ruined_King_%28Ruin%29_WR_item.png
   name: Ruin - Blade of the Ruined King (Repentance - lv15)
   stats:
   - type: Attack Damage
@@ -129,7 +129,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200
   formula: (55*41.67+15*40.0+15*20.82)/3200
-  image: https://wr-meta.com/uploads/posts/2024-04/1712774521_youmuus-ghostblade.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/6/67/Youmuu%27s_Ghostblade_%28Light%29_WR_item.png
   name: Light - Youmuu's Ghostblade
   stats:
   - type: Attack Damage
@@ -143,7 +143,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200
   formula: (55*41.67+15*40.0+15*20.82+3*20.82+50*16.0)/3200
-  image: https://wr-meta.com/uploads/posts/2024-04/1712774521_youmuus-ghostblade.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/6/67/Youmuu%27s_Ghostblade_%28Light%29_WR_item.png
   name: Light - Youmuu's Ghostblade (Momentum - lv1)
   stats:
   - type: Attack Damage
@@ -164,7 +164,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200
   formula: (55*41.67+15*40.0+15*20.82+6*20.82+50*16.0)/3200
-  image: https://wr-meta.com/uploads/posts/2024-04/1712774521_youmuus-ghostblade.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/6/67/Youmuu%27s_Ghostblade_%28Light%29_WR_item.png
   name: Light - Youmuu's Ghostblade (Momentum - lv15)
   stats:
   - type: Attack Damage
@@ -185,7 +185,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200
   formula: (55*41.67+15*40.0+15*20.82+3*20.82+25*33.33)/3200
-  image: https://wr-meta.com/uploads/posts/2024-04/1712774521_youmuus-ghostblade.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/6/67/Youmuu%27s_Ghostblade_%28Light%29_WR_item.png
   name: Light - Youmuu's Ghostblade (Haste - lv1)
   stats:
   - type: Attack Damage
@@ -206,7 +206,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200
   formula: (55*41.67+15*40.0+15*20.82+6*20.82+25*33.33)/3200
-  image: https://wr-meta.com/uploads/posts/2024-04/1712774521_youmuus-ghostblade.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/6/67/Youmuu%27s_Ghostblade_%28Light%29_WR_item.png
   name: Light - Youmuu's Ghostblade (Haste - lv15)
   stats:
   - type: Attack Damage
@@ -241,7 +241,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200
   formula: (55*41.67+25*50.0+-5*3.33)/3200
-  image: https://wr-meta.com/uploads/posts/2024-04/1712773344_1616982264_3031.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/1/12/Infinity_Edge_%28Ruin%29_WR_item.png
   name: Ruin - Infinity Edge (Self-Destruction - lv1)
   stats:
   - type: Attack Damage
@@ -255,7 +255,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200
   formula: (55*41.67+25*50.0+-80*3.33)/3200
-  image: https://wr-meta.com/uploads/posts/2024-04/1712773344_1616982264_3031.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/1/12/Infinity_Edge_%28Ruin%29_WR_item.png
   name: Ruin - Infinity Edge (Self-Destruction - lv15)
   stats:
   - type: Attack Damage
@@ -836,7 +836,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200
   formula: (400*3.33+-5*16.0+29.0*41.67)/3200
-  image: https://wr-meta.com/uploads/posts/2024-04/1712772856_3053_11zon.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/c/c8/Sterak%27s_Gage_%28Ruin%29_WR_item.png
   name: Ruin - Sterak's Gage (Heavy Handed - lv1 IRE 58 AD)
   stats:
   - type: Max Health
@@ -854,7 +854,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200
   formula: (400*3.33+-5*16.0+61.0*41.67)/3200
-  image: https://wr-meta.com/uploads/posts/2024-04/1712772856_3053_11zon.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/c/c8/Sterak%27s_Gage_%28Ruin%29_WR_item.png
   name: Ruin - Sterak's Gage (Heavy Handed - lv15 IRE 122 AD)
   stats:
   - type: Max Health
@@ -1029,7 +1029,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 3400
   formula: (90*20.0+7*0+-5*3.33+22.5*20.0)/3400
-  image: https://wr-meta.com/uploads/posts/2024-04/1712773821_1616983058_3089.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/a/a2/Rabadon%27s_Deathcap_%28Ruin%29_WR_item.png
   name: Ruin - Rabadon's Deathcap (Cinders, Overkill - lv1)
   stats:
   - type: Ability Power
@@ -1049,7 +1049,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 3400
   formula: (90*20.0+7*0+-80*3.33+45.0*20.0)/3400
-  image: https://wr-meta.com/uploads/posts/2024-04/1712773821_1616983058_3089.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/a/a2/Rabadon%27s_Deathcap_%28Ruin%29_WR_item.png
   name: Ruin - Rabadon's Deathcap (Cinders, Overkill - lv15)
   stats:
   - type: Ability Power
@@ -1306,7 +1306,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 3000
   formula: (75*20.0+300*0.86+10*40.0)/3000
-  image: https://wr-meta.com/uploads/posts/2024-04/1712774468_rvrzy8us16181.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/f/f8/Harmonic_Echo_%28Light%29_WR_item.png
   name: Light - Harmonic Echo
   stats:
   - type: Ability Power
@@ -1337,7 +1337,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 3400
   formula: (95*20.0+7*0+5*50.0+15*33.33)/3400
-  image: https://wr-meta.com/uploads/posts/2024-04/1712774262_infinity-orb.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/3/37/Infinity_Orb_%28Light%29_WR_item.png
   name: Light - Infinity Orb
   stats:
   - type: Ability Power
@@ -1509,7 +1509,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 3300
   formula: (150*3.33+90*20.0+7*0+15*40.0+12*0)/3300
-  image: https://wr-meta.com/uploads/posts/2024-04/1712774569_harmonic-echo.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/a/ac/Riftmaker_%28Light%29_WR_item.png
   name: Light - Riftmaker
   stats:
   - type: Max Health
@@ -1527,7 +1527,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 3100
   formula: (90*20.0+7*0+20*40.0)/3100
-  image: https://wr-meta.com/uploads/posts/2024-04/1712774246_gejnaqxxsaaivse.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/d/db/Horizon_Focus_%28Light%29_WR_item.png
   name: Light - Horizon Focus
   stats:
   - type: Ability Power
@@ -1600,7 +1600,7 @@
   category: DEFENSE ITEMS
   cost: 2850
   formula: (700*3.33+200*0+10*40.0+-1*41.67)/2850
-  image: https://wr-meta.com/uploads/posts/2024-04/1712772933_1616983645_3083.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/f/f6/Warmog%27s_Armor_%28Ruin%29_WR_item.png
   name: Ruin - Warmog's Armor (Dead End - lv1)
   stats:
   - type: Max Health
@@ -1616,7 +1616,7 @@
   category: DEFENSE ITEMS
   cost: 2850
   formula: (700*3.33+200*0+10*40.0+-15*41.67)/2850
-  image: https://wr-meta.com/uploads/posts/2024-04/1712772933_1616983645_3083.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/f/f6/Warmog%27s_Armor_%28Ruin%29_WR_item.png
   name: Ruin - Warmog's Armor (Dead End - lv15)
   stats:
   - type: Max Health
@@ -1879,7 +1879,7 @@
   category: DEFENSE ITEMS
   cost: 3000
   formula: (250*3.33+50*25.0+30*25.0)/3000
-  image: https://wr-meta.com/uploads/posts/2024-04/1712774558_images.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/3/38/Dawnshroud_%28Light%29_WR_item.png
   name: Light - Dawnshroud
   stats:
   - type: Max Health
@@ -1892,7 +1892,7 @@
   category: DEFENSE ITEMS
   cost: 3100
   formula: (60*25.0+60*25.0+-1*41.67)/3100
-  image: https://wr-meta.com/uploads/posts/2024-04/1712773182_amaranth_s-twinguard.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/5/55/Amaranth%27s_Twinguard_%28Ruin%29_WR_item.png
   name: Ruin - Amaranth's Twinguard (Withering - lv1)
   stats:
   - type: Armor
@@ -1906,7 +1906,7 @@
   category: DEFENSE ITEMS
   cost: 3100
   formula: (60*25.0+60*25.0+-1*41.67+21.0*25.0+21.0*25.0)/3100
-  image: https://wr-meta.com/uploads/posts/2024-04/1712773182_amaranth_s-twinguard.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/5/55/Amaranth%27s_Twinguard_%28Ruin%29_WR_item.png
   name: Ruin - Amaranth's Twinguard (Withering - lv1, Endurance)
   stats:
   - type: Armor
@@ -1933,7 +1933,7 @@
   category: DEFENSE ITEMS
   cost: 3100
   formula: (60*25.0+60*25.0+-15*41.67)/3100
-  image: https://wr-meta.com/uploads/posts/2024-04/1712773182_amaranth_s-twinguard.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/5/55/Amaranth%27s_Twinguard_%28Ruin%29_WR_item.png
   name: Ruin - Amaranth's Twinguard (Withering - lv15)
   stats:
   - type: Armor
@@ -1947,7 +1947,7 @@
   category: DEFENSE ITEMS
   cost: 3100
   formula: (60*25.0+60*25.0+-15*41.67+21.0*25.0+21.0*25.0)/3100
-  image: https://wr-meta.com/uploads/posts/2024-04/1712773182_amaranth_s-twinguard.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/5/55/Amaranth%27s_Twinguard_%28Ruin%29_WR_item.png
   name: Ruin - Amaranth's Twinguard (Withering - lv15, Endurance)
   stats:
   - type: Armor
@@ -2025,7 +2025,7 @@
   category: DEFENSE ITEMS
   cost: 2800
   formula: (700*3.33+150*0+20*40.0)/2800
-  image: https://wr-meta.com/uploads/posts/2024-01/1705522930_heartsteel_item_hd.webp
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/5/51/Heartsteel_item.png
   name: Heartsteel
   stats:
   - type: Max Health
