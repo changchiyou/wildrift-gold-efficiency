@@ -36,6 +36,7 @@ plugins:
   - jekyll-feed
   # - jekyll-remote-theme
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 feed:
   posts_limit: 10
