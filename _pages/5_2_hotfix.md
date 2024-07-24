@@ -2,7 +2,7 @@
 layout: gold_efficiency
 
 title: 5.2 hotfix
-date: 2024/07/18
+date: 2024/07/25
 description: Wild Rift Gold Efficiency of 5.2 hotfix (2 buffed items)
 image: /assets/favicon512x512.png
 
