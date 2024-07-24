@@ -249,17 +249,16 @@ def process_item_data(items_file, stats_file, clean_only, calculate):
 
 def find_and_process_files(clean_only, calculate):
     datas = next(os.walk("./_data"), (None, None, []))[2]
-    pattern = re.compile(r"^(items|stats)_(\d+_\d+)([a-z]?)\.yml$")
+    pattern = re.compile(r"^(items|stats)_(.+)\.yml$")
     parsed_files = {}
 
     for data in datas:
         match = pattern.match(data)
         if match:
-            file_type, patch_number, suffix = match.groups()
-            key = patch_number + suffix
-            if key not in parsed_files:
-                parsed_files[key] = {}
-            parsed_files[key][file_type] = data
+            file_type, patch = match.groups()
+            if patch not in parsed_files:
+                parsed_files[patch] = {}
+            parsed_files[patch][file_type] = data
 
     for key, value in sorted(parsed_files.items()):
         try:
