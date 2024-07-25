@@ -21,7 +21,7 @@ patch_note:
         adjusted: ""
         nerfed: "PSYCHIC PROJECTOR"
         new: ""
-    excludes: "Psychic Projector (Conversion - Max)"
+    excludes: ""
     compare:
         statuses: "buffed,adjusted,nerfed"
         items: items_5_2
