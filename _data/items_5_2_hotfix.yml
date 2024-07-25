@@ -1475,10 +1475,10 @@
   - passive: Wind's Favor
     type: Ability Power
     value: 40
-- amount: 98.03%
+- amount: 96.10%
   category: MAGIC DAMAGE ITEMS
   cost: 3100
-  formula: (300*3.33+60*20.0+7*0+15*40.0+12.0*20.0)/3100
+  formula: (300*3.33+60*20.0+7*0+15*40.0+9.0*20.0)/3100
   image: https://wr-meta.com/uploads/posts/2024-06/1719764588_screenshot-2024-06-30-180512.png
   name: Psychic Projector (Conversion)
   stats:
@@ -1490,12 +1490,12 @@
     value: 7
   - type: Ability Haste
     value: 15
-  - formula: 300*0.04
+  - formula: 300*0.03
     passive: Conversion
-    ratio: 0.04
+    ratio: 0.03
     ref_type: Max Health
     type: Ability Power
-    value: 12.0
+    value: 9.0
 - amount: 129.00%
   category: MAGIC DAMAGE ITEMS
   cost: 3100

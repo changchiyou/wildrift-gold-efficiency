@@ -19,9 +19,9 @@ patch_note:
     statuses:
         buffed: "SUNDERED SKY,ECLIPSE"
         adjusted: ""
-        nerfed: ""
+        nerfed: "PSYCHIC PROJECTOR"
         new: ""
-    excludes: ""
+    excludes: "Psychic Projector (Conversion - Max)"
     compare:
         statuses: "buffed,adjusted,nerfed"
         items: items_5_2
