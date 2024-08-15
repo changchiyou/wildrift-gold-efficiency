@@ -7,7 +7,6 @@ description: Wild Rift Gold Efficiency of 5.2 hotfix (2 buffed items)
 image: /assets/favicon512x512.png
 
 permalink: /5.2.h/
-redirect_from: /
 
 data:
     refer_url: https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-52/
