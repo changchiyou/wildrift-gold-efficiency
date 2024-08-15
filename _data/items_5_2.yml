@@ -1277,19 +1277,19 @@
   - passive: Balanced
     type: Magic Penetration
     value: 15
-- amount: 91.37%
+- amount: 102.20%
   category: MAGIC DAMAGE ITEMS
   cost: 3000
-  formula: (200*3.33+35*25.0+60*20.0+7*0)/3000
+  formula: (200*3.33+40*25.0+70*20.0+7*0)/3000
   image: https://wr-meta.com/uploads/posts/2022-01/1641808144_crystalline-reflector.png
   name: Crystalline Reflector
   stats:
   - type: Max Health
     value: 200
   - type: Armor
-    value: 35
+    value: 40
   - type: Ability Power
-    value: 60
+    value: 70
   - type: '% Magic Penetration'
     value: 7
 - amount: 96.04%
