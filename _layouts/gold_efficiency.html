@@ -2,6 +2,17 @@
 layout: default
 ---
 
+{% unless page.latest_version %}
+    <div class="panel warning">
+        <p>
+            <strong>⚠️ Warning</strong><br>
+            You are viewing an outdated version. Please click
+            <a href="{{ '/' | relative_url }}">here</a>
+            to redirect to the latest version.
+        </p>
+    </div>
+{% endunless%}
+
 <div class="panel">
     <p>
         <strong id="hint">💡 Hint <a href="#hint">#</a></strong><br>

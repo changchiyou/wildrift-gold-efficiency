@@ -46,6 +46,21 @@ h1, h2, h3, h4, h5, h6, div.giscus, button.collapsible, strong {
     margin: 0;
   }
 
+  .panel.warning p strong{
+    color: #FFD700;
+  }
+  .panel.warning p {
+    color: #f4f498;
+  }
+  .panel.warning p a {
+    color: #FFC107;
+    text-decoration: underline;
+}
+
+  .panel.warning p a:hover {
+    color: #FFA000;
+  }
+
   blockquote{
     font-size: 1em;
     width:60%;
