@@ -8,7 +8,7 @@ WR(Wild Rift) Gold Efficiency, a website combining the gold efficiency calculati
 
 |Entrance|Features|PWA|
 |-|-|-|
-|![](https://github.com/changchiyou/wildrift-gold-efficiency/assets/46549482/bbd4ca8c-27c7-4965-bda0-5ad34058e819)|![](https://github.com/changchiyou/wildrift-gold-efficiency/assets/46549482/d1188bd0-4f9a-482d-9bd8-cdb82899f119)|![](https://github.com/changchiyou/wildrift-gold-efficiency/assets/46549482/0fdd3a02-c6a6-48a2-9012-adea46bbbab8)|
+|![entrance](https://github.com/changchiyou/wildrift-gold-efficiency/assets/46549482/bbd4ca8c-27c7-4965-bda0-5ad34058e819)|![feature](https://github.com/changchiyou/wildrift-gold-efficiency/assets/46549482/d1188bd0-4f9a-482d-9bd8-cdb82899f119)|![pwa](https://github.com/changchiyou/wildrift-gold-efficiency/assets/46549482/0fdd3a02-c6a6-48a2-9012-adea46bbbab8)|
 
 ## Backstory
 
@@ -24,14 +24,14 @@ Merging the calculation **formula** from [<img src="https://static.wikia.nocooki
 
 1. [Installation | Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/installation/)
 2. Clone this project via `git`:
-    ```
+    ```bash
     git clone git@github.com:changchiyou/wildrift-gold-efficiency.git; cd wildrift-gold-efficiency
     ```
 3. Update `bundle` & Install dependencies from [Gemfile](/Gemfile):
-    ```
+    ```bash
     bundle update; bundle install
     ```
 4. [Serve the Site](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/#serve-the-site):
-    ```
+    ```bash
     bundle exec jekyll serve
     ```
