@@ -120,7 +120,8 @@ Taking the update from [5.1a](https://changchiyou.github.io/wildrift-gold-effici
     |`patch_note.compare.statuses`|fixed value|The patch-note statuses would find the item data from last version to compare with.|
     |`patch_note.compare.items`|optional|The item datas to compare with.|
     |`patch_note.compare.stats`|optional|The stats to compare with.|
-    |`patch_note.compare.item_prefix`|optional|The prefix which would be render in frount of the row of comparing item data.|
+    |`patch_note.compare.item_prefix`|optional|The prefix which would be render in front of the row of comparing item data.|
+    |`patch_note.compare.force`|optional|Forces the comparison of items in pairs, particularly in situations where items have been added, removed, or updated with prefixes, such as `hextech/light/ruin`|
 
     For example:
 
