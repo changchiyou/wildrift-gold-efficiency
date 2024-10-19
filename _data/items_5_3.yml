@@ -212,7 +212,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (400*3.33+40*41.67+20*40.0)/3000
-  image: https://wr-meta.com/uploads/posts/2021-01/1611113382_black-cleaver_jpg.jpg
+  image: https://i.imgur.com/vgMoWyz.png
   name: Hextech Black Cleaver
   stats:
   - type: Max Health
@@ -225,7 +225,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (400*3.33+40*41.67+20*40.0+20*16.0)/3000
-  image: https://wr-meta.com/uploads/posts/2021-01/1611113382_black-cleaver_jpg.jpg
+  image: https://i.imgur.com/vgMoWyz.png
   name: Hextech Black Cleaver (Rage - basic - Melee)
   stats:
   - type: Max Health
@@ -242,7 +242,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (400*3.33+40*41.67+20*40.0+10*16.0)/3000
-  image: https://wr-meta.com/uploads/posts/2021-01/1611113382_black-cleaver_jpg.jpg
+  image: https://i.imgur.com/vgMoWyz.png
   name: Hextech Black Cleaver (Rage - basic - Range)
   stats:
   - type: Max Health
@@ -259,7 +259,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (400*3.33+40*41.67+20*40.0+60*16.0)/3000
-  image: https://wr-meta.com/uploads/posts/2021-01/1611113382_black-cleaver_jpg.jpg
+  image: https://i.imgur.com/vgMoWyz.png
   name: Hextech Black Cleaver (Rage - 4Stacks - Melee)
   stats:
   - type: Max Health
@@ -276,7 +276,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (400*3.33+40*41.67+20*40.0+30*16.0)/3000
-  image: https://wr-meta.com/uploads/posts/2021-01/1611113382_black-cleaver_jpg.jpg
+  image: https://i.imgur.com/vgMoWyz.png
   name: Hextech Black Cleaver (Rage - 4Stacks - Range)
   stats:
   - type: Max Health
@@ -582,7 +582,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (40*41.67+25*50.0+20*33.33)/3000
-  image: https://wr-meta.com/uploads/posts/2022-01/1641835021_stormrazor.png
+  image: https://i.imgur.com/VQMVbCB.png
   name: Hextech Stormrazor
   stats:
   - type: Attack Damage
@@ -1206,7 +1206,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 3000
   formula: (150*3.33+65*20.0+7*0+20*40.0+15*33.33)/3000
-  image: https://wr-meta.com/uploads/posts/2021-01/1611109674_awakened-soulstealer.jpg
+  image: https://i.imgur.com/HQ4OxuD.png
   name: Hextech Soulstealer
   stats:
   - type: Max Health
@@ -1583,7 +1583,7 @@
   category: DEFENSE ITEMS
   cost: 2700
   formula: (350*3.33+40*25.0+150*0.86+15*40.0)/2700
-  image: https://wr-meta.com/uploads/posts/2021-03/1616983776_3050.png
+  image: https://i.imgur.com/GANzwuB.png
   name: Hextech Zeke's Convergence
   stats:
   - type: Max Health
