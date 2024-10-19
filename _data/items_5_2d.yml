@@ -1736,7 +1736,7 @@
   category: DEFENSE ITEMS
   cost: 2400
   formula: (425*3.33+25*40.0+5*50.0)/2400
-  image: https://wr-meta.com/uploads/posts/2022-01/1641813763_ixtali-seedjar.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/2/25/Ixtali_Seedjar_WR_item.png
   name: Ixtali Seedjar
   stats:
   - type: Max Health
@@ -1750,7 +1750,7 @@
   category: DEFENSE ITEMS
   cost: 2400
   formula: (425*3.33+25*40.0+5*50.0+40*50.0)/2400
-  image: https://wr-meta.com/uploads/posts/2022-01/1641813763_ixtali-seedjar.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/2/25/Ixtali_Seedjar_WR_item.png
   name: Ixtali Seedjar (Harvester)
   stats:
   - type: Max Health
