@@ -1,0 +1,96 @@
+"Attack Damage":
+  image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/ad.png"
+  base_type: "first"
+  base_item: "Long Sword"
+  type: "Attack"
+"Ability Power":
+  image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/ap.png"
+  base_type: "first"
+  base_item: "Amplifying Tome"
+  type: "Magic"
+"Armor":
+  image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/ar.png"
+  base_type: "first"
+  base_item: "Cloth Armor"
+  type: "Defence"
+"Magic Resistance":
+  image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/mres.png"
+  base_type: "first"
+  base_item: "Null-Magic Mantle"
+  type: "Defence"
+"Max Health":
+  image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/hp.png"
+  base_type: "first"
+  base_item: "Ruby Crystal"
+  type: "Defence"
+"% Critical Rate":
+  image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/csc.png"
+  base_type: "first"
+  base_item: "Brawler's Gloves"
+  type: "Attack"
+"% Attack Speed":
+  image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/as.png"
+  base_type: "first"
+  base_item: "Dagger"
+  type: "Attack"
+"Move Speed":
+  image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/ms.png"
+  base_type: "first"
+  base_item: "Boots of Speed"
+  type: "Others"
+"% Physical Vamp":
+  image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/fls.png"
+  base_type: "second"
+  base_item: "Vampiric Scepter"
+  type: "Attack"
+"Armor Penetration":
+  image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/armp.png"
+  base_type: "second"
+  base_item: "Serrated Dirk"
+  type: "Attack"
+"% Armor Penetration":
+  image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/armp.png"
+  base_type: "second"
+  base_item: "Last Whisper"
+  type: "Attack"
+"Magic Penetration":
+  image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/mpen.png"
+  base_type: "second"
+  base_item: "Prophet's Pendant"
+  type: "Magic"
+"% Magic Penetration":
+  image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/mpen.png"
+  type: "Magic"
+"Ability Haste":
+  image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/cdr.png"
+  base_type: "first"
+  base_item: "Ring of Revelation"
+  type: "Magic"
+"% Move Speed":
+  image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/ms.png"
+  base_type: "second"
+  base_item: "Aether Wisp"
+  type: "Others"
+"Max Mana":
+  image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/Mana.png"
+  base_type: "second"
+  base_item: "Sapphire Crystal (Mana Charge)"
+  type: "Magic"
+"% Mana Regeneration":
+  image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/mpreg.png"
+  type: "Magic"
+"% Omnivamp":
+  image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/omnivamp.png"
+  type: "Magic"
+"% Health Regen":
+  image: "https://wr-meta.com/templates/wrw-v2/images/icon-stat/hpreg.png"
+  type: "Defence"
+"gold":
+  image: "https://wr-meta.com/templates/wrw-v2/images/Gold_icon.png"
+  type: ""
+"Unstable Passives' Stats":
+  image: "⚡"
+  type: "Others"
+"Update":
+  image: "✨"
+  type: "Others"
