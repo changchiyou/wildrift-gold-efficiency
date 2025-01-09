@@ -213,12 +213,6 @@ def parse_arguments():
     parser.add_argument("--items", help="The file storage item data")
     parser.add_argument("--stats", help="The file storage stat data")
     parser.add_argument(
-        "-c",
-        "--calculate",
-        action="store_true",
-        help="Calculate the gold efficiency of item data",
-    )
-    parser.add_argument(
         "--clean_only",
         action="store_true",
         help="Only clean gold efficiency and base statistic price from item data",
@@ -236,18 +230,18 @@ def setup_logger(debug_mode):
     )
 
 
-def process_item_data(items_file, stats_file, clean_only, calculate):
+def process_item_data(items_file, stats_file, clean_only):
     item_data = ItemData(items_file_name=items_file, stats_file_name=stats_file)
 
     if clean_only:
         item_data.clean_base_GE()
-    elif calculate:
+    else:
         item_data.clean_base_GE()
         item_data.calculate_base_statistic_prices()
         item_data.calculate_gold_efficiency()
 
 
-def find_and_process_files(clean_only, calculate):
+def find_and_process_files(clean_only):
     datas = next(os.walk("./_data"), (None, None, []))[2]
     pattern = re.compile(r"^(items|stats)_(.+)\.yml$")
     parsed_files = {}
@@ -263,7 +257,7 @@ def find_and_process_files(clean_only, calculate):
     for key, value in sorted(parsed_files.items()):
         try:
             if "items" in value and "stats" in value:
-                process_item_data(value["items"], value["stats"], clean_only, calculate)
+                process_item_data(value["items"], value["stats"], clean_only)
                 logging.info(f"finished: ({value['items']}, {value['stats']})")
                 logging.debug("\n")
             else:
@@ -277,10 +271,10 @@ def main():
     setup_logger(args.debug)
 
     if args.items and args.stats:
-        process_item_data(args.items, args.stats, args.clean_only, args.calculate)
+        process_item_data(args.items, args.stats, args.clean_only)
         logging.info(f"finished: ({args.items}, {args.stats})")
     elif not args.items and not args.stats:
-        find_and_process_files(args.clean_only, args.calculate)
+        find_and_process_files(args.clean_only)
     else:
         logging.error("Both items and stats files must be provided together.")
 
