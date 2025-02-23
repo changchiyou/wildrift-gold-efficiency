@@ -421,7 +421,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3333
   formula: (250*3.33+30*41.67+30*33.33+25*40.0+5*50.0+60*16.0)/3333
-  impage: https://static.wikia.nocookie.net/leagueoflegends/images/3/3d/Trinity_Force_item.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/3/3d/Trinity_Force_item.png
   name: Trinity Force (Valor - Kill - Melee)
   stats:
   - type: Max Health
