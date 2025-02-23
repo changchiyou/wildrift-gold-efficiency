@@ -359,7 +359,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3333
   formula: (250*3.33+30*41.67+30*33.33+25*40.0+5*50.0)/3333
-  image: https://wr-meta.com/uploads/posts/2021-01/1611108773_trinity-force.jpg
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/3/3d/Trinity_Force_item.png
   name: Trinity Force
   stats:
   - type: Max Health
@@ -377,7 +377,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3333
   formula: (250*3.33+30*41.67+30*33.33+25*40.0+5*50.0+20*16.0)/3333
-  image: https://wr-meta.com/uploads/posts/2021-01/1611108773_trinity-force.jpg
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/3/3d/Trinity_Force_item.png
   name: Trinity Force (Valor - AA - Melee)
   stats:
   - type: Max Health
@@ -399,7 +399,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3333
   formula: (250*3.33+30*41.67+30*33.33+25*40.0+5*50.0+10*16.0)/3333
-  image: https://wr-meta.com/uploads/posts/2021-01/1611108773_trinity-force.jpg
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/3/3d/Trinity_Force_item.png
   name: Trinity Force (Valor - AA - Range)
   stats:
   - type: Max Health
@@ -421,7 +421,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3333
   formula: (250*3.33+30*41.67+30*33.33+25*40.0+5*50.0+60*16.0)/3333
-  image: https://wr-meta.com/uploads/posts/2021-01/1611108773_trinity-force.jpg
+  impage: https://static.wikia.nocookie.net/leagueoflegends/images/3/3d/Trinity_Force_item.png
   name: Trinity Force (Valor - Kill - Melee)
   stats:
   - type: Max Health
@@ -443,7 +443,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3333
   formula: (250*3.33+30*41.67+30*33.33+25*40.0+5*50.0+30*16.0)/3333
-  image: https://wr-meta.com/uploads/posts/2021-01/1611108773_trinity-force.jpg
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/3/3d/Trinity_Force_item.png
   name: Trinity Force (Valor - Kill - Range)
   stats:
   - type: Max Health
