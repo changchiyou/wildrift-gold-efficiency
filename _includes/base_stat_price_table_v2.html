@@ -1,0 +1,100 @@
+<h3 id="{{ include.anchor }}">{{ include.category }} <a href="#{{ include.anchor }}">#</a></h4>
+
+<table>
+    <colgroup>
+        <col class="bases-stat">
+        <col class="bases-item">
+        <col class="bases-cost">
+        <col class="bases-stats">
+        <col class="bases-stat-price">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Stat</th>
+        <th>Item</th>
+        <th>Cost</th>
+        <th>Item Stats</th>
+        <th>Stat Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% assign base_types = "first_base|second_base" | split: "|" %}
+      {% for base_type in base_types %}
+        {% for item in site.data[ include.items ] %}
+            {% if item[ base_type ] %}
+                {% assign base = item[ base_type ] %}
+                <tr>
+                    <td>
+                        {% include stat_image.html type=base.type stats=include.stats %}
+                    </td>
+                    <td>
+                        <img class="item-icon" loading="lazy" src="{{ item.image }}" style="margin-right: 5px;" />
+                        {{ item.name }}
+                    </td>
+                    <td class="goldt">
+                        {{ item.cost }}
+                        {% include stat_image.html type="gold" stats=include.stats %}
+                    </td>
+                    <td>
+                        {% for stat in item.stats %}
+                            <b class="stat base">
+                                {% if base.type == stat.type %}
+                                <span class="target-stat">
+                                {% else%}
+                                <span class="base-stat">
+                                {% endif %}
+                                {% if stat.passive %}
+                                    <div class="tooltip stats">
+                                        {{- stat.value -}}{% include stat_image.html type=stat.type stats=include.stats %}
+                                        <span class="tooltiptext">
+                                            {{ stat.passive }}
+                                        </span>
+                                    </div>
+                                {% else %}
+                                    {{- stat.value -}}{% include stat_image.html type=stat.type stats=include.stats %}
+                                {% endif %}
+                                </span>
+                            </b>
+                        {% endfor %}
+                    </td>
+                    </td>
+                    <td class="goldt">
+                        <div class="tooltip toleft" onclick="handleClick(event)">
+                            {{ base.value }}
+                            <span class="tooltiptext">
+                                {{ base.formula }}
+                            </span>
+                        </div>
+                        {% include stat_image.html type="gold" stats=include.stats %}
+                    </td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+      {% endfor %}
+      {% assign stats = site.data.[include.stats] %}
+      {% for stat in stats %}
+        {% assign type = stat[1].base_type %}
+        {% if type == "exclude" %}
+          <tr>
+              <td>
+                  {% assign stat_name = stat[0] %}
+                  {% include stat_image.html type=stat_name stats=include.stats %}
+              </td>
+              <td>
+                  N/A
+              </td>
+              <td>
+                  N/A
+              </td>
+              <td>
+                N/A
+              </td>
+              <td>
+                  0
+                  {% include stat_image.html type="gold" stats=include.stats %}
+              </td>
+          </tr>
+        {% endif%}
+      {% endfor %}
+    </tbody>
+</table>

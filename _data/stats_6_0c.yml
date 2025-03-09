@@ -61,6 +61,7 @@
 "% Magic Penetration":
   image: "https://i.imgur.com/0w7HEMC.png"
   type: "Magic"
+  base_type: "exclude"
 "Ability Haste":
   image: "https://i.imgur.com/AbD8Aub.png"
   base_type: "first"
@@ -79,12 +80,15 @@
 "% Mana Regeneration":
   image: "https://i.imgur.com/mTFlXny.png"
   type: "Magic"
+  base_type: "exclude"
 "% Omnivamp":
   image: "https://i.imgur.com/ERdwXW2.png"
   type: "Magic"
+  base_type: "exclude"
 "% Health Regen":
   image: "https://i.imgur.com/l1LTDvw.png"
   type: "Defence"
+  base_type: "exclude"
 "gold":
   image: "https://i.imgur.com/N16nYJ1.png"
   type: ""

@@ -128,21 +128,24 @@ $tooltip-color: #333;
     visibility: visible;
   }
 
+  .bases-stat {
+    width: 13%;
+  }
   .bases-item {
-    width: 44%;
+    width: 36%;
   }
   .bases-cost {
     width: 13%;
   }
-  .bases-stat {
-    width: 20%;
+  .bases-stats {
+    width: 25%;
   }
   .bases-stat-price {
-    width: 23%;
+    width: 13%;
   }
 
   .items-item {
-    width: 53%;
+    width: 49%;
   }
   .items-cost {
     width: 11%;
@@ -151,7 +154,7 @@ $tooltip-color: #333;
     width: 30%;
   }
   .items-amount {
-    width: 6%;
+    width: 10%;
   }
 
   @media screen and (max-width: 480px) {

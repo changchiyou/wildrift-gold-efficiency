@@ -1,0 +1,145 @@
+---
+layout: default
+---
+
+{% unless page.latest_version %}
+    <div class="panel warning">
+        <p>
+            <strong>⚠️ Warning</strong><br>
+            You are viewing an outdated version. Please click
+            <a href="{{ '/' | relative_url }}">here</a>
+            to redirect to the latest version.
+        </p>
+    </div>
+{% endunless%}
+
+<div class="panel">
+    <p>
+        <strong id="hint">💡 Hint <a href="#hint">#</a></strong><br>
+        In most cases, <u><b>a higher calculated Gold Efficiency percentage (%) indicates better value</b></u>. However, as However, as stated
+        in the {% include badge/lolwiki.html href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)" %} :
+        <blockquote>
+            The Gold efficiency of an item tells you how much stats it provides for its price (gold cost). This is a theoretical value with no direct game impact, used mainly to compare items.
+        </blockquote>
+        This calculated value doesn't fully represent an item's in-game impact. It's best for comparing items with similar attributes or assessing attribute changes.
+        <br><br><hr><br>
+        <li>Comment at <a href="#giscus-comments">💬</a> to correct any item data, calculations, or other inaccuracies that you find and that need updating.</li>
+        <li>If you have ideas for new features or improvements to the design and layout, please feel free to submit a PR at <a href="https://github.com/changchiyou/wildrift-gold-efficiency" target="_blank"><img class="badge" src="https://img.shields.io/badge/changchiyou/wildrift--gold--efficiency-gray?logo=github"></a>.</li>
+    </p>
+</div>
+
+{% include filter.html stats=page.data.stats %}
+
+{%- include items_table.html items=page.data.items stats=page.data.stats category="PHYSICAL DAMAGE ITEMS" anchor="PHYSICAL-DAMAGE-ITEMS" header="📌 Physical Damage Items" -%}
+
+{%- include items_table.html items=page.data.items stats=page.data.stats category="MAGIC DAMAGE ITEMS" anchor="MAGIC-DAMAGE-ITEMS" header="📌 Magic Damage Items" -%}
+
+{%- include items_table.html items=page.data.items stats=page.data.stats category="DEFENSE ITEMS" anchor="DEFENSE-ITEMS" header="📌 Defense Items" -%}
+
+{%- include items_table.html items=page.data.items stats=page.data.stats category="BOOTS" anchor="BOOTS" header="📌 Boots" -%}
+
+{%- include items_table.html items=page.data.items stats=page.data.stats category="SUPPORT ITEMS" anchor="SUPPORT-ITEMS" header="📌 Support Items" -%}
+
+{%- include items_table.html items=page.data.items stats=page.data.stats category="MID TIER ITEMS" anchor="MID-TIER-ITEMS" header="📌 Mid-tier Items" -%}
+
+{%- include items_table.html items=page.data.items stats=page.data.stats category="BASIC ITEMS" anchor="BASIC-ITEMS" header="📌 Basic Items" -%}
+
+{%- include base_stat_price_table_v2.html items=page.data.items stats=page.data.stats category="💰 Stats Prices" anchor="STATS-PRICES" -%}
+
+<div class="panel">
+    <p>
+        <strong>Copyright©</strong><br>
+        I,
+        <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" target="_blank"><img class="badge" src="https://img.shields.io/badge/changchiyou-gray?logo=github"></a>,
+        <b>DO NOT</b> own the copyrights of all resources on this website, especially images and data. This website is a combination of the gold efficiency calculation formula from
+        {% include badge/lolwiki.html href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)" %}
+        with the design elements from
+        {% include badge/wrmeta.html href="https://wr-meta.com/items/" %}
+        featuring manually updated item data from {% include badge/wildrift.html href=page.data.refer_url text=page.data.refer_text %}.
+    </p>
+</div>
+
+<script src={{ "/assets/js/copy-to-clipboard.js" | relative_url }}></script>
+<script src={{ "/assets/js/renderTable.js" | relative_url }}></script>
+<script src={{ "/assets/js/sortTable.js" | relative_url }}></script>
+<script>
+    renderRowColors();
+    renderRowIndexs();
+    document.querySelectorAll('.toggle-trigger').forEach(function(element) {
+        element.addEventListener('click', function() {
+            this.classList.toggle("active");
+            var nextRow = this.parentElement.nextElementSibling;
+            nextRow.classList.toggle("active");
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const tables = document.querySelectorAll('.sortable-table');
+
+        tables.forEach((table) => {
+            const headers = table.querySelectorAll('th');
+            const originalRows = Array.from(table.querySelectorAll('tbody tr'));
+
+            tables.forEach((table) => {
+                const headers = table.querySelectorAll('th');
+                const originalRows = Array.from(table.querySelectorAll('tbody tr'));
+                const groupedRows = groupRows(originalRows);
+                let isOriginalOrder = true;
+
+                headers.forEach((header, index) => {
+                    const headerText = header.innerText;
+                    if (headerText === "Cost" || headerText === "Amount") {
+                        header.addEventListener('click', () => {
+                            const currentOrder = header.getAttribute('data-order');
+                            let newOrder;
+
+                            // non-order -> descending -> ascending -> non-order -> ...
+                            if (currentOrder === 'non-order') {
+                                newOrder = 'descending';
+                                sortGroupedRows(groupedRows, index, header.getAttribute('data-type'), 'desc');
+                            } else if (currentOrder === 'ascending') {
+                                newOrder = 'non-order';
+                                restoreOriginalOrder(table, originalRows);
+                            } else {
+                                newOrder = 'ascending';
+                                sortGroupedRows(groupedRows, index, header.getAttribute('data-type'), 'asc');
+                            }
+
+                            // Reset data-order and title attributes for all headers that have them
+                            table.querySelectorAll('th[data-order][title]').forEach((h) => {
+                                if (h !== header) { // Skip the current header
+                                    h.setAttribute('data-order', 'non-order');
+                                    h.setAttribute('title', 'non-order');
+                                }
+                            });
+
+                            header.setAttribute('data-order', newOrder);
+                            header.setAttribute('title', newOrder);
+                            renderRowColors();
+                            renderRowIndexs();
+                        });
+                    }
+                });
+            });
+        });
+    });
+</script>
+
+
+<div id="giscus-comments" class="giscus"></div>
+<script src="https://giscus.app/client.js"
+        data-repo="changchiyou/wildrift-gold-efficiency"
+        data-repo-id="R_kgDOISWHEA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOISWHEM4CfCTi"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="dark"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
