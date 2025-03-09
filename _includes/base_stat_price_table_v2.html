@@ -25,11 +25,25 @@
                 {% assign base = item[ base_type ] %}
                 <tr>
                     <td>
-                        {% include stat_image.html type=base.type stats=include.stats %}
+                        <div class="tooltip item stats">
+                            {% include stat_image.html type=base.type stats=include.stats %}
+                            <span class="tooltiptext">
+                                {{ base.type }}
+                            </span>
+                        </div>
                     </td>
                     <td>
-                        <img class="item-icon" loading="lazy" src="{{ item.image }}" style="margin-right: 5px;" />
-                        {{ item.name }}
+                        <p class="item-index" style="display: none"></p>
+                        <div>
+                            <img class="item-icon" loading="lazy" src="{{ item.image }}" style="margin-right: 5px;" />
+                            {% assign item_name = item.name | split: '(' %}
+                            {% if item_name.size == 2 %}
+                                {{ item_name[0] }}
+                                <p class="item-note">{{ item_name[1] | remove: ')' }}</p>
+                            {% else %}
+                                {{ item.name }}
+                            {% endif %}
+                        </div>
                     </td>
                     <td class="goldt">
                         {{ item.cost }}
@@ -77,19 +91,24 @@
         {% if type == "exclude" %}
           <tr>
               <td>
-                  {% assign stat_name = stat[0] %}
-                  {% include stat_image.html type=stat_name stats=include.stats %}
+                <div class="tooltip item stats">
+                    {% assign stat_name = stat[0] %}
+                    {% include stat_image.html type=stat_name stats=include.stats %}
+                    <span class="tooltiptext">
+                        {{ stat_name }}
+                    </span>
+                </div>
               </td>
-              <td>
+              <td class="NA">
                   N/A
               </td>
-              <td>
+              <td class="NA">
                   N/A
               </td>
-              <td>
-                N/A
+              <td class="NA">
+                  N/A
               </td>
-              <td>
+              <td class="goldt">
                   0
                   {% include stat_image.html type="gold" stats=include.stats %}
               </td>

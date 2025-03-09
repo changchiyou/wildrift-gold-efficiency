@@ -88,6 +88,7 @@ $tooltip-color: #333;
     border-style: solid;
     border-color: transparent transparent transparent $tooltip-backgroud-color;
   }
+
   @media screen and (min-width: 481px){
     .tooltip.stats .tooltiptext {
       top: -5px;
@@ -339,4 +340,8 @@ $tooltip-color: #333;
     th[data-order="non-order"]::after, th[data-order="ascending"]::after, th[data-order="descending"]::after {
       border-width: 3.125px 3.125px 0 3.125px;
     }
+  }
+
+  .NA {
+    color: #a19e9d;
   }
