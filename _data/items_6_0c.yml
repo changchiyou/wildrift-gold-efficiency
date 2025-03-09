@@ -173,7 +173,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3400
   formula: (60*41.67+25*50.0)/3400
-  image: https://wr-meta.com/uploads/posts/2024-07/1721253826_3031_11zon.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/1/15/Infinity_Edge_item.png
   name: Infinity Edge
   stats:
   - type: Attack Damage
