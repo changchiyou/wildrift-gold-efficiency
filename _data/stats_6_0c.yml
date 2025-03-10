@@ -62,6 +62,7 @@
   image: "https://i.imgur.com/0w7HEMC.png"
   type: "Magic"
   base_type: "exclude"
+  price: 0
 "Ability Haste":
   image: "https://i.imgur.com/AbD8Aub.png"
   base_type: "first"
@@ -81,14 +82,17 @@
   image: "https://i.imgur.com/mTFlXny.png"
   type: "Magic"
   base_type: "exclude"
+  price: 0
 "% Omnivamp":
   image: "https://i.imgur.com/ERdwXW2.png"
   type: "Magic"
   base_type: "exclude"
+  price: 0
 "% Health Regen":
   image: "https://i.imgur.com/l1LTDvw.png"
   type: "Defence"
   base_type: "exclude"
+  price: 0
 "gold":
   image: "https://i.imgur.com/N16nYJ1.png"
   type: ""
