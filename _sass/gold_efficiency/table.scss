@@ -125,6 +125,42 @@ $tooltip-color: #333;
     }
   }
 
+  @media screen and (min-width: 481px){
+    .tooltip.stat .tooltiptext {
+      top: -5px;
+      left: 120%;
+    }
+
+    .tooltip.stat .tooltiptext::after {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      margin-top: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent $tooltip-backgroud-color transparent transparent;
+    }
+  }
+
+  @media screen and (max-width: 480px){
+    .tooltip.stat .tooltiptext {
+      top: -5px;
+      left: 130%;
+    }
+
+    .tooltip.stat .tooltiptext::after {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      margin-top: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent $tooltip-backgroud-color transparent transparent;
+    }
+  }
+
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
@@ -222,7 +258,7 @@ $tooltip-color: #333;
     transition: padding 0.3s;
   }
 
-  tr.compare td div:not(.stats, .item) {
+  tr.compare td div:not(.stats, .item, .stat) {
     max-height: 0;
     box-sizing: border-box;
     overflow: hidden;
@@ -233,7 +269,7 @@ $tooltip-color: #333;
     padding: 10px 15px;
   }
 
-  tr.compare.active td div:not(.stats, .item) {
+  tr.compare.active td div:not(.stats, .item, .stat) {
     max-height: 200px;
     overflow: visible;
     transition: max-height 0.3s;
