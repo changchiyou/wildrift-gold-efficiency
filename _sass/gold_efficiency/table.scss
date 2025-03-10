@@ -166,7 +166,7 @@ $tooltip-color: #333;
   }
 
   .bases-stat {
-    width: 13%;
+    width: 10%;
   }
   .bases-item {
     width: 36%;
@@ -178,7 +178,46 @@ $tooltip-color: #333;
     width: 25%;
   }
   .bases-stat-price {
-    width: 13%;
+    width: 16%;
+  }
+
+  input.base-price-input {
+    width: 70%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: inherit;
+  }
+
+  input.base-price-input:focus {
+      border-color: #009879;
+      outline: none;
+      background-color: #c3f5d6;
+  }
+
+  @media screen and (max-width: 480px) {
+    .bases-stat {
+      width: 5%;
+    }
+    .bases-item {
+      width: 36%;
+    }
+    .bases-cost {
+      width: 13%;
+    }
+    .bases-stats {
+      width: 25%;
+    }
+    .bases-stat-price {
+      width: 21%;
+    }
+    input.base-price-input {
+      width: 95%;
+      padding: 3px;
+      border-radius: 2px;
+    }
   }
 
   .items-item {

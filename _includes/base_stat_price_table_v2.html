@@ -72,19 +72,14 @@
                         {% endfor %}
                     </td>
                     </td>
-                    <td class="goldt">
-                        <div class="tooltip toleft" onclick="handleClick(event)">
-                            {{ base.value }}
-                            <span class="tooltiptext">
-                                {{ base.formula }}
-                            </span>
-                        </div>
-                        {% include stat_image.html type="gold" stats=include.stats %}
+                    <td class="goldt base-price-{{ base.type | downcase | replace: " ", "-" | replace: "%", "percentage" }}">
+                        <input type="text" class="base-price-input" value="{{ base.value }}" />
                     </td>
                 </tr>
             {% endif %}
         {% endfor %}
       {% endfor %}
+
       {% assign stats = site.data.[include.stats] %}
       {% for stat in stats %}
         {% assign type = stat[1].base_type %}
@@ -108,12 +103,13 @@
               <td class="NA">
                   N/A
               </td>
-              <td class="goldt">
-                  {{ stat[1].price }}
-                  {% include stat_image.html type="gold" stats=include.stats %}
+              <td class="goldt base-price-{{ stat[0] | downcase | replace: " ", "-" | replace: "%", "percentage" }}">
+                  <input type="text" class="base-price-input" value="{{ stat[1].price }}" />
               </td>
           </tr>
         {% endif%}
       {% endfor %}
     </tbody>
 </table>
+
+<script src={{ "/assets/js/change-base-price.js" | relative_url }}></script>

@@ -15,7 +15,7 @@
     {% if first_td_class != "" %}
     <td class="{{ first_td_class }}">
     {% else %}
-    <td>
+    <td class="item-name">
     {% endif %}
         <p class="item-index" style="display: none"></p>
         <div>
@@ -42,16 +42,16 @@
             {% endif %}
         </div>
     </td>
-    <td class="goldt">
+    <td class="goldt item-price">
         <div>
             {{ data_item.cost }}
             {% include stat_image.html type="gold" stats=include.stats %}
         </div>
     </td>
-    <td>
+    <td class="item-stats">
         <div>
             {% for stat in data_item.stats %}
-                <b class="stat">
+                <b class="stat {{ stat.type | downcase | replace: " ", "-" | replace: "%", "percentage" }}">
                     {% if stat.value %}
                         {% if stat.passive %}
                             <div class="tooltip stats">
@@ -71,7 +71,7 @@
             {% endfor %}
         </div>
     </td>
-    <td>
+    <td class="">
         <div>
             <div class="tooltip item toleft" onclick="handleClick(event)">
                 {{ data_item.amount }}
