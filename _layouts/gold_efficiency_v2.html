@@ -30,6 +30,8 @@ layout: default
 
 {% include filter.html stats=page.data.stats %}
 
+{%- include base_stat_price_table_v2.html items=page.data.items stats=page.data.stats -%}
+
 {%- include items_table.html items=page.data.items stats=page.data.stats category="PHYSICAL DAMAGE ITEMS" anchor="PHYSICAL-DAMAGE-ITEMS" header="📌 Physical Damage Items" -%}
 
 {%- include items_table.html items=page.data.items stats=page.data.stats category="MAGIC DAMAGE ITEMS" anchor="MAGIC-DAMAGE-ITEMS" header="📌 Magic Damage Items" -%}
@@ -43,8 +45,6 @@ layout: default
 {%- include items_table.html items=page.data.items stats=page.data.stats category="MID TIER ITEMS" anchor="MID-TIER-ITEMS" header="📌 Mid-tier Items" -%}
 
 {%- include items_table.html items=page.data.items stats=page.data.stats category="BASIC ITEMS" anchor="BASIC-ITEMS" header="📌 Basic Items" -%}
-
-{%- include base_stat_price_table_v2.html items=page.data.items stats=page.data.stats category="💰 Stats Prices" anchor="STATS-PRICES" -%}
 
 <div class="panel">
     <p>
@@ -62,6 +62,7 @@ layout: default
 <script src={{ "/assets/js/copy-to-clipboard.js" | relative_url }}></script>
 <script src={{ "/assets/js/renderTable.js" | relative_url }}></script>
 <script src={{ "/assets/js/sortTable.js" | relative_url }}></script>
+<script src={{ "/assets/js/collapsible.js" | relative_url }}></script>
 <script>
     renderRowColors();
     renderRowIndexs();

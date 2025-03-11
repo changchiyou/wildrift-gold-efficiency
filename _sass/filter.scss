@@ -27,14 +27,17 @@
     content: "\2212";
   }
   
-  .item-filter-wrap {
-    font-size: 0;
+  .item-filter-wrap, .base-price-wrap {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #19283f;
     padding-right: 0.5%;
     padding-left: 0.5%;
+  }
+
+  .item-filter-wrap {
+    font-size: 0;
   }
 
   .item-filter {
