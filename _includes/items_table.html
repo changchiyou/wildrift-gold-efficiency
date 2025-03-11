@@ -21,7 +21,7 @@
     </thead>
     <tbody>
         {% for item in site.data[ include.items ] %}
-            {% if item.category == include.category %}
+        {% if item.category contains include.category %}
                 {% assign filters = "" %}
                 {% for stat in item.stats %}
                     {% capture filters %}{{ filters }} {{ stat.type | downcase | replace: " ", "-" | replace: "%", "percentage" }}{% endcapture %}

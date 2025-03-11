@@ -882,7 +882,7 @@
   - type: Ability Haste
     value: 20
 - amount: 107.67%
-  category: MAGIC DAMAGE ITEMS
+  category: MAGIC DAMAGE ITEMS, SUPPORT ITEMS
   cost: 2600
   formula: (150*3.33+75*20.0+7*0+20*40.0)/2600
   image: https://wr-meta.com/uploads/posts/2021-03/1616982692_3165.png
@@ -1150,7 +1150,7 @@
   cost: 2800
   formula: (250*3.33+35*20.0+20*40.0+5*50.0+10*33.4)/2800
   image: https://wr-meta.com/uploads/posts/2021-03/1616983242_3504.png
-  name: Ardent Censer
+  name: Ardent Censer, SUPPORT ITEMS
   stats:
   - type: Max Health
     value: 250
@@ -1164,7 +1164,7 @@
   - type: '% Heal and shield strength'
     value: 10
 - amount: 89.81%
-  category: MAGIC DAMAGE ITEMS
+  category: SUPPORT ITEMS
   cost: 2700
   formula: (100*3.33+55*20.0+300*0.86+10*40.0+10*33.4)/2700
   image: https://wr-meta.com/uploads/posts/2024-07/1721242538_harmonic_echo_wr_item_hd.webp
@@ -1231,7 +1231,7 @@
   - type: '% Magic Penetration'
     value: 7
 - amount: 106.72%
-  category: MAGIC DAMAGE ITEMS
+  category: SUPPORT ITEMS
   cost: 2500
   formula: (100*3.33+45*20.0+350*0.86+20*40.0+10*33.4)/2500
   image: https://wr-meta.com/uploads/posts/2022-01/1641816198_staff-of-flowing-water.png
@@ -1248,7 +1248,7 @@
   - type: '% Heal and shield strength'
     value: 10
 - amount: 146.72%
-  category: MAGIC DAMAGE ITEMS
+  category: SUPPORT ITEMS
   cost: 2500
   formula: (100*3.33+45*20.0+350*0.86+20*40.0+10*33.4+15*40.0+20*20.0)/2500
   image: https://wr-meta.com/uploads/posts/2022-01/1641816198_staff-of-flowing-water.png
@@ -1272,7 +1272,7 @@
     value: 20
   - type: Unstable Passives' Stats
 - amount: 162.72%
-  category: MAGIC DAMAGE ITEMS
+  category: SUPPORT ITEMS
   cost: 2500
   formula: (100*3.33+45*20.0+350*0.86+20*40.0+10*33.4+15*40.0+40*20.0)/2500
   image: https://wr-meta.com/uploads/posts/2022-01/1641816198_staff-of-flowing-water.png
@@ -1296,7 +1296,7 @@
     value: 40
   - type: Unstable Passives' Stats
 - amount: 102.54%
-  category: MAGIC DAMAGE ITEMS
+  category: MAGIC DAMAGE ITEMS, SUPPORT ITEMS
   cost: 2600
   formula: (200*3.33+80*20.0+7*0+10*40.0)/2600
   image: https://wr-meta.com/uploads/posts/2023-10/1698170553_oceanid_s_trident_11zon.webp
@@ -1311,7 +1311,7 @@
   - type: Ability Haste
     value: 10
 - amount: 90.64%
-  category: MAGIC DAMAGE ITEMS
+  category: SUPPORT ITEMS
   cost: 2500
   formula: (200*3.33+40*20.0+20*40.0)/2500
   image: https://wr-meta.com/uploads/posts/2022-09/1663358166_gbyq8fyates71_11zon.webp
@@ -1324,7 +1324,7 @@
   - type: Ability Haste
     value: 20
 - amount: 130.64%
-  category: MAGIC DAMAGE ITEMS
+  category: SUPPORT ITEMS
   cost: 2500
   formula: (200*3.33+40*20.0+20*40.0+20*50.0)/2500
   image: https://wr-meta.com/uploads/posts/2022-09/1663358166_gbyq8fyates71_11zon.webp
@@ -1555,7 +1555,7 @@
     value: 40
   - type: Unstable Passives' Stats
 - amount: 107.20%
-  category: DEFENSE ITEMS
+  category: DEFENSE ITEMS, SUPPORT ITEMS
   cost: 2700
   formula: (350*3.33+40*25.0+150*0.86+15*40.0)/2700
   image: https://wiki.leagueoflegends.com/en-us/images/Zeke%27s_Convergence_item.png
@@ -1570,7 +1570,7 @@
   - type: Ability Haste
     value: 15
 - amount: 107.37%
-  category: DEFENSE ITEMS
+  category: DEFENSE ITEMS, SUPPORT ITEMS
   cost: 2700
   formula: (400*3.33+40*25.0+10*40.0+5*33.4)/2700
   image: https://wr-meta.com/uploads/posts/2021-01/1611110199_protectors-vow.jpg
@@ -1697,7 +1697,7 @@
     value: 10
   - type: Unstable Passives' Stats
 - amount: 117.48%
-  category: DEFENSE ITEMS
+  category: DEFENSE ITEMS, SUPPORT ITEMS
   cost: 2700
   formula: (80*25.0+200*0.86+25*40.0)/2700
   image: https://wr-meta.com/uploads/posts/2021-03/1616980284_1616954573_1616469878_3_24_21_patch22itempreviewarticle_frozenheart-min-min.jpg
@@ -1710,7 +1710,7 @@
   - type: Ability Haste
     value: 25
 - amount: 104.91%
-  category: DEFENSE ITEMS
+  category: DEFENSE ITEMS, SUPPORT ITEMS
   cost: 2700
   formula: (250*3.33+50*25.0+30*25.0)/2700
   image: https://wr-meta.com/uploads/posts/2024-07/1721254164_images.png
@@ -1822,7 +1822,7 @@
   - type: Ability Haste
     value: 20
 - amount: 91.94%
-  category: DEFENSE ITEMS
+  category: DEFENSE ITEMS, SUPPORT ITEMS
   cost: 2600
   formula: (350*3.33+300*0.86+20*40.0+5*33.4)/2600
   image: https://static.wikia.nocookie.net/leagueoflegends/images/9/94/Redemption_item.png
@@ -2866,7 +2866,7 @@
   - type: '% Health Regen'
     value: 100
 - amount: 110.62%
-  category: DEFENSE ITEMS
+  category: DEFENSE ITEMS, SUPPORT ITEMS
   cost: 2500
   formula: (350*3.33+40*25.0+15*40.0)/2500
   image: https://wr-meta.com/uploads/posts/2024-12/1735324542_jordle-trap.webp
@@ -2879,7 +2879,7 @@
   - type: Ability Haste
     value: 15
 - amount: 170.62%
-  category: DEFENSE ITEMS
+  category: DEFENSE ITEMS, SUPPORT ITEMS
   cost: 2500
   formula: (350*3.33+40*25.0+15*40.0+30*50.0)/2500
   image: https://wr-meta.com/uploads/posts/2024-12/1735324542_jordle-trap.webp
