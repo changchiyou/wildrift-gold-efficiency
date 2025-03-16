@@ -96,7 +96,7 @@
             {% for item in site.data[ include.items ] %}
                 {% if item[ base_type ] %}
                     {% assign base = item[ base_type ] %}
-                    <tr>
+                    <tr class="item-row">
                         <td>
                             <div class="tooltip item stat">
                                 {% include stat_image.html type=base.type stats=include.stats %}
@@ -144,7 +144,6 @@
                                 </b>
                             {% endfor %}
                         </td>
-                        </td>
                         <td class="goldt base-price-{{ base.type | downcase | replace: " ", "-" | replace: "%", "percentage" }}">
                             <input type="text" class="base-price-input" value="{{ base.value }}" />
                         </td>
@@ -157,7 +156,7 @@
         {% for stat in stats %}
             {% assign type = stat[1].base_type %}
             {% if type == "exclude" %}
-            <tr>
+            <tr class="item-row">
                 <td>
                     <div class="tooltip item stat">
                         {% assign stat_name = stat[0] %}
@@ -193,11 +192,15 @@
     function toggleElements() {
         var includeCheckboxes = document.querySelectorAll('input[type="checkbox"].include-filter');
         var excludeCheckboxes = document.querySelectorAll('input[type="checkbox"].exclude-filter');
+        var basePriceInputs = document.querySelectorAll('.base-price-input');
+
         var anyIncludeChecked = false;
         var anyExcludeChecked = false;
+        var anyBasePriceChanged = false;
         var includedIcons = [];
         var excludedIcons = [];
 
+        // Check include and exclude checkboxes
         includeCheckboxes.forEach(function(checkbox) {
             if (checkbox.checked) {
                 anyIncludeChecked = true;
@@ -213,6 +216,13 @@
                 var iconHtml = checkbox.nextElementSibling.querySelector('.target-stat').innerHTML;
                 iconHtml = iconHtml.replace('in-filter', 'out-filter');
                 excludedIcons.push(iconHtml);
+            }
+        });
+
+        // Check base price inputs
+        basePriceInputs.forEach(function(input) {
+            if (input.value != input.defaultValue) {
+                anyBasePriceChanged = true;
             }
         });
 
@@ -278,14 +288,15 @@
         renderRowColors();
         renderRowIndexs();
 
-        // Show or hide the "Clear All" button based on any checkboxes being checked
+        // Show or hide the "Clear All" button based on any checkboxes or base price inputs being changed
         var clearAllButton = document.getElementById('clear-all');
-        clearAllButton.style.display = anyIncludeChecked || anyExcludeChecked ? 'inline-block' : 'none';
+        clearAllButton.style.display = anyIncludeChecked || anyExcludeChecked || anyBasePriceChanged ? 'inline-block' : 'none';
     }
 
     function clearAllFilters() {
         var includeCheckboxes = document.querySelectorAll('input[type="checkbox"].include-filter');
         var excludeCheckboxes = document.querySelectorAll('input[type="checkbox"].exclude-filter');
+        var basePriceInputs = document.querySelectorAll('.base-price-input');
 
         includeCheckboxes.forEach(function(checkbox) {
             checkbox.checked = false;
@@ -295,6 +306,10 @@
             checkbox.checked = false;
         });
 
+        basePriceInputs.forEach(function(input) {
+            input.value = input.defaultValue;
+        });
+
         toggleElements();
     }
 
@@ -302,6 +317,7 @@
 
     var includeCheckboxes = document.querySelectorAll('input[type="checkbox"].include-filter');
     var excludeCheckboxes = document.querySelectorAll('input[type="checkbox"].exclude-filter');
+    var basePriceInputs = document.querySelectorAll('.base-price-input');
 
     includeCheckboxes.forEach(function(checkbox) {
         checkbox.addEventListener('click', toggleElements);
@@ -309,5 +325,9 @@
 
     excludeCheckboxes.forEach(function(checkbox) {
         checkbox.addEventListener('click', toggleElements);
+    });
+
+    basePriceInputs.forEach(function(input) {
+        input.addEventListener('input', toggleElements);
     });
 </script>
