@@ -28,9 +28,7 @@ layout: default
     </p>
 </div>
 
-{% include filter.html stats=page.data.stats %}
-
-{%- include base_stat_price_table_v2.html items=page.data.items stats=page.data.stats -%}
+{% include filter.html items=page.data.items stats=page.data.stats %}
 
 {%- include items_table.html items=page.data.items stats=page.data.stats category="PHYSICAL DAMAGE ITEMS" anchor="PHYSICAL-DAMAGE-ITEMS" header="📌 Physical Damage Items" -%}
 
