@@ -96,7 +96,7 @@
             {% for item in site.data[ include.items ] %}
                 {% if item[ base_type ] %}
                     {% assign base = item[ base_type ] %}
-                    <tr class="item-row">
+                    <tr>
                         <td>
                             <div class="tooltip item stat">
                                 {% include stat_image.html type=base.type stats=include.stats %}
@@ -156,7 +156,7 @@
         {% for stat in stats %}
             {% assign type = stat[1].base_type %}
             {% if type == "exclude" %}
-            <tr class="item-row">
+            <tr>
                 <td>
                     <div class="tooltip item stat">
                         {% assign stat_name = stat[0] %}
