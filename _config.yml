@@ -39,6 +39,12 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+languages: ["en-us", "zh-tw"]
+default_lang: "en-us"
+languageNames:
+  en-us: the U.S. version of English
+  zh-tw: Taiwanese Mandarin
+
 feed:
   posts_limit: 10
   path: /feed.xml
