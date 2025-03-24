@@ -19,6 +19,7 @@ group :jekyll_plugins do
   # gem "jekyll-feed", "~> 0.12"
   # gem "jekyll-remote-theme"
   # gem "jekyll-tagging"
+  gem "jekyll-polyglot"
 end
 
 gem 'jekyll-redirect-from'

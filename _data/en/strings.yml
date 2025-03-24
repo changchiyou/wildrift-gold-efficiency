@@ -1,0 +1,4 @@
+hello: "Hello"
+greetings:
+  morning: "Good morning"
+  evening: "Good evening"

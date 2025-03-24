@@ -6,9 +6,11 @@ date: 2025/03/13
 description: Wild Rift Gold Efficiency of 6.0d (no updates for items)
 image: /assets/favicon512x512.png
 
-permalink: /6.0d/
-redirect_from: /
+permalink: /zh/6.0d/
+redirect_from: 
+    - /zh/latest/
 latest_version: true
+lang: zh
 
 data:
     refer_url: https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-6-0d/
