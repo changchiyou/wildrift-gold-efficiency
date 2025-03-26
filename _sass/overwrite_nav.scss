@@ -7,7 +7,8 @@
     border-radius: 5px;
     text-align: right;
   
-    label[for="nav-trigger"] {
+    label[for="nav-trigger"],
+    label[for="nav-lang-trigger"] {
       display: block;
       float: right;
       width: 36px;
@@ -16,7 +17,8 @@
       cursor: pointer;
     }
 
-    &:has(.nav-trigger:checked) {
+    &:has(.nav-trigger:checked),
+    &:has(.nav-lang-trigger:checked) {
         z-index: 10000;
     }
 
@@ -64,6 +66,11 @@
     }
   }
 
-  .menu-icon.rss {
+  .menu-icon.rss, .menu-icon.translate {
     padding-top: 5px;
+  }
+
+  .current-lang {
+    font-weight: bold;
+    text-decoration: underline;
   }

@@ -42,8 +42,8 @@ plugins:
 languages: ["en-us", "zh-tw"]
 default_lang: "en-us"
 languageNames:
-  en-us: the U.S. version of English
-  zh-tw: Taiwanese Mandarin
+  en-us: English(US)
+  zh-tw: 繁體中文
 
 feed:
   posts_limit: 10
@@ -71,6 +71,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - data.py
+  - copy.sh
   - requirements.txt
   - vendor
   - .trunk/
