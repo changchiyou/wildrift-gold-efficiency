@@ -1,1 +1,14 @@
-test: test
+outdated:
+  title: ⚠️ Warning
+  message: You are viewing an outdated version. Please click {1}here{2} to redirect to the latest version.
+hint:
+  title: 💡 Hint
+  message1: "In most cases, {1}a higher calculated Gold Efficiency percentage (%) indicates better value{2}. However, as However, as stated in the {3} :" 
+  message2: "This calculated value doesn't fully represent an item's in-game impact. It's best for comparing items with similar attributes or assessing attribute changes."
+  list1: "Comment at {1}💬{2} to correct any item data, calculations, or other inaccuracies that you find and that need updating."
+  list2: "If you have ideas for new features or improvements to the design and layout, please feel free to submit a PR at {1}."
+copyright:
+  title: "{1}Copyright©{2}"
+  message1: "I, {1}, {2}DO NOT{3} own the copyrights of all resources on this website, especially images and data."
+  message2: "This website is a combination of the gold efficiency calculation formula from {1} with the design elements from both {1} and {2} featuring manually updated item data from {3}.{4}"
+  message3: "Therefore, if you wish to use the image resources on this website, you should contact the owners of {1} and {2} to apply for permission."

@@ -38,3 +38,12 @@ img.stat-icon {
       width: 11px;
     }
   }
+
+  .svg-badge {
+    position: relative;
+  }
+
+  .svg-badge svg {
+    position: relative;
+    top: 5px;
+  }

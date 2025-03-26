@@ -1,15 +1,29 @@
 {%- comment -%} ---------------------------------------------------------------------------
  include:       i18n.html
- description:   Include to translate tokens to text in different languages
-                A Default language should be defined in <site.default_lang>
-                Tokens need to be defined in '_data/i18n/<lang>.yml'                
+ description:   Include to translate tokens to text in different languages.
+                A default language should be defined in <site.default_lang>.
+                Tokens need to be defined in '_data/i18n/<lang>.yml'.
  usage:         {%- include i18n token='exploitability' lang='en' -%}
- parameters:    site.default_lang:
-                            en => Default language
-                page.lang:  en => language
-                lang:       en => Opitianally defined by include
-                token:      token assigned in the '_data/i18n/<lang>.yml' file
-debug:          <!-- include site.default_lang=\'{{site.default_lang}}\' page.lang=\'{{page.lang}}\' lang=\'{{include.lang}}\' token=\'{{include.token}}\' --->
+ parameters:    
+                site.default_lang:
+                    The default language to fall back to if none is specified; Example: 'en'.
+                
+                page.lang:  
+                    The language specified for the current page, if available; Example: 'en'.
+                
+                lang:       
+                    The language optionally defined by the include statement; this will override page.lang if present; Example: 'en'.
+                
+                token:      
+                    The token key assigned in the '_data/i18n/<lang>.yml' file to retrieve the corresponding translation; Example: 'exploitability'.
+                
+                interpolate:
+                    A string containing values separated by "|" that will replace placeholder variables in the translation text; placeholders are denoted as {1}, {2}, etc. in the translation string; Example: 'value1|value2'.
+ 
+ debug:          <!-- include site.default_lang='{{site.default_lang}}' page.lang='{{page.lang}}' lang='{{include.lang}}' token='{{include.token}}' --->
+ reference:
+                https://github.com/kurtsson/jekyll-multiple-languages-plugin/issues/163#issuecomment-666695445
+                https://github.com/kurtsson/jekyll-multiple-languages-plugin/issues/131#issuecomment-600953195
 ------------------------------------------------------------------------ {%- endcomment -%}
 {%- if include.lang == nil or include.lang == "" -%}
     {%- if page.lang == nil or page.lang == "" -%}
@@ -20,8 +34,29 @@ debug:          <!-- include site.default_lang=\'{{site.default_lang}}\' page.la
 {%- else -%}
     {%- assign _lang=include.lang -%}
 {%- endif -%}
-{%- if site.data.i18n[_lang][include.token] != nil -%}
-    {{ site.data.i18n[_lang][include.token] }}
+
+{%- assign keys = include.token | split: '.' -%}
+{%- assign translation = site.data.i18n[_lang] -%}
+{%- for key in keys -%}
+    {%- assign translation = translation[key] -%}
+{%- endfor -%}
+
+{% if include.interpolate %}
+    {% assign interpolateStrings = include.interpolate | split: "|" }} %}
+
+    {% for string in interpolateStrings %}
+    {% capture translation %} 
+        {% assign leftBrace = "{" %}
+        {% assign rightBrace = "}" %}
+        {% capture toReplace %}{{ leftBrace }}{{ forloop.index }}{{ rightBrace }}{% endcapture %}
+        {{ translation | replace: toReplace, string }}
+    {% endcapture %}
+
+    {% endfor %}
+{% endif %}
+
+{%- if translation != nil -%}
+    {{ translation }}
 {%- else -%}
     &lt;Error: Add in 'data/i18n/{{ _lang }}.yml' the translation for token '{{ include.token }}', please.&gt;
 {%- endif -%}
