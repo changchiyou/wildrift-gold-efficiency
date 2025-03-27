@@ -1,12 +1,54 @@
+site:
+  title_suffix: 激鬥裝備面板價值表
+page:
+  title: 激鬥裝備面板價值表
 outdated:
   title: ⚠️ 警告
   message: 您正在查看過時的版本。請點擊{1}這裡{2}重新導向到最新版本。
 hint:
-  title: 💡 提示
+  title: 💡 使用說明
   message1: "大多數情況下，{1}越高的面板價值%代表這件裝備更值得花費相同的金錢購買{2}。 然而，就像 {3} 中提到的："
   message2: 計算出來的面板價值適合用來比較具有相似屬性的物品或評估屬性變動，而非嘗試拿來表現某項特定裝備在遊戲中的影響力。
   list1: 發現文本、數據或圖片有錯誤時，可以到 {1}💬{2} 登入 Github 後留言通知我修改。
   list2: 如果有關於新功能的點子或任何對於現在介面設計的改動建議，非常歡迎到 {1} 直接發 Issues/Pull Requests、在這個專案貢獻一份心力。
+filter:
+  title: 🔎 篩選器
+  inclusion_filter: 包含
+  exclusion_filter: 排除
+  base_price_modifier: 💰 基礎屬性價格
+stat:
+  type:
+    Attack: 物理
+    Magic: 魔法
+    Defence: 防禦
+    Others: 其他
+  attr:
+    # Attack
+    attack-damage: 物理攻擊
+    percentage-critical-rate: "% 爆擊率"
+    percentage-attack-speed: "% 攻擊速度"
+    percentage-physical-vamp: "% 物理吸血"
+    armor-penetration: "物理穿透"
+    percentage-armor-penetration: "% 物理穿透"
+    # Magic
+    ability-power: 魔法攻擊
+    magic-penetration: 魔法穿透
+    percentage-magic-penetration: "% 魔法穿透"
+    ability-haste: 技能加速
+    max-mana: 最大魔力
+    percentage-mana-regeneration: "% 魔力回復"
+    percentage-omnivamp: "% 全能吸血"
+    # Defence
+    armor: 物理防禦
+    magic-resistance: 魔法防禦
+    max-health: 最大生命
+    percentage-health-regen: "% 生命回復"
+    percentage-heal-and-shield-strength: "% 治療和護盾量"
+    # Others
+    move-speed: 跑速
+    percentage-move-speed: "% 跑速"
+    unstable-passives'-stats: 非常駐被動屬性
+    update: 更新
 copyright:
   title: "{1}版權所有©{2}"
   message1: "我, {1}, {2}不擁有{3} 此網站上所有資源的版權，特別是圖片和遊戲數據。"

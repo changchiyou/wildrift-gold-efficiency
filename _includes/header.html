@@ -3,7 +3,7 @@
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><span class="version">{{ page.title }}</span>WR Gold Efficiency</a>
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><span class="version">{{ page.title }}</span>{% include i18n.html token="page.title" %}</a>
 
     {%- if page_paths -%}
       <nav class="site-nav">
@@ -18,8 +18,8 @@
 
         <div class="trigger">
 
-          <a class="page-link" href="#hint">💡 Hint</a>
-          <a class="page-link" href="#stat-filters">🔎 Stat Filters</a>
+          <a class="page-link" href="#hint">{% include i18n.html token="hint.title" %}</a>
+          <a class="page-link" href="#stat-filters">{% include i18n.html token="filter.title" %}</a>
           <a class="page-link" href="#giscus-comments">💬 Comments</a>
 
           <hr>

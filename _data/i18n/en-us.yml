@@ -1,12 +1,54 @@
+site:
+  title_suffix: Wild Rift Gold Efficiency
+page:
+  title: WR Gold Efficiency
 outdated:
   title: ⚠️ Warning
   message: You are viewing an outdated version. Please click {1}here{2} to redirect to the latest version.
 hint:
-  title: 💡 Hint
+  title: 💡 Instructions
   message1: "In most cases, {1}a higher calculated Gold Efficiency percentage (%) indicates better value{2}. However, as However, as stated in the {3} :" 
   message2: "This calculated value doesn't fully represent an item's in-game impact. It's best for comparing items with similar attributes or assessing attribute changes."
   list1: "Comment at {1}💬{2} to correct any item data, calculations, or other inaccuracies that you find and that need updating."
   list2: "If you have ideas for new features or improvements to the design and layout, please feel free to submit a PR at {1}."
+filter:
+  title: 🔎 Stat Filters
+  inclusion_filter: Inclusion
+  exclusion_filter: Exclusion
+  base_price_modifier: 💰 Stat Price
+stat:
+  type:
+    Attack: Physical
+    Magic: Magic
+    Defence: Defence
+    Others: Others
+  attr:
+    # Attack
+    attack-damage: Attack Damage
+    percentage-critical-rate: "% Cricital Rate"
+    percentage-attack-speed: "% Attack Speed"
+    percentage-physical-vamp: "% Physical Vamp"
+    armor-penetration: "Armor Penetration"
+    percentage-armor-penetration: "% Armor Penetration"
+    # Magic
+    ability-power: Ability Power
+    magic-penetration: Magic Penetration
+    percentage-magic-penetration: "% Magic Penetration"
+    ability-haste: Ability Haste
+    max-mana: Max Mana
+    percentage-mana-regeneration: "% Mana Regeneration"
+    percentage-omnivamp: "% Omnivamp"
+    # Defence
+    armor: Armor
+    magic-resistance: Magic Resistance
+    max-health: Max Health
+    percentage-health-regen: "% Health Regen"
+    percentage-heal-and-shield-strength: "% Heal and shield strength"
+    # Others
+    move-speed: Move Speed
+    percentage-move-speed: "% Move Speed"
+    unstable-passives'-stats: Unstable Passives' Stats
+    update: Update
 copyright:
   title: "{1}Copyright©{2}"
   message1: "I, {1}, {2}DO NOT{3} own the copyrights of all resources on this website, especially images and data."
