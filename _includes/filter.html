@@ -87,11 +87,11 @@
         </colgroup>
         <thead>
         <tr>
-            <th>Stat</th>
-            <th>Item</th>
-            <th>Cost</th>
-            <th>Item Stats</th>
-            <th>Stat Price</th>
+            <th class="bases-stat-column {{ page.lang }}">{% include i18n.html token="filter.base_price.column.stat" %}</th>
+            <th class="bases-stat-column {{ page.lang }}">{% include i18n.html token="filter.base_price.column.item" %}</th>
+            <th class="bases-stat-column {{ page.lang }}">{% include i18n.html token="filter.base_price.column.cost" %}</th>
+            <th class="bases-stat-column {{ page.lang }}">{% include i18n.html token="filter.base_price.column.item_stats" %}</th>
+            <th class="bases-stat-column {{ page.lang }}">{% include i18n.html token="filter.base_price.column.stat_price" %}</th>
         </tr>
         </thead>
         <tbody>
@@ -105,7 +105,9 @@
                             <div class="tooltip item stat">
                                 {% include stat_image.html type=base.type stats=include.stats %}
                                 <span class="tooltiptext">
-                                    {{ base.type }}
+                                    {% assign stat_id = base.type | downcase | replace: " ", "-" | replace: "%", "percentage" %}
+                                    {% capture token %}stat.attr.{{ stat_id }}{% endcapture %}
+                                    {% include i18n.html token=token %}
                                 </span>
                             </div>
                         </td>
@@ -113,12 +115,14 @@
                             <p class="item-index" style="display: none"></p>
                             <div>
                                 <img class="item-icon" loading="lazy" src="{{ item.image }}" style="margin-right: 5px;" />
-                                {% assign item_name = item.name | split: '(' %}
-                                {% if item_name.size == 2 %}
-                                    {{ item_name[0] }}
-                                    <p class="item-note">{{ item_name[1] | remove: ')' }}</p>
+                                {% capture token %}item.name.{% include trans.html text=item.name %}{% endcapture %}
+                                {% capture item_name %}{% include i18n.html token=token %}{% endcapture %}
+                                {% assign item_name_list = item_name | split: '(' %}
+                                {% if item_name_list.size == 2 %}
+                                    {{ item_name_list[0] }}
+                                    <p class="item-note">{{ item_name_list[1] | remove: ')' }}</p>
                                 {% else %}
-                                    {{ item.name }}
+                                    {{ item_name }}
                                 {% endif %}
                             </div>
                         </td>
@@ -138,7 +142,8 @@
                                         <div class="tooltip stats">
                                             {{- stat.value -}}{% include stat_image.html type=stat.type stats=include.stats %}
                                             <span class="tooltiptext">
-                                                {{ stat.passive }}
+                                                {% capture token %}item.passive.{% include trans.html text=stat.passive %}{% endcapture %}
+                                                {% include i18n.html token=token %}
                                             </span>
                                         </div>
                                     {% else %}
@@ -166,7 +171,9 @@
                         {% assign stat_name = stat[0] %}
                         {% include stat_image.html type=stat_name stats=include.stats %}
                         <span class="tooltiptext">
-                            {{ stat_name }}
+                            {% assign stat_id = stat_name | downcase | replace: " ", "-" | replace: "%", "percentage" %}
+                            {% capture token %}stat.attr.{{ stat_id }}{% endcapture %}
+                            {% include i18n.html token=token %}
                         </span>
                     </div>
                 </td>

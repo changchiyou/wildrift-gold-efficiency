@@ -415,6 +415,9 @@ $tooltip-color: #333;
     th[data-order="non-order"]::after, th[data-order="ascending"]::after, th[data-order="descending"]::after {
       border-width: 3.125px 3.125px 0 3.125px;
     }
+    th.bases-stat-column:not(.en-us) {
+      white-space: nowrap;
+    }
   }
 
   .NA {

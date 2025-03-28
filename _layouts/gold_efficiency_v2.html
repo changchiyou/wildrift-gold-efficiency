@@ -30,19 +30,26 @@ layout: default
 
 {% include filter.html items=page.data.items stats=page.data.stats %}
 
-{%- include items_table.html items=page.data.items stats=page.data.stats category="PHYSICAL DAMAGE ITEMS" anchor="PHYSICAL-DAMAGE-ITEMS" header="📌 Physical Damage Items" -%}
+{% capture header %}{% include i18n.html token="nav.physical-damage-items" %}{% endcapture %}
+{%- include items_table.html items=page.data.items stats=page.data.stats category="PHYSICAL DAMAGE ITEMS" anchor="PHYSICAL-DAMAGE-ITEMS" header=header -%}
 
-{%- include items_table.html items=page.data.items stats=page.data.stats category="MAGIC DAMAGE ITEMS" anchor="MAGIC-DAMAGE-ITEMS" header="📌 Magic Damage Items" -%}
+{% capture header %}{% include i18n.html token="nav.magic-damage-items" %}{% endcapture %}
+{%- include items_table.html items=page.data.items stats=page.data.stats category="MAGIC DAMAGE ITEMS" anchor="MAGIC-DAMAGE-ITEMS" header=header -%}
 
-{%- include items_table.html items=page.data.items stats=page.data.stats category="DEFENSE ITEMS" anchor="DEFENSE-ITEMS" header="📌 Defense Items" -%}
+{% capture header %}{% include i18n.html token="nav.defence-items" %}{% endcapture %}
+{%- include items_table.html items=page.data.items stats=page.data.stats category="DEFENSE ITEMS" anchor="DEFENSE-ITEMS" header=header -%}
 
-{%- include items_table.html items=page.data.items stats=page.data.stats category="SUPPORT ITEMS" anchor="SUPPORT-ITEMS" header="📌 Support Items" -%}
+{% capture header %}{% include i18n.html token="nav.support-items" %}{% endcapture %}
+{%- include items_table.html items=page.data.items stats=page.data.stats category="SUPPORT ITEMS" anchor="SUPPORT-ITEMS" header=header -%}
 
-{%- include items_table.html items=page.data.items stats=page.data.stats category="BOOTS" anchor="BOOTS" header="📌 Boots" -%}
+{% capture header %}{% include i18n.html token="nav.boots" %}{% endcapture %}
+{%- include items_table.html items=page.data.items stats=page.data.stats category="BOOTS" anchor="BOOTS" header=header -%}
 
-{%- include items_table.html items=page.data.items stats=page.data.stats category="MID TIER ITEMS" anchor="MID-TIER-ITEMS" header="📌 Mid-tier Items" -%}
+{% capture header %}{% include i18n.html token="nav.mid-tier-items" %}{% endcapture %}
+{%- include items_table.html items=page.data.items stats=page.data.stats category="MID TIER ITEMS" anchor="MID-TIER-ITEMS" header=header -%}
 
-{%- include items_table.html items=page.data.items stats=page.data.stats category="BASIC ITEMS" anchor="BASIC-ITEMS" header="📌 Basic Items" -%}
+{% capture header %}{% include i18n.html token="nav.basic-items" %}{% endcapture %}
+{%- include items_table.html items=page.data.items stats=page.data.stats category="BASIC ITEMS" anchor="BASIC-ITEMS" header=header -%}
 
 <div class="panel">
     <p>
