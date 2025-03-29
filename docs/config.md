@@ -1,6 +1,6 @@
 # Config Structure
 
-This page introduce the structure of the files located in `_data` directory.
+This page introduce the structure of the config files mainly located in `_data`/`_pages` directories.
 
 ## items_{version}.yml
 

@@ -1,6 +1,6 @@
 # Establish Gold Efficiency Page for the New Version v2 (for maintainer)
 
-> [!INFO]
+> [!NOTE]
 > This document is intended for updating versions from 6.0d onwards.
 
 Taking the update from [6.0d](https://changchiyou.github.io/wildrift-gold-efficiency/en-us/6.0d/) to 6.0e (May not existed, just for example) as an example:
