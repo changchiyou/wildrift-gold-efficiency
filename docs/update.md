@@ -1,8 +1,14 @@
 # Establish Gold Efficiency Page for the New Version (for maintainer)
 
+> [!CAUTION]
+> [DEPRECATED] This document is intended for updating versions before 6.0d (not including 6.0d). 
+> If you intend to update versions 6.0d and later, please refer to [update_v2.md](/docs/update_v2.md).
+
 Taking the update from [5.1a](https://changchiyou.github.io/wildrift-gold-efficiency/5.1a/) to [5.1b](https://changchiyou.github.io/wildrift-gold-efficiency/5.1b/) as an example:
 
-1. Copy [items_5_1a.yml](/_data/items_5_1a.yml) & [stats_5_1a.yml](/_data/stats_5_1a.yml) and rename to [items_5_1b.yml](/_data/items_5_1b.yml) & [stats_5_1b.yml](/_data/stats_5_1b.yml):
+1. ~~Copy [items_5_1a.yml](/_data/items_5_1a.yml) & [stats_5_1a.yml](/_data/stats_5_1a.yml) and rename to [items_5_1b.yml](/_data/items_5_1b.yml) & [stats_5_1b.yml](/_data/stats_5_1b.yml)~~
+
+    Simply execute [copy.sh](/copy.sh) with `bash copy.sh 5_1a 5_1b` (recommended).
 2. Manually update item data in [items_5_1b.yml](/_data/items_5_1b.yml) based on [WILD RIFT PATCH NOTES 5.1B - ITEMS](https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-5-1b/#items):
 
     The field info of `items_[version].yml`:
@@ -44,7 +50,7 @@ Taking the update from [5.1a](https://changchiyou.github.io/wildrift-gold-effici
     4. `ref_type` & empty `ratio` in another stat & single type `Unstable Passives' Stats`:
         https://github.com/changchiyou/wildrift-gold-efficiency/blob/72a0ff695d138eb5494f9d9752c486170955cf79/_data/items_5_1b.yml#L1986-L2012
 
-3. Manually update [stats_5_1b.yml](/_data/stats_5_1b.yml):
+3. Manually update [stats_5_1b.yml](/_data/stats_5_1b.yml) if needed:
 
     The fields info of `stats_[version].yml`:
 
@@ -78,12 +84,12 @@ Taking the update from [5.1a](https://changchiyou.github.io/wildrift-gold-effici
 5. Execute [data.py](/data.py) to re-generate `amount` and `formula` in [items_5_1b.yml](/_data/items_5_1b.yml) based on step `2.`( Manually update item data in [items_5_1b.yml](/_data/items_5_1b.yml) ):
     - Specific `5.1b`:
         ```
-        python data.py -c --items items_5_1b.yml --stats stats_5_1b.yml
+        python data.py --items items_5_1b.yml --stats stats_5_1b.yml
         ```
 
     - All yml files in `_data` directory:
         ```
-        python data.py -c
+        python data.py
         ```
 
     > For more info of params, execute:
@@ -91,7 +97,7 @@ Taking the update from [5.1a](https://changchiyou.github.io/wildrift-gold-effici
     > python data.py -h
     > ```
 
-6. Create [5_1b.md](/_pages/5_1b.md) based on [5_1a.md](/_pages/5_1a.md) & [5_1.md](/_pages/5_1.md):
+6. ~~Create [5_1b.md](/_pages/5_1b.md) based on [5_1a.md](/_pages/5_1a.md) & [5_1.md](/_pages/5_1.md)~~ [copy.sh](/copy.sh) has already generated the page file, you only have to modify the content if needed:
 
     The params info of page.md:
 

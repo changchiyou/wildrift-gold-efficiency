@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# [DEPRECATED]
+# This script is intended for updating versions before 6.0d (not including 6.0d).
+# It copies the old folder content to a new folder and performs text replacements 
+# within markdown files, as well as updates certain metadata such as dates and file references.
+
 if [ $# -ne 2 ]; then
   echo "usage: $0 <old-version> <new-version>"
   exit 1
