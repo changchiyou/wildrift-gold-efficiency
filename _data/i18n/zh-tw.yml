@@ -112,14 +112,14 @@ item:
     bloodthirster-bloodsworn-lv15: 嗜血者 (血誓 - lv15)
     bloodthirster-bloodsworn-lv1: 嗜血者 (血誓 - lv1)
     bloodthirster: 嗜血者
-    boots-of-dynamism: Boots of Dynamism
-    boots-of-mana: Boots of Mana
+    boots-of-dynamism: 爆發之靴
+    boots-of-mana: 魔力之靴
     boots-of-speed: 速度之靴
     bramble-vest: 刺藤胸甲
     brawler-s-gloves: 格鬥手套
-    bulwark-of-the-mountain-adaptive-ad-soulcast: 'Bulwark of the Mountain (適性: 物理, 鑄魂)'
-    bulwark-of-the-mountain-adaptive-ap-soulcast: 'Bulwark of the Mountain (適性: 魔法, 鑄魂)'
-    bulwark-of-the-mountain: Bulwark of the Mountain
+    bulwark-of-the-mountain-adaptive-ad-soulcast: '群山堡壘 (適性: 物理, 鑄魂)'
+    bulwark-of-the-mountain-adaptive-ap-soulcast: '群山堡壘 (適性: 魔法, 鑄魂)'
+    bulwark-of-the-mountain: 群山堡壘
     catalyst-of-aeons: 催化魔方
     caulfield-s-warhammer: 考菲爾德的戰錘
     chain-vest: 鎖子甲
@@ -132,7 +132,7 @@ item:
     crown-of-the-shattered-queen-safeguard-poise: 殘破王后之冠 (蓄勢待發)
     crystalline-reflector: 水晶反光杖
     dagger: 短劍
-    dawnshroud: Dawnshroud
+    dawnshroud: 黎明法衣
     dead-man-s-plate: Dead Man's Plate
     dead-man-s-plate-momentum: Dead Man's Plate (衝勁)
     death-s-dance: 死亡之舞
@@ -148,12 +148,12 @@ item:
     forbidden-idol: 禁忌之像
     force-of-nature-absorb: Force of Nature (Absorb)
     force-of-nature: Force of Nature
-    frozen-heart: Frozen Heart
+    frozen-heart: 冰霜之心
     giant-s-belt: 巨人腰帶
     glacial-shroud: 冰川護甲
-    gluttonous-greaves: Gluttonous Greaves
+    gluttonous-greaves: 貪婪護脛
     guardian-angel: 守護天使
-    harmonic-echo: Harmonic Echo
+    harmonic-echo: 和諧回音
     haunting-guise: 幽魂面具
     heartsteel: Heartsteel
     hexdrinker: 吸魔劍
@@ -162,11 +162,11 @@ item:
     iceborn-gauntlet: Iceborn Gauntlet
     immortal-shieldbow-battle-furor: 不朽盾弓 (戰鬥狂怒)
     immortal-shieldbow: 不朽盾弓
-    imperial-mandate-coordinated-fire: Imperial Mandate (Coordinated Fire)
-    imperial-mandate: Imperial Mandate
+    imperial-mandate-coordinated-fire: 帝王命令 (齊心火焰)
+    imperial-mandate: 帝王命令
     infinity-edge: 無盡之刃
     infinity-orb: 無限寶珠
-    ionian-boots-of-lucidity: Ionian Boots of Lucidity
+    ionian-boots-of-lucidity: 愛歐尼亞之靴
     jaurim-s-fist: 約瑞姆之拳
     kaenic-rookern: Kaenic Rookern
     kindlegem: 燃燒寶石
@@ -185,7 +185,7 @@ item:
     maw-of-malmortius: 魔提斯深淵
     mejai-s-soulstealer-fear: 靈魂竊取者 (恐懼)
     mejai-s-soulstealer: 靈魂竊取者
-    mercury-s-treads: Mercury's Treads
+    mercury-s-treads: 水星之靴
     morellonomicon: 黑魔禁書
     mortal-reminder: 致死宣告
     muramana-awe-lv15-ez-1076-mana: 終極魔劍 (威嚇 - lv15 伊澤瑞爾 1076 魔力)
@@ -208,16 +208,16 @@ item:
     phage-rage-kill-range: 淨蝕之鎚 (暴虐 - 擊殺 - 遠程)
     phantom-dancer: 幻影之舞
     phantom-dancer-spectral-waltz: 幻影之舞 (靈魂華爾茲)
-    plated-steelcaps: Plated Steelcaps
+    plated-steelcaps: 鍍板銅蓋
     prophet-s-pendant: 先知墜飾
-    protector-s-vow: Protector's Vow
+    protector-s-vow: 保護者誓願
     psychic-projector-conversion: 靈能投射器 (轉換)
     rabadon-s-deathcap-overkill-lv15: 死亡之帽 (狂弒 - lv15)
     rabadon-s-deathcap-overkill-lv1: 死亡之帽 (狂弒 - lv1)
     randuin-s-omen: Randuin's Omen
     recurve-bow: 反曲弓
-    redemption: Redemption
-    relic-shield: Relic Shield
+    redemption: 贖罪神石
+    relic-shield: 遺跡之盾
     riftmaker: 峽谷製造者
     ring-of-revelation: 天啟戒指
     rod-of-ages: 時光之杖
@@ -239,13 +239,13 @@ item:
     shimmering-spark: 光輝火花
     solari-chargeblade: 日輪蓄力刃
     spear-of-shojin: 精進之矛
-    spectral-sickle-adaptive-ad: Spectral Sickle (適性 - 物理)
-    spectral-sickle-adaptive-ap: Spectral Sickle (適性 - 魔法)
+    spectral-sickle-adaptive-ad: 幽魂之鐮 (適性 - 物理)
+    spectral-sickle-adaptive-ap: 幽魂之鐮 (適性 - 魔法)
     spectre-s-cowl: 亡靈斗篷
     spirit-visage: Spirit Visage
-    staff-of-flowing-waters-rapids-lv15: Staff of Flowing Waters (Rapids - lv15)
-    staff-of-flowing-waters-rapids-lv1: Staff of Flowing Waters (Rapids - lv1)
-    staff-of-flowing-waters: Staff of Flowing Waters
+    staff-of-flowing-waters-rapids-lv15: 流水之杖 (激流 - lv15)
+    staff-of-flowing-waters-rapids-lv1: 流水之杖 (激流 - lv1)
+    staff-of-flowing-waters: 流水之杖
     sterak-s-gage-heavy-handed-lv15-ire-122-ad: 史特拉克手套 (重手重腳 - lv15 伊瑞莉雅 122 物理)
     sterak-s-gage-heavy-handed-lv1-ire-58-ad: 史特拉克手套 (重手重腳 - lv1 伊瑞莉雅 58 物理)
     stinger: 刺針劍
@@ -253,9 +253,9 @@ item:
     sundered-sky: 突破天際
     sunfire-aegis: Sunfire Aegis
     surging-scales: 波濤鱗甲
-    talisman-of-ascension-adaptive-ad-soulcast: 'Talisman of Ascension (適性: 物理, 鑄魂)'
-    talisman-of-ascension-adaptive-ap-soulcast: 'Talisman of Ascension (適性: 魔法, 鑄魂)'
-    talisman-of-ascension: Talisman of Ascension
+    talisman-of-ascension-adaptive-ad-soulcast: '昇華護符 (適性: 物理, 鑄魂)'
+    talisman-of-ascension-adaptive-ap-soulcast: '昇華護符 (適性: 魔法, 鑄魂)'
+    talisman-of-ascension: 昇華護符
     tear-of-the-goddess-mana-charge: 女神之淚 (魔力補充)
     tear-of-the-goddess: 女神之淚
     terminus-juxtaposition-lv15: 臨界點 (對比 - lv15)
@@ -276,13 +276,13 @@ item:
     winter-s-approach-awe-lv15-voli-1300-mp: Winter's Approach (威嚇 - lv15 Voli 1300 MP)
     winter-s-approach-awe-lv1-voli-390-mp: Winter's Approach (威嚇 - lv1 Voli 390 MP)
     wit-s-end: 智慧末刃
-    yordle-trap-catcher: Yordle Trap (Catcher)
-    yordle-trap: Yordle Trap
+    yordle-trap-catcher: 約德爾陷阱 (捕捉者)
+    yordle-trap: 約德爾陷阱
     youmuu-s-ghostblade-haste: 妖夢鬼刀 (幽魂疾速)
     youmuu-s-ghostblade-momentum: 妖夢鬼刀 (衝勁)
     youmuu-s-ghostblade: 妖夢鬼刀
     zeal: 狂熱雙刀
-    zeke-s-convergence: Zeke's Convergence
+    zeke-s-convergence: 錫柯的聚合之力
   passive:
     absorb: Absorb
     ardent: 熾灼
@@ -293,10 +293,10 @@ item:
     battle-furor: 戰鬥狂怒
     bloodsworn: 血誓
     bloody: 血腥
-    catcher: Catcher
+    catcher: 捕捉者
     colossus: 龐然巨物
     conversion: 轉換
-    coordinated-fire: Coordinated Fire
+    coordinated-fire: 齊心火焰
     destiny: 命運
     doomsayer: 末日預言
     endurance: 堅毅
@@ -311,14 +311,14 @@ item:
     killer: 殺手
     last-whisper: 最後耳語
     lifeline: Lifeline
-    magic-break: Magic Break
+    magic-break: 魔力突破
     magic-fang: 魔牙
     magic-needle: Magic Needle
     mana-charge: 魔力補充
     momentum: 衝勁
-    overkill: Overkill
+    overkill: 狂弒
     rage: 暴虐
-    rapids: Rapids
+    rapids: 激流
     razor: 割裂
     relentless: Relentless
     rising-dragon: 昇龍
@@ -332,7 +332,7 @@ item:
     spellweaving: 織法
     stab: 突刺
     storm: Storm
-    strike: Strike
+    strike: 打擊
     thirst: Thirst
     valor: 勇猛
     versatile: 萬能
