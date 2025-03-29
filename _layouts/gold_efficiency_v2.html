@@ -92,8 +92,8 @@ layout: default
                 let isOriginalOrder = true;
 
                 headers.forEach((header, index) => {
-                    const headerText = header.innerText;
-                    if (headerText === "Cost" || headerText === "Amount") {
+                    const column = header.getAttribute('column');
+                    if (column === "cost" || column === "amount") {
                         header.addEventListener('click', () => {
                             const currentOrder = header.getAttribute('data-order');
                             let newOrder;
