@@ -33,5 +33,9 @@ Merging the calculation **formula** from [<img src="https://static.wikia.nocooki
     ```
 4. [Serve the Site](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/#serve-the-site):
     ```bash
-    bundle exec jekyll serve
+    bundle exec jekyll serve --port 4001
     ```
+
+## UpdateEstablish Gold Efficiency Page for the New Version v2 (for maintainer)
+
+Please refer to [update_v2.md](/docs/update_v2.md).
