@@ -109,16 +109,16 @@ item:
     boots-of-dynamism: Boots of Dynamism
     boots-of-mana: Boots of Mana
     boots-of-speed: 速度之靴
-    bramble-vest: Bramble Vest
+    bramble-vest: 刺藤胸甲
     brawler-s-gloves: 格鬥手套
     bulwark-of-the-mountain-adaptive-ad-soulcast: 'Bulwark of the Mountain (適性: 物理, 鑄魂)'
     bulwark-of-the-mountain-adaptive-ap-soulcast: 'Bulwark of the Mountain (適性: 魔法, 鑄魂)'
     bulwark-of-the-mountain: Bulwark of the Mountain
-    catalyst-of-aeons: Catalyst of Aeons
-    caulfield-s-warhammer: Caulfield's Warhammer
-    chain-vest: Chain Vest
+    catalyst-of-aeons: 催化魔方
+    caulfield-s-warhammer: 考菲爾德的戰錘
+    chain-vest: 鎖子甲
     chempunk-chainsword: 生化龐克鏈鋸之劍
-    cloak-of-agility: Cloak of Agility
+    cloak-of-agility: 靈巧披風
     cloth-armor: 布甲
     cosmic-drive: Cosmic Drive
     cosmic-drive-spellweaving: Cosmic Drive (Spellweaving)
@@ -135,23 +135,23 @@ item:
     eclipse: 星蝕
     edge-of-night: 夜色緣界
     essence-reaver: 奪魄之鎌
-    executioner-s-calling: Executioner's Calling
-    fiendish-codex: Fiendish Codex
+    executioner-s-calling: 死刑宣告
+    fiendish-codex: 惡魔法典
     fimbulwinter-awe-lv15-voli-1300-mp: Fimbulwinter (威嚇 - lv15 Voli 1300 MP)
     fimbulwinter-awe-lv1-voli-390-mp: Fimbulwinter (威嚇 - lv1 Voli 390 MP)
     forbidden-idol: 禁忌之像
     force-of-nature-absorb: Force of Nature (Absorb)
     force-of-nature: Force of Nature
     frozen-heart: Frozen Heart
-    giant-s-belt: Giant's Belt
-    glacial-shroud: Glacial Shroud
+    giant-s-belt: 巨人腰帶
+    glacial-shroud: 冰川護甲
     gluttonous-greaves: Gluttonous Greaves
     guardian-angel: 守護天使
     harmonic-echo: Harmonic Echo
-    haunting-guise: Haunting Guise
+    haunting-guise: 幽魂面具
     heartsteel: Heartsteel
-    hexdrinker: Hexdrinker
-    hextech-alternator: Hextech Alternator
+    hexdrinker: 吸魔劍
+    hextech-alternator: 海克斯科技發電機
     horizon-focus: Horizon Focus
     iceborn-gauntlet: Iceborn Gauntlet
     immortal-shieldbow-battle-furor: 不朽盾弓 (戰鬥狂怒)
@@ -161,15 +161,15 @@ item:
     infinity-edge: 無盡之刃
     infinity-orb: Infinity Orb
     ionian-boots-of-lucidity: Ionian Boots of Lucidity
-    jaurim-s-fist: Jaurim's Fist
+    jaurim-s-fist: 約瑞姆之拳
     kaenic-rookern: Kaenic Rookern
-    kindlegem: Kindlegem
-    kircheis-shard: Kircheis Shard
+    kindlegem: 燃燒寶石
+    kircheis-shard: 柯奇碎片
     last-whisper: 最後耳語
     liandry-s-torment: Liandry's Torment
     lich-bane: Lich Bane
     long-sword: 長劍
-    lost-chapter: Lost Chapter
+    lost-chapter: 失落之章
     luden-s-echo: Luden's Echo
     magnetic-blaster: 磁性雷射槍
     manamune-awe-lv15-ez-1076-mana: 魔劍正宗 (威嚇 - lv15 伊澤瑞爾 1076 魔力)
@@ -177,8 +177,8 @@ item:
     mantle-of-the-twelfth-hour-lifeline: Mantle of the Twelfth Hour (Lifeline)
     mantle-of-the-twelfth-hour: Mantle of the Twelfth Hour
     maw-of-malmortius: 魔提斯深淵
-    mejai-s-soulstealer-fear: Mejai's Soulstealer (Fear)
-    mejai-s-soulstealer: Mejai's Soulstealer
+    mejai-s-soulstealer-fear: 靈魂竊取者 (恐懼)
+    mejai-s-soulstealer: 靈魂竊取者
     mercury-s-treads: Mercury's Treads
     morellonomicon: Morellonomicon
     mortal-reminder: 致死宣告
@@ -188,18 +188,18 @@ item:
     nashor-s-talon-adaptive-ap: '納什之爪 (適性: 魔法)'
     nashor-s-tooth-adaptive-ad: '納什之牙 (適性: 物理)'
     nashor-s-tooth-adaptive-ap: '納什之牙 (適性: 魔法)'
-    navori-quickblades: Navori Quickblades
-    needlessly-large-rod: Needlessly Large Rod
-    negatron-cloak: Negatron Cloak
-    noonquiver: Noonquiver
+    navori-quickblades: 那歐疾刃
+    needlessly-large-rod: 巨型魔棒
+    negatron-cloak: 負極斗篷
+    noonquiver: 正午箭筒
     null-magic-mantle: 抗魔斗篷
-    oblivion-orb: Oblivion Orb
+    oblivion-orb: 遺忘寶珠
     oceanid-s-trident: Oceanid's Trident
-    phage: Phage
-    phage-rage-aa-melee: Phage (暴虐 - 普攻 - 近戰)
-    phage-rage-aa-range: Phage (暴虐 - 普攻 - 遠程)
-    phage-rage-kill-melee: Phage (暴虐 - 擊殺 - 近戰)
-    phage-rage-kill-range: Phage (暴虐 - 擊殺 - 遠程)
+    phage: 淨蝕之鎚
+    phage-rage-aa-melee: 淨蝕之鎚 (暴虐 - 普攻 - 近戰)
+    phage-rage-aa-range: 淨蝕之鎚 (暴虐 - 普攻 - 遠程)
+    phage-rage-kill-melee: 淨蝕之鎚 (暴虐 - 擊殺 - 近戰)
+    phage-rage-kill-range: 淨蝕之鎚 (暴虐 - 擊殺 - 遠程)
     phantom-dancer: 幻影之舞
     phantom-dancer-spectral-waltz: 幻影之舞 (靈魂華爾茲)
     plated-steelcaps: Plated Steelcaps
@@ -209,7 +209,7 @@ item:
     rabadon-s-deathcap-overkill-lv15: Rabadon's Deathcap (Overkill - lv15)
     rabadon-s-deathcap-overkill-lv1: Rabadon's Deathcap (Overkill - lv1)
     randuin-s-omen: Randuin's Omen
-    recurve-bow: Recurve Bow
+    recurve-bow: 反曲弓
     redemption: Redemption
     relic-shield: Relic Shield
     riftmaker: Riftmaker
@@ -223,36 +223,36 @@ item:
     sapphire-crystal-mana-charge: 藍水晶 (魔力補充)
     sapphire-crystal: 藍水晶
     searing-crown: Searing Crown
-    seeker-s-armguard: Seeker's Armguard
-    seraph-s-embrace-awe-lv15-kass-1390-mp: Seraph's Embrace (威嚇 - lv15 Kass 1390 MP)
-    seraph-s-embrace-awe-lv1-kass-480-mp: Seraph's Embrace (威嚇 - lv1 Kass 480 MP)
+    seeker-s-armguard: 探索者護腕
+    seraph-s-embrace-awe-lv15-kass-1390-mp: Seraph's Embrace (威嚇 - lv15 Kass 1390 魔力)
+    seraph-s-embrace-awe-lv1-kass-480-mp: Seraph's Embrace (威嚇 - lv1 Kass 480 魔力)
     serpent-s-fang: 巨蛇鋒牙
     serrated-dirk: 殘暴之力
     serylda-s-grudge: 席利妲咒怨
-    sheen: Sheen
+    sheen: 閃耀劍
     shimmering-spark: 光輝火花
-    solari-chargeblade: Solari Chargeblade
+    solari-chargeblade: 日輪蓄力刃
     soulstealer: Soulstealer
     spear-of-shojin: 精進之矛
     spectral-sickle-adaptive-ad: Spectral Sickle (適性 - 物理)
     spectral-sickle-adaptive-ap: Spectral Sickle (適性 - 魔法)
-    spectre-s-cowl: Spectre's Cowl
+    spectre-s-cowl: 亡靈斗篷
     spirit-visage: Spirit Visage
     staff-of-flowing-waters-rapids-lv15: Staff of Flowing Waters (Rapids - lv15)
     staff-of-flowing-waters-rapids-lv1: Staff of Flowing Waters (Rapids - lv1)
     staff-of-flowing-waters: Staff of Flowing Waters
     sterak-s-gage-heavy-handed-lv15-ire-122-ad: 史特拉克手套 (重手重腳 - lv15 伊瑞莉雅 122 物理)
     sterak-s-gage-heavy-handed-lv1-ire-58-ad: 史特拉克手套 (重手重腳 - lv1 伊瑞莉雅 58 物理)
-    stinger: Stinger
+    stinger: 刺針劍
     stormrazor: 狂暴利刃
     sundered-sky: 突破天際
     sunfire-aegis: Sunfire Aegis
-    surging-scales: Surging Scales
+    surging-scales: 波濤鱗甲
     talisman-of-ascension-adaptive-ad-soulcast: 'Talisman of Ascension (適性: 物理, 鑄魂)'
     talisman-of-ascension-adaptive-ap-soulcast: 'Talisman of Ascension (適性: 魔法, 鑄魂)'
     talisman-of-ascension: Talisman of Ascension
-    tear-of-the-goddess-mana-charge: Tear of the Goddess (Mana Charge)
-    tear-of-the-goddess: Tear of the Goddess
+    tear-of-the-goddess-mana-charge: 女神之淚 (魔力補充)
+    tear-of-the-goddess: 女神之淚
     terminus-juxtaposition-lv15: 臨界點 (對比 - lv15)
     terminus-juxtaposition-lv1: 臨界點 (對比 - lv1)
     terminus: 臨界點
@@ -265,9 +265,9 @@ item:
     trinity-force-valor-kill-melee: 三項之力 (勇猛 - 擊殺 - 近戰)
     trinity-force-valor-kill-range: 三項之力 (勇猛 - 擊殺 - 遠程)
     vampiric-scepter: 吸血鬼權杖
-    warden-s-mail: Warden's Mail
+    warden-s-mail: 守望者鎧甲
     warmog-s-armor: Warmog's Armor
-    winged-moonplate: Winged Moonplate
+    winged-moonplate: 飛翼月甲
     winter-s-approach-awe-lv15-voli-1300-mp: Winter's Approach (威嚇 - lv15 Voli 1300 MP)
     winter-s-approach-awe-lv1-voli-390-mp: Winter's Approach (威嚇 - lv1 Voli 390 MP)
     wit-s-end: 智慧末刃
@@ -276,7 +276,7 @@ item:
     youmuu-s-ghostblade-haste: 妖夢鬼刀 (幽魂疾速)
     youmuu-s-ghostblade-momentum: 妖夢鬼刀 (衝勁)
     youmuu-s-ghostblade: 妖夢鬼刀
-    zeal: Zeal
+    zeal: 狂熱雙刀
     zeke-s-convergence: Zeke's Convergence
   passive:
     absorb: Absorb
@@ -295,10 +295,10 @@ item:
     destiny: Destiny
     doomsayer: 末日預言
     endurance: 堅毅
-    fear: Fear
+    fear: 恐懼
     fervor: 狂熱
-    flight: Flight
-    gouge: Gouge
+    flight: 飛行
+    gouge: 深掘
     haste: 幽魂疾速
     heavy-handed: 重手重腳
     hyperdrive: Hyperdrive
@@ -308,7 +308,7 @@ item:
     lifeline: Lifeline
     magic-break: Magic Break
     magic-fang: 魔牙
-    magic-needle: Magic Needle
+    magic-needle: 魔針
     mana-charge: 魔力補充
     momentum: 衝勁
     overkill: Overkill
