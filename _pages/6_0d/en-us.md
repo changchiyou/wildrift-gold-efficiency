@@ -3,13 +3,13 @@ layout: gold_efficiency_v2
 
 title: 6.0d
 date: 2025/03/13
-description: Wild Rift Gold Efficiency of 6.0d (no updates for items)
+description: Wild Rift Gold Efficiency of 6.0d
 image: /assets/favicon512x512.png
 
 permalink: /en-us/6.0d/
 redirect_from: 
     - /
-    - /6.0d/
+    - /en-us/
 latest_version: true
 
 lang: en-us
