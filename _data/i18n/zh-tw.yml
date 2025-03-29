@@ -92,8 +92,8 @@ item:
     amaranth-s-twinguard-endurance: 雅瑪蘭守護像 (堅毅)
     amplifying-tome: 增幅典籍
     ancient-coin: 賢者古幣
-    archangel-s-staff-awe-lv15-kass-1390-mp: 大天使之杖 (威嚇 - lv15 卡薩丁 1390 MP)
-    archangel-s-staff-awe-lv1-kass-480-mp: 大天使之杖 (威嚇 - lv1 卡薩丁 480 MP)
+    archangel-s-staff-awe-lv15-kass-1390-mp: 大天使之杖 (威嚇 - lv15 卡薩丁 1390 魔力)
+    archangel-s-staff-awe-lv1-kass-480-mp: 大天使之杖 (威嚇 - lv1 卡薩丁 480 魔力)
     ardent-censer: 熾灼魔器
     bami-s-cinder: 巴米灰燼
     berserker-s-greaves: 狂戰士護脛
@@ -133,8 +133,8 @@ item:
     crystalline-reflector: 水晶反光杖
     dagger: 短劍
     dawnshroud: 黎明法衣
-    dead-man-s-plate: Dead Man's Plate
-    dead-man-s-plate-momentum: Dead Man's Plate (衝勁)
+    dead-man-s-plate: 死者肩甲
+    dead-man-s-plate-momentum: 死者肩甲 (衝勁)
     death-s-dance: 死亡之舞
     divine-sunderer: 聖裂之杖
     duskblade-of-draktharr: 暮色黑刃
@@ -143,11 +143,11 @@ item:
     essence-reaver: 奪魄之鎌
     executioner-s-calling: 死刑宣告
     fiendish-codex: 惡魔法典
-    fimbulwinter-awe-lv15-voli-1300-mp: Fimbulwinter (威嚇 - lv15 Voli 1300 MP)
-    fimbulwinter-awe-lv1-voli-390-mp: Fimbulwinter (威嚇 - lv1 Voli 390 MP)
+    fimbulwinter-awe-lv15-voli-1300-mp: 芬布爾之冬 (威嚇 - lv15 弗力貝爾 1300 魔力)
+    fimbulwinter-awe-lv1-voli-390-mp: 芬布爾之冬 (威嚇 - lv1 弗力貝爾 390 魔力)
     forbidden-idol: 禁忌之像
-    force-of-nature-absorb: Force of Nature (Absorb)
-    force-of-nature: Force of Nature
+    force-of-nature-absorb: 自然之力 (吸收)
+    force-of-nature: 自然之力
     frozen-heart: 冰霜之心
     giant-s-belt: 巨人腰帶
     glacial-shroud: 冰川護甲
@@ -159,7 +159,7 @@ item:
     hexdrinker: 吸魔劍
     hextech-alternator: 海克斯科技發電機
     horizon-focus: 視界專注
-    iceborn-gauntlet: Iceborn Gauntlet
+    iceborn-gauntlet: 寒冰霸拳
     immortal-shieldbow-battle-furor: 不朽盾弓 (戰鬥狂怒)
     immortal-shieldbow: 不朽盾弓
     imperial-mandate-coordinated-fire: 帝王命令 (齊心火焰)
@@ -214,7 +214,7 @@ item:
     psychic-projector-conversion: 靈能投射器 (轉換)
     rabadon-s-deathcap-overkill-lv15: 死亡之帽 (狂弒 - lv15)
     rabadon-s-deathcap-overkill-lv1: 死亡之帽 (狂弒 - lv1)
-    randuin-s-omen: Randuin's Omen
+    randuin-s-omen: 蘭頓之兆
     recurve-bow: 反曲弓
     redemption: 贖罪神石
     relic-shield: 遺跡之盾
@@ -242,7 +242,7 @@ item:
     spectral-sickle-adaptive-ad: 幽魂之鐮 (適性 - 物理)
     spectral-sickle-adaptive-ap: 幽魂之鐮 (適性 - 魔法)
     spectre-s-cowl: 亡靈斗篷
-    spirit-visage: Spirit Visage
+    spirit-visage: 振奮盔甲
     staff-of-flowing-waters-rapids-lv15: 流水之杖 (激流 - lv15)
     staff-of-flowing-waters-rapids-lv1: 流水之杖 (激流 - lv1)
     staff-of-flowing-waters: 流水之杖
@@ -251,7 +251,7 @@ item:
     stinger: 刺針劍
     stormrazor: 狂暴利刃
     sundered-sky: 突破天際
-    sunfire-aegis: Sunfire Aegis
+    sunfire-aegis: 日炎聖盾
     surging-scales: 波濤鱗甲
     talisman-of-ascension-adaptive-ad-soulcast: '昇華護符 (適性: 物理, 鑄魂)'
     talisman-of-ascension-adaptive-ap-soulcast: '昇華護符 (適性: 魔法, 鑄魂)'
@@ -262,7 +262,7 @@ item:
     terminus-juxtaposition-lv1: 臨界點 (對比 - lv1)
     terminus: 臨界點
     the-collector: 蒐集者
-    thornmail: Thornmail
+    thornmail: 荊棘之甲
     titanic-hydra: 泰坦九頭蛇
     trinity-force: 三項之力
     trinity-force-valor-aa-melee: 三項之力 (勇猛 - 普攻 - 近戰)
@@ -271,10 +271,10 @@ item:
     trinity-force-valor-kill-range: 三項之力 (勇猛 - 擊殺 - 遠程)
     vampiric-scepter: 吸血鬼權杖
     warden-s-mail: 守望者鎧甲
-    warmog-s-armor: Warmog's Armor
+    warmog-s-armor: 好戰者鎧甲
     winged-moonplate: 飛翼月甲
-    winter-s-approach-awe-lv15-voli-1300-mp: Winter's Approach (威嚇 - lv15 Voli 1300 MP)
-    winter-s-approach-awe-lv1-voli-390-mp: Winter's Approach (威嚇 - lv1 Voli 390 MP)
+    winter-s-approach-awe-lv15-voli-1300-mp: 冬之降臨 (威嚇 - lv15 弗力貝爾 1300 魔力)
+    winter-s-approach-awe-lv1-voli-390-mp: 冬之降臨 (威嚇 - lv1 弗力貝爾 390 魔力)
     wit-s-end: 智慧末刃
     yordle-trap-catcher: 約德爾陷阱 (捕捉者)
     yordle-trap: 約德爾陷阱
@@ -284,7 +284,7 @@ item:
     zeal: 狂熱雙刀
     zeke-s-convergence: 錫柯的聚合之力
   passive:
-    absorb: Absorb
+    absorb: 吸收
     ardent: 熾灼
     assimilation: 同化
     awe: 威嚇
@@ -313,14 +313,14 @@ item:
     lifeline: 命脈
     magic-break: 魔力突破
     magic-fang: 魔牙
-    magic-needle: Magic Needle
+    magic-needle: 魔針
     mana-charge: 魔力補充
     momentum: 衝勁
     overkill: 狂弒
     rage: 暴虐
     rapids: 激流
     razor: 割裂
-    relentless: Relentless
+    relentless: 無情
     rising-dragon: 昇龍
     safeguard-poise: 蓄勢待發
     shadowwalk: 影步
@@ -331,7 +331,7 @@ item:
     spectral-waltz: 靈魂華爾茲
     spellweaving: 織法
     stab: 突刺
-    storm: Storm
+    storm: 暴風
     strike: 打擊
     thirst: Thirst
     valor: 勇猛
