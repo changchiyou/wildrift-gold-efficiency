@@ -1770,10 +1770,10 @@
     value: 40
   - type: Magic Resistance
     value: 40
-- amount: 142.93%
+- amount: 139.49%
   category: DEFENSE ITEMS
   cost: 2900
-  formula: (200*3.33+40*25.0+40*25.0+200.0*3.33+100.0*3.33+30*16.0)/2900
+  formula: (200*3.33+40*25.0+40*25.0+180.0*3.33+90.0*3.33+30*16.0)/2900
   image: https://wr-meta.com/uploads/posts/2023-03/1678401479_1mantle-of-the-twelfth-hour_11zon.webp
   name: Mantle of the Twelfth Hour (Lifeline)
   stats:
@@ -1786,13 +1786,13 @@
   - passive: Lifeline
     ratio: null
     type: Max Health
-    value: 200.0
-  - formula: 200*0.5
+    value: 180.0
+  - formula: 200*0.45
     passive: Lifeline
-    ratio: 0.5
+    ratio: 0.45
     ref_type: Max Health
     type: Max Health
-    value: 100.0
+    value: 90.0
   - passive: Lifeline
     type: Move Speed
     value: 30
