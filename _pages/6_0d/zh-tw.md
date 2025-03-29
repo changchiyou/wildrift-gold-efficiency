@@ -3,15 +3,18 @@ layout: gold_efficiency_v2
 
 title: 6.0d
 date: 2025/03/13
-description: Wild Rift Gold Efficiency of 6.0d (no updates for items)
+description: 激鬥峽谷 6.0d 裝備面板價值 (無更新)
 image: /assets/favicon512x512.png
 
-permalink: /6.0d/
-redirect_from: /
+permalink: /zh-tw/6.0d/
 latest_version: true
 
+lang: zh-tw
+
+sitemap: false
+
 data:
-    refer_url: https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-6-0d/
+    refer_url: https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-6-0d/
     refer_text: 6.0d
     items: items_6_0d
     stats: stats_6_0d

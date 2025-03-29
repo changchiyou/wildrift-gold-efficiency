@@ -1,0 +1,342 @@
+site:
+  title_suffix: 激鬥裝備面板價值
+  update_notify: "✨ 網站已更新，將會重整當前頁面套用新內容。"
+
+page:
+  title: 激鬥裝備面板價值
+
+nav:
+  comments: 💬 留言
+  physical-damage-items: 📌 物理裝備
+  magic-damage-items: 📌 魔法裝備
+  defence-items: 📌 防禦裝備
+  support-items: 📌 輔助裝備
+  boots: 📌 鞋子
+  mid-tier-items: 📌 中階裝備
+  basic-items: 📌 基礎裝備
+  sitemap: 🗺️ 站點地圖
+
+items-table:
+  item: 裝備
+  cost: 花費
+  stats: 屬性
+  amount: 價值
+
+outdated:
+  title: ⚠️ 警告
+  message: 您正在查看過時的版本。請點擊{1}這裡{2}重新導向到最新版本。
+
+hint:
+  title: 💡 使用說明
+  message1: "大多數情況下，{1}越高的面板價值%代表這件裝備更值得花費相同的金錢購買{2}。 然而，就像 {3} 中提到的："
+  message2: 計算出來的面板價值適合用來比較具有相似屬性的物品或評估屬性變動，而非嘗試拿來表現某項特定裝備在遊戲中的影響力。
+  list1: 發現文本、數據或圖片有錯誤時，可以到 {1}💬{2} 登入 Github 後留言通知我修改。
+  list2: 如果有關於新功能的點子或任何對於現在介面設計的改動建議，非常歡迎到 {1} 直接發 Issues/Pull Requests、在這個專案貢獻一份心力。
+
+filter:
+  title: 🔎 篩選器
+  inclusion_filter: 包含
+  exclusion_filter: 排除
+  base_price_modifier: 💰 基礎屬性價格
+  base_price:
+    column:
+      stat: 屬性
+      item: 裝備
+      cost: 價格
+      item_stats: 裝備屬性
+      stat_price: 屬性價格
+
+stat:
+  type:
+    Attack: 物理
+    Magic: 魔法
+    Defence: 防禦
+    Others: 其他
+  attr:
+    # Attack
+    attack-damage: 物理攻擊
+    percentage-critical-rate: "% 爆擊率"
+    percentage-attack-speed: "% 攻擊速度"
+    percentage-physical-vamp: "% 物理吸血"
+    armor-penetration: "物理穿透"
+    percentage-armor-penetration: "% 物理穿透"
+    # Magic
+    ability-power: 魔法攻擊
+    magic-penetration: 魔法穿透
+    percentage-magic-penetration: "% 魔法穿透"
+    ability-haste: 技能加速
+    max-mana: 最大魔力
+    percentage-mana-regeneration: "% 魔力回復"
+    percentage-omnivamp: "% 全能吸血"
+    # Defence
+    armor: 物理防禦
+    magic-resistance: 魔法防禦
+    max-health: 最大生命
+    percentage-health-regen: "% 生命回復"
+    percentage-heal-and-shield-strength: "% 治療和護盾量"
+    # Others
+    move-speed: 跑速
+    percentage-move-speed: "% 跑速"
+    unstable-passives'-stats: 非常駐被動屬性
+    update: 更新
+
+copyright:
+  title: "{1}版權所有©{2}"
+  message1: "我, {1}, {2}不擁有{3} 此網站上所有資源的版權，特別是圖片和遊戲數據。"
+  message2: "這個網站結合了來自 {1} 的裝備面板價值計算公式，和來自 {1} 和 {2} 的設計元素，同時包含了從 {3} 手動更新的遊戲數據.{4}"
+  message3: "因此，若想要使用這個網站上的圖片資源，應該另外找 {1} 和 {2} 的擁有者溝通申請使用權。"
+
+item:
+  name:
+    aether-wisp: 蒼穹神火
+    amaranth-s-twinguard: 雅瑪蘭守護像
+    amaranth-s-twinguard-endurance: 雅瑪蘭守護像 (堅毅)
+    amplifying-tome: 增幅典籍
+    ancient-coin: 賢者古幣
+    archangel-s-staff-awe-lv15-kass-1390-mp: 大天使之杖 (威嚇 - lv15 卡薩丁 1390 魔力)
+    archangel-s-staff-awe-lv1-kass-480-mp: 大天使之杖 (威嚇 - lv1 卡薩丁 480 魔力)
+    ardent-censer: 熾灼魔器
+    bami-s-cinder: 巴米灰燼
+    berserker-s-greaves: 狂戰士護脛
+    b-f-sword: 暴風之劍
+    black-cleaver: 黑色切割者
+    black-cleaver-rage-4stacks-melee: 黑色切割者 (暴虐 - 滿層 - 近戰)
+    black-cleaver-rage-4stacks-range: 黑色切割者 (暴虐 - 滿層 - 遠程)
+    black-cleaver-rage-basic-melee: 黑色切割者 (暴虐 - 基礎 - 近戰)
+    black-cleaver-rage-basic-range: 黑色切割者 (暴虐 - 基礎 - 遠程)
+    black-mist-scythe-adaptive-ad: '闇物之蓮 (適性: 物理)'
+    black-mist-scythe-adaptive-ad-soulcast: '闇霧之蓮 (適性: 物理, 鑄魂)'
+    black-mist-scythe-adaptive-ap: '闇霧之鎌 (適性: 魔法)'
+    black-mist-scythe-adaptive-ap-soulcast: '闇霧之鎌 (適性: 魔法, 鑄魂)'
+    blade-of-the-ruined-king: 殞落王者之劍
+    blasting-wand: 爆裂魔杖
+    bloodthirster-bloodsworn-lv15: 嗜血者 (血誓 - lv15)
+    bloodthirster-bloodsworn-lv1: 嗜血者 (血誓 - lv1)
+    bloodthirster: 嗜血者
+    boots-of-dynamism: 爆發之靴
+    boots-of-mana: 魔力之靴
+    boots-of-speed: 速度之靴
+    bramble-vest: 刺藤胸甲
+    brawler-s-gloves: 格鬥手套
+    bulwark-of-the-mountain-adaptive-ad-soulcast: '群山堡壘 (適性: 物理, 鑄魂)'
+    bulwark-of-the-mountain-adaptive-ap-soulcast: '群山堡壘 (適性: 魔法, 鑄魂)'
+    bulwark-of-the-mountain: 群山堡壘
+    catalyst-of-aeons: 催化魔方
+    caulfield-s-warhammer: 考菲爾德的戰錘
+    chain-vest: 鎖子甲
+    chempunk-chainsword: 生化龐克鏈鋸之劍
+    cloak-of-agility: 靈巧披風
+    cloth-armor: 布甲
+    cosmic-drive: 星河奔馳
+    cosmic-drive-spellweaving: 星河奔馳 (織法)
+    crown-of-the-shattered-queen: 殘破王后之冠
+    crown-of-the-shattered-queen-safeguard-poise: 殘破王后之冠 (蓄勢待發)
+    crystalline-reflector: 水晶反光杖
+    dagger: 短劍
+    dawnshroud: 黎明法衣
+    dead-man-s-plate: 死者肩甲
+    dead-man-s-plate-momentum: 死者肩甲 (衝勁)
+    death-s-dance: 死亡之舞
+    divine-sunderer: 聖裂之杖
+    duskblade-of-draktharr: 暮色黑刃
+    eclipse: 星蝕
+    edge-of-night: 夜色緣界
+    essence-reaver: 奪魄之鎌
+    executioner-s-calling: 死刑宣告
+    fiendish-codex: 惡魔法典
+    fimbulwinter-awe-lv15-voli-1300-mp: 芬布爾之冬 (威嚇 - lv15 弗力貝爾 1300 魔力)
+    fimbulwinter-awe-lv1-voli-390-mp: 芬布爾之冬 (威嚇 - lv1 弗力貝爾 390 魔力)
+    forbidden-idol: 禁忌之像
+    force-of-nature-absorb: 自然之力 (吸收)
+    force-of-nature: 自然之力
+    frozen-heart: 冰霜之心
+    giant-s-belt: 巨人腰帶
+    glacial-shroud: 冰川護甲
+    gluttonous-greaves: 貪婪護脛
+    guardian-angel: 守護天使
+    harmonic-echo: 和諧回音
+    haunting-guise: 幽魂面具
+    heartsteel: 雄心之鋼
+    hexdrinker: 吸魔劍
+    hextech-alternator: 海克斯科技發電機
+    horizon-focus: 視界專注
+    iceborn-gauntlet: 寒冰霸拳
+    immortal-shieldbow-battle-furor: 不朽盾弓 (戰鬥狂怒)
+    immortal-shieldbow: 不朽盾弓
+    imperial-mandate-coordinated-fire: 帝王命令 (齊心火焰)
+    imperial-mandate: 帝王命令
+    infinity-edge: 無盡之刃
+    infinity-orb: 無限寶珠
+    ionian-boots-of-lucidity: 愛歐尼亞之靴
+    jaurim-s-fist: 約瑞姆之拳
+    kaenic-rookern: 凱尼克欺瞞者
+    kindlegem: 燃燒寶石
+    kircheis-shard: 柯奇碎片
+    last-whisper: 最後耳語
+    liandry-s-torment: 黎安卓的折磨
+    lich-bane: 巫妖之禍
+    long-sword: 長劍
+    lost-chapter: 失落之章
+    luden-s-echo: 盧登回音
+    magnetic-blaster: 磁性雷射槍
+    manamune-awe-lv15-ez-1076-mana: 魔劍正宗 (威嚇 - lv15 伊澤瑞爾 1076 魔力)
+    manamune-awe-lv1-ez-390-mana: 魔劍正宗 (威嚇 - lv1 伊澤瑞爾 390 魔力)
+    mantle-of-the-twelfth-hour-lifeline: 午時斗篷 (命脈)
+    mantle-of-the-twelfth-hour: 午時斗篷
+    maw-of-malmortius: 魔提斯深淵
+    mejai-s-soulstealer-fear: 靈魂竊取者 (恐懼)
+    mejai-s-soulstealer: 靈魂竊取者
+    mercury-s-treads: 水星之靴
+    morellonomicon: 黑魔禁書
+    mortal-reminder: 致死宣告
+    muramana-awe-lv15-ez-1076-mana: 終極魔劍 (威嚇 - lv15 伊澤瑞爾 1076 魔力)
+    muramana-awe-lv1-ez-390-mana: 終極魔劍 (威嚇 - lv1 伊澤瑞爾 390 魔力)
+    nashor-s-talon-adaptive-ad: '納什之爪 (適性: 物理)'
+    nashor-s-talon-adaptive-ap: '納什之爪 (適性: 魔法)'
+    nashor-s-tooth-adaptive-ad: '納什之牙 (適性: 物理)'
+    nashor-s-tooth-adaptive-ap: '納什之牙 (適性: 魔法)'
+    navori-quickblades: 那歐疾刃
+    needlessly-large-rod: 巨型魔棒
+    negatron-cloak: 負極斗篷
+    noonquiver: 正午箭筒
+    null-magic-mantle: 抗魔斗篷
+    oblivion-orb: 遺忘寶珠
+    oceanid-s-trident: 水仙三叉戟
+    phage: 淨蝕之鎚
+    phage-rage-aa-melee: 淨蝕之鎚 (暴虐 - 普攻 - 近戰)
+    phage-rage-aa-range: 淨蝕之鎚 (暴虐 - 普攻 - 遠程)
+    phage-rage-kill-melee: 淨蝕之鎚 (暴虐 - 擊殺 - 近戰)
+    phage-rage-kill-range: 淨蝕之鎚 (暴虐 - 擊殺 - 遠程)
+    phantom-dancer: 幻影之舞
+    phantom-dancer-spectral-waltz: 幻影之舞 (靈魂華爾茲)
+    plated-steelcaps: 鍍板銅蓋
+    prophet-s-pendant: 先知墜飾
+    protector-s-vow: 保護者誓願
+    psychic-projector-conversion: 靈能投射器 (轉換)
+    rabadon-s-deathcap-overkill-lv15: 死亡之帽 (狂弒 - lv15)
+    rabadon-s-deathcap-overkill-lv1: 死亡之帽 (狂弒 - lv1)
+    randuin-s-omen: 蘭頓之兆
+    recurve-bow: 反曲弓
+    redemption: 贖罪神石
+    relic-shield: 遺跡之盾
+    riftmaker: 峽谷製造者
+    ring-of-revelation: 天啟戒指
+    rod-of-ages: 時光之杖
+    rod-of-ages-veteran: 時光之杖 (精熟)
+    ruby-crystal: 紅水晶
+    runaan-s-hurricane-adaptive-ad: '芮蘭颶風箭 (適性: 物理)'
+    runaan-s-hurricane-adaptive-ap: '芮蘭颶風箭 (適性: 魔法)'
+    rylai-s-crystal-scepter: 瑞萊的冰晶節杖
+    sapphire-crystal-mana-charge: 藍水晶 (魔力補充)
+    sapphire-crystal: 藍水晶
+    searing-crown: 熾灼之冠
+    seeker-s-armguard: 探索者護腕
+    seraph-s-embrace-awe-lv15-kass-1390-mp: 熾天使的擁抱 (威嚇 - lv15 Kass 1390 魔力)
+    seraph-s-embrace-awe-lv1-kass-480-mp: 熾天使的擁抱 (威嚇 - lv1 Kass 480 魔力)
+    serpent-s-fang: 巨蛇鋒牙
+    serrated-dirk: 殘暴之力
+    serylda-s-grudge: 席利妲咒怨
+    sheen: 閃耀劍
+    shimmering-spark: 光輝火花
+    solari-chargeblade: 日輪蓄力刃
+    spear-of-shojin: 精進之矛
+    spectral-sickle-adaptive-ad: 幽魂之鐮 (適性 - 物理)
+    spectral-sickle-adaptive-ap: 幽魂之鐮 (適性 - 魔法)
+    spectre-s-cowl: 亡靈斗篷
+    spirit-visage: 振奮盔甲
+    staff-of-flowing-waters-rapids-lv15: 流水之杖 (激流 - lv15)
+    staff-of-flowing-waters-rapids-lv1: 流水之杖 (激流 - lv1)
+    staff-of-flowing-waters: 流水之杖
+    sterak-s-gage-heavy-handed-lv15-ire-122-ad: 史特拉克手套 (重手重腳 - lv15 伊瑞莉雅 122 物理)
+    sterak-s-gage-heavy-handed-lv1-ire-58-ad: 史特拉克手套 (重手重腳 - lv1 伊瑞莉雅 58 物理)
+    stinger: 刺針劍
+    stormrazor: 狂暴利刃
+    sundered-sky: 突破天際
+    sunfire-aegis: 日炎聖盾
+    surging-scales: 波濤鱗甲
+    talisman-of-ascension-adaptive-ad-soulcast: '昇華護符 (適性: 物理, 鑄魂)'
+    talisman-of-ascension-adaptive-ap-soulcast: '昇華護符 (適性: 魔法, 鑄魂)'
+    talisman-of-ascension: 昇華護符
+    tear-of-the-goddess-mana-charge: 女神之淚 (魔力補充)
+    tear-of-the-goddess: 女神之淚
+    terminus-juxtaposition-lv15: 臨界點 (對比 - lv15)
+    terminus-juxtaposition-lv1: 臨界點 (對比 - lv1)
+    terminus: 臨界點
+    the-collector: 蒐集者
+    thornmail: 荊棘之甲
+    titanic-hydra: 泰坦九頭蛇
+    trinity-force: 三項之力
+    trinity-force-valor-aa-melee: 三項之力 (勇猛 - 普攻 - 近戰)
+    trinity-force-valor-aa-range: 三項之力 (勇猛 - 普攻 - 遠程)
+    trinity-force-valor-kill-melee: 三項之力 (勇猛 - 擊殺 - 近戰)
+    trinity-force-valor-kill-range: 三項之力 (勇猛 - 擊殺 - 遠程)
+    vampiric-scepter: 吸血鬼權杖
+    warden-s-mail: 守望者鎧甲
+    warmog-s-armor: 好戰者鎧甲
+    winged-moonplate: 飛翼月甲
+    winter-s-approach-awe-lv15-voli-1300-mp: 冬之降臨 (威嚇 - lv15 弗力貝爾 1300 魔力)
+    winter-s-approach-awe-lv1-voli-390-mp: 冬之降臨 (威嚇 - lv1 弗力貝爾 390 魔力)
+    wit-s-end: 智慧末刃
+    yordle-trap-catcher: 約德爾陷阱 (捕捉者)
+    yordle-trap: 約德爾陷阱
+    youmuu-s-ghostblade-haste: 妖夢鬼刀 (幽魂疾速)
+    youmuu-s-ghostblade-momentum: 妖夢鬼刀 (衝勁)
+    youmuu-s-ghostblade: 妖夢鬼刀
+    zeal: 狂熱雙刀
+    zeke-s-convergence: 錫柯的聚合之力
+  passive:
+    absorb: 吸收
+    ardent: 熾灼
+    assimilation: 同化
+    awe: 威嚇
+    balanced: 均衡
+    bane: 災禍
+    battle-furor: 戰鬥狂怒
+    bloodsworn: 血誓
+    bloody: 血腥
+    catcher: 捕捉者
+    colossus: 龐然巨物
+    conversion: 轉換
+    coordinated-fire: 齊心火焰
+    destiny: 命運
+    doomsayer: 末日預言
+    endurance: 堅毅
+    fear: 恐懼
+    fervor: 狂熱
+    flight: 飛行
+    gouge: 深掘
+    haste: 幽魂疾速
+    heavy-handed: 重手重腳
+    hyperdrive: 超速驅動
+    juxtaposition: 對比
+    killer: 殺手
+    last-whisper: 最後耳語
+    lifeline: 命脈
+    magic-break: 魔力突破
+    magic-fang: 魔牙
+    magic-needle: 魔針
+    mana-charge: 魔力補充
+    momentum: 衝勁
+    overkill: 狂弒
+    rage: 暴虐
+    rapids: 激流
+    razor: 割裂
+    relentless: 無情
+    rising-dragon: 昇龍
+    safeguard-poise: 蓄勢待發
+    shadowwalk: 影步
+    sharp: 銳利
+    slice: 切擊
+    soulcast: 鑄魂
+    soul-hunt: Soul Hunt
+    spectral-waltz: 靈魂華爾茲
+    spellweaving: 織法
+    stab: 突刺
+    storm: 暴風
+    strike: 打擊
+    thirst: Thirst
+    valor: 勇猛
+    versatile: 萬能
+    veteran: 精熟
+    wind-s-favor: 風之加護
+    wisp: 神火

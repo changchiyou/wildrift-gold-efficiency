@@ -1,6 +1,1 @@
-{% if include.text %}
-    {% assign text = "-" | append: include.text | append: "-yellow" %}
-{% else %}
-    {% assign text = "-gray" %}
-{% endif %}
-<a href="{{ include.href }}" target="_blank"><img class="badge" src="https://custom-icon-badges.demolab.com/badge/WR_META{{ text }}.svg?logo=wrmeta"></a>
+<a href="{{ include.href }}" target="_blank" class="svg-badge">{% include WR_META-gray.svg %}</a>

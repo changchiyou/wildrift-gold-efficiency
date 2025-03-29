@@ -67,7 +67,7 @@ class ItemData:
         bases = {"first": {}, "second": {}}
 
         for stat in stats:
-            if "base_type" in stats[stat]:
+            if "base_type" in stats[stat] and stats[stat]["base_type"] not in ["exclude"]:
                 bases[stats[stat]["base_type"]][stat] = stats[stat]["base_item"]
 
         return bases

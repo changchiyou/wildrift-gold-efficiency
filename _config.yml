@@ -39,6 +39,12 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+languages: ["en-us", "zh-tw"]
+default_lang: "en-us"
+languageNames:
+  en-us: English(US)
+  zh-tw: 繁體中文
+
 feed:
   posts_limit: 10
   path: /feed.xml
@@ -65,6 +71,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - data.py
+  - copy.sh
   - requirements.txt
   - vendor
   - .trunk/

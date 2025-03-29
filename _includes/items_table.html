@@ -13,10 +13,10 @@
     </colgroup>
     <thead>
       <tr>
-        <th>Item</th>
-        <th data-type="number" data-order="non-order" title="non-order">Cost</th>
-        <th>Stats</th>
-        <th data-type="percentage" data-order="non-order" title="non-order">Amount</th>
+        <th>{% include i18n.html token="items-table.item" %}</th>
+        <th column="cost" data-type="number" data-order="non-order" title="non-order">{% include i18n.html token="items-table.cost" %}</th>
+        <th>{% include i18n.html token="items-table.stats" %}</th>
+        <th column="amount" data-type="percentage" data-order="non-order" title="non-order">{% include i18n.html token="items-table.amount" %}</th>
       </tr>
     </thead>
     <tbody>

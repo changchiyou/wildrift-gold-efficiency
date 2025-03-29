@@ -1,9 +1,9 @@
 <h3 id="stat-filters" style="display: flex; justify-content: space-between; align-items: center;">
-    <span>🔎 Stat Filters <a href="#stat-filters">#</a></span>
+    <span>{% include i18n.html token="filter.title" %} <a href="#stat-filters">#</a></span>
     <button id="clear-all" style="display:none;" class="clear-all-button">Clear All</button>
 </h3>
 
-<button class="collapsible" id="include-filters"><div class="checkmark"></div> Include: <span id="included-icons"></span></button>
+<button class="collapsible" id="include-filters"><div class="checkmark"></div> {% include i18n.html token="filter.inclusion_filter" %} <span id="included-icons"></span></button>
 <div class="item-filter-wrap">
     {% assign stats = site.data.[include.stats] %}
 
@@ -21,7 +21,8 @@
 
     {% for type in types %}
         <fieldset class="item-filter">
-            <label class="title">{{ type }}</label>
+            {% capture token %}stat.type.{{ type }}{% endcapture %}
+            <label class="title">{% include i18n.html token=token %}</label>
             {% for stat in stats %}
                 {% if stat[1].type != type %}
                     {% continue %}
@@ -30,14 +31,15 @@
                 <label for="include-{{ stat_id }}">
                     <input type="checkbox" name='{{ type }}' id="include-{{ stat_id }}" value="include-{{ stat_id }}" class="filter include-filter">
                     {% assign stat_name = stat[0] %}
-                    <span><span class="target-stat in-filter">{% include stat_image.html type=stat_name stats=page.data.stats classes="in-filter" %}</span> {{ stat_name }}</span>
+                    {% capture token %}stat.attr.{{ stat_id }}{% endcapture %}
+                    <span><span class="target-stat in-filter">{% include stat_image.html type=stat_name stats=page.data.stats classes="in-filter" %}</span> {% include i18n.html token=token %}</span>
                 </label>
             {% endfor %}
         </fieldset>
     {% endfor %}
 </div>
 <br>
-<button class="collapsible" id="exclude-filters"><div class="crossmark"></div> Exclude: <span id="excluded-icons"></span></button>
+<button class="collapsible" id="exclude-filters"><div class="crossmark"></div> {% include i18n.html token="filter.exclusion_filter" %} <span id="excluded-icons"></span></button>
 <div class="item-filter-wrap">
     {% assign stats = site.data.[include.stats] %}
 
@@ -55,7 +57,8 @@
 
     {% for type in types %}
         <fieldset class="item-filter">
-            <label class="title">{{ type }}</label>
+            {% capture token %}stat.type.{{ type }}{% endcapture %}
+            <label class="title">{% include i18n.html token=token %}</label>
             {% for stat in stats %}
                 {% if stat[1].type != type %}
                     {% continue %}
@@ -64,14 +67,15 @@
                 <label for="exclude-{{ stat_id }}">
                     <input type="checkbox" name='{{ type }}' id="exclude-{{ stat_id }}" value="exclude-{{ stat_id }}" class="filter exclude-filter">
                     {% assign stat_name = stat[0] %}
-                    <span><span class="target-stat in-filter">{% include stat_image.html type=stat_name stats=page.data.stats classes="in-filter" %}</span> {{ stat_name }}</span>
+                    {% capture token %}stat.attr.{{ stat_id }}{% endcapture %}
+                    <span><span class="target-stat in-filter">{% include stat_image.html type=stat_name stats=page.data.stats classes="in-filter" %}</span> {% include i18n.html token=token %}</span>
                 </label>
             {% endfor %}
         </fieldset>
     {% endfor %}
 </div>
 <br>
-<button class="collapsible" id="base-price">💰 Stats Prices</button>
+<button class="collapsible" id="base-price">{% include i18n.html token="filter.base_price_modifier" %}</button>
 <div class="base-price-wrap">
     <table>
         <colgroup>
@@ -83,11 +87,11 @@
         </colgroup>
         <thead>
         <tr>
-            <th>Stat</th>
-            <th>Item</th>
-            <th>Cost</th>
-            <th>Item Stats</th>
-            <th>Stat Price</th>
+            <th class="bases-stat-column {{ page.lang }}">{% include i18n.html token="filter.base_price.column.stat" %}</th>
+            <th class="bases-stat-column {{ page.lang }}">{% include i18n.html token="filter.base_price.column.item" %}</th>
+            <th class="bases-stat-column {{ page.lang }}">{% include i18n.html token="filter.base_price.column.cost" %}</th>
+            <th class="bases-stat-column {{ page.lang }}">{% include i18n.html token="filter.base_price.column.item_stats" %}</th>
+            <th class="bases-stat-column {{ page.lang }}">{% include i18n.html token="filter.base_price.column.stat_price" %}</th>
         </tr>
         </thead>
         <tbody>
@@ -101,7 +105,9 @@
                             <div class="tooltip item stat">
                                 {% include stat_image.html type=base.type stats=include.stats %}
                                 <span class="tooltiptext">
-                                    {{ base.type }}
+                                    {% assign stat_id = base.type | downcase | replace: " ", "-" | replace: "%", "percentage" %}
+                                    {% capture token %}stat.attr.{{ stat_id }}{% endcapture %}
+                                    {% include i18n.html token=token %}
                                 </span>
                             </div>
                         </td>
@@ -109,12 +115,14 @@
                             <p class="item-index" style="display: none"></p>
                             <div>
                                 <img class="item-icon" loading="lazy" src="{{ item.image }}" style="margin-right: 5px;" />
-                                {% assign item_name = item.name | split: '(' %}
-                                {% if item_name.size == 2 %}
-                                    {{ item_name[0] }}
-                                    <p class="item-note">{{ item_name[1] | remove: ')' }}</p>
+                                {% capture token %}item.name.{% include trans.html text=item.name %}{% endcapture %}
+                                {% capture item_name %}{% include i18n.html token=token %}{% endcapture %}
+                                {% assign item_name_list = item_name | split: '(' %}
+                                {% if item_name_list.size == 2 %}
+                                    {{ item_name_list[0] }}
+                                    <p class="item-note">{{ item_name_list[1] | remove: ')' }}</p>
                                 {% else %}
-                                    {{ item.name }}
+                                    {{ item_name }}
                                 {% endif %}
                             </div>
                         </td>
@@ -134,7 +142,8 @@
                                         <div class="tooltip stats">
                                             {{- stat.value -}}{% include stat_image.html type=stat.type stats=include.stats %}
                                             <span class="tooltiptext">
-                                                {{ stat.passive }}
+                                                {% capture token %}item.passive.{% include trans.html text=stat.passive %}{% endcapture %}
+                                                {% include i18n.html token=token %}
                                             </span>
                                         </div>
                                     {% else %}
@@ -162,7 +171,9 @@
                         {% assign stat_name = stat[0] %}
                         {% include stat_image.html type=stat_name stats=include.stats %}
                         <span class="tooltiptext">
-                            {{ stat_name }}
+                            {% assign stat_id = stat_name | downcase | replace: " ", "-" | replace: "%", "percentage" %}
+                            {% capture token %}stat.attr.{{ stat_id }}{% endcapture %}
+                            {% include i18n.html token=token %}
                         </span>
                     </div>
                 </td>

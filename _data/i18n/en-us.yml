@@ -1,0 +1,342 @@
+site:
+  title_suffix: Wild Rift Gold Efficiency
+  update_notify: "✨ The site has been updated with new content. The page will now reload to apply these updates."
+
+page:
+  title: WR Gold Efficiency
+
+nav:
+  comments: 💬 Comments
+  physical-damage-items: 📌 Physical Damage Items
+  magic-damage-items: 📌 Magic Damage Items
+  defence-items: 📌 Defence Items
+  support-items: 📌 Support Items
+  boots: 📌 Boots
+  mid-tier-items: 📌 Mid-tier Items
+  basic-items: 📌 Basic Items
+  sitemap: 🗺️ Sitemap
+
+items-table:
+  item: Item
+  cost: Cost
+  stats: Stats
+  amount: Amount
+
+outdated:
+  title: ⚠️ Warning
+  message: You are viewing an outdated version. Please click {1}here{2} to redirect to the latest version.
+
+hint:
+  title: 💡 Instructions
+  message1: "In most cases, {1}a higher calculated Gold Efficiency percentage (%) indicates better value{2}. However, as However, as stated in the {3} :" 
+  message2: "This calculated value doesn't fully represent an item's in-game impact. It's best for comparing items with similar attributes or assessing attribute changes."
+  list1: "Comment at {1}💬{2} to correct any item data, calculations, or other inaccuracies that you find and that need updating."
+  list2: "If you have ideas for new features or improvements to the design and layout, please feel free to submit a PR at {1}."
+
+filter:
+  title: 🔎 Stat Filters
+  inclusion_filter: Inclusion
+  exclusion_filter: Exclusion
+  base_price_modifier: 💰 Stat Price
+  base_price:
+    column:
+      stat: Stat
+      item: Item
+      cost: Cost
+      item_stats: Item Stats
+      stat_price: Stat Price
+
+stat:
+  type:
+    Attack: Physical
+    Magic: Magic
+    Defence: Defence
+    Others: Others
+  attr:
+    # Attack
+    attack-damage: Attack Damage
+    percentage-critical-rate: "% Cricital Rate"
+    percentage-attack-speed: "% Attack Speed"
+    percentage-physical-vamp: "% Physical Vamp"
+    armor-penetration: "Armor Penetration"
+    percentage-armor-penetration: "% Armor Penetration"
+    # Magic
+    ability-power: Ability Power
+    magic-penetration: Magic Penetration
+    percentage-magic-penetration: "% Magic Penetration"
+    ability-haste: Ability Haste
+    max-mana: Max Mana
+    percentage-mana-regeneration: "% Mana Regeneration"
+    percentage-omnivamp: "% Omnivamp"
+    # Defence
+    armor: Armor
+    magic-resistance: Magic Resistance
+    max-health: Max Health
+    percentage-health-regen: "% Health Regen"
+    percentage-heal-and-shield-strength: "% Heal and shield strength"
+    # Others
+    move-speed: Move Speed
+    percentage-move-speed: "% Move Speed"
+    unstable-passives'-stats: Unstable Passives' Stats
+    update: Update
+
+copyright:
+  title: "{1}Copyright©{2}"
+  message1: "I, {1}, {2}DO NOT{3} own the copyrights of all resources on this website, especially images and data."
+  message2: "This website is a combination of the gold efficiency calculation formula from {1} with the design elements from both {1} and {2} featuring manually updated item data from {3}.{4}"
+  message3: "Therefore, if you wish to use the image resources on this website, you should contact the owners of {1} and {2} to apply for permission."
+
+item:
+  name:
+    aether-wisp: Aether Wisp
+    amaranth-s-twinguard: Amaranth's Twinguard
+    amaranth-s-twinguard-endurance: Amaranth's Twinguard (Endurance)
+    amplifying-tome: Amplifying Tome
+    ancient-coin: Ancient Coin
+    archangel-s-staff-awe-lv15-kass-1390-mp: Archangel's Staff (Awe - lv15 Kass 1390 MP)
+    archangel-s-staff-awe-lv1-kass-480-mp: Archangel's Staff (Awe - lv1 Kass 480 MP)
+    ardent-censer: Ardent Censer
+    bami-s-cinder: Bami's Cinder
+    berserker-s-greaves: Berserker's Greaves
+    b-f-sword: B. F. Sword
+    black-cleaver: Black Cleaver
+    black-cleaver-rage-4stacks-melee: Black Cleaver (Rage - 4Stacks - Melee)
+    black-cleaver-rage-4stacks-range: Black Cleaver (Rage - 4Stacks - Range)
+    black-cleaver-rage-basic-melee: Black Cleaver (Rage - basic - Melee)
+    black-cleaver-rage-basic-range: Black Cleaver (Rage - basic - Range)
+    black-mist-scythe-adaptive-ad: 'Black Mist Scythe (Adaptive: AD)'
+    black-mist-scythe-adaptive-ad-soulcast: 'Black Mist Scythe (Adaptive: AD, Soulcast)'
+    black-mist-scythe-adaptive-ap: 'Black Mist Scythe (Adaptive: AP)'
+    black-mist-scythe-adaptive-ap-soulcast: 'Black Mist Scythe (Adaptive: AP, Soulcast)'
+    blade-of-the-ruined-king: Blade of the Ruined King
+    blasting-wand: Blasting Wand
+    bloodthirster-bloodsworn-lv15: Bloodthirster (Bloodsworn - lv15)
+    bloodthirster-bloodsworn-lv1: Bloodthirster (Bloodsworn - lv1)
+    bloodthirster: Bloodthirster
+    boots-of-dynamism: Boots of Dynamism
+    boots-of-mana: Boots of Mana
+    boots-of-speed: Boots of Speed
+    bramble-vest: Bramble Vest
+    brawler-s-gloves: Brawler's Gloves
+    bulwark-of-the-mountain-adaptive-ad-soulcast: 'Bulwark of the Mountain (Adaptive: AD, Soulcast)'
+    bulwark-of-the-mountain-adaptive-ap-soulcast: 'Bulwark of the Mountain (Adaptive: AP, Soulcast)'
+    bulwark-of-the-mountain: Bulwark of the Mountain
+    catalyst-of-aeons: Catalyst of Aeons
+    caulfield-s-warhammer: Caulfield's Warhammer
+    chain-vest: Chain Vest
+    chempunk-chainsword: Chempunk Chainsword
+    cloak-of-agility: Cloak of Agility
+    cloth-armor: Cloth Armor
+    cosmic-drive: Cosmic Drive
+    cosmic-drive-spellweaving: Cosmic Drive (Spellweaving)
+    crown-of-the-shattered-queen: Crown of the Shattered Queen
+    crown-of-the-shattered-queen-safeguard-poise: Crown of the Shattered Queen (Safeguard & Poise)
+    crystalline-reflector: Crystalline Reflector
+    dagger: Dagger
+    dawnshroud: Dawnshroud
+    dead-man-s-plate: Dead Man's Plate
+    dead-man-s-plate-momentum: Dead Man's Plate (Momentum)
+    death-s-dance: Death's Dance
+    divine-sunderer: Divine Sunderer
+    duskblade-of-draktharr: Duskblade of Draktharr
+    eclipse: Eclipse
+    edge-of-night: Edge of Night
+    essence-reaver: Essence Reaver
+    executioner-s-calling: Executioner's Calling
+    fiendish-codex: Fiendish Codex
+    fimbulwinter-awe-lv15-voli-1300-mp: Fimbulwinter (Awe - lv15 Voli 1300 MP)
+    fimbulwinter-awe-lv1-voli-390-mp: Fimbulwinter (Awe - lv1 Voli 390 MP)
+    forbidden-idol: Forbidden Idol
+    force-of-nature-absorb: Force of Nature (Absorb)
+    force-of-nature: Force of Nature
+    frozen-heart: Frozen Heart
+    giant-s-belt: Giant's Belt
+    glacial-shroud: Glacial Shroud
+    gluttonous-greaves: Gluttonous Greaves
+    guardian-angel: Guardian Angel
+    harmonic-echo: Harmonic Echo
+    haunting-guise: Haunting Guise
+    heartsteel: Heartsteel
+    hexdrinker: Hexdrinker
+    hextech-alternator: Hextech Alternator
+    horizon-focus: Horizon Focus
+    iceborn-gauntlet: Iceborn Gauntlet
+    immortal-shieldbow-battle-furor: Immortal Shieldbow (Battle Furor)
+    immortal-shieldbow: Immortal Shieldbow
+    imperial-mandate-coordinated-fire: Imperial Mandate (Coordinated Fire)
+    imperial-mandate: Imperial Mandate
+    infinity-edge: Infinity Edge
+    infinity-orb: Infinity Orb
+    ionian-boots-of-lucidity: Ionian Boots of Lucidity
+    jaurim-s-fist: Jaurim's Fist
+    kaenic-rookern: Kaenic Rookern
+    kindlegem: Kindlegem
+    kircheis-shard: Kircheis Shard
+    last-whisper: Last Whisper
+    liandry-s-torment: Liandry's Torment
+    lich-bane: Lich Bane
+    long-sword: Long Sword
+    lost-chapter: Lost Chapter
+    luden-s-echo: Luden's Echo
+    magnetic-blaster: Magnetic Blaster
+    manamune-awe-lv15-ez-1076-mana: Manamune (Awe - lv15 EZ 1076 Mana)
+    manamune-awe-lv1-ez-390-mana: Manamune (Awe - lv1 EZ 390 Mana)
+    mantle-of-the-twelfth-hour-lifeline: Mantle of the Twelfth Hour (Lifeline)
+    mantle-of-the-twelfth-hour: Mantle of the Twelfth Hour
+    maw-of-malmortius: Maw of Malmortius
+    mejai-s-soulstealer-fear: Mejai's Soulstealer (Fear)
+    mejai-s-soulstealer: Mejai's Soulstealer
+    mercury-s-treads: Mercury's Treads
+    morellonomicon: Morellonomicon
+    mortal-reminder: Mortal Reminder
+    muramana-awe-lv15-ez-1076-mana: Muramana (Awe - lv15 EZ 1076 Mana)
+    muramana-awe-lv1-ez-390-mana: Muramana (Awe - lv1 EZ 390 Mana)
+    nashor-s-talon-adaptive-ad: 'Nashor''s Talon (Adaptive: AD)'
+    nashor-s-talon-adaptive-ap: 'Nashor''s Talon (Adaptive: AP)'
+    nashor-s-tooth-adaptive-ad: 'Nashor''s Tooth (Adaptive: AD)'
+    nashor-s-tooth-adaptive-ap: 'Nashor''s Tooth (Adaptive: AP)'
+    navori-quickblades: Navori Quickblades
+    needlessly-large-rod: Needlessly Large Rod
+    negatron-cloak: Negatron Cloak
+    noonquiver: Noonquiver
+    null-magic-mantle: Null-Magic Mantle
+    oblivion-orb: Oblivion Orb
+    oceanid-s-trident: Oceanid's Trident
+    phage: Phage
+    phage-rage-aa-melee: Phage (Rage - AA - Melee)
+    phage-rage-aa-range: Phage (Rage - AA - Range)
+    phage-rage-kill-melee: Phage (Rage - Kill - Melee)
+    phage-rage-kill-range: Phage (Rage - Kill - Range)
+    phantom-dancer: Phantom Dancer
+    phantom-dancer-spectral-waltz: Phantom Dancer (Spectral Waltz)
+    plated-steelcaps: Plated Steelcaps
+    prophet-s-pendant: Prophet's Pendant
+    protector-s-vow: Protector's Vow
+    psychic-projector-conversion: Psychic Projector (Conversion)
+    rabadon-s-deathcap-overkill-lv15: Rabadon's Deathcap (Overkill - lv15)
+    rabadon-s-deathcap-overkill-lv1: Rabadon's Deathcap (Overkill - lv1)
+    randuin-s-omen: Randuin's Omen
+    recurve-bow: Recurve Bow
+    redemption: Redemption
+    relic-shield: Relic Shield
+    riftmaker: Riftmaker
+    ring-of-revelation: Ring of Revelation
+    rod-of-ages: Rod of Ages
+    rod-of-ages-veteran: Rod of Ages (Veteran)
+    ruby-crystal: Ruby Crystal
+    runaan-s-hurricane-adaptive-ad: 'Runaan''s Hurricane (Adaptive: AD)'
+    runaan-s-hurricane-adaptive-ap: 'Runaan''s Hurricane (Adaptive: AP)'
+    rylai-s-crystal-scepter: Rylai's Crystal Scepter
+    sapphire-crystal-mana-charge: Sapphire Crystal (Mana Charge)
+    sapphire-crystal: Sapphire Crystal
+    searing-crown: Searing Crown
+    seeker-s-armguard: Seeker's Armguard
+    seraph-s-embrace-awe-lv15-kass-1390-mp: Seraph's Embrace (Awe - lv15 Kass 1390 MP)
+    seraph-s-embrace-awe-lv1-kass-480-mp: Seraph's Embrace (Awe - lv1 Kass 480 MP)
+    serpent-s-fang: Serpent's Fang
+    serrated-dirk: Serrated Dirk
+    serylda-s-grudge: Serylda's Grudge
+    sheen: Sheen
+    shimmering-spark: Shimmering Spark
+    solari-chargeblade: Solari Chargeblade
+    spear-of-shojin: Spear of Shojin
+    spectral-sickle-adaptive-ad: Spectral Sickle (Adaptive - AD)
+    spectral-sickle-adaptive-ap: Spectral Sickle (Adaptive - AP)
+    spectre-s-cowl: Spectre's Cowl
+    spirit-visage: Spirit Visage
+    staff-of-flowing-waters-rapids-lv15: Staff of Flowing Waters (Rapids - lv15)
+    staff-of-flowing-waters-rapids-lv1: Staff of Flowing Waters (Rapids - lv1)
+    staff-of-flowing-waters: Staff of Flowing Waters
+    sterak-s-gage-heavy-handed-lv15-ire-122-ad: Sterak's Gage (Heavy Handed - lv15 IRE 122 AD)
+    sterak-s-gage-heavy-handed-lv1-ire-58-ad: Sterak's Gage (Heavy Handed - lv1 IRE 58 AD)
+    stinger: Stinger
+    stormrazor: Stormrazor
+    sundered-sky: Sundered Sky
+    sunfire-aegis: Sunfire Aegis
+    surging-scales: Surging Scales
+    talisman-of-ascension-adaptive-ad-soulcast: 'Talisman of Ascension (Adaptive: AD, Soulcast)'
+    talisman-of-ascension-adaptive-ap-soulcast: 'Talisman of Ascension (Adaptive: AP, Soulcast)'
+    talisman-of-ascension: Talisman of Ascension
+    tear-of-the-goddess-mana-charge: Tear of the Goddess (Mana Charge)
+    tear-of-the-goddess: Tear of the Goddess
+    terminus-juxtaposition-lv15: Terminus (Juxtaposition - lv15)
+    terminus-juxtaposition-lv1: Terminus (Juxtaposition - lv1)
+    terminus: Terminus
+    the-collector: The Collector
+    thornmail: Thornmail
+    titanic-hydra: Titanic Hydra
+    trinity-force: Trinity Force
+    trinity-force-valor-aa-melee: Trinity Force (Valor - AA - Melee)
+    trinity-force-valor-aa-range: Trinity Force (Valor - AA - Range)
+    trinity-force-valor-kill-melee: Trinity Force (Valor - Kill - Melee)
+    trinity-force-valor-kill-range: Trinity Force (Valor - Kill - Range)
+    vampiric-scepter: Vampiric Scepter
+    warden-s-mail: Warden's Mail
+    warmog-s-armor: Warmog's Armor
+    winged-moonplate: Winged Moonplate
+    winter-s-approach-awe-lv15-voli-1300-mp: Winter's Approach (Awe - lv15 Voli 1300 MP)
+    winter-s-approach-awe-lv1-voli-390-mp: Winter's Approach (Awe - lv1 Voli 390 MP)
+    wit-s-end: Wit's End
+    yordle-trap-catcher: Yordle Trap (Catcher)
+    yordle-trap: Yordle Trap
+    youmuu-s-ghostblade-haste: Youmuu's Ghostblade (Haste)
+    youmuu-s-ghostblade-momentum: Youmuu's Ghostblade (Momentum)
+    youmuu-s-ghostblade: Youmuu's Ghostblade
+    zeal: Zeal
+    zeke-s-convergence: Zeke's Convergence
+  passive:
+    absorb: Absorb
+    ardent: Ardent
+    assimilation: Assimilation
+    awe: Awe
+    balanced: Balanced
+    bane: Bane
+    battle-furor: Battle Furor
+    bloodsworn: Bloodsworn
+    bloody: Bloody
+    catcher: Catcher
+    colossus: Colossus
+    conversion: Conversion
+    coordinated-fire: Coordinated Fire
+    destiny: Destiny
+    doomsayer: Doomsayer
+    endurance: Endurance
+    fear: Fear
+    fervor: Fervor
+    flight: Flight
+    gouge: Gouge
+    haste: Haste
+    heavy-handed: Heavy Handed
+    hyperdrive: Hyperdrive
+    juxtaposition: Juxtaposition
+    killer: Killer
+    last-whisper: Last Whisper
+    lifeline: Lifeline
+    magic-break: Magic Break
+    magic-fang: Magic Fang
+    magic-needle: Magic Needle
+    mana-charge: Mana Charge
+    momentum: Momentum
+    overkill: Overkill
+    rage: Rage
+    rapids: Rapids
+    razor: Razor
+    relentless: Relentless
+    rising-dragon: Rising Dragon
+    safeguard-poise: Safeguard & Poise
+    shadowwalk: Shadowwalk
+    sharp: Sharp
+    slice: Slice
+    soulcast: Soulcast
+    soul-hunt: Soul Hunt
+    spectral-waltz: Spectral Waltz
+    spellweaving: Spellweaving
+    stab: Stab
+    storm: Storm
+    strike: Strike
+    thirst: Thirst
+    valor: Valor
+    versatile: Versatile
+    veteran: Veteran
+    wind-s-favor: Wind's Favor
+    wisp: Wisp

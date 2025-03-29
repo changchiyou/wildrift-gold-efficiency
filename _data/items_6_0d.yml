@@ -1146,11 +1146,11 @@
     type: Ability Power
     value: 77.7
 - amount: 104.16%
-  category: MAGIC DAMAGE ITEMS
+  category: MAGIC DAMAGE ITEMS, SUPPORT ITEMS
   cost: 2800
   formula: (250*3.33+35*20.0+20*40.0+5*50.0+10*33.4)/2800
   image: https://wr-meta.com/uploads/posts/2021-03/1616983242_3504.png
-  name: Ardent Censer, SUPPORT ITEMS
+  name: Ardent Censer
   stats:
   - type: Max Health
     value: 250
@@ -1180,24 +1180,6 @@
     value: 10
   - type: '% Heal and shield strength'
     value: 10
-- amount: 103.31%
-  category: MAGIC DAMAGE ITEMS
-  cost: 3000
-  formula: (150*3.33+65*20.0+7*0+20*40.0+15*33.33)/3000
-  image: https://wiki.leagueoflegends.com/en-us/images/Mejai%27s_Soulstealer_item.png
-  name: Soulstealer
-  stats:
-  - type: Max Health
-    value: 150
-  - type: Ability Power
-    value: 65
-  - type: '% Magic Penetration'
-    value: 7
-  - type: Ability Haste
-    value: 20
-  - passive: Soul Hunt
-    type: Magic Penetration
-    value: 15
 - amount: 84.48%
   category: MAGIC DAMAGE ITEMS
   cost: 2900
@@ -1770,10 +1752,10 @@
     value: 40
   - type: Magic Resistance
     value: 40
-- amount: 142.93%
+- amount: 139.49%
   category: DEFENSE ITEMS
   cost: 2900
-  formula: (200*3.33+40*25.0+40*25.0+200.0*3.33+100.0*3.33+30*16.0)/2900
+  formula: (200*3.33+40*25.0+40*25.0+180.0*3.33+90.0*3.33+30*16.0)/2900
   image: https://wr-meta.com/uploads/posts/2023-03/1678401479_1mantle-of-the-twelfth-hour_11zon.webp
   name: Mantle of the Twelfth Hour (Lifeline)
   stats:
@@ -1786,13 +1768,13 @@
   - passive: Lifeline
     ratio: null
     type: Max Health
-    value: 200.0
-  - formula: 200*0.5
+    value: 180.0
+  - formula: 200*0.45
     passive: Lifeline
-    ratio: 0.5
+    ratio: 0.45
     ref_type: Max Health
     type: Max Health
-    value: 100.0
+    value: 90.0
   - passive: Lifeline
     type: Move Speed
     value: 30

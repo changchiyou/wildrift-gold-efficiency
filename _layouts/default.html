@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
-<script src="{{ "/assets/js/pwa-1.0.js" | relative_url }}"></script>
+<script>
+  window.onload = function () {
+    var script = document.createElement('script');
+    var firstScript = document.getElementsByTagName('script')[0];
+    script.async = true;
+    script.src = "{{'sw-register.js'|relative_url}}?v=" + Date.now();
+    firstScript.parentNode.insertBefore(script, firstScript);
+  };
+  window.addEventListener("sw.update", function() {
+    alert("{% include i18n.html token='site.update_notify' %}");
+    window.location.reload(true);
+  });
+</script>
   {%- include head.html -%}
 
   <body>

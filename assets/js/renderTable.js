@@ -25,7 +25,7 @@ function renderRowIndexs() {
 
         var data_order = 'non-order'
         var costAmountCols = Array.from(table.querySelectorAll("th")).filter(function(th) {
-            return th.textContent.trim() === 'Cost' || th.textContent.trim() === 'Amount';
+            return th.getAttribute('column') === 'cost' || th.getAttribute('column') === 'amount';
         });
         costAmountCols.forEach(function(col) {
             if (col.getAttribute('data-order') === 'ascending') {

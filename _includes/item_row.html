@@ -33,12 +33,14 @@
             {% elsif prefix_version_in_span == "true" %}
                 <span class="prefix-version version">{{ page.title }}</span>
             {% endif %}
-            {% assign item_name = data_item.name | split: '(' %}
-            {% if item_name.size == 2 %}
-                {{ item_name[0] }}
-                <p class="item-note">{{ item_name[1] | remove: ')' }}</p>
+            {% capture token %}item.name.{% include trans.html text=data_item.name %}{% endcapture %}
+            {% capture item_name %}{% include i18n.html token=token %}{% endcapture %}
+            {% assign item_name_list = item_name | split: '(' %}
+            {% if item_name_list.size == 2 %}
+                {{ item_name_list[0] }}
+                <p class="item-note">{{ item_name_list[1] | remove: ')' }}</p>
             {% else %}
-                {{ data_item.name }}
+                {{ item_name }}
             {% endif %}
         </div>
     </td>
@@ -57,7 +59,8 @@
                             <div class="tooltip stats">
                                 {{- stat.value -}}{% include stat_image.html type=stat.type stats=include.stats %}
                                 <span class="tooltiptext">
-                                    {{ stat.passive }}
+                                    {% capture token %}item.passive.{% include trans.html text=stat.passive %}{% endcapture %}
+                                    {% include i18n.html token=token %}
                                     {% if stat.formula %}
                                         : {{ stat.formula }}
                                     {% endif %}

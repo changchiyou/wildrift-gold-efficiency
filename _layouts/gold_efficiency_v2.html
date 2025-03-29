@@ -5,55 +5,61 @@ layout: default
 {% unless page.latest_version %}
     <div class="panel warning">
         <p>
-            <strong>⚠️ Warning</strong><br>
-            You are viewing an outdated version. Please click
-            <a href="{{ '/' | relative_url }}">here</a>
-            to redirect to the latest version.
+            <strong>{% include i18n.html token="outdated.title" %}</strong><br>
+            {% capture interpolate %}<a href="{{ '/' | relative_url }}">|</a>{% endcapture %}
+            {% include i18n.html token="outdated.message" interpolate=interpolate %}
         </p>
     </div>
 {% endunless%}
 
 <div class="panel">
     <p>
-        <strong id="hint">💡 Hint <a href="#hint">#</a></strong><br>
-        In most cases, <u><b>a higher calculated Gold Efficiency percentage (%) indicates better value</b></u>. However, as However, as stated
-        in the {% include badge/lolwiki.html href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)" %} :
+        <strong id="hint">{% include i18n.html token="hint.title" %}<a href="#hint"> #</a></strong><br>
+        {% capture interpolate %}<u><b>|</b></u>|{% include badge/lolwiki.html href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)" %}{% endcapture %}
+        {% include i18n.html token="hint.message1" interpolate=interpolate %}
         <blockquote>
             The Gold efficiency of an item tells you how much stats it provides for its price (gold cost). This is a theoretical value with no direct game impact, used mainly to compare items.
         </blockquote>
-        This calculated value doesn't fully represent an item's in-game impact. It's best for comparing items with similar attributes or assessing attribute changes.
+        {% include i18n.html token="hint.message2" %}
         <br><br><hr><br>
-        <li>Comment at <a href="#giscus-comments">💬</a> to correct any item data, calculations, or other inaccuracies that you find and that need updating.</li>
-        <li>If you have ideas for new features or improvements to the design and layout, please feel free to submit a PR at <a href="https://github.com/changchiyou/wildrift-gold-efficiency" target="_blank"><img class="badge" src="https://img.shields.io/badge/changchiyou/wildrift--gold--efficiency-gray?logo=github"></a>.</li>
+        <li>{% include i18n.html token="hint.list1" interpolate='<a href="#giscus-comments">|</a>' %}</li>
+        {% capture interpolate %}{% include badge/github_repo.html %}{% endcapture %}
+        <li>{% include i18n.html token="hint.list2" interpolate=interpolate %}</li>
     </p>
 </div>
 
 {% include filter.html items=page.data.items stats=page.data.stats %}
 
-{%- include items_table.html items=page.data.items stats=page.data.stats category="PHYSICAL DAMAGE ITEMS" anchor="PHYSICAL-DAMAGE-ITEMS" header="📌 Physical Damage Items" -%}
+{% capture header %}{% include i18n.html token="nav.physical-damage-items" %}{% endcapture %}
+{%- include items_table.html items=page.data.items stats=page.data.stats category="PHYSICAL DAMAGE ITEMS" anchor="PHYSICAL-DAMAGE-ITEMS" header=header -%}
 
-{%- include items_table.html items=page.data.items stats=page.data.stats category="MAGIC DAMAGE ITEMS" anchor="MAGIC-DAMAGE-ITEMS" header="📌 Magic Damage Items" -%}
+{% capture header %}{% include i18n.html token="nav.magic-damage-items" %}{% endcapture %}
+{%- include items_table.html items=page.data.items stats=page.data.stats category="MAGIC DAMAGE ITEMS" anchor="MAGIC-DAMAGE-ITEMS" header=header -%}
 
-{%- include items_table.html items=page.data.items stats=page.data.stats category="DEFENSE ITEMS" anchor="DEFENSE-ITEMS" header="📌 Defense Items" -%}
+{% capture header %}{% include i18n.html token="nav.defence-items" %}{% endcapture %}
+{%- include items_table.html items=page.data.items stats=page.data.stats category="DEFENSE ITEMS" anchor="DEFENSE-ITEMS" header=header -%}
 
-{%- include items_table.html items=page.data.items stats=page.data.stats category="SUPPORT ITEMS" anchor="SUPPORT-ITEMS" header="📌 Support Items" -%}
+{% capture header %}{% include i18n.html token="nav.support-items" %}{% endcapture %}
+{%- include items_table.html items=page.data.items stats=page.data.stats category="SUPPORT ITEMS" anchor="SUPPORT-ITEMS" header=header -%}
 
-{%- include items_table.html items=page.data.items stats=page.data.stats category="BOOTS" anchor="BOOTS" header="📌 Boots" -%}
+{% capture header %}{% include i18n.html token="nav.boots" %}{% endcapture %}
+{%- include items_table.html items=page.data.items stats=page.data.stats category="BOOTS" anchor="BOOTS" header=header -%}
 
-{%- include items_table.html items=page.data.items stats=page.data.stats category="MID TIER ITEMS" anchor="MID-TIER-ITEMS" header="📌 Mid-tier Items" -%}
+{% capture header %}{% include i18n.html token="nav.mid-tier-items" %}{% endcapture %}
+{%- include items_table.html items=page.data.items stats=page.data.stats category="MID TIER ITEMS" anchor="MID-TIER-ITEMS" header=header -%}
 
-{%- include items_table.html items=page.data.items stats=page.data.stats category="BASIC ITEMS" anchor="BASIC-ITEMS" header="📌 Basic Items" -%}
+{% capture header %}{% include i18n.html token="nav.basic-items" %}{% endcapture %}
+{%- include items_table.html items=page.data.items stats=page.data.stats category="BASIC ITEMS" anchor="BASIC-ITEMS" header=header -%}
 
 <div class="panel">
     <p>
-        <strong>Copyright©</strong><br>
-        I,
-        <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" target="_blank"><img class="badge" src="https://img.shields.io/badge/changchiyou-gray?logo=github"></a>,
-        <b>DO NOT</b> own the copyrights of all resources on this website, especially images and data. This website is a combination of the gold efficiency calculation formula from
-        {% include badge/lolwiki.html href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)" %}
-        with the design elements from
-        {% include badge/wrmeta.html href="https://wr-meta.com/items/" %}
-        featuring manually updated item data from {% include badge/wildrift.html href=page.data.refer_url text=page.data.refer_text %}.
+        {% include i18n.html token="copyright.title" interpolate='<strong>|</strong><br>' %}
+        {% capture interpolate %}{% include badge/github_profile.html %}|<b>|</b>{% endcapture %}
+        {% include i18n.html token="copyright.message1" interpolate=interpolate %}
+        {% capture interpolate %}{% include badge/lolwiki.html href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)" %}|{% include badge/wrmeta.html href="https://wr-meta.com/items/" %}|{% include badge/wildrift.html href=page.data.refer_url text=page.data.refer_text %}|<br><br>{% endcapture %}
+        {% include i18n.html token="copyright.message2" interpolate=interpolate %}
+        {% capture interpolate %}{% include badge/lolwiki.html href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)" %}|{% include badge/wrmeta.html href="https://wr-meta.com/items/" %}{% endcapture %}
+        {% include i18n.html token="copyright.message3" interpolate=interpolate %}
     </p>
 </div>
 
@@ -86,8 +92,8 @@ layout: default
                 let isOriginalOrder = true;
 
                 headers.forEach((header, index) => {
-                    const headerText = header.innerText;
-                    if (headerText === "Cost" || headerText === "Amount") {
+                    const column = header.getAttribute('column');
+                    if (column === "cost" || column === "amount") {
                         header.addEventListener('click', () => {
                             const currentOrder = header.getAttribute('data-order');
                             let newOrder;
@@ -137,7 +143,7 @@ layout: default
         data-emit-metadata="1"
         data-input-position="top"
         data-theme="dark"
-        data-lang="en"
+        data-lang="{% if page.lang == 'en-us' %}en{% elsif page.lang == 'zh-tw' %}zh-TW{% endif %}"
         data-loading="lazy"
         crossorigin="anonymous"
         async>
