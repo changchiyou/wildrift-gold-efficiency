@@ -33,6 +33,12 @@ hint:
   list1: 發現文本、數據或圖片有錯誤時，可以到 {1}💬{2} 登入 Github 後留言通知我修改。
   list2: 如果有關於新功能的點子或任何對於現在介面設計的改動建議，非常歡迎到 {1} 直接發 Issues/Pull Requests、在這個專案貢獻一份心力。
 
+copyright:
+  title: "{1}版權所有©{2}"
+  message1: "我, {1}, {2}不擁有{3} 此網站上所有資源的版權，特別是圖片和遊戲數據。"
+  message2: "這個網站結合了來自 {1} 的裝備面板價值計算公式，和來自 {1} 和 {2} 的設計元素，同時包含了從 {3} 手動更新的遊戲數據。{4}"
+  message3: "因此，若想要使用這個網站上的圖片資源，應該另外找 {1} 和 {2} 的擁有者溝通申請使用權。"
+
 filter:
   title: 🔎 篩選器
   inclusion_filter: 包含
@@ -79,12 +85,6 @@ stat:
     percentage-move-speed: "% 跑速"
     unstable-passives'-stats: 非常駐被動屬性
     update: 更新
-
-copyright:
-  title: "{1}版權所有©{2}"
-  message1: "我, {1}, {2}不擁有{3} 此網站上所有資源的版權，特別是圖片和遊戲數據。"
-  message2: "這個網站結合了來自 {1} 的裝備面板價值計算公式，和來自 {1} 和 {2} 的設計元素，同時包含了從 {3} 手動更新的遊戲數據.{4}"
-  message3: "因此，若想要使用這個網站上的圖片資源，應該另外找 {1} 和 {2} 的擁有者溝通申請使用權。"
 
 item:
   name:
@@ -328,13 +328,12 @@ item:
     sharp: 銳利
     slice: 切擊
     soulcast: 鑄魂
-    soul-hunt: Soul Hunt
     spectral-waltz: 靈魂華爾茲
     spellweaving: 織法
     stab: 突刺
     storm: 暴風
     strike: 打擊
-    thirst: Thirst
+    thirst: 嗜血
     valor: 勇猛
     versatile: 萬能
     veteran: 精熟
