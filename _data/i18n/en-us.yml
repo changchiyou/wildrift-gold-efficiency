@@ -24,14 +24,21 @@ items-table:
 
 outdated:
   title: ⚠️ Warning
-  message: You are viewing an outdated version. Please click {1}here{2} to redirect to the latest version.
+  message: You are viewing an outdated version. Please click {hyperlink_start}here{hyperlink_end} to redirect to the latest version.
 
 hint:
   title: 💡 Instructions
-  message1: "In most cases, {1}a higher calculated Gold Efficiency percentage (%) indicates better value{2}. However, as However, as stated in the {3} :" 
+  message1: "In most cases, {highlight_start}a higher calculated Gold Efficiency percentage (%) indicates better value{highlight_end}. However, as However, as stated in the {lolwiki} :" 
   message2: "This calculated value doesn't fully represent an item's in-game impact. It's best for comparing items with similar attributes or assessing attribute changes."
-  list1: "Comment at {1}💬{2} to correct any item data, calculations, or other inaccuracies that you find and that need updating."
-  list2: "If you have ideas for new features or improvements to the design and layout, please feel free to submit a PR at {1}."
+  list1: "Comment at {hyperlink_start}💬{hyperlink_end} to correct any item data, calculations, or other inaccuracies that you find and that need updating."
+  list2: "If you have ideas for new features or improvements to the design and layout, please feel free to submit a PR at {github_repo}."
+
+copyright:
+  title: "Copyright©"
+  message1: "I, {author}, {highlight_start}DO NOT{highlight_end} own the copyrights of all resources on this website, especially images and data."
+  message2: "This website is a combination of the gold efficiency calculation formula from {lolwiki} with the design elements from both {lolwiki} and {wrmeta} featuring manually updated item data from {wildrift_patchnote}."
+  message3: "Therefore, if you wish to use the image resources on this website, you should contact the owners of {lolwiki} and {wrmeta} to apply for permission."
+
 
 copyright:
   title: "{1}Copyright©{2}"

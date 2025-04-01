@@ -6,7 +6,7 @@ layout: default
     <div class="panel warning">
         <p>
             <strong>{% include i18n.html token="outdated.title" %}</strong><br>
-            {% capture interpolate %}<a href="{{ '/' | relative_url }}">|</a>{% endcapture %}
+            {% capture interpolate %}hyperlink_start|<a href="{{ '/' | relative_url }}">||hyperlink_end|</a>{% endcapture %}
             {% include i18n.html token="outdated.message" interpolate=interpolate %}
         </p>
     </div>
@@ -15,15 +15,18 @@ layout: default
 <div class="panel">
     <p>
         <strong id="hint">{% include i18n.html token="hint.title" %}<a href="#hint"> #</a></strong><br>
-        {% capture interpolate %}<u><b>|</b></u>|{% include badge/lolwiki.html href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)" %}{% endcapture %}
+        {% capture highlight_start %}<u><b></b>{% endcapture %}
+        {% capture highlight_end %}</b></u>{% endcapture %}
+        {% capture lolwiki %}{% include badge/lolwiki.html href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)" %}{% endcapture %}
+        {% capture interpolate %}highlight_start|{{ highlight_start }}||highlight_end|{{ highlight_end }}||lolwiki|{{ lolwiki }}{% endcapture %}
         {% include i18n.html token="hint.message1" interpolate=interpolate %}
         <blockquote>
             The Gold efficiency of an item tells you how much stats it provides for its price (gold cost). This is a theoretical value with no direct game impact, used mainly to compare items.
         </blockquote>
         {% include i18n.html token="hint.message2" %}
         <br><br><hr><br>
-        <li>{% include i18n.html token="hint.list1" interpolate='<a href="#giscus-comments">|</a>' %}</li>
-        {% capture interpolate %}{% include badge/github_repo.html %}{% endcapture %}
+        <li>{% include i18n.html token="hint.list1" interpolate='hyperlink_start|<a href="#giscus-comments">||hyperlink_end|</a>' %}</li>
+        {% capture interpolate %}github_repo|{% include badge/github_repo.html %}{% endcapture %}
         <li>{% include i18n.html token="hint.list2" interpolate=interpolate %}</li>
     </p>
 </div>
@@ -53,12 +56,16 @@ layout: default
 
 <div class="panel">
     <p>
-        {% include i18n.html token="copyright.title" interpolate='<strong>|</strong><br>' %}
-        {% capture interpolate %}{% include badge/github_profile.html %}|<b>|</b>{% endcapture %}
+        <strong></strong>{% include i18n.html token="copyright.title" %}</strong><br>
+        {% capture interpolate %}author|{% include badge/github_profile.html %}||highlight_start|<b>||highlight_end|</b>{% endcapture %}
         {% include i18n.html token="copyright.message1" interpolate=interpolate %}
-        {% capture interpolate %}{% include badge/lolwiki.html href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)" %}|{% include badge/wrmeta.html href="https://wr-meta.com/items/" %}|{% include badge/wildrift.html href=page.data.refer_url text=page.data.refer_text %}|<br><br>{% endcapture %}
-        {% include i18n.html token="copyright.message2" interpolate=interpolate %}
-        {% capture interpolate %}{% include badge/lolwiki.html href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)" %}|{% include badge/wrmeta.html href="https://wr-meta.com/items/" %}{% endcapture %}
+
+        {% capture lolwiki %}{% include badge/lolwiki.html href="https://leagueoflegends.fandom.com/wiki/Gold_efficiency_(Wild_Rift)" %}{% endcapture %}
+        {% capture wrmeta %}{% include badge/wrmeta.html href="https://wr-meta.com/items/" %}{% endcapture %}
+        {% capture wildrift_patchnote %}{% include badge/wildrift.html href=page.data.refer_url text=page.data.refer_text %}{% endcapture%}
+        {% capture interpolate %}lolwiki|{{ lolwiki }}||wrmeta|{{ wrmeta }}||wildrift_patchnote|{{ wildrift_patchnote }}{% endcapture %}
+        {% include i18n.html token="copyright.message2" interpolate=interpolate %}<br><br>
+        {% capture interpolate %}lolwiki|{{ lolwiki }}||wrmeta|{{ wrmeta }}{% endcapture %}
         {% include i18n.html token="copyright.message3" interpolate=interpolate %}
     </p>
 </div>
