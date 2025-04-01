@@ -24,20 +24,20 @@ items-table:
 
 outdated:
   title: ⚠️ 警告
-  message: 您正在查看過時的版本。請點擊{1}這裡{2}重新導向到最新版本。
+  message: 您正在查看過時的版本。請點擊{hyperlink_start}這裡{hyperlink_end}重新導向到最新版本。
 
 hint:
   title: 💡 介紹
-  message1: "大多數情況下，{1}越高的面板價值%代表這件裝備更值得花費相同的金錢購買{2}。 然而，就像 {3} 中提到的："
+  message1: "大多數情況下，{highlight_start}越高的面板價值%代表這件裝備更值得花費相同的金錢購買{highlight_end}。 然而，就像 {lolwiki} 中提到的："
   message2: 計算出來的面板價值適合用來比較具有相似屬性的物品或評估屬性變動，而非嘗試拿來表現某項特定裝備在遊戲中的影響力。
-  list1: 發現文本、數據或圖片有錯誤時，可以到 {1}💬{2} 登入 Github 後留言通知我修改。
-  list2: 如果有關於新功能的點子或任何對於現在介面設計的改動建議，非常歡迎到 {1} 直接發 Issues/Pull Requests、在這個專案貢獻一份心力。
+  list1: 發現文本、數據或圖片有錯誤時，可以到 {hyperlink_start}💬{hyperlink_end} 登入 Github 後留言通知我修改。
+  list2: 如果有關於新功能的點子或任何對於現在介面設計的改動建議，非常歡迎到 {github_repo} 直接發 Issues/Pull Requests、在這個專案貢獻一份心力。
 
 copyright:
-  title: "{1}版權所有©{2}"
-  message1: "我, {1}, {2}不擁有{3} 此網站上所有資源的版權，特別是圖片和遊戲數據。"
-  message2: "這個網站結合了來自 {1} 的裝備面板價值計算公式，和來自 {1} 和 {2} 的設計元素，同時包含了從 {3} 手動更新的遊戲數據。{4}"
-  message3: "因此，若想要使用這個網站上的圖片資源，應該另外找 {1} 和 {2} 的擁有者溝通申請使用權。"
+  title: "版權所有©"
+  message1: "我, {author}, {highlight_start}不擁有{highlight_end} 此網站上所有資源的版權，特別是圖片和遊戲數據。"
+  message2: "這個網站結合了來自 {lolwiki} 的裝備面板價值計算公式，和來自 {lolwiki} 和 {wrmeta} 的設計元素，同時包含了從 {wildrift_patchnote} 手動更新的遊戲數據。"
+  message3: "因此，若想要使用這個網站上的圖片資源，應該另外找 {lolwiki} 和 {wrmeta} 的擁有者溝通申請使用權。"
 
 filter:
   title: 🔎 篩選器

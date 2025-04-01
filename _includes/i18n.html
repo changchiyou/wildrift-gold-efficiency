@@ -18,8 +18,10 @@
                     The token key assigned in the '_data/i18n/<lang>.yml' file to retrieve the corresponding translation; Example: 'exploitability'.
                 
                 interpolate:
-                    A string containing values separated by "|" that will replace placeholder variables in the translation text; placeholders are denoted as {1}, {2}, etc. in the translation string; Example: 'value1|value2'.
- 
+                    A string containing key-value pairs separated by "||"; each pair is separated by "|". 
+                    The keys will be replaced with the corresponding values in the translation text. 
+                    Placeholders are denoted as {key} in the translation string; Example: 'key1|value1||key2|value2'.
+
  debug:          <!-- include site.default_lang='{{site.default_lang}}' page.lang='{{page.lang}}' lang='{{include.lang}}' token='{{include.token}}' --->
  reference:
                 https://github.com/kurtsson/jekyll-multiple-languages-plugin/issues/163#issuecomment-666695445
@@ -42,16 +44,18 @@
 {%- endfor -%}
 
 {% if include.interpolate %}
-    {% assign interpolateStrings = include.interpolate | split: "|" }} %}
+    {% assign interpolatePairs = include.interpolate | split: "||" %}
 
-    {% for string in interpolateStrings %}
-    {% capture translation %} 
-        {% assign leftBrace = "{" %}
-        {% assign rightBrace = "}" %}
-        {% capture toReplace %}{{ leftBrace }}{{ forloop.index }}{{ rightBrace }}{% endcapture %}
-        {{ translation | replace: toReplace, string }}
-    {% endcapture %}
-
+    {% for pair in interpolatePairs %}
+        {% assign key_value = pair | split: "|" %}
+        {% assign key = key_value[0] | strip %}
+        {% assign value = key_value[1] | strip %}
+        {% capture translation %} 
+            {% assign leftBrace = "{" %}
+            {% assign rightBrace = "}" %}
+            {% capture toReplace %}{{ leftBrace }}{{ key }}{{ rightBrace }}{% endcapture %}
+            {{ translation | replace: toReplace, value }}
+        {% endcapture %}
     {% endfor %}
 {% endif %}
 
