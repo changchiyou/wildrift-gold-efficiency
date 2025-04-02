@@ -15,7 +15,7 @@ layout: null
         {%- if page_paths -%}
             {%- assign sorted_pages = site.pages | where_exp: "item", "page_paths contains item.path" | sort: "date" | reverse -%}
             {%- for page in sorted_pages -%}
-                {%- if page.title and page.url != "/" -%}
+                {%- if page.title and page.url != "/" and page.lang == site.default_lang -%}
                     <item>
                     <title>{{ page.title }}</title>
                     <description>{{ page.description }}</description>
