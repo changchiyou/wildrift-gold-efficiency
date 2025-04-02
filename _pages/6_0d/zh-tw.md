@@ -6,12 +6,12 @@ date: 2025/03/13
 description: 激鬥峽谷 6.0d 裝備面板價值
 image: /assets/favicon512x512.png
 
-permalink: /zh-tw/6.0d/
+permalink: /zh-TW/6.0d/
 redirect_from: 
-    - /zh-tw/
+    - /zh-TW/
 latest_version: true
 
-lang: zh-tw
+lang: zh-TW
 
 sitemap: false
 
