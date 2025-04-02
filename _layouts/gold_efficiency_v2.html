@@ -150,7 +150,7 @@ layout: default
         data-emit-metadata="1"
         data-input-position="top"
         data-theme="dark"
-        data-lang="{% if page.lang == 'en-us' %}en{% elsif page.lang == 'zh-tw' %}zh-TW{% endif %}"
+        data-lang="{% if page.lang == 'en-US' %}en{% elsif page.lang == 'zh-TW' %}zh-TW{% else %}{{ page.lang | slice: 0, 2 }}{% endif %}"
         data-loading="lazy"
         crossorigin="anonymous"
         async>
