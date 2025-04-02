@@ -39,11 +39,14 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-languages: ["en-US", "zh-TW"]
+languages: ["en-US", "zh-TW", "de-DE", "ja-JP", "pt-BR"]
 default_lang: "en-US"
 languageNames:
   en-US: English(US)
   zh-TW: 繁體中文
+  de-DE: Deutsch
+  ja-JP: 日本語
+  pt-BR: Português (BR)
 
 feed:
   posts_limit: 10
