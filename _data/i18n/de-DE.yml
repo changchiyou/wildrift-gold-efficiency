@@ -1,10 +1,10 @@
 site:
-  title_suffix: Wild Rift Gold Efficiency
-  update_notify: "✨ The site has been updated with new content. The page will now reload to apply these updates."
+  title_suffix: Wild Rift Item Gold-Effizienzblatt
+  update_notify: "✨ Die Seite wurde mit neuen Inhalten aktualisiert. Die Seite wird nun neu geladen, um diese Updates anzuwenden."
 page:
-  title: WR Gold Efficiency
+  title: WR Item Gold-Effizienzblatt
 nav:
-  comments: '💬 Comments'
+  comments: '💬 Kommentare'
   physical-damage-items: '📌 Physical Damage Items'
   magic-damage-items: '📌 Magic Damage Items'
   defence-items: '📌 Defence Items'
@@ -20,18 +20,18 @@ items-table:
   amount: Amount
 outdated:
   title: '⚠️ Warning'
-  message: You are viewing an outdated version. Please click {hyperlink_start}here{hyperlink_end} to redirect to the latest version.
+  message: Sie sehen eine veraltete Version. Bitte klicken Sie {hyperlink_start}hier{hyperlink_end}, um zur neuesten Version weiterzuleiten.
 hint:
   title: '💡 Instructions'
-  message1: "In most cases, {highlight_start}a higher calculated Gold Efficiency percentage (%) indicates better value{highlight_end}. However, as However, as stated in the {lolwiki} :"
-  message2: "This calculated value doesn't fully represent an item's in-game impact. It's best for comparing items with similar attributes or assessing attribute changes."
-  list1: "Comment at {hyperlink_start}💬{hyperlink_end} to correct any item data, calculations, or other inaccuracies that you find and that need updating."
-  list2: "If you have ideas for new features or improvements to the design and layout, please feel free to submit a PR at {github_repo}."
+  message1: "In den meisten Fällen zeigt {highlight_start}ein höher berechneter Gold-Effizienzblatt Prozentsatz (%) einen besseren{highlight_end}an. Allerdings, wie im {lolwiki} angegeben:"
+  message2: "Dieser berechnete Wert repräsentiert nicht vollständig den Einfluss eines Gegenstands im Spiel. Er ist am besten für den Vergleich von Gegenständen mit ähnlichen Attributen oder die Bewertung von Attributendungen."
+  list1: "Kommentar bei {hyperlink_start}💬{hyperlink_end}, um alle Artikeldaten, Berechnungen oder andere Ungenauigkeiten, die Sie finden und die aktualisiert werden müssen, zu korrigieren."
+  list2: "Wenn Sie Ideen für neue Funktionen oder Verbesserungen im Design und Layout haben, schreiben Sie bitte einen PR unter {github_repo}."
 copyright:
-  title: "Copyright©"
-  message1: "I, {author}, {highlight_start}DO NOT{highlight_end} own the copyrights of all resources on this website, especially images and data."
-  message2: "This website is a combination of the gold efficiency calculation formula from {lolwiki} with the design elements from both {lolwiki} and {wrmeta} featuring manually updated item data from {wildrift_patchnote}."
-  message3: "Therefore, if you wish to use the image resources on this website, you should contact the owners of {lolwiki} and {wrmeta} to apply for permission."
+  title: "Copyright©️"
+  message1: "Ich, {author}, {highlight_start}KEINE{highlight_end} besitzen die Urheberrechte aller Ressourcen auf dieser Website, insbesondere Bilder und Daten."
+  message2: "Diese Website ist eine Kombination der Formel für die Berechnung der Goldeffizienz von {lolwiki} mit den Designelementen von {lolwiki} und {wrmeta} mit manuell aktualisierten Artikeldaten von {wildrift_patchnote}."
+  message3: "Wenn Sie die Bildressourcen auf dieser Website verwenden möchten, sollten Sie sich daher an die Eigentümer von {lolwiki} und {wrmeta} wenden, um eine Erlaubnis zu beantragen."
 filter:
   title: '🔎 Stat Filters'
   inclusion_filter: Inclusion
