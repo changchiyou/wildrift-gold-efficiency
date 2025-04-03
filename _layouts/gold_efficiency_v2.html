@@ -6,7 +6,7 @@ layout: default
     <div class="panel warning">
         <p>
             <strong>{% include i18n.html token="outdated.title" %}</strong><br>
-            {% capture interpolate %}hyperlink_start|<a href="{{ '/' | relative_url }}">||hyperlink_end|</a>{% endcapture %}
+            {% capture interpolate %}hyperlink_start|<a href="{{ '/' | append: page.lang | append: '/' | relative_url }}">||hyperlink_end|</a>{% endcapture %}
             {% include i18n.html token="outdated.message" interpolate=interpolate %}
         </p>
     </div>
