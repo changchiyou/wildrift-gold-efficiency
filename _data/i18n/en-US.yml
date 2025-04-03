@@ -25,7 +25,7 @@ hint:
   title: '💡 Instructions'
   message1: "In most cases, {highlight_start}a higher calculated Gold Efficiency percentage (%) indicates better value{highlight_end}. However, as However, as stated in the {lolwiki} :"
   message2: "This calculated value doesn't fully represent an item's in-game impact. It's best for comparing items with similar attributes or assessing attribute changes."
-  list1: "Comment at {hyperlink_start}💬{hyperlink_end} to correct any item data, calculations, or other inaccuracies that you find and that need updating."
+  list1: "Comment at {hyperlink_start}💬{hyperlink_end} to correct any item data, calculations, or other inaccuracies that you find and that need updating, or go directly to {crowdin} to help us improve the quality of the translations."
   list2: "If you have ideas for new features or improvements to the design and layout, please feel free to submit a PR at {github_repo}."
 copyright:
   title: "Copyright©"
