@@ -25,7 +25,7 @@ hint:
   title: '💡 介紹'
   message1: "大多數情況下，{highlight_start}越高的面板價值%代表這件裝備更值得花費相同的金錢購買{highlight_end}。 然而，就像 {lolwiki} 中提到的："
   message2: "計算出來的面板價值適合用來比較具有相似屬性的物品或評估屬性變動，而非嘗試拿來表現某項特定裝備在遊戲中的影響力。"
-  list1: "發現文本、數據或圖片有錯誤時，可以到 {hyperlink_start}💬{hyperlink_end} 登入 Github 後留言通知我修改。"
+  list1: "發現文本、數據或圖片有錯誤時，可以到 {hyperlink_start}💬{hyperlink_end} 登入 Github 後留言通知我修改。或是直接到{crowdin}協助我們提升翻譯品質。"
   list2: "如果有關於新功能的點子或任何對於現在介面設計的改動建議，非常歡迎到 {github_repo} 直接發 Issues/Pull Requests、在這個專案貢獻一份心力。"
 copyright:
   title: "版權所有©"
