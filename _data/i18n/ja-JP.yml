@@ -2,9 +2,9 @@ site:
   title_suffix: ワイルドリフトのゴールド効率
   update_notify: "✨ サイトが新しいコンテンツで更新されました。これらの更新を適用するためにページが再読み込みされます。"
 page:
-  title: WR Gold Efficiency
+  title: ワイルドリフトのゴールド効率
 nav:
-  comments: '💬 Comments'
+  comments: '💬 コメント'
   physical-damage-items: '📌 Physical Damage Items'
   magic-damage-items: '📌 Magic Damage Items'
   defence-items: '📌 Defence Items'
@@ -19,24 +19,24 @@ items-table:
   stats: Stats
   amount: Amount
 outdated:
-  title: '⚠️ Warning'
-  message: You are viewing an outdated version. Please click {hyperlink_start}here{hyperlink_end} to redirect to the latest version.
+  title: '⚠️ 警告'
+  message: 古いバージョンを表示しています。最新バージョンにリダイレクトするには、{hyperlink_start}こちら{hyperlink_end}をクリックしてください。
 hint:
-  title: '💡 Instructions'
-  message1: "In most cases, {highlight_start}a higher calculated Gold Efficiency percentage (%) indicates better value{highlight_end}. However, as However, as stated in the {lolwiki} :"
-  message2: "This calculated value doesn't fully represent an item's in-game impact. It's best for comparing items with similar attributes or assessing attribute changes."
-  list1: "Comment at {hyperlink_start}💬{hyperlink_end} to correct any item data, calculations, or other inaccuracies that you find and that need updating."
-  list2: "If you have ideas for new features or improvements to the design and layout, please feel free to submit a PR at {github_repo}."
+  title: '💡 説明'
+  message1: "ほとんどの場合、{highlight_start}計算されたゴールド効率の割合 (%) が高いほど、より優れた価値を示します{highlight_end}。 しかし、{lolwiki} に記載されているように："
+  message2: "この計算値はアイテムのゲーム内の影響を完全に表していません。類似の属性を持つアイテムを比較したり、属性の変更を評価したりするのに最適です。"
+  list1: "{hyperlink_start}のコメント 💬{hyperlink_end} で、アイテムデータ、計算、またはその他の不正確さを修正し、更新が必要です。"
+  list2: "新機能やデザインやレイアウトの改良などのアイデアをお持ちの方は、 {github_repo}までお気軽にPRをご提出ください。"
 copyright:
-  title: "Copyright©"
-  message1: "I, {author}, {highlight_start}DO NOT{highlight_end} own the copyrights of all resources on this website, especially images and data."
-  message2: "This website is a combination of the gold efficiency calculation formula from {lolwiki} with the design elements from both {lolwiki} and {wrmeta} featuring manually updated item data from {wildrift_patchnote}."
-  message3: "Therefore, if you wish to use the image resources on this website, you should contact the owners of {lolwiki} and {wrmeta} to apply for permission."
+  title: "著作権©️"
+  message1: "私、 {author}、 {highlight_start}は、このウェブサイト上のすべてのリソース、特に画像やデータの著作権を、{highlight_end} 所有しないでください。"
+  message2: "このウェブサイトは、 {lolwiki} の金効率計算式と、 {lolwiki} と {wrmeta} の両方のデザイン要素を組み合わせたもので、手動で {wildrift_patchnote}のアイテムデータを更新しました。"
+  message3: "したがって、このウェブサイトの画像リソースを使用したい場合は、 {lolwiki} と {wrmeta} の所有者に問い合わせて許可申請を行ってください。"
 filter:
   title: '🔎 Stat Filters'
   inclusion_filter: Inclusion
   exclusion_filter: Exclusion
-  base_price_modifier: '💰 Stat Price'
+  base_price_modifier: '💰 統計価格'
   base_price:
     column:
       stat: Stat
