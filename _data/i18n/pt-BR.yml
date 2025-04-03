@@ -1,10 +1,10 @@
 site:
-  title_suffix: Wild Rift Gold Efficiency
-  update_notify: "✨ The site has been updated with new content. The page will now reload to apply these updates."
+  title_suffix: Eficiência de Ouro da Fenda Selvagem
+  update_notify: "✨ O site foi atualizado com novo conteúdo. A página agora irá recarregar para aplicar estas atualizações."
 page:
-  title: WR Gold Efficiency
+  title: Eficiência de Ouro WR
 nav:
-  comments: '💬 Comments'
+  comments: '💬 Comentários'
   physical-damage-items: '📌 Physical Damage Items'
   magic-damage-items: '📌 Magic Damage Items'
   defence-items: '📌 Defence Items'
@@ -12,31 +12,31 @@ nav:
   boots: '📌 Boots'
   mid-tier-items: '📌 Mid-tier Items'
   basic-items: '📌 Basic Items'
-  sitemap: '🗺️ Sitemap'
+  sitemap: '🗺️ Mapa do Site'
 items-table:
   item: Item
   cost: Cost
   stats: Stats
   amount: Amount
 outdated:
-  title: '⚠️ Warning'
-  message: You are viewing an outdated version. Please click {hyperlink_start}here{hyperlink_end} to redirect to the latest version.
+  title: '⚠️ Aviso'
+  message: Você está vendo uma versão desatualizada. Por favor, clique em {hyperlink_start}aqui{hyperlink_end} para redirecionar para a versão mais recente.
 hint:
-  title: '💡 Instructions'
-  message1: "In most cases, {highlight_start}a higher calculated Gold Efficiency percentage (%) indicates better value{highlight_end}. However, as However, as stated in the {lolwiki} :"
-  message2: "This calculated value doesn't fully represent an item's in-game impact. It's best for comparing items with similar attributes or assessing attribute changes."
-  list1: "Comment at {hyperlink_start}💬{hyperlink_end} to correct any item data, calculations, or other inaccuracies that you find and that need updating."
-  list2: "If you have ideas for new features or improvements to the design and layout, please feel free to submit a PR at {github_repo}."
+  title: '💡 Instruções'
+  message1: "Geralmente, {highlight_start}uma porcentagem de Eficiência de Ouro maior calculada (%) indica melhor valor de{highlight_end}. No entanto, como se diz no {lolwiki}:"
+  message2: "Este valor calculado não representa totalmente o impacto de um ‘item’ no jogo. É melhor para comparar itens com atributos semelhantes ou avaliar alterações de atributo."
+  list1: "Comente em {hyperlink_start}💬{hyperlink_end} para corrigir quaisquer dados de itens, cálculos ou outras imprecisões que você encontrar e que precisem de atualização."
+  list2: "Se você tiver ideias para novos recursos ou melhorias no ‘desenho industrial’ e disposição, sinta-se à vontade para enviar um PR em {github_repo}."
 copyright:
-  title: "Copyright©"
-  message1: "I, {author}, {highlight_start}DO NOT{highlight_end} own the copyrights of all resources on this website, especially images and data."
-  message2: "This website is a combination of the gold efficiency calculation formula from {lolwiki} with the design elements from both {lolwiki} and {wrmeta} featuring manually updated item data from {wildrift_patchnote}."
-  message3: "Therefore, if you wish to use the image resources on this website, you should contact the owners of {lolwiki} and {wrmeta} to apply for permission."
+  title: "Direito autor©️"
+  message1: "Eu, {author}, {highlight_start}NÃO FAÇA{highlight_end} possui os direitos autorais de todos os recursos deste site, especialmente imagens e dados."
+  message2: "Este site é uma combinação da fórmula de cálculo de eficiência ouro do {lolwiki} com os elementos de ‘desenho industrial’ do {lolwiki} e {wrmeta} com dados de ‘item’ atualizados manualmente do {wildrift_patchnote}."
+  message3: "Portanto, se você deseja usar os recursos de imagem neste site, deve entrar em contato com os proprietários do {lolwiki} e do {wrmeta} para solicitar a permissão."
 filter:
   title: '🔎 Stat Filters'
   inclusion_filter: Inclusion
   exclusion_filter: Exclusion
-  base_price_modifier: '💰 Stat Price'
+  base_price_modifier: '💰 Preço fixo'
   base_price:
     column:
       stat: Stat

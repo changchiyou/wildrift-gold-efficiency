@@ -19,10 +19,10 @@ items-table:
   stats: Stats
   amount: Amount
 outdated:
-  title: '⚠️ Warning'
+  title: '⚠️ Warnung'
   message: Sie sehen eine veraltete Version. Bitte klicken Sie {hyperlink_start}hier{hyperlink_end}, um zur neuesten Version weiterzuleiten.
 hint:
-  title: '💡 Instructions'
+  title: '💡 Anweisungen'
   message1: "In den meisten Fällen zeigt {highlight_start}ein höher berechneter Gold-Effizienzblatt Prozentsatz (%) einen besseren{highlight_end}an. Allerdings, wie im {lolwiki} angegeben:"
   message2: "Dieser berechnete Wert repräsentiert nicht vollständig den Einfluss eines Gegenstands im Spiel. Er ist am besten für den Vergleich von Gegenständen mit ähnlichen Attributen oder die Bewertung von Attributendungen."
   list1: "Kommentar bei {hyperlink_start}💬{hyperlink_end}, um alle Artikeldaten, Berechnungen oder andere Ungenauigkeiten, die Sie finden und die aktualisiert werden müssen, zu korrigieren."
@@ -36,7 +36,7 @@ filter:
   title: '🔎 Stat Filters'
   inclusion_filter: Inclusion
   exclusion_filter: Exclusion
-  base_price_modifier: '💰 Stat Price'
+  base_price_modifier: '💰 Gesamtpreis'
   base_price:
     column:
       stat: Stat
