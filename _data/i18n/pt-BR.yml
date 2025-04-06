@@ -25,7 +25,7 @@ hint:
   title: '💡 Instruções'
   message1: "Geralmente, {highlight_start}uma porcentagem de Eficiência de Ouro maior calculada (%) indica melhor valor de{highlight_end}. No entanto, como se diz no {lolwiki}:"
   message2: "Este valor calculado não representa totalmente o impacto de um ‘item’ no jogo. É melhor para comparar itens com atributos semelhantes ou avaliar alterações de atributo."
-  list1: "Comente em {hyperlink_start}💬{hyperlink_end} para corrigir quaisquer dados de itens, cálculos ou outras imprecisões que você encontrar e que precisem de atualização."
+  list1: "Comente em {hyperlink_start}💬{hyperlink_end} para corrigir quaisquer dados de itens, cálculos, ou outras imprecisões que você encontrar e que precisem de atualização, ou vá diretamente para {crowdin} para nos ajudar a melhorar a qualidade das traduções."
   list2: "Se você tiver ideias para novos recursos ou melhorias no ‘desenho industrial’ e disposição, sinta-se à vontade para enviar um PR em {github_repo}."
 copyright:
   title: "Direito autor©️"

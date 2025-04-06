@@ -25,7 +25,7 @@ hint:
   title: '💡 Anweisungen'
   message1: "In den meisten Fällen zeigt {highlight_start}ein höher berechneter Gold-Effizienzblatt Prozentsatz (%) einen besseren{highlight_end}an. Allerdings, wie im {lolwiki} angegeben:"
   message2: "Dieser berechnete Wert repräsentiert nicht vollständig den Einfluss eines Gegenstands im Spiel. Er ist am besten für den Vergleich von Gegenständen mit ähnlichen Attributen oder die Bewertung von Attributendungen."
-  list1: "Kommentar bei {hyperlink_start}💬{hyperlink_end}, um alle Artikeldaten, Berechnungen oder andere Ungenauigkeiten, die Sie finden und die aktualisiert werden müssen, zu korrigieren."
+  list1: "Kommentar bei {hyperlink_start}💬{hyperlink_end}, um alle Artikeldaten, Berechnungen oder andere Ungenauigkeiten, die Sie finden und die aktualisiert werden müssen, zu korrigieren oder gehen Sie direkt zu {crowdin}, um die Qualität der Übersetzungen zu verbessern."
   list2: "Wenn Sie Ideen für neue Funktionen oder Verbesserungen im Design und Layout haben, schreiben Sie bitte einen PR unter {github_repo}."
 copyright:
   title: "Copyright©️"
