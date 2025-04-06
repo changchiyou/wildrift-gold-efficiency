@@ -17,6 +17,10 @@
   letter-spacing: -0.5px;
   margin-bottom: 0;
   float: left;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: block;      
 
   &,
   &:visited {
@@ -27,6 +31,7 @@
 @media screen and (max-width: 480px) {
   .site-title {
     @include relative-font-size(1.325);
+    width: 65%;
   }
 }
 
