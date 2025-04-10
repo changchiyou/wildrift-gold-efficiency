@@ -2,7 +2,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3300
   formula: (50*41.67+25*50.0+10*45.82)/3300
-  image: https://wr-meta.com/uploads/posts/2021-03/1616981867_itemsquarebloodthirster.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/d/df/Bloodthirster_item_Unused.png
   name: Bloodthirster
   stats:
   - type: Attack Damage
@@ -16,7 +16,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3300
   formula: (50*41.67+25*50.0+10*45.82+11*41.67+10*33.33)/3300
-  image: https://wr-meta.com/uploads/posts/2021-03/1616981867_itemsquarebloodthirster.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/d/df/Bloodthirster_item_Unused.png
   name: Bloodthirster (Bloodsworn - lv1)
   stats:
   - type: Attack Damage
@@ -37,7 +37,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3300
   formula: (50*41.67+25*50.0+10*45.82+25*41.67+10*33.33)/3300
-  image: https://wr-meta.com/uploads/posts/2021-03/1616981867_itemsquarebloodthirster.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/d/df/Bloodthirster_item_Unused.png
   name: Bloodthirster (Bloodsworn - lv15)
   stats:
   - type: Attack Damage
@@ -58,7 +58,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3400
   formula: (40*41.67+40*25.0)/3400
-  image: https://wr-meta.com/uploads/posts/2021-03/1616983372_3026.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/f/f4/Guardian_Angel_item.png
   name: Guardian Angel
   stats:
   - type: Attack Damage
@@ -69,7 +69,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 2900
   formula: (25*50.0+35*33.33+5*50.0)/2900
-  image: https://wr-meta.com/uploads/posts/2023-10/1698257821_magnetic-blaster.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/0/09/Magnetic_Blaster_WR_item.png
   name: Magnetic Blaster
   stats:
   - type: '% Critical Rate'
@@ -83,7 +83,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200
   formula: (25*41.67+35*33.33+10*45.82)/3200
-  image: https://wr-meta.com/uploads/posts/2024-07/1721253462_3153_11zon.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/1/11/Blade_of_the_Ruined_King_item_old2.png
   name: Blade of the Ruined King
   stats:
   - type: Attack Damage
@@ -97,7 +97,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (35*33.33+20*41.67)/3000
-  image: https://wr-meta.com/uploads/posts/2021-03/1616982074_itemsquarerunaan27s_hurricane.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/f/f5/Runaan%27s_Hurricane_item.png
   name: 'Runaan''s Hurricane (Adaptive: AD)'
   stats:
   - type: '% Attack Speed'
@@ -109,7 +109,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (55*41.67+15*40.0+15*20.82)/3000
-  image: https://wr-meta.com/uploads/posts/2024-07/1721253752_3142_11zon.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/4/41/Youmuu%27s_Ghostblade_item.png
   name: Youmuu's Ghostblade
   stats:
   - type: Attack Damage
@@ -123,7 +123,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (55*41.67+15*40.0+15*20.82+40*16.0)/3000
-  image: https://wr-meta.com/uploads/posts/2024-07/1721253752_3142_11zon.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/4/41/Youmuu%27s_Ghostblade_item.png
   name: Youmuu's Ghostblade (Momentum)
   stats:
   - type: Attack Damage
@@ -141,7 +141,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (55*41.67+15*40.0+15*20.82+25*33.33)/3000
-  image: https://wr-meta.com/uploads/posts/2024-07/1721253752_3142_11zon.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/4/41/Youmuu%27s_Ghostblade_item.png
   name: Youmuu's Ghostblade (Haste)
   stats:
   - type: Attack Damage
@@ -159,7 +159,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (55*41.67+10*40.0+18*20.82)/3000
-  image: https://wr-meta.com/uploads/posts/2021-01/1611108036_duskblade-of-draktharr.jpg
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/b/b7/Duskblade_of_Draktharr_WR_item.png
   name: Duskblade of Draktharr
   stats:
   - type: Attack Damage
@@ -184,7 +184,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3300
   formula: (30*41.67+25*50.0+33*45.0)/3300
-  image: https://wr-meta.com/uploads/posts/2021-03/1616982383_3033.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/c/cf/Mortal_Reminder_item.png
   name: Mortal Reminder
   stats:
   - type: Attack Damage
@@ -198,7 +198,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (400*3.33+40*41.67+20*40.0)/3000
-  image: https://wiki.leagueoflegends.com/en-us/images/Black_Cleaver_item.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/8/87/Black_Cleaver_item.png
   name: Black Cleaver
   stats:
   - type: Max Health
@@ -211,7 +211,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (400*3.33+40*41.67+20*40.0+20*16.0)/3000
-  image: https://wiki.leagueoflegends.com/en-us/images/Black_Cleaver_item.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/8/87/Black_Cleaver_item.png
   name: Black Cleaver (Rage - basic - Melee)
   stats:
   - type: Max Health
@@ -228,7 +228,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (400*3.33+40*41.67+20*40.0+10*16.0)/3000
-  image: https://wiki.leagueoflegends.com/en-us/images/Black_Cleaver_item.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/8/87/Black_Cleaver_item.png
   name: Black Cleaver (Rage - basic - Range)
   stats:
   - type: Max Health
@@ -245,7 +245,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (400*3.33+40*41.67+20*40.0+60*16.0)/3000
-  image: https://wiki.leagueoflegends.com/en-us/images/Black_Cleaver_item.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/8/87/Black_Cleaver_item.png
   name: Black Cleaver (Rage - 4Stacks - Melee)
   stats:
   - type: Max Health
@@ -262,7 +262,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (400*3.33+40*41.67+20*40.0+30*16.0)/3000
-  image: https://wiki.leagueoflegends.com/en-us/images/Black_Cleaver_item.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/8/87/Black_Cleaver_item.png
   name: Black Cleaver (Rage - 4Stacks - Range)
   stats:
   - type: Max Health
@@ -279,7 +279,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 2700
   formula: (25*41.67+300*0.86+20*40.0+13.8*41.67)/2700
-  image: https://wr-meta.com/uploads/posts/2021-03/1616982445_3004.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/d/dd/Manamune_item_old2.png
   name: Manamune (Awe - lv1 EZ 390 Mana)
   stats:
   - type: Attack Damage
@@ -299,7 +299,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 2700
   formula: (25*41.67+300*0.86+20*40.0+27.52*41.67)/2700
-  image: https://wr-meta.com/uploads/posts/2021-03/1616982445_3004.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/d/dd/Manamune_item_old2.png
   name: Manamune (Awe - lv15 EZ 1076 Mana)
   stats:
   - type: Attack Damage
@@ -319,7 +319,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 2700
   formula: (25*41.67+1000*0.86+20*40.0+27.8*41.67)/2700
-  image: https://wr-meta.com/uploads/posts/2023-08/1693337090_muramana.webp
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/5/51/Muramana_item_old2.png
   name: Muramana (Awe - lv1 EZ 390 Mana)
   stats:
   - type: Attack Damage
@@ -339,7 +339,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 2700
   formula: (25*41.67+1000*0.86+20*40.0+41.52*41.67)/2700
-  image: https://wr-meta.com/uploads/posts/2023-08/1693337090_muramana.webp
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/5/51/Muramana_item_old2.png
   name: Muramana (Awe - lv15 EZ 1076 Mana)
   stats:
   - type: Attack Damage
@@ -465,7 +465,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (55*41.67+45*25.0+10*40.0)/3000
-  image: https://wr-meta.com/uploads/posts/2021-03/1616982557_3156.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/1/14/Maw_of_Malmortius_item.png
   name: Maw of Malmortius
   stats:
   - type: Attack Damage
@@ -478,7 +478,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (35*41.67+40*25.0+15*40.0)/3000
-  image: https://wr-meta.com/uploads/posts/2021-01/1611108426_deaths-dance.jpg
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/d/d9/Death%27s_Dance_item_old2.png
   name: Death's Dance
   stats:
   - type: Attack Damage
@@ -491,7 +491,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (25*41.67+25*50.0+30*33.33+5*50.0)/3000
-  image: https://wr-meta.com/uploads/posts/2021-01/1611113166_phantom-dancer.jpg
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/c/ce/Phantom_Dancer_item.png
   name: Phantom Dancer
   stats:
   - type: Attack Damage
@@ -507,7 +507,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (25*41.67+25*50.0+30*33.33+5*50.0+7*50.0+25*33.33)/3000
-  image: https://wr-meta.com/uploads/posts/2021-01/1611113166_phantom-dancer.jpg
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/c/ce/Phantom_Dancer_item.png
   name: Phantom Dancer (Spectral Waltz)
   stats:
   - type: Attack Damage
@@ -530,7 +530,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (45*33.33+20*40.0+30*41.67)/3000
-  image: https://wr-meta.com/uploads/posts/2021-03/1616983090_3115.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/1/16/Nashor%27s_Tooth_item.png
   name: 'Nashor''s Tooth (Adaptive: AD)'
   stats:
   - type: '% Attack Speed'
@@ -544,7 +544,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 2700
   formula: (45*33.33+45*25.0)/2700
-  image: https://wr-meta.com/uploads/posts/2022-01/1641822176_wits-end.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/1/16/Wit%27s_End_item.png
   name: Wit's End
   stats:
   - type: '% Attack Speed'
@@ -555,7 +555,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3050
   formula: (40*41.67+25*50.0+20*40.0)/3050
-  image: https://wr-meta.com/uploads/posts/2022-01/1641832757_essence-reaver.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/9/9a/Essence_Reaver_item_old2.png
   name: Essence Reaver
   stats:
   - type: Attack Damage
@@ -568,7 +568,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (40*41.67+25*50.0+20*33.33)/3000
-  image: https://wr-meta.com/uploads/posts/2022-01/1641835021_stormrazor.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/9/92/Stormrazor_item.png
   name: Stormrazor
   stats:
   - type: Attack Damage
@@ -581,7 +581,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3100
   formula: (40*41.67+15*40.0+33*45.0)/3100
-  image: https://wr-meta.com/uploads/posts/2022-01/1641835852_seryldas-grudge.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/c/cb/Serylda%27s_Grudge_item.png
   name: Serylda's Grudge
   stats:
   - type: Attack Damage
@@ -595,7 +595,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (25*50.0+40*33.33+20*40.0)/3000
-  image: https://wr-meta.com/uploads/posts/2022-01/1641837331_solari-chargeblade.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/b/bb/Solari_Chargeblade_WR_item.png
   name: Solari Chargeblade
   stats:
   - type: '% Critical Rate'
@@ -608,7 +608,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (45*41.67+25*50.0+15*40.0)/3000
-  image: https://wr-meta.com/uploads/posts/2022-01/1641838686_navori-quickblades.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/e/e6/Navori_Quickblades_item.png
   name: Navori Quickblades
   stats:
   - type: Attack Damage
@@ -621,7 +621,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3150
   formula: (250*3.33+50*41.67+8*20.82)/3150
-  image: https://wr-meta.com/uploads/posts/2022-01/1641839799_edge-of-night.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/6/69/Edge_of_Night_item.png
   name: Edge of Night
   stats:
   - type: Max Health
@@ -635,7 +635,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3400
   formula: (425*3.33+25*41.67+25*40.0)/3400
-  image: https://wr-meta.com/uploads/posts/2022-03/1648417575_divine_sunderer_item.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/3/35/Divine_Sunderer_item.png
   name: Divine Sunderer
   stats:
   - type: Max Health
@@ -648,7 +648,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 2800
   formula: (50*41.67+10*40.0+15*20.82)/2800
-  image: https://wr-meta.com/uploads/posts/2022-09/1663357609_serpent27s_fang_item_hd.webp
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/6/66/Serpent%27s_Fang_item.png
   name: Serpent's Fang
   stats:
   - type: Attack Damage
@@ -662,7 +662,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 2800
   formula: (250*3.33+45*41.67+15*40.0)/2800
-  image: https://wr-meta.com/uploads/posts/2023-10/1698176281_chempunk_chainsword_item_hd.webp
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/f/f8/Chempunk_Chainsword_item.png
   name: Chempunk Chainsword
   stats:
   - type: Max Health
@@ -675,7 +675,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (40*41.67+25*50.0+15*33.33+5*45.82)/3000
-  image: https://wr-meta.com/uploads/posts/2023-05/1682985922_immortal_shieldbow_item.webp
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/2/2b/Immortal_Shieldbow_item.png
   name: Immortal Shieldbow
   stats:
   - type: Attack Damage
@@ -690,7 +690,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (40*41.67+25*50.0+15*33.33+5*45.82+8*45.82)/3000
-  image: https://wr-meta.com/uploads/posts/2023-05/1682985922_immortal_shieldbow_item.webp
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/2/2b/Immortal_Shieldbow_item.png
   name: Immortal Shieldbow (Battle Furor)
   stats:
   - type: Attack Damage
@@ -709,7 +709,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 2900
   formula: (40*41.67+25*50.0+10*20.82)/2900
-  image: https://wr-meta.com/uploads/posts/2023-05/1683034280_the_collector_item.webp
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/9/91/The_Collector_item.png
   name: The Collector
   stats:
   - type: Attack Damage
@@ -723,7 +723,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200
   formula: (400*3.33+29.0*41.67)/3200
-  image: https://wr-meta.com/uploads/posts/2024-07/1721253752_3053_11zon.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/9/9b/Sterak%27s_Gage_item.png
   name: Sterak's Gage (Heavy Handed - lv1 IRE 58 AD)
   stats:
   - type: Max Health
@@ -738,7 +738,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200
   formula: (400*3.33+61.0*41.67)/3200
-  image: https://wr-meta.com/uploads/posts/2024-07/1721253752_3053_11zon.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/9/9b/Sterak%27s_Gage_item.png
   name: Sterak's Gage (Heavy Handed - lv15 IRE 122 AD)
   stats:
   - type: Max Health
@@ -753,7 +753,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200
   formula: (300*3.33+50*41.67+25*40.0+5*50.0)/3200
-  image: https://wr-meta.com/uploads/posts/2024-01/1705521918_spear_of_shojin_item_hd.webp
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/1/1c/Spear_of_Shojin_item.png
   name: Spear of Shojin
   stats:
   - type: Max Health
@@ -769,7 +769,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (450*3.33+15*41.67+11.25*41.67)/3000
-  image: https://wr-meta.com/uploads/posts/2024-01/1705522398_titanic_hydra_item_hd.webp
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/2/22/Titanic_Hydra_item.png
   name: Titanic Hydra
   stats:
   - type: Max Health
@@ -787,7 +787,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3400
   formula: (35*41.67+30*33.33)/3400
-  image: https://wr-meta.com/uploads/posts/2024-04/1712427795_terminus.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/4/49/Terminus_item.png
   name: Terminus
   stats:
   - type: Attack Damage
@@ -798,7 +798,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3400
   formula: (35*41.67+30*33.33+15*25.0+15*25.0+33*45.0+33*0)/3400
-  image: https://wr-meta.com/uploads/posts/2024-04/1712427795_terminus.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/4/49/Terminus_item.png
   name: Terminus (Juxtaposition - lv1)
   stats:
   - type: Attack Damage
@@ -822,7 +822,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3400
   formula: (35*41.67+30*33.33+24*25.0+24*25.0+33*45.0+33*0)/3400
-  image: https://wr-meta.com/uploads/posts/2024-04/1712427795_terminus.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/4/49/Terminus_item.png
   name: Terminus (Juxtaposition - lv15)
   stats:
   - type: Attack Damage
@@ -846,7 +846,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 2900
   formula: (40*41.67+15*40.0+300*3.33)/2900
-  image: https://wr-meta.com/uploads/posts/2024-07/1721254332_6610_11zon.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/4/4f/Sundered_Sky_item.png
   name: Sundered Sky
   stats:
   - type: Attack Damage
@@ -859,7 +859,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 2900
   formula: (60*41.67+20*40.0)/2900
-  image: https://wr-meta.com/uploads/posts/2024-07/1721254356_6692_11zon.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/c/c2/Eclipse_item.png
   name: Eclipse
   stats:
   - type: Attack Damage
@@ -870,7 +870,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 3000
   formula: (85*20.0+7*0+300*0.86+20*40.0)/3000
-  image: https://wr-meta.com/uploads/posts/2021-03/1616982673_6655.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/1/1e/Luden%27s_Tempest_item.png
   name: Luden's Echo
   stats:
   - type: Ability Power
@@ -885,7 +885,7 @@
   category: MAGIC DAMAGE ITEMS, SUPPORT ITEMS
   cost: 2600
   formula: (150*3.33+75*20.0+7*0+20*40.0)/2600
-  image: https://wr-meta.com/uploads/posts/2021-03/1616982692_3165.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/7/7b/Morellonomicon_item.png
   name: Morellonomicon
   stats:
   - type: Max Health
@@ -900,7 +900,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 3000
   formula: (60*20.0+7*0+200*0.86+20*40.0)/3000
-  image: https://wr-meta.com/uploads/posts/2023-10/1698169540_crown_of_the_shattered_queen_item_hd-1.webp
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/b/b6/Crown_of_the_Shattered_Queen_item.png
   name: Crown of the Shattered Queen
   stats:
   - type: Ability Power
@@ -915,7 +915,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 3000
   formula: (60*20.0+7*0+200*0.86+20*40.0+20*20.0)/3000
-  image: https://wr-meta.com/uploads/posts/2023-10/1698169540_crown_of_the_shattered_queen_item_hd-1.webp
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/b/b6/Crown_of_the_Shattered_Queen_item.png
   name: Crown of the Shattered Queen (Safeguard & Poise)
   stats:
   - type: Ability Power
@@ -934,7 +934,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 3400
   formula: (100*20.0+7*0+20.0*20.0)/3400
-  image: https://wr-meta.com/uploads/posts/2024-07/1721253582_3089_11zon.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/3/37/Rabadon%27s_Deathcap_item_old2.png
   name: Rabadon's Deathcap (Overkill - lv1)
   stats:
   - type: Ability Power
@@ -951,7 +951,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 3400
   formula: (100*20.0+7*0+45.0*20.0)/3400
-  image: https://wr-meta.com/uploads/posts/2024-07/1721253582_3089_11zon.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/3/37/Rabadon%27s_Deathcap_item_old2.png
   name: Rabadon's Deathcap (Overkill - lv15)
   stats:
   - type: Ability Power
@@ -968,7 +968,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 2700
   formula: (350*3.33+70*20.0)/2700
-  image: https://wr-meta.com/uploads/posts/2021-03/1616982924_3116.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/f/f2/Rylai%27s_Crystal_Scepter_item.png
   name: Rylai's Crystal Scepter
   stats:
   - type: Max Health
@@ -979,7 +979,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 3000
   formula: (250*3.33+75*20.0+7*0)/3000
-  image: https://wr-meta.com/uploads/posts/2021-03/1616982978_6653.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/2/2b/Liandry%27s_Anguish_item_old.png
   name: Liandry's Torment
   stats:
   - type: Max Health
@@ -992,7 +992,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 2800
   formula: (250*3.33+60*20.0+7*0+300*0.86)/2800
-  image: https://wr-meta.com/uploads/posts/2021-01/1611109436_rod-of-ages.jpg
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/7/76/Rod_of_Ages_WR_item.png
   name: Rod of Ages
   stats:
   - type: Max Health
@@ -1007,7 +1007,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 2800
   formula: (250*3.33+60*20.0+7*0+300*0.86+250*3.33+60*20.0+100*0.86)/2800
-  image: https://wr-meta.com/uploads/posts/2021-01/1611109436_rod-of-ages.jpg
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/7/76/Rod_of_Ages_WR_item.png
   name: Rod of Ages (Veteran)
   stats:
   - type: Max Health
@@ -1031,7 +1031,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 2950
   formula: (80*20.0+7*0+10*40.0+5*50.0)/2950
-  image: https://wr-meta.com/uploads/posts/2021-03/1616983087_3100.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/5/53/Lich_Bane_item_old2.png
   name: Lich Bane
   stats:
   - type: Ability Power
@@ -1047,7 +1047,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 3000
   formula: (45*33.33+20*40.0+60*20.0)/3000
-  image: https://wr-meta.com/uploads/posts/2021-03/1616983090_3115.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/1/16/Nashor%27s_Tooth_item.png
   name: 'Nashor''s Tooth (Adaptive: AP)'
   stats:
   - type: '% Attack Speed'
@@ -1061,7 +1061,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 2950
   formula: (35*20.0+7*0+500*0.86+20*40.0+9.8*20.0)/2950
-  image: https://wr-meta.com/uploads/posts/2021-03/1616983148_3003.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/4/47/Archangel%27s_Staff_item.png
   name: Archangel's Staff (Awe - lv1 Kass 480 MP)
   stats:
   - type: Ability Power
@@ -1083,7 +1083,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 2950
   formula: (35*20.0+7*0+500*0.86+20*40.0+18.9*20.0)/2950
-  image: https://wr-meta.com/uploads/posts/2021-03/1616983148_3003.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/4/47/Archangel%27s_Staff_item.png
   name: Archangel's Staff (Awe - lv15 Kass 1390 MP)
   stats:
   - type: Ability Power
@@ -1105,7 +1105,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 2950
   formula: (35*20.0+7*0+1200*0.86+20*40.0+50.4*20.0)/2950
-  image: https://wr-meta.com/uploads/posts/2023-08/1691525309_3040.webp
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/b/b9/Seraph%27s_Embrace_item.png
   name: Seraph's Embrace (Awe - lv1 Kass 480 MP)
   stats:
   - type: Ability Power
@@ -1127,7 +1127,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 2950
   formula: (35*20.0+7*0+1200*0.86+20*40.0+77.7*20.0)/2950
-  image: https://wr-meta.com/uploads/posts/2023-08/1691525309_3040.webp
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/b/b9/Seraph%27s_Embrace_item.png
   name: Seraph's Embrace (Awe - lv15 Kass 1390 MP)
   stats:
   - type: Ability Power
@@ -1149,7 +1149,7 @@
   category: MAGIC DAMAGE ITEMS, SUPPORT ITEMS
   cost: 2800
   formula: (250*3.33+35*20.0+20*40.0+5*50.0+10*33.4)/2800
-  image: https://wr-meta.com/uploads/posts/2021-03/1616983242_3504.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/4/47/Ardent_Censer_item.png
   name: Ardent Censer
   stats:
   - type: Max Health
@@ -1167,7 +1167,7 @@
   category: SUPPORT ITEMS
   cost: 2700
   formula: (100*3.33+55*20.0+300*0.86+10*40.0+10*33.4)/2700
-  image: https://wr-meta.com/uploads/posts/2024-07/1721242538_harmonic_echo_wr_item_hd.webp
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/4/47/Harmonic_Echo_WR_item.png
   name: Harmonic Echo
   stats:
   - type: Max Health
@@ -1184,7 +1184,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 2900
   formula: (85*20.0+7*0+5*50.0+15*33.33)/2900
-  image: https://wr-meta.com/uploads/posts/2024-07/1721254072_wdp7mqj1nptc1.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/b/bf/Infinity_Orb_WR_item.png
   name: Infinity Orb
   stats:
   - type: Ability Power
@@ -1201,7 +1201,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 3000
   formula: (200*3.33+40*25.0+70*20.0+7*0)/3000
-  image: https://wr-meta.com/uploads/posts/2022-01/1641808144_crystalline-reflector.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/f/ff/Crystalline_Reflector_WR_item.png
   name: Crystalline Reflector
   stats:
   - type: Max Health
@@ -1216,7 +1216,7 @@
   category: SUPPORT ITEMS
   cost: 2500
   formula: (100*3.33+45*20.0+350*0.86+20*40.0+10*33.4)/2500
-  image: https://wr-meta.com/uploads/posts/2022-01/1641816198_staff-of-flowing-water.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/b/bf/Staff_of_Flowing_Water_item.png
   name: Staff of Flowing Waters
   stats:
   - type: Max Health
@@ -1233,7 +1233,7 @@
   category: SUPPORT ITEMS
   cost: 2500
   formula: (100*3.33+45*20.0+350*0.86+20*40.0+10*33.4+15*40.0+20*20.0)/2500
-  image: https://wr-meta.com/uploads/posts/2022-01/1641816198_staff-of-flowing-water.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/b/bf/Staff_of_Flowing_Water_item.png
   name: Staff of Flowing Waters (Rapids - lv1)
   stats:
   - type: Max Health
@@ -1257,7 +1257,7 @@
   category: SUPPORT ITEMS
   cost: 2500
   formula: (100*3.33+45*20.0+350*0.86+20*40.0+10*33.4+15*40.0+40*20.0)/2500
-  image: https://wr-meta.com/uploads/posts/2022-01/1641816198_staff-of-flowing-water.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/b/bf/Staff_of_Flowing_Water_item.png
   name: Staff of Flowing Waters (Rapids - lv15)
   stats:
   - type: Max Health
@@ -1281,7 +1281,7 @@
   category: MAGIC DAMAGE ITEMS, SUPPORT ITEMS
   cost: 2600
   formula: (200*3.33+80*20.0+7*0+10*40.0)/2600
-  image: https://wr-meta.com/uploads/posts/2023-10/1698170553_oceanid_s_trident_11zon.webp
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/e/ec/Oceanid%27s_Trident_WR_item.png
   name: Oceanid's Trident
   stats:
   - type: Max Health
@@ -1296,7 +1296,7 @@
   category: SUPPORT ITEMS
   cost: 2500
   formula: (200*3.33+40*20.0+20*40.0)/2500
-  image: https://wr-meta.com/uploads/posts/2022-09/1663358166_gbyq8fyates71_11zon.webp
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/e/e0/Imperial_Mandate_WR_item.png
   name: Imperial Mandate
   stats:
   - type: Max Health
@@ -1309,7 +1309,7 @@
   category: SUPPORT ITEMS
   cost: 2500
   formula: (200*3.33+40*20.0+20*40.0+20*50.0)/2500
-  image: https://wr-meta.com/uploads/posts/2022-09/1663358166_gbyq8fyates71_11zon.webp
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/e/e0/Imperial_Mandate_WR_item.png
   name: Imperial Mandate (Coordinated Fire)
   stats:
   - type: Max Health
@@ -1326,7 +1326,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 2800
   formula: (75*20.0+7*0+30*40.0+5*50.0)/2800
-  image: https://wr-meta.com/uploads/posts/2022-09/1663358238_4629_mage_t3_cosmicdrive_11zon.webp
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/7/73/Cosmic_Drive_item.png
   name: Cosmic Drive
   stats:
   - type: Ability Power
@@ -1342,7 +1342,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 2800
   formula: (75*20.0+7*0+30*40.0+5*50.0+30*16.0+21.0*16.0)/2800
-  image: https://wr-meta.com/uploads/posts/2022-09/1663358238_4629_mage_t3_cosmicdrive_11zon.webp
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/7/73/Cosmic_Drive_item.png
   name: Cosmic Drive (Spellweaving)
   stats:
   - type: Ability Power
@@ -1368,7 +1368,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 3200
   formula: (150*3.33+80*20.0+7*0+15*40.0+11*0)/3200
-  image: https://wr-meta.com/uploads/posts/2024-07/1721253932_4633_11zon.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/f/f8/Riftmaker_WR_item.png
   name: Riftmaker
   stats:
   - type: Max Health
@@ -1386,7 +1386,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 2900
   formula: (80*20.0+7*0+20*40.0)/2900
-  image: https://wr-meta.com/uploads/posts/2024-07/1721253540_4628_11zon.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/3/3b/Horizon_Focus_item.png
   name: Horizon Focus
   stats:
   - type: Ability Power
@@ -1399,7 +1399,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 3000
   formula: (45*33.33+40*20.0)/3000
-  image: https://wr-meta.com/uploads/posts/2021-03/1616982074_itemsquarerunaan27s_hurricane.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/f/f5/Runaan%27s_Hurricane_item.png
   name: 'Runaan''s Hurricane (Adaptive: AP)'
   stats:
   - type: '% Attack Speed'
@@ -1411,7 +1411,7 @@
   category: MAGIC DAMAGE ITEMS
   cost: 3100
   formula: (300*3.33+60*20.0+7*0+15*40.0+9.0*20.0)/3100
-  image: https://wr-meta.com/uploads/posts/2024-06/1719764588_screenshot-2024-06-30-180512.png
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Psychic_Projector_WR_item.png/80px-Psychic_Projector_WR_item.png?298a1
   name: Psychic Projector (Conversion)
   stats:
   - type: Max Health
@@ -1432,7 +1432,7 @@
   category: DEFENSE ITEMS
   cost: 2900
   formula: (500*3.33+15*40.0)/2900
-  image: https://wr-meta.com/uploads/posts/2021-03/1616983481_3068.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/0/0f/Sunfire_Aegis_item.png
   name: Sunfire Aegis
   stats:
   - type: Max Health
@@ -1443,7 +1443,7 @@
   category: DEFENSE ITEMS
   cost: 2800
   formula: (350*3.33+100*0+50*25.0+20*40.0)/2800
-  image: https://wr-meta.com/uploads/posts/2021-03/1616983537_3065.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/6/6f/Spirit_Visage_item.png
   name: Spirit Visage
   stats:
   - type: Max Health
@@ -1458,7 +1458,7 @@
   category: DEFENSE ITEMS
   cost: 2800
   formula: (400*3.33+75*25.0)/2800
-  image: https://wr-meta.com/uploads/posts/2021-03/1616983598_3143.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/0/08/Randuin%27s_Omen_item.png
   name: Randuin's Omen
   stats:
   - type: Max Health
@@ -1480,7 +1480,7 @@
   category: DEFENSE ITEMS
   cost: 2850
   formula: (700*3.33+200*0+10*40.0)/2850
-  image: https://wr-meta.com/uploads/posts/2024-07/1721254052_3083_11zon.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/9/9f/Warmog%27s_Armor_item.png
   name: Warmog's Armor
   stats:
   - type: Max Health
@@ -1493,7 +1493,7 @@
   category: DEFENSE ITEMS
   cost: 3100
   formula: (250*3.33+50*25.0+250*0.86+30*40.0)/3100
-  image: https://wr-meta.com/uploads/posts/2021-03/1616983682_6662.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/8/8e/Frostfire_Gauntlet_item_old.png
   name: Iceborn Gauntlet
   stats:
   - type: Max Health
@@ -1508,7 +1508,7 @@
   category: DEFENSE ITEMS
   cost: 2800
   formula: (250*3.33+50*25.0+5*50.0)/2800
-  image: https://wr-meta.com/uploads/posts/2021-03/1616983728_3742.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/1/1e/Dead_Man%27s_Plate_item_old2.png
   name: Dead Man's Plate
   stats:
   - type: Max Health
@@ -1522,7 +1522,7 @@
   category: DEFENSE ITEMS
   cost: 2800
   formula: (250*3.33+50*25.0+5*50.0+40*16.0)/2800
-  image: https://wr-meta.com/uploads/posts/2021-03/1616983728_3742.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/1/1e/Dead_Man%27s_Plate_item_old2.png
   name: Dead Man's Plate (Momentum)
   stats:
   - type: Max Health
@@ -1555,7 +1555,7 @@
   category: DEFENSE ITEMS, SUPPORT ITEMS
   cost: 2700
   formula: (400*3.33+40*25.0+10*40.0+5*33.4)/2700
-  image: https://wr-meta.com/uploads/posts/2021-01/1611110199_protectors-vow.jpg
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Protector%27s_Vow_WR_item.png/80px-Protector%27s_Vow_WR_item.png?2fdbd
   name: Protector's Vow
   stats:
   - type: Max Health
@@ -1570,7 +1570,7 @@
   category: DEFENSE ITEMS
   cost: 2600
   formula: (350*3.33+500*0.86+15*40.0+89.0*3.33)/2600
-  image: https://wr-meta.com/uploads/posts/2022-07/1657816019_winter27s_approach_item_hd.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Winter%27s_Approach_item.png
   name: Winter's Approach (Awe - lv1 Voli 390 MP)
   stats:
   - type: Max Health
@@ -1590,7 +1590,7 @@
   category: DEFENSE ITEMS
   cost: 2600
   formula: (350*3.33+500*0.86+15*40.0+180.0*3.33)/2600
-  image: https://wr-meta.com/uploads/posts/2022-07/1657816019_winter27s_approach_item_hd.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Winter%27s_Approach_item.png
   name: Winter's Approach (Awe - lv15 Voli 1300 MP)
   stats:
   - type: Max Health
@@ -1610,7 +1610,7 @@
   category: DEFENSE ITEMS
   cost: 2600
   formula: (350*3.33+1200*0.86+15*40.0+159.0*3.33)/2600
-  image: https://wr-meta.com/uploads/posts/2023-08/1691526146_3121.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Fimbulwinter_WR_item.png/80px-Fimbulwinter_WR_item.png?ff71d
   name: Fimbulwinter (Awe - lv1 Voli 390 MP)
   stats:
   - type: Max Health
@@ -1630,7 +1630,7 @@
   category: DEFENSE ITEMS
   cost: 2600
   formula: (350*3.33+1200*0.86+15*40.0+250.0*3.33)/2600
-  image: https://wr-meta.com/uploads/posts/2023-08/1691526146_3121.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Fimbulwinter_WR_item.png/80px-Fimbulwinter_WR_item.png?ff71d
   name: Fimbulwinter (Awe - lv15 Voli 1300 MP)
   stats:
   - type: Max Health
@@ -1650,7 +1650,7 @@
   category: DEFENSE ITEMS
   cost: 2750
   formula: (350*3.33+55*25.0+5*50.0)/2750
-  image: https://wr-meta.com/uploads/posts/2021-03/1616974996_4401_tank_t3_forceofnature-min.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Force_of_Nature_item.png
   name: Force of Nature
   stats:
   - type: Max Health
@@ -1664,7 +1664,7 @@
   category: DEFENSE ITEMS
   cost: 2750
   formula: (350*3.33+55*25.0+5*50.0+10*50.0)/2750
-  image: https://wr-meta.com/uploads/posts/2021-03/1616974996_4401_tank_t3_forceofnature-min.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Force_of_Nature_item.png
   name: Force of Nature (Absorb)
   stats:
   - type: Max Health
@@ -1682,7 +1682,7 @@
   category: DEFENSE ITEMS, SUPPORT ITEMS
   cost: 2700
   formula: (80*25.0+200*0.86+25*40.0)/2700
-  image: https://wr-meta.com/uploads/posts/2021-03/1616980284_1616954573_1616469878_3_24_21_patch22itempreviewarticle_frozenheart-min-min.jpg
+  image: https://wiki.leagueoflegends.com/en-us/images/Frozen_Heart_item.png
   name: Frozen Heart
   stats:
   - type: Armor
@@ -1695,7 +1695,7 @@
   category: DEFENSE ITEMS, SUPPORT ITEMS
   cost: 2700
   formula: (250*3.33+50*25.0+30*25.0)/2700
-  image: https://wr-meta.com/uploads/posts/2024-07/1721254164_images.png
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Dawnshroud_WR_item.png/80px-Dawnshroud_WR_item.png?0cdd7
   name: Dawnshroud
   stats:
   - type: Max Health
@@ -1708,7 +1708,7 @@
   category: DEFENSE ITEMS
   cost: 3100
   formula: (60*25.0+60*25.0)/3100
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/e/e9/Amaranth%27s_Twinguard_WR_item.png
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Amaranth%27s_Twinguard_WR_item.png/80px-Amaranth%27s_Twinguard_WR_item.png?b04b8
   name: Amaranth's Twinguard
   stats:
   - type: Armor
@@ -1719,7 +1719,7 @@
   category: DEFENSE ITEMS
   cost: 3100
   formula: (60*25.0+60*25.0+18.0*25.0+18.0*25.0)/3100
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/e/e9/Amaranth%27s_Twinguard_WR_item.png
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Amaranth%27s_Twinguard_WR_item.png/80px-Amaranth%27s_Twinguard_WR_item.png?b04b8
   name: Amaranth's Twinguard (Endurance)
   stats:
   - type: Armor
@@ -1743,7 +1743,7 @@
   category: DEFENSE ITEMS
   cost: 2900
   formula: (200*3.33+40*25.0+40*25.0)/2900
-  image: https://wr-meta.com/uploads/posts/2023-03/1678401479_1mantle-of-the-twelfth-hour_11zon.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Mantle_of_the_Twelfth_Hour_WR_item.png/80px-Mantle_of_the_Twelfth_Hour_WR_item.png?23017
   name: Mantle of the Twelfth Hour
   stats:
   - type: Max Health
@@ -1756,7 +1756,7 @@
   category: DEFENSE ITEMS
   cost: 2900
   formula: (200*3.33+40*25.0+40*25.0+180.0*3.33+90.0*3.33+30*16.0)/2900
-  image: https://wr-meta.com/uploads/posts/2023-03/1678401479_1mantle-of-the-twelfth-hour_11zon.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Mantle_of_the_Twelfth_Hour_WR_item.png/80px-Mantle_of_the_Twelfth_Hour_WR_item.png?23017
   name: Mantle of the Twelfth Hour (Lifeline)
   stats:
   - type: Max Health
@@ -1783,7 +1783,7 @@
   category: DEFENSE ITEMS
   cost: 2700
   formula: (300*3.33+50*25.0)/2700
-  image: https://wr-meta.com/uploads/posts/2023-03/1678401625_searing-crown-edited_11zon.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Searing_Crown_WR_item.png/80px-Searing_Crown_WR_item.png?01aeb
   name: Searing Crown
   stats:
   - type: Max Health
@@ -1794,7 +1794,7 @@
   category: DEFENSE ITEMS
   cost: 2800
   formula: (700*3.33+150*0+20*40.0)/2800
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/5/51/Heartsteel_item.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Heartsteel_item.png
   name: Heartsteel
   stats:
   - type: Max Health
@@ -1822,7 +1822,7 @@
   category: BOOTS
   cost: 1400
   formula: (35*41.67+45*16.0+7*0)/1400
-  image: https://wr-meta.com/uploads/posts/2021-01/1611110454_gluttonous-greaves.jpg
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Gluttonous_Greaves_WR_item.png/80px-Gluttonous_Greaves_WR_item.png?66408
   name: Gluttonous Greaves
   stats:
   - type: Attack Damage
@@ -1836,7 +1836,7 @@
   category: BOOTS
   cost: 1400
   formula: (20*41.67+35*33.33+45*16.0)/1400
-  image: https://wr-meta.com/uploads/posts/2023-07/1689775256_berserkers-greaves.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/Berserker%27s_Greaves_item.png
   name: Berserker's Greaves
   stats:
   - type: Attack Damage
@@ -1849,7 +1849,7 @@
   category: BOOTS
   cost: 1350
   formula: (200*3.33+100*0+35*25.0+45*16.0)/1350
-  image: https://wr-meta.com/uploads/posts/2021-03/1616983898_3111.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Mercury%27s_Treads_item.png
   name: Mercury's Treads
   stats:
   - type: Max Health
@@ -1864,7 +1864,7 @@
   category: BOOTS
   cost: 1350
   formula: (150*3.33+100*0+35*25.0+45*16.0)/1350
-  image: https://wr-meta.com/uploads/posts/2021-03/1616983981_3047.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Plated_Steelcaps_WR_item.png
   name: Plated Steelcaps
   stats:
   - type: Max Health
@@ -1879,7 +1879,7 @@
   category: BOOTS
   cost: 1400
   formula: (150*3.33+30*40.0+45*16.0)/1400
-  image: https://wr-meta.com/uploads/posts/2021-03/1616983907_3158.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Ionian_Boots_of_Lucidity_item.png
   name: Ionian Boots of Lucidity
   stats:
   - type: Max Health
@@ -1892,7 +1892,7 @@
   category: BOOTS
   cost: 1400
   formula: (55*20.0+150*0+45*16.0+8*33.33)/1400
-  image: https://wr-meta.com/uploads/posts/2023-07/1690225596_boots-of-mana-wild-rift-items.png
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Boots_of_Mana_WR_item.png/80px-Boots_of_Mana_WR_item.png?b7311
   name: Boots of Mana
   stats:
   - type: Ability Power
@@ -1908,7 +1908,7 @@
   category: BOOTS
   cost: 1400
   formula: (30*41.67+45*16.0+10*20.82)/1400
-  image: https://wr-meta.com/uploads/posts/2023-07/1689776288_boots-of-outburst.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Boots_of_Dynamism_WR_item.png/80px-Boots_of_Dynamism_WR_item.png?80d18
   name: Boots of Dynamism
   stats:
   - type: Attack Damage
@@ -1922,7 +1922,7 @@
   category: SUPPORT ITEMS
   cost: 500
   formula: (10*41.67)/500
-  image: https://wr-meta.com/uploads/posts/2022-09/1663355123_spectral_sickle_item.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/Spectral_Sickle_item.png
   name: Spectral Sickle (Adaptive - AD)
   stats:
   - passive: Versatile
@@ -1932,7 +1932,7 @@
   category: SUPPORT ITEMS
   cost: 500
   formula: (20*20.0)/500
-  image: https://wr-meta.com/uploads/posts/2022-09/1663355123_spectral_sickle_item.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/Spectral_Sickle_item.png
   name: Spectral Sickle (Adaptive - AP)
   stats:
   - passive: Versatile
@@ -1942,7 +1942,7 @@
   category: SUPPORT ITEMS
   cost: 500
   formula: (125*3.33)/500
-  image: https://wr-meta.com/uploads/posts/2022-09/1663355906_relic_shield_item.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/Relic_Shield_item.png
   name: Relic Shield
   stats:
   - type: Max Health
@@ -1951,7 +1951,7 @@
   category: SUPPORT ITEMS
   cost: 500
   formula: (80*3.33+5*40.0)/500
-  image: https://wr-meta.com/uploads/posts/2023-07/1689776983_staro3fytna_moneta_przedmiot.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/Ancient_Coin_item.png
   name: Ancient Coin
   stats:
   - type: Max Health
@@ -1962,7 +1962,7 @@
   category: SUPPORT ITEMS
   cost: 500
   formula: (10*40.0+14*41.67)/500
-  image: https://wr-meta.com/uploads/posts/2022-09/1663358054_black-mist-scythe_11zon.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/Black_Mist_Scythe_item.png
   name: 'Black Mist Scythe (Adaptive: AD)'
   stats:
   - type: Ability Haste
@@ -1974,7 +1974,7 @@
   category: SUPPORT ITEMS
   cost: 500
   formula: (10*40.0+28*20.0)/500
-  image: https://wr-meta.com/uploads/posts/2022-09/1663358054_black-mist-scythe_11zon.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/Black_Mist_Scythe_item.png
   name: 'Black Mist Scythe (Adaptive: AP)'
   stats:
   - type: Ability Haste
@@ -1986,7 +1986,7 @@
   category: SUPPORT ITEMS
   cost: 500
   formula: (10*40.0+14*41.67+250*3.33+20*41.67)/500
-  image: https://wr-meta.com/uploads/posts/2022-09/1663358054_black-mist-scythe_11zon.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/Black_Mist_Scythe_item.png
   name: 'Black Mist Scythe (Adaptive: AD, Soulcast)'
   stats:
   - type: Ability Haste
@@ -2004,7 +2004,7 @@
   category: SUPPORT ITEMS
   cost: 500
   formula: (10*40.0+28*20.0+250*3.33+40*20.0)/500
-  image: https://wr-meta.com/uploads/posts/2022-09/1663358054_black-mist-scythe_11zon.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/Black_Mist_Scythe_item.png
   name: 'Black Mist Scythe (Adaptive: AP, Soulcast)'
   stats:
   - type: Ability Haste
@@ -2022,7 +2022,7 @@
   category: SUPPORT ITEMS
   cost: 500
   formula: (175*3.33+10*40.0)/500
-  image: https://wr-meta.com/uploads/posts/2022-09/1663356287_bulwark_of_the_mountain_item.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/Bulwark_of_the_Mountain_item.png
   name: Bulwark of the Mountain
   stats:
   - type: Max Health
@@ -2033,7 +2033,7 @@
   category: SUPPORT ITEMS
   cost: 500
   formula: (175*3.33+10*40.0+250*3.33+20*41.67)/500
-  image: https://wr-meta.com/uploads/posts/2022-09/1663356287_bulwark_of_the_mountain_item.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/Bulwark_of_the_Mountain_item.png
   name: 'Bulwark of the Mountain (Adaptive: AD, Soulcast)'
   stats:
   - type: Max Health
@@ -2050,7 +2050,7 @@
   category: SUPPORT ITEMS
   cost: 500
   formula: (175*3.33+10*40.0+250*3.33+40*20.0)/500
-  image: https://wr-meta.com/uploads/posts/2022-09/1663356287_bulwark_of_the_mountain_item.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/Bulwark_of_the_Mountain_item.png
   name: 'Bulwark of the Mountain (Adaptive: AP, Soulcast)'
   stats:
   - type: Max Health
@@ -2067,7 +2067,7 @@
   category: SUPPORT ITEMS
   cost: 500
   formula: (125*3.33+15*40.0)/500
-  image: https://wr-meta.com/uploads/posts/2023-07/1689779391_talisman-of-ascension.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/Talisman_of_Ascension_item.png
   name: Talisman of Ascension
   stats:
   - type: Max Health
@@ -2078,7 +2078,7 @@
   category: SUPPORT ITEMS
   cost: 500
   formula: (125*3.33+15*40.0+250*3.33+20*41.67)/500
-  image: https://wr-meta.com/uploads/posts/2023-07/1689779391_talisman-of-ascension.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/Talisman_of_Ascension_item.png
   name: 'Talisman of Ascension (Adaptive: AD, Soulcast)'
   stats:
   - type: Max Health
@@ -2095,7 +2095,7 @@
   category: SUPPORT ITEMS
   cost: 500
   formula: (125*3.33+15*40.0+250*3.33+40*20.0)/500
-  image: https://wr-meta.com/uploads/posts/2023-07/1689779391_talisman-of-ascension.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/Talisman_of_Ascension_item.png
   name: 'Talisman of Ascension (Adaptive: AP, Soulcast)'
   stats:
   - type: Max Health
@@ -2112,7 +2112,7 @@
   category: MID TIER ITEMS
   cost: 1200
   formula: Base Item
-  image: https://wr-meta.com/uploads/posts/2021-03/1616985546_1053.png
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Vampiric_Scepter_WR_item.png/80px-Vampiric_Scepter_WR_item.png?f69f8
   name: Vampiric Scepter
   second_base:
     formula: (1200-20*41.67)/8
@@ -2127,7 +2127,7 @@
   category: MID TIER ITEMS
   cost: 1400
   formula: (15*50.0+15*33.33+5*50.0)/1400
-  image: https://wr-meta.com/uploads/posts/2021-03/1616985588_3086.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Zeal_item.png
   name: Zeal
   stats:
   - type: '% Critical Rate'
@@ -2141,7 +2141,7 @@
   category: MID TIER ITEMS
   cost: 900
   formula: (20*33.33)/900
-  image: https://wr-meta.com/uploads/posts/2021-03/1616985587_2015.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Kircheis_Shard_item_old2.png
   name: Kircheis Shard
   stats:
   - type: '% Attack Speed'
@@ -2150,7 +2150,7 @@
   category: MID TIER ITEMS
   cost: 1000
   formula: Base Item
-  image: https://wr-meta.com/uploads/posts/2021-03/1616985626_3134.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Serrated_Dirk_item.png
   name: Serrated Dirk
   second_base:
     formula: (1000-20*41.67)/8
@@ -2166,7 +2166,7 @@
   category: MID TIER ITEMS
   cost: 1400
   formula: (30*33.33)/1400
-  image: https://wr-meta.com/uploads/posts/2021-03/1616985621_1043.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Recurve_Bow_item_old2.png
   name: Recurve Bow
   stats:
   - type: '% Attack Speed'
@@ -2175,7 +2175,7 @@
   category: MID TIER ITEMS
   cost: 1500
   formula: (40*41.67)/1500
-  image: https://wr-meta.com/uploads/posts/2021-03/1616985610_1038.png
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/B._F._Sword_WR_item.png/80px-B._F._Sword_WR_item.png?c649c
   name: B. F. Sword
   stats:
   - type: Attack Damage
@@ -2184,7 +2184,7 @@
   category: MID TIER ITEMS
   cost: 1000
   formula: (20*50.0)/1000
-  image: https://wr-meta.com/uploads/posts/2021-03/1616985612_1018.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Cloak_of_Agility_item.png
   name: Cloak of Agility
   stats:
   - type: '% Critical Rate'
@@ -2193,7 +2193,7 @@
   category: MID TIER ITEMS
   cost: 1300
   formula: Base Item
-  image: https://wr-meta.com/uploads/posts/2021-01/1611440927_last-whisper.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Last_Whisper_item_old4.png
   name: Last Whisper
   second_base:
     formula: (1300-15*41.67)/15
@@ -2209,7 +2209,7 @@
   category: MID TIER ITEMS
   cost: 800
   formula: (15*41.67)/800
-  image: https://wr-meta.com/uploads/posts/2021-03/1616985718_3123.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Executioner%27s_Calling_item.png
   name: Executioner's Calling
   stats:
   - type: Attack Damage
@@ -2218,7 +2218,7 @@
   category: MID TIER ITEMS
   cost: 1000
   formula: (150*3.33+15*41.67)/1000
-  image: https://wr-meta.com/uploads/posts/2021-03/1616985701_3044.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Phage_item.png
   name: Phage
   stats:
   - type: Max Health
@@ -2229,7 +2229,7 @@
   category: MID TIER ITEMS
   cost: 1000
   formula: (150*3.33+15*41.67+20*16.0)/1000
-  image: https://wr-meta.com/uploads/posts/2021-03/1616985701_3044.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Phage_item.png
   name: Phage (Rage - AA - Melee)
   stats:
   - type: Max Health
@@ -2244,7 +2244,7 @@
   category: MID TIER ITEMS
   cost: 1000
   formula: (150*3.33+15*41.67+10*16.0)/1000
-  image: https://wr-meta.com/uploads/posts/2021-03/1616985701_3044.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Phage_item.png
   name: Phage (Rage - AA - Range)
   stats:
   - type: Max Health
@@ -2259,7 +2259,7 @@
   category: MID TIER ITEMS
   cost: 1000
   formula: (150*3.33+15*41.67+60*16.0)/1000
-  image: https://wr-meta.com/uploads/posts/2021-03/1616985701_3044.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Phage_item.png
   name: Phage (Rage - Kill - Melee)
   stats:
   - type: Max Health
@@ -2274,7 +2274,7 @@
   category: MID TIER ITEMS
   cost: 1000
   formula: (150*3.33+15*41.67+30*16.0)/1000
-  image: https://wr-meta.com/uploads/posts/2021-03/1616985701_3044.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Phage_item.png
   name: Phage (Rage - Kill - Range)
   stats:
   - type: Max Health
@@ -2289,7 +2289,7 @@
   category: MID TIER ITEMS
   cost: 1200
   formula: (30*33.33+10*40.0)/1200
-  image: https://wr-meta.com/uploads/posts/2021-03/1616985695_winged_moonplate_item_hd.jpg
+  image: https://wiki.leagueoflegends.com/en-us/images/Stinger_WR_item.png
   name: Stinger
   stats:
   - type: '% Attack Speed'
@@ -2300,7 +2300,7 @@
   category: MID TIER ITEMS
   cost: 1200
   formula: (25*41.67+10*40.0)/1200
-  image: https://wr-meta.com/uploads/posts/2021-01/1611441611_caulfields-warhammer.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Caulfield%27s_Warhammer_item.png
   name: Caulfield's Warhammer
   stats:
   - type: Attack Damage
@@ -2311,7 +2311,7 @@
   category: MID TIER ITEMS
   cost: 1100
   formula: (175*3.33+15*41.67)/1100
-  image: https://wr-meta.com/uploads/posts/2021-01/1611444901_jaurims-fist.png
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Jaurim%27s_Fist_WR_item.png/80px-Jaurim%27s_Fist_WR_item.png?528bf
   name: Jaurim's Fist
   stats:
   - type: Max Health
@@ -2322,7 +2322,7 @@
   category: MID TIER ITEMS
   cost: 900
   formula: (300*0.86+10*40.0)/900
-  image: https://wr-meta.com/uploads/posts/2021-01/1611442459_tear-of-the-goddess.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Tear_of_the_Goddess_item.png
   name: Tear of the Goddess
   stats:
   - type: Max Mana
@@ -2333,7 +2333,7 @@
   category: MID TIER ITEMS
   cost: 900
   formula: (300*0.86+10*40.0+700*0.86)/900
-  image: https://wr-meta.com/uploads/posts/2021-01/1611442459_tear-of-the-goddess.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Tear_of_the_Goddess_item.png
   name: Tear of the Goddess (Mana Charge)
   stats:
   - type: Max Mana
@@ -2347,7 +2347,7 @@
   category: MID TIER ITEMS
   cost: 950
   formula: Base Item
-  image: https://wr-meta.com/uploads/posts/2021-01/1611442631_aether-wisp.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Aether_Wisp_item.png
   name: Aether Wisp
   second_base:
     formula: (950-35*20.0)/5
@@ -2363,7 +2363,7 @@
   category: MID TIER ITEMS
   cost: 900
   formula: (30*20.0+200*0.86)/900
-  image: https://wr-meta.com/uploads/posts/2021-03/1616985899_3802.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Lost_Chapter_item.png
   name: Lost Chapter
   stats:
   - type: Ability Power
@@ -2374,7 +2374,7 @@
   category: MID TIER ITEMS
   cost: 1000
   formula: (35*20.0+10*40.0)/1000
-  image: https://wr-meta.com/uploads/posts/2021-03/1616985893_3108.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Fiendish_Codex_item.png
   name: Fiendish Codex
   stats:
   - type: Ability Power
@@ -2385,7 +2385,7 @@
   category: MID TIER ITEMS
   cost: 900
   formula: (40*20.0)/900
-  image: https://wr-meta.com/uploads/posts/2021-03/1616985924_1026.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Blasting_Wand_item.png
   name: Blasting Wand
   stats:
   - type: Ability Power
@@ -2394,7 +2394,7 @@
   category: MID TIER ITEMS
   cost: 1500
   formula: (60*20.0)/1500
-  image: https://wr-meta.com/uploads/posts/2021-03/1616985984_1058.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Needlessly_Large_Rod_item_old2.png
   name: Needlessly Large Rod
   stats:
   - type: Ability Power
@@ -2403,7 +2403,7 @@
   category: MID TIER ITEMS
   cost: 900
   formula: (100*3.33+30*20.0)/900
-  image: https://wr-meta.com/uploads/posts/2021-01/1611443224_haunting-guise.png
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Haunting_Guise_WR_item.png/80px-Haunting_Guise_WR_item.png?20f7b
   name: Haunting Guise
   stats:
   - type: Max Health
@@ -2414,7 +2414,7 @@
   category: MID TIER ITEMS
   cost: 800
   formula: (10*40.0)/800
-  image: https://wr-meta.com/uploads/posts/2021-03/1616985975_3057.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Sheen_item.png
   name: Sheen
   stats:
   - type: Ability Haste
@@ -2423,7 +2423,7 @@
   category: MID TIER ITEMS
   cost: 800
   formula: (35*20.0)/800
-  image: https://wr-meta.com/uploads/posts/2021-03/1616985971_3916.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Oblivion_Orb_item.png
   name: Oblivion Orb
   stats:
   - type: Ability Power
@@ -2432,7 +2432,7 @@
   category: MID TIER ITEMS
   cost: 1000
   formula: Base Item
-  image: https://wr-meta.com/uploads/posts/2022-01/1641814345_prophets-pendant.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Prophet%27s_Pendant_WR_item.png
   name: Prophet's Pendant
   second_base:
     formula: (1000-30*20.0)/12
@@ -2448,7 +2448,7 @@
   category: MID TIER ITEMS
   cost: 1300
   formula: (250*3.33)/1300
-  image: https://wr-meta.com/uploads/posts/2021-03/1616986281_6660.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Bami%27s_Cinder_item.png
   name: Bami's Cinder
   stats:
   - type: Max Health
@@ -2457,7 +2457,7 @@
   category: MID TIER ITEMS
   cost: 1100
   formula: (175*3.33+20*25.0)/1100
-  image: https://wr-meta.com/uploads/posts/2021-03/1616986306_3211.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Spectre%27s_Cowl_item.png
   name: Spectre's Cowl
   stats:
   - type: Max Health
@@ -2468,7 +2468,7 @@
   category: MID TIER ITEMS
   cost: 1000
   formula: (175*3.33+10*40.0)/1000
-  image: https://wr-meta.com/uploads/posts/2021-03/1616986347_3067.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Kindlegem_item.png
   name: Kindlegem
   stats:
   - type: Max Health
@@ -2479,7 +2479,7 @@
   category: MID TIER ITEMS
   cost: 1000
   formula: (300*3.33)/1000
-  image: https://wr-meta.com/uploads/posts/2021-03/1616986359_1011.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Giant%27s_Belt_item.png
   name: Giant's Belt
   stats:
   - type: Max Health
@@ -2488,7 +2488,7 @@
   category: MID TIER ITEMS
   cost: 1050
   formula: (35*25.0)/1050
-  image: https://wr-meta.com/uploads/posts/2021-03/1616986370_3082.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Warden%27s_Mail_item.png
   name: Warden's Mail
   stats:
   - type: Armor
@@ -2497,7 +2497,7 @@
   category: MID TIER ITEMS
   cost: 1100
   formula: (200*3.33+300*0.86)/1100
-  image: https://wr-meta.com/uploads/posts/2021-01/1611444645_catalyst-of-aeons.png
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Catalyst_of_Aeons_WR_item.png/80px-Catalyst_of_Aeons_WR_item.png?1f6ba
   name: Catalyst of Aeons
   stats:
   - type: Max Health
@@ -2508,7 +2508,7 @@
   category: MID TIER ITEMS
   cost: 900
   formula: (40*25.0)/900
-  image: https://wr-meta.com/uploads/posts/2021-03/1616986413_1031.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Chain_Vest_item.png
   name: Chain Vest
   stats:
   - type: Armor
@@ -2517,7 +2517,7 @@
   category: MID TIER ITEMS
   cost: 1000
   formula: (30*25.0)/1000
-  image: https://wr-meta.com/uploads/posts/2021-03/1616986594_3076.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Bramble_Vest_item_old2.png
   name: Bramble Vest
   stats:
   - type: Armor
@@ -2526,7 +2526,7 @@
   category: MID TIER ITEMS
   cost: 1100
   formula: (20*41.67+20*25.0)/1100
-  image: https://wr-meta.com/uploads/posts/2021-03/1616986547_3155.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Hexdrinker_item.png
   name: Hexdrinker
   stats:
   - type: Attack Damage
@@ -2537,7 +2537,7 @@
   category: MID TIER ITEMS
   cost: 900
   formula: (40*25.0)/900
-  image: https://wr-meta.com/uploads/posts/2021-03/1616986529_1057.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Negatron_Cloak_item.png
   name: Negatron Cloak
   stats:
   - type: Magic Resistance
@@ -2546,7 +2546,7 @@
   category: MID TIER ITEMS
   cost: 1000
   formula: (20*25.0+150*0.86+10*40.0)/1000
-  image: https://wr-meta.com/uploads/posts/2021-03/1616986572_3024.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Glacial_Buckler_item.png
   name: Glacial Shroud
   stats:
   - type: Armor
@@ -2559,7 +2559,7 @@
   category: MID TIER ITEMS
   cost: 900
   formula: (150*3.33+5*50.0)/900
-  image: https://wr-meta.com/uploads/posts/2021-03/1616981123_winged_moonplate_item_hd-min.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Winged_Moonplate_item.png
   name: Winged Moonplate
   stats:
   - type: Max Health
@@ -2571,7 +2571,7 @@
   category: MID TIER ITEMS
   cost: 1200
   formula: (30*25.0+25*20.0)/1200
-  image: https://wr-meta.com/uploads/posts/2022-01/1641809649_seekers-armguard.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Seeker%27s_Armguard_item.png
   name: Seeker's Armguard
   stats:
   - type: Armor
@@ -2582,7 +2582,7 @@
   category: MID TIER ITEMS
   cost: 800
   formula: (20*41.67)/800
-  image: https://wr-meta.com/uploads/posts/2023-10/1698258000_nashors-talon.png
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Nashor%27s_Talon_WR_item.png/80px-Nashor%27s_Talon_WR_item.png
   name: 'Nashor''s Talon (Adaptive: AD)'
   stats:
   - passive: Magic Needle
@@ -2592,7 +2592,7 @@
   category: MID TIER ITEMS
   cost: 800
   formula: (40*20.0)/800
-  image: https://wr-meta.com/uploads/posts/2023-10/1698258000_nashors-talon.png
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Nashor%27s_Talon_WR_item.png/80px-Nashor%27s_Talon_WR_item.png
   name: 'Nashor''s Talon (Adaptive: AP)'
   stats:
   - passive: Magic Needle
@@ -2602,7 +2602,7 @@
   category: MID TIER ITEMS
   cost: 1350
   formula: (25*41.67+15*33.33)/1350
-  image: https://wr-meta.com/uploads/posts/2023-05/1685137714_noonquiver_item.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/Noonquiver_item.png
   name: Noonquiver
   stats:
   - type: Attack Damage
@@ -2613,7 +2613,7 @@
   category: MID TIER ITEMS
   cost: 1400
   formula: (150*3.33+25*20.0)/1400
-  image: https://wr-meta.com/uploads/posts/2023-10/1698176528_hextech_alternator_item.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/Hextech_Alternator_item.png?ab00d
   name: Hextech Alternator
   stats:
   - type: Max Health
@@ -2624,7 +2624,7 @@
   category: MID TIER ITEMS
   cost: 1800
   formula: (70*3.33+25*20.0+7*0)/1800
-  image: https://wr-meta.com/uploads/posts/2023-10/1698177176_mejai27s_soulstealer_item_hd.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/Mejai%27s_Soulstealer_item.png?4abeb
   name: Mejai's Soulstealer
   stats:
   - type: Max Health
@@ -2637,7 +2637,7 @@
   category: MID TIER ITEMS
   cost: 1800
   formula: (70*3.33+25*20.0+7*0+150*20.0+10*50.0)/1800
-  image: https://wr-meta.com/uploads/posts/2023-10/1698177176_mejai27s_soulstealer_item_hd.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/Mejai%27s_Soulstealer_item.png?4abeb
   name: Mejai's Soulstealer (Fear)
   stats:
   - type: Max Health
@@ -2657,7 +2657,7 @@
   category: MID TIER ITEMS
   cost: 1300
   formula: (40*25.0)/1300
-  image: https://wr-meta.com/uploads/posts/2023-10/1698258154_surging-scales.png
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Surging_Scales_WR_item.png/80px-Surging_Scales_WR_item.png?5f1ac
   name: Surging Scales
   stats:
   - type: Armor
@@ -2670,7 +2670,7 @@
     type: Move Speed
     value: 16.0
   formula: Base Item
-  image: https://wr-meta.com/uploads/posts/2021-03/1616983879_1001.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Boots_item.png?d4ef5
   name: Boots of Speed
   stats:
   - type: Move Speed
@@ -2683,7 +2683,7 @@
     type: Attack Damage
     value: 41.67
   formula: Base Item
-  image: https://wr-meta.com/uploads/posts/2021-03/1616984608_1036.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Long_Sword_item.png?8bb79
   name: Long Sword
   stats:
   - type: Attack Damage
@@ -2696,7 +2696,7 @@
     type: '% Critical Rate'
     value: 50.0
   formula: Base Item
-  image: https://wr-meta.com/uploads/posts/2021-01/1611439147_brawlers-gloves.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Brawler%27s_Gloves_item.png?bd80a
   name: Brawler's Gloves
   stats:
   - type: '% Critical Rate'
@@ -2709,7 +2709,7 @@
     type: '% Attack Speed'
     value: 33.33
   formula: Base Item
-  image: https://wr-meta.com/uploads/posts/2021-03/1616984536_1042.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Dagger_item.png?660f1
   name: Dagger
   stats:
   - type: '% Attack Speed'
@@ -2718,7 +2718,7 @@
   category: BASIC ITEMS
   cost: 500
   formula: (50*3.33)/500
-  image: https://wr-meta.com/uploads/posts/2023-08/1691501496_shimmering-spark.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Shimmering_Spark_WR_item.png/80px-Shimmering_Spark_WR_item.png?8de11
   name: Shimmering Spark
   stats:
   - type: Max Health
@@ -2727,7 +2727,7 @@
   category: BASIC ITEMS
   cost: 500
   formula: (100*0.86+5*40.0)/500
-  image: https://wr-meta.com/uploads/posts/2021-03/1616984672_1027.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Sapphire_Crystal_item.png?afdb1
   name: Sapphire Crystal
   stats:
   - type: Max Mana
@@ -2738,7 +2738,7 @@
   category: BASIC ITEMS
   cost: 500
   formula: Base Item
-  image: https://wr-meta.com/uploads/posts/2021-03/1616984672_1027.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Sapphire_Crystal_item.png?afdb1
   name: Sapphire Crystal (Mana Charge)
   second_base:
     formula: (500-5*40.0)/350
@@ -2760,7 +2760,7 @@
     type: Ability Power
     value: 20.0
   formula: Base Item
-  image: https://wr-meta.com/uploads/posts/2021-03/1616984688_1052.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Amplifying_Tome_item.png?91d93
   name: Amplifying Tome
   stats:
   - type: Ability Power
@@ -2773,7 +2773,7 @@
     type: Max Health
     value: 3.33
   formula: Base Item
-  image: https://wr-meta.com/uploads/posts/2021-03/1616984790_1028.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Ruby_Crystal_item.png?bf858
   name: Ruby Crystal
   stats:
   - type: Max Health
@@ -2786,7 +2786,7 @@
     type: Armor
     value: 25.0
   formula: Base Item
-  image: https://wr-meta.com/uploads/posts/2021-03/1616984728_1029.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Cloth_Armor_item.png?dcaab
   name: Cloth Armor
   stats:
   - type: Armor
@@ -2799,7 +2799,7 @@
     type: Magic Resistance
     value: 25.0
   formula: Base Item
-  image: https://wr-meta.com/uploads/posts/2021-03/1616984832_1033.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Null-Magic_Mantle_item.png?e98f5
   name: Null-Magic Mantle
   stats:
   - type: Magic Resistance
@@ -2812,7 +2812,7 @@
     type: Ability Haste
     value: 40.0
   formula: Base Item
-  image: https://wr-meta.com/uploads/posts/2023-10/1698258042_ring-of-revelation.png
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Ring_of_Revelation_WR_item.png/80px-Ring_of_Revelation_WR_item.png?cf71d
   name: Ring of Revelation
   stats:
   - type: Ability Haste
@@ -2821,7 +2821,7 @@
   category: MID TIER ITEMS
   cost: 900
   formula: Base Item
-  image: https://wiki.leagueoflegends.com/en-us/images/Forbidden_Idol_item.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Forbidden_Idol_item.png?ba30f
   name: Forbidden Idol
   second_base:
     formula: (900-100*3.33-10*40.0)/5
@@ -2851,7 +2851,7 @@
   category: DEFENSE ITEMS, SUPPORT ITEMS
   cost: 2500
   formula: (350*3.33+40*25.0+15*40.0)/2500
-  image: https://wr-meta.com/uploads/posts/2024-12/1735324542_jordle-trap.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Yordle_Trap_WR_item.png/80px-Yordle_Trap_WR_item.png?13fad
   name: Yordle Trap
   stats:
   - type: Max Health
@@ -2864,7 +2864,7 @@
   category: DEFENSE ITEMS, SUPPORT ITEMS
   cost: 2500
   formula: (350*3.33+40*25.0+15*40.0+30*50.0)/2500
-  image: https://wr-meta.com/uploads/posts/2024-12/1735324542_jordle-trap.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Yordle_Trap_WR_item.png/80px-Yordle_Trap_WR_item.png?13fad
   name: Yordle Trap (Catcher)
   stats:
   - type: Max Health
