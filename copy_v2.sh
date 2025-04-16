@@ -28,7 +28,7 @@ replace_underscore() {
 find "_pages/${new}" -type f -name '*.md' | while read -r file; do
   # Text replacements in the new version file
   sed -i "s/${old}/${new}/g" "$file"
-  sed -i "s/$(replace_underscore $old '.')/$(replace_underscore $new '.')/g" "$file"
+  sed -i "s/$(replace_underscore $old '\.')/$(replace_underscore $new '\.')/g" "$file"
   sed -i "s/$(replace_underscore $old '-')/$(replace_underscore $new '-')/g" "$file"
 
   # Update the date in the new version file
