@@ -7,9 +7,6 @@ description: Wild Rift 6.0e Item Gold-Effizienzblatt
 image: /assets/favicon512x512.png
 
 permalink: /de-DE/6.0e/
-redirect_from: 
-    - /de-DE/
-latest_version: true
 
 lang: de-DE
 
