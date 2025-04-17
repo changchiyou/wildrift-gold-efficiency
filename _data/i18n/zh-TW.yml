@@ -275,6 +275,9 @@ item:
     youmuu-s-ghostblade: 妖夢鬼刀
     zeal: 狂熱雙刀
     zeke-s-convergence: 錫柯的聚合之力
+    bandle-fantasy: 班德爾奇想
+    malignance: 惡意
+    malignance-scorn: 惡意 (輕藐)
   passive:
     absorb: 吸收
     ardent: 熾灼
@@ -330,3 +333,4 @@ item:
     veteran: 精熟
     wind-s-favor: 風之加護
     wisp: 神火
+    scorn: 輕藐
