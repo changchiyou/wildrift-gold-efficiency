@@ -275,6 +275,9 @@ item:
     youmuu-s-ghostblade: Youmuu's Ghostblade
     zeal: Zeal
     zeke-s-convergence: Zeke's Convergence
+    bandle-fantasy: Bandle Fantasy
+    malignance: Maligance
+    malignance-scorn: Maligance (Scorn)
   passive:
     absorb: Absorb
     ardent: Ardent
@@ -330,3 +333,4 @@ item:
     veteran: Veteran
     wind-s-favor: Wind's Favor
     wisp: Wisp
+    scorn: Scorn
