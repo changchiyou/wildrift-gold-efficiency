@@ -5,19 +5,19 @@ page:
   title: ワイルドリフトのゴールド効率
 nav:
   comments: '💬 コメント'
-  physical-damage-items: '📌 Physical Damage Items'
-  magic-damage-items: '📌 Magic Damage Items'
-  defence-items: '📌 Defence Items'
-  support-items: '📌 Support Items'
-  boots: '📌 Boots'
-  mid-tier-items: '📌 Mid-tier Items'
-  basic-items: '📌 Basic Items'
+  physical-damage-items: '📌 物理ダメージアイテム'
+  magic-damage-items: '📌 魔法ダメージアイテム'
+  defence-items: '📌 防御アイテム'
+  support-items: '📌 サポートアイテム'
+  boots: '📌 ブーツ'
+  mid-tier-items: '📌 中級アイテム'
+  basic-items: '📌 基本アイテム'
   sitemap: '🗺️ Sitemap'
 items-table:
-  item: Item
-  cost: Cost
-  stats: Stats
-  amount: Amount
+  item: アイテム
+  cost: 価格
+  stats: ステータス
+  amount: 金銭効率
 outdated:
   title: '⚠️ 警告'
   message: 古いバージョンを表示しています。最新バージョンにリダイレクトするには、{hyperlink_start}こちら{hyperlink_end}をクリックしてください。
@@ -33,241 +33,241 @@ copyright:
   message2: "このウェブサイトは、 {lolwiki} の金効率計算式と、 {lolwiki} と {wrmeta} の両方のデザイン要素を組み合わせたもので、手動で {wildrift_patchnote}のアイテムデータを更新しました。"
   message3: "したがって、このウェブサイトの画像リソースを使用したい場合は、 {lolwiki} と {wrmeta} の所有者に問い合わせて許可申請を行ってください。"
 filter:
-  title: '🔎 Stat Filters'
-  inclusion_filter: Inclusion
-  exclusion_filter: Exclusion
+  title: '🔎 ステータスフィルター'
+  inclusion_filter: 含める
+  exclusion_filter: 含めない
   base_price_modifier: '💰 統計価格'
   base_price:
     column:
-      stat: Stat
-      item: Item
-      cost: Cost
-      item_stats: Item Stats
-      stat_price: Stat Price
+      stat: ステータス
+      item: アイテム
+      cost: 価格
+      item_stats: アイテムのステータス
+      stat_price: 各ステータスの価格
 stat:
   type:
-    Attack: Physical
-    Magic: Magic
-    Defence: Defence
-    Others: Others
+    Attack: 物理
+    Magic: 魔法
+    Defence: 防御
+    Others: その他
   attr:
     # Attack
-    attack-damage: Attack Damage
-    percentage-critical-rate: "% Cricital Rate"
-    percentage-attack-speed: "% Attack Speed"
-    percentage-physical-vamp: "% Physical Vamp"
-    armor-penetration: "Armor Penetration"
-    percentage-armor-penetration: "% Armor Penetration"
+    attack-damage: 攻撃力
+    percentage-critical-rate: "クリティカル率％"
+    percentage-attack-speed: "攻撃速度％"
+    percentage-physical-vamp: "物理ヴァンプ％"
+    armor-penetration: "脅威"
+    percentage-armor-penetration: "物理防御貫通％"
     # Magic
-    ability-power: Ability Power
-    magic-penetration: Magic Penetration
-    percentage-magic-penetration: "% Magic Penetration"
-    ability-haste: Ability Haste
-    max-mana: Max Mana
-    percentage-mana-regeneration: "% Mana Regeneration"
-    percentage-omnivamp: "% Omnivamp"
+    ability-power: 魔力
+    magic-penetration: 魔法防御貫通値
+    percentage-magic-penetration: "魔法防御貫通％"
+    ability-haste: スキルヘイスト
+    max-mana: 最大マナ
+    percentage-mana-regeneration: "マナ自動回復％"
+    percentage-omnivamp: "オムニヴァンプ％"
     # Defence
-    armor: Armor
-    magic-resistance: Magic Resistance
-    max-health: Max Health
-    percentage-health-regen: "% Health Regen"
-    percentage-heal-and-shield-strength: "% Heal and shield strength"
+    armor: 物理防御
+    magic-resistance: 魔法防御
+    max-health: 最大体力
+    percentage-health-regen: "体力自動回復％"
+    percentage-heal-and-shield-strength: "回復・シールド増加率％"
     # Others
-    move-speed: Move Speed
-    percentage-move-speed: "% Move Speed"
-    unstable-passives'-stats: Unstable Passives' Stats
-    update: Update
+    move-speed: 移動速度
+    percentage-move-speed: "移動速度％"
+    unstable-passives'-stats: 不安定なパッシブのステータス
+    update: アップデート
 item:
   name:
-    aether-wisp: Aether Wisp
-    amaranth-s-twinguard: Amaranth's Twinguard
-    amaranth-s-twinguard-endurance: Amaranth's Twinguard (Endurance)
-    amplifying-tome: Amplifying Tome
-    ancient-coin: Ancient Coin
-    archangel-s-staff-awe-lv15-kass-1390-mp: Archangel's Staff (Awe - lv15 Kass 1390 MP)
-    archangel-s-staff-awe-lv1-kass-480-mp: Archangel's Staff (Awe - lv1 Kass 480 MP)
-    ardent-censer: Ardent Censer
-    bami-s-cinder: Bami's Cinder
-    berserker-s-greaves: Berserker's Greaves
-    b-f-sword: B. F. Sword
-    black-cleaver: Black Cleaver
-    black-cleaver-rage-4stacks-melee: Black Cleaver (Rage - 4Stacks - Melee)
-    black-cleaver-rage-4stacks-range: Black Cleaver (Rage - 4Stacks - Range)
-    black-cleaver-rage-basic-melee: Black Cleaver (Rage - basic - Melee)
-    black-cleaver-rage-basic-range: Black Cleaver (Rage - basic - Range)
-    black-mist-scythe-adaptive-ad: 'Black Mist Scythe (Adaptive: AD)'
-    black-mist-scythe-adaptive-ad-soulcast: 'Black Mist Scythe (Adaptive: AD, Soulcast)'
-    black-mist-scythe-adaptive-ap: 'Black Mist Scythe (Adaptive: AP)'
-    black-mist-scythe-adaptive-ap-soulcast: 'Black Mist Scythe (Adaptive: AP, Soulcast)'
-    blade-of-the-ruined-king: Blade of the Ruined King
-    blasting-wand: Blasting Wand
-    bloodthirster-bloodsworn-lv15: Bloodthirster (Bloodsworn - lv15)
-    bloodthirster-bloodsworn-lv1: Bloodthirster (Bloodsworn - lv1)
-    bloodthirster: Bloodthirster
-    boots-of-dynamism: Boots of Dynamism
-    boots-of-mana: Boots of Mana
+    aether-wisp: エーテル ウィスプ
+    amaranth-s-twinguard: アマランス ツインガード
+    amaranth-s-twinguard-endurance: アマランス ツインガード(忍耐)
+    amplifying-tome: 増魔の書
+    ancient-coin: エンシェント コイン
+    archangel-s-staff-awe-lv15-kass-1390-mp: アークエンジェル スタッフ (畏怖 - lv15 カサディン 1390マナ)
+    archangel-s-staff-awe-lv1-kass-480-mp: アークエンジェル スタッフ (畏怖 - lv1 カサディン 480マナ)
+    ardent-censer: アーデント センサー
+    bami-s-cinder: バミ シンダー
+    berserker-s-greaves: バーサーカー ブーツ
+    b-f-sword: B.F. ソード
+    black-cleaver: ブラック クリーバー
+    black-cleaver-rage-4stacks-melee: ブラック クリーバー (レンジ - 4スタック - 近接)
+    black-cleaver-rage-4stacks-range: ブラック クリーバー (レンジ - 4スタック - レンジ)
+    black-cleaver-rage-basic-melee: ブラック クリーバー (レンジ - 基礎 - 近接)
+    black-cleaver-rage-basic-range: ブラック クリーバー (レンジ - 基礎 - レンジ)
+    black-mist-scythe-adaptive-ad: '黒き霧の大鎌 (アダブティブ：攻撃力)'
+    black-mist-scythe-adaptive-ad-soulcast: '黒き霧の大鎌 (アダブティブ：攻撃力、 ソウルキャスト)'
+    black-mist-scythe-adaptive-ap: '黒き霧の大鎌 (アダブティブ：魔力)'
+    black-mist-scythe-adaptive-ap-soulcast: '黒き霧の大鎌 (アダブティブ：魔力、 ソウルキャスト)'
+    blade-of-the-ruined-king: ルインドキング ブレード
+    blasting-wand: ブラスティング ワンド
+    bloodthirster-bloodsworn-lv15: ブラッドサースター (血の誓い - lv15)
+    bloodthirster-bloodsworn-lv1: ブラッドサースター (血の誓い - lv1)
+    bloodthirster: ブラッド サースター
+    boots-of-dynamism: ダイナミズム ブーツ
+    boots-of-mana: マナ ブーツ
     boots-of-speed: Boots of Speed
-    bramble-vest: Bramble Vest
-    brawler-s-gloves: Brawler's Gloves
-    bulwark-of-the-mountain-adaptive-ad-soulcast: 'Bulwark of the Mountain (Adaptive: AD, Soulcast)'
-    bulwark-of-the-mountain-adaptive-ap-soulcast: 'Bulwark of the Mountain (Adaptive: AP, Soulcast)'
-    bulwark-of-the-mountain: Bulwark of the Mountain
-    catalyst-of-aeons: Catalyst of Aeons
-    caulfield-s-warhammer: Caulfield's Warhammer
-    chain-vest: Chain Vest
-    chempunk-chainsword: Chempunk Chainsword
-    cloak-of-agility: Cloak of Agility
-    cloth-armor: Cloth Armor
-    cosmic-drive: Cosmic Drive
-    cosmic-drive-spellweaving: Cosmic Drive (Spellweaving)
-    crown-of-the-shattered-queen: Crown of the Shattered Queen
-    crown-of-the-shattered-queen-safeguard-poise: Crown of the Shattered Queen (Safeguard & Poise)
-    crystalline-reflector: Crystalline Reflector
-    dagger: Dagger
-    dawnshroud: Dawnshroud
-    dead-man-s-plate: Dead Man's Plate
-    dead-man-s-plate-momentum: Dead Man's Plate (Momentum)
-    death-s-dance: Death's Dance
-    divine-sunderer: Divine Sunderer
-    duskblade-of-draktharr: Duskblade of Draktharr
-    eclipse: Eclipse
-    edge-of-night: Edge of Night
-    essence-reaver: Essence Reaver
-    executioner-s-calling: Executioner's Calling
-    fiendish-codex: Fiendish Codex
-    fimbulwinter-awe-lv15-voli-1300-mp: Fimbulwinter (Awe - lv15 Voli 1300 MP)
-    fimbulwinter-awe-lv1-voli-390-mp: Fimbulwinter (Awe - lv1 Voli 390 MP)
-    forbidden-idol: Forbidden Idol
-    force-of-nature-absorb: Force of Nature (Absorb)
-    force-of-nature: Force of Nature
-    frozen-heart: Frozen Heart
-    giant-s-belt: Giant's Belt
-    glacial-shroud: Glacial Shroud
-    gluttonous-greaves: Gluttonous Greaves
-    guardian-angel: Guardian Angel
-    harmonic-echo: Harmonic Echo
-    haunting-guise: Haunting Guise
-    heartsteel: Heartsteel
-    hexdrinker: Hexdrinker
-    hextech-alternator: Hextech Alternator
-    horizon-focus: Horizon Focus
-    iceborn-gauntlet: Iceborn Gauntlet
-    immortal-shieldbow-battle-furor: Immortal Shieldbow (Battle Furor)
-    immortal-shieldbow: Immortal Shieldbow
-    imperial-mandate-coordinated-fire: Imperial Mandate (Coordinated Fire)
-    imperial-mandate: Imperial Mandate
-    infinity-edge: Infinity Edge
-    infinity-orb: Infinity Orb
-    ionian-boots-of-lucidity: Ionian Boots of Lucidity
-    jaurim-s-fist: Jaurim's Fist
-    kaenic-rookern: Kaenic Rookern
-    kindlegem: Kindlegem
-    kircheis-shard: Kircheis Shard
-    last-whisper: Last Whisper
-    liandry-s-torment: Liandry's Torment
-    lich-bane: Lich Bane
-    long-sword: Long Sword
-    lost-chapter: Lost Chapter
-    luden-s-echo: Luden's Echo
-    magnetic-blaster: Magnetic Blaster
-    manamune-awe-lv15-ez-1076-mana: Manamune (Awe - lv15 EZ 1076 Mana)
-    manamune-awe-lv1-ez-390-mana: Manamune (Awe - lv1 EZ 390 Mana)
-    mantle-of-the-twelfth-hour-lifeline: Mantle of the Twelfth Hour (Lifeline)
-    mantle-of-the-twelfth-hour: Mantle of the Twelfth Hour
-    maw-of-malmortius: Maw of Malmortius
-    mejai-s-soulstealer-fear: Mejai's Soulstealer (Fear)
-    mejai-s-soulstealer: Mejai's Soulstealer
-    mercury-s-treads: Mercury's Treads
-    morellonomicon: Morellonomicon
-    mortal-reminder: Mortal Reminder
-    muramana-awe-lv15-ez-1076-mana: Muramana (Awe - lv15 EZ 1076 Mana)
-    muramana-awe-lv1-ez-390-mana: Muramana (Awe - lv1 EZ 390 Mana)
-    nashor-s-talon-adaptive-ad: 'Nashor''s Talon (Adaptive: AD)'
-    nashor-s-talon-adaptive-ap: 'Nashor''s Talon (Adaptive: AP)'
-    nashor-s-tooth-adaptive-ad: 'Nashor''s Tooth (Adaptive: AD)'
-    nashor-s-tooth-adaptive-ap: 'Nashor''s Tooth (Adaptive: AP)'
-    navori-quickblades: Navori Quickblades
-    needlessly-large-rod: Needlessly Large Rod
-    negatron-cloak: Negatron Cloak
-    noonquiver: Noonquiver
-    null-magic-mantle: Null-Magic Mantle
-    oblivion-orb: Oblivion Orb
-    oceanid-s-trident: Oceanid's Trident
-    phage: Phage
-    phage-rage-aa-melee: Phage (Rage - AA - Melee)
-    phage-rage-aa-range: Phage (Rage - AA - Range)
-    phage-rage-kill-melee: Phage (Rage - Kill - Melee)
-    phage-rage-kill-range: Phage (Rage - Kill - Range)
-    phantom-dancer: Phantom Dancer
-    phantom-dancer-spectral-waltz: Phantom Dancer (Spectral Waltz)
-    plated-steelcaps: Plated Steelcaps
-    prophet-s-pendant: Prophet's Pendant
-    protector-s-vow: Protector's Vow
-    psychic-projector-conversion: Psychic Projector (Conversion)
-    rabadon-s-deathcap-overkill-lv15: Rabadon's Deathcap (Overkill - lv15)
-    rabadon-s-deathcap-overkill-lv1: Rabadon's Deathcap (Overkill - lv1)
-    randuin-s-omen: Randuin's Omen
-    recurve-bow: Recurve Bow
-    redemption: Redemption
-    relic-shield: Relic Shield
-    riftmaker: Riftmaker
-    ring-of-revelation: Ring of Revelation
-    rod-of-ages: Rod of Ages
-    rod-of-ages-veteran: Rod of Ages (Veteran)
-    ruby-crystal: Ruby Crystal
-    runaan-s-hurricane-adaptive-ad: 'Runaan''s Hurricane (Adaptive: AD)'
-    runaan-s-hurricane-adaptive-ap: 'Runaan''s Hurricane (Adaptive: AP)'
-    rylai-s-crystal-scepter: Rylai's Crystal Scepter
-    sapphire-crystal-mana-charge: Sapphire Crystal (Mana Charge)
-    sapphire-crystal: Sapphire Crystal
-    searing-crown: Searing Crown
-    seeker-s-armguard: Seeker's Armguard
-    seraph-s-embrace-awe-lv15-kass-1390-mp: Seraph's Embrace (Awe - lv15 Kass 1390 MP)
-    seraph-s-embrace-awe-lv1-kass-480-mp: Seraph's Embrace (Awe - lv1 Kass 480 MP)
-    serpent-s-fang: Serpent's Fang
-    serrated-dirk: Serrated Dirk
-    serylda-s-grudge: Serylda's Grudge
-    sheen: Sheen
-    shimmering-spark: Shimmering Spark
-    solari-chargeblade: Solari Chargeblade
-    spear-of-shojin: Spear of Shojin
-    spectral-sickle-adaptive-ad: Spectral Sickle (Adaptive - AD)
-    spectral-sickle-adaptive-ap: Spectral Sickle (Adaptive - AP)
-    spectre-s-cowl: Spectre's Cowl
-    spirit-visage: Spirit Visage
-    staff-of-flowing-waters-rapids-lv15: Staff of Flowing Waters (Rapids - lv15)
-    staff-of-flowing-waters-rapids-lv1: Staff of Flowing Waters (Rapids - lv1)
-    staff-of-flowing-waters: Staff of Flowing Waters
-    sterak-s-gage-heavy-handed-lv15-ire-122-ad: Sterak's Gage (Heavy Handed - lv15 IRE 122 AD)
-    sterak-s-gage-heavy-handed-lv1-ire-58-ad: Sterak's Gage (Heavy Handed - lv1 IRE 58 AD)
-    stinger: Stinger
-    stormrazor: Stormrazor
-    sundered-sky: Sundered Sky
-    sunfire-aegis: Sunfire Aegis
-    surging-scales: Surging Scales
-    talisman-of-ascension-adaptive-ad-soulcast: 'Talisman of Ascension (Adaptive: AD, Soulcast)'
-    talisman-of-ascension-adaptive-ap-soulcast: 'Talisman of Ascension (Adaptive: AP, Soulcast)'
-    talisman-of-ascension: Talisman of Ascension
-    tear-of-the-goddess-mana-charge: Tear of the Goddess (Mana Charge)
-    tear-of-the-goddess: Tear of the Goddess
-    terminus-juxtaposition-lv15: Terminus (Juxtaposition - lv15)
-    terminus-juxtaposition-lv1: Terminus (Juxtaposition - lv1)
-    terminus: Terminus
-    the-collector: The Collector
-    thornmail: Thornmail
-    titanic-hydra: Titanic Hydra
-    trinity-force: Trinity Force
-    trinity-force-valor-aa-melee: Trinity Force (Valor - AA - Melee)
-    trinity-force-valor-aa-range: Trinity Force (Valor - AA - Range)
-    trinity-force-valor-kill-melee: Trinity Force (Valor - Kill - Melee)
-    trinity-force-valor-kill-range: Trinity Force (Valor - Kill - Range)
-    vampiric-scepter: Vampiric Scepter
-    warden-s-mail: Warden's Mail
-    warmog-s-armor: Warmog's Armor
-    winged-moonplate: Winged Moonplate
-    winter-s-approach-awe-lv15-voli-1300-mp: Winter's Approach (Awe - lv15 Voli 1300 MP)
-    winter-s-approach-awe-lv1-voli-390-mp: Winter's Approach (Awe - lv1 Voli 390 MP)
-    wit-s-end: Wit's End
+    bramble-vest: ブランブル ベスト
+    brawler-s-gloves: 喧嘩屋のグローブ
+    bulwark-of-the-mountain-adaptive-ad-soulcast: '霊峰の砦 (アダブティブ：攻撃力、ソウルキャスト)'
+    bulwark-of-the-mountain-adaptive-ap-soulcast: '霊峰の砦 (アダブティブ：魔力、ソウルキャスト)'
+    bulwark-of-the-mountain: 霊峰の砦
+    catalyst-of-aeons: 久遠のカタリスト
+    caulfield-s-warhammer: コール フィールド ウォー ハンマー
+    chain-vest: チェイン ベスト
+    chempunk-chainsword: ケミパンク チェーン ソー
+    cloak-of-agility: アジリティ クローク
+    cloth-armor: クロース アーマー
+    cosmic-drive: コズミック ドライブ
+    cosmic-drive-spellweaving: コズミック ドライブ （スペルウィーブ）
+    crown-of-the-shattered-queen: シャッタード クイーン クラウン
+    crown-of-the-shattered-queen-safeguard-poise: シャッタード クイーン クラウン（セーフガード＆冷静）
+    crystalline-reflector: クリスタル リフレクター
+    dagger: ダガー
+    dawnshroud: ドーン シュラウド
+    dead-man-s-plate: デッドマンのプレート
+    dead-man-s-plate-momentum: デッド マン プレート (熾烈)
+    death-s-dance: デス ダンス
+    divine-sunderer: ディヴァイン サンダラー
+    duskblade-of-draktharr: ドラクサー ダスクブレード
+    eclipse: 赤月の刃
+    edge-of-night: ナイトエッジ
+    essence-reaver: エッセンス リーバー
+    executioner-s-calling: エクスキューショナーコーリング
+    fiendish-codex: フェンディッシュの古書
+    fimbulwinter-awe-lv15-voli-1300-mp: フィンブルウィンター (畏怖 - lv15 ボリベア 1300 マナ)
+    fimbulwinter-awe-lv1-voli-390-mp: フィンブルウィンター (畏怖 - lv1 ボリベア 390 マナ)
+    forbidden-idol: フォビドゥン アイドル
+    force-of-nature-absorb: 自然の力 (吸収)
+    force-of-nature: 自然の力
+    frozen-heart: フローズン ハート
+    giant-s-belt: ジャイアント ベルト
+    glacial-shroud: グレイシャル シュラウド
+    gluttonous-greaves: グラトナス ブーツ
+    guardian-angel: ガーディアン エンジェル
+    harmonic-echo: ハーモニック エコー
+    haunting-guise: 悲愴な仮面
+    heartsteel: 心の鋼
+    hexdrinker: へクスドリンカー
+    hextech-alternator: へクステック オルタネーター
+    horizon-focus: ホライゾン フォーカス
+    iceborn-gauntlet: アイスボーン ガントレット
+    immortal-shieldbow-battle-furor: イモータル シールドボウ (戦いの憤怒)
+    immortal-shieldbow: イモータル シールドボウ
+    imperial-mandate-coordinated-fire: 帝国の指令 (調整射撃)
+    imperial-mandate: 帝国の指令
+    infinity-edge: インフィニティ エッジ
+    infinity-orb: インフィニティ オーブ
+    ionian-boots-of-lucidity: アイオニア ブーツ
+    jaurim-s-fist: ジャウリム フィスト
+    kaenic-rookern: ケイニック ルーケイン
+    kindlegem: キンドルジェム
+    kircheis-shard: キルヒアイス シャード
+    last-whisper: ラスト ウィスパー
+    liandry-s-torment: ライアンドリーの仮面
+    lich-bane: リッチ ベイン
+    long-sword: ロングソード
+    lost-chapter: ロスト チャプター
+    luden-s-echo: ルーデン エコー
+    magnetic-blaster: マグネティック ブラスター
+    manamune-awe-lv15-ez-1076-mana: マナムネ (畏怖 - lv15 エズリアル 1076マナ)
+    manamune-awe-lv1-ez-390-mana: マナムネ (畏怖 - lv1 エズリアル 390マナ)
+    mantle-of-the-twelfth-hour-lifeline: 背水のマント (ライフライン)
+    mantle-of-the-twelfth-hour: 背水のマント
+    maw-of-malmortius: マルモルティウスの胃袋
+    mejai-s-soulstealer-fear: メジャイ ソウルスティーラー (フィアー)
+    mejai-s-soulstealer: メジャイ ソウルスティーラー
+    mercury-s-treads: マーキュリー ブーツ
+    morellonomicon: モレロノミコン
+    mortal-reminder: モータル リマインダー
+    muramana-awe-lv15-ez-1076-mana: ムラマナ (畏怖 - lv15 エズリアル 1076マナ)
+    muramana-awe-lv1-ez-390-mana: ムラマナ (畏怖 - lv1 エズリアル 390マナ)
+    nashor-s-talon-adaptive-ad: 'ナッシャー タロン (アダブティブ：攻撃力)'
+    nashor-s-talon-adaptive-ap: 'ナッシャー タロン (アダブティブ：魔力)'
+    nashor-s-tooth-adaptive-ad: 'ナッシャー トゥース (アダブティブ：攻撃力)'
+    nashor-s-tooth-adaptive-ap: 'ナッシャー トゥース (アダブティブ：魔力)'
+    navori-quickblades: ナヴォリ クイックブレード
+    needlessly-large-rod: ムダニ デカイ ロッド
+    negatron-cloak: ネガトロン クローク
+    noonquiver: ヌーンクィヴァー
+    null-magic-mantle: ヌルマジック マント
+    oblivion-orb: 忘却のオーブ
+    oceanid-s-trident: オケアノス トライデント
+    phage: ファージ
+    phage-rage-aa-melee: ファージ (疾駆 - AA - 近接)
+    phage-rage-aa-range: ファージ (疾駆 - AA - レンジ)
+    phage-rage-kill-melee: ファージ (疾駆 - キル - 近接)
+    phage-rage-kill-range: ファージ (疾駆 - キル - レンジ)
+    phantom-dancer: ファントム ダンサー
+    phantom-dancer-spectral-waltz: ファントム ダンサー (幽霊のワルツ)
+    plated-steelcaps: プレート スチールキャップ
+    prophet-s-pendant: 預言者のペンダント
+    protector-s-vow: プロテクター ボウ
+    psychic-projector-conversion: 超能力プロジェクター (コンバージョン)
+    rabadon-s-deathcap-overkill-lv15: ラバドン デスキャップ (オーバーキル - lv15)
+    rabadon-s-deathcap-overkill-lv1: ラバドン デスキャップ (オーバーキル - lv1)
+    randuin-s-omen: ランデュイン オーメン
+    recurve-bow: リカーブ ボウ
+    redemption: リデンプション
+    relic-shield: レリックシールド
+    riftmaker: リフトメーカー
+    ring-of-revelation: 天啓の輪
+    rod-of-ages: ロッド オブ エイジス
+    rod-of-ages-veteran: ロッド オブ エイジス (歴戦の勇士)
+    ruby-crystal: ルビー クリスタル
+    runaan-s-hurricane-adaptive-ad: 'ルナーン ハリケーン (アダブティブ：攻撃力)'
+    runaan-s-hurricane-adaptive-ap: 'ルナーン ハリケーン (アダブティブ：魔力)'
+    rylai-s-crystal-scepter: リーライ クリスタル セプター
+    sapphire-crystal-mana-charge: サファイア クリスタル (マナチャージ)
+    sapphire-crystal: サファイア クリスタル
+    searing-crown: 焦炎の王冠
+    seeker-s-armguard: シーカー アームガード
+    seraph-s-embrace-awe-lv15-kass-1390-mp: セラフ エンブレイス (畏怖 - lv15 カサディン 1390マナ)
+    seraph-s-embrace-awe-lv1-kass-480-mp: セラフ エンブレイス (畏怖 - lv1 カサディン 480マナ)
+    serpent-s-fang: 毒蛇の牙
+    serrated-dirk: セレイテッド ダーク
+    serylda-s-grudge: セルリダの怨恨
+    sheen: シーン
+    shimmering-spark: シマリング スパーク
+    solari-chargeblade: ソラリ チャージ ブレード
+    spear-of-shojin: ショウジンの矛
+    spectral-sickle-adaptive-ad: 霊者の鎌 (アダブティブ：攻撃力)
+    spectral-sickle-adaptive-ap: "霊者の鎌 (アダブティブ：魔力\n)"
+    spectre-s-cowl: スペクター カウル
+    spirit-visage: スピリット ビザージュ
+    staff-of-flowing-waters-rapids-lv15: フロー ウォーター スタッフ (急流 - lv15)
+    staff-of-flowing-waters-rapids-lv1: フロー ウォーター スタッフ (急流 - lv1)
+    staff-of-flowing-waters: フロー ウォーター スタッフ
+    sterak-s-gage-heavy-handed-lv15-ire-122-ad: ステラックの篭手 (ヘビーハンド - lv15 イレリア 122 攻撃力)
+    sterak-s-gage-heavy-handed-lv1-ire-58-ad: ステラックの篭手 (ヘビーハンド - lv1 イレリア 58 攻撃力)
+    stinger: スティンガー
+    stormrazor: ストームレイザー
+    sundered-sky: サンダード スカイ
+    sunfire-aegis: サンファイア イージス
+    surging-scales: 波打つ鱗
+    talisman-of-ascension-adaptive-ad-soulcast: '超越のタリスマン (アダブティブ：攻撃力、 ソウルキャスト)'
+    talisman-of-ascension-adaptive-ap-soulcast: '超越のタリスマン (アダブティブ：魔力、 ソウルキャスト)'
+    talisman-of-ascension: 超越のタリスマン
+    tear-of-the-goddess-mana-charge: 女神の涙 (マナチャージ)
+    tear-of-the-goddess: 女神の涙
+    terminus-juxtaposition-lv15: テルミヌス (ジャクスタポジション - lv15)
+    terminus-juxtaposition-lv1: テルミヌス (ジャクスタポジション - lv1)
+    terminus: テルミヌス
+    the-collector: コレクター
+    thornmail: ソーンメイル
+    titanic-hydra: タイタン ハイドラ
+    trinity-force: トリニティ フォース
+    trinity-force-valor-aa-melee: トリニティ フォース (勇猛- AA -近接)
+    trinity-force-valor-aa-range: トリニティ フォース (勇猛- AA -レンジ)
+    trinity-force-valor-kill-melee: トリニティ フォース (勇猛- キル -近接)
+    trinity-force-valor-kill-range: トリニティ フォース (勇猛- キル -レンジ)
+    vampiric-scepter: ヴァンパイア セプター
+    warden-s-mail: ワーデン メイル
+    warmog-s-armor: ワーモグ アーマー
+    winged-moonplate: 翼のムーンプレート
+    winter-s-approach-awe-lv15-voli-1300-mp: 冬の訪れ (畏怖 - lv15 ボリベア 1300マナ)
+    winter-s-approach-awe-lv1-voli-390-mp: 冬の訪れ (畏怖 - lv1 ボリベア 390 マナ)
+    wit-s-end: ウィッツ エンド
     yordle-trap-catcher: Yordle Trap (Catcher)
     yordle-trap: Yordle Trap
     youmuu-s-ghostblade-haste: Youmuu's Ghostblade (Haste)
