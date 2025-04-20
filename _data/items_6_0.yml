@@ -1184,8 +1184,8 @@
   category: MAGIC DAMAGE ITEMS
   cost: 3000
   formula: (150*3.33+65*20.0+7*0+20*40.0+15*33.33)/3000
-  image: https://wiki.leagueoflegends.com/en-us/images/Mejai%27s_Soulstealer_item.png
-  name: Soulstealer
+  image: https://wiki.leagueoflegends.com/en-us/images/Awakened_Soulstealer_WR_item.png?29590
+  name: Awakened Soulstealer
   stats:
   - type: Max Health
     value: 150

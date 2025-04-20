@@ -1182,6 +1182,24 @@
     value: 10
   - type: '% Heal and shield strength'
     value: 10
+- amount: 103.31%
+  category: MAGIC DAMAGE ITEMS
+  cost: 3000
+  formula: (150*3.33+65*20.0+7*0+20*40.0+15*33.33)/3000
+  image: https://wiki.leagueoflegends.com/en-us/images/Awakened_Soulstealer_WR_item.png?29590
+  name: Awakened Soulstealer
+  stats:
+  - type: Max Health
+    value: 150
+  - type: Ability Power
+    value: 65
+  - type: '% Magic Penetration'
+    value: 7
+  - type: Ability Haste
+    value: 20
+  - passive: Soul Hunt
+    type: Magic Penetration
+    value: 15
 - amount: 84.48%
   category: MAGIC DAMAGE ITEMS
   cost: 2900
