@@ -106,7 +106,7 @@ item:
     bloodthirster: ブラッド サースター
     boots-of-dynamism: ダイナミズム ブーツ
     boots-of-mana: マナ ブーツ
-    boots-of-speed: Boots of Speed
+    boots-of-speed: ブーツ
     bramble-vest: ブランブル ベスト
     brawler-s-gloves: 喧嘩屋のグローブ
     bulwark-of-the-mountain-adaptive-ad-soulcast: '霊峰の砦 (アダブティブ：攻撃力、ソウルキャスト)'
@@ -268,69 +268,69 @@ item:
     winter-s-approach-awe-lv15-voli-1300-mp: 冬の訪れ (畏怖 - lv15 ボリベア 1300マナ)
     winter-s-approach-awe-lv1-voli-390-mp: 冬の訪れ (畏怖 - lv1 ボリベア 390 マナ)
     wit-s-end: ウィッツ エンド
-    yordle-trap-catcher: Yordle Trap (Catcher)
-    yordle-trap: Yordle Trap
-    youmuu-s-ghostblade-haste: Youmuu's Ghostblade (Haste)
-    youmuu-s-ghostblade-momentum: Youmuu's Ghostblade (Momentum)
-    youmuu-s-ghostblade: Youmuu's Ghostblade
-    zeal: Zeal
-    zeke-s-convergence: Zeke's Convergence
-    bandle-fantasy: Bandle Fantasy
-    malignance: Maligance
-    malignance-scorn: Maligance (Scorn)
+    yordle-trap-catcher: ヨードルトラップ (キャッチャー)
+    yordle-trap: ヨードルトラップ
+    youmuu-s-ghostblade-haste: 妖夢の霊剣 (豪撃)
+    youmuu-s-ghostblade-momentum: 妖夢の霊剣 (熾烈)
+    youmuu-s-ghostblade: 妖夢の霊剣
+    zeal: ジール
+    zeke-s-convergence: ジーク コンバージェンス
+    bandle-fantasy: バンドルファンタジー
+    malignance: マリグナンス
+    malignance-scorn: マリグナンス (憎悪の霧)
   passive:
-    absorb: Absorb
-    ardent: Ardent
-    assimilation: Assimilation
-    awe: Awe
-    balanced: Balanced
-    bane: Bane
-    battle-furor: Battle Furor
-    bloodsworn: Bloodsworn
-    bloody: Bloody
-    catcher: Catcher
-    colossus: Colossus
-    conversion: Conversion
-    coordinated-fire: Coordinated Fire
-    destiny: Destiny
-    doomsayer: Doomsayer
-    endurance: Endurance
-    fear: Fear
-    fervor: Fervor
-    flight: Flight
-    gouge: Gouge
-    haste: Haste
-    heavy-handed: Heavy Handed
-    hyperdrive: Hyperdrive
-    juxtaposition: Juxtaposition
-    killer: Killer
-    last-whisper: Last Whisper
-    lifeline: Lifeline
-    magic-break: Magic Break
-    magic-fang: Magic Fang
-    magic-needle: Magic Needle
-    mana-charge: Mana Charge
-    momentum: Momentum
-    overkill: Overkill
-    rage: Rage
-    rapids: Rapids
-    razor: Razor
-    relentless: Relentless
-    rising-dragon: Rising Dragon
-    safeguard-poise: Safeguard & Poise
-    shadowwalk: Shadowwalk
-    sharp: Sharp
-    slice: Slice
-    soulcast: Soulcast
-    spectral-waltz: Spectral Waltz
-    spellweaving: Spellweaving
-    stab: Stab
-    storm: Storm
-    strike: Strike
-    thirst: Thirst
-    valor: Valor
-    versatile: Versatile
-    veteran: Veteran
-    wind-s-favor: Wind's Favor
-    wisp: Wisp
-    scorn: Scorn
+    absorb: 吸収
+    ardent: アーデント
+    assimilation: 同化
+    awe: 畏怖
+    balanced: バランス
+    bane: ペイン
+    battle-furor: 戦いの憤怒
+    bloodsworn: 血の誓い
+    bloody: ブラッディー
+    catcher: キャッチャー
+    colossus: コロッサス
+    conversion: コンバージョン
+    coordinated-fire: 調整射撃
+    destiny: ディスティニー
+    doomsayer: 災難の預言者
+    endurance: 忍耐
+    fear: フィアー
+    fervor: 熱情
+    flight: フライト
+    gouge: えぐり出し
+    haste: 豪撃
+    heavy-handed: ヘビーハンド
+    hyperdrive: ハイパードライブ
+    juxtaposition: ジャクスタポジション
+    killer: キル
+    last-whisper: ラスト ウィスパー
+    lifeline: ライフライン
+    magic-break: 破魔
+    magic-fang: 魔法の牙
+    magic-needle: 魔法の針
+    mana-charge: マナチャージ
+    momentum: 熾烈
+    overkill: オーバーキル
+    rage: 追撃
+    rapids: 急流
+    razor: レイザー
+    relentless: 執拗
+    rising-dragon: 昇り龍
+    safeguard-poise: セーフガード＆冷静
+    shadowwalk: シャドウウォーク
+    sharp: 尖鋭
+    slice: スライス
+    soulcast: ソウルキャスト
+    spectral-waltz: 幽霊のワルツ
+    spellweaving: スペルウィーブ
+    stab: 刺し傷
+    storm: 嵐
+    strike: 打撃
+    thirst: サースト
+    valor: 勇猛
+    versatile: 万能
+    veteran: 歴戦の勇士
+    wind-s-favor: 風の恩恵
+    wisp: ウィスプ
+    scorn: 憎悪の霧
