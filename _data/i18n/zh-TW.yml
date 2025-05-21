@@ -278,6 +278,7 @@ item:
     bandle-fantasy: 班德爾奇想
     malignance: 惡意
     malignance-scorn: 惡意 (輕藐)
+    awakened-soulstealer: 覺醒竊魂者
   passive:
     absorb: 吸收
     ardent: 熾灼
@@ -334,3 +335,4 @@ item:
     wind-s-favor: 風之加護
     wisp: 神火
     scorn: 輕藐
+    soul-hunt: 靈魂獵殺

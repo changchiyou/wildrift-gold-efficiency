@@ -278,6 +278,7 @@ item:
     bandle-fantasy: Bandle Fantasy
     malignance: Maligance
     malignance-scorn: Maligance (Scorn)
+    awakened-soulstealer: Awakened Soulstealer
   passive:
     absorb: Absorb
     ardent: Ardent
@@ -334,3 +335,4 @@ item:
     wind-s-favor: Wind's Favor
     wisp: Wisp
     scorn: Scorn
+    soul-hunt: Soul Hunt
