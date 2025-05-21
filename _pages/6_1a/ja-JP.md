@@ -7,9 +7,6 @@ description: ワイルドリフト 6.1a ゴールド効率
 image: /assets/favicon512x512.png
 
 permalink: /ja-JP/6.1a/
-redirect_from: 
-    - /ja-JP/
-latest_version: true
 
 lang: ja-JP
 
