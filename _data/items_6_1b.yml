@@ -1148,7 +1148,7 @@
     type: Ability Power
     value: 77.7
 - amount: 101.77%
-  category: MAGIC DAMAGE ITEMS, SUPPORT ITEMS
+  category: SUPPORT ITEMS
   cost: 2800
   formula: (250*3.33+35*20.0+20*40.0+5*50.0+8*33.4)/2800
   image: https://static.wikia.nocookie.net/leagueoflegends/images/4/47/Ardent_Censer_item.png
