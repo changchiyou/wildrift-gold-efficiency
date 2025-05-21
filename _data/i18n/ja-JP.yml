@@ -278,6 +278,7 @@ item:
     bandle-fantasy: バンドルファンタジー
     malignance: マリグナンス
     malignance-scorn: マリグナンス (憎悪の霧)
+    awakened-soulstealer: Awakened Soulstealer
   passive:
     absorb: 吸収
     ardent: アーデント
@@ -334,3 +335,4 @@ item:
     wind-s-favor: 風の恩恵
     wisp: ウィスプ
     scorn: 憎悪の霧
+    soul-hunt: Soul Hunt
