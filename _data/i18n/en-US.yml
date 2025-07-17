@@ -104,6 +104,7 @@ item:
     bloodthirster-bloodsworn-lv15: Bloodthirster (Bloodsworn - lv15)
     bloodthirster-bloodsworn-lv1: Bloodthirster (Bloodsworn - lv1)
     bloodthirster: Bloodthirster
+    bloodthirster-bloody[crit]-lifeline: Bloodthirster (Bloody[Crit] & Lifeline)
     boots-of-dynamism: Boots of Dynamism
     boots-of-mana: Boots of Mana
     boots-of-speed: Boots of Speed
@@ -128,8 +129,10 @@ item:
     dead-man-s-plate: Dead Man's Plate
     dead-man-s-plate-momentum: Dead Man's Plate (Momentum)
     death-s-dance: Death's Dance
+    yordle-death-s-dance: Yordle Death's Dance
     divine-sunderer: Divine Sunderer
     duskblade-of-draktharr: Duskblade of Draktharr
+    yordle-duskblade-of-draktharr: Yordle Duskblade of Draktharr
     eclipse: Eclipse
     edge-of-night: Edge of Night
     essence-reaver: Essence Reaver
@@ -146,6 +149,7 @@ item:
     gluttonous-greaves: Gluttonous Greaves
     guardian-angel: Guardian Angel
     harmonic-echo: Harmonic Echo
+    yordle-harmonic-echo: Yordle Harmonic Echo
     haunting-guise: Haunting Guise
     heartsteel: Heartsteel
     hexdrinker: Hexdrinker
@@ -158,6 +162,7 @@ item:
     imperial-mandate: Imperial Mandate
     infinity-edge: Infinity Edge
     infinity-orb: Infinity Orb
+    yordle-infinity-orb: Yordle Infinity Orb
     ionian-boots-of-lucidity: Ionian Boots of Lucidity
     jaurim-s-fist: Jaurim's Fist
     kaenic-rookern: Kaenic Rookern
@@ -165,6 +170,7 @@ item:
     kircheis-shard: Kircheis Shard
     last-whisper: Last Whisper
     liandry-s-torment: Liandry's Torment
+    yordle-liandry-s-torment: Yordle Liandry's Torment
     lich-bane: Lich Bane
     long-sword: Long Sword
     lost-chapter: Lost Chapter
@@ -180,6 +186,7 @@ item:
     mercury-s-treads: Mercury's Treads
     morellonomicon: Morellonomicon
     mortal-reminder: Mortal Reminder
+    mortal-reminder-last-whisper[crit]: Mortal Reminder (Last Whisper[Crit])
     muramana-awe-lv15-ez-1076-mana: Muramana (Awe - lv15 EZ 1076 Mana)
     muramana-awe-lv1-ez-390-mana: Muramana (Awe - lv1 EZ 390 Mana)
     nashor-s-talon-adaptive-ad: 'Nashor''s Talon (Adaptive: AD)'
@@ -217,6 +224,8 @@ item:
     ruby-crystal: Ruby Crystal
     runaan-s-hurricane-adaptive-ad: 'Runaan''s Hurricane (Adaptive: AD)'
     runaan-s-hurricane-adaptive-ap: 'Runaan''s Hurricane (Adaptive: AP)'
+    yordle-runaan-s-hurricane-adaptive-ad: 'Yordle Runaan''s Hurricane (Adaptive: AD)'
+    yordle-runaan-s-hurricane-adaptive-ap: 'Yordle Runaan''s Hurricane (Adaptive: AP)'
     rylai-s-crystal-scepter: Rylai's Crystal Scepter
     sapphire-crystal-mana-charge: Sapphire Crystal (Mana Charge)
     sapphire-crystal: Sapphire Crystal
@@ -244,6 +253,7 @@ item:
     stormrazor: Stormrazor
     sundered-sky: Sundered Sky
     sunfire-aegis: Sunfire Aegis
+    yordle-sunfire-aegis: Yordle Sunfire Aegis
     surging-scales: Surging Scales
     talisman-of-ascension-adaptive-ad-soulcast: 'Talisman of Ascension (Adaptive: AD, Soulcast)'
     talisman-of-ascension-adaptive-ap-soulcast: 'Talisman of Ascension (Adaptive: AP, Soulcast)'
@@ -279,6 +289,8 @@ item:
     malignance: Maligance
     malignance-scorn: Maligance (Scorn)
     awakened-soulstealer: Awakened Soulstealer
+    soul-transfer: Soul Transfer
+    hullbreaker: Hullbreaker
   passive:
     absorb: Absorb
     ardent: Ardent
@@ -336,3 +348,4 @@ item:
     wisp: Wisp
     scorn: Scorn
     soul-hunt: Soul Hunt
+    set-sail: Set Sail

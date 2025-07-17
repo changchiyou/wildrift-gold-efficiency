@@ -7,6 +7,9 @@ description: ワイルドリフト 6.2 ゴールド効率
 image: /assets/favicon512x512.png
 
 permalink: /ja-JP/6.2/
+redirect_from: 
+    - /ja-JP/
+latest_version: true
 
 lang: ja-JP
 
@@ -23,7 +26,7 @@ patch_note:
         buffed: "Bloodthirster,The Collector"
         adjusted: "Navori Quickblades,Magnetic Blaster,Mortal Reminder,Essence Reaver,Phantom Dancer"
         nerfed: "Wit's End"
-        new: "Yordle Redemption,Yordle Sunfire Aegis,Yordle Harmonic Echo,Yordle Infinity Orb,Yordle Duskblade of Draktharr,Yordle Runaan's Hurricane,Yordle Death's Dance,Soul Transfer"
+        new: "Yordle Redemption,Yordle Sunfire Aegis,Yordle Harmonic Echo,Yordle Infinity Orb,Yordle Duskblade of Draktharr,Yordle Runaan's Hurricane,Yordle Death's Dance,Soul Transfer,Hullbreaker"
     excludes: ""
     compare:
         statuses: "buffed,adjusted,nerfed,new"

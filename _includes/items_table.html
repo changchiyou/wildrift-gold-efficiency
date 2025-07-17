@@ -3,7 +3,17 @@
 {% assign compare_items = site.data[ page.patch_note.compare.items ] %}
 {% assign compare_statuses = page.patch_note.compare.statuses | split: ',' %}
 {% assign patch_status_excludes = page.patch_note.excludes | split: ',' %}
-{% assign force_pairs = page.patch_note.compare.force | split: ';' %}
+{% assign compare_excludes = page.patch_note.compare.excludes | split: ',' %}
+{% assign force_sep = page.patch_note.compare.force_sep %}
+{% if force_sep %}
+    {% assign force_comma = force_sep | slice: 0 %}
+    {% assign force_semicolon = force_sep | slice: 1 %}
+{% else %}
+    {% assign force_comma = ':' %}
+    {% assign force_semicolon = ';' %}
+{% endif %}
+{% assign force_pairs = page.patch_note.compare.force | split: force_semicolon %}
+
 <table class="sortable-table">
     <colgroup>
         <col class="items-item">
@@ -21,22 +31,22 @@
     </thead>
     <tbody>
         {% for item in site.data[ include.items ] %}
-        {% if item.category contains include.category %}
+            {% if item.category contains include.category %}
                 {% assign filters = "" %}
                 {% for stat in item.stats %}
                     {% capture filters %}{{ filters }} {{ stat.type | downcase | replace: " ", "-" | replace: "%", "percentage" }}{% endcapture %}
                 {% endfor %}
 
-                {% assign exclude = false  %}
+                {% assign _patch_exclude = false  %}
                 {% for patch_status_exclude in patch_status_excludes %}
                     {% if item.name == patch_status_exclude %}
-                        {% assign exclude = true %}
+                        {% assign _patch_exclude = true %}
                         {% break %}
                     {% endif %}
                 {% endfor %}
 
                 {% assign patch = "" %}
-                {% unless exclude %}
+                {% unless _patch_exclude %}
                     {% for patch_status in page.patch_note.statuses %}
                         {% assign status_items = patch_status[1] | split: ',' %}
                         {% for status_item in status_items %}
@@ -52,16 +62,26 @@
                         {% endif %}
                     {% endfor %}
                 {% endunless %}
+
                 {% assign compare_item = "" %}
                 {% assign tr_classes = filters %}
                 {% if patch != "" %}
                     {% assign tr_classes = tr_classes | append: " update" %}
                 {% endif %}
-                {% if compare_statuses contains patch %}
+
+                {% assign _compare_exclude = false %}
+                {% for compare_exclude in compare_excludes %}
+                    {% if item.name == compare_exclude %}
+                        {% assign _compare_exclude = true %}
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+
+                {% if compare_statuses contains patch and _compare_exclude != true %}
                     {% include item_row.html data_item=item stats=include.stats patch=patch tr_classes=tr_classes first_td_class="toggle-trigger" prefix_version_in_span="true" %}
                     {% if force_pairs %}
                         {% for force_pair in force_pairs %}
-                            {% assign pair = force_pair | strip | split: ':' %}
+                            {% assign pair = force_pair | strip | split: force_comma %}
                             {% if item.name == pair[0] %}
                                 {% assign compare_item = compare_items | where: "name", pair[1] | first %}
                                 {% break %}
