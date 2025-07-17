@@ -24,7 +24,7 @@ patch_note:
         new: ""
     excludes: ""
     compare:
-        statuses: ""
+        statuses: "buffed,adjusted,nerfed"
         items: items_6_1e
         stats: stats_6_1e
         item_prefix: 6.1

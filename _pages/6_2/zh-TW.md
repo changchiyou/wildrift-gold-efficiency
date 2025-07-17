@@ -2,7 +2,7 @@
 layout: gold_efficiency_v2
 
 title: 6.2
-date: 2025/07/17
+date: 2025/07/16
 description: 激鬥峽谷 6.2 裝備面板價值
 image: /assets/favicon512x512.png
 
@@ -20,14 +20,15 @@ data:
 
 patch_note:
     statuses:
-        buffed: 
-        adjusted: 
-        nerfed: 
-        new: 
+        buffed: "Bloodthirster,The Collector"
+        adjusted: "Navori Quickblades,Magnetic Blaster,Mortal Reminder,Essence Reaver,Phantom Dancer"
+        nerfed: "Wit's End"
+        new: "Yordle Redemption,Yordle Sunfire Aegis,Yordle Harmonic Echo,Yordle Infinity Orb,Yordle Duskblade of Draktharr,Yordle Runaan's Hurricane,Yordle Death's Dance,Soul Transfer"
     excludes: ""
     compare:
-        statuses: "buffed,adjusted,nerfed"
+        statuses: "buffed,adjusted,nerfed,new"
         items: items_6_1f
         stats: stats_6_1f
-        item_prefix: 6.1
+        item_prefix: 6.1f
+        force: "Yordle Redemption:Redemption;Yordle Sunfire Aegis:Sunfire Aegis;Yordle Harmonic Echo:Harmonic Echo;Yordle Infinity Orb:Infinity Orb;Yordle Duskblade of Draktharr:Duskblade of Draktharr;Yordle Runaan's Hurricane (Adaptive: AP):Runaan's Hurricane (Adaptive: AP);Yordle Runaan's Hurricane (Adaptive: AD):Runaan's Hurricane (Adaptive: AD);Yordle Death's Dance:Death's Dance;Bloodthirster (Bloody[Crit] & Lifeline):Bloodthirster (Bloodsworn -lv15);Mortal Reminder (Last Whisper[Crit]):Mortal Reminder"
 ---

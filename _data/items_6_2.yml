@@ -1,6 +1,6 @@
 - amount: 114.90%
   category: PHYSICAL DAMAGE ITEMS
-  cost: 3300
+  cost: 3000
   formula: (50*41.67+25*50.0+10*45.82)/3300
   image: https://static.wikia.nocookie.net/leagueoflegends/images/d/df/Bloodthirster_item_Unused.png
   name: Bloodthirster
@@ -9,33 +9,40 @@
     value: 50
   - type: '% Critical Rate'
     value: 25
+  - type: '% Attack Speed'
+    value: 15
   - passive: Bloody
     type: '% Physical Vamp'
-    value: 10
+    value: 8
 - amount: 138.89%
   category: PHYSICAL DAMAGE ITEMS
-  cost: 3300
+  cost: 3000
   formula: (50*41.67+25*50.0+10*45.82+11*41.67+10*33.33)/3300
   image: https://static.wikia.nocookie.net/leagueoflegends/images/d/df/Bloodthirster_item_Unused.png
-  name: Bloodthirster (Bloodsworn - lv1)
+  name: Bloodthirster (Bloody[Crit] & Lifeline)
   stats:
   - type: Attack Damage
     value: 50
   - type: '% Critical Rate'
     value: 25
+  - type: '% Attack Speed'
+    value: 15
   - passive: Bloody
     type: '% Physical Vamp'
-    value: 10
-  - passive: Bloodsworn
-    type: Attack Damage
-    value: 11
-  - passive: Bloodsworn
-    type: '% Attack Speed'
-    value: 10
+    value: 8
+  - passive: Bloody[Crit]
+    type: '% Physical Vamp'
+    value: 4
+  - passive: Lifeline
+    type: Magic Resistance
+    value: 20
+  - passive: Lifeline
+    type: Armor
+    value: 20
   - type: Unstable Passives' Stats
 - amount: 156.57%
   category: PHYSICAL DAMAGE ITEMS
-  cost: 3300
+  cost: 3000
   formula: (50*41.67+25*50.0+10*45.82+25*41.67+10*33.33)/3300
   image: https://static.wikia.nocookie.net/leagueoflegends/images/d/df/Bloodthirster_item_Unused.png
   name: Bloodthirster (Bloodsworn - lv15)
@@ -46,7 +53,7 @@
     value: 25
   - passive: Bloody
     type: '% Physical Vamp'
-    value: 10
+    value: 8
   - passive: Bloodsworn
     type: Attack Damage
     value: 25
@@ -72,10 +79,12 @@
   image: https://static.wikia.nocookie.net/leagueoflegends/images/0/09/Magnetic_Blaster_WR_item.png
   name: Magnetic Blaster
   stats:
+  - type: Attack Damage
+    value: 25
   - type: '% Critical Rate'
     value: 25
   - type: '% Attack Speed'
-    value: 35
+    value: 25
   - passive: Fervor
     type: '% Move Speed'
     value: 5
@@ -98,13 +107,13 @@
   cost: 3000
   formula: (35*33.33+20*41.67)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/f/f5/Runaan%27s_Hurricane_item.png
-  name: 'Runaan''s Hurricane (Adaptive: AD)'
+  name: 'Yordle Runaan''s Hurricane (Adaptive: AD)'
   stats:
   - type: '% Attack Speed'
     value: 35
   - passive: Wind's Favor
     type: Attack Damage
-    value: 20
+    value: 15
 - amount: 106.80%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
@@ -160,10 +169,10 @@
   cost: 3000
   formula: (55*41.67+10*40.0+18*20.82)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/b/b7/Duskblade_of_Draktharr_WR_item.png
-  name: Duskblade of Draktharr
+  name: Yordle Duskblade of Draktharr
   stats:
   - type: Attack Damage
-    value: 55
+    value: 50
   - type: Ability Haste
     value: 10
   - passive: Razor
@@ -182,18 +191,40 @@
     value: 25
 - amount: 120.76%
   category: PHYSICAL DAMAGE ITEMS
-  cost: 3300
+  cost: 3100
   formula: (30*41.67+25*50.0+33*45.0)/3300
   image: https://static.wikia.nocookie.net/leagueoflegends/images/c/cf/Mortal_Reminder_item.png
   name: Mortal Reminder
   stats:
   - type: Attack Damage
-    value: 30
+    value: 25
   - type: '% Critical Rate'
     value: 25
+  - type: '% Attack Speed'
+    value: 15
   - passive: Last Whisper
     type: '% Armor Penetration'
-    value: 33
+    value: 30
+- amount: 120.76%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3100
+  formula: (30*41.67+25*50.0+33*45.0)/3300
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/c/cf/Mortal_Reminder_item.png
+  name: Mortal Reminder (Last Whisper[Crit])
+  stats:
+  - type: Attack Damage
+    value: 25
+  - type: '% Critical Rate'
+    value: 25
+  - type: '% Attack Speed'
+    value: 15
+  - passive: Last Whisper
+    type: '% Armor Penetration'
+    value: 30
+  - passive: Last Whisper[Crit]
+    type: '% Armor Penetration'
+    value: 6
+  - type: Unstable Passives' Stats
 - amount: 126.63%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
@@ -479,7 +510,7 @@
   cost: 3000
   formula: (35*41.67+40*25.0+15*40.0)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/d/d9/Death%27s_Dance_item_old2.png
-  name: Death's Dance
+  name: Yordle Death's Dance
   stats:
   - type: Attack Damage
     value: 35
@@ -489,17 +520,17 @@
     value: 15
 - amount: 118.05%
   category: PHYSICAL DAMAGE ITEMS
-  cost: 3000
+  cost: 2800
   formula: (25*41.67+25*50.0+30*33.33+5*50.0)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/c/ce/Phantom_Dancer_item.png
   name: Phantom Dancer
   stats:
   - type: Attack Damage
-    value: 25
+    value: 20
   - type: '% Critical Rate'
     value: 25
   - type: '% Attack Speed'
-    value: 30
+    value: 40
   - passive: Shadowwalk
     type: '% Move Speed'
     value: 5
@@ -542,7 +573,7 @@
     value: 30
 - amount: 97.22%
   category: PHYSICAL DAMAGE ITEMS
-  cost: 2700
+  cost: 2800
   formula: (45*33.33+45*25.0)/2700
   image: https://static.wikia.nocookie.net/leagueoflegends/images/1/16/Wit%27s_End_item.png
   name: Wit's End
@@ -553,13 +584,13 @@
     value: 45
 - amount: 121.86%
   category: PHYSICAL DAMAGE ITEMS
-  cost: 3050
+  cost: 3000
   formula: (40*41.67+25*50.0+20*40.0)/3050
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/9/9a/Essence_Reaver_item_old2.png
+  image: https://wr-meta.com/uploads/posts/2025-07/1751490591_1.webp
   name: Essence Reaver
   stats:
   - type: Attack Damage
-    value: 40
+    value: 35
   - type: '% Critical Rate'
     value: 25
   - type: Ability Haste
@@ -612,10 +643,10 @@
   name: Navori Quickblades
   stats:
   - type: Attack Damage
-    value: 45
+    value: 40
   - type: '% Critical Rate'
     value: 25
-  - type: Ability Haste
+  - type: '% Attack Speed'
     value: 15
 - amount: 97.86%
   category: PHYSICAL DAMAGE ITEMS
@@ -713,7 +744,7 @@
   name: The Collector
   stats:
   - type: Attack Damage
-    value: 40
+    value: 45
   - type: '% Critical Rate'
     value: 25
   - passive: Killer
@@ -866,6 +897,19 @@
     value: 60
   - type: Ability Haste
     value: 20
+- amount: 157.50%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3200
+  formula: (25*41.67+25*50.0+30*33.33+5*50.0+7*50.0+25*33.33)/3000
+  image: https://wr-meta.com/uploads/posts/2025-07/1752666929_gv-ertvwoaatbze_11zon-2.webp
+  name: Soul Transfer
+  stats:
+  - type: Attack Damage
+    value: 25
+  - type: '% Critical Rate'
+    value: 25
+  - type: '% Attack Speed'
+    value: 30
 - amount: 91.93%
   category: MAGIC DAMAGE ITEMS
   cost: 3000
@@ -982,7 +1026,7 @@
   cost: 3000
   formula: (250*3.33+75*20.0+7*0)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/2/2b/Liandry%27s_Anguish_item_old.png
-  name: Liandry's Torment
+  name: Yordle Liandry's Torment
   stats:
   - type: Max Health
     value: 250
@@ -1167,15 +1211,15 @@
     value: 8
 - amount: 87.34%
   category: SUPPORT ITEMS
-  cost: 2700
+  cost: 2600
   formula: (100*3.33+55*20.0+300*0.86+10*40.0+8*33.4)/2700
   image: https://static.wikia.nocookie.net/leagueoflegends/images/4/47/Harmonic_Echo_WR_item.png
-  name: Harmonic Echo
+  name: Yordle Harmonic Echo
   stats:
   - type: Max Health
     value: 100
   - type: Ability Power
-    value: 55
+    value: 40
   - type: Max Mana
     value: 300
   - type: Ability Haste
@@ -1205,10 +1249,10 @@
   cost: 2900
   formula: (85*20.0+7*0+5*50.0+15*33.33)/2900
   image: https://static.wikia.nocookie.net/leagueoflegends/images/b/bf/Infinity_Orb_WR_item.png
-  name: Infinity Orb
+  name: Yordle Infinity Orb
   stats:
   - type: Ability Power
-    value: 85
+    value: 80
   - type: '% Magic Penetration'
     value: 7
   - passive: Destiny
@@ -1420,13 +1464,13 @@
   cost: 3000
   formula: (45*33.33+40*20.0)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/f/f5/Runaan%27s_Hurricane_item.png
-  name: 'Runaan''s Hurricane (Adaptive: AP)'
+  name: 'Yordle Runaan''s Hurricane (Adaptive: AP)'
   stats:
   - type: '% Attack Speed'
     value: 45
   - passive: Wind's Favor
     type: Ability Power
-    value: 40
+    value: 30
 - amount: 96.10%
   category: MAGIC DAMAGE ITEMS
   cost: 3100
@@ -1501,7 +1545,7 @@
   cost: 2900
   formula: (500*3.33+15*40.0)/2900
   image: https://static.wikia.nocookie.net/leagueoflegends/images/0/0f/Sunfire_Aegis_item.png
-  name: Sunfire Aegis
+  name: Yordle Sunfire Aegis
   stats:
   - type: Max Health
     value: 500
