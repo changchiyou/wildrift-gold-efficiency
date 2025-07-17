@@ -7,9 +7,6 @@ description: Wild Rift 6.1f Eficiência de Ouro
 image: /assets/favicon512x512.png
 
 permalink: /pt-BR/6.1f/
-redirect_from: 
-    - /pt-BR/
-latest_version: true
 
 lang: pt-BR
 

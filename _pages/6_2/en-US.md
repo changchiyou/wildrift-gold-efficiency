@@ -1,0 +1,31 @@
+---
+layout: gold_efficiency_v2
+
+title: 6.2
+date: 2025/07/17
+description: Wild Rift Gold Efficiency of 6.2
+image: /assets/favicon512x512.png
+
+permalink: /en-US/6.2/
+
+lang: en-US
+
+data:
+    refer_url: https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-6-2/
+    refer_text: 6.2
+    items: items_6_2
+    stats: stats_6_2
+
+patch_note:
+    statuses:
+        buffed: 
+        adjusted: 
+        nerfed: 
+        new: 
+    excludes: ""
+    compare:
+        statuses: ""
+        items: items_6_1f
+        stats: stats_6_1f
+        item_prefix: 6.1
+---
