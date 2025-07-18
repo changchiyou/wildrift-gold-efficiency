@@ -515,17 +515,17 @@
     value: 5
 - amount: 157.50%
   category: PHYSICAL DAMAGE ITEMS
-  cost: 3000
+  cost: 2800
   formula: (25*41.67+25*50.0+30*33.33+5*50.0+7*50.0+25*33.33)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/c/ce/Phantom_Dancer_item.png
   name: Phantom Dancer (Spectral Waltz)
   stats:
   - type: Attack Damage
-    value: 25
+    value: 20
   - type: '% Critical Rate'
     value: 25
   - type: '% Attack Speed'
-    value: 30
+    value: 40
   - passive: Shadowwalk
     type: '% Move Speed'
     value: 5
