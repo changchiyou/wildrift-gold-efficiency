@@ -513,10 +513,10 @@
   - passive: Shadowwalk
     type: '% Move Speed'
     value: 5
-- amount: 157.50%
+- amount: 173.21%
   category: PHYSICAL DAMAGE ITEMS
   cost: 2800
-  formula: (25*41.67+25*50.0+30*33.33+5*50.0+7*50.0+25*33.33)/3000
+  formula: (20*41.67+25*50.0+40*33.33+5*50.0+7*50.0+25*33.33)/2800
   image: https://static.wikia.nocookie.net/leagueoflegends/images/c/ce/Phantom_Dancer_item.png
   name: Phantom Dancer (Spectral Waltz)
   stats:
@@ -889,10 +889,10 @@
     value: 25
   - type: '% Attack Speed'
     value: 30
-- amount: 111.52%
+- amount: 109.91%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3100
-  formula: (400*3.33+45*41.67+5*50.0)/3100
+  formula: (400*3.33+45*41.67+4*50.0)/3100
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Hullbreaker_WR_item.png/64px-Hullbreaker_WR_item.png?c0db0
   name: Hullbreaker
   stats:
@@ -1908,10 +1908,10 @@
     value: 150
   - type: Ability Haste
     value: 20
-- amount: 91.92%
+- amount: 84.23%
   category: DEFENSE ITEMS, SUPPORT ITEMS
   cost: 2600
-  formula: (400*3.33+300*0.86+20*40.0)/2600
+  formula: (400*3.33+300*0.86+15*40.0)/2600
   image: https://static.wikia.nocookie.net/leagueoflegends/images/9/94/Redemption_item.png
   name: Yordle Redemption
   stats:
