@@ -104,6 +104,7 @@ item:
     bloodthirster-bloodsworn-lv15: 嗜血者 (血誓 - lv15)
     bloodthirster-bloodsworn-lv1: 嗜血者 (血誓 - lv1)
     bloodthirster: 嗜血者
+    "bloodthirster-bloody[crit]-lifeline": 嗜血者 (血腥[爆擊] & 命脈)
     boots-of-dynamism: 爆發之靴
     boots-of-mana: 魔力之靴
     boots-of-speed: 速度之靴
@@ -128,8 +129,10 @@ item:
     dead-man-s-plate: 死者肩甲
     dead-man-s-plate-momentum: 死者肩甲 (衝勁)
     death-s-dance: 死亡之舞
+    yordle-death-s-dance: 約德爾 死亡之舞
     divine-sunderer: 聖裂之杖
     duskblade-of-draktharr: 暮色黑刃
+    yordle-duskblade-of-draktharr: 約德爾 暮色黑刃
     eclipse: 星蝕
     edge-of-night: 夜色緣界
     essence-reaver: 奪魄之鎌
@@ -146,6 +149,7 @@ item:
     gluttonous-greaves: 貪婪護脛
     guardian-angel: 守護天使
     harmonic-echo: 和諧回音
+    yordle-harmonic-echo: 約德爾 和諧回音
     haunting-guise: 幽魂面具
     heartsteel: 雄心之鋼
     hexdrinker: 吸魔劍
@@ -158,6 +162,7 @@ item:
     imperial-mandate: 帝王命令
     infinity-edge: 無盡之刃
     infinity-orb: 無限寶珠
+    yordle-infinity-orb: 約德爾 無限珠寶
     ionian-boots-of-lucidity: 愛歐尼亞之靴
     jaurim-s-fist: 約瑞姆之拳
     kaenic-rookern: 凱尼克欺瞞者
@@ -165,6 +170,7 @@ item:
     kircheis-shard: 柯奇碎片
     last-whisper: 最後耳語
     liandry-s-torment: 黎安卓的折磨
+    yordle-liandry-s-torment: 約德爾 黎安卓的折磨
     lich-bane: 巫妖之禍
     long-sword: 長劍
     lost-chapter: 失落之章
@@ -180,6 +186,7 @@ item:
     mercury-s-treads: 水星之靴
     morellonomicon: 黑魔禁書
     mortal-reminder: 致死宣告
+    "mortal-reminder-last-whisper[crit]": 致死宣告 (最後耳語[爆擊])
     muramana-awe-lv15-ez-1076-mana: 終極魔劍 (威嚇 - lv15 伊澤瑞爾 1076 魔力)
     muramana-awe-lv1-ez-390-mana: 終極魔劍 (威嚇 - lv1 伊澤瑞爾 390 魔力)
     nashor-s-talon-adaptive-ad: '納什之爪 (適性: 物理)'
@@ -209,6 +216,7 @@ item:
     randuin-s-omen: 蘭頓之兆
     recurve-bow: 反曲弓
     redemption: 贖罪神石
+    yordle-redemption: 約德爾 贖罪神石
     relic-shield: 遺跡之盾
     riftmaker: 峽谷製造者
     ring-of-revelation: 天啟戒指
@@ -217,6 +225,8 @@ item:
     ruby-crystal: 紅水晶
     runaan-s-hurricane-adaptive-ad: '芮蘭颶風箭 (適性: 物理)'
     runaan-s-hurricane-adaptive-ap: '芮蘭颶風箭 (適性: 魔法)'
+    yordle-runaan-s-hurricane-adaptive-ad: '約德爾 芮蘭颶風箭 (風之加護: 物理)'
+    yordle-runaan-s-hurricane-adaptive-ap: '約德爾 芮蘭颶風箭 (風之加護: 魔法)'
     rylai-s-crystal-scepter: 瑞萊的冰晶節杖
     sapphire-crystal-mana-charge: 藍水晶 (魔力補充)
     sapphire-crystal: 藍水晶
@@ -244,6 +254,7 @@ item:
     stormrazor: 狂暴利刃
     sundered-sky: 突破天際
     sunfire-aegis: 日炎聖盾
+    yordle-sunfire-aegis: 約德爾 日炎聖盾
     surging-scales: 波濤鱗甲
     talisman-of-ascension-adaptive-ad-soulcast: '昇華護符 (適性: 物理, 鑄魂)'
     talisman-of-ascension-adaptive-ap-soulcast: '昇華護符 (適性: 魔法, 鑄魂)'
@@ -279,6 +290,8 @@ item:
     malignance: 惡意
     malignance-scorn: 惡意 (輕藐)
     awakened-soulstealer: 覺醒竊魂者
+    soul-transfer: 移魂奪舍
+    hullbreaker: 破船戰斧
   passive:
     absorb: 吸收
     ardent: 熾灼
@@ -336,3 +349,4 @@ item:
     wisp: 神火
     scorn: 輕藐
     soul-hunt: 靈魂獵殺
+    set-sail: 揚帆啟程

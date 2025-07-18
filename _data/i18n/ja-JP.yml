@@ -104,6 +104,7 @@ item:
     bloodthirster-bloodsworn-lv15: ブラッドサースター (血の誓い - lv15)
     bloodthirster-bloodsworn-lv1: ブラッドサースター (血の誓い - lv1)
     bloodthirster: ブラッド サースター
+    "bloodthirster-bloody[crit]-lifeline": Bloodthirster (Bloody[Crit] & Lifeline)
     boots-of-dynamism: ダイナミズム ブーツ
     boots-of-mana: マナ ブーツ
     boots-of-speed: ブーツ
@@ -128,8 +129,10 @@ item:
     dead-man-s-plate: デッドマンのプレート
     dead-man-s-plate-momentum: デッド マン プレート (熾烈)
     death-s-dance: デス ダンス
+    yordle-death-s-dance: Yordle Death's Dance
     divine-sunderer: ディヴァイン サンダラー
     duskblade-of-draktharr: ドラクサー ダスクブレード
+    yordle-duskblade-of-draktharr: Yordle Duskblade of Draktharr
     eclipse: 赤月の刃
     edge-of-night: ナイトエッジ
     essence-reaver: エッセンス リーバー
@@ -146,6 +149,7 @@ item:
     gluttonous-greaves: グラトナス ブーツ
     guardian-angel: ガーディアン エンジェル
     harmonic-echo: ハーモニック エコー
+    yordle-harmonic-echo: Yordle Harmonic Echo
     haunting-guise: 悲愴な仮面
     heartsteel: 心の鋼
     hexdrinker: へクスドリンカー
@@ -158,6 +162,7 @@ item:
     imperial-mandate: 帝国の指令
     infinity-edge: インフィニティ エッジ
     infinity-orb: インフィニティ オーブ
+    yordle-infinity-orb: Yordle Infinity Orb
     ionian-boots-of-lucidity: アイオニア ブーツ
     jaurim-s-fist: ジャウリム フィスト
     kaenic-rookern: ケイニック ルーケイン
@@ -165,6 +170,7 @@ item:
     kircheis-shard: キルヒアイス シャード
     last-whisper: ラスト ウィスパー
     liandry-s-torment: ライアンドリーの仮面
+    yordle-liandry-s-torment: Yordle Liandry's Torment
     lich-bane: リッチ ベイン
     long-sword: ロングソード
     lost-chapter: ロスト チャプター
@@ -180,6 +186,7 @@ item:
     mercury-s-treads: マーキュリー ブーツ
     morellonomicon: モレロノミコン
     mortal-reminder: モータル リマインダー
+    "mortal-reminder-last-whisper[crit]": Mortal Reminder (Last Whisper[Crit])
     muramana-awe-lv15-ez-1076-mana: ムラマナ (畏怖 - lv15 エズリアル 1076マナ)
     muramana-awe-lv1-ez-390-mana: ムラマナ (畏怖 - lv1 エズリアル 390マナ)
     nashor-s-talon-adaptive-ad: 'ナッシャー タロン (アダブティブ：攻撃力)'
@@ -209,6 +216,7 @@ item:
     randuin-s-omen: ランデュイン オーメン
     recurve-bow: リカーブ ボウ
     redemption: リデンプション
+    yordle-redemption: Yordle Redemption
     relic-shield: レリックシールド
     riftmaker: リフトメーカー
     ring-of-revelation: 天啓の輪
@@ -217,6 +225,8 @@ item:
     ruby-crystal: ルビー クリスタル
     runaan-s-hurricane-adaptive-ad: 'ルナーン ハリケーン (アダブティブ：攻撃力)'
     runaan-s-hurricane-adaptive-ap: 'ルナーン ハリケーン (アダブティブ：魔力)'
+    yordle-runaan-s-hurricane-adaptive-ad: 'Yordle Runaan''s Hurricane (Adaptive: AD)'
+    yordle-runaan-s-hurricane-adaptive-ap: 'Yordle Runaan''s Hurricane (Adaptive: AP)'
     rylai-s-crystal-scepter: リーライ クリスタル セプター
     sapphire-crystal-mana-charge: サファイア クリスタル (マナチャージ)
     sapphire-crystal: サファイア クリスタル
@@ -244,6 +254,7 @@ item:
     stormrazor: ストームレイザー
     sundered-sky: サンダード スカイ
     sunfire-aegis: サンファイア イージス
+    yordle-sunfire-aegis: Yordle Sunfire Aegis
     surging-scales: 波打つ鱗
     talisman-of-ascension-adaptive-ad-soulcast: '超越のタリスマン (アダブティブ：攻撃力、 ソウルキャスト)'
     talisman-of-ascension-adaptive-ap-soulcast: '超越のタリスマン (アダブティブ：魔力、 ソウルキャスト)'
@@ -279,6 +290,8 @@ item:
     malignance: マリグナンス
     malignance-scorn: マリグナンス (憎悪の霧)
     awakened-soulstealer: Awakened Soulstealer
+    soul-transfer: Soul Transfer
+    hullbreaker: Hullbreaker
   passive:
     absorb: 吸収
     ardent: アーデント
@@ -336,3 +349,4 @@ item:
     wisp: ウィスプ
     scorn: 憎悪の霧
     soul-hunt: Soul Hunt
+    set-sail: Set Sail
