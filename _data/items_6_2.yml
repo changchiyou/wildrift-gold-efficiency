@@ -1913,14 +1913,14 @@
   cost: 2600
   formula: (400*3.33+300*0.86+20*40.0)/2600
   image: https://static.wikia.nocookie.net/leagueoflegends/images/9/94/Redemption_item.png
-  name: Redemption
+  name: Yordle Redemption
   stats:
   - type: Max Health
     value: 400
   - type: Max Mana
     value: 300
   - type: Ability Haste
-    value: 20
+    value: 15
 - amount: 155.60%
   category: BOOTS
   cost: 1400
