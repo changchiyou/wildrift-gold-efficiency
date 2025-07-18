@@ -565,7 +565,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (35*41.67+25*50.0+20*40.0)/3000
-  image: https://wr-meta.com/uploads/posts/2025-07/1751490591_1.webp
+  image: https://wr-meta.com/uploads/posts/2025-07/1752751755_essence-reaver.webp
   name: Essence Reaver
   stats:
   - type: Attack Damage
