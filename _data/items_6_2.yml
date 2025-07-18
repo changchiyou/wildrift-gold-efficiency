@@ -589,10 +589,10 @@
     value: 20
 - amount: 121.03%
   category: PHYSICAL DAMAGE ITEMS
-  cost: 3100
+  cost: 3300
   formula: (40*41.67+15*40.0+33*45.0)/3100
   image: https://static.wikia.nocookie.net/leagueoflegends/images/c/cb/Serylda%27s_Grudge_item.png
-  name: Serylda's Grudge
+  name: Yordle Serylda's Grudge
   stats:
   - type: Attack Damage
     value: 40
