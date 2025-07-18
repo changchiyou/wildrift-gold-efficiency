@@ -902,7 +902,7 @@
     value: 45
   - passive: Set Sail
     type: '% Move Speed'
-    value: 5
+    value: 4
 - amount: 91.93%
   category: MAGIC DAMAGE ITEMS
   cost: 3000
