@@ -1,12 +1,12 @@
-- amount: 140.00%
+- amount: 133.06%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
-  formula: (50*41.67+25*50.0+15*33.33+8*45.82)/3000
+  formula: (45*41.67+25*50.0+15*33.33+8*45.82)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/d/df/Bloodthirster_item_Unused.png
   name: Bloodthirster
   stats:
   - type: Attack Damage
-    value: 50
+    value: 45
   - type: '% Critical Rate'
     value: 25
   - type: '% Attack Speed'
@@ -14,15 +14,15 @@
   - passive: Bloody
     type: '% Physical Vamp'
     value: 8
-- amount: 179.44%
+- amount: 172.50%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
-  formula: (50*41.67+25*50.0+15*33.33+8*45.82+4*45.82+20*25.0+20*25.0)/3000
+  formula: (45*41.67+25*50.0+15*33.33+8*45.82+4*45.82+20*25.0+20*25.0)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/d/df/Bloodthirster_item_Unused.png
   name: Bloodthirster (Bloody[Crit] & Lifeline)
   stats:
   - type: Attack Damage
-    value: 50
+    value: 45
   - type: '% Critical Rate'
     value: 25
   - type: '% Attack Speed'

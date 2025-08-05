@@ -7,9 +7,6 @@ description: Wild Rift 6.2a Item Gold-Effizienzblatt
 image: /assets/favicon512x512.png
 
 permalink: /de-DE/6.2a/
-redirect_from: 
-    - /de-DE/
-latest_version: true
 
 lang: de-DE
 
@@ -29,11 +26,11 @@ patch_note:
         new: ""
     excludes: ""
     compare:
-        statuses: "buffed,adjusted,nerfed,new"
+        statuses: "buffed,adjusted,nerfed"
         items: items_6_2
         stats: stats_6_2
         item_prefix: 6.2
-        force: "Yordle Redemption~Redemption;Yordle Sunfire Aegis~Sunfire Aegis;Yordle Harmonic Echo~Harmonic Echo;Yordle Infinity Orb~Infinity Orb;Yordle Duskblade of Draktharr~Duskblade of Draktharr;Yordle Runaan's Hurricane (Adaptive: AP)~Runaan's Hurricane (Adaptive: AP);Yordle Runaan's Hurricane (Adaptive: AD)~Runaan's Hurricane (Adaptive: AD);Yordle Death's Dance~Death's Dance;Bloodthirster (Bloody[Crit] & Lifeline)~Bloodthirster (Bloodsworn - lv15);Mortal Reminder (Last Whisper[Crit])~Mortal Reminder;Yordle Serylda's Grudge~Serylda's Grudge"
-        force_sep: "~;"
-        excludes: "Soul Transfer,Hullbreaker"
+        force: ""
+        force_sep: ""
+        excludes: ""
 ---
