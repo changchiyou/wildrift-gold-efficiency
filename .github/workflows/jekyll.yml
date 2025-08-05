@@ -13,9 +13,6 @@ on:
     paths-ignore:
       - 'README.md'
       - 'docs/**/*.md'
-      - 'data.py'
-      - '.github/**'
-      - 'requirements.txt'
       - 'LIENCE'
 
   # Allows you to run this workflow manually from the Actions tab
@@ -49,6 +46,18 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+
+      - name: Setup Python and install dependencies
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: '**/requirements.txt'
+      - run: pip install -r requirements.txt
+
+      - name: Calculate Gold Efficiency
+        run: python data.py
+
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
