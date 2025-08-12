@@ -107,6 +107,7 @@ item:
     "bloodthirster-bloody[crit]-lifeline": 嗜血者 (血腥[爆擊] & 命脈)
     boots-of-dynamism: 爆發之靴
     boots-of-mana: 魔力之靴
+    boots-of-mana-equilibrium: 魔力之靴 (魔力均衡)
     boots-of-speed: 速度之靴
     bramble-vest: 刺藤胸甲
     brawler-s-gloves: 格鬥手套
@@ -164,10 +165,12 @@ item:
     infinity-orb: 無限寶珠
     yordle-infinity-orb: 約德爾 無限珠寶
     ionian-boots-of-lucidity: 愛歐尼亞之靴
+    ionian-boots-of-lucidity-equilibrium: 愛歐尼雅之靴 (魔力均衡)
     jaurim-s-fist: 約瑞姆之拳
     kaenic-rookern: 凱尼克欺瞞者
     kindlegem: 燃燒寶石
     kircheis-shard: 柯奇碎片
+    kirchei-s-shard: 科奇碎片
     last-whisper: 最後耳語
     liandry-s-torment: 黎安卓的折磨
     yordle-liandry-s-torment: 約德爾 黎安卓的折磨
@@ -351,3 +354,6 @@ item:
     scorn: 輕藐
     soul-hunt: 靈魂獵殺
     set-sail: 揚帆啟程
+    "bloody[crit]": 血腥[爆擊]
+    "last-whisper[crit]": 最後耳語[爆擊]
+    equilibrium: 魔力均衡

@@ -107,6 +107,7 @@ item:
     "bloodthirster-bloody[crit]-lifeline": Bloodthirster (Bloody[Crit] & Lifeline)
     boots-of-dynamism: ダイナミズム ブーツ
     boots-of-mana: マナ ブーツ
+    boots-of-mana-equilibrium: Boots of Mana (Equilibrium)
     boots-of-speed: ブーツ
     bramble-vest: ブランブル ベスト
     brawler-s-gloves: 喧嘩屋のグローブ
@@ -164,10 +165,12 @@ item:
     infinity-orb: インフィニティ オーブ
     yordle-infinity-orb: Yordle Infinity Orb
     ionian-boots-of-lucidity: アイオニア ブーツ
+    ionian-boots-of-lucidity-equilibrium: Ionian Boots of Lucidity (Equilibrium)
     jaurim-s-fist: ジャウリム フィスト
     kaenic-rookern: ケイニック ルーケイン
     kindlegem: キンドルジェム
     kircheis-shard: キルヒアイス シャード
+    kirchei-s-shard: Kirchei's Shard
     last-whisper: ラスト ウィスパー
     liandry-s-torment: ライアンドリーの仮面
     yordle-liandry-s-torment: Yordle Liandry's Torment
@@ -351,3 +354,6 @@ item:
     scorn: 憎悪の霧
     soul-hunt: Soul Hunt
     set-sail: Set Sail
+    "bloody[crit]": Bloddy[Crit]
+    "last-whisper[crit]": Last Whisper[Crit]
+    equilibrium: Equilibrium

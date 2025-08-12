@@ -107,6 +107,7 @@ item:
     "bloodthirster-bloody[crit]-lifeline": Bloodthirster (Bloody[Crit] & Lifeline)
     boots-of-dynamism: Boots of Dynamism
     boots-of-mana: Boots of Mana
+    boots-of-mana-equilibrium: Boots of Mana (Equilibrium)
     boots-of-speed: Boots of Speed
     bramble-vest: Bramble Vest
     brawler-s-gloves: Brawler's Gloves
@@ -164,10 +165,12 @@ item:
     infinity-orb: Infinity Orb
     yordle-infinity-orb: Yordle Infinity Orb
     ionian-boots-of-lucidity: Ionian Boots of Lucidity
+    ionian-boots-of-lucidity-equilibrium: Ionian Boots of Lucidity (Equilibrium)
     jaurim-s-fist: Jaurim's Fist
     kaenic-rookern: Kaenic Rookern
     kindlegem: Kindlegem
     kircheis-shard: Kircheis Shard
+    kirchei-s-shard: Kirchei's Shard
     last-whisper: Last Whisper
     liandry-s-torment: Liandry's Torment
     yordle-liandry-s-torment: Yordle Liandry's Torment
@@ -351,3 +354,6 @@ item:
     scorn: Scorn
     soul-hunt: Soul Hunt
     set-sail: Set Sail
+    "bloody[crit]": Bloddy[Crit]
+    "last-whisper[crit]": Last Whisper[Crit]
+    equilibrium: Equilibrium
