@@ -55,7 +55,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 2900
   formula: (25*41.67+25*50.0+25*33.33+5*50.0)/2900
-  image: https://wr-meta.com/uploads/posts/2025-07/1752751561_magnetic-blaster.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Magnetic_Blaster_WR_item.png/80px-Magnetic_Blaster_WR_item.png?14ebe
   name: Magnetic Blaster
   stats:
   - type: Attack Damage
@@ -565,7 +565,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (35*41.67+25*50.0+20*40.0)/3000
-  image: https://wr-meta.com/uploads/posts/2025-07/1752751755_essence-reaver.webp
+  image: https://live.staticflickr.com/65535/54715847760_df5ab84aa7_t.jpg
   name: Essence Reaver
   stats:
   - type: Attack Damage
@@ -592,7 +592,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (40*41.67+25*50.0+15*33.33)/3000
-  image: https://wr-meta.com/uploads/posts/2025-07/1752751962_navori-quickblades.webp
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Navori_Quickblades_WR_item.png/80px-Navori_Quickblades_WR_item.png?30c29
   name: Navori Quickblades
   stats:
   - type: Attack Damage
@@ -820,7 +820,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200
   formula: (25*41.67+25*50.0+30*33.33)/3200
-  image: https://wr-meta.com/uploads/posts/2025-07/1752666929_gv-ertvwoaatbze_11zon-2.webp
+  image: https://live.staticflickr.com/65535/54715732939_06543fbfe3_t.jpg
   name: Soul Transfer
   stats:
   - type: Attack Damage
