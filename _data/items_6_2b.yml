@@ -1923,7 +1923,7 @@
   cost: 1400
   formula: (150*3.33+30*40.0+45*16.0+75*0)/1400
   image: https://wiki.leagueoflegends.com/en-us/images/Ionian_Boots_of_Lucidity_item.png
-  name: Ionian Boots of Lucidity (without Mana)
+  name: Ionian Boots of Lucidity (Equilibrium)
   stats:
   - type: Max Health
     value: 150
@@ -1931,7 +1931,8 @@
     value: 30
   - type: Move Speed
     value: 45
-  - type: '% Health Regen'
+  - passive: Equilibrium
+    type: '% Health Regen'
     value: 75
 - amount: 149.05%
   category: BOOTS
@@ -1954,11 +1955,12 @@
   cost: 1400
   formula: (55*20.0+75*0+45*16.0+8*33.33)/1400
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Boots_of_Mana_WR_item.png/80px-Boots_of_Mana_WR_item.png?b7311
-  name: Boots of Mana (without Mana)
+  name: Boots of Mana (Equilibrium)
   stats:
   - type: Ability Power
     value: 55
-  - type: '% Health Regen'
+  - passive: Equilibrium
+    type: '% Health Regen'
     value: 75
   - type: Move Speed
     value: 45

@@ -21,14 +21,14 @@ patch_note:
         buffed: "Bloodthirster,The Collector"
         adjusted: "Navori Quickblades,Magnetic Blaster,Mortal Reminder,Essence Reaver,Phantom Dancer,Eclipse,Last Whisper,Kirchei's Shard"
         nerfed: "Wit's End,Nashor's Talon"
-        new: "Yordle Redemption,Yordle Sunfire Aegis,Yordle Harmonic Echo,Yordle Infinity Orb,Yordle Duskblade of Draktharr,Yordle Runaan's Hurricane,Yordle Death's Dance,Soul Transfer,Hullbreaker,Yordle Serylda's Grudge,Ionian Boots of Lucidity (without Mana),Boots of Mana (without Mana)"
+        new: "Yordle Redemption,Yordle Sunfire Aegis,Yordle Harmonic Echo,Yordle Infinity Orb,Yordle Duskblade of Draktharr,Yordle Runaan's Hurricane,Yordle Death's Dance,Soul Transfer,Hullbreaker,Yordle Serylda's Grudge,Ionian Boots of Lucidity (Equilibrium),Boots of Mana (Equilibrium)"
     excludes: ""
     compare:
         statuses: "buffed,adjusted,nerfed,new"
         items: items_6_1f
         stats: stats_6_1f
         item_prefix: 6.1f
-        force: "Yordle Redemption~Redemption;Yordle Sunfire Aegis~Sunfire Aegis;Yordle Harmonic Echo~Harmonic Echo;Yordle Infinity Orb~Infinity Orb;Yordle Duskblade of Draktharr~Duskblade of Draktharr;Yordle Runaan's Hurricane (Adaptive: AP)~Runaan's Hurricane (Adaptive: AP);Yordle Runaan's Hurricane (Adaptive: AD)~Runaan's Hurricane (Adaptive: AD);Yordle Death's Dance~Death's Dance;Bloodthirster (Bloody[Crit] & Lifeline)~Bloodthirster (Bloodsworn - lv15);Mortal Reminder (Last Whisper[Crit])~Mortal Reminder;Yordle Serylda's Grudge~Serylda's Grudge;Kircheis Shard~Kirchei's Shard"
+        force: "Yordle Redemption~Redemption;Yordle Sunfire Aegis~Sunfire Aegis;Yordle Harmonic Echo~Harmonic Echo;Yordle Infinity Orb~Infinity Orb;Yordle Duskblade of Draktharr~Duskblade of Draktharr;Yordle Runaan's Hurricane (Adaptive: AP)~Runaan's Hurricane (Adaptive: AP);Yordle Runaan's Hurricane (Adaptive: AD)~Runaan's Hurricane (Adaptive: AD);Yordle Death's Dance~Death's Dance;Bloodthirster (Bloody[Crit] & Lifeline)~Bloodthirster (Bloodsworn - lv15);Mortal Reminder (Last Whisper[Crit])~Mortal Reminder;Yordle Serylda's Grudge~Serylda's Grudge;Kircheis Shard~Kirchei's Shard;Ionian Boots of Lucidity (Equilibrium)~Ionian Boots of Lucidity;Boots of Mana (Equilibrium)~Boots of Mana"
         force_sep: "~;"
         excludes: "Soul Transfer,Hullbreaker"
 ---
