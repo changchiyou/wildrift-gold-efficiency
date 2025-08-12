@@ -7,7 +7,8 @@ description: 激鬥峽谷 6.2b 裝備面板價值
 image: /assets/favicon512x512.png
 
 permalink: /zh-TW/6.2b/
-redirect_from: 
+redirect_from:
+    - /
     - /zh-TW/
 latest_version: true
 

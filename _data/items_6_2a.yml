@@ -168,10 +168,10 @@
     value: 60
   - type: '% Critical Rate'
     value: 25
-- amount: 133.60%
+- amount: 154.57%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3100
-  formula: (25*41.67+25*50.0+15*33.33+30*45.0)/3100
+  formula: (25*41.67+25*50.0+15*33.33+30*66.67)/3100
   image: https://static.wikia.nocookie.net/leagueoflegends/images/c/cf/Mortal_Reminder_item.png
   name: Mortal Reminder
   stats:
@@ -184,10 +184,10 @@
   - passive: Last Whisper
     type: '% Armor Penetration'
     value: 30
-- amount: 142.31%
+- amount: 167.48%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3100
-  formula: (25*41.67+25*50.0+15*33.33+30*45.0+6*45.0)/3100
+  formula: (25*41.67+25*50.0+15*33.33+30*66.67+6*66.67)/3100
   image: https://static.wikia.nocookie.net/leagueoflegends/images/c/cf/Mortal_Reminder_item.png
   name: Mortal Reminder (Last Whisper[Crit])
   stats:
@@ -574,23 +574,10 @@
     value: 25
   - type: Ability Haste
     value: 20
-- amount: 119.45%
-  category: PHYSICAL DAMAGE ITEMS
-  cost: 3000
-  formula: (40*41.67+25*50.0+20*33.33)/3000
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/9/92/Stormrazor_item.png
-  name: Stormrazor
-  stats:
-  - type: Attack Damage
-    value: 40
-  - type: '% Critical Rate'
-    value: 25
-  - type: '% Attack Speed'
-    value: 20
-- amount: 113.69%
+- amount: 135.36%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3300
-  formula: (40*41.67+15*40.0+33*45.0)/3300
+  formula: (40*41.67+15*40.0+33*66.67)/3300
   image: https://static.wikia.nocookie.net/leagueoflegends/images/c/cb/Serylda%27s_Grudge_item.png
   name: Yordle Serylda's Grudge
   stats:
@@ -601,19 +588,6 @@
   - passive: Last Whisper
     type: '% Armor Penetration'
     value: 33
-- amount: 112.77%
-  category: PHYSICAL DAMAGE ITEMS
-  cost: 3000
-  formula: (25*50.0+40*33.33+20*40.0)/3000
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/b/bb/Solari_Chargeblade_WR_item.png
-  name: Solari Chargeblade
-  stats:
-  - type: '% Critical Rate'
-    value: 25
-  - type: '% Attack Speed'
-    value: 40
-  - type: Ability Haste
-    value: 20
 - amount: 113.89%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
@@ -681,40 +655,6 @@
     value: 45
   - type: Ability Haste
     value: 15
-- amount: 121.53%
-  category: PHYSICAL DAMAGE ITEMS
-  cost: 3000
-  formula: (40*41.67+25*50.0+15*33.33+5*45.82)/3000
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/2/2b/Immortal_Shieldbow_item.png
-  name: Immortal Shieldbow
-  stats:
-  - type: Attack Damage
-    value: 40
-  - type: '% Critical Rate'
-    value: 25
-  - type: '% Attack Speed'
-    value: 15
-  - type: '% Physical Vamp'
-    value: 5
-- amount: 133.75%
-  category: PHYSICAL DAMAGE ITEMS
-  cost: 3000
-  formula: (40*41.67+25*50.0+15*33.33+5*45.82+8*45.82)/3000
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/2/2b/Immortal_Shieldbow_item.png
-  name: Immortal Shieldbow (Battle Furor)
-  stats:
-  - type: Attack Damage
-    value: 40
-  - type: '% Critical Rate'
-    value: 25
-  - type: '% Attack Speed'
-    value: 15
-  - type: '% Physical Vamp'
-    value: 5
-  - passive: Battle Furor
-    type: '% Physical Vamp'
-    value: 8
-  - type: Unstable Passives' Stats
 - amount: 114.94%
   category: PHYSICAL DAMAGE ITEMS
   cost: 2900
@@ -804,10 +744,10 @@
     value: 35
   - type: '% Attack Speed'
     value: 30
-- amount: 138.04%
+- amount: 159.07%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3400
-  formula: (35*41.67+30*33.33+15*25.0+15*25.0+33*45.0+33*0)/3400
+  formula: (35*41.67+30*33.33+15*25.0+15*25.0+33*66.67+33*0)/3400
   image: https://static.wikia.nocookie.net/leagueoflegends/images/4/49/Terminus_item.png
   name: Terminus (Juxtaposition - lv1)
   stats:
@@ -828,10 +768,10 @@
     type: '% Magic Penetration'
     value: 33
   - type: Unstable Passives' Stats
-- amount: 151.28%
+- amount: 172.31%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3400
-  formula: (35*41.67+30*33.33+24*25.0+24*25.0+33*45.0+33*0)/3400
+  formula: (35*41.67+30*33.33+24*25.0+24*25.0+33*66.67+33*0)/3400
   image: https://static.wikia.nocookie.net/leagueoflegends/images/4/49/Terminus_item.png
   name: Terminus (Juxtaposition - lv15)
   stats:
@@ -865,15 +805,15 @@
     value: 15
   - type: Max Health
     value: 300
-- amount: 113.80%
+- amount: 116.95%
   category: PHYSICAL DAMAGE ITEMS
-  cost: 2900
-  formula: (60*41.67+20*40.0)/2900
+  cost: 3000
+  formula: (65*41.67+20*40.0)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/c/c2/Eclipse_item.png
   name: Eclipse
   stats:
   - type: Attack Damage
-    value: 60
+    value: 65
   - type: Ability Haste
     value: 20
 - amount: 102.86%
@@ -1981,9 +1921,9 @@
 - amount: 172.82%
   category: BOOTS
   cost: 1400
-  formula: (150*3.33+30*40.0+45*16.0+150*0)/1400
+  formula: (150*3.33+30*40.0+45*16.0+75*0)/1400
   image: https://wiki.leagueoflegends.com/en-us/images/Ionian_Boots_of_Lucidity_item.png
-  name: Ionian Boots of Lucidity
+  name: Ionian Boots of Lucidity (without Mana)
   stats:
   - type: Max Health
     value: 150
@@ -1991,8 +1931,8 @@
     value: 30
   - type: Move Speed
     value: 45
-  - type: '% Mana Regeneration'
-    value: 150
+  - type: '% Health Regen'
+    value: 75
 - amount: 149.05%
   category: BOOTS
   cost: 1400
@@ -2004,6 +1944,22 @@
     value: 55
   - type: '% Mana Regeneration'
     value: 150
+  - type: Move Speed
+    value: 45
+  - passive: Magic Break
+    type: Magic Penetration
+    value: 8
+- amount: 149.05%
+  category: BOOTS
+  cost: 1400
+  formula: (55*20.0+75*0+45*16.0+8*33.33)/1400
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Boots_of_Mana_WR_item.png/80px-Boots_of_Mana_WR_item.png?b7311
+  name: Boots of Mana (without Mana)
+  stats:
+  - type: Ability Power
+    value: 55
+  - type: '% Health Regen'
+    value: 75
   - type: Move Speed
     value: 45
   - passive: Magic Break
@@ -2242,15 +2198,15 @@
   - passive: Fervor
     type: '% Move Speed'
     value: 5
-- amount: 74.07%
+- amount: 69.45%
   category: MID TIER ITEMS
   cost: 900
-  formula: (20*33.33)/900
+  formula: (15*41.67)/900
   image: https://wiki.leagueoflegends.com/en-us/images/Kircheis_Shard_item_old2.png
-  name: Kircheis Shard
+  name: Kirchei's Shard
   stats:
-  - type: '% Attack Speed'
-    value: 20
+  - type: Attack Damage
+    value: 15
 - amount: 100%
   category: MID TIER ITEMS
   cost: 1000
@@ -2296,20 +2252,18 @@
     value: 20
 - amount: 100%
   category: MID TIER ITEMS
-  cost: 1300
+  cost: 800
   formula: Base Item
   image: https://wiki.leagueoflegends.com/en-us/images/Last_Whisper_item_old4.png
   name: Last Whisper
   second_base:
-    formula: (1300-15*41.67)/15
+    formula: (800)/12
     type: '% Armor Penetration'
-    value: 45.0
+    value: 66.67
   stats:
-  - type: Attack Damage
-    value: 15
   - passive: Last Whisper
     type: '% Armor Penetration'
-    value: 15
+    value: 12
 - amount: 78.13%
   category: MID TIER ITEMS
   cost: 800
@@ -2683,26 +2637,26 @@
     value: 30
   - type: Ability Power
     value: 25
-- amount: 104.18%
+- amount: 78.13%
   category: MID TIER ITEMS
   cost: 800
-  formula: (20*41.67)/800
+  formula: (15*41.67)/800
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Nashor%27s_Talon_WR_item.png/80px-Nashor%27s_Talon_WR_item.png
   name: 'Nashor''s Talon (Adaptive: AD)'
   stats:
   - passive: Magic Needle
     type: Attack Damage
-    value: 20
-- amount: 100.00%
+    value: 15
+- amount: 75.00%
   category: MID TIER ITEMS
   cost: 800
-  formula: (40*20.0)/800
+  formula: (30*20.0)/800
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Nashor%27s_Talon_WR_item.png/80px-Nashor%27s_Talon_WR_item.png
   name: 'Nashor''s Talon (Adaptive: AP)'
   stats:
   - passive: Magic Needle
     type: Ability Power
-    value: 40
+    value: 30
 - amount: 114.20%
   category: MID TIER ITEMS
   cost: 1350
