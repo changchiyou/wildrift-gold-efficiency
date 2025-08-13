@@ -1514,7 +1514,7 @@
   category: DEFENSE ITEMS
   cost: 2700
   formula: (200*3.33+75*25.0)/2700
-  image: https://wr-meta.com/uploads/posts/2021-03/1616983632_3075.png
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Thornmail_WR_item.png/80px-Thornmail_WR_item.png?b771e
   name: Thornmail
   stats:
   - type: Max Health
