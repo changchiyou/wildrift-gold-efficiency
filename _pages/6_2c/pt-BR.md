@@ -33,7 +33,7 @@ patch_note:
         statuses: "buffed,adjusted,nerfed"
         items: items_6_2b
         stats: stats_6_2b
-        item_prefix: 6.2
+        item_prefix: 6.2c
         force: ""
         force_sep: ""
         excludes: ""
