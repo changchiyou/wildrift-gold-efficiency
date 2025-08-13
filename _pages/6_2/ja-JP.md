@@ -30,7 +30,7 @@ patch_note:
         items: items_6_1f
         stats: stats_6_1f
         item_prefix: 6.1f
-        force: "Yordle Redemption~Redemption;Yordle Sunfire Aegis~Sunfire Aegis;Yordle Harmonic Echo~Harmonic Echo;Yordle Infinity Orb~Infinity Orb;Yordle Duskblade of Draktharr~Duskblade of Draktharr;Yordle Runaan's Hurricane (Adaptive: AP)~Runaan's Hurricane (Adaptive: AP);Yordle Runaan's Hurricane (Adaptive: AD)~Runaan's Hurricane (Adaptive: AD);Yordle Death's Dance~Death's Dance;Bloodthirster (Bloody[Crit] & Lifeline)~Bloodthirster (Bloodsworn - lv15);Mortal Reminder (Last Whisper[Crit])~Mortal Reminder;Yordle Serylda's Grudge~Serylda's Grudge;Kircheis Shard~Kirchei's Shard;Ionian Boots of Lucidity (Equilibrium)~Ionian Boots of Lucidity;Boots of Mana (Equilibrium)~Boots of Mana"
+        force: "Yordle Redemption~Redemption;Yordle Sunfire Aegis~Sunfire Aegis;Yordle Harmonic Echo~Harmonic Echo;Yordle Infinity Orb~Infinity Orb;Yordle Duskblade of Draktharr~Duskblade of Draktharr;Yordle Runaan's Hurricane (Adaptive: AP)~Runaan's Hurricane (Adaptive: AP);Yordle Runaan's Hurricane (Adaptive: AD)~Runaan's Hurricane (Adaptive: AD);Yordle Death's Dance~Death's Dance;Bloodthirster (Bloody[Crit] & Lifeline)~Bloodthirster (Bloodsworn - lv15);Mortal Reminder (Last Whisper[Crit])~Mortal Reminder;Yordle Serylda's Grudge~Serylda's Grudge;Kirchei's Shard~Kircheis Shard;Ionian Boots of Lucidity (Equilibrium)~Ionian Boots of Lucidity;Boots of Mana (Equilibrium)~Boots of Mana"
         force_sep: "~;"
         excludes: "Soul Transfer,Hullbreaker"
 ---
