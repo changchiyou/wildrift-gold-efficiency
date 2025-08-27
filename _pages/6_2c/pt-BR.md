@@ -7,10 +7,6 @@ description: Wild Rift 6.2c Eficiência de Ouro
 image: /assets/favicon512x512.png
 
 permalink: /pt-BR/6.2c/
-redirect_from:
-    - /
-    - /pt-BR/
-latest_version: true
 
 lang: pt-BR
 

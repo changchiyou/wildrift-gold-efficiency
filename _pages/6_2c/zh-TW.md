@@ -7,10 +7,6 @@ description: 激鬥峽谷 6.2c 裝備面板價值
 image: /assets/favicon512x512.png
 
 permalink: /zh-TW/6.2c/
-redirect_from:
-    - /
-    - /zh-TW/
-latest_version: true
 
 lang: zh-TW
 
