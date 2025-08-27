@@ -2,7 +2,7 @@
 layout: gold_efficiency_v2
 
 title: 6.2d
-date: 2024/08/21
+date: 2025/08/21
 description: ワイルドリフト 6.2d ゴールド効率
 image: /assets/favicon512x512.png
 

@@ -2,7 +2,7 @@
 layout: gold_efficiency_v2
 
 title: 6.2d
-date: 2024/08/21
+date: 2025/08/21
 description: Wild Rift 6.2d Item Gold-Effizienzblatt
 image: /assets/favicon512x512.png
 
