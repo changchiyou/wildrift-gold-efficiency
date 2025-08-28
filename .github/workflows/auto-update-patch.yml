@@ -27,7 +27,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install requests markdownify
+        pip install -r requirements.txt
 
     - name: Check for new patch version
       id: check-patch
