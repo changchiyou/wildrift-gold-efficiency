@@ -70,21 +70,30 @@ jobs:
         echo "patch_url=https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-6-2f" >> $GITHUB_OUTPUT
         exit 0
 
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 18
+
     - name: Update to new version with Claude Code
       if: steps.check-patch.outputs.new_version
-      uses: anthropics/claude-code-action@v1
-      with:
-        anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-        claude_args: |
-          --model "${{ vars.ANTHROPIC_MODEL }}"
-        settings: |
+      run: |
+          npm install -g @anthropic-ai/claude-code
+
+          mkdir -p ~/.claude
+          
+          cat > ~/.claude/settings.json << 'EOF'
           {
             "env": {
               "ANTHROPIC_BASE_URL": "${{ vars.ANTHROPIC_BASE_URL }}",
+              "ANTHROPIC_AUTH_TOKEN": "${{ secrets.ANTHROPIC_API_KEY }}",
+              "ANTHROPIC_MODEL": "${{ vars.ANTHROPIC_MODEL }}",
+              "ANTHROPIC_SMALL_FAST_MODEL": "gpt-4.1-nano",
+              "DISABLE_NON_ESSENTIAL_MODEL_CALLS": 1
             }
           }
-        prompt: |
-          Update to the latest version ${{ steps.check-patch.outputs.new_version }} with the following information from the latest patch note: 
+          EOF
+          
+          claude -p "Update to the latest version ${{ steps.check-patch.outputs.new_version }} with the following information from the latest patch note: 
           
           ## ITEMS
 
@@ -157,7 +166,7 @@ jobs:
           *Base Stats*
           * Ability Power: 80 → 75
           * Attack Speed: 50% → 55%
-          * Price: 3000 gold → 2900 gold
+          * Price: 3000 gold → 2900 gold" --dangerously-skip-permissions
 
     - name: Generate diff report
       if: steps.check-patch.outputs.new_version
