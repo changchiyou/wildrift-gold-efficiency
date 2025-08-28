@@ -67,12 +67,17 @@ jobs:
 
     - name: Update to new version with Claude Code
       if: steps.check-patch.outputs.new_version
-      uses: anthropics/claude-code-base-action@beta
+      uses: anthropics/claude-code-action@v1
       with:
         anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-        model: "${{ vars.ANTHROPIC_MODEL || 'claude-4-0-sonnet-20250219' }}"
-        claude_env: |
-          ANTHROPIC_BASE_URL: ${{ vars.ANTHROPIC_BASE_URL }}
+        claude_args: |
+          --model "${{ vars.ANTHROPIC_MODEL }}"
+        settings: |
+          {
+            "env": {
+              "ANTHROPIC_BASE_URL": "${{ vars.ANTHROPIC_BASE_URL }}",
+            }
+          }
         prompt: |
           Update to the latest version ${{ steps.check-patch.outputs.new_version }} with the following information from the latest patch note: 
           
