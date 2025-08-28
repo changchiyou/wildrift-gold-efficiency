@@ -67,15 +67,15 @@ jobs:
 
     - name: Update to new version with Claude Code
       if: steps.check-patch.outputs.new_version
-      uses: anthropics/claude-code-action@v1
+      uses: anthropics/claude-code-base-action@beta
       with:
         anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-        claude_args: |
-          --model "${{ vars.ANTHROPIC_MODEL }}"
+        model: "${{ vars.ANTHROPIC_MODEL || 'claude-4-0-sonnet-20250219' }}"
+        allowed_tools: "Bash(git:*),Read,Edit,MultiEdit,Write,Glob,Grep,LS"
         settings: |
           {
             "env": {
-              "ANTHROPIC_BASE_URL": "${{ vars.ANTHROPIC_BASE_URL }}",
+              "ANTHROPIC_BASE_URL": "${{ vars.ANTHROPIC_BASE_URL }}"
             }
           }
         prompt: |
