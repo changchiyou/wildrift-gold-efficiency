@@ -7,16 +7,17 @@ on:
   workflow_dispatch:
     # Allow manual triggering
 
-permissions:
-  id-token: write
-  contents: write
-
 env:
   RSS_URL: "${{ vars.RSS_URL }}"
 
 jobs:
   check-for-updates:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      pull-requests: write
+      repository-projects: write
 
     steps:
     - name: Checkout repository
@@ -75,6 +76,7 @@ jobs:
 
           echo "New version found: $VERSION"
           echo "new_version=$VERSION" >> $GITHUB_OUTPUT
+          echo "new_version_underscore=$VERSION_UNDERSCORE" >> $GITHUB_OUTPUT
           echo "patch_url=$URL" >> $GITHUB_OUTPUT
           exit 0
         done
@@ -82,41 +84,64 @@ jobs:
         echo "No new versions found"
         exit 0
 
-    - name: Update to new version with Claude Code
-      if: steps.check-patch.outputs.new_version
-      uses: anthropics/claude-code-action@v1
+    - uses: actions/setup-node@v4
       with:
-        anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-        claude_args: |
-          --model "${{ vars.ANTHROPIC_MODEL }}"
-        settings: |
+        node-version: 18
+
+    - name: Find previous version
+      if: steps.check-patch.outputs.new_version
+      id: find-previous
+      run: |
+        # Find the previous version (most recent existing version)
+        PREVIOUS_ITEMS=$(ls _data/items_*.yml | sort -V | tail -1)
+        PREVIOUS_VERSION=$(basename "$PREVIOUS_ITEMS" .yml | sed 's/items_//' | sed 's/_/\./')
+
+        echo "Found previous version: $PREVIOUS_VERSION"
+        echo "previous_version=$PREVIOUS_VERSION" >> $GITHUB_OUTPUT
+        echo "previous_items_file=$PREVIOUS_ITEMS" >> $GITHUB_OUTPUT
+
+    - name: Install and configure Claude Code
+      if: steps.check-patch.outputs.new_version
+      run: |
+          npm install -g @anthropic-ai/claude-code
+
+          mkdir -p ~/.claude
+
+          cat > ~/.claude/settings.json << 'EOF'
           {
             "env": {
               "ANTHROPIC_BASE_URL": "${{ vars.ANTHROPIC_BASE_URL }}",
+              "ANTHROPIC_AUTH_TOKEN": "${{ secrets.ANTHROPIC_AUTH_TOKEN }}",
+              "ANTHROPIC_MODEL": "${{ vars.ANTHROPIC_MODEL }}",
+              "ANTHROPIC_SMALL_FAST_MODEL": "gpt-4.1-nano",
+              "DISABLE_NON_ESSENTIAL_MODEL_CALLS": 1
             }
           }
-        prompt: |
-          Update to the latest version ${{ steps.check-patch.outputs.new_version }} with the following information from the latest patch note: $(python patch_notes_extractor.py "${{ steps.check-patch.outputs.patch_url }}")
+          EOF
+
+    - name: Update to new version with Claude Code
+      if: steps.check-patch.outputs.new_version
+      run: |
+          claude -p "Update from version ${{ steps.find-previous.outputs.previous_version }} to the latest version ${{ steps.check-patch.outputs.new_version }} with the following information from the latest patch note: $(python patch_notes_extractor.py \"${{ steps.check-patch.outputs.patch_url }}\")" --dangerously-skip-permissions
 
     - name: Generate diff report
       if: steps.check-patch.outputs.new_version
       id: generate-diff
       run: |
         # Get the diff between latest and previous items files
-        NEW_VERSION="${{ steps.check-patch.outputs.new_version }}"
-        VERSION_UNDERSCORE=$(echo "$NEW_VERSION" | sed 's/\./_/')
+        VERSION_UNDERSCORE="${{ steps.check-patch.outputs.new_version_underscore }}"
         LATEST_ITEMS="_data/items_$VERSION_UNDERSCORE.yml"
-        
-        # Find the previous version (second latest)
-        PREVIOUS_ITEMS=$(ls _data/items_*.yml | grep -v "$LATEST_ITEMS" | sort -V | tail -1)
-        
+
+        # Use the previous version found earlier
+        PREVIOUS_ITEMS="${{ steps.find-previous.outputs.previous_items_file }}"
+
         if [ -f "$LATEST_ITEMS" ] && [ -f "$PREVIOUS_ITEMS" ]; then
           echo "Comparing $PREVIOUS_ITEMS with $LATEST_ITEMS"
           DIFF_OUTPUT=$(git diff --no-index "$PREVIOUS_ITEMS" "$LATEST_ITEMS" || true)
         else
           DIFF_OUTPUT="Could not generate diff: files not found\nLatest: $LATEST_ITEMS (exists: $(test -f "$LATEST_ITEMS" && echo "yes" || echo "no"))\nPrevious: $PREVIOUS_ITEMS (exists: $(test -f "$PREVIOUS_ITEMS" && echo "yes" || echo "no"))"
         fi
-        
+
         # Set the diff output as a step output (properly escaped)
         {
           echo 'diff_output<<EOF'
@@ -132,34 +157,37 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         commit-message: "$(cat <<'EOF'
           chore: auto-update to Wild Rift patch ${{ steps.check-patch.outputs.new_version }}
-          
+
           🤖 Generated with Claude Code
-          
+
           Co-Authored-By: Claude <noreply@anthropic.com>
           EOF
           )"
         committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
         author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
         signoff: false
-        branch: auto-update-patch-${{ steps.check-patch.outputs.new_version }}
+        branch: auto-update-patch-${{ steps.check-patch.outputs.new_version_underscore }}
         delete-branch: true
         title: 'Auto-update to Wild Rift patch ${{ steps.check-patch.outputs.new_version }}'
         body: |
           ## Summary
-          
+
           - Automated update to Wild Rift patch version ${{ steps.check-patch.outputs.new_version }}
           - Items data updated based on latest patch notes
-          
-          ## Changes of items data between the latest and the last one:
-          
+
+          <details>
+          <summary>Changes of items data between ${{ steps.find-previous.outputs.previous_version }} and ${{ steps.check-patch.outputs.new_version }}</summary>
+
           ```diff
           ${{ steps.generate-diff.outputs.diff_output }}
           ```
-          
+          </details>
+
           ## Source
           Patch notes: ${{ steps.check-patch.outputs.patch_url }}
-          
+
           🤖 Generated with Claude Code
         labels: |
           patch-update
         draft: false
+        base: main
