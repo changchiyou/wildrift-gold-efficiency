@@ -1,11 +1,16 @@
 name: Auto Update Wild Rift Patch
 
+# on:
+#   schedule:
+#     # Run every hour
+#     - cron: '0 * * * *'
+#   workflow_dispatch:
+#     # Allow manual triggering
+
 on:
-  schedule:
-    # Run every hour
-    - cron: '0 * * * *'
-  workflow_dispatch:
-    # Allow manual triggering
+  push:
+    branches:
+      - chore/auto_update_with_claude_code
 
 env:
   RSS_URL: "${{ vars.RSS_URL }}"
