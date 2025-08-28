@@ -20,14 +20,13 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
+    - name: Setup Python and install dependencies
+      uses: actions/setup-python@v5
       with:
-        python-version: '3.x'
-
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
+        python-version: '3.11'
+        cache: 'pip'
+        cache-dependency-path: '**/requirements.txt'
+    - run: pip install -r requirements.txt
 
     - name: Check for new patch version
       id: check-patch
@@ -87,31 +86,12 @@ jobs:
         prompt: |
           Update to the latest version ${{ steps.check-patch.outputs.new_version }} with the following information from the latest patch note: $(python patch_notes_extractor.py "${{ steps.check-patch.outputs.patch_url }}")
 
-    - name: Create Pull Request
+    - name: Generate diff report
       if: steps.check-patch.outputs.new_version
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        NEW_VERSION: ${{ steps.check-patch.outputs.new_version }}
-        PATCH_URL: ${{ steps.check-patch.outputs.patch_url }}
+      id: generate-diff
       run: |
-        # Configure git
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        
-        # Create new branch
-        BRANCH_NAME="auto-update-patch-$NEW_VERSION"
-        git checkout -b "$BRANCH_NAME"
-        
-        # Add all changes
-        git add .
-        
-        # Check if there are changes to commit
-        if git diff --cached --quiet; then
-          echo "No changes to commit"
-          exit 0
-        fi
-        
         # Get the diff between latest and previous items files
+        NEW_VERSION="${{ steps.check-patch.outputs.new_version }}"
         VERSION_UNDERSCORE=$(echo "$NEW_VERSION" | sed 's/\./_/')
         LATEST_ITEMS="_data/items_$VERSION_UNDERSCORE.yml"
         
@@ -125,39 +105,49 @@ jobs:
           DIFF_OUTPUT="Could not generate diff: files not found\nLatest: $LATEST_ITEMS (exists: $(test -f "$LATEST_ITEMS" && echo "yes" || echo "no"))\nPrevious: $PREVIOUS_ITEMS (exists: $(test -f "$PREVIOUS_ITEMS" && echo "yes" || echo "no"))"
         fi
         
-        # Commit changes
-        git commit -m "$(cat <<'EOF'
-chore: auto-update to Wild Rift patch $NEW_VERSION
+        # Set the diff output as a step output (properly escaped)
+        {
+          echo 'diff_output<<EOF'
+          echo "$DIFF_OUTPUT"
+          echo 'EOF'
+        } >> $GITHUB_OUTPUT
 
-🤖 Generated with Claude Code
-
-Co-Authored-By: Claude <noreply@anthropic.com>
-EOF
-)"
-        
-        # Push branch
-        git push origin "$BRANCH_NAME"
-        
-        # Create PR with diff in body
-        gh pr create \
-          --title "Auto-update to Wild Rift patch $NEW_VERSION" \
-          --body "$(cat <<EOF
-## Summary
-
-- Automated update to Wild Rift patch version $NEW_VERSION
-- Items data updated based on latest patch notes
-
-## Changes of items data between the latest and the last one:
-
-\`\`\`diff
-$DIFF_OUTPUT
-\`\`\`
-
-## Source
-Patch notes: $PATCH_URL
-
-🤖 Generated with Claude Code
-EOF
-)" \
-          --head "$BRANCH_NAME" \
-          --base main
+    - name: Create Pull Request
+      if: steps.check-patch.outputs.new_version
+      id: cpr
+      uses: peter-evans/create-pull-request@v7
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "$(cat <<'EOF'
+          chore: auto-update to Wild Rift patch ${{ steps.check-patch.outputs.new_version }}
+          
+          🤖 Generated with Claude Code
+          
+          Co-Authored-By: Claude <noreply@anthropic.com>
+          EOF
+          )"
+        committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+        author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
+        signoff: false
+        branch: auto-update-patch-${{ steps.check-patch.outputs.new_version }}
+        delete-branch: true
+        title: 'Auto-update to Wild Rift patch ${{ steps.check-patch.outputs.new_version }}'
+        body: |
+          ## Summary
+          
+          - Automated update to Wild Rift patch version ${{ steps.check-patch.outputs.new_version }}
+          - Items data updated based on latest patch notes
+          
+          ## Changes of items data between the latest and the last one:
+          
+          ```diff
+          ${{ steps.generate-diff.outputs.diff_output }}
+          ```
+          
+          ## Source
+          Patch notes: ${{ steps.check-patch.outputs.patch_url }}
+          
+          🤖 Generated with Claude Code
+        labels: |
+          patch-update
+        draft: false
