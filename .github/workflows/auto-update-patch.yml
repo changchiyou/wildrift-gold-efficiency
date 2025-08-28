@@ -1,0 +1,165 @@
+name: Auto Update Wild Rift Patch
+
+on:
+  schedule:
+    # Run every hour
+    - cron: '0 * * * *'
+  workflow_dispatch:
+    # Allow manual triggering
+
+permissions:
+  id-token: write
+  contents: write
+
+env:
+  RSS_URL: "${{ vars.RSS_URL }}"
+
+jobs:
+  check-for-updates:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Setup Python and install dependencies
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+        cache-dependency-path: '**/requirements.txt'
+    - run: pip install -r requirements.txt
+
+    - name: Check for new patch version
+      id: check-patch
+      run: |
+        # Download and parse RSS feed
+        RSS_CONTENT=$(curl -s "$RSS_URL")
+
+        # Extract URLs with game-updates and patch-notes (clean URLs only)
+        PATCH_URLS=$(echo "$RSS_CONTENT" | grep -o 'href="https://wildrift\.leagueoflegends\.com/[^"]*game-updates[^"]*patch-notes[^"]*"' | sed 's/href="//g' | sed 's/"//g' | head -5)
+
+        echo "Found patch URLs:"
+        echo "$PATCH_URLS"
+
+        # Process each URL to extract version
+        for URL in $PATCH_URLS; do
+          echo "Processing URL: $URL"
+
+          # Extract version from URL pattern like "wild-rift-patch-notes-6-2e"
+          VERSION=$(echo "$URL" | grep -o 'patch-notes-[0-9]-[0-9][a-z]*' | sed 's/patch-notes-//' | sed 's/-/./')
+
+          if [ -z "$VERSION" ]; then
+            echo "Could not extract version from URL: $URL"
+            continue
+          fi
+
+          echo "Extracted version: $VERSION"
+
+          # Convert version format for checking (6.2e -> 6_2e)
+          VERSION_UNDERSCORE=$(echo "$VERSION" | sed 's/\./_/')
+
+          # Check if this version already exists in _pages
+          if [ -d "_pages/$VERSION_UNDERSCORE" ]; then
+            echo "Version $VERSION already exists in _pages/$VERSION_UNDERSCORE"
+            continue
+          fi
+
+          # Check if this version already exists in _data
+          if [ -f "_data/items_$VERSION_UNDERSCORE.yml" ]; then
+            echo "Version $VERSION already exists in _data/items_$VERSION_UNDERSCORE.yml"
+            continue
+          fi
+
+          echo "New version found: $VERSION"
+          echo "new_version=$VERSION" >> $GITHUB_OUTPUT
+          echo "patch_url=$URL" >> $GITHUB_OUTPUT
+          exit 0
+        done
+
+        echo "No new versions found"
+        exit 0
+
+    - name: Update to new version with Claude Code
+      if: steps.check-patch.outputs.new_version
+      uses: anthropics/claude-code-action@v1
+      with:
+        anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+        claude_args: |
+          --model "${{ vars.ANTHROPIC_MODEL }}"
+        settings: |
+          {
+            "env": {
+              "ANTHROPIC_BASE_URL": "${{ vars.ANTHROPIC_BASE_URL }}",
+            }
+          }
+        prompt: |
+          Update to the latest version ${{ steps.check-patch.outputs.new_version }} with the following information from the latest patch note: $(python patch_notes_extractor.py "${{ steps.check-patch.outputs.patch_url }}")
+
+    - name: Generate diff report
+      if: steps.check-patch.outputs.new_version
+      id: generate-diff
+      run: |
+        # Get the diff between latest and previous items files
+        NEW_VERSION="${{ steps.check-patch.outputs.new_version }}"
+        VERSION_UNDERSCORE=$(echo "$NEW_VERSION" | sed 's/\./_/')
+        LATEST_ITEMS="_data/items_$VERSION_UNDERSCORE.yml"
+        
+        # Find the previous version (second latest)
+        PREVIOUS_ITEMS=$(ls _data/items_*.yml | grep -v "$LATEST_ITEMS" | sort -V | tail -1)
+        
+        if [ -f "$LATEST_ITEMS" ] && [ -f "$PREVIOUS_ITEMS" ]; then
+          echo "Comparing $PREVIOUS_ITEMS with $LATEST_ITEMS"
+          DIFF_OUTPUT=$(git diff --no-index "$PREVIOUS_ITEMS" "$LATEST_ITEMS" || true)
+        else
+          DIFF_OUTPUT="Could not generate diff: files not found\nLatest: $LATEST_ITEMS (exists: $(test -f "$LATEST_ITEMS" && echo "yes" || echo "no"))\nPrevious: $PREVIOUS_ITEMS (exists: $(test -f "$PREVIOUS_ITEMS" && echo "yes" || echo "no"))"
+        fi
+        
+        # Set the diff output as a step output (properly escaped)
+        {
+          echo 'diff_output<<EOF'
+          echo "$DIFF_OUTPUT"
+          echo 'EOF'
+        } >> $GITHUB_OUTPUT
+
+    - name: Create Pull Request
+      if: steps.check-patch.outputs.new_version
+      id: cpr
+      uses: peter-evans/create-pull-request@v7
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "$(cat <<'EOF'
+          chore: auto-update to Wild Rift patch ${{ steps.check-patch.outputs.new_version }}
+          
+          🤖 Generated with Claude Code
+          
+          Co-Authored-By: Claude <noreply@anthropic.com>
+          EOF
+          )"
+        committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+        author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
+        signoff: false
+        branch: auto-update-patch-${{ steps.check-patch.outputs.new_version }}
+        delete-branch: true
+        title: 'Auto-update to Wild Rift patch ${{ steps.check-patch.outputs.new_version }}'
+        body: |
+          ## Summary
+          
+          - Automated update to Wild Rift patch version ${{ steps.check-patch.outputs.new_version }}
+          - Items data updated based on latest patch notes
+          
+          ## Changes of items data between the latest and the last one:
+          
+          ```diff
+          ${{ steps.generate-diff.outputs.diff_output }}
+          ```
+          
+          ## Source
+          Patch notes: ${{ steps.check-patch.outputs.patch_url }}
+          
+          🤖 Generated with Claude Code
+        labels: |
+          patch-update
+        draft: false
