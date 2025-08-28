@@ -8,7 +8,11 @@ name: Auto Update Wild Rift Patch
 #     # Allow manual triggering
 
 on:
-  push:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
     branches:
       - chore/auto_update_with_claude_code
 
