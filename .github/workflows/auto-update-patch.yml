@@ -233,3 +233,4 @@ jobs:
         labels: |
           patch-update
         draft: false
+        base: main
