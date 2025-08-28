@@ -76,6 +76,7 @@ jobs:
 
           echo "New version found: $VERSION"
           echo "new_version=$VERSION" >> $GITHUB_OUTPUT
+          echo "new_version_underscore=$VERSION_UNDERSCORE" >> $GITHUB_OUTPUT
           echo "patch_url=$URL" >> $GITHUB_OUTPUT
           exit 0
         done
@@ -128,8 +129,7 @@ jobs:
       id: generate-diff
       run: |
         # Get the diff between latest and previous items files
-        NEW_VERSION="${{ steps.check-patch.outputs.new_version }}"
-        VERSION_UNDERSCORE=$(echo "$NEW_VERSION" | sed 's/\./_/')
+        VERSION_UNDERSCORE="${{ steps.check-patch.outputs.new_version_underscore }}"
         LATEST_ITEMS="_data/items_$VERSION_UNDERSCORE.yml"
 
         # Use the previous version found earlier
@@ -166,7 +166,7 @@ jobs:
         committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
         author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
         signoff: false
-        branch: auto-update-patch-${{ steps.check-patch.outputs.new_version }}
+        branch: auto-update-patch-${{ steps.check-patch.outputs.new_version_underscore }}
         delete-branch: true
         title: 'Auto-update to Wild Rift patch ${{ steps.check-patch.outputs.new_version }}'
         body: |
@@ -176,7 +176,7 @@ jobs:
           - Items data updated based on latest patch notes
 
           <details>
-          <summary>Changes of items data between ${{ steps.check-patch.outputs.new_version }} and ${{ steps.find-previous.outputs.previous_items_file }}</summary>
+          <summary>Changes of items data between ${{ steps.find-previous.outputs.previous_version }} and ${{ steps.check-patch.outputs.new_version }}</summary>
 
           ```diff
           ${{ steps.generate-diff.outputs.diff_output }}
