@@ -9,10 +9,7 @@ name: Auto Update Wild Rift Patch
 
 on:
   pull_request:
-    types:
-      - opened
-      - synchronize
-      - reopened
+    types: [opened, reopened, synchronize, labeled, unlabeled]
     branches:
       - chore/auto_update_with_claude_code
 
