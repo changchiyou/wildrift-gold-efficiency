@@ -1,17 +1,11 @@
 name: Auto Update Wild Rift Patch
 
-# on:
-#   schedule:
-#     # Run every hour
-#     - cron: '0 * * * *'
-#   workflow_dispatch:
-#     # Allow manual triggering
-# test
 on:
-  pull_request:
-    types: [opened, reopened, synchronize, labeled, unlabeled]
-    branches:
-      - main
+  schedule:
+    # Run every hour
+    - cron: '0 * * * *'
+  workflow_dispatch:
+    # Allow manual triggering
 
 env:
   RSS_URL: "${{ vars.RSS_URL }}"
@@ -39,49 +33,79 @@ jobs:
         cache-dependency-path: '**/requirements.txt'
     - run: pip install -r requirements.txt
 
-    - name: Check for new patch version (MOCK TEST)
+    - name: Check for new patch version
       id: check-patch
       run: |
-        # MOCK TEST: Simulate finding version 6.2f for testing
+        # Download and parse RSS feed
+        RSS_CONTENT=$(curl -s "$RSS_URL")
+
+        # Extract URLs with game-updates and patch-notes (clean URLs only)
+        PATCH_URLS=$(echo "$RSS_CONTENT" | grep -o 'href="https://wildrift\.leagueoflegends\.com/[^"]*game-updates[^"]*patch-notes[^"]*"' | sed 's/href="//g' | sed 's/"//g' | head -5)
+
         echo "Found patch URLs:"
-        echo "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-6-2f"
-        
-        echo "Processing URL: https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-6-2f"
-        echo "Extracted version: 6.2f"
-        
-        VERSION="6.2f"
-        VERSION_UNDERSCORE="6_2f"
-        
-        # Check if this version already exists in _pages
-        if [ -d "_pages/$VERSION_UNDERSCORE" ]; then
-          echo "Version $VERSION already exists in _pages/$VERSION_UNDERSCORE"
-          echo "No new versions found"
-          exit 0
-        fi
+        echo "$PATCH_URLS"
 
-        # Check if this version already exists in _data
-        if [ -f "_data/items_$VERSION_UNDERSCORE.yml" ]; then
-          echo "Version $VERSION already exists in _data/items_$VERSION_UNDERSCORE.yml"
-          echo "No new versions found"
-          exit 0
-        fi
+        # Process each URL to extract version
+        for URL in $PATCH_URLS; do
+          echo "Processing URL: $URL"
 
-        echo "New version found: $VERSION"
-        echo "new_version=$VERSION" >> $GITHUB_OUTPUT
-        echo "patch_url=https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-6-2f" >> $GITHUB_OUTPUT
+          # Extract version from URL pattern like "wild-rift-patch-notes-6-2e"
+          VERSION=$(echo "$URL" | grep -o 'patch-notes-[0-9]-[0-9][a-z]*' | sed 's/patch-notes-//' | sed 's/-/./')
+
+          if [ -z "$VERSION" ]; then
+            echo "Could not extract version from URL: $URL"
+            continue
+          fi
+
+          echo "Extracted version: $VERSION"
+
+          # Convert version format for checking (6.2e -> 6_2e)
+          VERSION_UNDERSCORE=$(echo "$VERSION" | sed 's/\./_/')
+
+          # Check if this version already exists in _pages
+          if [ -d "_pages/$VERSION_UNDERSCORE" ]; then
+            echo "Version $VERSION already exists in _pages/$VERSION_UNDERSCORE"
+            continue
+          fi
+
+          # Check if this version already exists in _data
+          if [ -f "_data/items_$VERSION_UNDERSCORE.yml" ]; then
+            echo "Version $VERSION already exists in _data/items_$VERSION_UNDERSCORE.yml"
+            continue
+          fi
+
+          echo "New version found: $VERSION"
+          echo "new_version=$VERSION" >> $GITHUB_OUTPUT
+          echo "patch_url=$URL" >> $GITHUB_OUTPUT
+          exit 0
+        done
+
+        echo "No new versions found"
         exit 0
 
     - uses: actions/setup-node@v4
       with:
         node-version: 18
 
-    - name: Update to new version with Claude Code
+    - name: Find previous version
+      if: steps.check-patch.outputs.new_version
+      id: find-previous
+      run: |
+        # Find the previous version (most recent existing version)
+        PREVIOUS_ITEMS=$(ls _data/items_*.yml | sort -V | tail -1)
+        PREVIOUS_VERSION=$(basename "$PREVIOUS_ITEMS" .yml | sed 's/items_//' | sed 's/_/\./')
+
+        echo "Found previous version: $PREVIOUS_VERSION"
+        echo "previous_version=$PREVIOUS_VERSION" >> $GITHUB_OUTPUT
+        echo "previous_items_file=$PREVIOUS_ITEMS" >> $GITHUB_OUTPUT
+
+    - name: Install and configure Claude Code
       if: steps.check-patch.outputs.new_version
       run: |
           npm install -g @anthropic-ai/claude-code
 
           mkdir -p ~/.claude
-          
+
           cat > ~/.claude/settings.json << 'EOF'
           {
             "env": {
@@ -93,81 +117,11 @@ jobs:
             }
           }
           EOF
-          
-          claude -p "Update to the latest version ${{ steps.check-patch.outputs.new_version }} with the following information from the latest patch note: 
-          
-          ## ITEMS
 
-          We're making several adjustments to improve item balance and gameplay diversity. These changes aim to create more strategic choices in item builds while maintaining competitive integrity.
-
-          #### Infinity Edge
-          *Base Stats*
-          * Attack Damage: 70 → 75
-          * Critical Strike Chance: 25% → 20%
-
-          #### Bloodthirster
-          *Base Attributes*
-          * Attack Damage: 55 → 60
-          * Price: 3400 gold → 3500 gold
-
-          #### Guardian Angel
-          *Passive*
-          * Resurrection Health: 50% → 40%
-          * Cooldown: 300s → 240s
-
-          #### Mortal Reminder
-          *Base Stats*
-          * Attack Damage: 45 → 50
-          * Armor Penetration: 35% → 30%
-
-          #### Rabadon's Deathcap
-          *Base Attributes*
-          * Ability Power: 120 → 130
-          * Price: 3600 gold → 3800 gold
-
-          #### Void Staff
-          *Base Stats*
-          * Ability Power: 70 → 65
-          * Magic Penetration: 40% → 45%
-
-          #### Trinity Force
-          *Base Attributes*
-          * Attack Damage: 25 → 30
-          * Health: 200 → 250
-          * Price: 3733 gold → 3900 gold
-
-          #### Black Cleaver
-          *Unique Passive*
-          * Armor Reduction: 6% per stack → 5% per stack
-          * Health: 400 → 450
-
-          #### Dead Man's Plate
-          *Base Stats*
-          * Health: 425 → 400
-          * Armor: 45 → 50
-
-          #### Thornmail
-          *Passive*
-          * Armor: 80 → 75
-          * Reflect Damage: 25 + 10% bonus armor → 30 + 15% bonus armor
-
-          #### Spirit Visage
-          *Base Attributes*
-          * Health: 450 → 500
-          * Magic Resistance: 55 → 50
-          * Price: 2900 gold → 3000 gold
-
-          #### Hextech Gunblade
-          *Active*
-          * Attack Damage: 40 → 35
-          * Ability Power: 80 → 85
-          * Active Damage: 175-253 → 200-280
-
-          #### Nashor's Tooth
-          *Base Stats*
-          * Ability Power: 80 → 75
-          * Attack Speed: 50% → 55%
-          * Price: 3000 gold → 2900 gold" --dangerously-skip-permissions
+    - name: Update to new version with Claude Code
+      if: steps.check-patch.outputs.new_version
+      run: |
+          claude -p "Update from version ${{ steps.find-previous.outputs.previous_version }} to the latest version ${{ steps.check-patch.outputs.new_version }} with the following information from the latest patch note: $(python patch_notes_extractor.py \"${{ steps.check-patch.outputs.patch_url }}\")" --dangerously-skip-permissions
 
     - name: Generate diff report
       if: steps.check-patch.outputs.new_version
@@ -177,17 +131,17 @@ jobs:
         NEW_VERSION="${{ steps.check-patch.outputs.new_version }}"
         VERSION_UNDERSCORE=$(echo "$NEW_VERSION" | sed 's/\./_/')
         LATEST_ITEMS="_data/items_$VERSION_UNDERSCORE.yml"
-        
-        # Find the previous version (second latest)
-        PREVIOUS_ITEMS=$(ls _data/items_*.yml | grep -v "$LATEST_ITEMS" | sort -V | tail -1)
-        
+
+        # Use the previous version found earlier
+        PREVIOUS_ITEMS="${{ steps.find-previous.outputs.previous_items_file }}"
+
         if [ -f "$LATEST_ITEMS" ] && [ -f "$PREVIOUS_ITEMS" ]; then
           echo "Comparing $PREVIOUS_ITEMS with $LATEST_ITEMS"
           DIFF_OUTPUT=$(git diff --no-index "$PREVIOUS_ITEMS" "$LATEST_ITEMS" || true)
         else
           DIFF_OUTPUT="Could not generate diff: files not found\nLatest: $LATEST_ITEMS (exists: $(test -f "$LATEST_ITEMS" && echo "yes" || echo "no"))\nPrevious: $PREVIOUS_ITEMS (exists: $(test -f "$PREVIOUS_ITEMS" && echo "yes" || echo "no"))"
         fi
-        
+
         # Set the diff output as a step output (properly escaped)
         {
           echo 'diff_output<<EOF'
@@ -203,9 +157,9 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         commit-message: "$(cat <<'EOF'
           chore: auto-update to Wild Rift patch ${{ steps.check-patch.outputs.new_version }}
-          
+
           🤖 Generated with Claude Code
-          
+
           Co-Authored-By: Claude <noreply@anthropic.com>
           EOF
           )"
@@ -217,19 +171,21 @@ jobs:
         title: 'Auto-update to Wild Rift patch ${{ steps.check-patch.outputs.new_version }}'
         body: |
           ## Summary
-          
+
           - Automated update to Wild Rift patch version ${{ steps.check-patch.outputs.new_version }}
           - Items data updated based on latest patch notes
-          
-          ## Changes of items data between the latest and the last one:
-          
+
+          <details>
+          <summary>Changes of items data between ${{ steps.check-patch.outputs.new_version }} and ${{ steps.find-previous.outputs.previous_items_file }}</summary>
+
           ```diff
           ${{ steps.generate-diff.outputs.diff_output }}
           ```
-          
+          </details>
+
           ## Source
           Patch notes: ${{ steps.check-patch.outputs.patch_url }}
-          
+
           🤖 Generated with Claude Code
         labels: |
           patch-update
