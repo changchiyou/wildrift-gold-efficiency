@@ -13,6 +13,10 @@ on:
     branches:
       - main
 
+permissions:
+  id-token: write
+  contents: write
+
 env:
   RSS_URL: "${{ vars.RSS_URL }}"
 
