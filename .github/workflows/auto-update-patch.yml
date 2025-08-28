@@ -11,7 +11,7 @@ on:
   pull_request:
     types: [opened, reopened, synchronize, labeled, unlabeled]
     branches:
-      - chore/auto_update_with_claude_code
+      - main
 
 env:
   RSS_URL: "${{ vars.RSS_URL }}"
