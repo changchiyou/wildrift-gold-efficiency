@@ -81,7 +81,7 @@ jobs:
         done
 
         echo "No new versions found"
-        exit 0
+        exit 1
 
     - name: Update to new version with Claude Code
       if: steps.check-patch.outputs.new_version
