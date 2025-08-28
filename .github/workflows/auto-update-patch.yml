@@ -85,7 +85,7 @@ jobs:
 
     - name: Update to new version with Claude Code
       if: steps.check-patch.outputs.new_version
-      uses: anthropics/claude-code-action@v1.0
+      uses: anthropics/claude-code-action@v1
       with:
         anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
         claude_args: |
