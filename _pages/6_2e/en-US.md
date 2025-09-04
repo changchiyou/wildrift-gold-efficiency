@@ -7,10 +7,6 @@ description: Wild Rift Gold Efficiency of 6.2e
 image: /assets/favicon512x512.png
 
 permalink: /en-US/6.2e/
-redirect_from:
-    - /
-    - /en-US/
-latest_version: true
 
 lang: en-US
 
