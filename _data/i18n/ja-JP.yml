@@ -21,6 +21,8 @@ items-table:
 outdated:
   title: '⚠️ 警告'
   message: 古いバージョンを表示しています。最新バージョンにリダイレクトするには、{hyperlink_start}こちら{hyperlink_end}をクリックしてください。
+update_summary:
+  no_change: This patch does not include any updates to item values.
 hint:
   title: '💡 説明'
   message1: "ほとんどの場合、{highlight_start}計算されたゴールド効率の割合 (%) が高いほど、より優れた価値を示します{highlight_end}。 しかし、{lolwiki} に記載されているように："
