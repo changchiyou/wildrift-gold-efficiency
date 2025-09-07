@@ -12,6 +12,14 @@ layout: default
     </div>
 {% endunless%}
 
+{% if page.patch_note.statuses.buffed.empty? and page.patch_note.statuses.adjusted.empty? and page.patch_note.statuses.nerfed.empty? and page.patch_note.statuses.new.empty? %}
+    <div class="panel warning">
+        <p>
+	    <strong>{% include i18n.html token="update_summary.no_change" %}</strong>
+        </p>
+    </div>
+{% endif %}
+
 <div class="panel">
     <p>
         <strong id="hint">{% include i18n.html token="hint.title" %}<a href="#hint"> #</a></strong><br>
