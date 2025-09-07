@@ -21,6 +21,8 @@ items-table:
 outdated:
   title: '⚠️ Warning'
   message: You are viewing an outdated version. Please click {hyperlink_start}here{hyperlink_end} to redirect to the latest version.
+update_summary:
+  no_change: This patch does not include any updates to item values.
 hint:
   title: '💡 Instructions'
   message1: "In most cases, {highlight_start}a higher calculated Gold Efficiency percentage (%) indicates better value{highlight_end}. However, as However, as stated in the {lolwiki} :"
