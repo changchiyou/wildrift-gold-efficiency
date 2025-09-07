@@ -21,6 +21,8 @@ items-table:
 outdated:
   title: '⚠️ Warnung'
   message: Sie sehen eine veraltete Version. Bitte klicken Sie {hyperlink_start}hier{hyperlink_end}, um zur neuesten Version weiterzuleiten.
+update_summary:
+  no_change: This patch does not include any updates to item values.
 hint:
   title: '💡 Anweisungen'
   message1: "In den meisten Fällen zeigt {highlight_start}ein höher berechneter Gold-Effizienzblatt Prozentsatz (%) einen besseren{highlight_end}an. Allerdings, wie im {lolwiki} angegeben:"

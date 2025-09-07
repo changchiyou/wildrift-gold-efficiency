@@ -21,6 +21,8 @@ items-table:
 outdated:
   title: '⚠️ Aviso'
   message: Você está vendo uma versão desatualizada. Por favor, clique em {hyperlink_start}aqui{hyperlink_end} para redirecionar para a versão mais recente.
+update_summary:
+  no_change: This patch does not include any updates to item values.
 hint:
   title: '💡 Instruções'
   message1: "Geralmente, {highlight_start}uma porcentagem de Eficiência de Ouro maior calculada (%) indica melhor valor de{highlight_end}. No entanto, como se diz no {lolwiki}:"
