@@ -12,7 +12,7 @@ layout: default
     </div>
 {% endunless%}
 
-{% if page.patch_note.statuses.buffed.empty? and page.patch_note.statuses.adjusted.empty? and page.patch_note.statuses.nerfed.empty? and page.patch_note.statuses.new.empty? %}
+{% if page.patch_note.statuses.buffed == "" and page.patch_note.statuses.adjusted == "" and page.patch_note.statuses.nerfed == "" and page.patch_note.statuses.new == "" %}
     <div class="panel warning">
         <p>
 	    <strong>{% include i18n.html token="update_summary.no_change" %}</strong>
