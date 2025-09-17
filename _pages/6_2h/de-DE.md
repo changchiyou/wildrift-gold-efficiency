@@ -24,9 +24,9 @@ data:
 
 patch_note:
     statuses:
-        buffed: ""
+        buffed: "Dead Man's Plate,Force of Nature"
         adjusted: ""
-        nerfed: ""
+        nerfed: "Mortal Reminder"
         new: ""
     excludes: ""
     compare:
