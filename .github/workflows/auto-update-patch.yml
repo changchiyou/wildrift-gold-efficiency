@@ -25,7 +25,25 @@ jobs:
       with:
         fetch-depth: 0
 
+    - name: Check for existing open PRs
+      id: check-existing-prs
+      run: |
+        # Check if there are any open PRs with the patch-update label
+        OPEN_PRS=$(gh pr list --label "patch-update" --state open --json number | jq length)
+        echo "Found $OPEN_PRS open patch-update PRs"
+
+        if [ "$OPEN_PRS" -gt 0 ]; then
+          echo "Skipping workflow - there are already $OPEN_PRS open patch-update PRs"
+          echo "skip_workflow=true" >> $GITHUB_OUTPUT
+        else
+          echo "No open patch-update PRs found, proceeding with workflow"
+          echo "skip_workflow=false" >> $GITHUB_OUTPUT
+        fi
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     - name: Setup Python and install dependencies
+      if: steps.check-existing-prs.outputs.skip_workflow == 'false'
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
@@ -34,6 +52,7 @@ jobs:
     - run: pip install -r requirements.txt
 
     - name: Check for new patch version
+      if: steps.check-existing-prs.outputs.skip_workflow == 'false'
       id: check-patch
       run: |
         # Download and parse RSS feed
@@ -85,11 +104,12 @@ jobs:
         exit 0
 
     - uses: actions/setup-node@v4
+      if: steps.check-existing-prs.outputs.skip_workflow == 'false'
       with:
         node-version: 18
 
     - name: Find previous version
-      if: steps.check-patch.outputs.new_version
+      if: steps.check-existing-prs.outputs.skip_workflow == 'false' && steps.check-patch.outputs.new_version
       id: find-previous
       run: |
         # Find the previous version (most recent existing version)
@@ -101,7 +121,7 @@ jobs:
         echo "previous_items_file=$PREVIOUS_ITEMS" >> $GITHUB_OUTPUT
 
     - name: Install and configure Claude Code
-      if: steps.check-patch.outputs.new_version
+      if: steps.check-existing-prs.outputs.skip_workflow == 'false' && steps.check-patch.outputs.new_version
       run: |
           npm install -g @anthropic-ai/claude-code
 
@@ -120,12 +140,12 @@ jobs:
           EOF
 
     - name: Update to new version with Claude Code
-      if: steps.check-patch.outputs.new_version
+      if: steps.check-existing-prs.outputs.skip_workflow == 'false' && steps.check-patch.outputs.new_version
       run: |
           claude -p "Update from version ${{ steps.find-previous.outputs.previous_version }} to the latest version ${{ steps.check-patch.outputs.new_version }} with the following information from the latest patch note: $(python patch_notes_extractor.py ${{ steps.check-patch.outputs.patch_url }})" --dangerously-skip-permissions
 
     - name: Generate diff report
-      if: steps.check-patch.outputs.new_version
+      if: steps.check-existing-prs.outputs.skip_workflow == 'false' && steps.check-patch.outputs.new_version
       id: generate-diff
       run: |
         # Get the diff between latest and previous items files
@@ -150,19 +170,17 @@ jobs:
         } >> $GITHUB_OUTPUT
 
     - name: Create Pull Request
-      if: steps.check-patch.outputs.new_version
+      if: steps.check-existing-prs.outputs.skip_workflow == 'false' && steps.check-patch.outputs.new_version
       id: cpr
       uses: peter-evans/create-pull-request@v7
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        commit-message: "$(cat <<'EOF'
+        commit-message: |
           chore: auto-update to Wild Rift patch ${{ steps.check-patch.outputs.new_version }}
 
           🤖 Generated with Claude Code
 
           Co-Authored-By: Claude <noreply@anthropic.com>
-          EOF
-          )"
         committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
         author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
         signoff: false
