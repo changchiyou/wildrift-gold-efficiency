@@ -7,10 +7,6 @@ description: ワイルドリフト 6.2h ゴールド効率
 image: /assets/favicon512x512.png
 
 permalink: /ja-JP/6.2h/
-redirect_from:
-    - /
-    - /ja-JP/
-latest_version: true
 
 lang: ja-JP
 
