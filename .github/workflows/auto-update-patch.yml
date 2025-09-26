@@ -139,50 +139,10 @@ jobs:
           }
           EOF
 
-    - name: Extract patch notes and og:image
-      if: steps.check-existing-prs.outputs.skip_workflow == 'false' && steps.check-patch.outputs.new_version
-      id: extract-patch-info
-      run: |
-        # Extract JSON with items and og:image
-        PATCH_JSON=$(python patch_notes_extractor.py --json "${{ steps.check-patch.outputs.patch_url }}")
-
-        # Extract items and og:image from JSON
-        ITEMS_CONTENT=$(echo "$PATCH_JSON" | jq -r '.items')
-        OG_IMAGE_URL=$(echo "$PATCH_JSON" | jq -r '.og_image // ""')
-
-        echo "Extracted items content length: ${#ITEMS_CONTENT}"
-        echo "Extracted og:image URL: $OG_IMAGE_URL"
-
-        # Set outputs for next step
-        {
-          echo 'items_content<<EOF'
-          echo "$ITEMS_CONTENT"
-          echo 'EOF'
-        } >> $GITHUB_OUTPUT
-
-        echo "og_image_url=$OG_IMAGE_URL" >> $GITHUB_OUTPUT
-
     - name: Update to new version with Claude Code
       if: steps.check-existing-prs.outputs.skip_workflow == 'false' && steps.check-patch.outputs.new_version
       run: |
-          claude -p "Update from version ${{ steps.find-previous.outputs.previous_version }} to the latest version ${{ steps.check-patch.outputs.new_version }} with the following information from the latest patch note: ${{ steps.extract-patch-info.outputs.items_content }}" --dangerously-skip-permissions
-
-    - name: Update page images with og:image
-      if: steps.check-existing-prs.outputs.skip_workflow == 'false' && steps.check-patch.outputs.new_version && steps.extract-patch-info.outputs.og_image_url != ''
-      run: |
-        # Update image parameter in all markdown files for the new version
-        VERSION_UNDERSCORE="${{ steps.check-patch.outputs.new_version_underscore }}"
-        OG_IMAGE_URL="${{ steps.extract-patch-info.outputs.og_image_url }}"
-
-        if [ -d "_pages/$VERSION_UNDERSCORE" ]; then
-          find "_pages/$VERSION_UNDERSCORE" -name "*.md" -type f | while read -r file; do
-            echo "Updating image in: $file"
-            sed -i "s|^image:.*|image: $OG_IMAGE_URL|" "$file"
-          done
-          echo "Updated page images with og:image: $OG_IMAGE_URL"
-        else
-          echo "Warning: _pages/$VERSION_UNDERSCORE directory not found"
-        fi
+          claude -p "Update from version ${{ steps.find-previous.outputs.previous_version }} to the latest version ${{ steps.check-patch.outputs.new_version }} with the following information from the latest patch note: $(python patch_notes_extractor.py --json ${{ steps.check-patch.outputs.patch_url }})" --dangerously-skip-permissions
 
     - name: Generate diff report
       if: steps.check-existing-prs.outputs.skip_workflow == 'false' && steps.check-patch.outputs.new_version
