@@ -13,6 +13,8 @@ import requests
 from markdownify import markdownify as md
 import re
 from urllib.parse import urlparse
+from bs4 import BeautifulSoup
+import json
 
 
 def validate_url(url):
@@ -46,6 +48,29 @@ def get_html_content(url, max_retries=3):
                 time.sleep(wait_time)
             else:
                 pass
+    return None
+
+
+def extract_og_image(html_content):
+    """
+    Extracts the og:image meta tag from HTML content.
+
+    Args:
+        html_content (str): HTML content to parse
+
+    Returns:
+        str or None: og:image URL if found, None otherwise
+    """
+    if not html_content:
+        return None
+
+    try:
+        soup = BeautifulSoup(html_content, 'html.parser')
+        og_image_tag = soup.find('meta', property='og:image')
+        if og_image_tag and og_image_tag.get('content'):
+            return og_image_tag['content']
+    except Exception as e:
+        pass
     return None
 
 
@@ -119,11 +144,12 @@ def webpage_to_markdown(url, max_retries=3):
 def main():
     """Main function to handle command line arguments and execute the extraction."""
     parser = argparse.ArgumentParser(
-        description="Extract ITEMS section from Wild Rift patch notes webpage",
+        description="Extract ITEMS section and og:image from Wild Rift patch notes webpage",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
   python patch_notes_extractor.py https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-6-2e/
+  python patch_notes_extractor.py --json https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-6-2e/
         """
     )
 
@@ -131,12 +157,18 @@ Examples:
         "url",
         help="URL of the patch notes webpage to extract items from"
     )
-    
+
     parser.add_argument(
         "--retries",
         type=int,
         default=3,
         help="Number of retry attempts for failed requests (default: 3)"
+    )
+
+    parser.add_argument(
+        "--json",
+        action="store_true",
+        help="Output in JSON format with items and og:image"
     )
 
     args = parser.parse_args()
@@ -149,16 +181,33 @@ Examples:
     if args.retries < 1:
         sys.exit(1)
 
-    # Extract items section
-    markdown_content = webpage_to_markdown(args.url, args.retries)
-    if markdown_content:
-        items_section = extract_items_section(markdown_content)
-        if items_section.strip():
-            print(items_section)
-        else:
-            sys.exit(1)
-    else:
+    # Get HTML content for both items extraction and og:image extraction
+    html_content = get_html_content(args.url, args.retries)
+    if not html_content:
         sys.exit(1)
+
+    # Extract items section
+    markdown_content = convert_html_to_markdown(html_content)
+    if not markdown_content:
+        sys.exit(1)
+
+    items_section = extract_items_section(markdown_content)
+    if not items_section.strip():
+        sys.exit(1)
+
+    # Extract og:image
+    og_image_url = extract_og_image(html_content)
+
+    if args.json:
+        # Output JSON format
+        result = {
+            "items": items_section.strip(),
+            "og_image": og_image_url
+        }
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+    else:
+        # Original behavior - output only items section
+        print(items_section)
 
 
 if __name__ == "__main__":

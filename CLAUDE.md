@@ -42,7 +42,9 @@ bash copy_v2.sh 6_0d 6_0e
 2. Update item data in `_data/items_{new_version}.yml` based on patch notes
 3. Update `_data/stats_{new_version}.yml` if needed
 4. Run `python data.py --items items_{new_version}.yml --stats stats_{new_version}.yml`
-5. Update `_pages/{new_version}/*.md` files if needed (don't forget to add items in patch_note.statuses based on items' adjustment)
+5. Update `_pages/{new_version}/*.md` files if needed:
+   - Add items in patch_note.statuses based on items' adjustment (buffed/adjusted/nerfed/new)
+   - If input contains JSON with og_image field, extract the og_image URL and update the `image:` parameter in all markdown files to use this new preview image instead of the default favicon
 
 ## Important Notes
 - Project tracks gold efficiency changes across Wild Rift patches
