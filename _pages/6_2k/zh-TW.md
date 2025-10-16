@@ -7,10 +7,6 @@ description: 激鬥峽谷 6.2k 裝備面板價值
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/8c3e439502d1bef76dd3ed4fe8b295a11b32ee39-1920x1080.jpg?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /zh-TW/6.2k/
-redirect_from:
-    - /
-    - /zh-TW/
-latest_version: true
 
 lang: zh-TW
 

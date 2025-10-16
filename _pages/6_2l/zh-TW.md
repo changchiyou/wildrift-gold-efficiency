@@ -1,35 +1,39 @@
 ---
 layout: gold_efficiency_v2
 
-title: 6.2k
-date: 2025/10/09
-description: Wild Rift 6.2k Eficiência de Ouro
+title: 6.2l
+date: 2025/10/16
+description: 激鬥峽谷 6.2l 裝備面板價值
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/8c3e439502d1bef76dd3ed4fe8b295a11b32ee39-1920x1080.jpg?w=1200&h=630&fm=webp&fit=crop&crop=center
 
-permalink: /pt-BR/6.2k/
+permalink: /zh-TW/6.2l/
+redirect_from:
+    - /
+    - /zh-TW/
+latest_version: true
 
-lang: pt-BR
+lang: zh-TW
 
 sitemap: false
 
 data:
-    refer_url: https://wildrift.leagueoflegends.com/pt-br/news/game-updates/wild-rift-patch-notes-6-2k/
-    refer_text: 6.2k
-    items: items_6_2k
-    stats: stats_6_2k
+    refer_url: https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-6-2l/
+    refer_text: 6.2l
+    items: items_6_2l
+    stats: stats_6_2l
 
 patch_note:
     statuses:
         buffed: ""
         adjusted: ""
-        nerfed: "Nashor's Tooth (Adaptive: AD),Nashor's Tooth (Adaptive: AP)"
+        nerfed: ""
         new: ""
     excludes: ""
     compare:
         statuses: "buffed,adjusted,nerfed"
-        items: items_6_2j
-        stats: stats_6_2j
-        item_prefix: 6.2j
+        items: items_6_2k
+        stats: stats_6_2k
+        item_prefix: 6.2k
         force: ""
         force_sep: ""
         excludes: ""
