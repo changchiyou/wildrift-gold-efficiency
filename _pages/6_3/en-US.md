@@ -26,13 +26,12 @@ patch_note:
         adjusted: "Protector's Vow"
         nerfed: ""
         new: "Radiant Virtue"
-    excludes: "Dawnshroud"
     compare:
-        statuses: "buffed,adjusted,nerfed"
+        statuses: "adjusted,nerfed"
         items: items_6_2l
         stats: stats_6_2l
         item_prefix: 6.2l
-        force: "Dawnshroud (Dawnbringer):Dawnshroud"
+        force: ""
         force_sep: ""
         excludes: ""
 ---
