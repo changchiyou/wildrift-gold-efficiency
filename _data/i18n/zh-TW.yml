@@ -129,6 +129,7 @@ item:
     crystalline-reflector: 水晶反光杖
     dagger: 短劍
     dawnshroud: 黎明法衣
+    dawnshroud-dawnbringer: 黎明法衣 (黎明使者)
     dead-man-s-plate: 死者肩甲
     dead-man-s-plate-momentum: 死者肩甲 (衝勁)
     death-s-dance: 死亡之舞
@@ -219,6 +220,7 @@ item:
     rabadon-s-deathcap-overkill-lv15: 死亡之帽 (狂弒 - lv15)
     rabadon-s-deathcap-overkill-lv1: 死亡之帽 (狂弒 - lv1)
     randuin-s-omen: 蘭頓之兆
+    randuin-s-omen-countercurrent-4stacks: 蘭頓之兆 (逆流 -  滿層)
     recurve-bow: 反曲弓
     redemption: 贖罪神石
     yordle-redemption: 約德爾 贖罪神石
@@ -298,6 +300,9 @@ item:
     awakened-soulstealer: 覺醒竊魂者
     soul-transfer: 移魂奪舍
     hullbreaker: 破船戰斧
+    radiant-virtue: 聖光美德
+    radiant-virtue-guiding-light-lv1-thresh-660-hp: 聖光美德 (指路明光 - lv1 瑟雷西 660 生命)
+    radiant-virtue-guiding-light-lv15-thresh-2340-hp: 聖光美德 (指路明光 - lv15 瑟雷西 2340 生命)
   passive:
     absorb: 吸收
     ardent: 熾灼
@@ -359,3 +364,6 @@ item:
     "bloody[crit]": 血腥[爆擊]
     "last-whisper[crit]": 最後耳語[爆擊]
     equilibrium: 魔力均衡
+    countercurrent: 逆流
+    guiding-light: 指路明光
+    dawnbringer: 黎明使者

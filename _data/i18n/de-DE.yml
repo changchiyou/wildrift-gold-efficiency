@@ -129,6 +129,7 @@ item:
     crystalline-reflector: Crystalline Reflector
     dagger: Dagger
     dawnshroud: Dawnshroud
+    dawnshroud-dawnbringer: Dawnshroud (Dawnbringer)
     dead-man-s-plate: Dead Man's Plate
     dead-man-s-plate-momentum: Dead Man's Plate (Momentum)
     death-s-dance: Death's Dance
@@ -219,6 +220,7 @@ item:
     rabadon-s-deathcap-overkill-lv15: Rabadon's Deathcap (Overkill - lv15)
     rabadon-s-deathcap-overkill-lv1: Rabadon's Deathcap (Overkill - lv1)
     randuin-s-omen: Randuin's Omen
+    randuin-s-omen-countercurrent-4stacks: Randuin's Omen (Countercurrent - 4Stacks)
     recurve-bow: Recurve Bow
     redemption: Redemption
     yordle-redemption: Yordle Redemption
@@ -298,6 +300,9 @@ item:
     awakened-soulstealer: Awakened Soulstealer
     soul-transfer: Soul Transfer
     hullbreaker: Hullbreaker
+    radiant-virtue: Radiant Virtue
+    radiant-virtue-guiding-light-lv1-thresh-660-hp: Radiant Virtue (Guiding Light - lv1 Thresh 660 HP)
+    radiant-virtue-guiding-light-lv15-thresh-2340-hp: Radiant Virtue (Guiding Light - lv15 Thresh 2340 HP)
   passive:
     absorb: Absorb
     ardent: Ardent
@@ -359,3 +364,6 @@ item:
     "bloody[crit]": Bloddy[Crit]
     "last-whisper[crit]": Last Whisper[Crit]
     equilibrium: Equilibrium
+    countercurrent: Countercurrent
+    guiding-light: Guiding Light
+    dawnbringer: Dawnbringer
