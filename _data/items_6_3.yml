@@ -1512,6 +1512,20 @@
     value: 400
   - type: Armor
     value: 75
+- amount: 114.54%
+  category: DEFENSE ITEMS
+  cost: 2800
+  formula: (400*3.33+75*25.0+20*0)/2800
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/0/08/Randuin%27s_Omen_item.png
+  name: Randuin's Omen (Countercurrent - 4Stacks)
+  stats:
+  - type: Max Health
+    value: 400
+  - type: Armor
+    value: 75
+  - passive: Countercurrent
+    type: '% Move Speed'
+    value: 20
 - amount: 94.11%
   category: DEFENSE ITEMS
   cost: 2700
@@ -1749,6 +1763,31 @@
     value: 50
   - type: Magic Resistance
     value: 30
+- amount: 135.56%
+  category: DEFENSE ITEMS, SUPPORT ITEMS
+  cost: 2700
+  formula: (250*3.33+60.0*25.0+36.0*25.0)/2700
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Dawnshroud_WR_item.png/80px-Dawnshroud_WR_item.png?0cdd7
+  name: Dawnshroud (Dawnbringer)
+  stats:
+  - type: Max Health
+    value: 250
+  - type: Armor
+    value: 50
+  - type: Magic Resistance
+    value: 30
+  - formula: 50*0.2
+    passive: Dawnbringer
+    ratio: 0.2
+    ref_type: Armor
+    type: Armor
+    value: 10.0
+  - formula: 30*0.2
+    passive: Dawnbringer
+    ratio: 0.2
+    ref_type: Magic Resistance
+    type: Magic Resistance
+    value: 6.0
 - amount: 96.77%
   category: DEFENSE ITEMS
   cost: 3100
@@ -1865,7 +1904,7 @@
   category: DEFENSE ITEMS
   cost: 2850
   formula: (300*3.33+45*25.0+15*40.0)/2850
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/thumb/Radiant_Virtue_item.png/80px-Radiant_Virtue_item.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Radiant_Virtue_item.png?e0b64
   name: Radiant Virtue
   stats:
   - type: Max Health
@@ -1874,6 +1913,46 @@
     value: 45
   - type: Ability Haste
     value: 15
+- amount: 126.05%
+  category: DEFENSE ITEMS
+  cost: 2850
+  formula: (300*3.33+45*25.0+15*40.0+120.0*3.33)/2850
+  image: https://wiki.leagueoflegends.com/en-us/images/Radiant_Virtue_item.png?e0b64
+  name: Radiant Virtue (Guiding Light - lv1 Thresh 660 HP)
+  stats:
+  - type: Max Health
+    value: 300
+  - type: Armor
+    value: 45
+  - type: Ability Haste
+    value: 15
+  - formula: (660+300)*0.125
+    passive: Guiding Light
+    ratio: 0.125
+    ref: 660
+    ref_type: Max Health
+    type: Max Health
+    value: 120.0
+- amount: 154.39%
+  category: DEFENSE ITEMS
+  cost: 2850
+  formula: (300*3.33+45*25.0+15*40.0+330.0*3.33)/2850
+  image: https://wiki.leagueoflegends.com/en-us/images/Radiant_Virtue_item.png?e0b64
+  name: Radiant Virtue (Guiding Light - lv15 Thresh 2340 HP)
+  stats:
+  - type: Max Health
+    value: 300
+  - type: Armor
+    value: 45
+  - type: Ability Haste
+    value: 15
+  - formula: (2340+300)*0.125
+    passive: Guiding Light
+    ratio: 0.125
+    ref: 2340
+    ref_type: Max Health
+    type: Max Health
+    value: 330.0
 - amount: 155.60%
   category: BOOTS
   cost: 1400

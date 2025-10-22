@@ -22,8 +22,8 @@ data:
 
 patch_note:
     statuses:
-        buffed: ""
-        adjusted: "Dawnshroud,Protector's Vow,Randuin's Omen,Veil Enchant"
+        buffed: "Dawnshroud,Randuin's Omen"
+        adjusted: "Protector's Vow"
         nerfed: ""
         new: "Radiant Virtue"
     excludes: ""
