@@ -7,10 +7,6 @@ description: Wild Rift 6.2l Item Gold-Effizienzblatt
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/8c3e439502d1bef76dd3ed4fe8b295a11b32ee39-1920x1080.jpg?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /de-DE/6.2l/
-redirect_from:
-    - /
-    - /de-DE/
-latest_version: true
 
 lang: de-DE
 
