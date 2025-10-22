@@ -24,7 +24,7 @@ data:
 
 patch_note:
     statuses:
-        buffed: "Dawnshroud,Randuin's Omen"
+        buffed: "Dawnshroud"
         adjusted: "Protector's Vow"
         nerfed: ""
         new: "Radiant Virtue"
