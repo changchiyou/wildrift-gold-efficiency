@@ -4,7 +4,7 @@ layout: gold_efficiency_v2
 title: 6.3a
 date: 2025/10/24
 description: ワイルドリフト 6.3a ゴールド効率
-image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/4edb103f3546f452082df1e1755d16512e6f01e0-1920x1080.jpg?w=1200&h=630&fm=webp&fit=crop&crop=center
+image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/7932c0cb084597791e3d809304bfd33aec3a5466-1920x1080.jpg?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /ja-JP/6.3a/
 redirect_from:
@@ -26,7 +26,7 @@ patch_note:
     statuses:
         buffed: ""
         adjusted: ""
-        nerfed: ""
+        nerfed: "Boots of Mana,Gluttonous Greaves,Berserker's Greaves,Ionian Boots of Lucidity,Boots of Dynamism"
         new: ""
     excludes: ""
     compare:

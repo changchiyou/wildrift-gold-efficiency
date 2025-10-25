@@ -1512,10 +1512,10 @@
     value: 400
   - type: Armor
     value: 75
-- amount: 114.54%
+- amount: 150.25%
   category: DEFENSE ITEMS
   cost: 2800
-  formula: (400*3.33+75*25.0+20*0)/2800
+  formula: (400*3.33+75*25.0+20*50.0)/2800
   image: https://static.wikia.nocookie.net/leagueoflegends/images/0/08/Randuin%27s_Omen_item.png
   name: Randuin's Omen (Countercurrent - 4Stacks)
   stats:
@@ -1763,10 +1763,10 @@
     value: 50
   - type: Magic Resistance
     value: 30
-- amount: 135.56%
+- amount: 119.72%
   category: DEFENSE ITEMS, SUPPORT ITEMS
   cost: 2700
-  formula: (250*3.33+60.0*25.0+36.0*25.0)/2700
+  formula: (250*3.33+50*25.0+30*25.0+10.0*25.0+6.0*25.0)/2700
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Dawnshroud_WR_item.png/80px-Dawnshroud_WR_item.png?0cdd7
   name: Dawnshroud (Dawnbringer)
   stats:
@@ -1913,7 +1913,7 @@
     value: 45
   - type: Ability Haste
     value: 15
-- amount: 126.05%
+- amount: 109.60%
   category: DEFENSE ITEMS
   cost: 2850
   formula: (300*3.33+45*25.0+15*40.0+120.0*3.33)/2850
@@ -1933,7 +1933,7 @@
     ref_type: Max Health
     type: Max Health
     value: 120.0
-- amount: 154.39%
+- amount: 134.14%
   category: DEFENSE ITEMS
   cost: 2850
   formula: (300*3.33+45*25.0+15*40.0+330.0*3.33)/2850
@@ -1953,29 +1953,29 @@
     ref_type: Max Health
     type: Max Health
     value: 330.0
-- amount: 155.60%
+- amount: 140.72%
   category: BOOTS
   cost: 1400
-  formula: (35*41.67+45*16.0+7*0)/1400
+  formula: (30*41.67+45*16.0+7*0)/1400
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Gluttonous_Greaves_WR_item.png/80px-Gluttonous_Greaves_WR_item.png?66408
   name: Gluttonous Greaves
   stats:
   - type: Attack Damage
-    value: 35
+    value: 30
   - type: Move Speed
     value: 45
   - passive: Conversion
     type: '% Omnivamp'
     value: 7
-- amount: 194.28%
+- amount: 179.40%
   category: BOOTS
   cost: 1400
-  formula: (20*41.67+35*33.33+45*16.0)/1400
+  formula: (15*41.67+35*33.33+45*16.0)/1400
   image: https://wiki.leagueoflegends.com/en-us/images/Berserker%27s_Greaves_item.png
   name: Berserker's Greaves
   stats:
   - type: Attack Damage
-    value: 20
+    value: 15
   - type: '% Attack Speed'
     value: 35
   - type: Move Speed
@@ -2010,31 +2010,31 @@
     value: 35
   - type: Move Speed
     value: 45
-- amount: 172.82%
+- amount: 144.25%
   category: BOOTS
   cost: 1400
-  formula: (150*3.33+30*40.0+45*16.0+75*0)/1400
+  formula: (150*3.33+20*40.0+45*16.0+75*0)/1400
   image: https://wiki.leagueoflegends.com/en-us/images/Ionian_Boots_of_Lucidity_item.png
   name: Ionian Boots of Lucidity (Equilibrium)
   stats:
   - type: Max Health
     value: 150
   - type: Ability Haste
-    value: 30
+    value: 20
   - type: Move Speed
     value: 45
   - passive: Equilibrium
     type: '% Health Regen'
     value: 75
-- amount: 149.05%
+- amount: 134.76%
   category: BOOTS
   cost: 1400
-  formula: (55*20.0+150*0+45*16.0+8*33.33)/1400
+  formula: (45*20.0+150*0+45*16.0+8*33.33)/1400
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Boots_of_Mana_WR_item.png/80px-Boots_of_Mana_WR_item.png?b7311
   name: Boots of Mana
   stats:
   - type: Ability Power
-    value: 55
+    value: 45
   - type: '% Mana Regeneration'
     value: 150
   - type: Move Speed
@@ -2042,15 +2042,15 @@
   - passive: Magic Break
     type: Magic Penetration
     value: 8
-- amount: 149.05%
+- amount: 134.76%
   category: BOOTS
   cost: 1400
-  formula: (55*20.0+75*0+45*16.0+8*33.33)/1400
+  formula: (45*20.0+75*0+45*16.0+8*33.33)/1400
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Boots_of_Mana_WR_item.png/80px-Boots_of_Mana_WR_item.png?b7311
   name: Boots of Mana (Equilibrium)
   stats:
   - type: Ability Power
-    value: 55
+    value: 45
   - passive: Equilibrium
     type: '% Health Regen'
     value: 75
@@ -2059,10 +2059,10 @@
   - passive: Magic Break
     type: Magic Penetration
     value: 8
-- amount: 155.59%
+- amount: 152.62%
   category: BOOTS
   cost: 1400
-  formula: (30*41.67+45*16.0+10*20.82)/1400
+  formula: (30*41.67+45*16.0+8*20.82)/1400
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Boots_of_Dynamism_WR_item.png/80px-Boots_of_Dynamism_WR_item.png?80d18
   name: Boots of Dynamism
   stats:
@@ -2072,7 +2072,7 @@
     value: 45
   - passive: Strike
     type: Armor Penetration
-    value: 10
+    value: 8
 - amount: 83.34%
   category: SUPPORT ITEMS
   cost: 500
