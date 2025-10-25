@@ -142,7 +142,7 @@ jobs:
     - name: Update to new version with Claude Code
       if: steps.check-existing-prs.outputs.skip_workflow == 'false' && steps.check-patch.outputs.new_version
       run: |
-          claude -p "Update from version ${{ steps.find-previous.outputs.previous_version }} to the latest version ${{ steps.check-patch.outputs.new_version }} with the following information from the latest patch note: $(python patch_notes_extractor.py --json ${{ steps.check-patch.outputs.patch_url }})" --dangerously-skip-permissions
+          claude -p "Update from version ${{ steps.find-previous.outputs.previous_version }} to the latest version ${{ steps.check-patch.outputs.new_version }} with the following information from the latest patch note: $(python patch_notes_extractor.py --all-sections --json ${{ steps.check-patch.outputs.patch_url }})" --dangerously-skip-permissions
 
     - name: Generate diff report
       if: steps.check-existing-prs.outputs.skip_workflow == 'false' && steps.check-patch.outputs.new_version
