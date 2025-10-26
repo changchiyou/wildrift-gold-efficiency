@@ -1937,6 +1937,21 @@
 - amount: 172.82%
   category: BOOTS
   cost: 1400
+  formula: (150*3.33+30*40.0+45*16.0+150*0)/1400
+  image: https://wiki.leagueoflegends.com/en-us/images/Ionian_Boots_of_Lucidity_item.png
+  name: Ionian Boots of Lucidity
+  stats:
+  - type: Max Health
+    value: 150
+  - type: Ability Haste
+    value: 30
+  - type: Move Speed
+    value: 45
+  - type: '% Mana Regeneration'
+    value: 150
+- amount: 172.82%
+  category: BOOTS
+  cost: 1400
   formula: (150*3.33+30*40.0+45*16.0+75*0)/1400
   image: https://wiki.leagueoflegends.com/en-us/images/Ionian_Boots_of_Lucidity_item.png
   name: Ionian Boots of Lucidity (Equilibrium)
