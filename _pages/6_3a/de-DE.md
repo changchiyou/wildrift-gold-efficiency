@@ -7,10 +7,6 @@ description: Wild Rift 6.3a Item Gold-Effizienzblatt
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/7932c0cb084597791e3d809304bfd33aec3a5466-1920x1080.jpg?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /de-DE/6.3a/
-redirect_from:
-    - /
-    - /de-DE/
-latest_version: true
 
 lang: de-DE
 
