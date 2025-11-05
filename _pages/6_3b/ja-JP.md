@@ -7,10 +7,6 @@ description: ワイルドリフト 6.3b ゴールド効率
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/7932c0cb084597791e3d809304bfd33aec3a5466-1920x1080.jpg?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /ja-JP/6.3b/
-redirect_from:
-    - /
-    - /ja-JP/
-latest_version: true
 
 lang: ja-JP
 
