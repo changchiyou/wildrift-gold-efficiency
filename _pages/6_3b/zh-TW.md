@@ -7,10 +7,6 @@ description: 激鬥峽谷 6.3b 裝備面板價值
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/7932c0cb084597791e3d809304bfd33aec3a5466-1920x1080.jpg?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /zh-TW/6.3b/
-redirect_from:
-    - /
-    - /zh-TW/
-latest_version: true
 
 lang: zh-TW
 
