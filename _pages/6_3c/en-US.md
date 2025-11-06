@@ -31,7 +31,7 @@ patch_note:
         statuses: "buffed,adjusted,nerfed"
         items: items_6_3b
         stats: stats_6_3b
-        item_prefix: 6.3
+        item_prefix: 6.3b
         force: ""
         force_sep: ""
         excludes: "Dawnshroud (Dawnbringer)"
