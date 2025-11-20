@@ -7,10 +7,6 @@ description: Wild Rift Gold Efficiency of 6.3c
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/5262863caa6805cca449633a8fa99bb735616d73-1920x1080.jpg?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /en-US/6.3c/
-redirect_from:
-    - /
-    - /en-US/
-latest_version: true
 
 lang: en-US
 

@@ -7,10 +7,6 @@ description: ワイルドリフト 6.3c ゴールド効率
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/5262863caa6805cca449633a8fa99bb735616d73-1920x1080.jpg?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /ja-JP/6.3c/
-redirect_from:
-    - /
-    - /ja-JP/
-latest_version: true
 
 lang: ja-JP
 
