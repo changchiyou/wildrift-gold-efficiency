@@ -7,10 +7,6 @@ description: Wild Rift 6.3d Eficiência de Ouro
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/8bd29de5b87a3937ccc1797773d7649d6f7339a1-1920x1080.jpg?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /pt-BR/6.3d/
-redirect_from:
-    - /
-    - /pt-BR/
-latest_version: true
 
 lang: pt-BR
 

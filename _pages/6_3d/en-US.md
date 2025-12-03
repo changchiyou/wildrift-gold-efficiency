@@ -7,10 +7,6 @@ description: Wild Rift Gold Efficiency of 6.3d
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/8bd29de5b87a3937ccc1797773d7649d6f7339a1-1920x1080.jpg?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /en-US/6.3d/
-redirect_from:
-    - /
-    - /en-US/
-latest_version: true
 
 lang: en-US
 
