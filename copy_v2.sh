@@ -56,12 +56,24 @@ find "_pages/${new}" -type f -name '*.md' | while read -r file; do
   sed -i "/patch_note:/,/^$/ { /compare:/,/^$/ s/stats_.*/stats_${old}/ }" "$file"
   sed -i "/patch_note:/,/^$/ { /compare:/,/^$/ s/item_prefix: [0-9]\.[0-9][a-z]/item_prefix: $(replace_underscore $old '.')/ }" "$file"
   # Clear patch_note.statuses.buffed/adjusted/nerfed/new
-  sed -i "/patch_note:/,/}/ { 
+  sed -i "/patch_note:/,/}/ {
     /statuses:/,/}/ {
       s/buffed: .*/buffed: \"\"/
       s/adjusted: .*/adjusted: \"\"/
       s/nerfed: .*/nerfed: \"\"/
       s/new: .*/new: \"\"/
+    }
+  }" "$file"
+  # Clear patch_note.excludes
+  sed -i "/patch_note:/,/}/ {
+    s/excludes: .*/excludes: \"\"/
+  }" "$file"
+  # Clear patch_note.compare.force/force_sep/excludes
+  sed -i "/patch_note:/,/}/ {
+    /compare:/,/}/ {
+      s/force: .*/force: \"\"/
+      s/force_sep: .*/force_sep: \"\"/
+      s/excludes: .*/excludes: \"\"/
     }
   }" "$file"
 done

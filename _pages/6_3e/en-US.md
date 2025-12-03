@@ -32,7 +32,7 @@ patch_note:
         items: items_6_3d
         stats: stats_6_3d
         item_prefix: 6.3d
-        force: ""
-        force_sep: ""
-        excludes: "Dawnshroud (Dawnbringer)"
+        force: "Bloodthirster (Bloody[Crit])~Bloodthirster (Bloody[Crit] & Lifeline)"
+        force_sep: "~;"
+        excludes: ""
 ---
