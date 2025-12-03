@@ -4,7 +4,7 @@ layout: gold_efficiency_v2
 title: 6.3e
 date: 2025/12/03
 description: ワイルドリフト 6.3e ゴールド効率
-image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/47b7598f3eae5ea9e9ee77313051a2b4e4045c58-1920x1080.jpg?w=1200&h=630&fm=webp&fit=crop&crop=center
+image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/47b7598f3eae5ea9e9ee77313051a2b4e4045c58-1920x1080.jpg?auto=format&fit=fill&q=80&w=1184
 
 permalink: /ja-JP/6.3e/
 redirect_from:
