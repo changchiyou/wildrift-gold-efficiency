@@ -7,10 +7,6 @@ description: Wild Rift Gold Efficiency of 6.3e
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/47b7598f3eae5ea9e9ee77313051a2b4e4045c58-1920x1080.jpg?auto=format&fit=fill&q=80&w=1184
 
 permalink: /en-US/6.3e/
-redirect_from:
-    - /
-    - /en-US/
-latest_version: true
 
 lang: en-US
 
