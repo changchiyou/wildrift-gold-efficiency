@@ -68,6 +68,7 @@ stat:
     max-mana: 最大魔力
     percentage-mana-regeneration: "% 魔力回復"
     percentage-omnivamp: "% 全能吸血"
+    percentage-magic-vamp: "% 魔法吸血"
     # Defence
     armor: 物理防禦
     magic-resistance: 魔法防禦
@@ -85,6 +86,8 @@ item:
     amaranth-s-twinguard: 雅瑪蘭守護像
     amaranth-s-twinguard-endurance: 雅瑪蘭守護像 (堅毅)
     amplifying-tome: 增幅典籍
+    abyssal-mask: 深淵面具
+    abyssal-mask-unmake: 深淵面具 (毀滅)
     ancient-coin: 賢者古幣
     archangel-s-staff-awe-lv15-kass-1390-mp: 大天使之杖 (威嚇 - lv15 卡薩丁 1390 魔力)
     archangel-s-staff-awe-lv1-kass-480-mp: 大天使之杖 (威嚇 - lv1 卡薩丁 480 魔力)
@@ -97,6 +100,10 @@ item:
     black-cleaver-rage-4stacks-range: 黑色切割者 (暴虐 - 滿層 - 遠程)
     black-cleaver-rage-basic-melee: 黑色切割者 (暴虐 - 基礎 - 近戰)
     black-cleaver-rage-basic-range: 黑色切割者 (暴虐 - 基礎 - 遠程)
+    black-cleaver-chase-4stacks-melee: 黑色切割者 (追逐 - 滿層 - 近戰)
+    black-cleaver-chase-4stacks-range: 黑色切割者 (追逐 - 滿層 - 遠程)
+    black-cleaver-chase-basic-melee: 黑色切割者 (追逐 - 基礎 - 近戰)
+    black-cleaver-chase-basic-range: 黑色切割者 (追逐 - 基礎 - 遠程)
     black-mist-scythe-adaptive-ad: '闇物之蓮 (適性: 物理)'
     black-mist-scythe-adaptive-ad-soulcast: '闇霧之蓮 (適性: 物理, 鑄魂)'
     black-mist-scythe-adaptive-ap: '闇霧之鎌 (適性: 魔法)'
@@ -152,8 +159,14 @@ item:
     giant-s-belt: 巨人腰帶
     glacial-shroud: 冰川護甲
     gluttonous-greaves: 貪婪護脛
+    guinsoo-s-rageblade: 鬼索的狂暴之刃
+    guinsoo-s-rageblade-adaptive-ad: "鬼索的狂暴之刃 (適性: 物理)"
+    guinsoo-s-rageblade-adaptive-ad-seething-strike: "鬼索的狂暴之刃 (適性: 物理 - 沸騰打擊)"
+    guinsoo-s-rageblade-adaptive-ap: "鬼索的狂暴之刃 (適性: 物理)"
+    guinsoo-s-rageblade-adaptive-ap-seething-strike: "鬼索的狂暴之刃 (適性: 魔法 - 沸騰打擊)"
     guardian-angel: 守護天使
     harmonic-echo: 和諧回音
+    hollow-radiance: 虛偽光彩
     yordle-harmonic-echo: 約德爾 和諧回音
     haunting-guise: 幽魂面具
     heartsteel: 雄心之鋼
@@ -188,6 +201,7 @@ item:
     mantle-of-the-twelfth-hour-lifeline: 午時斗篷 (命脈)
     mantle-of-the-twelfth-hour: 午時斗篷
     maw-of-malmortius: 魔提斯深淵
+    maw-of-malmortius-lifeline: 魔提斯深淵 (命脈)
     mejai-s-soulstealer-fear: 靈魂竊取者 (恐懼)
     mejai-s-soulstealer: 靈魂竊取者
     mercury-s-treads: 水星之靴
@@ -218,6 +232,7 @@ item:
     prophet-s-pendant: 先知墜飾
     protector-s-vow: 保護者誓願
     psychic-projector-conversion: 靈能投射器 (轉換)
+    psychic-projector-conversion-projection: 靈能投射器 (轉換 - 投影)
     rabadon-s-deathcap-overkill-lv15: 死亡之帽 (狂弒 - lv15)
     rabadon-s-deathcap-overkill-lv1: 死亡之帽 (狂弒 - lv1)
     randuin-s-omen: 蘭頓之兆
@@ -231,6 +246,7 @@ item:
     rod-of-ages: 時光之杖
     rod-of-ages-veteran: 時光之杖 (精熟)
     ruby-crystal: 紅水晶
+    runaan-s-hurricane: '芮蘭颶風箭'
     runaan-s-hurricane-adaptive-ad: '芮蘭颶風箭 (適性: 物理)'
     runaan-s-hurricane-adaptive-ap: '芮蘭颶風箭 (適性: 魔法)'
     yordle-runaan-s-hurricane-adaptive-ad: '約德爾 芮蘭颶風箭 (適性: 物理)'
@@ -315,6 +331,7 @@ item:
     bloodsworn: 血誓
     bloody: 血腥
     catcher: 捕捉者
+    chaos: 混亂
     colossus: 龐然巨物
     conversion: 轉換
     coordinated-fire: 齊心火焰
@@ -338,7 +355,9 @@ item:
     mana-charge: 魔力補充
     momentum: 衝勁
     overkill: 狂弒
+    projection: 投影
     rage: 暴虐
+    chase: 追逐
     rapids: 激流
     razor: 割裂
     relentless: 無情
@@ -354,14 +373,17 @@ item:
     storm: 暴風
     strike: 打擊
     thirst: 嗜血
+    unmake: 毀滅
     valor: 勇猛
     versatile: 萬能
     veteran: 精熟
     wind-s-favor: 風之加護
     wisp: 神火
     scorn: 輕藐
+    seething-strike: 沸騰打擊
     soul-hunt: 靈魂獵殺
     set-sail: 揚帆啟程
+    surge: 潮湧
     "bloody[crit]": 血腥[爆擊]
     "last-whisper[crit]": 最後耳語[爆擊]
     equilibrium: 魔力均衡
