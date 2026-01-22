@@ -86,6 +86,7 @@ item:
     amaranth-s-twinguard-endurance: Amaranth's Twinguard (Endurance)
     amplifying-tome: Amplifying Tome
     abyssal-mask: Abyssal Mask
+    abyssal-mask-unmake: Abyssal Mask (Unmake)
     ancient-coin: Ancient Coin
     archangel-s-staff-awe-lv15-kass-1390-mp: Archangel's Staff (Awe - lv15 Kass 1390 MP)
     archangel-s-staff-awe-lv1-kass-480-mp: Archangel's Staff (Awe - lv1 Kass 480 MP)
@@ -154,6 +155,10 @@ item:
     glacial-shroud: Glacial Shroud
     gluttonous-greaves: Gluttonous Greaves
     guinsoo-s-rageblade: Guinsoo's Rageblade
+    guinsoo-s-rageblade-adaptive-ad: "Guinsoo's Rageblade (Adaptive: AD)"
+    guinsoo-s-rageblade-adaptive-ad-seething-strike: "Guinsoo's Rageblade (Adaptive: AD, Seething Strike)"
+    guinsoo-s-rageblade-adaptive-ap: "Guinsoo's Rageblade (Adaptive: AP)"
+    guinsoo-s-rageblade-adaptive-ap-seething-strike: "Guinsoo's Rageblade (Adaptive: AP, Seething Strike)"
     guardian-angel: Guardian Angel
     harmonic-echo: Harmonic Echo
     hollow-radiance: Hollow Radiance
@@ -191,6 +196,7 @@ item:
     mantle-of-the-twelfth-hour-lifeline: Mantle of the Twelfth Hour (Lifeline)
     mantle-of-the-twelfth-hour: Mantle of the Twelfth Hour
     maw-of-malmortius: Maw of Malmortius
+    maw-of-malmortius-lifeline: Maw of Malmortius (Lifeline)
     mejai-s-soulstealer-fear: Mejai's Soulstealer (Fear)
     mejai-s-soulstealer: Mejai's Soulstealer
     mercury-s-treads: Mercury's Treads
@@ -221,6 +227,7 @@ item:
     prophet-s-pendant: Prophet's Pendant
     protector-s-vow: Protector's Vow
     psychic-projector-conversion: Psychic Projector (Conversion)
+    psychic-projector-conversion-projection: Psychic Projector (Conversion, Projection)
     rabadon-s-deathcap-overkill-lv15: Rabadon's Deathcap (Overkill - lv15)
     rabadon-s-deathcap-overkill-lv1: Rabadon's Deathcap (Overkill - lv1)
     randuin-s-omen: Randuin's Omen
@@ -319,6 +326,7 @@ item:
     bloodsworn: Bloodsworn
     bloody: Bloody
     catcher: Catcher
+    chaos: Chaos
     colossus: Colossus
     conversion: Conversion
     coordinated-fire: Coordinated Fire
@@ -342,6 +350,7 @@ item:
     mana-charge: Mana Charge
     momentum: Momentum
     overkill: Overkill
+    projection: Projection
     rage: Rage
     rapids: Rapids
     razor: Razor
@@ -358,14 +367,17 @@ item:
     storm: Storm
     strike: Strike
     thirst: Thirst
+    unmake: Unmake
     valor: Valor
     versatile: Versatile
     veteran: Veteran
     wind-s-favor: Wind's Favor
     wisp: Wisp
     scorn: Scorn
+    seething-strike: Seething Strike
     soul-hunt: Soul Hunt
     set-sail: Set Sail
+    surge: Surge
     lifeline: Lifeline
     bloody[crit]: Bloddy[Crit]
     last-whisper[crit]: Last Whisper[Crit]

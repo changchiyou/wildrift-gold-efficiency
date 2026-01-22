@@ -140,7 +140,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (55*41.67+10*40.0+18*20.82)/3000
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/b/b7/Duskblade_of_Draktharr_item.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/b/b7/Duskblade_of_Draktharr_WR_item.png
   name: Duskblade of Draktharr
   stats:
   - type: Attack Damage
@@ -477,6 +477,23 @@
     value: 45
   - type: Ability Haste
     value: 10
+- amount: 0%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: ''
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/1/14/Maw_of_Malmortius_item.png
+  name: Maw of Malmortius (Lifeline)
+  stats:
+  - type: Attack Damage
+    value: 55
+  - type: Magic Resistance
+    value: 45
+  - type: Ability Haste
+    value: 10
+  - passive: Lifeline
+    type: '% Omnivamp'
+    value: 10
+  - type: Unstable Passives' Stats
 - amount: 101.95%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
@@ -1185,21 +1202,6 @@
   - passive: Balanced
     type: Magic Penetration
     value: 15
-- amount: 102.20%
-  category: MAGIC DAMAGE ITEMS
-  cost: 3000
-  formula: (200*3.33+40*25.0+70*20.0+7*0)/3000
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/f/ff/Crystalline_Reflector_WR_item.png
-  name: Crystalline Reflector
-  stats:
-  - type: Max Health
-    value: 200
-  - type: Armor
-    value: 40
-  - type: Ability Power
-    value: 70
-  - type: '% Magic Penetration'
-    value: 7
 - amount: 86.22%
   category: SUPPORT ITEMS
   cost: 2600
@@ -1383,10 +1385,10 @@
     value: 7
   - type: Ability Haste
     value: 20
-- amount: 96.10%
+- amount: 0%
   category: MAGIC DAMAGE ITEMS
   cost: 3100
-  formula: (300*3.33+60*20.0+7*0+15*40.0+9.0*20.0)/3100
+  formula: ''
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Psychic_Projector_WR_item.png/80px-Psychic_Projector_WR_item.png?298a1
   name: Psychic Projector (Conversion)
   stats:
@@ -1398,12 +1400,46 @@
     value: 7
   - type: Ability Haste
     value: 15
-  - formula: 300*0.03
+  - formula: 300*0.05
     passive: Conversion
-    ratio: 0.03
+    ratio: 0.05
     ref_type: Max Health
     type: Ability Power
-    value: 9.0
+    value: 15.0
+- amount: 0%
+  category: MAGIC DAMAGE ITEMS
+  cost: 3100
+  formula: ''
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Psychic_Projector_WR_item.png/80px-Psychic_Projector_WR_item.png?298a1
+  name: Psychic Projector (Conversion, Projection)
+  stats:
+  - type: Max Health
+    value: 300
+  - type: Ability Power
+    value: 60
+  - type: '% Magic Penetration'
+    value: 7
+  - type: Ability Haste
+    value: 15
+  - formula: 300*0.05
+    passive: Conversion
+    ratio: 0.05
+    ref_type: Max Health
+    type: Ability Power
+    value: 15.0
+  - formula: 400*0.2
+    passive: Projection
+    ratio: 0.2
+    ref_type: Ability Power
+    type: Armor
+    value: 80
+  - formula: 400*0.1
+    passive: Projection
+    ratio: 0.1
+    ref_type: Ability Power
+    type: Magic Resistance
+    value: 40
+  - type: Unstable Passives' Stats
 - amount: 91.93%
   category: MAGIC DAMAGE ITEMS
   cost: 3000
@@ -1452,6 +1488,40 @@
   - passive: Scorn
     type: Ability Haste
     value: 20
+- amount: 0%
+  category: MAGIC DAMAGE ITEMS
+  cost: 3100
+  formula: ''
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/6/64/Guinsoo%27s_Rageblade_item_HD.png/revision/latest/scale-to-width-down/64?cb=20201110230134
+  name: "Guinsoo's Rageblade (Adaptive: AP)"
+  stats:
+  - type: '% Attack Speed'
+    value: 30
+  - passive: Surge
+    type: '% Move Speed'
+    value: 5
+  - passive: Chaos
+    type: Ability Power
+    value: 50
+- amount: 0%
+  category: MAGIC DAMAGE ITEMS
+  cost: 3100
+  formula: ''
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/6/64/Guinsoo%27s_Rageblade_item_HD.png/revision/latest/scale-to-width-down/64?cb=20201110230134
+  name: "Guinsoo's Rageblade (Adaptive: AP, Seething Strike)"
+  stats:
+  - type: '% Attack Speed'
+    value: 30
+  - passive: Surge
+    type: '% Move Speed'
+    value: 5
+  - passive: Chaos
+    type: Ability Power
+    value: 50
+  - passive: Seething Strike
+    type: '% Attack Speed'
+    value: 32
+  - type: Unstable Passives' Stats
 - amount: 86.73%
   category: DEFENSE ITEMS
   cost: 2900
@@ -2952,20 +3022,45 @@
   - passive: Catcher
     type: '% Move Speed'
     value: 30
-- amount: 32.25%
+- amount: 0%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3100
-  formula: (30*33.33)/3100
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/7/7a/Guinsoo%27s_Rageblade_item.png
-  name: Guinsoo's Rageblade
+  formula: ''
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/6/64/Guinsoo%27s_Rageblade_item_HD.png/revision/latest/scale-to-width-down/64?cb=20201110230134
+  name: "Guinsoo's Rageblade (Adaptive: AD)"
   stats:
   - type: '% Attack Speed'
     value: 30
+  - passive: Surge
+    type: '% Move Speed'
+    value: 5
+  - passive: Chaos
+    type: Attack Damage
+    value: 25
+- amount: 0%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3100
+  formula: ''
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/6/64/Guinsoo%27s_Rageblade_item_HD.png/revision/latest/scale-to-width-down/64?cb=20201110230134
+  name: "Guinsoo's Rageblade (Adaptive: AD, Seething Strike)"
+  stats:
+  - type: '% Attack Speed'
+    value: 30
+  - passive: Surge
+    type: '% Move Speed'
+    value: 5
+  - passive: Chaos
+    type: Attack Damage
+    value: 25
+  - passive: Seething Strike
+    type: '% Attack Speed'
+    value: 32
+  - type: Unstable Passives' Stats
 - amount: 103.57%
   category: DEFENSE ITEMS
   cost: 3000
   formula: (400*3.33+55*25.0+10*40.0)/3000
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/3/35/Abyssal_Mask_item.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/3/30/Abyssal_Mask_WR_item.png/revision/latest/scale-to-width-down/64?cb=20240825024753
   name: Abyssal Mask
   stats:
   - type: Max Health
@@ -2974,11 +3069,28 @@
     value: 55
   - type: Ability Haste
     value: 10
+- amount: 0%
+  category: DEFENSE ITEMS
+  cost: 3000
+  formula: ''
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/3/30/Abyssal_Mask_WR_item.png/revision/latest/scale-to-width-down/64?cb=20240825024753
+  name: Abyssal Mask (Unmake)
+  stats:
+  - type: Max Health
+    value: 400
+  - type: Magic Resistance
+    value: 55
+  - type: Ability Haste
+    value: 10
+  - passive: Unmake
+    type: Magic Resistance
+    value: 45
+  - type: Unstable Passives' Stats
 - amount: 104.71%
   category: DEFENSE ITEMS
   cost: 2800
   formula: (400*3.33+40*25.0+15*40.0)/2800
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/f/f1/Hollow_Radiance_item.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/e/e7/Hollow_Radiance_item_HD.png/revision/latest/scale-to-width-down/64?cb=20231205225746
   name: Hollow Radiance
   stats:
   - type: Max Health

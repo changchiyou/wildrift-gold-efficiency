@@ -15,7 +15,7 @@ latest_version: true
 lang: en-US
 
 data:
-    refer_url: https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-0/
+    refer_url: https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-70/
     refer_text: 7.0
     items: items_7_0
     stats: stats_7_0
