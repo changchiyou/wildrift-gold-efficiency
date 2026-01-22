@@ -46,6 +46,63 @@ bash copy_v2.sh 6_0d 6_0e
    - Add items in patch_note.statuses based on items' adjustment (buffed/adjusted/nerfed/new)
    - If input contains JSON with og_image field, extract the og_image URL and update the `image:` parameter in all markdown files to use this new preview image instead of the default favicon
 
+## i18n (Internationalization) Updates
+
+### Translation Files Location
+- Translation files are located in `_data/i18n/{language}.yml`
+- Available languages: `en-US.yml`, `zh-TW.yml`, `ja-JP.yml`, `pt-BR.yml`, `de-DE.yml`
+
+### Updating Item Names and Passives
+When new items are added or item names/passives change:
+
+1. **Update English translations** (primary language) in `_data/i18n/en-US.yml`:
+   - Add new item names under `item.name` section (use kebab-case keys)
+   - Add new passive names under `item.passive` section (use kebab-case keys)
+
+2. **Key naming convention**:
+   - Item names: Use lowercase with hyphens (e.g., `bloodthirster`, `guardian-angel`)
+   - Passive variants: Include passive name in parentheses (e.g., `bloodthirster-bloody[crit]`)
+   - Passive keys: Use kebab-case (e.g., `bloody`, `last-whisper`, `bloody[crit]`)
+
+3. **Example structure**:
+   ```yaml
+   item:
+     name:
+       bloodthirster: Bloodthirster
+       bloodthirster-bloody[crit]: Bloodthirster (Bloody[Crit])
+     passive:
+       bloody: Bloody
+       bloody[crit]: Bloddy[Crit]
+       lifeline: Lifeline
+   ```
+
+4. **Focus on English updates**: Unless specifically required, only update the English (`en-US.yml`) translation file. Other language translations can be handled separately by contributors via Crowdin or other localization tools.
+
+## Version Format Handling
+
+The project supports two version number formats due to a change in Wild Rift's patch note URL structure starting from version 7.0:
+
+### Old Format (up to 6.x)
+- **URL format**: `wild-rift-patch-notes-6-3e` (with dash separator)
+- **File/folder format**: `6_3e` (with underscore separator)
+- **Display format**: `6.3e` (with dot separator)
+
+### New Format (from 7.0 onwards)
+- **URL format**: `wild-rift-patch-notes-70` (no separator, concatenated digits)
+- **File/folder format**: `7_0` (with underscore separator, same as old format)
+- **Display format**: `7.0` (with dot separator)
+
+### Conversion Examples
+- URL `patch-notes-6-3e` → version `6_3e`
+- URL `patch-notes-70` → version `7_0` (inserting underscore between major.minor)
+- URL `patch-notes-70a` → version `7_0a`
+
+### Implementation Notes
+- The CI/CD workflow (`.github/workflows/auto-update-patch.yml`) automatically detects and converts both formats
+- All internal file naming uses underscore format (`6_3e`, `7_0`)
+- Scripts like `copy_v2.sh` work with both formats without modification
+- Version detection tries old format first, then falls back to new format
+
 ## Important Notes
 - Project tracks gold efficiency changes across Wild Rift patches
 - Uses Jekyll for static site generation

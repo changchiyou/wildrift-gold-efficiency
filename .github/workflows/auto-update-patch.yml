@@ -68,8 +68,18 @@ jobs:
         for URL in $PATCH_URLS; do
           echo "Processing URL: $URL"
 
-          # Extract version from URL pattern like "wild-rift-patch-notes-6-2e"
+          # Try to extract version from URL
+          # Old format: "wild-rift-patch-notes-6-2e" -> 6.2e
           VERSION=$(echo "$URL" | grep -o 'patch-notes-[0-9]-[0-9][a-z]*' | sed 's/patch-notes-//' | sed 's/-/./')
+
+          # New format: "wild-rift-patch-notes-70" -> 7.0
+          if [ -z "$VERSION" ]; then
+            VERSION_RAW=$(echo "$URL" | grep -o 'patch-notes-[0-9][0-9]*[a-z]*' | sed 's/patch-notes-//')
+            if [ -n "$VERSION_RAW" ]; then
+              # Insert dot after first digit: 70 -> 7.0, 70a -> 7.0a
+              VERSION=$(echo "$VERSION_RAW" | sed 's/^\([0-9]\)\([0-9]\)/\1.\2/')
+            fi
+          fi
 
           if [ -z "$VERSION" ]; then
             echo "Could not extract version from URL: $URL"
@@ -78,7 +88,7 @@ jobs:
 
           echo "Extracted version: $VERSION"
 
-          # Convert version format for checking (6.2e -> 6_2e)
+          # Convert version format for checking (6.2e -> 6_2e, 7.0 -> 7_0)
           VERSION_UNDERSCORE=$(echo "$VERSION" | sed 's/\./_/')
 
           # Check if this version already exists in _pages
