@@ -68,6 +68,7 @@ stat:
     max-mana: 最大マナ
     percentage-mana-regeneration: "マナ自動回復％"
     percentage-omnivamp: "オムニヴァンプ％"
+    percentage-magic-vamp: "% Magic Vamp"
     # Defence
     armor: 物理防御
     magic-resistance: 魔法防御
@@ -85,6 +86,8 @@ item:
     amaranth-s-twinguard: アマランス ツインガード
     amaranth-s-twinguard-endurance: アマランス ツインガード(忍耐)
     amplifying-tome: 増魔の書
+    abyssal-mask: Abyssal Mask
+    abyssal-mask-unmake: Abyssal Mask (Unmake)
     ancient-coin: エンシェント コイン
     archangel-s-staff-awe-lv15-kass-1390-mp: アークエンジェル スタッフ (畏怖 - lv15 カサディン 1390マナ)
     archangel-s-staff-awe-lv1-kass-480-mp: アークエンジェル スタッフ (畏怖 - lv1 カサディン 480マナ)
@@ -97,6 +100,10 @@ item:
     black-cleaver-rage-4stacks-range: ブラック クリーバー (レンジ - 4スタック - レンジ)
     black-cleaver-rage-basic-melee: ブラック クリーバー (レンジ - 基礎 - 近接)
     black-cleaver-rage-basic-range: ブラック クリーバー (レンジ - 基礎 - レンジ)
+    black-cleaver-chase-4stacks-melee: Black Cleaver (Chase - 4Stacks - Melee)
+    black-cleaver-chase-4stacks-range: Black Cleaver (Chase - 4Stacks - Range)
+    black-cleaver-chase-basic-melee: Black Cleaver (Chase - basic - Melee)
+    black-cleaver-chase-basic-range: Black Cleaver (Chase - basic - Range)
     black-mist-scythe-adaptive-ad: '黒き霧の大鎌 (アダブティブ：攻撃力)'
     black-mist-scythe-adaptive-ad-soulcast: '黒き霧の大鎌 (アダブティブ：攻撃力、 ソウルキャスト)'
     black-mist-scythe-adaptive-ap: '黒き霧の大鎌 (アダブティブ：魔力)'
@@ -152,8 +159,14 @@ item:
     giant-s-belt: ジャイアント ベルト
     glacial-shroud: グレイシャル シュラウド
     gluttonous-greaves: グラトナス ブーツ
+    guinsoo-s-rageblade: Guinsoo's Rageblade
+    guinsoo-s-rageblade-adaptive-ad: "Guinsoo's Rageblade (Adaptive: AD)"
+    guinsoo-s-rageblade-adaptive-ad-seething-strike: "Guinsoo's Rageblade (Adaptive: AD, Seething Strike)"
+    guinsoo-s-rageblade-adaptive-ap: "Guinsoo's Rageblade (Adaptive: AP)"
+    guinsoo-s-rageblade-adaptive-ap-seething-strike: "Guinsoo's Rageblade (Adaptive: AP, Seething Strike)"
     guardian-angel: ガーディアン エンジェル
     harmonic-echo: ハーモニック エコー
+    hollow-radiance: Hollow Radiance
     yordle-harmonic-echo: Yordle Harmonic Echo
     haunting-guise: 悲愴な仮面
     heartsteel: 心の鋼
@@ -188,6 +201,7 @@ item:
     mantle-of-the-twelfth-hour-lifeline: 背水のマント (ライフライン)
     mantle-of-the-twelfth-hour: 背水のマント
     maw-of-malmortius: マルモルティウスの胃袋
+    maw-of-malmortius-lifeline: Maw of Malmortius (Lifeline)
     mejai-s-soulstealer-fear: メジャイ ソウルスティーラー (フィアー)
     mejai-s-soulstealer: メジャイ ソウルスティーラー
     mercury-s-treads: マーキュリー ブーツ
@@ -218,6 +232,7 @@ item:
     prophet-s-pendant: 預言者のペンダント
     protector-s-vow: プロテクター ボウ
     psychic-projector-conversion: 超能力プロジェクター (コンバージョン)
+    psychic-projector-conversion-projection: Psychic Projector (Conversion, Projection)
     rabadon-s-deathcap-overkill-lv15: ラバドン デスキャップ (オーバーキル - lv15)
     rabadon-s-deathcap-overkill-lv1: ラバドン デスキャップ (オーバーキル - lv1)
     randuin-s-omen: ランデュイン オーメン
@@ -231,6 +246,7 @@ item:
     rod-of-ages: ロッド オブ エイジス
     rod-of-ages-veteran: ロッド オブ エイジス (歴戦の勇士)
     ruby-crystal: ルビー クリスタル
+    runaan-s-hurricane: 'Runaan''s Hurricane'
     runaan-s-hurricane-adaptive-ad: 'ルナーン ハリケーン (アダブティブ：攻撃力)'
     runaan-s-hurricane-adaptive-ap: 'ルナーン ハリケーン (アダブティブ：魔力)'
     yordle-runaan-s-hurricane-adaptive-ad: 'Yordle Runaan''s Hurricane (Adaptive: AD)'
@@ -315,6 +331,7 @@ item:
     bloodsworn: 血の誓い
     bloody: ブラッディー
     catcher: キャッチャー
+    chaos: Chaos
     colossus: コロッサス
     conversion: コンバージョン
     coordinated-fire: 調整射撃
@@ -338,7 +355,9 @@ item:
     mana-charge: マナチャージ
     momentum: 熾烈
     overkill: オーバーキル
+    projection: Projection
     rage: 追撃
+    chase: Chase
     rapids: 急流
     razor: レイザー
     relentless: 執拗
@@ -354,14 +373,17 @@ item:
     storm: 嵐
     strike: 打撃
     thirst: サースト
+    unmake: Unmake
     valor: 勇猛
     versatile: 万能
     veteran: 歴戦の勇士
     wind-s-favor: 風の恩恵
     wisp: ウィスプ
     scorn: 憎悪の霧
+    seething-strike: Seething Strike
     soul-hunt: Soul Hunt
     set-sail: Set Sail
+    surge: Surge
     "bloody[crit]": Bloddy[Crit]
     "last-whisper[crit]": Last Whisper[Crit]
     equilibrium: Equilibrium
