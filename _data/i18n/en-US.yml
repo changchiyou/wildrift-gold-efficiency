@@ -68,6 +68,7 @@ stat:
     max-mana: Max Mana
     percentage-mana-regeneration: "% Mana Regeneration"
     percentage-omnivamp: "% Omnivamp"
+    percentage-magic-vamp: "% Magic Vamp"
     # Defence
     armor: Armor
     magic-resistance: Magic Resistance
@@ -99,6 +100,10 @@ item:
     black-cleaver-rage-4stacks-range: Black Cleaver (Rage - 4Stacks - Range)
     black-cleaver-rage-basic-melee: Black Cleaver (Rage - basic - Melee)
     black-cleaver-rage-basic-range: Black Cleaver (Rage - basic - Range)
+    black-cleaver-chase-4stacks-melee: Black Cleaver (Chase - 4Stacks - Melee)
+    black-cleaver-chase-4stacks-range: Black Cleaver (Chase - 4Stacks - Range)
+    black-cleaver-chase-basic-melee: Black Cleaver (Chase - basic - Melee)
+    black-cleaver-chase-basic-range: Black Cleaver (Chase - basic - Range)
     black-mist-scythe-adaptive-ad: 'Black Mist Scythe (Adaptive: AD)'
     black-mist-scythe-adaptive-ad-soulcast: 'Black Mist Scythe (Adaptive: AD, Soulcast)'
     black-mist-scythe-adaptive-ap: 'Black Mist Scythe (Adaptive: AP)'
@@ -241,6 +246,7 @@ item:
     rod-of-ages: Rod of Ages
     rod-of-ages-veteran: Rod of Ages (Veteran)
     ruby-crystal: Ruby Crystal
+    runaan-s-hurricane: 'Runaan''s Hurricane'
     runaan-s-hurricane-adaptive-ad: 'Runaan''s Hurricane (Adaptive: AD)'
     runaan-s-hurricane-adaptive-ap: 'Runaan''s Hurricane (Adaptive: AP)'
     yordle-runaan-s-hurricane-adaptive-ad: 'Yordle Runaan''s Hurricane (Adaptive: AD)'
@@ -352,6 +358,7 @@ item:
     overkill: Overkill
     projection: Projection
     rage: Rage
+    chase: Chase
     rapids: Rapids
     razor: Razor
     relentless: Relentless

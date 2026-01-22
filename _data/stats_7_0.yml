@@ -89,7 +89,7 @@
   base_type: "exclude"
   price: 0
 "% Magic Vamp":
-  image: "https://i.imgur.com/ERdwXW2.png"
+  image: "https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/stats/magic_vamp.png"
   type: "Magic"
   base_type: "exclude"
   price: 0

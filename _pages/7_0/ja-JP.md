@@ -24,10 +24,10 @@ data:
 
 patch_note:
     statuses:
-        buffed: "duskblade-of-draktharr,redemption,psychic-projector-conversion,psychic-projector-conversion-projection"
-        adjusted: "runaan-s-hurricane,spear-of-shojin,warmog-s-armor,blade-of-the-ruined-king,riftmaker"
-        nerfed: "phantom-dancer"
-        new: "guinsoo-s-rageblade-adaptive-ad,guinsoo-s-rageblade-adaptive-ap,abyssal-mask,hollow-radiance"
+        buffed: "Duskblade of Draktharr,Redemption,Psychic Projector (Conversion),Psychic Projector (Conversion, Projection)"
+        adjusted: "Runaan's Hurricane,Spear of Shojin,Warmog's Armor,Blade of the Ruined King,Riftmaker"
+        nerfed: "Phantom Dancer"
+        new: "Guinsoo's Rageblade (Adaptive: AD),Guinsoo's Rageblade (Adaptive: AP),Abyssal Mask,Hollow Radiance"
     excludes: ""
     compare:
         statuses: "buffed,adjusted,nerfed"

@@ -1136,17 +1136,17 @@
     value: 5
   - type: '% Heal and shield strength'
     value: 5
-- amount: 81.73%
+- amount: 85.58%
   category: SUPPORT ITEMS
   cost: 2600
-  formula: (100*3.33+40*20.0+300*0.86+10*40.0+8*41.75)/2600
+  formula: (100*3.33+45*20.0+300*0.86+10*40.0+8*41.75)/2600
   image: https://static.wikia.nocookie.net/leagueoflegends/images/4/47/Harmonic_Echo_WR_item.png
   name: Yordle Harmonic Echo
   stats:
   - type: Max Health
     value: 100
   - type: Ability Power
-    value: 40
+    value: 45
   - type: Max Mana
     value: 300
   - type: Ability Haste

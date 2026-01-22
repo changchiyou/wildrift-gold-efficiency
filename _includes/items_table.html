@@ -2,8 +2,10 @@
 
 {% assign compare_items = site.data[ page.patch_note.compare.items ] %}
 {% assign compare_statuses = page.patch_note.compare.statuses | split: ',' %}
-{% assign patch_status_excludes = page.patch_note.excludes | split: ',' %}
-{% assign compare_excludes = page.patch_note.compare.excludes | split: ',' %}
+{% assign excludes_sep = page.patch_note.excludes_sep | default: ',' %}
+{% assign patch_status_excludes = page.patch_note.excludes | split: excludes_sep %}
+{% assign compare_excludes_sep = page.patch_note.compare.excludes_sep | default: ',' %}
+{% assign compare_excludes = page.patch_note.compare.excludes | split: compare_excludes_sep %}
 {% assign force_sep = page.patch_note.compare.force_sep %}
 {% if force_sep %}
     {% assign force_comma = force_sep | slice: 0 %}
