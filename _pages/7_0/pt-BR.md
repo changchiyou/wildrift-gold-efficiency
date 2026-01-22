@@ -24,17 +24,17 @@ data:
 
 patch_note:
     statuses:
-        buffed: "duskblade-of-draktharr,harmonic-echo,liandry-s-torment,psychic-projector"
-        adjusted: "runaan-s-hurricane,spear-of-shojin,warmog-s-armor,blade-of-the-ruined-king,maw-of-malmortius,riftmaker"
+        buffed: "duskblade-of-draktharr,redemption,psychic-projector-conversion,psychic-projector-conversion-projection"
+        adjusted: "runaan-s-hurricane,spear-of-shojin,warmog-s-armor,blade-of-the-ruined-king,riftmaker"
         nerfed: "phantom-dancer"
-        new: "guinsoo-s-rageblade,abyssal-mask,hollow-radiance"
+        new: "guinsoo-s-rageblade-adaptive-ad,guinsoo-s-rageblade-adaptive-ap,abyssal-mask,hollow-radiance"
     excludes: ""
     compare:
         statuses: "buffed,adjusted,nerfed"
         items: items_6_3f
         stats: stats_6_3f
         item_prefix: 6.3f
-        force: ""
-        force_sep: ""
+        force: "Yordle Duskblade of Draktharr~Duskblade of Draktharr;Yordle Redemption~Redemption;Yordle Runaan's Hurricane (Adaptive: AD)~Runaan's Hurricane;Yordle Sunfire Aegis~Sunfire Aegis;Psychic Projector (Conversion)~Psychic Projector (Conversion, Projection);Maw of Malmortius~Maw of Malmortius (Lifeline)"
+        force_sep: "~;"
         excludes: ""
 ---
