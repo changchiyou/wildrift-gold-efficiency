@@ -64,16 +64,18 @@ find "_pages/${new}" -type f -name '*.md' | while read -r file; do
       s/new: .*/new: \"\"/
     }
   }" "$file"
-  # Clear patch_note.excludes
+  # Clear patch_note.excludes and excludes_sep
   sed -i "/patch_note:/,/}/ {
     s/excludes: .*/excludes: \"\"/
+    s/excludes_sep: .*/excludes_sep: \",\"/
   }" "$file"
-  # Clear patch_note.compare.force/force_sep/excludes
+  # Clear patch_note.compare.force/force_sep/excludes/excludes_sep
   sed -i "/patch_note:/,/}/ {
     /compare:/,/}/ {
       s/force: .*/force: \"\"/
       s/force_sep: .*/force_sep: \"\"/
       s/excludes: .*/excludes: \"\"/
+      s/excludes_sep: .*/excludes_sep: \",\"/
     }
   }" "$file"
 done

@@ -24,17 +24,19 @@ data:
 
 patch_note:
     statuses:
-        buffed: "Duskblade of Draktharr,Redemption,Psychic Projector (Conversion),Psychic Projector (Conversion, Projection)"
-        adjusted: "Runaan's Hurricane,Spear of Shojin,Warmog's Armor,Blade of the Ruined King,Riftmaker"
+        buffed: "Duskblade of Draktharr,Redemption,Psychic Projector (Conversion),Psychic Projector (Conversion, Projection),Maw of Malmortius (Lifeline),Harmonic Echo"
+        adjusted: "Runaan's Hurricane,Spear of Shojin,Blade of the Ruined King,Riftmaker,Warmog's Armor"
         nerfed: "Phantom Dancer"
-        new: "Guinsoo's Rageblade (Adaptive: AD),Guinsoo's Rageblade (Adaptive: AP),Abyssal Mask,Hollow Radiance"
+        new: "Guinsoo's Rageblade (Adaptive: AD),Guinsoo's Rageblade (Adaptive: AP),Guinsoo's Rageblade (Adaptive: AD, Seething Strike),Guinsoo's Rageblade (Adaptive: AP, Seething Strike),Abyssal Mask,Hollow Radiance,Sunfire Aegis,Liandry's Torment,Infinity Orb,Serylda's Grudge,Death's Dance"
     excludes: ""
+    excludes_sep: ","
     compare:
-        statuses: "buffed,adjusted,nerfed"
+        statuses: "buffed,adjusted,nerfed,new"
         items: items_6_3f
         stats: stats_6_3f
         item_prefix: 6.3f
-        force: "Yordle Duskblade of Draktharr~Duskblade of Draktharr;Yordle Redemption~Redemption;Yordle Runaan's Hurricane (Adaptive: AD)~Runaan's Hurricane;Yordle Sunfire Aegis~Sunfire Aegis;Psychic Projector (Conversion)~Psychic Projector (Conversion, Projection);Maw of Malmortius~Maw of Malmortius (Lifeline)"
+        force: "Duskblade of Draktharr~Yordle Duskblade of Draktharr;Redemption~Yordle Redemption;Runaan's Hurricane~Yordle Runaan's Hurricane (Adaptive: AD);Sunfire Aegis~Yordle Sunfire Aegis;Psychic Projector (Conversion, Projection)~Psychic Projector (Conversion);Maw of Malmortius (Lifeline)~Maw of Malmortius;Harmonic Echo~Yordle Harmonic Echo;Liandry's Torment~Yordle Liandry's Torment;Infinity Orb~Yordle Infinity Orb;Serylda's Grudge~Yordle Serylda's Grudge;Death's Dance~Yordle Death's Dance"
         force_sep: "~;"
-        excludes: ""
+        excludes: "Guinsoo's Rageblade (Adaptive: AD);Guinsoo's Rageblade (Adaptive: AP);Guinsoo's Rageblade (Adaptive: AD, Seething Strike);Guinsoo's Rageblade (Adaptive: AP, Seething Strike);Abyssal Mask;Abyssal Mask (Unmake);Hollow Radiance"
+        excludes_sep: ";"
 ---

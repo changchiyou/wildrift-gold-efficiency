@@ -95,12 +95,16 @@ The params info of page.md:
 |`patch_note.statuses.nerfed`|optional|Items that have been nerfed.|
 |`patch_note.statuses.new`|optional|Items that have been added.|
 |`patch_note.excludes`|optional|The specific item name to be excluded from listing patch-note statuses.|
+|`patch_note.excludes_sep`|optional|The separator for `patch_note.excludes`. Defaults to `,` (comma). Useful when item names contain commas.|
 |`patch_note.compare`|optional|Fields for comparing last version. (generate a row of item data from last version)|
 |`patch_note.compare.statuses`|fixed value|The patch-note statuses would find the item data from last version to compare with.|
 |`patch_note.compare.items`|optional|The item datas to compare with.|
 |`patch_note.compare.stats`|optional|The stats to compare with.|
 |`patch_note.compare.item_prefix`|optional|The prefix which would be render in front of the row of comparing item data.|
-|`patch_note.compare.force`|optional|Forces the comparison of items in pairs, particularly in situations where items have been added, removed, or updated with prefixes, such as `hextech/light/ruin`|
+|`patch_note.compare.force`|optional|Forces the comparison of items in pairs, particularly in situations where items have been added, removed, or updated with prefixes, such as `hextech/light/ruin`. Format: `"CurrentItem<sep>CompareItem"` where CurrentItem is the item in the current version and CompareItem is the item to compare from the previous version. Example: `"Duskblade of Draktharr~Yordle Duskblade of Draktharr"` compares current "Duskblade of Draktharr" with previous "Yordle Duskblade of Draktharr".|
+|`patch_note.compare.force_sep`|optional|The separator for `patch_note.compare.force`. Two characters: first for separating current/compare items in a pair, second for separating multiple pairs. Example: `"~;"` means `~` separates CurrentItem from CompareItem, and `;` separates different pairs.|
+|`patch_note.compare.excludes`|optional|The specific item name to be excluded from comparison with previous version.|
+|`patch_note.compare.excludes_sep`|optional|The separator for `patch_note.compare.excludes`. Defaults to `,` (comma). Useful when item names contain commas.|
 
 For example:
 
