@@ -1510,10 +1510,10 @@
     value: 400
   - type: Armor
     value: 75
-- amount: 114.54%
+- amount: 150.25%
   category: DEFENSE ITEMS
   cost: 2800
-  formula: (400*3.33+75*25.0+20*0)/2800
+  formula: (400*3.33+75*25.0+20*50.0)/2800
   image: https://static.wikia.nocookie.net/leagueoflegends/images/0/08/Randuin%27s_Omen_item.png
   name: Randuin's Omen (Countercurrent - 4Stacks)
   stats:

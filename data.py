@@ -150,29 +150,31 @@ class ItemData:
                 worth = 0
                 formula_bonus_part = ""
                 for stat in data["stats"]:
-                    if "value" in stat:
-                        if "ratio" in stat:
-                            ref_base = 0
-                            if "ref_type" in stat:
-                                for _stat in data["stats"]:
-                                    if (
-                                        "ratio" not in _stat
-                                        and _stat["type"] == stat["ref_type"]
-                                    ):
-                                        ref_base += _stat["value"]
-                            if ref_base and "ref" in stat:
-                                stat["value"] = (stat["ref"] + ref_base) * stat["ratio"]
-                                stat["formula"] = (
-                                    f'({stat["ref"]}+{ref_base})*{stat["ratio"]}'
-                                )
-                            elif ref_base:
-                                stat["value"] = ref_base * stat["ratio"]
-                                stat["formula"] = f'{ref_base}*{stat["ratio"]}'
-                            elif "ref" in stat:
-                                stat["value"] = stat["ref"] * stat["ratio"]
-                                stat["formula"] = f'{stat["ref"]}*{stat["ratio"]}'
-                            stat["value"] = float("{:.2f}".format(stat["value"]))
+                    # Process ratio-based stats first (even if value is missing)
+                    if "ratio" in stat:
+                        ref_base = 0
+                        if "ref_type" in stat:
+                            for _stat in data["stats"]:
+                                if (
+                                    "ratio" not in _stat
+                                    and _stat["type"] == stat["ref_type"]
+                                ):
+                                    ref_base += _stat["value"]
+                        if ref_base and "ref" in stat:
+                            stat["value"] = (stat["ref"] + ref_base) * stat["ratio"]
+                            stat["formula"] = (
+                                f'({stat["ref"]}+{ref_base})*{stat["ratio"]}'
+                            )
+                        elif ref_base:
+                            stat["value"] = ref_base * stat["ratio"]
+                            stat["formula"] = f'{ref_base}*{stat["ratio"]}'
+                        elif "ref" in stat:
+                            stat["value"] = stat["ref"] * stat["ratio"]
+                            stat["formula"] = f'{stat["ref"]}*{stat["ratio"]}'
+                        stat["value"] = float("{:.2f}".format(stat["value"]))
 
+                    # Calculate worth if stat has a value
+                    if "value" in stat:
                         worth += stat["value"] * stat_price.get(stat["type"], 0)
                         formula_bonus_part += f"{'+' if formula_bonus_part else ''}{stat['value']}*{stat_price.get(stat['type'], 0)}"
                 amount = "{:.2f}".format(worth / data["cost"] * 100) + "%"

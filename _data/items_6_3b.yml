@@ -2010,7 +2010,7 @@
     value: 35
   - type: Move Speed
     value: 45
-- amount: 157.71%
+- amount: 144.25%
   category: BOOTS
   cost: 1400
   formula: (150*3.33+20*40.0+45*16.0+150*0)/1400
