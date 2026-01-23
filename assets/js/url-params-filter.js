@@ -87,9 +87,13 @@
             });
 
             // Trigger base price update
-            if (filtersApplied && typeof updateBasePrice === 'function') {
-                const event = new Event('change');
-                document.querySelector('.base-price-input').dispatchEvent(event);
+            if (filtersApplied) {
+                // Wait for change-base-price.js to load and expose updateBasePrice
+                setTimeout(function() {
+                    if (typeof window.updateBasePrice === 'function') {
+                        window.updateBasePrice();
+                    }
+                }, 100);
             }
         }
 

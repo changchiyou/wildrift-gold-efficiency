@@ -1,8 +1,11 @@
+// Declare updateBasePrice as a global function so it can be called from url-params-filter.js
+window.updateBasePrice = null;
+
 document.addEventListener('DOMContentLoaded', function() {
     const inputs = document.querySelectorAll('.base-price-input');
     let basePriceDict = {};
 
-    function updateBasePrice() {
+    function updateBasePriceInternal() {
         basePriceDict = {};
         inputs.forEach(function(input) {
             const parentTd = input.parentElement;
@@ -22,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const itemPriceElement = row.querySelector('td.item-price div');
             const itemPriceText = itemPriceElement.textContent.trim().split(' ')[0];
             const itemPrice = parseFloat(itemPriceText);
-            
+
             let totalValue = 0;
             const statsElements = row.querySelectorAll('b.stat');
             let formula = '(';
@@ -51,7 +54,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Expose the function globally
+    window.updateBasePrice = updateBasePriceInternal;
+
     inputs.forEach(function(input) {
-        input.addEventListener('change', updateBasePrice);
+        input.addEventListener('change', updateBasePriceInternal);
     });
 });
