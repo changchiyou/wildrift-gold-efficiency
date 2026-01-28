@@ -7,10 +7,6 @@ description: ワイルドリフト 7.0 ゴールド効率
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/4f465d96dd0141ed4cac6f6df66093425d643649-1920x1080.jpg?accountingTag=WR?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /ja-JP/7.0/
-redirect_from:
-    - /
-    - /ja-JP/
-latest_version: true
 
 lang: ja-JP
 
