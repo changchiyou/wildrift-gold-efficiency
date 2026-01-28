@@ -44,6 +44,9 @@ bash copy_v2.sh 6_0d 6_0e
 4. Run `python data.py --items items_{new_version}.yml --stats stats_{new_version}.yml`
 5. Update `_pages/{new_version}/*.md` files if needed:
    - Add items in patch_note.statuses based on items' adjustment (buffed/adjusted/nerfed/new)
+   - **IMPORTANT**: Only add items to patch_note.statuses when their **stats** have changed (including price, base stats, or stats from passives), NOT when only passive mechanics or descriptions change
+   - **IMPORTANT**: Use the exact item names as they appear in the `name` field of `_data/items_{version}.yml`, NOT lowercase or processed versions (e.g., use `Runaan's Hurricane` not `runanns_hurricane`)
+   - **Item matching rules**: When only the base item name is specified (e.g., `Psychic Projector`), it will automatically include all passive variants of that item (e.g., `Psychic Projector (Conversion)`, `Psychic Projector (Conversion, Projection)`). Specify the exact variant name only when needed based on actual changes.
    - If input contains JSON with og_image field, extract the og_image URL and update the `image:` parameter in all markdown files to use this new preview image instead of the default favicon
 
 ## i18n (Internationalization) Updates

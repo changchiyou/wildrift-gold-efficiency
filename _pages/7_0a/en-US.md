@@ -22,9 +22,9 @@ data:
 
 patch_note:
     statuses:
-        buffed: "runanns_hurricane"
+        buffed: "Runaan's Hurricane"
         adjusted: ""
-        nerfed: "radiant_virtue,spear_of_shojin,psychic_projector"
+        nerfed: "Spear of Shojin,Psychic Projector"
         new: ""
     excludes: ""
     excludes_sep: ","
