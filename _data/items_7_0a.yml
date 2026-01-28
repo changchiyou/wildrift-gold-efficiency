@@ -75,10 +75,10 @@
   - passive: Thirst
     type: '% Omnivamp'
     value: 10
-- amount: 80.55%
+- amount: 83.33%
   category: PHYSICAL DAMAGE ITEMS
-  cost: 3000
-  formula: (35*33.33+25*50.0)/3000
+  cost: 2900
+  formula: (35*33.33+25*50.0)/2900
   image: https://static.wikia.nocookie.net/leagueoflegends/images/f/f5/Runaan%27s_Hurricane_item.png
   name: Runaan's Hurricane
   stats:
@@ -709,20 +709,20 @@
     ref: 122
     type: Attack Damage
     value: 61.0
-- amount: 141.09%
+- amount: 127.91%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3100
-  formula: (450*3.33+45*41.67+25*40.0)/3100
+  formula: (450*3.33+40*41.67+20*40.0)/3100
   image: https://static.wikia.nocookie.net/leagueoflegends/images/1/1c/Spear_of_Shojin_item.png
   name: Spear of Shojin
   stats:
   - type: Max Health
     value: 450
   - type: Attack Damage
-    value: 45
+    value: 40
   - passive: Dragonforce
     type: Ability Haste
-    value: 25
+    value: 20
 - amount: 86.41%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
@@ -1385,10 +1385,10 @@
     value: 7
   - type: Ability Haste
     value: 20
-- amount: 120.94%
+- amount: 111.74%
   category: MAGIC DAMAGE ITEMS
   cost: 3100
-  formula: (300*3.33+60*20.0+7*0+15*40.0+47.5*20.0)/3100
+  formula: (300*3.33+60*20.0+7*0+15*40.0+33.25*20.0)/3100
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Psychic_Projector_WR_item.png/80px-Psychic_Projector_WR_item.png?298a1
   name: Psychic Projector (Conversion)
   stats:
@@ -1400,16 +1400,16 @@
     value: 7
   - type: Ability Haste
     value: 15
-  - formula: 950*0.05
+  - formula: 950*0.035
     passive: Conversion
-    ratio: 0.05
+    ratio: 0.035
     ref: 950
     type: Ability Power
-    value: 47.5
-- amount: 217.71%
+    value: 33.25
+- amount: 208.52%
   category: MAGIC DAMAGE ITEMS
   cost: 3100
-  formula: (300*3.33+60*20.0+7*0+15*40.0+47.5*20.0+80.0*25.0+40.0*25.0)/3100
+  formula: (300*3.33+60*20.0+7*0+15*40.0+33.25*20.0+80.0*25.0+40.0*25.0)/3100
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Psychic_Projector_WR_item.png/80px-Psychic_Projector_WR_item.png?298a1
   name: Psychic Projector (Conversion, Projection)
   stats:
@@ -1421,12 +1421,12 @@
     value: 7
   - type: Ability Haste
     value: 15
-  - formula: 950*0.05
+  - formula: 950*0.035
     passive: Conversion
-    ratio: 0.05
+    ratio: 0.035
     ref: 950
     type: Ability Power
-    value: 47.5
+    value: 33.25
   - formula: 400.0*0.2
     passive: Projection
     ratio: 0.2
