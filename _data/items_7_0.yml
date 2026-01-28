@@ -1385,10 +1385,10 @@
     value: 7
   - type: Ability Haste
     value: 20
-- amount: 99.97%
+- amount: 120.94%
   category: MAGIC DAMAGE ITEMS
   cost: 3100
-  formula: (300*3.33+60*20.0+7*0+15*40.0+15.0*20.0)/3100
+  formula: (300*3.33+60*20.0+7*0+15*40.0+47.5*20.0)/3100
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Psychic_Projector_WR_item.png/80px-Psychic_Projector_WR_item.png?298a1
   name: Psychic Projector (Conversion)
   stats:
@@ -1400,16 +1400,16 @@
     value: 7
   - type: Ability Haste
     value: 15
-  - formula: 300*0.05
+  - formula: 950*0.05
     passive: Conversion
     ratio: 0.05
-    ref_type: Max Health
+    ref: 950
     type: Ability Power
-    value: 15.0
-- amount: 196.74%
+    value: 47.5
+- amount: 217.71%
   category: MAGIC DAMAGE ITEMS
   cost: 3100
-  formula: (300*3.33+60*20.0+7*0+15*40.0+15.0*20.0+80.0*25.0+40.0*25.0)/3100
+  formula: (300*3.33+60*20.0+7*0+15*40.0+47.5*20.0+80.0*25.0+40.0*25.0)/3100
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Psychic_Projector_WR_item.png/80px-Psychic_Projector_WR_item.png?298a1
   name: Psychic Projector (Conversion, Projection)
   stats:
@@ -1421,12 +1421,12 @@
     value: 7
   - type: Ability Haste
     value: 15
-  - formula: 300*0.05
+  - formula: 950*0.05
     passive: Conversion
     ratio: 0.05
-    ref_type: Max Health
+    ref: 950
     type: Ability Power
-    value: 15.0
+    value: 47.5
   - formula: 400.0*0.2
     passive: Projection
     ratio: 0.2
