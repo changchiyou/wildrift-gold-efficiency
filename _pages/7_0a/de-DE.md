@@ -7,10 +7,6 @@ description: Wild Rift 7.0a Item Gold-Effizienzblatt
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/07790a82dabc711fe25be511d405ad6dac032971-2400x1080.jpg?accountingTag=WR?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /de-DE/7.0a/
-redirect_from:
-    - /
-    - /de-DE/
-latest_version: true
 
 lang: de-DE
 
