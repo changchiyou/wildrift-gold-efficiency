@@ -741,10 +741,10 @@
     ref_type: Max Health
     type: Attack Damage
     value: 11.25
-- amount: 78.43%
+- amount: 80.81%
   category: PHYSICAL DAMAGE ITEMS
-  cost: 3400
-  formula: (40*41.67+30*33.33)/3400
+  cost: 3300
+  formula: (40*41.67+30*33.33)/3300
   image: https://static.wikia.nocookie.net/leagueoflegends/images/4/49/Terminus_item.png
   name: Terminus
   stats:
@@ -800,10 +800,10 @@
     type: '% Magic Penetration'
     value: 33
   - type: Unstable Passives' Stats
-- amount: 98.96%
+- amount: 112.61%
   category: PHYSICAL DAMAGE ITEMS
-  cost: 3300
-  formula: (40*41.67+15*40.0+300*3.33)/3300
+  cost: 2900
+  formula: (40*41.67+15*40.0+300*3.33)/2900
   image: https://static.wikia.nocookie.net/leagueoflegends/images/4/4f/Sundered_Sky_item.png
   name: Sundered Sky
   stats:
