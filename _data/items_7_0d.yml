@@ -3096,18 +3096,21 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (40*41.67+30*33.33)/3000
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/thumb/e/e5/Kraken_Slayer_item.png/64px-Kraken_Slayer_item.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Kraken_Slayer_item.png?fec7c 
   name: Kraken Slayer
   stats:
   - type: Attack Damage
     value: 40
   - type: '% Attack Speed'
     value: 30
+  - type: '% Move Speed'
+    value: 5
+    passive: 'Cloud Stride'
 - amount: 105.08%
   category: SUPPORT ITEMS
   cost: 2600
   formula: (40*25.0+400*3.33+10*40.0)/2600
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/thumb/e/e7/Knight%27s_Vow_item.png/64px-Knight%27s_Vow_item.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Knight%27s_Vow_item.png?5a5a0
   name: Knight's Vow
   stats:
   - type: Armor
@@ -3120,18 +3123,22 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200
   formula: (30*41.67+450*3.33)/3200
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/thumb/5/58/Overlord%27s_Bloodmail_item.png/64px-Overlord%27s_Bloodmail_item.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Overlord%27s_Bloodmail_item.png?a10db
   name: Overlord's Bloodmail
   stats:
   - type: Attack Damage
     value: 30
   - type: Max Health
     value: 450
+  - type: Attack Damage
+    passive: Tyranny
+    ratio: 0.025
+    ref_type: Max Health
 - amount: 97.20%
   category: DEFENSE ITEMS
   cost: 3000
   formula: (200*3.33+45*25.0+45*25.0)/3000
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/thumb/8/8a/Unending_Despair_item.png/64px-Unending_Despair_item.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Unending_Despair_item.png?cfe73
   name: Unending Despair
   stats:
   - type: Max Health
@@ -3144,7 +3151,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (400*3.33+35*41.67+20*33.33)/3000
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/thumb/1/12/Experimental_Hexplate_item.png/64px-Experimental_Hexplate_item.png
+  image: https://wiki.leagueoflegends.com/en-us/images/Experimental_Hexplate_item.png?3908f
   name: Experimental Hexplate
   stats:
   - type: Max Health
@@ -3153,3 +3160,63 @@
     value: 35
   - type: '% Attack Speed'
     value: 20
+- amount: 115.23%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (400*3.33+35*41.67+20*33.33)/3000
+  image: https://wiki.leagueoflegends.com/en-us/images/Experimental_Hexplate_item.png?3908f
+  name: Experimental Hexplate (Hexcharged)
+  stats:
+  - type: Max Health
+    value: 400
+  - type: Attack Damage
+    value: 35
+  - type: '% Attack Speed'
+    value: 20
+  - type: Ability Haste
+    value: 20
+    passive: Hexcharged
+- amount: 115.23%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (400*3.33+35*41.67+20*33.33)/3000
+  image: https://wiki.leagueoflegends.com/en-us/images/Experimental_Hexplate_item.png?3908f
+  name: Experimental Hexplate (Hexcharged, Overdrive - Melee)
+  stats:
+  - type: Max Health
+    value: 400
+  - type: Attack Damage
+    value: 35
+  - type: '% Attack Speed'
+    value: 20
+  - type: Ability Haste
+    value: 20
+    passive: Hexcharged
+  - type: '% Attack Speed'
+    value: 40
+    passive: Overdrive
+  - type: '% Move Speed'
+    value: 20
+    passive: Overdrive
+- amount: 115.23%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (400*3.33+35*41.67+20*33.33)/3000
+  image: https://wiki.leagueoflegends.com/en-us/images/Experimental_Hexplate_item.png?3908f
+  name: Experimental Hexplate (Hexcharged, Overdrive - Range)
+  stats:
+  - type: Max Health
+    value: 400
+  - type: Attack Damage
+    value: 35
+  - type: '% Attack Speed'
+    value: 20
+  - type: Ability Haste
+    value: 20
+    passive: Hexcharged
+  - type: '% Attack Speed'
+    value: 20
+    passive: Overdrive
+  - type: '% Move Speed'
+    value: 10
+    passive: Overdrive
