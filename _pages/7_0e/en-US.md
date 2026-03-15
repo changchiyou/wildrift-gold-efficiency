@@ -2,7 +2,7 @@
 layout: gold_efficiency_v2
 
 title: 7.0e
-date: 2026/03/15
+date: 2026/03/12
 description: Wild Rift Gold Efficiency of 7.0e
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/8fa23d9f5e2eaf9e25501b6c2707ffae651b2392-1920x1080.jpg?accountingTag=WR?w=1200&h=630&fm=webp&fit=crop&crop=center
 
