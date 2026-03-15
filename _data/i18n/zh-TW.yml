@@ -320,6 +320,14 @@ item:
     radiant-virtue: 聖光美德
     radiant-virtue-guiding-light-lv1-thresh-660-hp: 聖光美德 (指路明光 - lv1 瑟雷西 660 生命)
     radiant-virtue-guiding-light-lv15-thresh-2340-hp: 聖光美德 (指路明光 - lv15 瑟雷西 2340 生命)
+    kraken-slayer: 海妖殺手
+    knight-s-vow: 騎士誓願
+    overlord-s-bloodmail: 狂霸血甲
+    unending-despair: 無盡絕望
+    experimental-hexplate: 實驗型海克斯板甲
+    experimental-hexplate-hexcharged: 實驗型海克斯板甲 (海克斯充能)
+    experimental-hexplate-hexcharged-overdrive-melee: 實驗型海克斯板甲 (海克斯充能, 能量過載 - 近戰)
+    experimental-hexplate-hexcharged-overdrive-range: 實驗型海克斯板甲 (海克斯充能, 能量過載 - 遠程)
   passive:
     absorb: 吸收
     ardent: 熾灼
@@ -391,3 +399,7 @@ item:
     guiding-light: 指路明光
     dawnbringer: 黎明使者
     dragonforce: 龍之力
+    cloud-stride: 騰雲
+    tyranny: 暴政
+    hexcharged: 海克斯充能
+    overdrive: 能量過載

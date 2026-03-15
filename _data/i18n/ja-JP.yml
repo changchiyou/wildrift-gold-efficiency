@@ -320,6 +320,14 @@ item:
     radiant-virtue: Radiant Virtue
     radiant-virtue-guiding-light-lv1-thresh-660-hp: Radiant Virtue (Guiding Light - lv1 Thresh 660 HP)
     radiant-virtue-guiding-light-lv15-thresh-2340-hp: Radiant Virtue (Guiding Light - lv15 Thresh 2340 HP)
+    kraken-slayer: Kraken Slayer
+    knight-s-vow: Knight's Vow
+    overlord-s-bloodmail: Overlord's Bloodmail
+    unending-despair: Unending Despair
+    experimental-hexplate: Experimental Hexplate
+    experimental-hexplate-hexcharged: Experimental Hexplate (Hexcharged)
+    experimental-hexplate-hexcharged-overdrive-melee: Experimental Hexplate (Hexcharged, Overdrive - Melee)
+    experimental-hexplate-hexcharged-overdrive-range: Experimental Hexplate (Hexcharged, Overdrive - Range)
   passive:
     absorb: 吸収
     ardent: アーデント
@@ -391,3 +399,7 @@ item:
     guiding-light: Guiding Light
     dawnbringer: Dawnbringer
     dragonforce: Dragonforce
+    cloud-stride: Cloud Stride
+    tyranny: Tyranny
+    hexcharged: Hexcharged
+    overdrive: Overdrive
