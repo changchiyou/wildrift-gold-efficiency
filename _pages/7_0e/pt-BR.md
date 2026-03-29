@@ -7,17 +7,13 @@ description: Wild Rift 7.0e Eficiência de Ouro
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/8fa23d9f5e2eaf9e25501b6c2707ffae651b2392-1920x1080.jpg?accountingTag=WR?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /pt-BR/7.0e/
-redirect_from:
-    - /
-    - /pt-BR/
-latest_version: true
 
 lang: pt-BR
 
 sitemap: false
 
 data:
-    refer_url: https://wildrift.leagueoflegends.com/pt-br/news/game-updates/wild-rift-patch-notes-70d/
+    refer_url: https://wildrift.leagueoflegends.com/pt-br/news/game-updates/wild-rift-patch-notes-7-0e/
     refer_text: 7.0e
     items: items_7_0e
     stats: stats_7_0e
