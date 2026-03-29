@@ -1,22 +1,26 @@
 ---
 layout: gold_efficiency_v2
 
-title: 7.0e
-date: 2026/03/12
-description: Wild Rift 7.0e Item Gold-Effizienzblatt
+title: 7.0g
+date: 2026/03/29
+description: ワイルドリフト 7.0g ゴールド効率
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/8fa23d9f5e2eaf9e25501b6c2707ffae651b2392-1920x1080.jpg?accountingTag=WR?w=1200&h=630&fm=webp&fit=crop&crop=center
 
-permalink: /de-DE/7.0e/
+permalink: /ja-JP/7.0g/
+redirect_from:
+    - /
+    - /ja-JP/
+latest_version: true
 
-lang: de-DE
+lang: ja-JP
 
 sitemap: false
 
 data:
-    refer_url: https://wildrift.leagueoflegends.com/de-de/news/game-updates/wild-rift-patch-notes-70d/
-    refer_text: 7.0e
-    items: items_7_0e
-    stats: stats_7_0e
+    refer_url: https://wildrift.leagueoflegends.com/ja-jp/news/game-updates/wild-rift-patch-notes-70d/
+    refer_text: 7.0g
+    items: items_7_0g
+    stats: stats_7_0g
 
 patch_note:
     statuses:
@@ -28,8 +32,8 @@ patch_note:
     excludes_sep: ","
     compare:
         statuses: "buffed,adjusted,nerfed"
-        items: items_7_0d
-        stats: stats_7_0d
+        items: items_7_0e
+        stats: stats_7_0e
         item_prefix: 7.0
         force: ""
         force_sep: ""
