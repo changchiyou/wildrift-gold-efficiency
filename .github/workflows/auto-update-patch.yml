@@ -144,7 +144,14 @@ jobs:
               "ANTHROPIC_AUTH_TOKEN": "${{ secrets.ANTHROPIC_AUTH_TOKEN }}",
               "ANTHROPIC_MODEL": "${{ vars.ANTHROPIC_MODEL }}",
               "ANTHROPIC_SMALL_FAST_MODEL": "gpt-4.1-nano",
-              "DISABLE_NON_ESSENTIAL_MODEL_CALLS": 1
+              "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+              "CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS": "1",
+              "CLAUDE_CODE_SKIP_AUTH_LOGIN": "1"
+            },
+            "alwaysThinkingEnabled": false,
+            "permissions": {
+              "allow": ["Bash(grep *)", "Bash(ls *)"],
+              "deny": ["Task(Explore)"]
             }
           }
           EOF
