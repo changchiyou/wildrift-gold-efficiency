@@ -33,7 +33,7 @@ else
 fi
 
 # Copy the entire old folder to a new folder
-cp -r "_pages/${old}" "_pages/${new}"
+cp -r "_pages/${old}/." "_pages/${new}"
 cp "_data/items_${old}.yml" "_data/items_${new}.yml"
 cp "_data/stats_${old}.yml" "_data/stats_${new}.yml"
 
