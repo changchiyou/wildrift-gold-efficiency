@@ -7,10 +7,6 @@ description: Wild Rift Gold Efficiency of 7.0g
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/8fa23d9f5e2eaf9e25501b6c2707ffae651b2392-1920x1080.jpg?accountingTag=WR?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /en-US/7.0g/
-redirect_from:
-    - /
-    - /en-US/
-latest_version: true
 
 lang: en-US
 
