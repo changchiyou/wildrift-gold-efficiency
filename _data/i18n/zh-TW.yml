@@ -328,6 +328,7 @@ item:
     experimental-hexplate-hexcharged: 實驗型海克斯板甲 (海克斯充能)
     experimental-hexplate-hexcharged-overdrive-melee: 實驗型海克斯板甲 (海克斯充能, 能量過載 - 近戰)
     experimental-hexplate-hexcharged-overdrive-range: 實驗型海克斯板甲 (海克斯充能, 能量過載 - 遠程)
+    lord-dominik-s-regards: 多明尼克的問候
   passive:
     absorb: 吸收
     ardent: 熾灼
