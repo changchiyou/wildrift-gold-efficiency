@@ -2114,7 +2114,7 @@
     value: 45
   - passive: Strike
     type: Armor Penetration
-    value: 8
+    value: 10
 - amount: 83.34%
   category: SUPPORT ITEMS
   cost: 500
