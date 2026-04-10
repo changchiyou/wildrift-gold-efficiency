@@ -181,7 +181,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3300
   formula: (25*41.67+25*50.0+36*66.67)/3300
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/thumb/c/c5/Lord_Dominik%27s_Regards_item.png
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/1/19/Lord_Dominik%27s_Regards_item_old2.png
   name: Lord Dominik's Regards
   stats:
   - type: Attack Damage
@@ -2012,6 +2012,8 @@
   image: https://wiki.leagueoflegends.com/en-us/images/Mercury%27s_Treads_item.png
   name: Mercury's Treads
   stats:
+  - type: Max Health
+    value: 200
   - type: '% Health Regen'
     value: 50
   - type: Magic Resistance
@@ -2025,6 +2027,8 @@
   image: https://wiki.leagueoflegends.com/en-us/images/Plated_Steelcaps_WR_item.png
   name: Plated Steelcaps
   stats:
+  - type: Max Health
+    value: 150
   - type: '% Health Regen'
     value: 50
   - type: Armor
@@ -2057,9 +2061,26 @@
     value: 100
   - type: Move Speed
     value: 45
+  - passive: Magic Break
+    type: Magic Penetration
+    value: 8
+- amount: 113.33%
+  category: BOOTS
+  cost: 900
+  formula: (15*20.0+100*0+45*16.0+50*0)/900
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Boots_of_Mana_WR_item.png/80px-Boots_of_Mana_WR_item.png?b7311
+  name: Boots of Mana (Equilibrium)
+  stats:
+  - type: Ability Power
+    value: 15
+  - type: Move Speed
+    value: 45
   - passive: Equilibrium
     type: '% Health Regen'
     value: 50
+  - passive: Magic Break
+    type: Magic Penetration
+    value: 8
 - amount: 144.81%
   category: BOOTS
   cost: 900
