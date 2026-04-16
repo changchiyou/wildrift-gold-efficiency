@@ -24,8 +24,8 @@ data:
 
 patch_note:
     statuses:
-        buffed: "Nashor's Tooth (Adaptive: AP),Navori Quickblades"
-        adjusted: "Trinity Force"
+        buffed: "Nashor's Tooth,Forbidden Idol,Harmonic Echo,Staff of Flowing Waters,Ardent Censer,Ionian Boots of Lucidity"
+        adjusted: "Trinity Force,Navori Quickblades"
         nerfed: ""
         new: ""
     excludes: ""
