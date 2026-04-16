@@ -77,6 +77,13 @@ class ItemData:
 
         datas = self.datas
 
+        # Load prices for excluded stats first
+        stats = self.read_yaml(self.stats_file_name)
+        for stat in stats:
+            if "base_type" in stats[stat] and stats[stat]["base_type"] == "exclude":
+                if "price" in stats[stat]:
+                    self.stat_price[stat] = stats[stat]["price"]
+
         first_base = self.bases["first"]
         second_base = self.bases["second"]
 
