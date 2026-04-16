@@ -52,9 +52,9 @@ find "_pages/${new}" -type f -name '*.md' | while read -r file; do
   # Update the date in the new version file
   sed -i "s|date: .*|date: ${date_to_use}|g" "$file"
   # Update patch_note.compare.items/stats/item_prefix
-  sed -i "/patch_note:/,/^$/ { /compare:/,/^$/ s/items_.*/items_${old}/ }" "$file"
-  sed -i "/patch_note:/,/^$/ { /compare:/,/^$/ s/stats_.*/stats_${old}/ }" "$file"
-  sed -i "/patch_note:/,/^$/ { /compare:/,/^$/ s/item_prefix: [0-9]\.[0-9][a-z]/item_prefix: $(replace_underscore $old '.')/ }" "$file"
+  sed -i "/patch_note:/,/^$/ { /compare:/,/^$/ s/items: items_.*/items: items_${old}/ }" "$file"
+  sed -i "/patch_note:/,/^$/ { /compare:/,/^$/ s/stats: stats_.*/stats: stats_${old}/ }" "$file"
+  sed -i "/patch_note:/,/^$/ { /compare:/,/^$/ s/item_prefix: .*/item_prefix: $(replace_underscore $old '.')/ }" "$file"
   # Clear patch_note.statuses.buffed/adjusted/nerfed/new
   sed -i "/patch_note:/,/}/ {
     /statuses:/,/}/ {
