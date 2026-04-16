@@ -2005,10 +2005,10 @@
     value: 25
   - type: Move Speed
     value: 45
-- amount: 135.56%
+- amount: 209.56%
   category: BOOTS
   cost: 900
-  formula: (50*0+20*25.0+45*16.0)/900
+  formula: (200*3.33+50*0+20*25.0+45*16.0)/900
   image: https://wiki.leagueoflegends.com/en-us/images/Mercury%27s_Treads_item.png
   name: Mercury's Treads
   stats:
@@ -2020,10 +2020,10 @@
     value: 20
   - type: Move Speed
     value: 45
-- amount: 135.56%
+- amount: 191.06%
   category: BOOTS
   cost: 900
-  formula: (50*0+20*25.0+45*16.0)/900
+  formula: (150*3.33+50*0+20*25.0+45*16.0)/900
   image: https://wiki.leagueoflegends.com/en-us/images/Plated_Steelcaps_WR_item.png
   name: Plated Steelcaps
   stats:
@@ -2048,10 +2048,10 @@
     value: 15
   - type: Move Speed
     value: 45
-- amount: 113.33%
+- amount: 142.96%
   category: BOOTS
   cost: 900
-  formula: (15*20.0+100*0+45*16.0+50*0)/900
+  formula: (15*20.0+100*0+45*16.0+8*33.33)/900
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Boots_of_Mana_WR_item.png/80px-Boots_of_Mana_WR_item.png?b7311
   name: Boots of Mana
   stats:
@@ -2064,10 +2064,10 @@
   - passive: Magic Break
     type: Magic Penetration
     value: 8
-- amount: 113.33%
+- amount: 142.96%
   category: BOOTS
   cost: 900
-  formula: (15*20.0+100*0+45*16.0+50*0)/900
+  formula: (15*20.0+45*16.0+50*0+8*33.33)/900
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Boots_of_Mana_WR_item.png/80px-Boots_of_Mana_WR_item.png?b7311
   name: Boots of Mana (Equilibrium)
   stats:

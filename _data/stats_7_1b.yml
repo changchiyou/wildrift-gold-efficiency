@@ -80,9 +80,9 @@
   type: "Magic"
 "% Mana Regeneration":
   image: "https://i.imgur.com/mTFlXny.png"
-  type: "Magic"
   base_type: "exclude"
-  price: 0
+  price: 4
+  type: "Magic"
 "% Omnivamp":
   image: "https://i.imgur.com/ERdwXW2.png"
   type: "Magic"
