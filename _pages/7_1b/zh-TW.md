@@ -7,10 +7,6 @@ description: 激鬥峽谷 7.1b 裝備面板價值
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/e2e6fb40c2455fca9ea866c3bbba5d05c37ae17a-1920x1080.jpg?accountingTag=WR?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /zh-TW/7.1b/
-redirect_from:
-    - /
-    - /zh-TW/
-latest_version: true
 
 lang: zh-TW
 
