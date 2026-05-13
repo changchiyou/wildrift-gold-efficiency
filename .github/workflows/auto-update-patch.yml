@@ -140,10 +140,14 @@ jobs:
           cat > ~/.claude/settings.json << 'EOF'
           {
             "env": {
-              "ANTHROPIC_BASE_URL": "${{ vars.ANTHROPIC_BASE_URL }}",
+              "ANTHROPIC_BASE_URL": "${{ secrets.ANTHROPIC_BASE_URL }}",
               "ANTHROPIC_AUTH_TOKEN": "${{ secrets.ANTHROPIC_AUTH_TOKEN }}",
-              "ANTHROPIC_MODEL": "${{ vars.ANTHROPIC_MODEL }}",
-              "ANTHROPIC_SMALL_FAST_MODEL": "gpt-4.1-nano",
+              "ANTHROPIC_MODEL": "claude-4.6-sonnet-aws",
+              "ANTHROPIC_DEFAULT_OPUS_MODEL": "claude-4.6-opus-aws",
+              "ANTHROPIC_DEFAULT_SONNET_MODEL": "claude-4.6-sonnet",
+              "ANTHROPIC_DEFAULT_HAIKU_MODEL": "claude-4.5-haiku",
+              "CLAUDE_CODE_SUBAGENT_MODEL": "claude-4.5-sonnet",
+              "DISABLE_NON_ESSENTIAL_MODEL_CALLS": "1",
               "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
               "CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS": "1",
               "CLAUDE_CODE_SKIP_AUTH_LOGIN": "1"
