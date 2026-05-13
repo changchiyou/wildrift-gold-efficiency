@@ -24,7 +24,7 @@ patch_note:
     statuses:
         buffed: ""
         adjusted: ""
-        nerfed: "Thornmail"
+        nerfed: ""
         new: ""
     excludes: ""
     excludes_sep: ","
