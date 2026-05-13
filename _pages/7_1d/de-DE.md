@@ -7,10 +7,6 @@ description: Wild Rift 7.1d Item Gold-Effizienzblatt
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/feb9fa72c952e759214a7dc13f685355906c0c73-1920x1080.jpg?accountingTag=WR&auto=format&fit=fill&q=80&w=1920
 
 permalink: /de-DE/7.1d/
-redirect_from:
-    - /
-    - /de-DE/
-latest_version: true
 
 lang: de-DE
 
