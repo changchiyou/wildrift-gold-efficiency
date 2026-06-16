@@ -7,10 +7,6 @@ description: 激鬥峽谷 7.1e 裝備面板價值
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/4db5e185db712081c053224e657b48d18b5ee705-1920x1080.jpg?accountingTag=WR?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /zh-TW/7.1e/
-redirect_from:
-    - /
-    - /zh-TW/
-latest_version: true
 
 lang: zh-TW
 
