@@ -1,26 +1,30 @@
 ---
 layout: gold_efficiency_v2
 
-title: 7.1h
-date: 2026/06/25
-description: 激鬥峽谷 7.1h 裝備面板價值
+title: 7.2
+date: 2026/07/08
+description: Wild Rift 7.2 Eficiência de Ouro
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/3b207bc7cea79f2f9679f8a860b1bb28505c938a-1920x1080.jpg?accountingTag=WR?w=1200&h=630&fm=webp&fit=crop&crop=center
 
-permalink: /zh-TW/7.1h/
+permalink: /pt-BR/7.2/
+redirect_from:
+    - /
+    - /pt-BR/
+latest_version: true
 
-lang: zh-TW
+lang: pt-BR
 
 sitemap: false
 
 data:
-    refer_url: https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-1h/
-    refer_text: 7.1h
-    items: items_7_1h
-    stats: stats_7_1h
+    refer_url: https://wildrift.leagueoflegends.com/pt-br/news/game-updates/wild-rift-patch-notes-7-2/
+    refer_text: 7.2
+    items: items_7_2
+    stats: stats_7_2
 
 patch_note:
     statuses:
-        buffed: "Chempunk Chainsword"
+        buffed: ""
         adjusted: ""
         nerfed: ""
         new: ""
@@ -28,9 +32,9 @@ patch_note:
     excludes_sep: ","
     compare:
         statuses: "buffed,adjusted,nerfed"
-        items: items_7_1g
-        stats: stats_7_1g
-        item_prefix: 7.1g
+        items: items_7_1h
+        stats: stats_7_1h
+        item_prefix: 7.1h
         force: ""
         force_sep: ""
         excludes: ""

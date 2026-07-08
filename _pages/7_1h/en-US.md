@@ -7,10 +7,6 @@ description: Wild Rift Gold Efficiency of 7.1h
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/3b207bc7cea79f2f9679f8a860b1bb28505c938a-1920x1080.jpg?accountingTag=WR?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /en-US/7.1h/
-redirect_from:
-    - /
-    - /en-US/
-latest_version: true
 
 lang: en-US
 
