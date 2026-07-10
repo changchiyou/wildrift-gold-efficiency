@@ -83,28 +83,23 @@ When new items are added or item names/passives change:
 
 ## Version Format Handling
 
-The project supports two version number formats due to a change in Wild Rift's patch note URL structure starting from version 7.0:
+Wild Rift patch note URLs may use either dash-separated or concatenated digit formats. The CI/CD workflow handles both.
 
-### Old Format (up to 6.x)
-- **URL format**: `wild-rift-patch-notes-6-3e` (with dash separator)
-- **File/folder format**: `6_3e` (with underscore separator)
-- **Display format**: `6.3e` (with dot separator)
-
-### New Format (from 7.0 onwards)
-- **URL format**: `wild-rift-patch-notes-70` (no separator, concatenated digits)
-- **File/folder format**: `7_0` (with underscore separator, same as old format)
-- **Display format**: `7.0` (with dot separator)
+### URL Formats
+- **Dash format**: `wild-rift-patch-notes-7-2` → version `7_2`
+- **Concatenated format**: `wild-rift-patch-notes-72` → version `7_2` (inserting underscore between major.minor)
+- **With suffix**: `wild-rift-patch-notes-7-2a` or `wild-rift-patch-notes-72a` → version `7_2a`
 
 ### Conversion Examples
 - URL `patch-notes-6-3e` → version `6_3e`
-- URL `patch-notes-70` → version `7_0` (inserting underscore between major.minor)
-- URL `patch-notes-70a` → version `7_0a`
+- URL `patch-notes-7-2` → version `7_2`
+- URL `patch-notes-72` → version `7_2`
+- URL `patch-notes-72a` → version `7_2a`
 
 ### Implementation Notes
-- The CI/CD workflow (`.github/workflows/auto-update-patch.yml`) automatically detects and converts both formats
-- All internal file naming uses underscore format (`6_3e`, `7_0`)
+- The CI/CD workflow (`.github/workflows/auto-update-patch.yml`) tries dash format first, then falls back to concatenated format
+- All internal file naming uses underscore format (`6_3e`, `7_2`)
 - Scripts like `copy_v2.sh` work with both formats without modification
-- Version detection tries old format first, then falls back to new format
 
 ## Important Notes
 - Project tracks gold efficiency changes across Wild Rift patches
@@ -112,4 +107,16 @@ The project supports two version number formats due to a change in Wild Rift's p
 - Python script calculates gold efficiency from item and stat data
 - When executing python script, don't try to install requirements by yourself and creat a virtual environment, just execute with `python` directly
 - I you recieve the patch-note with massive amount of texts, please refer to `_data/stats_{new_version}.yml` and focus on the changing of listed stats. Ignore the passive effect unless it effect the stats.
-- When a item become more expensive, it's a nerf. When a item has greater stats, it's a buff. When a item got nerfed and buffed at the same time, it's a adjustment. Follow this rule to decide which patch_note.statuses does the item belong to.
+- When classifying items into `patch_note.statuses`, only consider the item's own stat values (cost, AD, AP, AH, etc.) — ignore passive effect numbers. Use these rules:
+  - **Price increase** = nerf. **Price decrease** = buff.
+  - **Any stat value increase** = buff. **Any stat value decrease** = nerf.
+  - **buffed**: all changes are buffs (no nerfs at all)
+  - **nerfed**: all changes are nerfs (no buffs at all)
+  - **adjusted**: has both buff and nerf changes at the same time
+  - **new**: item did not exist in the previous version
+- **IMPORTANT**: `→` in patch notes indicates a **partial update** — only update the specific stat's value that is mentioned. Stats not listed do NOT disappear unless explicitly stated (e.g., "removed", "→ 0", or "→ removed"). All unlisted stats must remain exactly as they are in the previous version's yml.
+- When adding new items, refer to the following wikis for stat details and images if the patch notes are incomplete:
+  - https://wiki.leagueoflegends.com/en-us/Item
+  - https://wiki.leagueoflegends.com/en-us/WR:Item
+  - https://leagueoflegends.fandom.com/wiki/Item_(Wild_Rift)
+  - https://leagueoflegends.fandom.com/wiki/Item_(League_of_Legends)

@@ -195,8 +195,6 @@ def main():
 Examples:
   python patch_notes_extractor.py https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-6-2e/
   python patch_notes_extractor.py --json https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-6-2e/
-  python patch_notes_extractor.py --all-sections https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-6-2e/
-  python patch_notes_extractor.py --all-sections --json https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-6-2e/
         """
     )
 

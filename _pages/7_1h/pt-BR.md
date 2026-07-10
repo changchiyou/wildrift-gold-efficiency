@@ -10,7 +10,7 @@ permalink: /pt-BR/7.1h/
 redirect_from:
     - /
     - /pt-BR/
-latest_version: true
+latest_version: false
 
 lang: pt-BR
 

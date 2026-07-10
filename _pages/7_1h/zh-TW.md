@@ -10,7 +10,7 @@ permalink: /zh-TW/7.1h/
 redirect_from:
     - /
     - /zh-TW/
-latest_version: true
+latest_version: false
 
 lang: zh-TW
 

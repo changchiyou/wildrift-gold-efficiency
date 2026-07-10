@@ -41,6 +41,9 @@ layout: default
 
 {% include filter.html items=page.data.items stats=page.data.stats %}
 
+{% capture header %}{% include i18n.html token="nav.active-items" %}{% endcapture %}
+{%- include items_table.html items=page.data.items stats=page.data.stats category="ACTIVE ITEMS" anchor="ACTIVE-ITEMS" header=header -%}
+
 {% capture header %}{% include i18n.html token="nav.physical-damage-items" %}{% endcapture %}
 {%- include items_table.html items=page.data.items stats=page.data.stats category="PHYSICAL DAMAGE ITEMS" anchor="PHYSICAL-DAMAGE-ITEMS" header=header -%}
 
