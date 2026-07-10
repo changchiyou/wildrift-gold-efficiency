@@ -10,7 +10,7 @@ permalink: /en-US/7.1h/
 redirect_from:
     - /
     - /en-US/
-latest_version: true
+latest_version: false
 
 lang: en-US
 

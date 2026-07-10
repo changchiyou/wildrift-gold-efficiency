@@ -10,7 +10,7 @@ permalink: /ja-JP/7.1h/
 redirect_from:
     - /
     - /ja-JP/
-latest_version: true
+latest_version: false
 
 lang: ja-JP
 

@@ -10,7 +10,7 @@ permalink: /de-DE/7.1h/
 redirect_from:
     - /
     - /de-DE/
-latest_version: true
+latest_version: false
 
 lang: de-DE
 
