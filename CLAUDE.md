@@ -107,5 +107,16 @@ Wild Rift patch note URLs may use either dash-separated or concatenated digit fo
 - Python script calculates gold efficiency from item and stat data
 - When executing python script, don't try to install requirements by yourself and creat a virtual environment, just execute with `python` directly
 - I you recieve the patch-note with massive amount of texts, please refer to `_data/stats_{new_version}.yml` and focus on the changing of listed stats. Ignore the passive effect unless it effect the stats.
-- When a item become more expensive, it's a nerf. When a item has greater stats, it's a buff. When a item got nerfed and buffed at the same time, it's a adjustment. Follow this rule to decide which patch_note.statuses does the item belong to.
-- **IMPORTANT**: When patch notes show a stat change in diff format (e.g., `Attack Damage: 50 → 55`), **only update the specific stat's value** that is mentioned. Do NOT remove or modify any other stats of the item that are not listed in the diff. All unlisted stats must remain exactly as they are in the previous version's yml.
+- When classifying items into `patch_note.statuses`, only consider the item's own stat values (cost, AD, AP, AH, etc.) — ignore passive effect numbers. Use these rules:
+  - **Price increase** = nerf. **Price decrease** = buff.
+  - **Any stat value increase** = buff. **Any stat value decrease** = nerf.
+  - **buffed**: all changes are buffs (no nerfs at all)
+  - **nerfed**: all changes are nerfs (no buffs at all)
+  - **adjusted**: has both buff and nerf changes at the same time
+  - **new**: item did not exist in the previous version
+- **IMPORTANT**: `→` in patch notes indicates a **partial update** — only update the specific stat's value that is mentioned. Stats not listed do NOT disappear unless explicitly stated (e.g., "removed", "→ 0", or "→ removed"). All unlisted stats must remain exactly as they are in the previous version's yml.
+- When adding new items, refer to the following wikis for stat details and images if the patch notes are incomplete:
+  - https://wiki.leagueoflegends.com/en-us/Item
+  - https://wiki.leagueoflegends.com/en-us/WR:Item
+  - https://leagueoflegends.fandom.com/wiki/Item_(Wild_Rift)
+  - https://leagueoflegends.fandom.com/wiki/Item_(League_of_Legends)
