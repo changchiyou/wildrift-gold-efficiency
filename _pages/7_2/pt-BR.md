@@ -24,8 +24,8 @@ data:
 
 patch_note:
     statuses:
-        buffed: "Guardian Angel, Blade of the Ruined King, Essence Reaver, Edge of Night, Needlessly Large Rod, Luden's Echo, Lich Bane, Horizon Focus, Staff of Flowing Waters, Imperial Mandate, Oceanid's Trident, Rabadon's Deathcap, Rylai's Crystal Scepter"
-        adjusted: "Ring of Revelation, Berserker's Greaves, Mercury's Treads, Plated Steelcaps, Boots of Mana, Boots of Dynamism, Lost Chapter, Hextech Alternator, Haunting Guise, Liandry's Torment, Rod of Ages, Malignance, Archangel's Staff, Seraph's Embrace, Cosmic Drive, Riftmaker, Ardent Censer, Frozen Heart, Morellonomicon, Harmonic Echo, Fiendish Codex, Redemption, Seeker's Armguard, Infinity Orb"
+        buffed: "Guardian Angel, Blade of the Ruined King, Essence Reaver, Edge of Night, Needlessly Large Rod, Lich Bane, Horizon Focus, Imperial Mandate, Oceanid's Trident, Rabadon's Deathcap, Rylai's Crystal Scepter"
+        adjusted: "Luden's Echo, Staff of Flowing Waters, Seraph's Embrace, Tear of the Goddess, Ring of Revelation, Berserker's Greaves, Mercury's Treads, Plated Steelcaps, Boots of Mana, Boots of Dynamism, Lost Chapter, Hextech Alternator, Haunting Guise, Liandry's Torment, Rod of Ages, Malignance, Archangel's Staff, Cosmic Drive, Riftmaker, Ardent Censer, Frozen Heart, Morellonomicon, Harmonic Echo, Fiendish Codex, Redemption, Infinity Orb"
         nerfed: "Ionian Boots of Lucidity, Gluttonous Greaves, Amplifying Tome, Forbidden Idol, Yordle Trap"
         new: "Stridebreaker, Goredrinker, Quicksilver Sash, Mercurial Scimitar, Galeforce, Hextech Rocketbelt, Zhonya's Hourglass, Gargoyle Stoneplate, Locket of the Iron Solari, Shurelya's Battlesong, Mikael's Blessing, Dusk and Dawn, Blackfire Torch, Void Amethyst, Cryptbloom, Bloodletter's Curse, Verdant Barrier, Banshee's Veil, Stormsurge, Fated Ashes, Spellslinger's Shoes, Chainlaced Crushers, Gunmetal Greaves, Armored Advance, Immortal Treads, Armorcrusher Boots, Crimson Lucidity, Void Staff"
     excludes: ""

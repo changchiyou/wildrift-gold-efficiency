@@ -83,28 +83,23 @@ When new items are added or item names/passives change:
 
 ## Version Format Handling
 
-The project supports two version number formats due to a change in Wild Rift's patch note URL structure starting from version 7.0:
+Wild Rift patch note URLs may use either dash-separated or concatenated digit formats. The CI/CD workflow handles both.
 
-### Old Format (up to 6.x)
-- **URL format**: `wild-rift-patch-notes-6-3e` (with dash separator)
-- **File/folder format**: `6_3e` (with underscore separator)
-- **Display format**: `6.3e` (with dot separator)
-
-### New Format (from 7.0 onwards)
-- **URL format**: `wild-rift-patch-notes-70` (no separator, concatenated digits)
-- **File/folder format**: `7_0` (with underscore separator, same as old format)
-- **Display format**: `7.0` (with dot separator)
+### URL Formats
+- **Dash format**: `wild-rift-patch-notes-7-2` → version `7_2`
+- **Concatenated format**: `wild-rift-patch-notes-72` → version `7_2` (inserting underscore between major.minor)
+- **With suffix**: `wild-rift-patch-notes-7-2a` or `wild-rift-patch-notes-72a` → version `7_2a`
 
 ### Conversion Examples
 - URL `patch-notes-6-3e` → version `6_3e`
-- URL `patch-notes-70` → version `7_0` (inserting underscore between major.minor)
-- URL `patch-notes-70a` → version `7_0a`
+- URL `patch-notes-7-2` → version `7_2`
+- URL `patch-notes-72` → version `7_2`
+- URL `patch-notes-72a` → version `7_2a`
 
 ### Implementation Notes
-- The CI/CD workflow (`.github/workflows/auto-update-patch.yml`) automatically detects and converts both formats
-- All internal file naming uses underscore format (`6_3e`, `7_0`)
+- The CI/CD workflow (`.github/workflows/auto-update-patch.yml`) tries dash format first, then falls back to concatenated format
+- All internal file naming uses underscore format (`6_3e`, `7_2`)
 - Scripts like `copy_v2.sh` work with both formats without modification
-- Version detection tries old format first, then falls back to new format
 
 ## Important Notes
 - Project tracks gold efficiency changes across Wild Rift patches
