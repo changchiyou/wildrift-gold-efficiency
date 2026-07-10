@@ -25,9 +25,9 @@ data:
 patch_note:
     statuses:
         buffed: "Guardian Angel, Blade of the Ruined King, Essence Reaver, Edge of Night, Needlessly Large Rod, Luden's Echo, Lich Bane, Horizon Focus, Staff of Flowing Waters, Imperial Mandate, Oceanid's Trident, Rabadon's Deathcap, Rylai's Crystal Scepter"
-        adjusted: "Berserker's Greaves, Mercury's Treads, Plated Steelcaps, Boots of Mana, Boots of Dynamism, Lost Chapter, Hextech Alternator, Haunting Guise, Liandry's Torment, Rod of Ages, Malignance, Archangel's Staff, Seraph's Embrace, Cosmic Drive, Riftmaker, Ardent Censer, Frozen Heart, Morellonomicon, Harmonic Echo, Fiendish Codex, Redemption, Seeker's Armguard, Infinity Orb"
+        adjusted: "Ring of Revelation, Berserker's Greaves, Mercury's Treads, Plated Steelcaps, Boots of Mana, Boots of Dynamism, Lost Chapter, Hextech Alternator, Haunting Guise, Liandry's Torment, Rod of Ages, Malignance, Archangel's Staff, Seraph's Embrace, Cosmic Drive, Riftmaker, Ardent Censer, Frozen Heart, Morellonomicon, Harmonic Echo, Fiendish Codex, Redemption, Seeker's Armguard, Infinity Orb"
         nerfed: "Ionian Boots of Lucidity, Gluttonous Greaves, Amplifying Tome, Forbidden Idol, Yordle Trap"
-        new: "Stridebreaker, Goredrinker, Quicksilver Sash, Mercurial Scimitar, Galeforce, Hextech Rocketbelt, Zhonya's Hourglass, Gargoyle Stoneplate, Locket of the Iron Solari, Shurelya's Battlesong, Mikael's Blessing, Dusk and Dawn, Blackfire Torch, Void Amethyst, Cryptbloom, Bloodletter's Curse, Verdant Barrier, Banshee's Veil, Stormsurge, Fated Ashes, Spellslinger's Shoes, Chainlaced Crushers, Gunmetal Greaves, Armored Advance, Immortal Treads, Armorcrusher Boots, Crimson Lucidity"
+        new: "Stridebreaker, Goredrinker, Quicksilver Sash, Mercurial Scimitar, Galeforce, Hextech Rocketbelt, Zhonya's Hourglass, Gargoyle Stoneplate, Locket of the Iron Solari, Shurelya's Battlesong, Mikael's Blessing, Dusk and Dawn, Blackfire Torch, Void Amethyst, Cryptbloom, Bloodletter's Curse, Verdant Barrier, Banshee's Veil, Stormsurge, Fated Ashes, Spellslinger's Shoes, Chainlaced Crushers, Gunmetal Greaves, Armored Advance, Immortal Treads, Armorcrusher Boots, Crimson Lucidity, Void Staff"
     excludes: ""
     excludes_sep: ","
     compare:
@@ -35,7 +35,7 @@ patch_note:
         items: items_7_1h
         stats: stats_7_1h
         item_prefix: 7.1h
-        force: "Gluttonous Greaves (Balanced of Power - AD, Convertion - 0 Stacks)~Gluttonous Greaves;Gluttonous Greaves (Balanced of Power - AD, Convertion - Full Stacks)~Gluttonous Greaves;Gluttonous Greaves (Balanced of Power - AP, Convertion - 0 Stacks)~Gluttonous Greaves;Gluttonous Greaves (Balanced of Power - AP, Convertion - Full Stacks)~Gluttonous Greaves"
+        force: "Rabadon's Deathcap (Overkill)~Rabadon's Deathcap (Overkill - lv15);Gluttonous Greaves (Balanced of Power - AD, Convertion - 0 Stacks)~Gluttonous Greaves;Gluttonous Greaves (Balanced of Power - AD, Convertion - Full Stacks)~Gluttonous Greaves;Gluttonous Greaves (Balanced of Power - AP, Convertion - 0 Stacks)~Gluttonous Greaves;Gluttonous Greaves (Balanced of Power - AP, Convertion - Full Stacks)~Gluttonous Greaves"
         force_sep: "~;"
         excludes: ""
         excludes_sep: ","

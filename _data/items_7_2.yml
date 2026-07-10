@@ -291,10 +291,10 @@
     type: Move Speed
     value: 30
   - type: Unstable Passives' Stats
-- amount: 110.66%
+- amount: 106.77%
   category: PHYSICAL DAMAGE ITEMS
   cost: 2700
-  formula: (25*41.67+300*0.57+20*60.0+13.8*41.67)/2700
+  formula: (25*41.67+300*0.22+20*60.0+13.8*41.67)/2700
   image: https://static.wikia.nocookie.net/leagueoflegends/images/d/dd/Manamune_item_old2.png
   name: Manamune (Awe - lv1 EZ 390 Mana)
   stats:
@@ -311,10 +311,10 @@
     ref_type: Max Mana
     type: Attack Damage
     value: 13.8
-- amount: 131.83%
+- amount: 127.94%
   category: PHYSICAL DAMAGE ITEMS
   cost: 2700
-  formula: (25*41.67+300*0.57+20*60.0+27.52*41.67)/2700
+  formula: (25*41.67+300*0.22+20*60.0+27.52*41.67)/2700
   image: https://static.wikia.nocookie.net/leagueoflegends/images/d/dd/Manamune_item_old2.png
   name: Manamune (Awe - lv15 EZ 1076 Mana)
   stats:
@@ -331,10 +331,10 @@
     ref_type: Max Mana
     type: Attack Damage
     value: 27.52
-- amount: 147.04%
+- amount: 134.08%
   category: PHYSICAL DAMAGE ITEMS
   cost: 2700
-  formula: (25*41.67+1000*0.57+20*60.0+27.8*41.67)/2700
+  formula: (25*41.67+1000*0.22+20*60.0+27.8*41.67)/2700
   image: https://static.wikia.nocookie.net/leagueoflegends/images/5/51/Muramana_item_old2.png
   name: Muramana (Awe - lv1 EZ 390 Mana)
   stats:
@@ -351,10 +351,10 @@
     ref_type: Max Mana
     type: Attack Damage
     value: 27.8
-- amount: 168.22%
+- amount: 155.26%
   category: PHYSICAL DAMAGE ITEMS
   cost: 2700
-  formula: (25*41.67+1000*0.57+20*60.0+41.52*41.67)/2700
+  formula: (25*41.67+1000*0.22+20*60.0+41.52*41.67)/2700
   image: https://static.wikia.nocookie.net/leagueoflegends/images/5/51/Muramana_item_old2.png
   name: Muramana (Awe - lv15 EZ 1076 Mana)
   stats:
@@ -769,10 +769,10 @@
   - passive: Set Sail
     type: '% Move Speed'
     value: 5
-- amount: 120.89%
+- amount: 114.64%
   category: MAGIC DAMAGE ITEMS
   cost: 2800
-  formula: (100*25.0+500*0.57+10*60.0)/2800
+  formula: (100*25.0+500*0.22+10*60.0)/2800
   image: https://static.wikia.nocookie.net/leagueoflegends/images/1/1e/Luden%27s_Tempest_item.png
   name: Luden's Echo
   stats:
@@ -795,61 +795,12 @@
     value: 75
   - type: Ability Haste
     value: 15
-- amount: 105.47%
-  category: MAGIC DAMAGE ITEMS
-  cost: 3000
-  formula: (60*25.0+7*50.0+200*0.57+20*60.0)/3000
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/b/b6/Crown_of_the_Shattered_Queen_item.png
-  name: Crown of the Shattered Queen
-  stats:
-  - type: Ability Power
-    value: 60
-  - type: '% Magic Penetration'
-    value: 7
-  - type: Max Mana
-    value: 200
-  - type: Ability Haste
-    value: 20
-- amount: 122.13%
-  category: MAGIC DAMAGE ITEMS
-  cost: 3000
-  formula: (60*25.0+7*50.0+200*0.57+20*60.0+20*25.0)/3000
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/b/b6/Crown_of_the_Shattered_Queen_item.png
-  name: Crown of the Shattered Queen (Safeguard & Poise)
-  stats:
-  - type: Ability Power
-    value: 60
-  - type: '% Magic Penetration'
-    value: 7
-  - type: Max Mana
-    value: 200
-  - type: Ability Haste
-    value: 20
-  - passive: Safeguard & Poise
-    type: Ability Power
-    value: 20
-  - type: Unstable Passives' Stats
 - amount: 124.26%
   category: MAGIC DAMAGE ITEMS
   cost: 3400
   formula: (130*25.0+39.0*25.0)/3400
   image: https://static.wikia.nocookie.net/leagueoflegends/images/3/37/Rabadon%27s_Deathcap_item_old2.png
-  name: Rabadon's Deathcap (Overkill - lv1)
-  stats:
-  - type: Ability Power
-    value: 130
-  - formula: 130*0.3
-    passive: Overkill
-    ratio: 0.3
-    ref_type: Ability Power
-    type: Ability Power
-    value: 39.0
-- amount: 124.26%
-  category: MAGIC DAMAGE ITEMS
-  cost: 3400
-  formula: (130*25.0+39.0*25.0)/3400
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/3/37/Rabadon%27s_Deathcap_item_old2.png
-  name: Rabadon's Deathcap (Overkill - lv15)
+  name: Rabadon's Deathcap (Overkill)
   stats:
   - type: Ability Power
     value: 130
@@ -881,10 +832,10 @@
     value: 300
   - type: Ability Power
     value: 70
-- amount: 97.91%
+- amount: 92.72%
   category: MAGIC DAMAGE ITEMS
   cost: 2700
-  formula: (350*3.33+50*25.0+400*0.57)/2700
+  formula: (350*3.33+50*25.0+400*0.22)/2700
   image: https://static.wikia.nocookie.net/leagueoflegends/images/7/76/Rod_of_Ages_WR_item.png
   name: Rod of Ages
   stats:
@@ -894,10 +845,10 @@
     value: 50
   - type: Max Mana
     value: 400
-- amount: 150.52%
+- amount: 141.44%
   category: MAGIC DAMAGE ITEMS
   cost: 2700
-  formula: (350*3.33+50*25.0+400*0.57+150*3.33+30*25.0+300*0.57)/2700
+  formula: (350*3.33+50*25.0+400*0.22+150*3.33+30*25.0+300*0.22)/2700
   image: https://static.wikia.nocookie.net/leagueoflegends/images/7/76/Rod_of_Ages_WR_item.png
   name: Rod of Ages (Veteran)
   stats:
@@ -944,10 +895,10 @@
   - passive: Magic Fang
     type: Ability Power
     value: 50
-- amount: 117.67%
+- amount: 111.83%
   category: MAGIC DAMAGE ITEMS
   cost: 3000
-  formula: (60*25.0+500*0.57+25*60.0+9.8*25.0)/3000
+  formula: (60*25.0+500*0.22+25*60.0+9.8*25.0)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/4/47/Archangel%27s_Staff_item.png
   name: Archangel's Staff (Awe - lv1 Kass 480 MP)
   stats:
@@ -964,10 +915,10 @@
     ref_type: Max Mana
     type: Ability Power
     value: 9.8
-- amount: 125.25%
+- amount: 119.42%
   category: MAGIC DAMAGE ITEMS
   cost: 3000
-  formula: (60*25.0+500*0.57+25*60.0+18.9*25.0)/3000
+  formula: (60*25.0+500*0.22+25*60.0+18.9*25.0)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/4/47/Archangel%27s_Staff_item.png
   name: Archangel's Staff (Awe - lv15 Kass 1390 MP)
   stats:
@@ -984,10 +935,10 @@
     ref_type: Max Mana
     type: Ability Power
     value: 18.9
-- amount: 150.80%
+- amount: 136.80%
   category: MAGIC DAMAGE ITEMS
   cost: 3000
-  formula: (60*25.0+1200*0.57+25*60.0+33.6*25.0)/3000
+  formula: (60*25.0+1200*0.22+25*60.0+33.6*25.0)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/b/b9/Seraph%27s_Embrace_item.png
   name: Seraph's Embrace (Awe - lv1 Kass 480 MP)
   stats:
@@ -1004,10 +955,10 @@
     ref_type: Max Mana
     type: Ability Power
     value: 33.6
-- amount: 165.97%
+- amount: 151.97%
   category: MAGIC DAMAGE ITEMS
   cost: 3000
-  formula: (60*25.0+1200*0.57+25*60.0+51.8*25.0)/3000
+  formula: (60*25.0+1200*0.22+25*60.0+51.8*25.0)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/b/b9/Seraph%27s_Embrace_item.png
   name: Seraph's Embrace (Awe - lv15 Kass 1390 MP)
   stats:
@@ -1044,10 +995,10 @@
     value: 5
   - type: '% Mana Regeneration'
     value: 50
-- amount: 113.86%
+- amount: 105.63%
   category: SUPPORT ITEMS
   cost: 2800
-  formula: (100*3.33+50*25.0+300*0.57+15*60.0+8*41.75+50*4)/2800
+  formula: (100*3.33+50*25.0+300*0.22+15*60.0+5*41.75+50*4)/2800
   image: https://static.wikia.nocookie.net/leagueoflegends/images/4/47/Harmonic_Echo_WR_item.png
   name: Harmonic Echo
   stats:
@@ -1060,31 +1011,13 @@
   - type: Ability Haste
     value: 15
   - type: '% Heal and shield strength'
-    value: 8
+    value: 5
   - type: '% Mana Regeneration'
     value: 50
-- amount: 132.90%
-  category: MAGIC DAMAGE ITEMS
-  cost: 3000
-  formula: (150*3.33+65*25.0+7*50.0+20*60.0+15*20.83)/3000
-  image: https://wiki.leagueoflegends.com/en-us/images/Awakened_Soulstealer_WR_item.png?29590
-  name: Awakened Soulstealer
-  stats:
-  - type: Max Health
-    value: 150
-  - type: Ability Power
-    value: 65
-  - type: '% Magic Penetration'
-    value: 7
-  - type: Ability Haste
-    value: 20
-  - passive: Soul Hunt
-    type: Magic Penetration
-    value: 15
-- amount: 98.79%
+- amount: 61.80%
   category: MAGIC DAMAGE ITEMS
   cost: 3100
-  formula: (110*25.0+15*20.83)/3100
+  formula: (110*25.0+15*-55.62)/3100
   image: https://static.wikia.nocookie.net/leagueoflegends/images/b/bf/Infinity_Orb_WR_item.png
   name: Infinity Orb
   stats:
@@ -1096,7 +1029,7 @@
 - amount: 115.67%
   category: SUPPORT ITEMS
   cost: 2500
-  formula: (100*3.33+50*25.0+0*0.57+15*60.0+5*41.75+50*4)/2500
+  formula: (100*3.33+50*25.0+15*60.0+5*41.75+50*4)/2500
   image: https://static.wikia.nocookie.net/leagueoflegends/images/b/bf/Staff_of_Flowing_Water_item.png
   name: Staff of Flowing Waters
   stats:
@@ -1104,8 +1037,6 @@
     value: 100
   - type: Ability Power
     value: 50
-  - type: Max Mana
-    value: 0
   - type: Ability Haste
     value: 15
   - type: '% Heal and shield strength'
@@ -1115,7 +1046,7 @@
 - amount: 161.67%
   category: SUPPORT ITEMS
   cost: 2500
-  formula: (100*3.33+50*25.0+0*0.57+15*60.0+5*41.75+10*60.0+30*25.0)/2500
+  formula: (100*3.33+50*25.0+15*60.0+5*41.75+10*60.0+30*25.0)/2500
   image: https://static.wikia.nocookie.net/leagueoflegends/images/b/bf/Staff_of_Flowing_Water_item.png
   name: Staff of Flowing Waters (Rapids - lv1)
   stats:
@@ -1123,8 +1054,6 @@
     value: 100
   - type: Ability Power
     value: 50
-  - type: Max Mana
-    value: 0
   - type: Ability Haste
     value: 15
   - type: '% Heal and shield strength'
@@ -1139,7 +1068,7 @@
 - amount: 181.67%
   category: SUPPORT ITEMS
   cost: 2500
-  formula: (100*3.33+50*25.0+0*0.57+15*60.0+5*41.75+10*60.0+50*25.0)/2500
+  formula: (100*3.33+50*25.0+15*60.0+5*41.75+10*60.0+50*25.0)/2500
   image: https://static.wikia.nocookie.net/leagueoflegends/images/b/bf/Staff_of_Flowing_Water_item.png
   name: Staff of Flowing Waters (Rapids - lv15)
   stats:
@@ -1147,8 +1076,6 @@
     value: 100
   - type: Ability Power
     value: 50
-  - type: Max Mana
-    value: 0
   - type: Ability Haste
     value: 15
   - type: '% Heal and shield strength'
@@ -1219,10 +1146,10 @@
   - passive: Hyperdrive
     type: '% Move Speed'
     value: 5
-- amount: 169.47%
+- amount: 160.13%
   category: MAGIC DAMAGE ITEMS
   cost: 3000
-  formula: (70*25.0+300*3.33+25*60.0+5*15.0+30*16.0+17.5*16.0)/3000
+  formula: (70*25.0+300*3.33+25*60.0+5*15.0+30*16.0)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/7/73/Cosmic_Drive_item.png
   name: Cosmic Drive (Spellweaving)
   stats:
@@ -1238,17 +1165,10 @@
   - passive: Spellweaving
     type: Move Speed
     value: 30
-  - formula: 25*0.7
-    passive: Spellweaving
-    ratio: 0.7
-    ref_type: Ability Haste
-    type: Move Speed
-    value: 17.5
-  - type: Unstable Passives' Stats
-- amount: 94.05%
+- amount: 123.08%
   category: MAGIC DAMAGE ITEMS
   cost: 3100
-  formula: (350*3.33+70*25.0)/3100
+  formula: (350*3.33+70*25.0+15*60.0+11*0)/3100
   image: https://static.wikia.nocookie.net/leagueoflegends/images/f/f8/Riftmaker_WR_item.png
   name: Riftmaker
   stats:
@@ -1256,6 +1176,11 @@
     value: 350
   - type: Ability Power
     value: 70
+  - type: Ability Haste
+    value: 15
+  - passive: Assimilation
+    type: '% Magic Vamp'
+    value: 11
 - amount: 129.63%
   category: MAGIC DAMAGE ITEMS
   cost: 2700
@@ -1267,93 +1192,10 @@
     value: 80
   - type: Ability Haste
     value: 25
-- amount: 129.40%
-  category: MAGIC DAMAGE ITEMS
-  cost: 3100
-  formula: (300*3.33+60*25.0+7*50.0+15*60.0+10.5*25.0)/3100
-  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Psychic_Projector_WR_item.png/80px-Psychic_Projector_WR_item.png?298a1
-  name: Psychic Projector (Conversion)
-  stats:
-  - type: Max Health
-    value: 300
-  - type: Ability Power
-    value: 60
-  - type: '% Magic Penetration'
-    value: 7
-  - type: Ability Haste
-    value: 15
-  - formula: 300*0.035
-    passive: Conversion
-    ratio: 0.035
-    ref_type: Max Health
-    type: Ability Power
-    value: 10.5
-- amount: 244.52%
-  category: MAGIC DAMAGE ITEMS
-  cost: 3100
-  formula: (300*3.33+60*25.0+7*50.0+15*60.0+33.25*25.0+80.0*25.0+40.0*25.0)/3100
-  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Psychic_Projector_WR_item.png/80px-Psychic_Projector_WR_item.png?298a1
-  name: Psychic Projector (Conversion, Projection)
-  stats:
-  - type: Max Health
-    value: 300
-  - type: Ability Power
-    value: 60
-  - type: '% Magic Penetration'
-    value: 7
-  - type: Ability Haste
-    value: 15
-  - formula: 950*0.035
-    passive: Conversion
-    ratio: 0.035
-    ref: 950
-    type: Ability Power
-    value: 33.25
-  - formula: 400.0*0.2
-    passive: Projection
-    ratio: 0.2
-    ref: 400.0
-    type: Armor
-    value: 80.0
-  - formula: 400.0*0.1
-    passive: Projection
-    ratio: 0.1
-    ref: 400.0
-    type: Magic Resistance
-    value: 40.0
-  - type: Unstable Passives' Stats
-- amount: 128.20%
-  category: MAGIC DAMAGE ITEMS
-  cost: 3000
-  formula: (85*25.0+7*50.0+300*0.57+20*60.0)/3000
-  image: https://i.imgur.com/hklGBR8.png
-  name: Bandle Fantasy
-  stats:
-  - type: Ability Power
-    value: 85
-  - type: '% Magic Penetration'
-    value: 7
-  - type: Max Mana
-    value: 300
-  - type: Ability Haste
-    value: 20
-- amount: 127.22%
+- amount: 165.19%
   category: MAGIC DAMAGE ITEMS
   cost: 2700
-  formula: (90*25.0+500*0.57+15*60.0)/2700
-  image: https://wiki.leagueoflegends.com/en-us/images/Malignance_item.png?21ed2
-  name: Malignance
-  stats:
-  - type: Ability Power
-    value: 90
-  - type: Max Mana
-    value: 500
-  - type: Ability Haste
-    value: 15
-- amount: 171.67%
-  category: MAGIC DAMAGE ITEMS
-  cost: 2700
-  formula: (90*25.0+500*0.57+15*60.0+20*60.0)/2700
+  formula: (90*25.0+500*0.22+15*60.0+20*60.0)/2700
   image: https://wiki.leagueoflegends.com/en-us/images/Malignance_item.png?21ed2
   name: Malignance (Scorn)
   stats:
@@ -1462,10 +1304,10 @@
     value: 100
   - type: Ability Haste
     value: 20
-- amount: 129.84%
+- amount: 127.02%
   category: DEFENSE ITEMS
   cost: 3100
-  formula: (250*3.33+50*25.0+250*0.57+30*60.0)/3100
+  formula: (250*3.33+50*25.0+250*0.22+30*60.0)/3100
   image: https://static.wikia.nocookie.net/leagueoflegends/images/8/8e/Frostfire_Gauntlet_item_old.png
   name: Iceborn Gauntlet
   stats:
@@ -1509,10 +1351,10 @@
     type: Move Speed
     value: 40
   - type: Unstable Passives' Stats
-- amount: 116.70%
+- amount: 114.76%
   category: DEFENSE ITEMS, SUPPORT ITEMS
   cost: 2700
-  formula: (350*3.33+40*25.0+150*0.57+15*60.0)/2700
+  formula: (350*3.33+40*25.0+150*0.22+15*60.0)/2700
   image: https://wiki.leagueoflegends.com/en-us/images/Zeke%27s_Convergence_item.png
   name: Zeke's Convergence
   stats:
@@ -1524,10 +1366,10 @@
     value: 150
   - type: Ability Haste
     value: 15
-- amount: 101.80%
+- amount: 95.07%
   category: DEFENSE ITEMS
   cost: 2600
-  formula: (350*3.33+500*0.57+15*60.0+89.0*3.33)/2600
+  formula: (350*3.33+500*0.22+15*60.0+89.0*3.33)/2600
   image: https://wiki.leagueoflegends.com/en-us/images/Winter%27s_Approach_item.png
   name: Winter's Approach (Awe - lv1 Voli 390 MP)
   stats:
@@ -1544,10 +1386,10 @@
     ref_type: Max Mana
     type: Max Health
     value: 89.0
-- amount: 113.46%
+- amount: 106.73%
   category: DEFENSE ITEMS
   cost: 2600
-  formula: (350*3.33+500*0.57+15*60.0+180.0*3.33)/2600
+  formula: (350*3.33+500*0.22+15*60.0+180.0*3.33)/2600
   image: https://wiki.leagueoflegends.com/en-us/images/Winter%27s_Approach_item.png
   name: Winter's Approach (Awe - lv15 Voli 1300 MP)
   stats:
@@ -1564,10 +1406,10 @@
     ref_type: Max Mana
     type: Max Health
     value: 180.0
-- amount: 126.11%
+- amount: 109.96%
   category: DEFENSE ITEMS
   cost: 2600
-  formula: (350*3.33+1200*0.57+15*60.0+159.0*3.33)/2600
+  formula: (350*3.33+1200*0.22+15*60.0+159.0*3.33)/2600
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Fimbulwinter_WR_item.png/80px-Fimbulwinter_WR_item.png?ff71d
   name: Fimbulwinter (Awe - lv1 Voli 390 MP)
   stats:
@@ -1584,10 +1426,10 @@
     ref_type: Max Mana
     type: Max Health
     value: 159.0
-- amount: 137.77%
+- amount: 121.62%
   category: DEFENSE ITEMS
   cost: 2600
-  formula: (350*3.33+1200*0.57+15*60.0+250.0*3.33)/2600
+  formula: (350*3.33+1200*0.22+15*60.0+250.0*3.33)/2600
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Fimbulwinter_WR_item.png/80px-Fimbulwinter_WR_item.png?ff71d
   name: Fimbulwinter (Awe - lv15 Voli 1300 MP)
   stats:
@@ -1636,10 +1478,10 @@
     type: '% Move Speed'
     value: 10
   - type: Unstable Passives' Stats
-- amount: 126.13%
+- amount: 122.83%
   category: DEFENSE ITEMS, SUPPORT ITEMS
   cost: 2650
-  formula: (80*25.0+250*0.57+20*60.0)/2650
+  formula: (80*25.0+250*0.22+20*60.0)/2650
   image: https://wiki.leagueoflegends.com/en-us/images/Frozen_Heart_item.png
   name: Frozen Heart
   stats:
@@ -1972,12 +1814,16 @@
     value: 45
   - type: '% Mana Regeneration'
     value: 50
-- amount: 150.97%
+- amount: 100%
   category: BOOTS
   cost: 1200
-  formula: (25*25.0+75*4+45*16.0+8*20.83)/1200
+  formula: Base Item
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Boots_of_Mana_WR_item.png/80px-Boots_of_Mana_WR_item.png?b7311
   name: Boots of Mana
+  second_base:
+    formula: (1200-25*25.0-75*4-45*16.0)/8
+    type: Magic Penetration
+    value: -55.62
   stats:
   - type: Ability Power
     value: 25
@@ -1988,10 +1834,10 @@
   - passive: Magic Break
     type: Magic Penetration
     value: 8
-- amount: 125.97%
+- amount: 75.00%
   category: BOOTS
   cost: 1200
-  formula: (25*25.0+45*16.0+50*0+8*20.83)/1200
+  formula: (25*25.0+45*16.0+50*0+8*-55.62)/1200
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Boots_of_Mana_WR_item.png/80px-Boots_of_Mana_WR_item.png?b7311
   name: Boots of Mana (Equilibrium)
   stats:
@@ -2361,28 +2207,32 @@
     value: 175
   - type: Attack Damage
     value: 15
-- amount: 85.67%
-  category: MID TIER ITEMS
-  cost: 900
-  formula: (300*0.57+10*60.0)/900
+- amount: 68.80%
+  category: BASIC ITEMS
+  cost: 500
+  formula: (200*0.22+5*60.0)/500
   image: https://wiki.leagueoflegends.com/en-us/images/Tear_of_the_Goddess_item.png
   name: Tear of the Goddess
   stats:
   - type: Max Mana
-    value: 300
+    value: 200
   - type: Ability Haste
-    value: 10
-- amount: 130.00%
-  category: MID TIER ITEMS
-  cost: 900
-  formula: (300*0.57+10*60.0+700*0.57)/900
+    value: 5
+- amount: 100%
+  category: BASIC ITEMS
+  cost: 500
+  formula: Base Item
   image: https://wiki.leagueoflegends.com/en-us/images/Tear_of_the_Goddess_item.png
   name: Tear of the Goddess (Mana Charge)
+  second_base:
+    formula: (500-5*60.0)/900
+    type: Max Mana
+    value: 0.22
   stats:
   - type: Max Mana
-    value: 300
+    value: 200
   - type: Ability Haste
-    value: 10
+    value: 5
   - passive: Mana Charge
     type: Max Mana
     value: 700
@@ -2402,10 +2252,10 @@
   - passive: Wisp
     type: '% Move Speed'
     value: 5
-- amount: 132.42%
+- amount: 126.58%
   category: MID TIER ITEMS
   cost: 1200
-  formula: (35*25.0+200*0.57+10*60.0)/1200
+  formula: (35*25.0+200*0.22+10*60.0)/1200
   image: https://wiki.leagueoflegends.com/en-us/images/Lost_Chapter_item.png
   name: Lost Chapter
   stats:
@@ -2473,22 +2323,6 @@
   stats:
   - type: Ability Power
     value: 35
-- amount: 100%
-  category: MID TIER ITEMS
-  cost: 1000
-  formula: Base Item
-  image: https://wiki.leagueoflegends.com/en-us/images/Prophet%27s_Pendant_WR_item.png
-  name: Prophet's Pendant
-  second_base:
-    formula: (1000-30*25.0)/12
-    type: Magic Penetration
-    value: 20.83
-  stats:
-  - type: Ability Power
-    value: 30
-  - passive: Doomsayer
-    type: Magic Penetration
-    value: 12
 - amount: 64.04%
   category: MID TIER ITEMS
   cost: 1300
@@ -2538,10 +2372,10 @@
   stats:
   - type: Armor
     value: 35
-- amount: 76.09%
+- amount: 66.55%
   category: MID TIER ITEMS
   cost: 1100
-  formula: (200*3.33+300*0.57)/1100
+  formula: (200*3.33+300*0.22)/1100
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Catalyst_of_Aeons_WR_item.png/80px-Catalyst_of_Aeons_WR_item.png?1f6ba
   name: Catalyst of Aeons
   stats:
@@ -2587,10 +2421,10 @@
   stats:
   - type: Magic Resistance
     value: 40
-- amount: 118.55%
+- amount: 113.30%
   category: MID TIER ITEMS
   cost: 1000
-  formula: (20*25.0+150*0.57+10*60.0)/1000
+  formula: (20*25.0+150*0.22+10*60.0)/1000
   image: https://wiki.leagueoflegends.com/en-us/images/Glacial_Buckler_item.png
   name: Glacial Shroud
   stats:
@@ -2766,35 +2600,6 @@
   stats:
   - type: Max Health
     value: 50
-- amount: 71.40%
-  category: BASIC ITEMS
-  cost: 500
-  formula: (100*0.57+5*60.0)/500
-  image: https://wiki.leagueoflegends.com/en-us/images/Sapphire_Crystal_item.png?afdb1
-  name: Sapphire Crystal
-  stats:
-  - type: Max Mana
-    value: 100
-  - type: Ability Haste
-    value: 5
-- amount: 100%
-  category: BASIC ITEMS
-  cost: 500
-  formula: Base Item
-  image: https://wiki.leagueoflegends.com/en-us/images/Sapphire_Crystal_item.png?afdb1
-  name: Sapphire Crystal (Mana Charge)
-  second_base:
-    formula: (500-5*60.0)/350
-    type: Max Mana
-    value: 0.57
-  stats:
-  - type: Max Mana
-    value: 100
-  - type: Ability Haste
-    value: 5
-  - passive: Mana Charge
-    type: Max Mana
-    value: 250
 - amount: 100%
   category: BASIC ITEMS
   cost: 500
@@ -3309,10 +3114,10 @@
     value: 20
   - type: '% Attack Speed'
     value: 25
-- amount: 124.46%
+- amount: 118.21%
   category: MAGIC DAMAGE ITEMS
   cost: 2800
-  formula: (80*25.0+500*0.57+20*60.0)/2800
+  formula: (80*25.0+500*0.22+20*60.0)/2800
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Blackfire_Torch_WR_item.png/64px-Blackfire_Torch_WR_item.png?69bb7
   name: Blackfire Torch
   stats:
@@ -3337,13 +3142,26 @@
     value: 20
   - type: '% Magic Penetration'
     value: 10
-- amount: 90.00%
+- amount: 145.83%
   category: MAGIC DAMAGE ITEMS
   cost: 3000
-  formula: (30*50.0+20*60.0)/3000
+  formula: (95*25.0+40*50.0)/3000
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Void_Staff_item.png/40px-Void_Staff_item.png
+  name: Void Staff
+  stats:
+  - type: Ability Power
+    value: 95
+  - type: '% Magic Penetration'
+    value: 40
+- amount: 152.50%
+  category: MAGIC DAMAGE ITEMS
+  cost: 3000
+  formula: (75*25.0+30*50.0+20*60.0)/3000
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Cryptbloom_item.png/40px-Cryptbloom_item.png?dc96d
   name: Cryptbloom
   stats:
+  - type: Ability Power
+    value: 75
   - type: '% Magic Penetration'
     value: 30
   - type: Ability Haste
@@ -3383,10 +3201,10 @@
     value: 105
   - type: Magic Resistance
     value: 40
-- amount: 91.46%
+- amount: 51.92%
   category: MAGIC DAMAGE ITEMS
   cost: 2900
-  formula: (90*25.0+15*20.83+6*15.0)/2900
+  formula: (90*25.0+15*-55.62+6*15.0)/2900
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Stormsurge_WR_item.png/64px-Stormsurge_WR_item.png?ed5e8
   name: Stormsurge
   stats:
@@ -3405,10 +3223,10 @@
   stats:
   - type: Ability Power
     value: 40
-- amount: 131.59%
+- amount: 69.04%
   category: BOOTS
   cost: 2200
-  formula: (40*25.0+100*4+18*20.83+8*50.0+45*16.0)/2200
+  formula: (40*25.0+100*4+18*-55.62+8*50.0+45*16.0)/2200
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Spellslinger%27s_Shoes_item.png/40px-Spellslinger%27s_Shoes_item.png?34992
   name: Spellslinger's Shoes
   stats:

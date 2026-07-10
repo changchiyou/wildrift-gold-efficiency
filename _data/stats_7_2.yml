@@ -56,7 +56,7 @@
 "Magic Penetration":
   image: "https://i.imgur.com/0w7HEMC.png"
   base_type: "second"
-  base_item: "Prophet's Pendant"
+  base_item: "Boots of Mana"
   type: "Magic"
 "% Magic Penetration":
   image: "https://i.imgur.com/0w7HEMC.png"
@@ -76,7 +76,7 @@
 "Max Mana":
   image: "https://i.imgur.com/92IctBz.png"
   base_type: "second"
-  base_item: "Sapphire Crystal (Mana Charge)"
+  base_item: "Tear of the Goddess (Mana Charge)"
   type: "Magic"
 "% Mana Regeneration":
   image: "https://i.imgur.com/mTFlXny.png"

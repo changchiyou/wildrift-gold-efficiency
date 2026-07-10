@@ -236,6 +236,7 @@ item:
     psychic-projector-conversion: Psychic Projector (Conversion)
     psychic-projector-conversion-projection: Psychic Projector (Conversion, Projection)
     rabadon-s-deathcap-overkill-lv15: Rabadon's Deathcap (Overkill - lv15)
+    rabadon-s-deathcap-overkill: Rabadon's Deathcap (Overkill)
     rabadon-s-deathcap-overkill-lv1: Rabadon's Deathcap (Overkill - lv1)
     randuin-s-omen: Randuin's Omen
     randuin-s-omen-countercurrent-4stacks: Randuin's Omen (Countercurrent - 4Stacks)
@@ -371,6 +372,7 @@ item:
     stridebreaker-stride: Stridebreaker (Stride)
     verdant-barrier: Verdant Barrier
     void-amethyst: Void Amethyst
+    void-staff: Void Staff
     zhonya-s-hourglass: Zhonya's Hourglass
 
   passive:
