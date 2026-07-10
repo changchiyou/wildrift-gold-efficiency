@@ -111,20 +111,20 @@ def extract_sections(markdown_content, section_patterns=None):
     # Default patterns for item-related sections
     if section_patterns is None:
         section_patterns = [
-            r'^#+\s+ITEMS',
-            r'^#+\s+ITEM\s+ADJUSTMENTS?',
-            r'^#+\s+ITEM\s+CHANGES?',
-            r'^#+\s+ITEM\s+UPDATES?',
-            r'^#+\s+ITEM\s+REWORKS?'
+            r'^#+\s+\*{0,2}ITEMS\*{0,2}',
+            r'^#+\s+\*{0,2}ITEM\s+ADJUSTMENTS?\*{0,2}',
+            r'^#+\s+\*{0,2}ITEM\s+CHANGES?\*{0,2}',
+            r'^#+\s+\*{0,2}ITEM\s+UPDATES?\*{0,2}',
+            r'^#+\s+\*{0,2}ITEM\s+REWORKS?\*{0,2}'
         ]
 
     # Patterns to stop extraction (end of relevant sections)
     stop_patterns = [
-        r'^#+\s+Related\s+Articles',
-        r'^#+\s+SKINS',
-        r'^#+\s+CHAMPIONS?',
-        r'^#+\s+RUNES?',
-        r'^#+\s+SUMMONER\s+SPELLS?'
+        r'^#+\s+\*{0,2}Related\s+Articles\*{0,2}',
+        r'^#+\s+\*{0,2}SKINS\*{0,2}',
+        r'^#+\s+\*{0,2}CHAMPIONS?\*{0,2}',
+        r'^#+\s+\*{0,2}RUNES?\*{0,2}',
+        r'^#+\s+\*{0,2}SUMMONER\s+SPELLS?\*{0,2}'
     ]
 
     sections = {}
@@ -167,25 +167,6 @@ def extract_sections(markdown_content, section_patterns=None):
 
     return sections
 
-
-def extract_items_section(markdown_content):
-    """
-    Extracts the items section from the Markdown content.
-    Maintained for backward compatibility.
-
-    Args:
-        markdown_content (str): Markdown content to parse
-
-    Returns:
-        str: Items section content
-    """
-    sections = extract_sections(markdown_content, [r'^#+\s+ITEMS'])
-
-    # Return the first (and likely only) items section found
-    for _, content in sections.items():
-        return content
-
-    return ""
 
 
 def webpage_to_markdown(url, max_retries=3):
@@ -237,12 +218,6 @@ Examples:
         help="Output in JSON format with items and og:image"
     )
 
-    parser.add_argument(
-        "--all-sections",
-        action="store_true",
-        help="Extract all item-related sections (ITEMS, ITEM ADJUSTMENTS, etc.) instead of just ITEMS"
-    )
-
     args = parser.parse_args()
 
     # Validate URL format
@@ -263,44 +238,20 @@ Examples:
     if not markdown_content:
         sys.exit(1)
 
-    if getattr(args, 'all_sections', False):
-        # Extract all item-related sections
-        sections = extract_sections(markdown_content)
-        if not sections:
-            sys.exit(1)
-        content = sections
-    else:
-        # Backward compatibility - extract only ITEMS section
-        items_section = extract_items_section(markdown_content)
-        if not items_section.strip():
-            sys.exit(1)
-        content = items_section.strip()
+    sections = extract_sections(markdown_content)
+    if not sections:
+        sys.exit(1)
 
     # Extract og:image
     og_image_url = extract_og_image(html_content)
 
     if args.json:
-        # Output JSON format
-        if getattr(args, 'all_sections', False):
-            result = {
-                "sections": content,
-                "og_image": og_image_url
-            }
-        else:
-            result = {
-                "items": content,
-                "og_image": og_image_url
-            }
-        print(json.dumps(result, ensure_ascii=False, indent=2))
+        print(json.dumps({"sections": sections, "og_image": og_image_url}, ensure_ascii=False, indent=2))
     else:
-        # Output text format
-        if getattr(args, 'all_sections', False):
-            for section_name, section_content in content.items():
-                print(f"=== {section_name} ===")
-                print(section_content)
-                print()
-        else:
-            print(content)
+        for section_name, section_content in sections.items():
+            print(f"=== {section_name} ===")
+            print(section_content)
+            print()
 
 
 if __name__ == "__main__":

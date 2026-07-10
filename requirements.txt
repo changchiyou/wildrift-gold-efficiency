@@ -1,3 +1,4 @@
 pyyaml
 markdownify
 requests
+beautifulsoup4
