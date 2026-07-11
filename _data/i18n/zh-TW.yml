@@ -5,6 +5,7 @@ page:
   title: 激鬥裝備面板價值
 nav:
   comments: '💬 留言'
+  active-items: '📌 主動效果裝備'
   physical-damage-items: '📌 物理裝備'
   magic-damage-items: '📌 魔法裝備'
   defence-items: '📌 防禦裝備'
@@ -75,6 +76,7 @@ stat:
     max-health: 最大生命
     percentage-health-regen: "% 生命回復"
     percentage-heal-and-shield-strength: "% 治療和護盾量"
+    percentage-tenacity: "% 韌性"
     # Others
     move-speed: 跑速
     percentage-move-speed: "% 跑速"
@@ -234,6 +236,7 @@ item:
     psychic-projector-conversion: 靈能投射器 (轉換)
     psychic-projector-conversion-projection: 靈能投射器 (轉換 - 投影)
     rabadon-s-deathcap-overkill-lv15: 死亡之帽 (狂弒 - lv15)
+    rabadon-s-deathcap-overkill: 死亡之帽 (狂弒)
     rabadon-s-deathcap-overkill-lv1: 死亡之帽 (狂弒 - lv1)
     randuin-s-omen: 蘭頓之兆
     randuin-s-omen-countercurrent-4stacks: 蘭頓之兆 (逆流 -  滿層)
@@ -344,11 +347,11 @@ item:
     fated-ashes: 命定灰燼
     galeforce: 狂風之力
     gargoyle-stoneplate: 石像鬼磐核
+    goredrinker: 飲血戰錘
     gluttonous-greaves-balanced-of-power-ad-convertion-0-stacks: 貪婪護脛 (力量平衡 - 物理, 轉換 - 0 層)
     gluttonous-greaves-balanced-of-power-ad-convertion-full-stacks: 貪婪護脛 (力量平衡 - 物理, 轉換 - 滿層)
     gluttonous-greaves-balanced-of-power-ap-convertion-0-stacks: 貪婪護脛 (力量平衡 - 魔法, 轉換 - 0 層)
     gluttonous-greaves-balanced-of-power-ap-convertion-full-stacks: 貪婪護脛 (力量平衡 - 魔法, 轉換 - 滿層)
-    goredrinker: 飲血戰錘
     gunmetal-greaves: 槍銅護脛
     gunmetal-greaves-noxian-gait-melee: 槍銅護脛 (諾克薩斯步法 - 近戰)
     gunmetal-greaves-noxian-gait-range: 槍銅護脛 (諾克薩斯步法 - 遠程)
@@ -362,7 +365,6 @@ item:
     mercurial-scimitar: 水星彎刀
     mikael-s-blessing: 米凱的祝福
     quicksilver-sash: 水銀飾帶
-    rabadon-s-deathcap-overkill: 死亡之帽 (狂弒)
     shurelya-s-battlesong: 蘇瑞亞的戰歌
     spellslinger-s-shoes: 魔法使之鞋
     stormsurge: 雷霆風暴
@@ -447,16 +449,12 @@ item:
     tyranny: 暴政
     hexcharged: 海克斯充能
     overdrive: 能量過載
-    balanced-of-power: 力量平衡
     baleful-blaze: 厄夜灼炎
     blackfire: 黑焰
     blessed-blade: 護佑之鋒
     cloudburst: 狂暴驟雨
-    cloudwalker: 雲行者
-    convertion: 轉換
     noxian-endurance: 諾克薩斯耐力賽
     noxian-gait: 諾克薩斯步法
-    noxian-haste: 諾克薩斯加速
     noxian-persistence: 諾克薩斯固若金湯
     spellblade: 魔法彎刀
     stride: 疾行
@@ -464,3 +462,7 @@ item:
     vile-decay: 惡毒腐蝕
     void-corruption: 虛空腐化
     void-infusion: 虛空注入
+    balanced-of-power: 力量平衡
+    cloudwalker: 雲行者
+    convertion: 轉換
+    noxian-haste: 諾克薩斯加速
