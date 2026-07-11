@@ -329,6 +329,49 @@ item:
     experimental-hexplate-hexcharged-overdrive-melee: 實驗型海克斯板甲 (海克斯充能, 能量過載 - 近戰)
     experimental-hexplate-hexcharged-overdrive-range: 實驗型海克斯板甲 (海克斯充能, 能量過載 - 遠程)
     lord-dominik-s-regards: 多明尼克的問候
+    armorcrusher-boots: 碎甲者之靴
+    armorcrusher-boots-cloudwalker: 碎甲者之靴 (雲行者)
+    armored-advance: 裝甲戰靴
+    banshee-s-veil: 女妖面紗
+    blackfire-torch: 黑焰火炬
+    bloodletter-s-curse: 血書詛咒
+    chainlaced-crushers: 鎖鏈軍靴
+    crimson-lucidity: 血色法靴
+    crimson-lucidity-noxian-haste-melee: 血色法靴 (諾克薩斯加速 - 近戰)
+    crimson-lucidity-noxian-haste-range: 血色法靴 (諾克薩斯加速 - 遠程)
+    cryptbloom: 死墓之花
+    dusk-and-dawn: 暮夜與黎明
+    fated-ashes: 命定灰燼
+    galeforce: 狂風之力
+    gargoyle-stoneplate: 石像鬼磐核
+    gluttonous-greaves-balanced-of-power-ad-convertion-0-stacks: 貪婪護脛 (力量平衡 - 物理, 轉換 - 0 層)
+    gluttonous-greaves-balanced-of-power-ad-convertion-full-stacks: 貪婪護脛 (力量平衡 - 物理, 轉換 - 滿層)
+    gluttonous-greaves-balanced-of-power-ap-convertion-0-stacks: 貪婪護脛 (力量平衡 - 魔法, 轉換 - 0 層)
+    gluttonous-greaves-balanced-of-power-ap-convertion-full-stacks: 貪婪護脛 (力量平衡 - 魔法, 轉換 - 滿層)
+    goredrinker: 飲血戰錘
+    gunmetal-greaves: 槍銅護脛
+    gunmetal-greaves-noxian-gait-melee: 槍銅護脛 (諾克薩斯步法 - 近戰)
+    gunmetal-greaves-noxian-gait-range: 槍銅護脛 (諾克薩斯步法 - 遠程)
+    hextech-rocketbelt: 海克斯科技火箭腰帶
+    immortal-treads: 不朽之靴
+    immortal-treads-balanced-of-power-ad-convertion-0-stacks: 不朽之靴 (力量平衡 - 物理, 轉換 - 0 層)
+    immortal-treads-balanced-of-power-ad-convertion-full-stacks: 不朽之靴 (力量平衡 - 物理, 轉換 - 滿層)
+    immortal-treads-balanced-of-power-ap-convertion-0-stacks: 不朽之靴 (力量平衡 - 魔法, 轉換 - 0 層)
+    immortal-treads-balanced-of-power-ap-convertion-full-stacks: 不朽之靴 (力量平衡 - 魔法, 轉換 - 滿層)
+    locket-of-the-iron-solari: 日輪的加冕
+    mercurial-scimitar: 水星彎刀
+    mikael-s-blessing: 米凱的祝福
+    quicksilver-sash: 水銀飾帶
+    rabadon-s-deathcap-overkill: 死亡之帽 (狂弒)
+    shurelya-s-battlesong: 蘇瑞亞的戰歌
+    spellslinger-s-shoes: 魔法使之鞋
+    stormsurge: 雷霆風暴
+    stridebreaker: 步履破壞者
+    stridebreaker-stride: 步履破壞者 (疾行)
+    verdant-barrier: 蒼翠屏障
+    void-amethyst: 虛空紫晶
+    void-staff: 虛空之杖
+    zhonya-s-hourglass: 中婭沙漏
   passive:
     absorb: 吸收
     ardent: 熾灼
@@ -404,3 +447,20 @@ item:
     tyranny: 暴政
     hexcharged: 海克斯充能
     overdrive: 能量過載
+    balanced-of-power: 力量平衡
+    baleful-blaze: 厄夜灼炎
+    blackfire: 黑焰
+    blessed-blade: 護佑之鋒
+    cloudburst: 狂暴驟雨
+    cloudwalker: 雲行者
+    convertion: 轉換
+    noxian-endurance: 諾克薩斯耐力賽
+    noxian-gait: 諾克薩斯步法
+    noxian-haste: 諾克薩斯加速
+    noxian-persistence: 諾克薩斯固若金湯
+    spellblade: 魔法彎刀
+    stride: 疾行
+    thirsting-slash: 嗜血斬
+    vile-decay: 惡毒腐蝕
+    void-corruption: 虛空腐化
+    void-infusion: 虛空注入

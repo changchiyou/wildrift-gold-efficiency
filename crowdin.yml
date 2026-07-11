@@ -1,0 +1,6 @@
+project_id: "777056"
+api_token_env: CROWDIN_PERSONAL_TOKEN
+
+files:
+  - source: _data/i18n/en-US.yml
+    translation: _data/i18n/%locale%.yml
