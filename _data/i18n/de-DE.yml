@@ -5,6 +5,7 @@ page:
   title: Wild Rift Gold-Effizienzblatt
 nav:
   comments: '💬 Kommentare'
+  active-items: '📌 Active Items'
   physical-damage-items: '📌 Physical Damage Items'
   magic-damage-items: '📌 Magic Damage Items'
   defence-items: '📌 Defence Items'
@@ -75,6 +76,7 @@ stat:
     max-health: Max Health
     percentage-health-regen: "% Health Regen"
     percentage-heal-and-shield-strength: "% Heal and shield strength"
+    percentage-tenacity: "% Tenacity"
     # Others
     move-speed: Move Speed
     percentage-move-speed: "% Move Speed"
@@ -234,6 +236,7 @@ item:
     psychic-projector-conversion: Psychic Projector (Conversion)
     psychic-projector-conversion-projection: Psychic Projector (Conversion, Projection)
     rabadon-s-deathcap-overkill-lv15: Rabadon's Deathcap (Overkill - lv15)
+    rabadon-s-deathcap-overkill: Rabadon's Deathcap (Overkill)
     rabadon-s-deathcap-overkill-lv1: Rabadon's Deathcap (Overkill - lv1)
     randuin-s-omen: Randuin's Omen
     randuin-s-omen-countercurrent-4stacks: Randuin's Omen (Countercurrent - 4Stacks)
@@ -329,6 +332,48 @@ item:
     experimental-hexplate-hexcharged-overdrive-melee: Experimental Hexplate (Hexcharged, Overdrive - Melee)
     experimental-hexplate-hexcharged-overdrive-range: Experimental Hexplate (Hexcharged, Overdrive - Range)
     lord-dominik-s-regards: Lord Dominik's Regards
+    armorcrusher-boots: Armorcrusher Boots
+    armorcrusher-boots-cloudwalker: Armorcrusher Boots (Cloudwalker)
+    armored-advance: Armored Advance
+    banshee-s-veil: Banshee's Veil
+    blackfire-torch: Blackfire Torch
+    bloodletter-s-curse: Bloodletter's Curse
+    chainlaced-crushers: Chainlaced Crushers
+    crimson-lucidity: Crimson Lucidity
+    crimson-lucidity-noxian-haste-melee: Crimson Lucidity (Noxian Haste - Melee)
+    crimson-lucidity-noxian-haste-range: Crimson Lucidity (Noxian Haste - Range)
+    cryptbloom: Cryptbloom
+    dusk-and-dawn: Dusk and Dawn
+    fated-ashes: Fated Ashes
+    galeforce: Galeforce
+    gargoyle-stoneplate: Gargoyle Stoneplate
+    goredrinker: Goredrinker
+    gluttonous-greaves-balanced-of-power-ad-convertion-0-stacks: Gluttonous Greaves (Balanced of Power - AD, Convertion - 0 Stacks)
+    gluttonous-greaves-balanced-of-power-ad-convertion-full-stacks: Gluttonous Greaves (Balanced of Power - AD, Convertion - Full Stacks)
+    gluttonous-greaves-balanced-of-power-ap-convertion-0-stacks: Gluttonous Greaves (Balanced of Power - AP, Convertion - 0 Stacks)
+    gluttonous-greaves-balanced-of-power-ap-convertion-full-stacks: Gluttonous Greaves (Balanced of Power - AP, Convertion - Full Stacks)
+    gunmetal-greaves: Gunmetal Greaves
+    gunmetal-greaves-noxian-gait-melee: Gunmetal Greaves (Noxian Gait - Melee)
+    gunmetal-greaves-noxian-gait-range: Gunmetal Greaves (Noxian Gait - Range)
+    hextech-rocketbelt: Hextech Rocketbelt
+    immortal-treads: Immortal Treads
+    immortal-treads-balanced-of-power-ad-convertion-0-stacks: Immortal Treads (Balanced of Power - AD, Convertion - 0 Stacks)
+    immortal-treads-balanced-of-power-ad-convertion-full-stacks: Immortal Treads (Balanced of Power - AD, Convertion - Full Stacks)
+    immortal-treads-balanced-of-power-ap-convertion-0-stacks: Immortal Treads (Balanced of Power - AP, Convertion - 0 Stacks)
+    immortal-treads-balanced-of-power-ap-convertion-full-stacks: Immortal Treads (Balanced of Power - AP, Convertion - Full Stacks)
+    locket-of-the-iron-solari: Locket of the Iron Solari
+    mercurial-scimitar: Mercurial Scimitar
+    mikael-s-blessing: Mikael's Blessing
+    quicksilver-sash: Quicksilver Sash
+    shurelya-s-battlesong: Shurelya's Battlesong
+    spellslinger-s-shoes: Spellslinger's Shoes
+    stormsurge: Stormsurge
+    stridebreaker: Stridebreaker
+    stridebreaker-stride: Stridebreaker (Stride)
+    verdant-barrier: Verdant Barrier
+    void-amethyst: Void Amethyst
+    void-staff: Void Staff
+    zhonya-s-hourglass: Zhonya's Hourglass
   passive:
     absorb: Absorb
     ardent: Ardent
@@ -404,3 +449,20 @@ item:
     tyranny: Tyranny
     hexcharged: Hexcharged
     overdrive: Overdrive
+    baleful-blaze: Baleful Blaze
+    blackfire: Blackfire
+    blessed-blade: Blessed Blade
+    cloudburst: Cloudburst
+    noxian-endurance: Noxian Endurance
+    noxian-gait: Noxian Gait
+    noxian-persistence: Noxian Persistence
+    spellblade: Spellblade
+    stride: Stride
+    thirsting-slash: Thirsting Slash
+    vile-decay: Vile Decay
+    void-corruption: Void Corruption
+    void-infusion: Void Infusion
+    balanced-of-power: Balanced of Power
+    cloudwalker: Cloudwalker
+    convertion: Convertion
+    noxian-haste: Noxian Haste
