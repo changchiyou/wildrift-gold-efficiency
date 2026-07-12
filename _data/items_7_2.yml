@@ -1014,10 +1014,10 @@
     value: 5
   - type: '% Mana Regeneration'
     value: 50
-- amount: 61.80%
+- amount: 111.29%
   category: MAGIC DAMAGE ITEMS
   cost: 3100
-  formula: (110*25.0+15*-55.62)/3100
+  formula: (110*25.0+15*46.66)/3100
   image: https://static.wikia.nocookie.net/leagueoflegends/images/b/bf/Infinity_Orb_WR_item.png
   name: Infinity Orb
   stats:
@@ -1773,10 +1773,10 @@
     value: 30
   - type: Move Speed
     value: 45
-- amount: 153.71%
+- amount: 166.62%
   category: BOOTS
   cost: 1200
-  formula: (150*3.33+25*25.0+15*0+45*16.0)/1200
+  formula: (150*3.33+25*25.0+15*10.33+45*16.0)/1200
   image: https://wiki.leagueoflegends.com/en-us/images/Mercury%27s_Treads_item.png
   name: Mercury's Treads
   stats:
@@ -1814,16 +1814,12 @@
     value: 45
   - type: '% Mana Regeneration'
     value: 50
-- amount: 100%
+- amount: 168.19%
   category: BOOTS
   cost: 1200
-  formula: Base Item
+  formula: (25*25.0+75*4+45*16.0+8*46.66)/1200
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Boots_of_Mana_WR_item.png/80px-Boots_of_Mana_WR_item.png?b7311
   name: Boots of Mana
-  second_base:
-    formula: (1200-25*25.0-75*4-45*16.0)/8
-    type: Magic Penetration
-    value: -55.62
   stats:
   - type: Ability Power
     value: 25
@@ -1834,10 +1830,10 @@
   - passive: Magic Break
     type: Magic Penetration
     value: 8
-- amount: 75.00%
+- amount: 143.19%
   category: BOOTS
   cost: 1200
-  formula: (25*25.0+45*16.0+50*0+8*-55.62)/1200
+  formula: (25*25.0+45*16.0+50*0+8*46.66)/1200
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Boots_of_Mana_WR_item.png/80px-Boots_of_Mana_WR_item.png?b7311
   name: Boots of Mana (Equilibrium)
   stats:
@@ -3201,10 +3197,10 @@
     value: 105
   - type: Magic Resistance
     value: 40
-- amount: 51.92%
+- amount: 104.82%
   category: MAGIC DAMAGE ITEMS
   cost: 2900
-  formula: (90*25.0+15*-55.62+6*15.0)/2900
+  formula: (90*25.0+15*46.66+6*15.0)/2900
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Stormsurge_WR_item.png/64px-Stormsurge_WR_item.png?ed5e8
   name: Stormsurge
   stats:
@@ -3223,10 +3219,10 @@
   stats:
   - type: Ability Power
     value: 40
-- amount: 69.04%
+- amount: 152.72%
   category: BOOTS
   cost: 2200
-  formula: (40*25.0+100*4+18*-55.62+8*50.0+45*16.0)/2200
+  formula: (40*25.0+100*4+18*46.66+8*50.0+45*16.0)/2200
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Spellslinger%27s_Shoes_item.png/40px-Spellslinger%27s_Shoes_item.png?34992
   name: Spellslinger's Shoes
   stats:
@@ -3240,10 +3236,10 @@
     value: 8
   - type: Move Speed
     value: 45
-- amount: 95.20%
+- amount: 109.29%
   category: BOOTS
   cost: 2200
-  formula: (150*3.33+35*25.0+30*0+45*16.0)/2200
+  formula: (150*3.33+35*25.0+30*10.33+45*16.0)/2200
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Chainlaced_Crushers_item.png/40px-Chainlaced_Crushers_item.png?c0063
   name: Chainlaced Crushers
   stats:
@@ -3300,15 +3296,6 @@
     value: 150
   - type: Armor
     value: 35
-  - type: Move Speed
-    value: 45
-- amount: 36.00%
-  category: BOOTS
-  cost: 2000
-  formula: (45*16.0)/2000
-  image: https://wr-meta.com/uploads/posts/2026-07/1783561637_immortal-treds.webp
-  name: Immortal Treads
-  stats:
   - type: Move Speed
     value: 45
 - amount: 61.00%

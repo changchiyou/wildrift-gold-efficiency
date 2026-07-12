@@ -55,8 +55,8 @@
   type: "Attack"
 "Magic Penetration":
   image: "https://i.imgur.com/0w7HEMC.png"
-  base_type: "second"
-  base_item: "Boots of Mana"
+  base_type: "exclude"
+  price: 46.66
   type: "Magic"
 "% Magic Penetration":
   image: "https://i.imgur.com/0w7HEMC.png"
@@ -92,7 +92,7 @@
   image: "https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/stats/percentage_tenacity.png"
   type: "Defence"
   base_type: "exclude"
-  price: 0
+  price: 10.33
 "% Magic Vamp":
   image: "https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/stats/magic_vamp.png"
   type: "Magic"
