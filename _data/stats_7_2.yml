@@ -87,7 +87,7 @@
   image: "https://i.imgur.com/ERdwXW2.png"
   type: "Magic"
   base_type: "exclude"
-  price: 0
+  price: 46
 "% Tenacity":
   image: "https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/stats/percentage_tenacity.png"
   type: "Defence"
@@ -97,12 +97,12 @@
   image: "https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/stats/magic_vamp.png"
   type: "Magic"
   base_type: "exclude"
-  price: 0
+  price: 46
 "% Health Regen":
   image: "https://i.imgur.com/l1LTDvw.png"
   type: "Defence"
   base_type: "exclude"
-  price: 0
+  price: 3
 "gold":
   image: "https://i.imgur.com/N16nYJ1.png"
   type: ""

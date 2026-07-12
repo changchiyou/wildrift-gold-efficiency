@@ -61,10 +61,10 @@
   - passive: Fervor
     type: '% Move Speed'
     value: 5
-- amount: 88.54%
+- amount: 102.92%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200
-  formula: (40*41.67+35*33.33+10*0)/3200
+  formula: (40*41.67+35*33.33+10*46)/3200
   image: https://static.wikia.nocookie.net/leagueoflegends/images/1/11/Blade_of_the_Ruined_King_item_old2.png
   name: Blade of the Ruined King
   stats:
@@ -402,10 +402,10 @@
     value: 45
   - type: Ability Haste
     value: 10
-- amount: 133.89%
+- amount: 149.23%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
-  formula: (55*41.67+45*25.0+10*60.0+10*0)/3000
+  formula: (55*41.67+45*25.0+10*60.0+10*46)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/1/14/Maw_of_Malmortius_item.png
   name: Maw of Malmortius (Lifeline)
   stats:
@@ -1165,10 +1165,10 @@
   - passive: Spellweaving
     type: Move Speed
     value: 30
-- amount: 123.08%
+- amount: 139.40%
   category: MAGIC DAMAGE ITEMS
   cost: 3100
-  formula: (350*3.33+70*25.0+15*60.0+11*0)/3100
+  formula: (350*3.33+70*25.0+15*60.0+11*46)/3100
   image: https://static.wikia.nocookie.net/leagueoflegends/images/f/f8/Riftmaker_WR_item.png
   name: Riftmaker
   stats:
@@ -1291,10 +1291,10 @@
     value: 200
   - type: Armor
     value: 75
-- amount: 123.89%
+- amount: 134.42%
   category: DEFENSE ITEMS
   cost: 2850
-  formula: (700*3.33+100*0+20*60.0)/2850
+  formula: (700*3.33+100*3+20*60.0)/2850
   image: https://static.wikia.nocookie.net/leagueoflegends/images/9/9f/Warmog%27s_Armor_item.png
   name: Warmog's Armor
   stats:
@@ -1615,10 +1615,10 @@
     value: 300
   - type: Armor
     value: 50
-- amount: 126.11%
+- amount: 142.18%
   category: DEFENSE ITEMS
   cost: 2800
-  formula: (700*3.33+150*0+20*60.0)/2800
+  formula: (700*3.33+150*3+20*60.0)/2800
   image: https://wiki.leagueoflegends.com/en-us/images/Heartsteel_item.png
   name: Heartsteel
   stats:
@@ -1698,10 +1698,10 @@
     ref_type: Max Health
     type: Max Health
     value: 264.0
-- amount: 122.00%
+- amount: 145.00%
   category: BOOTS
   cost: 1000
-  formula: (45*16.0+12*41.67+5*0)/1000
+  formula: (45*16.0+12*41.67+5*46)/1000
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Gluttonous_Greaves_WR_item.png/80px-Gluttonous_Greaves_WR_item.png?66408
   name: Gluttonous Greaves (Balanced of Power - AD, Convertion - 0 Stacks)
   stats:
@@ -1714,10 +1714,10 @@
     type: '% Omnivamp'
     value: 5
   - type: Unstable Passives' Stats
-- amount: 122.00%
+- amount: 168.00%
   category: BOOTS
   cost: 1000
-  formula: (45*16.0+12*41.67+10*0)/1000
+  formula: (45*16.0+12*41.67+10*46)/1000
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Gluttonous_Greaves_WR_item.png/80px-Gluttonous_Greaves_WR_item.png?66408
   name: Gluttonous Greaves (Balanced of Power - AD, Convertion - Full Stacks)
   stats:
@@ -1730,10 +1730,10 @@
     type: '% Omnivamp'
     value: 10
   - type: Unstable Passives' Stats
-- amount: 122.00%
+- amount: 145.00%
   category: BOOTS
   cost: 1000
-  formula: (45*16.0+20*25.0+5*0)/1000
+  formula: (45*16.0+20*25.0+5*46)/1000
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Gluttonous_Greaves_WR_item.png/80px-Gluttonous_Greaves_WR_item.png?66408
   name: Gluttonous Greaves (Balanced of Power - AP, Convertion - 0 Stacks)
   stats:
@@ -1746,10 +1746,10 @@
     type: '% Omnivamp'
     value: 5
   - type: Unstable Passives' Stats
-- amount: 122.00%
+- amount: 168.00%
   category: BOOTS
   cost: 1000
-  formula: (45*16.0+20*25.0+10*0)/1000
+  formula: (45*16.0+20*25.0+10*46)/1000
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Gluttonous_Greaves_WR_item.png/80px-Gluttonous_Greaves_WR_item.png?66408
   name: Gluttonous Greaves (Balanced of Power - AP, Convertion - Full Stacks)
   stats:
@@ -1830,10 +1830,10 @@
   - passive: Magic Break
     type: Magic Penetration
     value: 8
-- amount: 143.19%
+- amount: 155.69%
   category: BOOTS
   cost: 1200
-  formula: (25*25.0+45*16.0+50*0+8*46.66)/1200
+  formula: (25*25.0+45*16.0+50*3+8*46.66)/1200
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Boots_of_Mana_WR_item.png/80px-Boots_of_Mana_WR_item.png?b7311
   name: Boots of Mana (Equilibrium)
   stats:
@@ -2680,10 +2680,10 @@
     value: 4
   - type: '% Mana Regeneration'
     value: 25
-- amount: 108.59%
+- amount: 119.30%
   category: DEFENSE ITEMS
   cost: 2800
-  formula: (350*3.33+75*25.0+100*0)/2800
+  formula: (350*3.33+75*25.0+100*3)/2800
   image: https://wiki.leagueoflegends.com/en-us/images/Kaenic_Rookern_item.png
   name: Kaenic Rookern
   stats:
@@ -2959,10 +2959,10 @@
     type: Move Speed
     value: 20
   - type: Unstable Passives' Stats
-- amount: 120.40%
+- amount: 132.27%
   category: PHYSICAL DAMAGE ITEMS, ACTIVE ITEMS
   cost: 3100
-  formula: (40*41.67+350*3.33+15*60.0+8*0)/3100
+  formula: (40*41.67+350*3.33+15*60.0+8*46)/3100
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Goredrinker_WR_item.png/64px-Goredrinker_WR_item.png?c3fbf
   name: Goredrinker
   stats:
@@ -3298,10 +3298,10 @@
     value: 35
   - type: Move Speed
     value: 45
-- amount: 61.00%
+- amount: 72.50%
   category: BOOTS
   cost: 2000
-  formula: (45*16.0+12*41.67+5*0)/2000
+  formula: (45*16.0+12*41.67+5*46)/2000
   image: https://wr-meta.com/uploads/posts/2026-07/1783561637_immortal-treds.webp
   name: Immortal Treads (Balanced of Power - AD, Convertion - 0 Stacks)
   stats:
@@ -3314,10 +3314,10 @@
     type: '% Omnivamp'
     value: 5
   - type: Unstable Passives' Stats
-- amount: 61.00%
+- amount: 84.00%
   category: BOOTS
   cost: 2000
-  formula: (45*16.0+12*41.67+10*0)/2000
+  formula: (45*16.0+12*41.67+10*46)/2000
   image: https://wr-meta.com/uploads/posts/2026-07/1783561637_immortal-treds.webp
   name: Immortal Treads (Balanced of Power - AD, Convertion - Full Stacks)
   stats:
@@ -3330,10 +3330,10 @@
     type: '% Omnivamp'
     value: 10
   - type: Unstable Passives' Stats
-- amount: 61.00%
+- amount: 72.50%
   category: BOOTS
   cost: 2000
-  formula: (45*16.0+20*25.0+5*0)/2000
+  formula: (45*16.0+20*25.0+5*46)/2000
   image: https://wr-meta.com/uploads/posts/2026-07/1783561637_immortal-treds.webp
   name: Immortal Treads (Balanced of Power - AP, Convertion - 0 Stacks)
   stats:
@@ -3346,10 +3346,10 @@
     type: '% Omnivamp'
     value: 5
   - type: Unstable Passives' Stats
-- amount: 61.00%
+- amount: 84.00%
   category: BOOTS
   cost: 2000
-  formula: (45*16.0+20*25.0+10*0)/2000
+  formula: (45*16.0+20*25.0+10*46)/2000
   image: https://wr-meta.com/uploads/posts/2026-07/1783561637_immortal-treds.webp
   name: Immortal Treads (Balanced of Power - AP, Convertion - Full Stacks)
   stats:
