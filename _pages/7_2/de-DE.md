@@ -7,10 +7,6 @@ description: Wild Rift 7.2 Item Gold-Effizienzblatt
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/da8a30ba40f370ba330bac2b6c93781271288173-1920x1080.jpg?accountingTag=WR?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /de-DE/7.2/
-redirect_from:
-    - /
-    - /de-DE/
-latest_version: true
 
 lang: de-DE
 
