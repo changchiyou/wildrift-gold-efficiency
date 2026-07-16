@@ -98,14 +98,24 @@ item:
     berserker-s-greaves: バーサーカー ブーツ
     b-f-sword: B.F. ソード
     black-cleaver: ブラック クリーバー
+    black-cleaver-rage-aa-melee: Black Cleaver (Rage / AA - Melee)
+    black-cleaver-rage-aa-range: Black Cleaver (Rage / AA - Range)
+    black-cleaver-rage-sunder-aa-melee: Black Cleaver (Rage - Sunder / AA - Melee)
+    black-cleaver-rage-sunder-aa-range: Black Cleaver (Rage - Sunder / AA - Range)
+    black-cleaver-rage-kill-melee: Black Cleaver (Rage / Kill - Melee)
+    black-cleaver-rage-kill-range: Black Cleaver (Rage / Kill - Range)
+    black-cleaver-rage-sunder-kill-melee: Black Cleaver (Rage - Sunder / Kill - Melee)
+    black-cleaver-rage-sunder-kill-range: Black Cleaver (Rage - Sunder / Kill - Range)
     black-cleaver-rage-4stacks-melee: ブラック クリーバー (レンジ - 4スタック - 近接)
     black-cleaver-rage-4stacks-range: ブラック クリーバー (レンジ - 4スタック - レンジ)
-    black-cleaver-rage-basic-melee: ブラック クリーバー (レンジ - 基礎 - 近接)
-    black-cleaver-rage-basic-range: ブラック クリーバー (レンジ - 基礎 - レンジ)
-    black-cleaver-chase-5stacks-melee: Black Cleaver (Chase - 5Stacks - Melee)
-    black-cleaver-chase-5stacks-range: Black Cleaver (Chase - 5Stacks - Range)
-    black-cleaver-chase-basic-melee: Black Cleaver (Chase - basic - Melee)
-    black-cleaver-chase-basic-range: Black Cleaver (Chase - basic - Range)
+    black-cleaver-rage-sunder-4stacks-melee: Black Cleaver (Rage - Sunder / 4Stacks - Melee)
+    black-cleaver-rage-sunder-4stacks-range: Black Cleaver (Rage - Sunder / 4Stacks - Range)
+    black-cleaver-chase-0stacks-melee: Black Cleaver (Chase / 0Stacks - Melee)
+    black-cleaver-chase-0stacks-range: Black Cleaver (Chase / 0Stacks - Range)
+    black-cleaver-chase-sunder-4stacks-melee: Black Cleaver (Chase - Sunder / 4Stacks - Melee)
+    black-cleaver-chase-sunder-4stacks-range: Black Cleaver (Chase - Sunder / 4Stacks - Range)
+    black-cleaver-chase-sunder-5stacks-melee: Black Cleaver (Chase - Sunder / 5Stacks - Melee)
+    black-cleaver-chase-sunder-5stacks-range: Black Cleaver (Chase - Sunder / 5Stacks - Range)
     black-mist-scythe-adaptive-ad: '黒き霧の大鎌 (アダブティブ：攻撃力)'
     black-mist-scythe-adaptive-ad-soulcast: '黒き霧の大鎌 (アダブティブ：攻撃力、 ソウルキャスト)'
     black-mist-scythe-adaptive-ap: '黒き霧の大鎌 (アダブティブ：魔力)'
@@ -412,6 +422,7 @@ item:
     projection: Projection
     rage: 追撃
     chase: Chase
+    sunder: Sunder
     rapids: 急流
     razor: レイザー
     relentless: 執拗

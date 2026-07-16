@@ -98,14 +98,24 @@ item:
     berserker-s-greaves: 狂戰士護脛
     b-f-sword: 暴風之劍
     black-cleaver: 黑色切割者
-    black-cleaver-rage-4stacks-melee: 黑色切割者 (暴虐 - 滿層 - 近戰)
-    black-cleaver-rage-4stacks-range: 黑色切割者 (暴虐 - 滿層 - 遠程)
-    black-cleaver-rage-basic-melee: 黑色切割者 (暴虐 - 基礎 - 近戰)
-    black-cleaver-rage-basic-range: 黑色切割者 (暴虐 - 基礎 - 遠程)
-    black-cleaver-chase-5stacks-melee: 黑色切割者 (追逐 - 滿層 - 近戰)
-    black-cleaver-chase-5stacks-range: 黑色切割者 (追逐 - 滿層 - 遠程)
-    black-cleaver-chase-basic-melee: 黑色切割者 (追逐 - 基礎 - 近戰)
-    black-cleaver-chase-basic-range: 黑色切割者 (追逐 - 基礎 - 遠程)
+    black-cleaver-rage-aa-melee: 黑色切割者 (暴虐 / 普攻 - 近戰)
+    black-cleaver-rage-aa-range: 黑色切割者 (暴虐 / 普攻 - 遠程)
+    black-cleaver-rage-sunder-aa-melee: 黑色切割者 (暴虐 - 斬斷 / 普攻 - 近戰)
+    black-cleaver-rage-sunder-aa-range: 黑色切割者 (暴虐 - 斬斷 / 普攻 - 遠程)
+    black-cleaver-rage-kill-melee: 黑色切割者 (暴虐 / 擊殺 - 近戰)
+    black-cleaver-rage-kill-range: 黑色切割者 (暴虐 / 擊殺 - 遠程)
+    black-cleaver-rage-sunder-kill-melee: 黑色切割者 (暴虐 - 斬斷 / 擊殺 - 近戰)
+    black-cleaver-rage-sunder-kill-range: 黑色切割者 (暴虐 - 斬斷 / 擊殺 - 遠程)
+    black-cleaver-rage-4stacks-melee: 黑色切割者 (暴虐 / 4層 - 近戰)
+    black-cleaver-rage-4stacks-range: 黑色切割者 (暴虐 / 4層 - 遠程)
+    black-cleaver-rage-sunder-4stacks-melee: 黑色切割者 (暴虐 - 斬斷 / 4層 - 近戰)
+    black-cleaver-rage-sunder-4stacks-range: 黑色切割者 (暴虐 - 斬斷 / 4層 - 遠程)
+    black-cleaver-chase-0stacks-melee: 黑色切割者 (追逐 / 0層 - 近戰)
+    black-cleaver-chase-0stacks-range: 黑色切割者 (追逐 / 0層 - 遠程)
+    black-cleaver-chase-sunder-4stacks-melee: 黑色切割者 (追逐 - 斬斷 / 4層 - 近戰)
+    black-cleaver-chase-sunder-4stacks-range: 黑色切割者 (追逐 - 斬斷 / 4層 - 遠程)
+    black-cleaver-chase-sunder-5stacks-melee: 黑色切割者 (追逐 - 斬斷 / 5層 - 近戰)
+    black-cleaver-chase-sunder-5stacks-range: 黑色切割者 (追逐 - 斬斷 / 5層 - 遠程)
     black-mist-scythe-adaptive-ad: '闇物之蓮 (適性: 物理)'
     black-mist-scythe-adaptive-ad-soulcast: '闇霧之蓮 (適性: 物理, 鑄魂)'
     black-mist-scythe-adaptive-ap: '闇霧之鎌 (適性: 魔法)'
@@ -412,6 +422,7 @@ item:
     projection: 投影
     rage: 暴虐
     chase: 追逐
+    sunder: 斬斷
     rapids: 激流
     razor: 割裂
     relentless: 無情
