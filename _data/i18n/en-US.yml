@@ -98,24 +98,18 @@ item:
     berserker-s-greaves: Berserker's Greaves
     b-f-sword: B. F. Sword
     black-cleaver: Black Cleaver
-    black-cleaver-rage-4stacks-melee: Black Cleaver (Rage - 4Stacks - Melee)
-    black-cleaver-rage-4stacks-range: Black Cleaver (Rage - 4Stacks - Range)
-    black-cleaver-rage-4stacks-sunder-melee: Black Cleaver (Rage - 4Stacks - Sunder - Melee)
-    black-cleaver-rage-4stacks-sunder-range: Black Cleaver (Rage - 4Stacks - Sunder - Range)
-    black-cleaver-rage-basic-melee: Black Cleaver (Rage - basic - Melee)
-    black-cleaver-rage-basic-range: Black Cleaver (Rage - basic - Range)
-    black-cleaver-rage-kill-sunder-melee: Black Cleaver (Rage - Kill - Sunder - Melee)
-    black-cleaver-rage-kill-sunder-range: Black Cleaver (Rage - Kill - Sunder - Range)
-    black-cleaver-chase-4stacks-melee: Black Cleaver (Chase - 4Stacks - Melee)
-    black-cleaver-chase-4stacks-range: Black Cleaver (Chase - 4Stacks - Range)
-    black-cleaver-chase-4stacks-sunder-melee: Black Cleaver (Chase - 4Stacks - Sunder - Melee)
-    black-cleaver-chase-4stacks-sunder-range: Black Cleaver (Chase - 4Stacks - Sunder - Range)
-    black-cleaver-chase-5stacks-melee: Black Cleaver (Chase - 5Stacks - Melee)
-    black-cleaver-chase-5stacks-range: Black Cleaver (Chase - 5Stacks - Range)
-    black-cleaver-chase-5stacks-sunder-melee: Black Cleaver (Chase - 5Stacks - Sunder - Melee)
-    black-cleaver-chase-5stacks-sunder-range: Black Cleaver (Chase - 5Stacks - Sunder - Range)
-    black-cleaver-chase-basic-melee: Black Cleaver (Chase - basic - Melee)
-    black-cleaver-chase-basic-range: Black Cleaver (Chase - basic - Range)
+    black-cleaver-rage-aa-melee: Black Cleaver (Rage / AA - Melee)
+    black-cleaver-rage-aa-range: Black Cleaver (Rage / AA - Range)
+    black-cleaver-rage-sunder-kill-4stacks-melee: Black Cleaver (Rage - Sunder / Kill - 4Stacks - Melee)
+    black-cleaver-rage-sunder-kill-4stacks-range: Black Cleaver (Rage - Sunder / Kill - 4Stacks - Range)
+    black-cleaver-rage-sunder-4stacks-melee: Black Cleaver (Rage - Sunder / 4Stacks - Melee)
+    black-cleaver-rage-sunder-4stacks-range: Black Cleaver (Rage - Sunder / 4Stacks - Range)
+    black-cleaver-chase-0stacks-melee: Black Cleaver (Chase / 0Stacks - Melee)
+    black-cleaver-chase-0stacks-range: Black Cleaver (Chase / 0Stacks - Range)
+    black-cleaver-chase-sunder-4stacks-melee: Black Cleaver (Chase - Sunder / 4Stacks - Melee)
+    black-cleaver-chase-sunder-4stacks-range: Black Cleaver (Chase - Sunder / 4Stacks - Range)
+    black-cleaver-chase-sunder-5stacks-melee: Black Cleaver (Chase - Sunder / 5Stacks - Melee)
+    black-cleaver-chase-sunder-5stacks-range: Black Cleaver (Chase - Sunder / 5Stacks - Range)
     black-mist-scythe-adaptive-ad: 'Black Mist Scythe (Adaptive: AD)'
     black-mist-scythe-adaptive-ad-soulcast: 'Black Mist Scythe (Adaptive: AD, Soulcast)'
     black-mist-scythe-adaptive-ap: 'Black Mist Scythe (Adaptive: AP)'
