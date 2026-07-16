@@ -9,7 +9,6 @@ image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/3b207bc7cea79
 permalink: /pt-BR/7.1h/
 redirect_from:
     - /
-    - /pt-BR/
 latest_version: false
 
 lang: pt-BR

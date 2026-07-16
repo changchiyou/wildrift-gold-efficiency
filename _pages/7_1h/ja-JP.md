@@ -9,7 +9,6 @@ image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/3b207bc7cea79
 permalink: /ja-JP/7.1h/
 redirect_from:
     - /
-    - /ja-JP/
 latest_version: false
 
 lang: ja-JP
