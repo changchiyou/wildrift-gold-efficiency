@@ -222,7 +222,7 @@
   cost: 3000
   formula: (400*3.33+40*41.67+20*40.0+20*16.0)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/8/87/Black_Cleaver_item.png
-  name: Black Cleaver (Rage - basic - Melee)
+  name: Black Cleaver (Rage / AA - Melee)
   stats:
   - type: Max Health
     value: 400
@@ -239,7 +239,7 @@
   cost: 3000
   formula: (400*3.33+40*41.67+20*40.0+10*16.0)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/8/87/Black_Cleaver_item.png
-  name: Black Cleaver (Rage - basic - Range)
+  name: Black Cleaver (Rage / AA - Range)
   stats:
   - type: Max Health
     value: 400
@@ -251,12 +251,52 @@
     type: Move Speed
     value: 10
   - type: Unstable Passives' Stats
+- amount: 190.63%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (400*3.33+40*41.67+20*40.0+20*16.0+24*66.67)/3000
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/8/87/Black_Cleaver_item.png
+  name: Black Cleaver (Rage - Sunder / AA - Melee)
+  stats:
+  - type: Max Health
+    value: 400
+  - type: Attack Damage
+    value: 40
+  - type: Ability Haste
+    value: 20
+  - passive: Rage
+    type: Move Speed
+    value: 20
+  - passive: Sunder
+    type: '% Armor Penetration'
+    value: 24
+  - type: Unstable Passives' Stats
+- amount: 185.30%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (400*3.33+40*41.67+20*40.0+10*16.0+24*66.67)/3000
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/8/87/Black_Cleaver_item.png
+  name: Black Cleaver (Rage - Sunder / AA - Range)
+  stats:
+  - type: Max Health
+    value: 400
+  - type: Attack Damage
+    value: 40
+  - type: Ability Haste
+    value: 20
+  - passive: Rage
+    type: Move Speed
+    value: 10
+  - passive: Sunder
+    type: '% Armor Penetration'
+    value: 24
+  - type: Unstable Passives' Stats
 - amount: 158.63%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (400*3.33+40*41.67+20*40.0+60*16.0)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/8/87/Black_Cleaver_item.png
-  name: Black Cleaver (Rage - 4Stacks - Melee)
+  name: Black Cleaver (Rage / 4Stacks - Melee)
   stats:
   - type: Max Health
     value: 400
@@ -273,7 +313,7 @@
   cost: 3000
   formula: (400*3.33+40*41.67+20*40.0+30*16.0)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/8/87/Black_Cleaver_item.png
-  name: Black Cleaver (Rage - 4Stacks - Range)
+  name: Black Cleaver (Rage / 4Stacks - Range)
   stats:
   - type: Max Health
     value: 400
@@ -284,6 +324,46 @@
   - passive: Rage
     type: Move Speed
     value: 30
+  - type: Unstable Passives' Stats
+- amount: 211.96%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (400*3.33+40*41.67+20*40.0+60*16.0+24*66.67)/3000
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/8/87/Black_Cleaver_item.png
+  name: Black Cleaver (Rage - Sunder / 4Stacks - Melee)
+  stats:
+  - type: Max Health
+    value: 400
+  - type: Attack Damage
+    value: 40
+  - type: Ability Haste
+    value: 20
+  - passive: Rage
+    type: Move Speed
+    value: 60
+  - passive: Sunder
+    type: '% Armor Penetration'
+    value: 24
+  - type: Unstable Passives' Stats
+- amount: 195.96%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3000
+  formula: (400*3.33+40*41.67+20*40.0+30*16.0+24*66.67)/3000
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/8/87/Black_Cleaver_item.png
+  name: Black Cleaver (Rage - Sunder / 4Stacks - Range)
+  stats:
+  - type: Max Health
+    value: 400
+  - type: Attack Damage
+    value: 40
+  - type: Ability Haste
+    value: 20
+  - passive: Rage
+    type: Move Speed
+    value: 30
+  - passive: Sunder
+    type: '% Armor Penetration'
+    value: 24
   - type: Unstable Passives' Stats
 - amount: 99.07%
   category: PHYSICAL DAMAGE ITEMS
