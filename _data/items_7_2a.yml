@@ -1171,10 +1171,10 @@
   - passive: Spellweaving
     type: Move Speed
     value: 30
-- amount: 139.40%
+- amount: 145.05%
   category: MAGIC DAMAGE ITEMS
   cost: 3100
-  formula: (350*3.33+70*25.0+15*60.0+11*46)/3100
+  formula: (350*3.33+70*25.0+15*60.0+11*46+7.0*25.0)/3100
   image: https://static.wikia.nocookie.net/leagueoflegends/images/f/f8/Riftmaker_WR_item.png
   name: Riftmaker
   stats:
@@ -1187,6 +1187,12 @@
   - passive: Assimilation
     type: '% Magic Vamp'
     value: 11
+  - formula: 350*0.02
+    passive: Void Infusion
+    ratio: 0.02
+    ref_type: Max Health
+    type: Ability Power
+    value: 7.0
 - amount: 129.63%
   category: MAGIC DAMAGE ITEMS
   cost: 2700
