@@ -851,10 +851,10 @@
     value: 50
   - type: Max Mana
     value: 400
-- amount: 141.44%
+- amount: 150.70%
   category: MAGIC DAMAGE ITEMS
   cost: 2700
-  formula: (350*3.33+50*25.0+400*0.22+150*3.33+30*25.0+300*0.22)/2700
+  formula: (350*3.33+50*25.0+400*0.22+150*3.33+40*25.0+300*0.22)/2700
   image: https://static.wikia.nocookie.net/leagueoflegends/images/7/76/Rod_of_Ages_WR_item.png
   name: Rod of Ages (Veteran)
   stats:
@@ -869,7 +869,7 @@
     value: 150
   - passive: Veteran
     type: Ability Power
-    value: 30
+    value: 40
   - passive: Veteran
     type: Max Mana
     value: 300
