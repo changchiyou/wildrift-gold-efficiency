@@ -5,7 +5,11 @@ on:
     # Run every hour
     - cron: '0 * * * *'
   workflow_dispatch:
-    # Allow manual triggering
+    inputs:
+      patch_url:
+        description: 'Patch notes URL (e.g. https://wildrift.leagueoflegends.com/.../patch-notes-7-2). Leave empty to use RSS feed.'
+        required: false
+        type: string
 
 env:
   RSS_URL: "${{ vars.RSS_URL }}"
@@ -55,59 +59,75 @@ jobs:
       if: steps.check-existing-prs.outputs.skip_workflow == 'false'
       id: check-patch
       run: |
-        # Download and parse RSS feed
-        RSS_CONTENT=$(curl -s "$RSS_URL")
+        extract_version_from_url() {
+          local URL="$1"
+          local VERSION
 
-        # Extract URLs with game-updates and patch-notes (clean URLs only)
-        PATCH_URLS=$(echo "$RSS_CONTENT" | grep -o 'href="https://wildrift\.leagueoflegends\.com/[^"]*game-updates[^"]*patch-notes[^"]*"' | sed 's/href="//g' | sed 's/"//g' | head -5)
-
-        echo "Found patch URLs:"
-        echo "$PATCH_URLS"
-
-        # Process each URL to extract version
-        for URL in $PATCH_URLS; do
-          echo "Processing URL: $URL"
-
-          # Try to extract version from URL
-          # Old format: "wild-rift-patch-notes-6-2e" -> 6.2e
+          # Old format: "patch-notes-6-2e" -> 6.2e
           VERSION=$(echo "$URL" | grep -o 'patch-notes-[0-9]-[0-9][a-z]*' | sed 's/patch-notes-//' | sed 's/-/./')
 
-          # New format: "wild-rift-patch-notes-70" -> 7.0
+          # New format: "patch-notes-70" -> 7.0, "patch-notes-72a" -> 7.2a
           if [ -z "$VERSION" ]; then
             VERSION_RAW=$(echo "$URL" | grep -o 'patch-notes-[0-9][0-9]*[a-z]*' | sed 's/patch-notes-//')
             if [ -n "$VERSION_RAW" ]; then
-              # Insert dot after first digit: 70 -> 7.0, 70a -> 7.0a
               VERSION=$(echo "$VERSION_RAW" | sed 's/^\([0-9]\)\([0-9]\)/\1.\2/')
             fi
           fi
 
+          echo "$VERSION"
+        }
+
+        process_url() {
+          local URL="$1"
+          echo "Processing URL: $URL"
+
+          VERSION=$(extract_version_from_url "$URL")
+
           if [ -z "$VERSION" ]; then
             echo "Could not extract version from URL: $URL"
-            continue
+            return 1
           fi
 
           echo "Extracted version: $VERSION"
 
-          # Convert version format for checking (6.2e -> 6_2e, 7.0 -> 7_0)
           VERSION_UNDERSCORE=$(echo "$VERSION" | sed 's/\./_/')
 
-          # Check if this version already exists in _pages
           if [ -d "_pages/$VERSION_UNDERSCORE" ]; then
             echo "Version $VERSION already exists in _pages/$VERSION_UNDERSCORE"
-            continue
+            return 1
           fi
 
-          # Check if this version already exists in _data
           if [ -f "_data/items_$VERSION_UNDERSCORE.yml" ]; then
             echo "Version $VERSION already exists in _data/items_$VERSION_UNDERSCORE.yml"
-            continue
+            return 1
           fi
 
           echo "New version found: $VERSION"
           echo "new_version=$VERSION" >> $GITHUB_OUTPUT
           echo "new_version_underscore=$VERSION_UNDERSCORE" >> $GITHUB_OUTPUT
           echo "patch_url=$URL" >> $GITHUB_OUTPUT
+          return 0
+        }
+
+        # If a URL was provided manually, use it directly (skip RSS)
+        MANUAL_URL="${{ inputs.patch_url }}"
+        if [ -n "$MANUAL_URL" ]; then
+          echo "Manual patch URL provided: $MANUAL_URL"
+          process_url "$MANUAL_URL" && exit 0
+          echo "Manual URL did not yield a new version"
           exit 0
+        fi
+
+        # Otherwise fall back to RSS feed
+        RSS_CONTENT=$(curl -s "$RSS_URL")
+
+        PATCH_URLS=$(echo "$RSS_CONTENT" | grep -o 'href="https://wildrift\.leagueoflegends\.com/[^"]*game-updates[^"]*patch-notes[^"]*"' | sed 's/href="//g' | sed 's/"//g' | head -5)
+
+        echo "Found patch URLs:"
+        echo "$PATCH_URLS"
+
+        for URL in $PATCH_URLS; do
+          process_url "$URL" && exit 0
         done
 
         echo "No new versions found"
