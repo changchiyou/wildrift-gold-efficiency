@@ -7,10 +7,6 @@ description: Wild Rift Gold Efficiency of 7.2a
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/c866980f254e2a4b62eba65d4b77d2cb48aafd06-1980x891.jpg?accountingTag=WR?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /en-US/7.2a/
-redirect_from:
-    - /
-    - /en-US/
-latest_version: true
 
 lang: en-US
 
