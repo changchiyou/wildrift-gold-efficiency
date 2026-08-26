@@ -7,10 +7,6 @@ description: Wild Rift Gold Efficiency of 7.2c
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/44727d26e70ca67a7057d94c6c2f1475332cde02-1920x1080.jpg?accountingTag=WR?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /en-US/7.2c/
-redirect_from:
-    - /
-    - /en-US/
-latest_version: true
 
 lang: en-US
 
