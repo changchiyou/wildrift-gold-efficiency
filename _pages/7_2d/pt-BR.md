@@ -7,10 +7,6 @@ description: Wild Rift 7.2d Eficiência de Ouro
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/a518343e3feea563fca1e7c388123dfeb55a88d8-1920x1080.jpg?accountingTag=WR?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /pt-BR/7.2d/
-redirect_from:
-    - /
-    - /pt-BR/
-latest_version: true
 
 lang: pt-BR
 

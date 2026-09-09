@@ -7,10 +7,6 @@ description: ワイルドリフト 7.2d ゴールド効率
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/a518343e3feea563fca1e7c388123dfeb55a88d8-1920x1080.jpg?accountingTag=WR?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /ja-JP/7.2d/
-redirect_from:
-    - /
-    - /ja-JP/
-latest_version: true
 
 lang: ja-JP
 
