@@ -7,10 +7,6 @@ description: 激鬥峽谷 7.2d 裝備面板價值
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/a518343e3feea563fca1e7c388123dfeb55a88d8-1920x1080.jpg?accountingTag=WR?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /zh-TW/7.2d/
-redirect_from:
-    - /
-    - /zh-TW/
-latest_version: true
 
 lang: zh-TW
 
