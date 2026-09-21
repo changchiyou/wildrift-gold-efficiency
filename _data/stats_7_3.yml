@@ -38,8 +38,8 @@
   base_type: "first"
   base_item: "Boots of Speed"
   type: "Others"
-"% Physical Vamp":
-  image: "https://i.imgur.com/f5ODFFu.png"
+"% Lifesteal":
+  image: "https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/stats/lifesteal.png"
   base_type: "second"
   base_item: "Vampiric Scepter"
   type: "Attack"

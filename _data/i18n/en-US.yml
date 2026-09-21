@@ -59,6 +59,7 @@ stat:
     percentage-critical-rate: "% Cricital Rate"
     percentage-attack-speed: "% Attack Speed"
     percentage-physical-vamp: "% Physical Vamp"
+    percentage-lifesteal: '% Lifesteal'
     armor-penetration: "Armor Penetration"
     percentage-armor-penetration: "% Armor Penetration"
     # Magic
@@ -84,6 +85,11 @@ stat:
     update: Update
 item:
   name:
+    guinsoo-s-rageblade-seething-strike: 'Guinsoo''s Rageblade (Seething Strike)'
+    imperial-mandate-control: Imperial Mandate (Control)
+    nashor-s-tooth: 'Nashor''s Tooth'
+    salvation: Salvation
+    youmuu-s-ghostblade-momentum-range: 'Youmuu''s Ghostblade (Momentum - Range)'
     aether-wisp: Aether Wisp
     amaranth-s-twinguard: Amaranth's Twinguard
     amaranth-s-twinguard-endurance: Amaranth's Twinguard (Endurance)
@@ -397,6 +403,7 @@ item:
     echoes-of-helia: Echoes of Helia
 
   passive:
+    control: Control
     absorb: Absorb
     ardent: Ardent
     assimilation: Assimilation

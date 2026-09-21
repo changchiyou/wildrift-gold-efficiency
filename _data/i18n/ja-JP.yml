@@ -59,6 +59,7 @@ stat:
     percentage-critical-rate: "クリティカル率％"
     percentage-attack-speed: "攻撃速度％"
     percentage-physical-vamp: "物理ヴァンプ％"
+    percentage-lifesteal: ライフスティール％
     armor-penetration: "脅威"
     percentage-armor-penetration: "物理防御貫通％"
     # Magic
@@ -84,6 +85,22 @@ stat:
     update: アップデート
 item:
   name:
+    bandleglass-mirror: バンドルグラスの鏡
+    diadem-of-songs: 旋律のダイアデム
+    echoes-of-helia: ヘリアの残響
+    fiendhunter-bolts: フィーンドハンターの矢
+    guinsoo-s-rageblade-seething-strike: グインソー レイジブレード (シージングストライク)
+    hearthbound-axe: ハースバウンド アックス
+    hexoptics-c44: ヘクスオプティックC44
+    imperial-mandate-control: 帝国の指令 (制御)
+    nashor-s-tooth: ナッシャー トゥース
+    pickaxe: ピッケル
+    rapid-firecannon: ラピッド ファイアキャノン
+    salvation: サルベーション
+    statikk-shiv: スタティック シヴ
+    whispering-circlet: 囁きのサークレット
+    youmuu-s-ghostblade-momentum-range: 妖夢の霊剣 (熾烈 - レンジ)
+    yun-tal-wildarrows: ユン・タル ワイルドアロー
     aether-wisp: エーテル ウィスプ
     amaranth-s-twinguard: アマランス ツインガード
     amaranth-s-twinguard-endurance: アマランス ツインガード(忍耐)
@@ -385,6 +402,7 @@ item:
     void-staff: Void Staff
     zhonya-s-hourglass: Zhonya's Hourglass
   passive:
+    control: 制御
     absorb: 吸収
     ardent: アーデント
     assimilation: 同化

@@ -7,7 +7,7 @@
   stats:
   - type: Attack Damage
     value: 75
-  - type: '% Physical Vamp'
+  - type: '% Lifesteal'
     value: 15
 - amount: 89.85%
   category: PHYSICAL DAMAGE ITEMS
@@ -31,7 +31,7 @@
     value: 40
   - type: '% Attack Speed'
     value: 30
-  - type: '% Physical Vamp'
+  - type: '% Lifesteal'
     value: 12
 - amount: 100.31%
   category: PHYSICAL DAMAGE ITEMS
@@ -46,10 +46,10 @@
     value: 25
   - type: '% Move Speed'
     value: 4
-- amount: 119.30%
+- amount: 121.44%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
-  formula: (55*41.67+15*60.0+4*18.75+15*20.82)/3000
+  formula: (55*41.67+15*60.0+4*18.75+15*20.82+4*16.0)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/4/41/Youmuu%27s_Ghostblade_item.png
   name: Youmuu's Ghostblade
   stats:
@@ -62,10 +62,12 @@
   - passive: Slice
     type: Armor Penetration
     value: 15
-- amount: 140.64%
+  - type: Move Speed
+    value: 4
+- amount: 135.31%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
-  formula: (55*41.67+15*60.0+4*18.75+15*20.82+40*16.0)/3000
+  formula: (55*41.67+15*60.0+4*18.75+15*20.82+30*16.0)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/4/41/Youmuu%27s_Ghostblade_item.png
   name: Youmuu's Ghostblade (Momentum)
   stats:
@@ -80,14 +82,14 @@
     value: 15
   - passive: Momentum
     type: Move Speed
-    value: 40
+    value: 30
   - type: Unstable Passives' Stats
-- amount: 147.08%
+- amount: 129.97%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
-  formula: (55*41.67+15*60.0+4*18.75+15*20.82+25*33.33)/3000
+  formula: (55*41.67+15*60.0+4*18.75+15*20.82+20*16.0)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/4/41/Youmuu%27s_Ghostblade_item.png
-  name: Youmuu's Ghostblade (Haste)
+  name: Youmuu's Ghostblade (Momentum - Range)
   stats:
   - type: Attack Damage
     value: 55
@@ -98,10 +100,10 @@
   - passive: Slice
     type: Armor Penetration
     value: 15
-  - passive: Haste
-    type: '% Attack Speed'
-    value: 25
   - type: Unstable Passives' Stats
+  - passive: Momentum
+    type: Move Speed
+    value: 20
 - amount: 108.89%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
@@ -414,7 +416,7 @@
     value: 25
   - type: Unstable Passives' Stats
 - amount: 157.47%
-  category: PHYSICAL DAMAGE ITEMS
+  category: MAGIC DAMAGE ITEMS
   cost: 2900
   formula: (50*33.33+80*25.0+15*60.0)/2900
   image: https://static.wikia.nocookie.net/leagueoflegends/images/1/16/Nashor%27s_Tooth_item.png
@@ -706,7 +708,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (50*41.67+25*50.0+20*33.33)/3000
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/9/98/Stormrazor_item.png
+  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/stormrazor.png
   name: Stormrazor
   stats:
   - type: Attack Damage
@@ -719,7 +721,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 2650
   formula: (25*50.0+40*33.33+4*18.75)/2650
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/4/4e/Rapid_Firecannon_item.png
+  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/rapid-firecannon.png
   name: Rapid Firecannon
   stats:
   - type: '% Critical Rate'
@@ -732,7 +734,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 2650
   formula: (25*50.0+45*33.33+4*18.75)/2650
-  image: https://wiki.leagueoflegends.com/en-us/images/Fiendhunter_Bolts_item.png
+  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/fiendhunter-bolts.png
   name: Fiendhunter Bolts
   stats:
   - type: '% Critical Rate'
@@ -745,7 +747,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (55*41.67+25*50.0)/3000
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/b/b7/Immortal_Shieldbow_item.png
+  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/immortal-shieldbow.png
   name: Immortal Shieldbow
   stats:
   - type: Attack Damage
@@ -756,7 +758,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (40*41.67+40*25.0+30*33.33+4*18.75)/3000
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/e/ee/Statikk_Shiv_item.png
+  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/statikk-shiv.png
   name: Statikk Shiv
   stats:
   - type: Attack Damage
@@ -771,7 +773,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 2900
   formula: (55*41.67+25*50.0)/2900
-  image: https://wiki.leagueoflegends.com/en-us/images/Hexoptics_C44_item.png
+  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/hexoptics-c44.png
   name: Hexoptics C44
   stats:
   - type: Attack Damage
@@ -782,7 +784,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3100
   formula: (50*41.67+25*33.33)/3100
-  image: https://wiki.leagueoflegends.com/en-us/images/Yun_Tal_Wildarrows_item.png
+  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/yun-tal-wildarrows.png
   name: Yun Tal Wildarrows
   stats:
   - type: Attack Damage
@@ -1096,20 +1098,21 @@
     value: 60
   - type: '% Mana Regeneration'
     value: 50
-- amount: 77.69%
+- amount: 111.54%
   category: SUPPORT ITEMS
   cost: 2600
-  formula: (60*25.0+50*4+20*16.0)/2600
+  formula: (60*25.0+50*4+20*60.0)/2600
   image: https://static.wikia.nocookie.net/leagueoflegends/images/e/e0/Imperial_Mandate_WR_item.png
-  name: Imperial Mandate (Coordinated Fire)
+  name: Imperial Mandate (Control)
   stats:
   - type: Ability Power
     value: 60
   - type: '% Mana Regeneration'
     value: 50
-  - passive: Coordinated Fire
-    type: Move Speed
+  - passive: Control
+    type: Ability Haste
     value: 20
+  - type: Unstable Passives' Stats
   - type: Unstable Passives' Stats
 - amount: 144.13%
   category: MAGIC DAMAGE ITEMS
@@ -1461,10 +1464,10 @@
     type: '% Move Speed'
     value: 10
   - type: Unstable Passives' Stats
-- amount: 127.40%
+- amount: 132.39%
   category: DEFENSE ITEMS, SUPPORT ITEMS
-  cost: 2650
-  formula: (80*25.0+400*0.44+20*60.0)/2650
+  cost: 2550
+  formula: (80*25.0+400*0.44+20*60.0)/2550
   image: https://wiki.leagueoflegends.com/en-us/images/Frozen_Heart_item.png
   name: Frozen Heart
   stats:
@@ -1621,7 +1624,7 @@
   category: SUPPORT ITEMS
   cost: 2400
   formula: (200*3.33+500*0.44+50*4+8*116.67)/2400
-  image: https://wiki.leagueoflegends.com/en-us/images/Whispering_Circlet_item.png
+  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/whispering-circlet.png
   name: Whispering Circlet
   stats:
   - type: Max Health
@@ -1636,7 +1639,7 @@
   category: SUPPORT ITEMS
   cost: 2400
   formula: (200*3.33+1200*0.44+50*4+8*116.67)/2400
-  image: https://wiki.leagueoflegends.com/en-us/images/Diadem_of_Songs_item.png
+  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/diadem-of-songs.png
   name: Diadem of Songs
   stats:
   - type: Max Health
@@ -1651,7 +1654,7 @@
   category: SUPPORT ITEMS
   cost: 2400
   formula: (200*3.33+40*25.0+20*60.0+50*4)/2400
-  image: https://wiki.leagueoflegends.com/en-us/images/Echoes_of_Helia_item.png
+  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/echoes-of-helia.png
   name: Echoes of Helia
   stats:
   - type: Max Health
@@ -1666,7 +1669,7 @@
   category: SUPPORT ITEMS
   cost: 2450
   formula: (40*25.0+10*60.0+8*116.67)/2450
-  image: https://wiki.leagueoflegends.com/en-us/images/Salvation_item.png
+  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/salvation.png
   name: Salvation
   stats:
   - type: Ability Power
@@ -2039,12 +2042,12 @@
   name: Vampiric Scepter
   second_base:
     formula: (1200-20*41.67)/8
-    type: '% Physical Vamp'
+    type: '% Lifesteal'
     value: 45.82
   stats:
   - type: Attack Damage
     value: 20
-  - type: '% Physical Vamp'
+  - type: '% Lifesteal'
     value: 8
 - amount: 94.64%
   category: MID TIER ITEMS
@@ -2132,7 +2135,7 @@
   category: MID TIER ITEMS
   cost: 800
   formula: (20*41.67)/800
-  image: https://wiki.leagueoflegends.com/en-us/images/Pickaxe_item.png
+  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/pickaxe.png
   name: Pickaxe
   stats:
   - type: Attack Damage
@@ -2141,7 +2144,7 @@
   category: MID TIER ITEMS
   cost: 1200
   formula: (20*41.67+15*33.33)/1200
-  image: https://wiki.leagueoflegends.com/en-us/images/Hearthbound_Axe_item.png
+  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/hearthbound-axe.png
   name: Hearthbound Axe
   stats:
   - type: Attack Damage
@@ -2676,7 +2679,7 @@
   category: MID TIER ITEMS
   cost: 900
   formula: (20*25.0+10*60.0+50*4)/900
-  image: https://wiki.leagueoflegends.com/en-us/images/Bandleglass_Mirror_item.png
+  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/bandleglass-mirror.png
   name: Bandleglass Mirror
   stats:
   - type: Ability Power
@@ -3004,7 +3007,7 @@
     value: 45
   - type: Magic Resistance
     value: 40
-  - type: '% Physical Vamp'
+  - type: '% Lifesteal'
     value: 12
 - amount: 123.39%
   category: PHYSICAL DAMAGE ITEMS, ACTIVE ITEMS
@@ -3268,7 +3271,7 @@
   stats:
   - type: '% Attack Speed'
     value: 50
-  - type: '% Physical Vamp'
+  - type: '% Lifesteal'
     value: 5
   - type: Move Speed
     value: 45
@@ -3285,7 +3288,7 @@
   stats:
   - type: '% Attack Speed'
     value: 50
-  - type: '% Physical Vamp'
+  - type: '% Lifesteal'
     value: 5
   - type: Move Speed
     value: 45
