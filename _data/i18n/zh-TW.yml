@@ -67,6 +67,7 @@ stat:
     magic-penetration: 魔法穿透
     percentage-magic-penetration: "% 魔法穿透"
     ability-haste: 技能加速
+    ultimate-ability-haste: 大絕技能加速
     max-mana: 最大魔力
     percentage-mana-regeneration: "% 魔力回復"
     percentage-omnivamp: "% 全能吸血"

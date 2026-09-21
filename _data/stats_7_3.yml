@@ -68,6 +68,10 @@
   base_type: "first"
   base_item: "Ring of Revelation"
   type: "Magic"
+"Ultimate Ability Haste":
+  image: "https://i.imgur.com/AbD8Aub.png"
+  alias: "Ability Haste"
+  type: "Magic"
 "% Move Speed":
   image: "https://i.imgur.com/3kIsswA.png"
   base_type: "second"

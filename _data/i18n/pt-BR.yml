@@ -67,6 +67,7 @@ stat:
     magic-penetration: Magic Penetration
     percentage-magic-penetration: "% Magic Penetration"
     ability-haste: Ability Haste
+    ultimate-ability-haste: Ultimate Ability Haste
     max-mana: Max Mana
     percentage-mana-regeneration: "% Mana Regeneration"
     percentage-omnivamp: "% Omnivamp"

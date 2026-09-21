@@ -757,7 +757,7 @@
   - type: '% Move Speed'
     value: 4
   - passive: Night Vigil
-    type: Ability Haste
+    type: Ultimate Ability Haste
     value: 20
   - type: Unstable Passives' Stats
 - amount: 169.48%
@@ -791,7 +791,7 @@
   - type: '% Move Speed'
     value: 4
   - passive: Night Vigil
-    type: Ability Haste
+    type: Ultimate Ability Haste
     value: 20
   - passive: Opening Barrage
     type: '% Attack Speed'

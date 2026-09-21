@@ -67,6 +67,7 @@ stat:
     magic-penetration: 魔法防御貫通値
     percentage-magic-penetration: "魔法防御貫通％"
     ability-haste: スキルヘイスト
+    ultimate-ability-haste: アルティメットスキルヘイスト
     max-mana: 最大マナ
     percentage-mana-regeneration: "マナ自動回復％"
     percentage-omnivamp: "オムニヴァンプ％"
