@@ -89,6 +89,9 @@ item:
     diadem-of-songs: 旋律のダイアデム
     echoes-of-helia: ヘリアの残響
     fiendhunter-bolts: フィーンドハンターの矢
+    fiendhunter-bolts-night-vigil: フィーンドハンターの矢 (夜警)
+    fiendhunter-bolts-opening-barrage: フィーンドハンターの矢 (連射)
+    fiendhunter-bolts-night-vigil-opening-barrage: フィーンドハンターの矢 (夜警, 連射)
     guinsoo-s-rageblade-seething-strike: グインソー レイジブレード (シージングストライク)
     hearthbound-axe: ハースバウンド アックス
     hexoptics-c44: ヘクスオプティックC44
@@ -101,6 +104,9 @@ item:
     whispering-circlet: 囁きのサークレット
     youmuu-s-ghostblade-momentum-range: 妖夢の霊剣 (熾烈 - レンジ)
     yun-tal-wildarrows: ユン・タル ワイルドアロー
+    yun-tal-wildarrows-practice-makes-perfect: ユン・タル ワイルドアロー (継続は力なり)
+    yun-tal-wildarrows-flurry: ユン・タル ワイルドアロー (疾風)
+    yun-tal-wildarrows-practice-makes-perfect-flurry: ユン・タル ワイルドアロー (継続は力なり, 疾風)
     aether-wisp: エーテル ウィスプ
     amaranth-s-twinguard: アマランス ツインガード
     amaranth-s-twinguard-endurance: アマランス ツインガード(忍耐)
@@ -423,6 +429,7 @@ item:
     fear: フィアー
     fervor: 熱情
     flight: フライト
+    flurry: 疾風
     gouge: えぐり出し
     haste: 豪撃
     heavy-handed: ヘビーハンド
@@ -436,8 +443,11 @@ item:
     magic-needle: 魔法の針
     mana-charge: マナチャージ
     momentum: 熾烈
+    night-vigil: 夜警
     overkill: オーバーキル
+    opening-barrage: 連射
     projection: Projection
+    practice-makes-perfect: 継続は力なり
     rage: 追撃
     chase: Chase
     sunder: Sunder

@@ -392,8 +392,14 @@ item:
     zhonya-s-hourglass: Zhonya's Hourglass
     rapid-firecannon: Rapid Firecannon
     yun-tal-wildarrows: Yun Tal Wildarrows
+    yun-tal-wildarrows-practice-makes-perfect: Yun Tal Wildarrows (Practice Makes Perfect)
+    yun-tal-wildarrows-flurry: Yun Tal Wildarrows (Flurry)
+    yun-tal-wildarrows-practice-makes-perfect-flurry: Yun Tal Wildarrows (Practice Makes Perfect, Flurry)
     statikk-shiv: Statikk Shiv
     fiendhunter-bolts: Fiendhunter Bolts
+    fiendhunter-bolts-night-vigil: Fiendhunter Bolts (Night Vigil)
+    fiendhunter-bolts-opening-barrage: Fiendhunter Bolts (Opening Barrage)
+    fiendhunter-bolts-night-vigil-opening-barrage: Fiendhunter Bolts (Night Vigil, Opening Barrage)
     hexoptics-c44: Hexoptics C44
     hearthbound-axe: Hearthbound Axe
     pickaxe: Pickaxe
@@ -424,6 +430,7 @@ item:
     fear: Fear
     fervor: Fervor
     flight: Flight
+    flurry: Flurry
     gouge: Gouge
     haste: Haste
     heavy-handed: Heavy Handed
@@ -437,8 +444,11 @@ item:
     magic-needle: Magic Needle
     mana-charge: Mana Charge
     momentum: Momentum
+    night-vigil: Night Vigil
     overkill: Overkill
+    opening-barrage: Opening Barrage
     projection: Projection
+    practice-makes-perfect: Practice Makes Perfect
     rage: Rage
     chase: Chase
     sunder: Sunder

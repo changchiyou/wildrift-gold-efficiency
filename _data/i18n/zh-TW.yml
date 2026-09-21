@@ -89,6 +89,9 @@ item:
     diadem-of-songs: 歌謠之冠
     echoes-of-helia: 希利亞的迴響
     fiendhunter-bolts: 獵魔弩箭
+    fiendhunter-bolts-night-vigil: 獵魔弩箭 (守夜)
+    fiendhunter-bolts-opening-barrage: 獵魔弩箭 (連環轟擊)
+    fiendhunter-bolts-night-vigil-opening-barrage: 獵魔弩箭 (守夜, 連環轟擊)
     guinsoo-s-rageblade-seething-strike: 鬼索的狂暴之刃 (沸騰打擊)
     hearthbound-axe: 爐縛之斧
     hexoptics-c44: 海克斯光學C44
@@ -101,6 +104,9 @@ item:
     whispering-circlet: 低語之環
     youmuu-s-ghostblade-momentum-range: 妖夢鬼刀 (衝勁 - 遠程)
     yun-tal-wildarrows: 雲陶狂箭
+    yun-tal-wildarrows-practice-makes-perfect: 雲陶狂箭 (熟能生巧)
+    yun-tal-wildarrows-flurry: 雲陶狂箭 (無雙亂舞)
+    yun-tal-wildarrows-practice-makes-perfect-flurry: 雲陶狂箭 (熟能生巧, 無雙亂舞)
     aether-wisp: 蒼穹神火
     amaranth-s-twinguard: 雅瑪蘭守護像
     amaranth-s-twinguard-endurance: 雅瑪蘭守護像 (堅毅)
@@ -423,6 +429,7 @@ item:
     fear: 恐懼
     fervor: 狂熱
     flight: 飛行
+    flurry: 無雙亂舞
     gouge: 深掘
     haste: 幽魂疾速
     heavy-handed: 重手重腳
@@ -436,8 +443,11 @@ item:
     magic-needle: 魔針
     mana-charge: 魔力補充
     momentum: 衝勁
+    night-vigil: 守夜
     overkill: 狂弒
+    opening-barrage: 連環轟擊
     projection: 投影
+    practice-makes-perfect: 熟能生巧
     rage: 暴虐
     chase: 追逐
     sunder: 斬斷

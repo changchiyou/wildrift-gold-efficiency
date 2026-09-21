@@ -743,6 +743,60 @@
     value: 45
   - type: '% Move Speed'
     value: 4
+- amount: 151.88%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 2650
+  formula: (25*50.0+45*33.33+4*18.75+20*60.0)/2650
+  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/fiendhunter-bolts.png
+  name: Fiendhunter Bolts (Night Vigil)
+  stats:
+  - type: '% Critical Rate'
+    value: 25
+  - type: '% Attack Speed'
+    value: 45
+  - type: '% Move Speed'
+    value: 4
+  - passive: Night Vigil
+    type: Ability Haste
+    value: 20
+  - type: Unstable Passives' Stats
+- amount: 169.48%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 2650
+  formula: (25*50.0+45*33.33+4*18.75+50*33.33)/2650
+  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/fiendhunter-bolts.png
+  name: Fiendhunter Bolts (Opening Barrage)
+  stats:
+  - type: '% Critical Rate'
+    value: 25
+  - type: '% Attack Speed'
+    value: 45
+  - type: '% Move Speed'
+    value: 4
+  - passive: Opening Barrage
+    type: '% Attack Speed'
+    value: 50
+  - type: Unstable Passives' Stats
+- amount: 214.77%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 2650
+  formula: (25*50.0+45*33.33+4*18.75+20*60.0+50*33.33)/2650
+  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/fiendhunter-bolts.png
+  name: Fiendhunter Bolts (Night Vigil, Opening Barrage)
+  stats:
+  - type: '% Critical Rate'
+    value: 25
+  - type: '% Attack Speed'
+    value: 45
+  - type: '% Move Speed'
+    value: 4
+  - passive: Night Vigil
+    type: Ability Haste
+    value: 20
+  - passive: Opening Barrage
+    type: '% Attack Speed'
+    value: 50
+  - type: Unstable Passives' Stats
 - amount: 118.06%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
@@ -791,6 +845,54 @@
     value: 50
   - type: '% Attack Speed'
     value: 25
+- amount: 134.41%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3100
+  formula: (50*41.67+25*33.33+25*50.0)/3100
+  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/yun-tal-wildarrows.png
+  name: Yun Tal Wildarrows (Practice Makes Perfect)
+  stats:
+  - type: Attack Damage
+    value: 50
+  - type: '% Attack Speed'
+    value: 25
+  - passive: Practice Makes Perfect
+    type: '% Critical Rate'
+    value: 25
+  - type: Unstable Passives' Stats
+- amount: 120.97%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3100
+  formula: (50*41.67+25*33.33+25*33.33)/3100
+  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/yun-tal-wildarrows.png
+  name: Yun Tal Wildarrows (Flurry)
+  stats:
+  - type: Attack Damage
+    value: 50
+  - type: '% Attack Speed'
+    value: 25
+  - passive: Flurry
+    type: '% Attack Speed'
+    value: 25
+  - type: Unstable Passives' Stats
+- amount: 161.29%
+  category: PHYSICAL DAMAGE ITEMS
+  cost: 3100
+  formula: (50*41.67+25*33.33+25*50.0+25*33.33)/3100
+  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/yun-tal-wildarrows.png
+  name: Yun Tal Wildarrows (Practice Makes Perfect, Flurry)
+  stats:
+  - type: Attack Damage
+    value: 50
+  - type: '% Attack Speed'
+    value: 25
+  - passive: Practice Makes Perfect
+    type: '% Critical Rate'
+    value: 25
+  - passive: Flurry
+    type: '% Attack Speed'
+    value: 25
+  - type: Unstable Passives' Stats
 - amount: 118.57%
   category: MAGIC DAMAGE ITEMS
   cost: 2800
