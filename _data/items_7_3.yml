@@ -1669,7 +1669,7 @@
   category: SUPPORT ITEMS
   cost: 2450
   formula: (40*25.0+10*60.0+8*116.67)/2450
-  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/salvation.png
+  image: https://wiki.leagueoflegends.com/en-us/images/thumb/Redemption_WR_item.png/64px-Redemption_WR_item.png?1d330
   name: Salvation
   stats:
   - type: Ability Power
