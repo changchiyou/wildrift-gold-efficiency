@@ -37,6 +37,16 @@ bash copy_v2.sh 6_0d 6_0e
 - Version copy script: `copy_v2.sh`
 - Documentation: `docs/`
 
+### Tests
+```bash
+# i18n key + image integrity checks (data-level; built-site checks skip if _site/ missing)
+python3 -m unittest tests.test_site_integrity -v
+
+# Skip the network image-reachability test / target a specific patch
+SKIP_NETWORK_TESTS=1 python3 -m unittest tests.test_site_integrity
+TEST_PATCH=7_3 python3 -m unittest tests.test_site_integrity
+```
+
 ## Workflow for New Version Updates
 1. Run `bash copy_v2.sh {old_version} {new_version}` to copy previous version
 2. Update item data in `_data/items_{new_version}.yml` based on patch notes
