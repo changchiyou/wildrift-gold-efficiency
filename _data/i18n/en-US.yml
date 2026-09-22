@@ -59,6 +59,7 @@ stat:
     percentage-critical-rate: "% Cricital Rate"
     percentage-attack-speed: "% Attack Speed"
     percentage-physical-vamp: "% Physical Vamp"
+    percentage-lifesteal: '% Lifesteal'
     armor-penetration: "Armor Penetration"
     percentage-armor-penetration: "% Armor Penetration"
     # Magic
@@ -66,6 +67,7 @@ stat:
     magic-penetration: Magic Penetration
     percentage-magic-penetration: "% Magic Penetration"
     ability-haste: Ability Haste
+    ultimate-ability-haste: Ultimate Ability Haste
     max-mana: Max Mana
     percentage-mana-regeneration: "% Mana Regeneration"
     percentage-omnivamp: "% Omnivamp"
@@ -84,6 +86,13 @@ stat:
     update: Update
 item:
   name:
+    ardent-censer-censer: Ardent Censer (Censer)
+    zeke-s-convergence-converge: Zeke's Convergence (Converge)
+    guinsoo-s-rageblade-seething-strike: 'Guinsoo''s Rageblade (Seething Strike)'
+    imperial-mandate-control: Imperial Mandate (Control)
+    nashor-s-tooth: 'Nashor''s Tooth'
+    salvation: Salvation
+    youmuu-s-ghostblade-momentum-range: 'Youmuu''s Ghostblade (Momentum - Range)'
     aether-wisp: Aether Wisp
     amaranth-s-twinguard: Amaranth's Twinguard
     amaranth-s-twinguard-endurance: Amaranth's Twinguard (Endurance)
@@ -384,8 +393,29 @@ item:
     void-amethyst: Void Amethyst
     void-staff: Void Staff
     zhonya-s-hourglass: Zhonya's Hourglass
+    rapid-firecannon: Rapid Firecannon
+    yun-tal-wildarrows: Yun Tal Wildarrows
+    yun-tal-wildarrows-practice-makes-perfect: Yun Tal Wildarrows (Practice Makes Perfect)
+    yun-tal-wildarrows-flurry: Yun Tal Wildarrows (Flurry)
+    yun-tal-wildarrows-practice-makes-perfect-flurry: Yun Tal Wildarrows (Practice Makes Perfect, Flurry)
+    statikk-shiv: Statikk Shiv
+    fiendhunter-bolts: Fiendhunter Bolts
+    fiendhunter-bolts-night-vigil: Fiendhunter Bolts (Night Vigil)
+    fiendhunter-bolts-opening-barrage: Fiendhunter Bolts (Opening Barrage)
+    fiendhunter-bolts-night-vigil-opening-barrage: Fiendhunter Bolts (Night Vigil, Opening Barrage)
+    hexoptics-c44: Hexoptics C44
+    hearthbound-axe: Hearthbound Axe
+    pickaxe: Pickaxe
+    bandleglass-mirror: Bandleglass Mirror
+    whispering-circlet: Whispering Circlet
+    diadem-of-songs: Diadem of Songs
+    echoes-of-helia: Echoes of Helia
 
   passive:
+    censer: Censer
+    harmony: Harmony
+    converge: Converge
+    control: Control
     absorb: Absorb
     ardent: Ardent
     assimilation: Assimilation
@@ -406,6 +436,7 @@ item:
     fear: Fear
     fervor: Fervor
     flight: Flight
+    flurry: Flurry
     gouge: Gouge
     haste: Haste
     heavy-handed: Heavy Handed
@@ -419,8 +450,11 @@ item:
     magic-needle: Magic Needle
     mana-charge: Mana Charge
     momentum: Momentum
+    night-vigil: Night Vigil
     overkill: Overkill
+    opening-barrage: Opening Barrage
     projection: Projection
+    practice-makes-perfect: Practice Makes Perfect
     rage: Rage
     chase: Chase
     sunder: Sunder

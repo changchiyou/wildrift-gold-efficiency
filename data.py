@@ -131,6 +131,16 @@ class ItemData:
             }
             self.stat_price[_type] = stat_cost
 
+        logging.debug("  - aliases")
+        for stat in stats:
+            if "alias" in stats[stat]:
+                target = stats[stat]["alias"]
+                if target not in self.stat_price:
+                    raise PairingException(
+                        f"`{stat}` aliases `{target}`, but `{target}` has no computed price"
+                    )
+                self.stat_price[stat] = self.stat_price[target]
+
         self.datas = datas
         logging.debug("write `datas` into yml")
         self.write_yaml(self.items_file_name)

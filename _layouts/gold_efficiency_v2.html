@@ -32,11 +32,13 @@ layout: default
             The Gold efficiency of an item tells you how much stats it provides for its price (gold cost). This is a theoretical value with no direct game impact, used mainly to compare items.
         </blockquote>
         {% include i18n.html token="hint.message2" %}
-        <br><br><hr><br>
+    </p>
+    <hr>
+    <ul>
         <li>{% include i18n.html token="hint.list1" interpolate='hyperlink_start|<a href="#giscus-comments">||hyperlink_end|</a>||crowdin|<a href="https://crowdin.com/project/wildrift-gold-efficiency" target="_blank" rel="nofollow"><img style="width:77;height:22px" src="https://badges.crowdin.net/badge/dark/crowdin-on-light.png" srcset="https://badges.crowdin.net/badge/dark/crowdin-on-light.png 1x,https://badges.crowdin.net/badge/dark/crowdin-on-light@2x.png 2x"  alt="Crowdin" /></a>' %}</li>
         {% capture interpolate %}github_repo|{% include badge/github_repo.html %}{% endcapture %}
         <li>{% include i18n.html token="hint.list2" interpolate=interpolate %}</li>
-    </p>
+    </ul>
 </div>
 
 {% include filter.html items=page.data.items stats=page.data.stats %}

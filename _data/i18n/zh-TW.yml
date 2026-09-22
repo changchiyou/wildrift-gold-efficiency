@@ -59,6 +59,7 @@ stat:
     percentage-critical-rate: "% 爆擊率"
     percentage-attack-speed: "% 攻擊速度"
     percentage-physical-vamp: "% 物理吸血"
+    percentage-lifesteal: '% 普攻吸血'
     armor-penetration: "物理穿透"
     percentage-armor-penetration: "% 物理穿透"
     # Magic
@@ -66,6 +67,7 @@ stat:
     magic-penetration: 魔法穿透
     percentage-magic-penetration: "% 魔法穿透"
     ability-haste: 技能加速
+    ultimate-ability-haste: 大絕技能加速
     max-mana: 最大魔力
     percentage-mana-regeneration: "% 魔力回復"
     percentage-omnivamp: "% 全能吸血"
@@ -84,6 +86,30 @@ stat:
     update: 更新
 item:
   name:
+    ardent-censer-censer: 熾灼魔器 (魔器)
+    zeke-s-convergence-converge: 錫柯的聚合之力 (聚合)
+    bandleglass-mirror: 班德爾玻璃之鏡
+    diadem-of-songs: 歌謠之冠
+    echoes-of-helia: 希利亞的迴響
+    fiendhunter-bolts: 獵魔弩箭
+    fiendhunter-bolts-night-vigil: 獵魔弩箭 (守夜)
+    fiendhunter-bolts-opening-barrage: 獵魔弩箭 (連環轟擊)
+    fiendhunter-bolts-night-vigil-opening-barrage: 獵魔弩箭 (守夜, 連環轟擊)
+    guinsoo-s-rageblade-seething-strike: 鬼索的狂暴之刃 (沸騰打擊)
+    hearthbound-axe: 爐縛之斧
+    hexoptics-c44: 海克斯光學C44
+    imperial-mandate-control: 帝王命令 (控場)
+    nashor-s-tooth: 納什之牙
+    pickaxe: 十字鎬
+    rapid-firecannon: 衝擊火炮
+    salvation: 救世神石
+    statikk-shiv: 史提克彈簧刀
+    whispering-circlet: 低語之環
+    youmuu-s-ghostblade-momentum-range: 妖夢鬼刀 (衝勁 - 遠程)
+    yun-tal-wildarrows: 雲陶狂箭
+    yun-tal-wildarrows-practice-makes-perfect: 雲陶狂箭 (熟能生巧)
+    yun-tal-wildarrows-flurry: 雲陶狂箭 (無雙亂舞)
+    yun-tal-wildarrows-practice-makes-perfect-flurry: 雲陶狂箭 (熟能生巧, 無雙亂舞)
     aether-wisp: 蒼穹神火
     amaranth-s-twinguard: 雅瑪蘭守護像
     amaranth-s-twinguard-endurance: 雅瑪蘭守護像 (堅毅)
@@ -385,6 +411,10 @@ item:
     void-staff: 虛空之杖
     zhonya-s-hourglass: 中婭沙漏
   passive:
+    censer: 魔器
+    harmony: 和諧
+    converge: 聚合
+    control: 控場
     absorb: 吸收
     ardent: 熾灼
     assimilation: 同化
@@ -405,6 +435,7 @@ item:
     fear: 恐懼
     fervor: 狂熱
     flight: 飛行
+    flurry: 無雙亂舞
     gouge: 深掘
     haste: 幽魂疾速
     heavy-handed: 重手重腳
@@ -418,8 +449,11 @@ item:
     magic-needle: 魔針
     mana-charge: 魔力補充
     momentum: 衝勁
+    night-vigil: 守夜
     overkill: 狂弒
+    opening-barrage: 連環轟擊
     projection: 投影
+    practice-makes-perfect: 熟能致命
     rage: 暴虐
     chase: 追逐
     sunder: 斬斷
