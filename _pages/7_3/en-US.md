@@ -29,7 +29,7 @@ patch_note:
     excludes: ""
     excludes_sep: ","
     compare:
-        statuses: "new"
+        statuses: "buffed,adjusted,nerfed,new"
         items: items_7_2e
         stats: stats_7_2e
         item_prefix: 7.2e

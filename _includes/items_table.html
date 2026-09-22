@@ -90,18 +90,17 @@
                         {% endif %}
                     {% endfor %}
                 {% endif %}
-                {% if _force_item != "" %}
+                {% assign _same_name_item = compare_items | where: "name", item.name | first %}
+                {% if _force_item and _force_item != "" %}
                     {% assign compare_item = _force_item %}
-                {% elsif compare_force_only == true %}
-                    {% assign compare_item = "" %}
                 {% else %}
-                    {% assign compare_item = compare_items | where: "name", item.name | first %}
+                    {% assign compare_item = _same_name_item %}
                 {% endif %}
 
                 {% assign _do_compare = false %}
                 {% if compare_statuses contains patch and _compare_exclude != true %}
                     {% if compare_force_only == true %}
-                        {% if _force_item != "" %}
+                        {% if compare_item %}
                             {% assign _do_compare = true %}
                         {% endif %}
                     {% else %}
