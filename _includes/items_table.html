@@ -6,6 +6,7 @@
 {% assign patch_status_excludes = page.patch_note.excludes | split: excludes_sep %}
 {% assign compare_excludes_sep = page.patch_note.compare.excludes_sep | default: ',' %}
 {% assign compare_excludes = page.patch_note.compare.excludes | split: compare_excludes_sep %}
+{% assign compare_force_only = page.patch_note.compare.force_only %}
 {% assign force_sep = page.patch_note.compare.force_sep %}
 {% if force_sep %}
     {% assign force_comma = force_sep | slice: 0 %}
@@ -79,21 +80,38 @@
                     {% endif %}
                 {% endfor %}
 
+                {% assign _force_item = "" %}
+                {% if force_pairs %}
+                    {% for force_pair in force_pairs %}
+                        {% assign pair = force_pair | strip | split: force_comma %}
+                        {% if item.name == pair[0] %}
+                            {% assign _force_item = compare_items | where: "name", pair[1] | first %}
+                            {% break %}
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+                {% if _force_item != "" %}
+                    {% assign compare_item = _force_item %}
+                {% elsif compare_force_only == true %}
+                    {% assign compare_item = "" %}
+                {% else %}
+                    {% assign compare_item = compare_items | where: "name", item.name | first %}
+                {% endif %}
+
+                {% assign _do_compare = false %}
                 {% if compare_statuses contains patch and _compare_exclude != true %}
+                    {% if compare_force_only == true %}
+                        {% if _force_item != "" %}
+                            {% assign _do_compare = true %}
+                        {% endif %}
+                    {% else %}
+                        {% assign _do_compare = true %}
+                    {% endif %}
+                {% endif %}
+
+                {% if _do_compare %}
                     {% include item_row.html data_item=item stats=include.stats patch=patch tr_classes=tr_classes first_td_class="toggle-trigger" prefix_version_in_span="true" %}
-                    {% if force_pairs %}
-                        {% for force_pair in force_pairs %}
-                            {% assign pair = force_pair | strip | split: force_comma %}
-                            {% if item.name == pair[0] %}
-                                {% assign compare_item = compare_items | where: "name", pair[1] | first %}
-                                {% break %}
-                            {% endif %}
-                        {% endfor %}
-                    {% endif %}
-                    {% if compare_item == "" %}
-                        {% assign compare_item = compare_items | where: "name", item.name | first %}
-                    {% endif %}
-                    {% if compare_item %}
+                    {% if compare_item and compare_item != "" %}
                         {% include item_row.html data_item=compare_item stats=page.patch_note.compare.stats display="false" compare_item_prefix=page.patch_note.compare.item_prefix tr_classes="compare" backgroundColor="rgba(98, 101, 112, 1)" %}
                     {% endif %}
                 {% else %}
