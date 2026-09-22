@@ -86,6 +86,8 @@ stat:
     update: Update
 item:
   name:
+    ardent-censer-censer: Ardent Censer (Censer)
+    zeke-s-convergence-converge: Zeke's Convergence (Converge)
     guinsoo-s-rageblade-seething-strike: 'Guinsoo''s Rageblade (Seething Strike)'
     imperial-mandate-control: Imperial Mandate (Control)
     nashor-s-tooth: 'Nashor''s Tooth'
@@ -410,6 +412,9 @@ item:
     echoes-of-helia: Echoes of Helia
 
   passive:
+    censer: Censer
+    harmony: Harmony
+    converge: Converge
     control: Control
     absorb: Absorb
     ardent: Ardent

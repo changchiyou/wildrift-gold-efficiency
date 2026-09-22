@@ -86,6 +86,8 @@ stat:
     update: アップデート
 item:
   name:
+    ardent-censer-censer: アーデント センサー (Censer)
+    zeke-s-convergence-converge: ジーク コンバージェンス (Converge)
     bandleglass-mirror: バンドルグラスの鏡
     diadem-of-songs: 旋律のダイアデム
     echoes-of-helia: ヘリアの残響
@@ -409,6 +411,9 @@ item:
     void-staff: Void Staff
     zhonya-s-hourglass: Zhonya's Hourglass
   passive:
+    censer: Censer
+    harmony: 調和
+    converge: Converge
     control: 制御
     absorb: 吸収
     ardent: アーデント

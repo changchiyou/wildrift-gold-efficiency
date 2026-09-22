@@ -46,10 +46,10 @@
     value: 25
   - type: '% Move Speed'
     value: 4
-- amount: 121.44%
+- amount: 119.30%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
-  formula: (55*41.67+15*60.0+4*18.75+15*20.82+4*16.0)/3000
+  formula: (55*41.67+15*60.0+4*18.75+15*20.82)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/4/41/Youmuu%27s_Ghostblade_item.png
   name: Youmuu's Ghostblade
   stats:
@@ -62,8 +62,6 @@
   - passive: Slice
     type: Armor Penetration
     value: 15
-  - type: Move Speed
-    value: 4
 - amount: 135.31%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
@@ -445,7 +443,7 @@
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
   formula: (50*41.67+25*50.0+20*60.0)/3000
-  image: https://live.staticflickr.com/65535/54715847760_df5ab84aa7_t.jpg
+  image: https://cdn.jsdelivr.net/gh/changchiyou/Images@main/wildrift/items/essence-reaver-old.png
   name: Essence Reaver
   stats:
   - type: Attack Damage
@@ -618,10 +616,10 @@
     value: 35
   - type: '% Attack Speed'
     value: 35
-- amount: 209.66%
+- amount: 200.83%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
-  formula: (35*41.67+35*33.33+15*25.0+15*25.0+33*38.33+33*50.0)/3000
+  formula: (35*41.67+35*33.33+15*25.0+15*25.0+30*38.33+30*50.0)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/4/49/Terminus_item.png
   name: Terminus (Juxtaposition - lv1)
   stats:
@@ -637,15 +635,15 @@
     value: 15
   - passive: Juxtaposition
     type: '% Armor Penetration'
-    value: 33
+    value: 30
   - passive: Juxtaposition
     type: '% Magic Penetration'
-    value: 33
+    value: 30
   - type: Unstable Passives' Stats
-- amount: 224.66%
+- amount: 215.83%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3000
-  formula: (35*41.67+35*33.33+24*25.0+24*25.0+33*38.33+33*50.0)/3000
+  formula: (35*41.67+35*33.33+24*25.0+24*25.0+30*38.33+30*50.0)/3000
   image: https://static.wikia.nocookie.net/leagueoflegends/images/4/49/Terminus_item.png
   name: Terminus (Juxtaposition - lv15)
   stats:
@@ -661,10 +659,10 @@
     value: 24
   - passive: Juxtaposition
     type: '% Armor Penetration'
-    value: 33
+    value: 30
   - passive: Juxtaposition
     type: '% Magic Penetration'
-    value: 33
+    value: 30
   - type: Unstable Passives' Stats
 - amount: 128.70%
   category: PHYSICAL DAMAGE ITEMS
@@ -730,19 +728,6 @@
     value: 40
   - type: '% Move Speed'
     value: 4
-- amount: 106.60%
-  category: PHYSICAL DAMAGE ITEMS
-  cost: 2650
-  formula: (25*50.0+45*33.33+4*18.75)/2650
-  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/fiendhunter-bolts.png
-  name: Fiendhunter Bolts
-  stats:
-  - type: '% Critical Rate'
-    value: 25
-  - type: '% Attack Speed'
-    value: 45
-  - type: '% Move Speed'
-    value: 4
 - amount: 151.88%
   category: PHYSICAL DAMAGE ITEMS
   cost: 2650
@@ -759,23 +744,6 @@
   - passive: Night Vigil
     type: Ultimate Ability Haste
     value: 20
-  - type: Unstable Passives' Stats
-- amount: 169.48%
-  category: PHYSICAL DAMAGE ITEMS
-  cost: 2650
-  formula: (25*50.0+45*33.33+4*18.75+50*33.33)/2650
-  image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/fiendhunter-bolts.png
-  name: Fiendhunter Bolts (Opening Barrage)
-  stats:
-  - type: '% Critical Rate'
-    value: 25
-  - type: '% Attack Speed'
-    value: 45
-  - type: '% Move Speed'
-    value: 4
-  - passive: Opening Barrage
-    type: '% Attack Speed'
-    value: 50
   - type: Unstable Passives' Stats
 - amount: 214.77%
   category: PHYSICAL DAMAGE ITEMS
@@ -945,17 +913,6 @@
     value: 350
   - type: Ability Power
     value: 65
-- amount: 91.63%
-  category: MAGIC DAMAGE ITEMS
-  cost: 3000
-  formula: (300*3.33+70*25.0)/3000
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/2/2b/Liandry%27s_Anguish_item_old.png
-  name: Liandry's Torment
-  stats:
-  - type: Max Health
-    value: 300
-  - type: Ability Power
-    value: 70
 - amount: 95.98%
   category: MAGIC DAMAGE ITEMS
   cost: 2700
@@ -1085,10 +1042,10 @@
     ref_type: Max Mana
     type: Ability Power
     value: 51.8
-- amount: 94.10%
+- amount: 102.43%
   category: SUPPORT ITEMS
   cost: 2400
-  formula: (50*25.0+8*116.67+4*18.75)/2400
+  formula: (50*25.0+8*116.67+4*18.75+50*4)/2400
   image: https://static.wikia.nocookie.net/leagueoflegends/images/4/47/Ardent_Censer_item.png
   name: Ardent Censer
   stats:
@@ -1098,6 +1055,27 @@
     value: 8
   - type: '% Move Speed'
     value: 4
+  - type: '% Mana Regeneration'
+    value: 50
+- amount: 144.09%
+  category: SUPPORT ITEMS
+  cost: 2400
+  formula: (50*25.0+8*116.67+4*18.75+50*4+30*33.33)/2400
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/4/47/Ardent_Censer_item.png
+  name: Ardent Censer (Censer)
+  stats:
+  - type: Ability Power
+    value: 50
+  - type: '% Heal and shield strength'
+    value: 8
+  - type: '% Move Speed'
+    value: 4
+  - type: '% Mana Regeneration'
+    value: 50
+  - passive: Censer
+    type: '% Attack Speed'
+    value: 30
+  - type: Unstable Passives' Stats
 - amount: 114.64%
   category: SUPPORT ITEMS
   cost: 2500
@@ -1123,10 +1101,10 @@
   - passive: Balanced
     type: Magic Penetration
     value: 15
-- amount: 115.97%
+- amount: 124.31%
   category: SUPPORT ITEMS
   cost: 2400
-  formula: (50*25.0+10*60.0+8*116.67)/2400
+  formula: (50*25.0+10*60.0+8*116.67+50*4)/2400
   image: https://static.wikia.nocookie.net/leagueoflegends/images/b/bf/Staff_of_Flowing_Water_item.png
   name: Staff of Flowing Waters
   stats:
@@ -1136,10 +1114,12 @@
     value: 10
   - type: '% Heal and shield strength'
     value: 8
-- amount: 172.22%
+  - type: '% Mana Regeneration'
+    value: 50
+- amount: 180.56%
   category: SUPPORT ITEMS
   cost: 2400
-  formula: (50*25.0+10*60.0+8*116.67+10*60.0+30*25.0)/2400
+  formula: (50*25.0+10*60.0+8*116.67+10*60.0+30*25.0+50*4)/2400
   image: https://static.wikia.nocookie.net/leagueoflegends/images/b/bf/Staff_of_Flowing_Water_item.png
   name: Staff of Flowing Waters (Rapids - lv1)
   stats:
@@ -1156,10 +1136,12 @@
     type: Ability Power
     value: 30
   - type: Unstable Passives' Stats
-- amount: 193.06%
+  - type: '% Mana Regeneration'
+    value: 50
+- amount: 201.39%
   category: SUPPORT ITEMS
   cost: 2400
-  formula: (50*25.0+10*60.0+8*116.67+10*60.0+50*25.0)/2400
+  formula: (50*25.0+10*60.0+8*116.67+10*60.0+50*25.0+50*4)/2400
   image: https://static.wikia.nocookie.net/leagueoflegends/images/b/bf/Staff_of_Flowing_Water_item.png
   name: Staff of Flowing Waters (Rapids - lv15)
   stats:
@@ -1176,6 +1158,8 @@
     type: Ability Power
     value: 50
   - type: Unstable Passives' Stats
+  - type: '% Mana Regeneration'
+    value: 50
 - amount: 125.62%
   category: MAGIC DAMAGE ITEMS, SUPPORT ITEMS
   cost: 2600
@@ -1212,9 +1196,8 @@
   - type: '% Mana Regeneration'
     value: 50
   - passive: Control
-    type: Ability Haste
+    type: Ultimate Ability Haste
     value: 20
-  - type: Unstable Passives' Stats
   - type: Unstable Passives' Stats
 - amount: 144.13%
   category: MAGIC DAMAGE ITEMS
@@ -1453,6 +1436,24 @@
   - type: Magic Resistance
     value: 25
   - type: Ability Haste
+    value: 10
+- amount: 143.71%
+  category: DEFENSE ITEMS, SUPPORT ITEMS
+  cost: 2400
+  formula: (300*3.33+25*25.0+25*25.0+10*60.0+10*60.0)/2400
+  image: https://wiki.leagueoflegends.com/en-us/images/Zeke%27s_Convergence_item.png
+  name: Zeke's Convergence (Converge)
+  stats:
+  - type: Max Health
+    value: 300
+  - type: Armor
+    value: 25
+  - type: Magic Resistance
+    value: 25
+  - type: Ability Haste
+    value: 10
+  - passive: Converge
+    type: Ultimate Ability Haste
     value: 10
 - amount: 118.51%
   category: DEFENSE ITEMS
@@ -1722,10 +1723,10 @@
     value: 5
   - type: '% Mana Regeneration'
     value: 50
-- amount: 84.14%
+- amount: 96.29%
   category: SUPPORT ITEMS
   cost: 2400
-  formula: (200*3.33+500*0.44+50*4+8*116.67)/2400
+  formula: (200*3.33+500*0.44+50*4+8*116.67+2.5*116.67)/2400
   image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/whispering-circlet.png
   name: Whispering Circlet
   stats:
@@ -1737,10 +1738,16 @@
     value: 50
   - type: '% Heal and shield strength'
     value: 8
-- amount: 96.97%
+  - formula: 500*0.005
+    passive: Harmony
+    ratio: 0.005
+    ref_type: Max Mana
+    type: '% Heal and shield strength'
+    value: 2.5
+- amount: 126.14%
   category: SUPPORT ITEMS
   cost: 2400
-  formula: (200*3.33+1200*0.44+50*4+8*116.67)/2400
+  formula: (200*3.33+1200*0.44+50*4+8*116.67+6.0*116.67)/2400
   image: https://cdn.jsdelivr.net/gh/changchiyou/Images/wildrift/items/diadem-of-songs.png
   name: Diadem of Songs
   stats:
@@ -1752,6 +1759,12 @@
     value: 50
   - type: '% Heal and shield strength'
     value: 8
+  - formula: 1200*0.005
+    passive: Harmony
+    ratio: 0.005
+    ref_type: Max Mana
+    type: '% Heal and shield strength'
+    value: 6.0
 - amount: 127.75%
   category: SUPPORT ITEMS
   cost: 2400
@@ -1767,10 +1780,10 @@
     value: 20
   - type: '% Mana Regeneration'
     value: 50
-- amount: 103.40%
+- amount: 111.57%
   category: SUPPORT ITEMS
   cost: 2450
-  formula: (40*25.0+10*60.0+8*116.67)/2450
+  formula: (40*25.0+10*60.0+8*116.67+50*4)/2450
   image: https://wiki.leagueoflegends.com/en-us/images/thumb/Redemption_WR_item.png/64px-Redemption_WR_item.png?1d330
   name: Salvation
   stats:
@@ -1780,6 +1793,8 @@
     value: 10
   - type: '% Heal and shield strength'
     value: 8
+  - type: '% Mana Regeneration'
+    value: 50
 - amount: 116.94%
   category: DEFENSE ITEMS
   cost: 2650
@@ -2836,40 +2851,6 @@
   - passive: Catcher
     type: '% Move Speed'
     value: 10
-- amount: 68.88%
-  category: PHYSICAL DAMAGE ITEMS
-  cost: 3100
-  formula: (30*33.33+5*18.75+25*41.67)/3100
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/6/64/Guinsoo%27s_Rageblade_item_HD.png
-  name: 'Guinsoo''s Rageblade (Adaptive: AD)'
-  stats:
-  - type: '% Attack Speed'
-    value: 30
-  - passive: Surge
-    type: '% Move Speed'
-    value: 5
-  - passive: Chaos
-    type: Attack Damage
-    value: 25
-- amount: 103.29%
-  category: PHYSICAL DAMAGE ITEMS
-  cost: 3100
-  formula: (30*33.33+5*18.75+25*41.67+32*33.33)/3100
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/6/64/Guinsoo%27s_Rageblade_item_HD.png
-  name: 'Guinsoo''s Rageblade (Adaptive: AD, Seething Strike)'
-  stats:
-  - type: '% Attack Speed'
-    value: 30
-  - passive: Surge
-    type: '% Move Speed'
-    value: 5
-  - passive: Chaos
-    type: Attack Damage
-    value: 25
-  - passive: Seething Strike
-    type: '% Attack Speed'
-    value: 32
-  - type: Unstable Passives' Stats
 - amount: 120.44%
   category: DEFENSE ITEMS
   cost: 2400
@@ -2883,23 +2864,6 @@
     value: 45
   - type: Ability Haste
     value: 10
-- amount: 167.31%
-  category: DEFENSE ITEMS
-  cost: 2400
-  formula: (350*3.33+45*25.0+10*60.0+45*25.0)/2400
-  image: https://static.wikia.nocookie.net/leagueoflegends/images/3/30/Abyssal_Mask_WR_item.png
-  name: Abyssal Mask (Unmake)
-  stats:
-  - type: Max Health
-    value: 350
-  - type: Magic Resistance
-    value: 45
-  - type: Ability Haste
-    value: 10
-  - passive: Unmake
-    type: Magic Resistance
-    value: 45
-  - type: Unstable Passives' Stats
 - amount: 115.43%
   category: DEFENSE ITEMS
   cost: 2800
@@ -2926,10 +2890,10 @@
     value: 35
   - type: '% Move Speed'
     value: 4
-- amount: 92.49%
+- amount: 104.73%
   category: SUPPORT ITEMS
   cost: 2450
-  formula: (40*25.0+200*3.33+10*60.0)/2450
+  formula: (40*25.0+200*3.33+10*60.0+100*3)/2450
   image: https://wiki.leagueoflegends.com/en-us/images/Knight%27s_Vow_item.png?5a5a0
   name: Knight's Vow
   stats:
@@ -2939,6 +2903,8 @@
     value: 200
   - type: Ability Haste
     value: 10
+  - type: '% Health Regen'
+    value: 100
 - amount: 100.54%
   category: PHYSICAL DAMAGE ITEMS
   cost: 3200

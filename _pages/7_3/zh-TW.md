@@ -36,7 +36,7 @@ patch_note:
         stats: stats_7_2e
         item_prefix: 7.2e
         force_only: true
-        force: "Stormrazor~Magnetic Blaster;Rapid Firecannon~Magnetic Blaster"
+        force: "Stormrazor~Magnetic Blaster;Rapid Firecannon~Magnetic Blaster;Youmuu's Ghostblade (Momentum - Range)~Youmuu's Ghostblade (Momentum);Nashor's Tooth~Nashor's Tooth (Adaptive: AP);Guinsoo's Rageblade~Guinsoo's Rageblade (Adaptive: AP);Salvation~Redemption"
         force_sep: "~;"
         excludes: ""
         excludes_sep: ","

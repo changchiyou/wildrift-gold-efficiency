@@ -86,6 +86,8 @@ stat:
     update: Update
 item:
   name:
+    ardent-censer-censer: Ardent Censer (Censer)
+    zeke-s-convergence-converge: Zeke's Convergence (Converge)
     bandleglass-mirror: Bandleglass Mirror
     diadem-of-songs: Diadem of Songs
     echoes-of-helia: Echoes of Helia
@@ -409,6 +411,9 @@ item:
     void-staff: Void Staff
     zhonya-s-hourglass: Zhonya's Hourglass
   passive:
+    censer: Censer
+    harmony: Harmony
+    converge: Converge
     control: Control
     absorb: Absorb
     ardent: Ardent

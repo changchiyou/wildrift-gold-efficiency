@@ -86,6 +86,8 @@ stat:
     update: 更新
 item:
   name:
+    ardent-censer-censer: 熾灼魔器 (魔器)
+    zeke-s-convergence-converge: 錫柯的聚合之力 (聚合)
     bandleglass-mirror: 班德爾玻璃之鏡
     diadem-of-songs: 歌謠之冠
     echoes-of-helia: 希利亞的迴響
@@ -409,6 +411,9 @@ item:
     void-staff: 虛空之杖
     zhonya-s-hourglass: 中婭沙漏
   passive:
+    censer: 魔器
+    harmony: 和諧
+    converge: 聚合
     control: 控場
     absorb: 吸收
     ardent: 熾灼
@@ -448,7 +453,7 @@ item:
     overkill: 狂弒
     opening-barrage: 連環轟擊
     projection: 投影
-    practice-makes-perfect: 熟能生巧
+    practice-makes-perfect: 熟能致命
     rage: 暴虐
     chase: 追逐
     sunder: 斬斷
