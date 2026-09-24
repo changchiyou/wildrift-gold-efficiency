@@ -59,7 +59,7 @@ stat:
     percentage-critical-rate: "クリティカル率％"
     percentage-attack-speed: "攻撃速度％"
     percentage-physical-vamp: "物理ヴァンプ％"
-    percentage-lifesteal: ライフスティール％
+    percentage-lifesteal: 'ライフスティール％'
     armor-penetration: "脅威"
     percentage-armor-penetration: "物理防御貫通％"
     # Magic
@@ -88,28 +88,11 @@ item:
   name:
     ardent-censer-censer: アーデント センサー (Censer)
     zeke-s-convergence-converge: ジーク コンバージェンス (Converge)
-    bandleglass-mirror: バンドルグラスの鏡
-    diadem-of-songs: 旋律のダイアデム
-    echoes-of-helia: ヘリアの残響
-    fiendhunter-bolts: フィーンドハンターの矢
-    fiendhunter-bolts-night-vigil: フィーンドハンターの矢 (夜警)
-    fiendhunter-bolts-opening-barrage: フィーンドハンターの矢 (連射)
-    fiendhunter-bolts-night-vigil-opening-barrage: フィーンドハンターの矢 (夜警, 連射)
-    guinsoo-s-rageblade-seething-strike: グインソー レイジブレード (シージングストライク)
-    hearthbound-axe: ハースバウンド アックス
-    hexoptics-c44: ヘクスオプティックC44
+    guinsoo-s-rageblade-seething-strike: 'グインソー レイジブレード (シージングストライク)'
     imperial-mandate-control: 帝国の指令 (制御)
-    nashor-s-tooth: ナッシャー トゥース
-    pickaxe: ピッケル
-    rapid-firecannon: ラピッド ファイアキャノン
+    nashor-s-tooth: 'ナッシャー トゥース'
     salvation: サルベーション
-    statikk-shiv: スタティック シヴ
-    whispering-circlet: 囁きのサークレット
-    youmuu-s-ghostblade-momentum-range: 妖夢の霊剣 (熾烈 - レンジ)
-    yun-tal-wildarrows: ユン・タル ワイルドアロー
-    yun-tal-wildarrows-practice-makes-perfect: ユン・タル ワイルドアロー (継続は力なり)
-    yun-tal-wildarrows-flurry: ユン・タル ワイルドアロー (疾風)
-    yun-tal-wildarrows-practice-makes-perfect-flurry: ユン・タル ワイルドアロー (継続は力なり, 疾風)
+    youmuu-s-ghostblade-momentum-range: '妖夢の霊剣 (熾烈 - レンジ)'
     aether-wisp: エーテル ウィスプ
     amaranth-s-twinguard: アマランス ツインガード
     amaranth-s-twinguard-endurance: アマランス ツインガード(忍耐)
@@ -410,6 +393,23 @@ item:
     void-amethyst: Void Amethyst
     void-staff: Void Staff
     zhonya-s-hourglass: Zhonya's Hourglass
+    rapid-firecannon: ラピッド ファイアキャノン
+    yun-tal-wildarrows: ユン・タル ワイルドアロー
+    yun-tal-wildarrows-practice-makes-perfect: ユン・タル ワイルドアロー (継続は力なり)
+    yun-tal-wildarrows-flurry: ユン・タル ワイルドアロー (疾風)
+    yun-tal-wildarrows-practice-makes-perfect-flurry: ユン・タル ワイルドアロー (継続は力なり, 疾風)
+    statikk-shiv: スタティック シヴ
+    fiendhunter-bolts: フィーンドハンターの矢
+    fiendhunter-bolts-night-vigil: フィーンドハンターの矢 (夜警)
+    fiendhunter-bolts-opening-barrage: フィーンドハンターの矢 (連射)
+    fiendhunter-bolts-night-vigil-opening-barrage: フィーンドハンターの矢 (夜警, 連射)
+    hexoptics-c44: ヘクスオプティックC44
+    hearthbound-axe: ハースバウンド アックス
+    pickaxe: ピッケル
+    bandleglass-mirror: バンドルグラスの鏡
+    whispering-circlet: 囁きのサークレット
+    diadem-of-songs: 旋律のダイアデム
+    echoes-of-helia: ヘリアの残響
   passive:
     censer: Censer
     harmony: 調和
