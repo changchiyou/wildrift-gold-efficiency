@@ -88,28 +88,11 @@ item:
   name:
     ardent-censer-censer: Ardent Censer (Censer)
     zeke-s-convergence-converge: Zeke's Convergence (Converge)
-    bandleglass-mirror: Bandleglass Mirror
-    diadem-of-songs: Diadem of Songs
-    echoes-of-helia: Echoes of Helia
-    fiendhunter-bolts: Fiendhunter Bolts
-    fiendhunter-bolts-night-vigil: Fiendhunter Bolts (Night Vigil)
-    fiendhunter-bolts-opening-barrage: Fiendhunter Bolts (Opening Barrage)
-    fiendhunter-bolts-night-vigil-opening-barrage: Fiendhunter Bolts (Night Vigil, Opening Barrage)
     guinsoo-s-rageblade-seething-strike: 'Guinsoo''s Rageblade (Seething Strike)'
-    hearthbound-axe: Hearthbound Axe
-    hexoptics-c44: Hexoptics C44
     imperial-mandate-control: Imperial Mandate (Control)
     nashor-s-tooth: 'Nashor''s Tooth'
-    pickaxe: Pickaxe
-    rapid-firecannon: Rapid Firecannon
     salvation: Salvation
-    statikk-shiv: Statikk Shiv
-    whispering-circlet: Whispering Circlet
     youmuu-s-ghostblade-momentum-range: 'Youmuu''s Ghostblade (Momentum - Range)'
-    yun-tal-wildarrows: Yun Tal Wildarrows
-    yun-tal-wildarrows-practice-makes-perfect: Yun Tal Wildarrows (Practice Makes Perfect)
-    yun-tal-wildarrows-flurry: Yun Tal Wildarrows (Flurry)
-    yun-tal-wildarrows-practice-makes-perfect-flurry: Yun Tal Wildarrows (Practice Makes Perfect, Flurry)
     aether-wisp: Aether Wisp
     amaranth-s-twinguard: Amaranth's Twinguard
     amaranth-s-twinguard-endurance: Amaranth's Twinguard (Endurance)
@@ -410,6 +393,23 @@ item:
     void-amethyst: Void Amethyst
     void-staff: Void Staff
     zhonya-s-hourglass: Zhonya's Hourglass
+    rapid-firecannon: Rapid Firecannon
+    yun-tal-wildarrows: Yun Tal Wildarrows
+    yun-tal-wildarrows-practice-makes-perfect: Yun Tal Wildarrows (Practice Makes Perfect)
+    yun-tal-wildarrows-flurry: Yun Tal Wildarrows (Flurry)
+    yun-tal-wildarrows-practice-makes-perfect-flurry: Yun Tal Wildarrows (Practice Makes Perfect, Flurry)
+    statikk-shiv: Statikk Shiv
+    fiendhunter-bolts: Fiendhunter Bolts
+    fiendhunter-bolts-night-vigil: Fiendhunter Bolts (Night Vigil)
+    fiendhunter-bolts-opening-barrage: Fiendhunter Bolts (Opening Barrage)
+    fiendhunter-bolts-night-vigil-opening-barrage: Fiendhunter Bolts (Night Vigil, Opening Barrage)
+    hexoptics-c44: Hexoptics C44
+    hearthbound-axe: Hearthbound Axe
+    pickaxe: Pickaxe
+    bandleglass-mirror: Bandleglass Mirror
+    whispering-circlet: Whispering Circlet
+    diadem-of-songs: Diadem of Songs
+    echoes-of-helia: Echoes of Helia
   passive:
     censer: Censer
     harmony: Harmony

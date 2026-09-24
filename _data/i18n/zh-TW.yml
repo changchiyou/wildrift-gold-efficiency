@@ -88,28 +88,11 @@ item:
   name:
     ardent-censer-censer: 熾灼魔器 (魔器)
     zeke-s-convergence-converge: 錫柯的聚合之力 (聚合)
-    bandleglass-mirror: 班德爾玻璃之鏡
-    diadem-of-songs: 歌謠之冠
-    echoes-of-helia: 希利亞的迴響
-    fiendhunter-bolts: 獵魔弩箭
-    fiendhunter-bolts-night-vigil: 獵魔弩箭 (守夜)
-    fiendhunter-bolts-opening-barrage: 獵魔弩箭 (連環轟擊)
-    fiendhunter-bolts-night-vigil-opening-barrage: 獵魔弩箭 (守夜, 連環轟擊)
-    guinsoo-s-rageblade-seething-strike: 鬼索的狂暴之刃 (沸騰打擊)
-    hearthbound-axe: 爐縛之斧
-    hexoptics-c44: 海克斯光學C44
+    guinsoo-s-rageblade-seething-strike: '鬼索的狂暴之刃 (沸騰打擊)'
     imperial-mandate-control: 帝王命令 (控場)
-    nashor-s-tooth: 納什之牙
-    pickaxe: 十字鎬
-    rapid-firecannon: 衝擊火炮
+    nashor-s-tooth: '納什之牙'
     salvation: 救世神石
-    statikk-shiv: 史提克彈簧刀
-    whispering-circlet: 低語之環
-    youmuu-s-ghostblade-momentum-range: 妖夢鬼刀 (衝勁 - 遠程)
-    yun-tal-wildarrows: 雲陶狂箭
-    yun-tal-wildarrows-practice-makes-perfect: 雲陶狂箭 (熟能生巧)
-    yun-tal-wildarrows-flurry: 雲陶狂箭 (無雙亂舞)
-    yun-tal-wildarrows-practice-makes-perfect-flurry: 雲陶狂箭 (熟能生巧, 無雙亂舞)
+    youmuu-s-ghostblade-momentum-range: '妖夢鬼刀 (衝勁 - 遠程)'
     aether-wisp: 蒼穹神火
     amaranth-s-twinguard: 雅瑪蘭守護像
     amaranth-s-twinguard-endurance: 雅瑪蘭守護像 (堅毅)
@@ -410,6 +393,23 @@ item:
     void-amethyst: 虛空紫晶
     void-staff: 虛空之杖
     zhonya-s-hourglass: 中婭沙漏
+    rapid-firecannon: 衝擊火炮
+    yun-tal-wildarrows: 雲陶狂箭
+    yun-tal-wildarrows-practice-makes-perfect: 雲陶狂箭 (熟能生巧)
+    yun-tal-wildarrows-flurry: 雲陶狂箭 (無雙亂舞)
+    yun-tal-wildarrows-practice-makes-perfect-flurry: 雲陶狂箭 (熟能生巧, 無雙亂舞)
+    statikk-shiv: 史提克彈簧刀
+    fiendhunter-bolts: 獵魔弩箭
+    fiendhunter-bolts-night-vigil: 獵魔弩箭 (守夜)
+    fiendhunter-bolts-opening-barrage: 獵魔弩箭 (連環轟擊)
+    fiendhunter-bolts-night-vigil-opening-barrage: 獵魔弩箭 (守夜, 連環轟擊)
+    hexoptics-c44: 海克斯光學C44
+    hearthbound-axe: 爐縛之斧
+    pickaxe: 十字鎬
+    bandleglass-mirror: 班德爾玻璃之鏡
+    whispering-circlet: 低語之環
+    diadem-of-songs: 歌謠之冠
+    echoes-of-helia: 希利亞的迴響
   passive:
     censer: 魔器
     harmony: 和諧
