@@ -13,6 +13,7 @@ nav:
   boots: '📌 鞋子'
   mid-tier-items: '📌 中階裝備'
   basic-items: '📌 基礎裝備'
+  removed-items: '🗑️ 已移除裝備'
   sitemap: '🗺️ 站點地圖'
 items-table:
   item: 裝備

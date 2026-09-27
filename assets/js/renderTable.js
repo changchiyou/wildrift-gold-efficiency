@@ -56,3 +56,26 @@ function renderRowIndexs() {
         });
     });
 }
+
+
+function updateSectionVisibility() {
+    var sections = document.querySelectorAll(".items-section");
+
+    sections.forEach(function(section) {
+        var rows = section.querySelectorAll("tr.item-row:not(.compare)");
+        var visibleCount = 0;
+
+        rows.forEach(function(row) {
+            if (row.style.display !== 'none') {
+                visibleCount++;
+            }
+        });
+
+        // Hide the whole section (header + table) when it is empty or every row is filtered out
+        if (rows.length === 0 || visibleCount === 0) {
+            section.style.display = 'none';
+        } else {
+            section.style.display = '';
+        }
+    });
+}

@@ -13,6 +13,7 @@ nav:
   boots: '📌 Boots'
   mid-tier-items: '📌 Mid-tier Items'
   basic-items: '📌 Basic Items'
+  removed-items: '🗑️ Removed Items'
   sitemap: '🗺️ Mapa do Site'
 items-table:
   item: Item

@@ -90,6 +90,7 @@ When new items are added or item names/passives change:
    ```
 
 4. **Focus on English updates**: Unless specifically required, only update the English (`en-US.yml`) translation file. Other language translations can be handled separately by contributors via Crowdin or other localization tools.
+5. **NEVER delete keys of retired items**: `item.name` / `item.passive` keys are permanent history. When a patch removes or renames an item, keep its keys in every `_data/i18n/*.yml` — the Removed Items section (`_includes/removed_items_table.html`) still renders those names for historical patch pages, and deleting a key breaks all versions that compare against the patch where the item last existed.
 
 ## Version Format Handling
 
