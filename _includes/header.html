@@ -17,6 +17,7 @@
           </span>
         </label>
 
+{%- include removed_items_list.html -%}
         <div class="trigger">
 
           <a class="page-link" href="#hint">{% include i18n.html token="hint.title" %}</a>
@@ -32,6 +33,9 @@
           <a class="page-link" href="#BOOTS">{% include i18n.html token="nav.boots" %}</a>
           <a class="page-link" href="#MID-TIER-ITEMS">{% include i18n.html token="nav.mid-tier-items" %}</a>
           <a class="page-link" href="#BASIC-ITEMS">{% include i18n.html token="nav.basic-items" %}</a>
+          {%- if removed_items.size > 0 %}
+          <a class="page-link" href="#REMOVED-ITEMS">{% include i18n.html token="nav.removed-items" %}</a>
+          {%- endif %}
 
           <hr>
 

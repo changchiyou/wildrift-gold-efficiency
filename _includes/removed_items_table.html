@@ -6,23 +6,7 @@
     NOTE: `item.name` i18n keys of removed items must NEVER be deleted from '_data/i18n/' when
     a patch retires an item — this section keeps rendering those names for historical versions.
 {%- endcomment -%}
-{% assign removed_items = "" | split: "|" %}
-{% if page.patch_note.compare.items %}
-    {% assign current_items = site.data[ page.data.items ] %}
-    {% assign previous_items = site.data[ page.patch_note.compare.items ] %}
-
-    {% assign current_bases = "|" %}
-    {% for item in current_items %}
-        {% capture current_bases %}{{ current_bases }}{{ item.name | split: " (" | first }}|{% endcapture %}
-    {% endfor %}
-
-    {% for item in previous_items %}
-        {% capture base_marker %}|{{ item.name | split: " (" | first }}|{% endcapture %}
-        {% unless current_bases contains base_marker %}
-            {% assign removed_items = removed_items | push: item %}
-        {% endunless %}
-    {% endfor %}
-{% endif %}
+{% include removed_items_list.html %}
 
 {% if removed_items.size > 0 %}
 <div class="items-section">
