@@ -913,6 +913,17 @@
     value: 350
   - type: Ability Power
     value: 65
+- amount: 91.63%
+  category: MAGIC DAMAGE ITEMS
+  cost: 3000
+  formula: (300*3.33+70*25.0)/3000
+  image: https://static.wikia.nocookie.net/leagueoflegends/images/2/2b/Liandry%27s_Anguish_item_old.png
+  name: Liandry's Torment
+  stats:
+  - type: Max Health
+    value: 300
+  - type: Ability Power
+    value: 70
 - amount: 95.98%
   category: MAGIC DAMAGE ITEMS
   cost: 2700

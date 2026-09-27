@@ -1,0 +1,26 @@
+{%- comment -%}
+    Computes `removed_items`: the array of items present in the compare (previous)
+    version's dataset but no longer in the current version. Matched by base name —
+    the passive-variant suffix " (...)" is stripped — so a renamed passive variant
+    is not reported as removed. Renders nothing; assign `removed_items` persists in
+    the page context so callers (header nav + table) can branch on `removed_items.size`.
+    Requires `page.data.items` and `page.patch_note.compare.items`; yields an empty
+    array otherwise.
+{%- endcomment -%}
+{% assign removed_items = "" | split: "|" %}
+{% if page.patch_note.compare.items %}
+    {% assign current_items = site.data[ page.data.items ] %}
+    {% assign previous_items = site.data[ page.patch_note.compare.items ] %}
+
+    {% assign current_bases = "|" %}
+    {% for item in current_items %}
+        {% capture current_bases %}{{ current_bases }}{{ item.name | split: " (" | first }}|{% endcapture %}
+    {% endfor %}
+
+    {% for item in previous_items %}
+        {% capture base_marker %}|{{ item.name | split: " (" | first }}|{% endcapture %}
+        {% unless current_bases contains base_marker %}
+            {% assign removed_items = removed_items | push: item %}
+        {% endunless %}
+    {% endfor %}
+{% endif %}

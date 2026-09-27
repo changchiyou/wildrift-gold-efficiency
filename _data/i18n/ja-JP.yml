@@ -13,6 +13,7 @@ nav:
   boots: '📌 ブーツ'
   mid-tier-items: '📌 中級アイテム'
   basic-items: '📌 基本アイテム'
+  removed-items: '🗑️ 削除されたアイテム'
   sitemap: '🗺️ Sitemap'
 items-table:
   item: アイテム

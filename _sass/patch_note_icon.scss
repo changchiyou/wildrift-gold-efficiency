@@ -49,6 +49,13 @@
     transform: translateY(-50%) rotate(90deg);
   }
 
+
+  .removed {
+    display: inline-block;
+    width: 10px;
+    height: 3px;
+    background-color: #991950;
+  }
   @media screen and (max-width: 480px){
     .buffed {
         border-left: 3.125px solid transparent;
@@ -69,6 +76,10 @@
         height: 6.25px;
     }
     .new::after, .new::before {
+        height: 1.875px;
+    }
+    .removed {
+        width: 6.25px;
         height: 1.875px;
     }
   }

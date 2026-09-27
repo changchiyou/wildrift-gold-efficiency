@@ -67,6 +67,8 @@ layout: default
 {% capture header %}{% include i18n.html token="nav.basic-items" %}{% endcapture %}
 {%- include items_table.html items=page.data.items stats=page.data.stats category="BASIC ITEMS" anchor="BASIC-ITEMS" header=header -%}
 
+{%- include removed_items_table.html -%}
+
 <div class="panel">
     <p>
         <strong></strong>{% include i18n.html token="copyright.title" %}</strong><br>
@@ -99,6 +101,7 @@ layout: default
     });
 
     document.addEventListener('DOMContentLoaded', () => {
+        updateSectionVisibility();
         const tables = document.querySelectorAll('.sortable-table');
 
         tables.forEach((table) => {
