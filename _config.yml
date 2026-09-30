@@ -81,7 +81,10 @@ exclude:
   - LICENSE
   - tests/
   - docs/
-#   - node_modules/
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - playwright.config.js
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/

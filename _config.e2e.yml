@@ -1,0 +1,6 @@
+# Config overrides for the pre-release e2e run (see .github/workflows/e2e.yml).
+# baseurl is emptied so permalinks resolve at the static server root, and url
+# points at the local test server so jekyll-redirect-from meta-refreshes stay
+# on 127.0.0.1 instead of navigating to the production site.
+url: "http://127.0.0.1:4173"
+baseurl: ""
