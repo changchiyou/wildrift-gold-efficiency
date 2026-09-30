@@ -107,47 +107,42 @@ layout: default
         tables.forEach((table) => {
             const headers = table.querySelectorAll('th');
             const originalRows = Array.from(table.querySelectorAll('tbody tr'));
+            const groupedRows = groupRows(originalRows);
+            let isOriginalOrder = true;
 
-            tables.forEach((table) => {
-                const headers = table.querySelectorAll('th');
-                const originalRows = Array.from(table.querySelectorAll('tbody tr'));
-                const groupedRows = groupRows(originalRows);
-                let isOriginalOrder = true;
+            headers.forEach((header, index) => {
+                const column = header.getAttribute('column');
+                if (column === "cost" || column === "amount") {
+                    header.addEventListener('click', () => {
+                        const currentOrder = header.getAttribute('data-order');
+                        let newOrder;
 
-                headers.forEach((header, index) => {
-                    const column = header.getAttribute('column');
-                    if (column === "cost" || column === "amount") {
-                        header.addEventListener('click', () => {
-                            const currentOrder = header.getAttribute('data-order');
-                            let newOrder;
+                        // non-order -> descending -> ascending -> non-order -> ...
+                        if (currentOrder === 'non-order') {
+                            newOrder = 'descending';
+                            sortGroupedRows(groupedRows, index, header.getAttribute('data-type'), 'desc');
+                        } else if (currentOrder === 'ascending') {
+                            newOrder = 'non-order';
+                            restoreOriginalOrder(table, originalRows);
+                        } else {
+                            newOrder = 'ascending';
+                            sortGroupedRows(groupedRows, index, header.getAttribute('data-type'), 'asc');
+                        }
 
-                            // non-order -> descending -> ascending -> non-order -> ...
-                            if (currentOrder === 'non-order') {
-                                newOrder = 'descending';
-                                sortGroupedRows(groupedRows, index, header.getAttribute('data-type'), 'desc');
-                            } else if (currentOrder === 'ascending') {
-                                newOrder = 'non-order';
-                                restoreOriginalOrder(table, originalRows);
-                            } else {
-                                newOrder = 'ascending';
-                                sortGroupedRows(groupedRows, index, header.getAttribute('data-type'), 'asc');
+                        // Reset data-order and title attributes for all headers that have them
+                        table.querySelectorAll('th[data-order][title]').forEach((h) => {
+                            if (h !== header) { // Skip the current header
+                                h.setAttribute('data-order', 'non-order');
+                                h.setAttribute('title', 'non-order');
                             }
-
-                            // Reset data-order and title attributes for all headers that have them
-                            table.querySelectorAll('th[data-order][title]').forEach((h) => {
-                                if (h !== header) { // Skip the current header
-                                    h.setAttribute('data-order', 'non-order');
-                                    h.setAttribute('title', 'non-order');
-                                }
-                            });
-
-                            header.setAttribute('data-order', newOrder);
-                            header.setAttribute('title', newOrder);
-                            renderRowColors();
-                            renderRowIndexs();
                         });
-                    }
-                });
+
+                        header.setAttribute('data-order', newOrder);
+                        header.setAttribute('title', newOrder);
+                        renderRowColors();
+                        renderRowIndexs();
+                    });
+                }
             });
         });
     });
