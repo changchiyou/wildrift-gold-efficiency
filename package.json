@@ -1,0 +1,12 @@
+{
+  "name": "wildrift-gold-efficiency-e2e",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Pre-release e2e smoke tests for the built Jekyll site.",
+  "scripts": {
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0"
+  }
+}

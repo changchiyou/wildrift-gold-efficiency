@@ -6,3 +6,6 @@ vendor
 .DS_Store
 .venv
 __pycache__/
+node_modules/
+playwright-report/
+test-results/
