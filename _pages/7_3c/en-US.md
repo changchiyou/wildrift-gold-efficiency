@@ -7,10 +7,6 @@ description: Wild Rift Gold Efficiency of 7.3c
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/5a54cee31d917d539ebe384642c168521b12fcc7-5434x3182.jpg?accountingTag=WR?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /en-US/7.3c/
-redirect_from:
-    - /
-    - /en-US/
-latest_version: true
 
 lang: en-US
 
@@ -32,7 +28,7 @@ patch_note:
         statuses: "buffed,adjusted,nerfed"
         items: items_7_3b
         stats: stats_7_3b
-        item_prefix: 7/3b
+        item_prefix: 7.3b
         force: ""
         force_sep: ""
         excludes: ""
