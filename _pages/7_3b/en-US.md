@@ -7,10 +7,6 @@ description: Wild Rift Gold Efficiency of 7.3b
 image: https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/f43afbeb04942333e6eba8fe065477c6b95caa80-1920x1080.jpg?accountingTag=WR?w=1200&h=630&fm=webp&fit=crop&crop=center
 
 permalink: /en-US/7.3b/
-redirect_from:
-    - /
-    - /en-US/
-latest_version: true
 
 lang: en-US
 
